@@ -1,0 +1,111 @@
+<script>
+// ---- endpoints (có thể bật/tắt) ----
+const TIME_ENDPOINTS = [
+  {id:'wta', url:'https://worldtimeapi.org/api/ip', parse: t => Date.parse(JSON.parse(t).utc_datetime || JSON.parse(t).datetime)},
+  {id:'httpbin', url:'https://httpbin.org/anything', parse: (_,resp) => Date.parse(resp.headers.get('Date'))},
+  {id:'cloudflare', url:'https://1.1.1.1/cdn-cgi/trace', parse: t => Date.parse((t.match(/^ts=(\d+)/m)||[])[1]*1000) } // có thể fail ở 1 số mạng
+].filter(Boolean);
+
+// timeout helper
+function fetchWithTimeout(url, opts={}, ms=5000){
+  const ctrl = new AbortController();
+  const id = setTimeout(()=>ctrl.abort(), ms);
+  return fetch(url, {...opts, signal: ctrl.signal}).finally(()=>clearTimeout(id));
+}
+
+// gọi song song nhiều endpoint, chọn mẫu RTT nhỏ nhất
+async function sampleServerTime(){
+  const t0 = performance.now();
+  const st = Date.now();
+
+  const attempts = TIME_ENDPOINTS.map(async ep => {
+    try{
+      const resp = await fetchWithTimeout(ep.url, {cache:'no-store'}, 6000);
+      const text = await resp.text();
+      const t1 = performance.now();
+      let serverMs = NaN;
+      try { serverMs = ep.parse(text, resp); } catch(_){}
+      const rtt = t1 - t0;
+      const localAtServer = st + rtt/2;
+      const offset = Number.isFinite(serverMs) ? (serverMs - localAtServer) : NaN;
+      return {ok:true, ep:ep.id, rtt, serverMs, offset};
+    }catch(e){
+      return {ok:false, ep:ep.id, rtt:NaN, serverMs:NaN, offset:NaN, err:e.name||'err'};
+    }
+  });
+
+  // chọn kết quả ok có RTT nhỏ nhất
+  const results = await Promise.all(attempts);
+  const best = results.filter(x=>x.ok && Number.isFinite(x.rtt))
+                      .sort((a,b)=>a.rtt-b.rtt)[0] || results[0];
+  return {results, best};
+}
+
+// WLS fit (weight = 1/rtt^2)
+function wlsFit(xs, ys, ws){
+  const n = xs.length; if(n<2) return {m:NaN,b:NaN};
+  let Sw=0,Sx=0,Sy=0,Sxx=0,Sxy=0;
+  for (let i=0;i<n;i++){
+    const w = ws[i]; const x = xs[i]; const y = ys[i];
+    Sw+=w; Sx+=w*x; Sy+=w*y; Sxx+=w*x*x; Sxy+=w*x*y;
+  }
+  const d = Sw*Sxx - Sx*Sx; if (!d) return {m:NaN,b:NaN};
+  const m = (Sw*Sxy - Sx*Sy)/d; const b = (Sy - m*Sx)/Sw; return {m,b};
+}
+
+// rolling MAD filter
+function isOutlier(val, buf){
+  if (buf.length<20) return false;
+  const med = [...buf].sort((a,b)=>a-b)[Math.floor(buf.length/2)];
+  const dev = buf.map(v=>Math.abs(v-med));
+  const mad = [...dev].sort((a,b)=>a-b)[Math.floor(dev.length/2)] || 1;
+  return Math.abs(val - med) > 3*1.4826*mad; // ~3σ
+}
+
+let keepAwake = null;
+async function acquireWakeLock(){ try{ keepAwake = await navigator.wakeLock.request('screen'); }catch(_){} }
+function releaseWakeLock(){ try{ keepAwake && keepAwake.release(); }catch(_){} }
+
+// ---- main polling loop (gọi trong Start) ----
+let histOffsets = [];   // cho MAD
+let rows = [];          // CSV
+let timer = null;
+
+async function stepPoll(){
+  const tEpoch = Date.now();
+  const {results, best} = await sampleServerTime();
+  const downlink = (navigator.connection && navigator.connection.downlink) ? navigator.connection.downlink : null;
+
+  // bỏ outlier theo offset & rtt
+  const rttList = results.filter(r=>r.ok && Number.isFinite(r.rtt)).map(r=>r.rtt);
+  const p90 = rttList.sort((a,b)=>a-b)[Math.floor(0.9*rttList.length)] || Infinity;
+  const drop = !best.ok || !Number.isFinite(best.offset) || best.rtt>p90 || isOutlier(best.offset, histOffsets);
+
+  if (!drop){
+    histOffsets.push(best.offset); if (histOffsets.length>500) histOffsets.shift();
+    rows.push({
+      t: tEpoch,
+      id: 'HTTP_TIME_OFFSET',
+      cond: { rtt_ms: best.rtt, downlink_mbps: downlink, endpoint: best.ep, hidden: !!document.hidden },
+      phen: { server_ms: best.serverMs, offset_ms: best.offset }
+    });
+  }
+
+  // cập nhật fit & UI mỗi 5 mẫu
+  if (rows.length>=10 && rows.length%5===0){
+    const t0 = rows[0].t;
+    const xs = rows.map(r=>(r.t - t0)/1000);
+    const ys = rows.map(r=>r.phen.offset_ms);
+    const ws = rows.map(r=>1/Math.max(1, r.cond.rtt_ms*r.cond.rtt_ms));
+    const f = wlsFit(xs, ys, ws);
+    const msps = f.m; const ppm = (msps/1000)*1e6;
+    summary.textContent = `drift=${msps.toFixed(6)} ms/s | ppm=${ppm.toFixed(2)} | n=${rows.length}`;
+  }
+
+  // log ngắn
+  if (rows.length){
+    const last = rows[rows.length-1];
+    log.textContent = `n=${rows.length} offset_ms≈${last.phen.offset_ms.toFixed(1)} rtt=${last.cond.rtt_ms.toFixed(1)} ep=${last.cond.endpoint}`;
+  }
+}
+</script>
