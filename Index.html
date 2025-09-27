@@ -1,0 +1,172 @@
+
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CPL + ΔS Easy Bench Pack (IMU, Audio Clock, NTP Offset)</title>
+  <style>
+    body{font-family:ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; padding:24px; background:#0b1020; color:#e7ecff}
+    .card{background:#121734; border:1px solid #1f2752; border-radius:16px; padding:16px; box-shadow:0 8px 24px rgba(0,0,0,0.35); margin-bottom:16px}
+    h1{font-weight:700; font-size:24px; margin:0 0 12px}
+    h2{font-weight:600; font-size:18px; margin:16px 0 8px}
+    .row{display:flex; gap:12px; flex-wrap:wrap}
+    button{background:#2a60ff; color:#fff; border:none; border-radius:12px; padding:10px 14px; cursor:pointer; font-weight:600}
+    button.secondary{background:#263155}
+    button:disabled{opacity:0.6; cursor:not-allowed}
+    .mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}
+    .pill{display:inline-block; background:#0f1a3d; border:1px solid #263155; padding:4px 8px; border-radius:999px; font-size:12px}
+    .grid{display:grid; grid-template-columns:1fr; gap:12px}
+    @media (min-width: 900px){.grid{grid-template-columns:repeat(3,1fr)}}
+    .log{background:#0f1430; border:1px dashed #2a335e; border-radius:12px; padding:10px; height:180px; overflow:auto}
+    a{color:#91b4ff}
+  </style>
+</head>
+<body>
+  <h1>CPL + ΔS Easy Bench Pack</h1>
+  <p>Three minimal, telemetry-first drift tests to extend benchmarks beyond GPS. Each module logs CSV with a common schema:
+  <span class="pill mono">epoch_ms, test_id, cond_json, phenomenon_json</span>. Use these as ΔS→Δt examples for the Whitepaper.</p>  <div class="grid">
+    <!-- IMU DRIFT -->
+    <div class="card" id="imuCard">
+      <h2>① IMU Zero-Drift (Gyro Bias) — <span class="pill">Phone stays still</span></h2>
+      <p>Measures slow bias drift of the device gyroscope while stationary. Great, simple ΔS field: <span class="mono">temperature, batteryLevel</span> (if available).
+      Phenomenon: accumulated angle error from <span class="mono">rotationRate</span>.</p>
+      <div class="row">
+        <button id="imuStart">Start IMU</button>
+        <button id="imuStop" class="secondary" disabled>Stop</button>
+        <button id="imuExport" class="secondary" disabled>Export CSV</button>
+      </div>
+      <div class="log mono" id="imuLog"></div>
+    </div><!-- AUDIO CLOCK DRIFT -->
+<div class="card" id="audioCard">
+  <h2>② Audio Clock vs. perf.now() — <span class="pill">Dual-clock drift</span></h2>
+  <p>Compares <span class="mono">AudioContext.currentTime</span> to <span class="mono">performance.now()</span>. Condition ΔS: <span class="mono">sampleRate, hiddenState</span>. Phenomenon: relative drift slope (ppm).</p>
+  <div class="row">
+    <button id="audStart">Start Audio</button>
+    <button id="audStop" class="secondary" disabled>Stop</button>
+    <button id="audExport" class="secondary" disabled>Export CSV</button>
+  </div>
+  <div class="log mono" id="audLog"></div>
+</div>
+
+<!-- NTP-LIKE OFFSET -->
+<div class="card" id="ntpCard">
+  <h2>③ HTTP Time Offset (NTP-like) — <span class="pill">Network ΔS</span></h2>
+  <p>Polls a public time API to estimate local offset using request RTT/2. Condition ΔS: <span class="mono">rtt_ms, downlink</span>. Phenomenon: offset drift (ms).</p>
+  <div class="row">
+    <button id="ntpStart">Start Poll</button>
+    <button id="ntpStop" class="secondary" disabled>Stop</button>
+    <button id="ntpExport" class="secondary" disabled>Export CSV</button>
+  </div>
+  <div class="log mono" id="ntpLog"></div>
+  <p style="font-size:12px;opacity:.8">Uses <a href="https://worldtimeapi.org/" target="_blank" rel="noreferrer">worldtimeapi.org</a>. If blocked, swap the endpoint in code.</p>
+</div>
+
+  </div>  <script>
+  // ---------- Utilities ----------
+  function csvEscape(v){ if (v==null) return ""; const s = typeof v === "string" ? v : JSON.stringify(v); return '"' + s.replaceAll('"','""') + '"'; }
+  function downloadCSV(rows, name){
+    const header = "epoch_ms,test_id,cond_json,phenomenon_json\n";
+    const body = rows.map(r=> [r.t, r.id, csvEscape(r.cond), csvEscape(r.phen)].join(',')).join('\n');
+    const blob = new Blob([header+body], {type:'text/csv'});
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; a.click(); URL.revokeObjectURL(a.href);
+  }
+  const battery = navigator.getBattery ? navigator.getBattery() : Promise.resolve(null);
+
+  // ---------- ① IMU DRIFT ----------
+  const imuRows = [];
+  let imuRunning=false; let imuHandler=null; let imuLog=document.getElementById('imuLog');
+  let imuStartBtn = document.getElementById('imuStart');
+  let imuStopBtn = document.getElementById('imuStop');
+  let imuExportBtn = document.getElementById('imuExport');
+
+  imuStartBtn.onclick = async () => {
+    try{
+      // iOS requires user gesture permission
+      if (typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function'){
+        const resp = await DeviceMotionEvent.requestPermission();
+        if (resp !== 'granted') throw new Error('Motion permission denied');
+      }
+      imuRows.length = 0; imuLog.textContent = '';
+      imuRunning = true;
+      const bat = await battery.catch(()=>null);
+      imuHandler = (ev)=>{
+        if (!imuRunning || !ev.rotationRate) return;
+        const t = Date.now();
+        const rr = ev.rotationRate || {};
+        const cond = { tempC: (navigator?.thermal ?? null), batteryLevel: bat? bat.level : null, charging: bat? bat.charging : null };
+        const phen = { alpha_dps: rr.alpha||0, beta_dps: rr.beta||0, gamma_dps: rr.gamma||0 };
+        imuRows.push({t, id:'IMU_GYRO', cond, phen});
+        if (imuRows.length % 25 === 0){ imuLog.textContent = `n=${imuRows.length} last: `+JSON.stringify(phen); }
+      };
+      window.addEventListener('devicemotion', imuHandler);
+      imuStartBtn.disabled=true; imuStopBtn.disabled=false; imuExportBtn.disabled=true;
+    }catch(err){ alert('IMU error: '+err.message); }
+  };
+  imuStopBtn.onclick = ()=>{ imuRunning=false; window.removeEventListener('devicemotion', imuHandler); imuStopBtn.disabled=true; imuStartBtn.disabled=false; imuExportBtn.disabled = imuRows.length===0; };
+  imuExportBtn.onclick = ()=> downloadCSV(imuRows, `cpl_imu_drift_${new Date().toISOString().slice(0,19)}.csv`);
+
+  // ---------- ② AUDIO CLOCK DRIFT ----------
+  const audRows=[]; let ac=null; let audTimer=null; let t0p=0; let t0a=0; const audLog=document.getElementById('audLog');
+  const audStart=document.getElementById('audStart'); const audStop=document.getElementById('audStop'); const audExport=document.getElementById('audExport');
+  audStart.onclick = ()=>{
+    try{
+      ac = new (window.AudioContext || window.webkitAudioContext)({ latencyHint:'playback' });
+      const osc = ac.createOscillator(); osc.frequency.value = 440; osc.connect(ac.destination); osc.start();
+      audRows.length=0; audLog.textContent='';
+      t0p = performance.now(); t0a = ac.currentTime;
+      audTimer = setInterval(()=>{
+        const t = Date.now();
+        const dp = performance.now() - t0p; // ms
+        const da = (ac.currentTime - t0a) * 1000.0; // ms
+        const cond = { sampleRate: ac.sampleRate, hidden: document.hidden || false };
+        const phen = { perf_ms: dp, audio_ms: da, drift_ms: (da - dp) };
+        audRows.push({t, id:'AUDIO_VS_PERF', cond, phen});
+        if (audRows.length % 10 === 0){ audLog.textContent = `n=${audRows.length} drift_ms≈`+phen.drift_ms.toFixed(3); }
+      }, 200);
+      audStart.disabled=true; audStop.disabled=false; audExport.disabled=true;
+    }catch(err){ alert('Audio error: '+err.message); }
+  };
+  audStop.onclick = ()=>{ if (audTimer) clearInterval(audTimer); if (ac) ac.close(); audStop.disabled=true; audStart.disabled=false; audExport.disabled = audRows.length===0; };
+  audExport.onclick = ()=> downloadCSV(audRows, `cpl_audio_drift_${new Date().toISOString().slice(0,19)}.csv`);
+
+  // ---------- ③ HTTP TIME OFFSET (NTP-like) ----------
+  const ntpRows=[]; let ntpTimer=null; const ntpLog=document.getElementById('ntpLog');
+  const ntpStart=document.getElementById('ntpStart'); const ntpStop=document.getElementById('ntpStop'); const ntpExport=document.getElementById('ntpExport');
+  async function fetchServerTime(){
+    const t0 = performance.now();
+    const st = Date.now();
+    const resp = await fetch('https://worldtimeapi.org/api/ip', {cache:'no-store'});
+    const text = await resp.text();
+    const t1 = performance.now();
+    let serverMs = null;
+    try{
+      const js = JSON.parse(text); // js.datetime e.g., "2025-09-27T07:35:29.123456+00:00"
+      serverMs = Date.parse(js.utc_datetime || js.datetime);
+    }catch(e){ /* fallback parse header */
+      const dateHdr = resp.headers.get('Date');
+      if (dateHdr) serverMs = Date.parse(dateHdr);
+    }
+    const rtt = t1 - t0; // ms
+    const localEstAtServer = st + rtt/2;
+    const offset = serverMs ? (serverMs - localEstAtServer) : null; // ms
+    return {rtt, serverMs, offset};
+  }
+  ntpStart.onclick = ()=>{
+    ntpRows.length=0; ntpLog.textContent='';
+    ntpTimer = setInterval(async ()=>{
+      try{
+        const t = Date.now();
+        const {rtt, serverMs, offset} = await fetchServerTime();
+        const downlink = (navigator.connection && navigator.connection.downlink) ? navigator.connection.downlink : null;
+        const cond = { rtt_ms: rtt, downlink_mbps: downlink };
+        const phen = { server_ms: serverMs, offset_ms: offset };
+        ntpRows.push({t, id:'HTTP_TIME_OFFSET', cond, phen});
+        if (ntpRows.length % 3 === 0){ ntpLog.textContent = `n=${ntpRows.length} offset_ms≈`+(offset!==null? offset.toFixed(1):'NA')+` rtt=`+rtt.toFixed(1); }
+      }catch(err){ ntpLog.textContent = 'poll error: '+err.message; }
+    }, 3000);
+    ntpStart.disabled=true; ntpStop.disabled=false; ntpExport.disabled=true;
+  };
+  ntpStop.onclick = ()=>{ clearInterval(ntpTimer); ntpStop.disabled=true; ntpStart.disabled=false; ntpExport.disabled = ntpRows.length===0; };
+  ntpExport.onclick = ()=> downloadCSV(ntpRows, `cpl_ntp_offset_${new Date().toISOString().slice(0,19)}.csv`);
+  </script></body>
+</html>
