@@ -1,0 +1,86 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HTTP Time Offset (NTP-like) — Network ΔS</title>
+<style>
+ body{font-family:ui-sans-serif;margin:0;padding:24px;background:#0b1020;color:#e7ecff}
+ .card{background:#121734;border:1px solid #1f2752;border-radius:16px;padding:16px;max-width:880px;margin:auto}
+ .row{display:flex;gap:12px;flex-wrap:wrap}
+ button{background:#2a60ff;color:#fff;border:none;border-radius:12px;padding:10px 14px;cursor:pointer;font-weight:600}
+ button.secondary{background:#263155}button:disabled{opacity:.6}
+ .mono{font-family:ui-monospace,Menlo,Consolas,monospace}
+ .log{white-space:pre-wrap;background:#0f1430;border:1px dashed #2a335e;border-radius:12px;padding:10px;height:200px;overflow:auto}
+</style></head><body>
+<div class="card">
+  <h3>③ HTTP Time Offset (NTP-like) — <span class="mono">Network ΔS</span></h3>
+  <p class="mono" style="opacity:.85">ΔS: { rtt_ms, downlink } → Phenomenon: offset drift (ms). Fit tuyến tính: slope (ms/s) → ppm.</p>
+  <div class="row">
+    <button id="start">Start Poll</button>
+    <button id="stop" class="secondary" disabled>Stop</button>
+    <button id="export" class="secondary" disabled>Export CSV</button>
+  </div>
+  <div id="summary" class="mono" style="margin:8px 0;min-height:24px"></div>
+  <div id="log" class="log mono"></div>
+</div>
+
+<script>
+// ---- utils ----
+function linfit(xs,ys){const n=xs.length;if(n<2) return {m:NaN,b:NaN};
+ let sx=0,sy=0,sxx=0,sxy=0; for(let i=0;i<n;i++){const x=xs[i],y=ys[i]; sx+=x; sy+=y; sxx+=x*x; sxy+=x*y;}
+ const d=n*sxx - sx*sx; if(!d) return {m:NaN,b:NaN};
+ const m=(n*sxy - sx*sy)/d; const b=(sy - m*sx)/n; return {m,b};}
+function csvEscape(v){ if(v==null) return ""; const s=(typeof v==="string")? v : JSON.stringify(v); return '"'+s.replaceAll('"','""')+'"'; }
+function downloadCSV(rows,name){
+  const h="epoch_ms,test_id,cond_json,phenomenon_json\n";
+  const b=rows.map(r=>[r.t,r.id,csvEscape(r.cond),csvEscape(r.phen)].join(',')).join('\n');
+  const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([h+b],{type:'text/csv'})); a.download=name; a.click(); URL.revokeObjectURL(a.href);
+}
+// ---- state ----
+const rows=[]; let timer=null;
+const sumEl=document.getElementById('summary'), logEl=document.getElementById('log');
+const btnS=start, btnT=stop, btnX=export;
+
+async function fetchServerTime(){
+  const t0=performance.now(); const st=Date.now();
+  const resp=await fetch('https://worldtimeapi.org/api/ip',{cache:'no-store'});
+  const txt=await resp.text(); const t1=performance.now();
+  let serverMs=null;
+  try{ const js=JSON.parse(txt); serverMs=Date.parse(js.utc_datetime || js.datetime); }
+  catch(_){ const hdr=resp.headers.get('Date'); if(hdr) serverMs=Date.parse(hdr); }
+  const rtt=t1 - t0; const localAtServer = st + rtt/2; const offset = serverMs? (serverMs - localAtServer) : null;
+  return {rtt, serverMs, offset};
+}
+
+btnS.onclick=()=>{
+  rows.length=0; logEl.textContent='Polling… keep tab in foreground. Aim 10–15 minutes for a clean slope.';
+  timer=setInterval(async ()=>{
+    try{
+      const t=Date.now();
+      const {rtt, serverMs, offset}=await fetchServerTime();
+      const downlink = (navigator.connection && navigator.connection.downlink) ? navigator.connection.downlink : null;
+      const cond={ rtt_ms:rtt, downlink_mbps:downlink };
+      const phen={ server_ms:serverMs, offset_ms:offset };
+      rows.push({t, id:'HTTP_TIME_OFFSET', cond, phen });
+
+      if(rows.length>=6 && rows.length%3===0){
+        const t0=rows[0].t;
+        const xs=rows.map(r => (r.t - t0)/1000);              // seconds
+        const ys=rows.map(r => (r.phen.offset_ms ?? NaN));    // ms
+        const valid = ys.every(v => Number.isFinite(v));
+        if(valid){
+          const f=linfit(xs,ys); const msps=f.m; const ppm=(msps/1000)*1e6;
+          sumEl.textContent=`drift=${msps.toFixed(6)} ms/s  |  ppm=${ppm.toFixed(2)}  |  n=${rows.length}`;
+        }
+        const last = ys[ys.length-1]; 
+        logEl.textContent=`n=${rows.length}  offset_ms≈${Number.isFinite(last)? last.toFixed(1):'NA'}  rtt=${rtt.toFixed(1)} ms`;
+      }
+    }catch(e){ logEl.textContent='poll error: '+e.message; }
+  }, 3000);
+  btnS.disabled=true; btnT.disabled=false; btnX.disabled=true;
+};
+
+btnT.onclick=()=>{ clearInterval(timer); btnT.disabled=true; btnS.disabled=false; btnX.disabled=(rows.length===0);
+  logEl.textContent+='\nStopped. You can export CSV.'; };
+
+btnX.onclick=()=> downloadCSV(rows, `cpl_ntp_offset_${new Date().toISOString().slice(0,19)}.csv`);
+</script>
+</body></html>
