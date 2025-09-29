@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CPL/ΔS–Gradient Bench Pack • IMU • Audio • HTTP</title>
+  <style>
+    :root{--bg:#0b1020;--fg:#e7ecff;--card:#121734;--stroke:#1f2752;--muted:#a9b7ff;--accent:#2a60ff}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
+    h1{font-size:24px;margin:18px auto 10px;max-width:1100px;padding:0 16px}
+    .grid{display:grid;grid-template-columns:1fr;gap:16px;max-width:1100px;margin:0 auto 40px;padding:0 16px}
+    @media(min-width:900px){.grid{grid-template-columns:repeat(3,1fr)}}
+    .card{background:var(--card);border:1px solid var(--stroke);border-radius:16px;padding:16px;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+    h2{font-size:18px;margin:0 0 6px}
+    .mono{font-family:ui-monospace,Menlo,Consolas,monospace}
+    .pill{display:inline-block;background:#0f1a3d;border:1px solid #263155;border-radius:999px;padding:3px 8px;font-size:12px}
+    .row{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0}
+    button{background:var(--accent);color:#fff;border:none;border-radius:12px;padding:10px 14px;font-weight:700;cursor:pointer}
+    button.secondary{background:#263155}
+    button:disabled{opacity:.6;cursor:not-allowed}
+    .log{background:#0f1430;border:1px dashed #2a335e;border-radius:12px;padding:10px;height:190px;overflow:auto}
+    .kv{display:grid;grid-template-columns:auto 1fr;gap:6px;font-size:12px;opacity:.9}
+    label{font-size:12px;opacity:.9}
+    input[type="number"]{width:92px;border-radius:8px;border:1px solid #2a335e;background:#0f1430;color:var(--fg);padding:6px 8px}
+    canvas{display:block}
+  </style>
+</head>
+<body>
+  <h1>ΔS–Gradient Bench Pack • Lifecycle Stages (Formation → Equilibrium → Degradation → Dissolution)</h1>
+  <div class="grid">
+    <!-- QA/Regression Guard Panel -->
+    <section class="card" id="qaCard" style="grid-column:1/-1">
+      <h2>QA / Regression Guard</h2>
+      <p class="mono">Tự kiểm tra nhanh sau khi vá mã để đảm bảo không mất thành phần.</p>
+      <div class="row">
+        <button id="qaRun">Run Self‑Check</button>
+        <button id="qaSave" class="secondary">Download Current HTML</button>
+      </div>
+      <pre id="qaReport" class="log mono" style="height:120px"></pre>
+    </section>
+    <!-- ① IMU -->
+    <section class="card" id="imuCard">
+      <h2>① IMU Zero-Drift (Gyro Bias) — <span class="pill">Stationary</span></h2>
+      <p class="mono">ΔS<sub>imu</sub> = ω<sub>z</sub> − median<sub>w</sub>(ω<sub>z</sub>) → ∇ΔS → phase.</p>
+      <div class="row">
+        <button id="imuStart">Start</button>
+        <button id="imuStop" class="secondary" disabled>Stop</button>
+        <button id="imuExportRaw" class="secondary" disabled>Export Raw CSV</button>
+        <button id="imuExportGrad" class="secondary" disabled>Export Gradient CSV</button>
+      </div>
+      <div class="row">
+        <label>win detrend</label><input type="number" id="imuWinDetr" value="101" step="2" min="5"/>
+        <label>win ∇ΔS</label><input type="number" id="imuWinGrad" value="21" step="2" min="5"/>
+        <label>τ₀</label><input type="number" id="imuTau0" placeholder="auto"/>
+        <label>τ<sub>+</sub></label><input type="number" id="imuTauP" placeholder="auto"/>
+        <label>τ<sub>−</sub></label><input type="number" id="imuTauM" placeholder="auto"/>
+      </div>
+      <div class="mono" id="imuSummary" style="min-height:22px"></div>
+      <canvas id="imuSpark" width="600" height="80" style="width:100%;height:80px;background:#0f1430;border-radius:8px;margin:6px 0"></canvas>
+      <div class="log mono" id="imuLog"></div>
+    </section>
+    <!-- ② Audio -->
+    <section class="card" id="audCard">
+      <h2>② Audio Clock vs perf.now — <span class="pill">Dual-clock drift</span></h2>
+      <p class="mono">ΔS<sub>clk</sub> = (AudioContext.currentTime − perf.now) (ms) → detrend → ∇ΔS → phase.</p>
+      <div class="row">
+        <button id="audStart">Start</button>
+        <button id="audStop" class="secondary" disabled>Stop</button>
+        <button id="audExportRaw" class="secondary" disabled>Export Raw CSV</button>
+        <button id="audExportGrad" class="secondary" disabled>Export Gradient CSV</button>
+      </div>
+      <div class="row">
+        <label>win detrend</label><input type="number" id="audWinDetr" value="201" step="2" min="5"/>
+        <label>win ∇ΔS</label><input type="number" id="audWinGrad" value="21" step="2" min="5"/>
+        <label>τ₀</label><input type="number" id="audTau0" placeholder="auto"/>
+        <label>τ<sub>+</sub></label><input type="number" id="audTauP" placeholder="auto"/>
+        <label>τ<sub>−</sub></label><input type="number" id="audTauM" placeholder="auto"/>
+      </div>
+      <div class="mono" id="audSummary" style="min-height:22px"></div>
+      <canvas id="audSpark" width="600" height="80" style="width:100%;height:80px;background:#0f1430;border-radius:8px;margin:6px 0"></canvas>
+      <div class="log mono" id="audLog"></div>
+    </section>
+    <!-- ③ HTTP -->
+    <section class="card" id="httpCard">
+      <h2>③ HTTP Time Offset (NTP-like) — <span class="pill">Network ΔS</span></h2>
+      <p class="mono">ΔS<sub>net</sub> = offset<sub>ms</sub> − median<sub>w</sub>(offset) → ∇ΔS → phase. WLS slope ⇒ ppm.</p>
+      <div class="row">
+        <button id="httpStart">Start</button>
+        <button id="httpStop" class="secondary" disabled>Stop</button>
+        <button id="httpExportRaw" class="secondary" disabled>Export Raw CSV</button>
+        <button id="httpExportGrad" class="secondary" disabled>Export Gradient CSV</button>
+      </div>
+      <div class="row">
+        <label>win detrend</label><input type="number" id="httpWinDetr" value="101" step="2" min="5"/>
+        <label>win ∇ΔS</label><input type="number" id="httpWinGrad" value="21" step="2" min="5"/>
+        <label>τ₀</label><input type="number" id="httpTau0" placeholder="auto"/>
+        <label>τ<sub>+</sub></label><input type="number" id="httpTauP" placeholder="auto"/>
+        <label>τ<sub>−</sub></label><input type="number" id="httpTauM" placeholder="auto"/>
+      </div>
+      <div class="mono" id="httpSummary" style="min-height:22px"></div>
+      <canvas id="httpSpark" width="600" height="80" style="width:100%;height:80px;background:#0f1430;border-radius:8px;margin:6px 0"></canvas>
+      <div class="log mono" id="httpLog"></div>
+    </section>
+  </div>
+
+<script>
+// ---- Hedged endpoints (HTTP time) ----
+const TIME_ENDPOINTS = [
+  { id:'wta', url:'https://worldtimeapi.org/api/ip',
+    parse: (text) => { const j = JSON.parse(text); return Date.parse(j.utc_datetime || j.datetime); } },
+  { id:'httpbin', url:'https://httpbin.org/anything',
+    parse: (_, resp) => Date.parse(resp.headers.get('Date')) },
+  { id:'cloudflare', url:'https://1.1.1.1/cdn-cgi/trace',
+    parse: (text) => { const m = text.match(/^ts=(\d+)/m); return m ? (Number(m[1]) * 1000) : NaN; } },
+].filter(Boolean);
+function fetchWithTimeout(url, opts={}, ms=6000){
+  const ctrl = new AbortController();
+  const id = setTimeout(()=>ctrl.abort(), ms);
+  return fetch(url, {...opts, signal: ctrl.signal}).finally(()=>clearTimeout(id));
+}
+async function sampleServerTimeHedged(){
+  const t0 = performance.now();
+  const st = Date.now();
+  const attempts = TIME_ENDPOINTS.map(async ep => {
+    try{
+      const resp = await fetchWithTimeout(ep.url, {cache:'no-store'}, 6000);
+      const text = await resp.text();
+      const t1 = performance.now();
+      let serverMs = NaN; try{ serverMs = ep.parse(text, resp); }catch(_){ }
+      const rtt = t1 - t0;
+      const localAtServer = st + rtt/2;
+      const offset = Number.isFinite(serverMs) ? (serverMs - localAtServer) : NaN;
+      return {ok:true, ep:ep.id, rtt, serverMs, offset};
+    }catch(e){ return {ok:false, ep:ep.id, rtt:NaN, serverMs:NaN, offset:NaN, err:e?.name||'err'}; }
+  });
+  const results = await Promise.all(attempts);
+  const valids = results.filter(r => r.ok && Number.isFinite(r.rtt) && Number.isFinite(r.offset));
+  const rtts = valids.map(r=>r.rtt).sort((a,b)=>a-b);
+  const p90 = rtts.length ? rtts[Math.floor(0.9*rtts.length)] : Infinity;
+  const best = valids.filter(r=>r.rtt<=p90).sort((a,b)=>a.rtt-b.rtt)[0] || results[0];
+  return {results, best};
+}
+// ---- MAD outlier ----
+function rollingMADCheck(val, buf){
+  if(buf.length<30) return false;
+  const med=median(buf);
+  const dev=buf.map(v=>Math.abs(v-med));
+  const mad=median(dev)||1;
+  return Math.abs(val-med) > 3*1.4826*mad;
+}
+
+// ---- Wake Lock helpers (global) ----
+let __wakeRef = null;
+async function acquireWakeLock(){ try{ __wakeRef = await navigator.wakeLock.request('screen'); }catch(_){} }
+async function releaseWakeLock(){ try{ if(__wakeRef) await __wakeRef.release(); __wakeRef = null; }catch(_){} }
+
+// ========= Generic helpers =========
+const nowMs = () => Date.now();
+function csvEscape(v){ if(v==null) return ""; const s=(typeof v==="string")? v: JSON.stringify(v); return '"'+s.replaceAll('"','""')+'"'; }
+function downloadCSV(rows, name){
+  const h="epoch_ms,test_id,cond_json,phenomenon_json\n";
+  const b=rows.map(r=>[r.t,r.id,csvEscape(r.cond),csvEscape(r.phen)].join(',')).join('\n');
+  const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([h+b],{type:'text/csv'})); a.download=name; a.click(); URL.revokeObjectURL(a.href);
+}
+function downloadCSVGradient(rows, enriched, name){
+  const h = "epoch_ms,test_id,cond_json,phenomenon_json,deltaS,grad_deltaS,phase\n";
+  const b = enriched.map(e=>[e.t,e.id,csvEscape(e.cond),csvEscape(e.phen),e.deltaS?.toFixed?.(9)??'',e.grad?.toFixed?.(9)??'',e.phase||''].join(',')).join('\n');
+  const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([h+b],{type:'text/csv'})); a.download=name; a.click(); URL.revokeObjectURL(a.href);
+}
+function median(arr){ const s=[...arr].filter(Number.isFinite).sort((a,b)=>a-b); const n=s.length; if(!n) return NaN; return s[Math.floor(n/2)]; }
+function rollingMedian(arr, win){
+  const n=arr.length, h=Math.floor(win/2);
+  const out=new Array(n).fill(NaN);
+  for(let i=0;i<n;i++){ const a=Math.max(0,i-h), b=Math.min(n,i+h+1); out[i]=median(arr.slice(a,b)); }
+  return out;
+}
+function centeredGradient(y, t, win){
+  const n=y.length, h=Math.floor(win/2);
+  const out=new Array(n).fill(NaN);
+  for(let i=h;i<n-h;i++){ const dy=y[i+h]-y[i-h]; const dt=t[i+h]-t[i-h]; out[i] = (dt!==0)? dy/dt : NaN; }
+  return out;
+}
+function autoThresholds(grad){
+  const g=grad.filter(Number.isFinite).map(Math.abs);
+  if(!g.length){return {tau0:0,taup:0,taum:0}}
+  const p90 = g.sort((a,b)=>a-b)[Math.floor(0.9*g.length)];
+  const tau0 = p90===0? Math.max(1e-12, 0.1*std(grad)) : p90;
+  return {tau0, taup:3*tau0, taum:3*tau0};
+}
+function std(a){
+  const v=a.filter(Number.isFinite);
+  if(!v.length) return 0;
+  const mu=v.reduce((x,y)=>x+y,0)/v.length;
+  const s=v.reduce((x,y)=>x+(y-mu)*(y-mu),0)/v.length;
+  return Math.sqrt(s);
+}
+function classify(g, th){
+  return g.map(val=>{
+    if(!Number.isFinite(val)) return "Equilibrium";
+    if(val>th.taup) return "Formation";
+    if(Math.abs(val)<=th.tau0) return "Equilibrium";
+    if(val<-th.taum) return "Dissolution";
+    if(val<-th.tau0) return "Degradation";
+    return "Equilibrium";
+  });
+}
+function wls(xs, ys, ws){
+  let Sw=0,Sx=0,Sy=0,Sxx=0,Sxy=0;
+  const n=xs.length; if(n<2) return {m:NaN,b:NaN};
+  for(let i=0;i<n;i++){ const w=ws[i]; const x=xs[i]; const y=ys[i]; Sw+=w; Sx+=w*x; Sy+=w*y; Sxx+=w*x*x; Sxy+=w*x*y; }
+  const d=Sw*Sxx - Sx*Sx; if(!d) return {m:NaN,b:NaN};
+  const m=(Sw*Sxy - Sx*Sy)/d; const b=(Sy - m*Sx)/Sw;
+  return {m,b};
+}
+// --- sparkline helper for inline plots ---
+function drawSparkline(canvas, data){
+  if(!canvas) return;
+  const ctx=canvas.getContext('2d');
+  const W=canvas.width, H=canvas.height;
+  ctx.clearRect(0,0,W,H);
+  const vec=data.filter(Number.isFinite);
+  if(!vec.length) return;
+  const lo=Math.min(...vec), hi=Math.max(...vec);
+  const range=(hi-lo)||1;
+  ctx.beginPath();
+  for(let i=0;i<data.length;i++){
+    const x=(i/(data.length-1))*W;
+    const y=H - ((data[i]-lo)/range)*H;
+    if(i) ctx.lineTo(x,y); else ctx.moveTo(x,y);
+  }
+  ctx.lineWidth=1.5; ctx.strokeStyle='#8fa6ff'; ctx.stroke();
+}
+
+// ========= ① IMU =========
+const imu = (()=>{
+  window.__imuReady = true; // Cờ global cho QA Guard
+  const rows=[]; let running=false; let handler=null;
+  const elStart = document.getElementById('imuStart');
+  const elStop  = document.getElementById('imuStop');
+  const elRaw   = document.getElementById('imuExportRaw');
+  const elGrad  = document.getElementById('imuExportGrad');
+  const elSum   = document.getElementById('imuSummary');
+  const elLog   = document.getElementById('imuLog');
+  const winDetr = document.getElementById('imuWinDetr');
+  const winGrad = document.getElementById('imuWinGrad');
+  const tau0I   = document.getElementById('imuTau0');
+  const taupI   = document.getElementById('imuTauP');
+  const taumI   = document.getElementById('imuTauM');
+  const spark   = document.getElementById('imuSpark');
+
+  elStart.onclick = async ()=>{
+    try{
+      await acquireWakeLock();
+      if (typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function'){
+        const resp = await DeviceMotionEvent.requestPermission();
+        if(resp!=='granted') throw new Error('Motion permission denied');
+      }
+      rows.length=0; elLog.textContent=''; elSum.textContent=''; running=true;
+      handler = ev=>{
+        if(!running || !ev.rotationRate) return;
+        const rr=ev.rotationRate;
+        rows.push({t:nowMs(), id:'IMU_GYRO', cond:{hidden:!!document.hidden}, phen:{gamma_dps: rr.gamma||0}});
+        if(rows.length%25===0){
+          elLog.textContent=`n=${rows.length} γ≈${(rr.gamma||0).toFixed(4)} dps`;
+          const t0 = rows[0].t;
+          const t = rows.map(r=> (r.t - t0)/1000 );
+          const sig = rows.map(r=> r.phen.gamma_dps || 0);
+          const wd = Math.max(5, (+winDetr.value|0) || 101);
+          const trend = rollingMedian(sig, wd);
+          const dS = sig.map((v,i)=> v - (Number.isFinite(trend[i])? trend[i] : 0));
+          if (spark) drawSparkline(spark, dS.slice(-300));
+        }
+      };
+      window.addEventListener('devicemotion', handler);
+      elStart.disabled=true; elStop.disabled=false; elRaw.disabled=true; elGrad.disabled=true;
+    }catch(e){
+      elLog.textContent = 'IMU error: '+(e.message||e); console.error(e);
+    }
+  };
+  elStop.onclick = async ()=>{ running=false; window.removeEventListener('devicemotion', handler); await releaseWakeLock(); elStop.disabled=true; elStart.disabled=false; elRaw.disabled = rows.length===0; elGrad.disabled = rows.length===0; };
+  elRaw.onclick = ()=> downloadCSV(rows, `cpl_imu_drift_${new Date().toISOString().slice(0,19)}.csv`);
+  elGrad.onclick = ()=>{
+    const t0 = rows.length? rows[0].t : 0;
+    const t = rows.map(r=> (r.t - t0)/1000 );
+    const sig = rows.map(r=> r.phen.gamma_dps || 0);
+    const wd = Math.max(5, (+winDetr.value|0) || 101);
+    const wg = Math.max(5, (+winGrad.value|0) || 21);
+    const trend = rollingMedian(sig, wd);
+    const dS = sig.map((v,i)=> v - (Number.isFinite(trend[i])? trend[i] : 0));
+    const gS = centeredGradient(dS, t, wg);
+    let th = autoThresholds(gS);
+    const t0v = parseFloat(tau0I.value); const tpv=parseFloat(taupI.value); const tmv=parseFloat(taumI.value);
+    if(Number.isFinite(t0v) && Number.isFinite(tpv) && Number.isFinite(tmv)) th={tau0:t0v,taup:tpv,taum:tmv};
+    const phase = classify(gS, th);
+    const enriched = rows.map((r,i)=> ({...r, deltaS:dS[i], grad:gS[i], phase:phase[i]}));
+    const counts = phase.reduce((m,p)=> (m[p]=(m[p]||0)+1, m), {});
+    if (spark) drawSparkline(spark, dS.slice(-300));
+    elSum.textContent = `τ0=${th.tau0.toExponential(2)} τ+=${th.taup.toExponential(2)} τ−=${th.taum.toExponential(2)} | counts `+JSON.stringify(counts);
+    downloadCSVGradient(rows, enriched, `cpl_imu_drift_gradient_${new Date().toISOString().slice(0,19)}.csv`);
+  };
+})();
+
+// ========= ② Audio =========
+const aud = (()=>{
+  window.__audReady = true; // Cờ global cho QA Guard
+  const rows=[]; let timer=null; let ac=null; let t0p=0; let t0a=0;
+  const elStart = document.getElementById('audStart');
+  const elStop  = document.getElementById('audStop');
+  const elRaw   = document.getElementById('audExportRaw');
+  const elGrad  = document.getElementById('audExportGrad');
+  const elSum   = document.getElementById('audSummary');
+  const elLog   = document.getElementById('audLog');
+  const winDetr = document.getElementById('audWinDetr');
+  const winGrad = document.getElementById('audWinGrad');
+  const tau0I   = document.getElementById('audTau0');
+  const taupI   = document.getElementById('audTauP');
+  const taumI   = document.getElementById('audTauM');
+  const spark   = document.getElementById('audSpark');
+
+  elStart.onclick = async ()=>{
+    try{
+      await acquireWakeLock();
+      ac = new (window.AudioContext||window.webkitAudioContext)({latencyHint:'playback'});
+      const osc = ac.createOscillator(); osc.frequency.value=440; osc.connect(ac.destination); osc.start();
+      rows.length=0; elLog.textContent=''; elSum.textContent='';
+      t0p = performance.now(); t0a = ac.currentTime;
+      timer = setInterval(()=>{
+        const t=nowMs();
+        const dp = performance.now() - t0p; // ms
+        const da = (ac.currentTime - t0a)*1000.0; // ms
+        rows.push({t,id:'AUDIO_VS_PERF',cond:{sr:ac.sampleRate,hidden:!!document.hidden},phen:{perf_ms:dp,audio_ms:da,offset_ms:(da-dp)}});
+        if(rows.length%10===0){
+          elLog.textContent = `n=${rows.length} offset_ms≈${(da-dp).toFixed(3)}`;
+          const t0 = rows[0].t;
+          const t = rows.map(r=> (r.t - t0)/1000 );
+          const sig = rows.map(r=> r.phen.offset_ms || 0);
+          const wd = Math.max(5, (+winDetr.value|0) || 201);
+          const trend = rollingMedian(sig, wd);
+          const dS = sig.map((v,i)=> v - (Number.isFinite(trend[i])? trend[i] : 0));
+          if (spark) drawSparkline(spark, dS.slice(-300));
+        }
+      }, 200);
+      elStart.disabled=true; elStop.disabled=false; elRaw.disabled=true; elGrad.disabled=true;
+    }catch(e){
+      elLog.textContent = 'Audio error: '+(e.message||e); console.error(e);
+    }
+  };
+  elStop.onclick = async ()=>{ if(timer) clearInterval(timer); if(ac) ac.close(); await releaseWakeLock(); elStop.disabled=true; elStart.disabled=false; elRaw.disabled = rows.length===0; elGrad.disabled = rows.length===0; };
+  elRaw.onclick = ()=> downloadCSV(rows, `cpl_audio_drift_${new Date().toISOString().slice(0,19)}.csv`);
+  elGrad.onclick = ()=>{
+    const t0 = rows.length? rows[0].t : 0;
+    const t = rows.map(r=> (r.t - t0)/1000 );
+    const sig = rows.map(r=> r.phen.offset_ms || 0);
+    const wd = Math.max(5, (+winDetr.value|0) || 201);
+    const wg = Math.max(5, (+winGrad.value|0) || 21);
+    const trend = rollingMedian(sig, wd);
+    const dS = sig.map((v,i)=> v - (Number.isFinite(trend[i])? trend[i] : 0));
+    const gS = centeredGradient(dS, t, wg);
+    let th = autoThresholds(gS);
+    const t0v = parseFloat(tau0I.value); const tpv=parseFloat(taupI.value); const tmv=parseFloat(taumI.value);
+    if(Number.isFinite(t0v) && Number.isFinite(tpv) && Number.isFinite(tmv)) th={tau0:t0v,taup:tpv,taum:tmv};
+    const phase = classify(gS, th);
+    const enriched = rows.map((r,i)=> ({...r, deltaS:dS[i], grad:gS[i], phase:phase[i]}));
+    const counts = phase.reduce((m,p)=> (m[p]=(m[p]||0)+1, m), {});
+    if (spark) drawSparkline(spark, dS.slice(-300));
+    const xs = t; const ys = sig; const ws = rows.map(_=>1);
+    const fit = wls(xs, ys, ws); const ppm = (fit.m/1000)*1e6;
+    elSum.textContent = `slope=${fit.m.toFixed(6)} ms/s  ppm=${ppm.toFixed(2)}  | τ0=${th.tau0.toExponential(2)} | counts `+JSON.stringify(counts);
+    downloadCSVGradient(rows, enriched, `cpl_audio_drift_gradient_${new Date().toISOString().slice(0,19)}.csv`);
+  };
+})();
+
+// ========= ③ HTTP =========
+const http = (()=>{
+  window.__httpReady = true; // Cờ global cho QA Guard
+  const rows=[]; let timer=null; let hiddenCount=0; const histOffsets=[];
+  const elStart = document.getElementById('httpStart');
+  const elStop  = document.getElementById('httpStop');
+  const elRaw   = document.getElementById('httpExportRaw');
+  const elGrad  = document.getElementById('httpExportGrad');
+  const elSum   = document.getElementById('httpSummary');
+  const elLog   = document.getElementById('httpLog');
+  const winDetr = document.getElementById('httpWinDetr');
+  const winGrad = document.getElementById('httpWinGrad');
+  const tau0I   = document.getElementById('httpTau0');
+  const taupI   = document.getElementById('httpTauP');
+  const taumI   = document.getElementById('httpTauM');
+  const spark   = document.getElementById('httpSpark');
+
+  document.addEventListener('visibilitychange', ()=>{ if(document.hidden) hiddenCount++; });
+
+  elStart.onclick = async ()=>{
+    rows.length=0; histOffsets.length=0; elLog.textContent=''; elSum.textContent='';
+    await acquireWakeLock();
+    timer = setInterval(async ()=>{
+      let results = [];
+      try{
+        const tEpoch = Date.now();
+        const result = await sampleServerTimeHedged();
+        results = result.results;
+        const best = result.best;
+        const rtts = results.filter(r=>r.ok && Number.isFinite(r.rtt)).map(r=>r.rtt).sort((a,b)=>a-b);
+        const p90  = rtts.length ? rtts[Math.floor(0.9*rtts.length)] : Infinity;
+        const drop = !best.ok ? { reason: 'no valid response' } : 
+                     !Number.isFinite(best.offset) ? { reason: 'invalid offset' } :
+                     best.rtt>p90 ? { reason: 'RTT > P90' } :
+                     rollingMADCheck(best.offset, histOffsets) ? { reason: 'MAD outlier' } : null;
+        if(!drop){
+          histOffsets.push(best.offset); if(histOffsets.length>600) histOffsets.shift();
+          rows.push({ t:tEpoch, id:'HTTP_TIME_OFFSET', cond:{ rtt_ms:best.rtt, endpoint:best.ep, hidden:!!document.hidden, hidden_count:hiddenCount }, phen:{ server_ms:best.serverMs, offset_ms:best.offset } });
+          if(rows.length%3===0){
+            elLog.textContent = `n=${rows.length} offset_ms≈${best.offset.toFixed(1)} rtt=${best.rtt.toFixed(1)} ep=${best.ep}`;
+            const t0 = rows[0].t;
+            const t = rows.map(r=> (r.t - t0)/1000 );
+            const sig = rows.map(r=> r.phen.offset_ms || 0);
+            const wd = Math.max(5, (+winDetr.value|0) || 101);
+            const trend = rollingMedian(sig, wd);
+            const dS = sig.map((v,i)=> v - (Number.isFinite(trend[i])? trend[i] : 0));
+            if (spark) drawSparkline(spark, dS.slice(-300));
+          }
+        } else {
+          elLog.textContent += `\nDropped sample: ${drop.reason}`;
+        }
+      }catch(e){
+        elLog.textContent += `\nHTTP poll error: ${e.message || e.name || 'unknown'}`;
+        if (results && Array.isArray(results)) {
+          elLog.textContent += ' - endpoints: ' + results.map(r=>r.ep + (r.ok ? ' OK' : ' FAIL: ' + r.err)).join(', ');
+        }
+        console.error(e);
+      }
+    }, 3000);
+    elStart.disabled=true; elStop.disabled=false; elRaw.disabled=true; elGrad.disabled=true;
+  };
+
+  elStop.onclick = async ()=>{ if(timer) clearInterval(timer); await releaseWakeLock(); elStop.disabled=true; elStart.disabled=false; elRaw.disabled = rows.length===0; elGrad.disabled = rows.length===0; };
+  elRaw.onclick = ()=> downloadCSV(rows, `cpl_ntp_offset_${new Date().toISOString().slice(0,19)}.csv`);
+  elGrad.onclick = ()=>{
+    const t0 = rows.length? rows[0].t : 0;
+    const t = rows.map(r=> (r.t - t0)/1000 );
+    const sig = rows.map(r=> r.phen.offset_ms || 0);
+    const wd = Math.max(5, (+winDetr.value|0) || 101);
+    const wg = Math.max(5, (+winGrad.value|0) || 21);
+    const trend = rollingMedian(sig, wd);
+    const dS = sig.map((v,i)=> v - (Number.isFinite(trend[i])? trend[i] : 0));
+    const gS = centeredGradient(dS, t, wg);
+    let th = autoThresholds(gS);
+    const t0v = parseFloat(tau0I.value); const tpv=parseFloat(taupI.value); const tmv=parseFloat(taumI.value);
+    if(Number.isFinite(t0v) && Number.isFinite(tpv) && Number.isFinite(tmv)) th={tau0:t0v,taup:tpv,taum:tmv};
+    const phase = classify(gS, th);
+    const enriched = rows.map((r,i)=> ({...r, deltaS:dS[i], grad:gS[i], phase:phase[i]}));
+    const counts = phase.reduce((m,p)=> (m[p]=(m[p]||0)+1, m), {});
+    if (spark) drawSparkline(spark, dS.slice(-300));
+    const xs = t; const ys = sig; const ws = rows.map(r=>{ const rt=r.cond?.rtt_ms; return 1/Math.max(1, (rt||1)*(rt||1)); });
+    const fit = wls(xs, ys, ws); const ppm = (fit.m/1000)*1e6;
+    elSum.textContent = `slope=${Number.isFinite(fit.m)? fit.m.toFixed(6):'NaN'} ms/s | ppm=${Number.isFinite(ppm)? ppm.toFixed(2):'NaN'} | τ0=${th.tau0.toExponential(2)} | counts `+JSON.stringify(counts);
+    downloadCSVGradient(rows, enriched, `cpl_ntp_offset_gradient_${new Date().toISOString().slice(0,19)}.csv`);
+  };
+})();
+
+// ===== QA / Regression Guard =====
+(function(){
+  const btnRun = document.getElementById('qaRun');
+  const btnSave= document.getElementById('qaSave');
+  const out    = document.getElementById('qaReport');
+  function has(id){ return !!document.getElementById(id); }
+  function check(){
+    const issues = [];
+    // 1) Modules present (check global flags)
+    if(!window.__imuReady) issues.push('IMU module missing');
+    if(!window.__audReady) issues.push('Audio module missing');
+    if(!window.__httpReady) issues.push('HTTP module missing');
+    // 2) UI elements
+    ['imuCard','imuStart','imuStop','imuExportRaw','imuExportGrad','imuSpark',
+     'audCard','audStart','audStop','audExportRaw','audExportGrad','audSpark',
+     'httpCard','httpStart','httpStop','httpExportRaw','httpExportGrad','httpSpark']
+      .forEach(id=>{ if(!has(id)) issues.push('Missing element: '+id); });
+    // 3) Endpoints & helpers
+    try{
+      if(!Array.isArray(TIME_ENDPOINTS) || TIME_ENDPOINTS.length<3) issues.push('TIME_ENDPOINTS not hedged (expected ≥3)');
+    }catch(_){ issues.push('TIME_ENDPOINTS undefined'); }
+    if(typeof rollingMedian!=='function') issues.push('rollingMedian missing');
+    if(typeof centeredGradient!=='function') issues.push('centeredGradient missing');
+    if(typeof drawSparkline!=='function') issues.push('drawSparkline missing');
+    if(typeof rollingMADCheck!=='function') issues.push('rollingMADCheck missing');
+    if(typeof sampleServerTimeHedged!=='function') issues.push('sampleServerTimeHedged missing');
+    // 4) WakeLock
+    if(typeof acquireWakeLock!=='function' || typeof releaseWakeLock!=='function') issues.push('WakeLock helpers missing');
+    // 5) Realtime logic (dummy test)
+    try {
+      const testCanvas = document.createElement('canvas'); testCanvas.width=100; testCanvas.height=50;
+      drawSparkline(testCanvas, [0,1,2,1,0]);
+      if(testCanvas.getContext('2d').getImageData(0,0,1,1).data.every(v=>v===0)) issues.push('drawSparkline not drawing (realtime failure)');
+    } catch(e){ issues.push('Realtime sparkline test failed: '+e.message); }
+    // Render
+    out.textContent = issues.length? ('Issues:\n - '+issues.join('\n - ')) : 'OK ✅ No issues detected.';
+  }
+  function downloadHTML(){
+    const html = '<!DOCTYPE html>\n'+document.documentElement.outerHTML;
+    const a=document.createElement('a');
+    a.href=URL.createObjectURL(new Blob([html],{type:'text/html'}));
+    a.download='S24_DeltaS_Gradient_Pack.html'; a.click(); URL.revokeObjectURL(a.href);
+  }
+  if(btnRun) btnRun.onclick = check;
+  if(btnSave) btnSave.onclick = downloadHTML;
+})();
+</script>
+</body>
+</html>
