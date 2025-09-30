@@ -1,0 +1,337 @@
+<!DOCTYPE html><html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QR Chấm Công – Cafe S24</title>
+  <meta name="theme-color" content="#0ea5e9" />
+  <style>
+    :root{--bg:#0b1220;--card:#0f172a;--muted:#94a3b8;--brand:#0ea5e9;--ok:#22c55e;--err:#ef4444}
+    *{box-sizing:border-box}body{margin:0;font-family:ui-sans-serif,system-ui,Segoe UI,Roboto;background:#0b1220;color:#e5e7eb}
+    header{position:sticky;top:0;background:rgba(10,15,28,.7);backdrop-filter:saturate(150%) blur(8px);border-bottom:1px solid #1f2937;z-index:50}
+    .wrap{max-width:980px;margin:0 auto;padding:16px}
+    h1{margin:8px 0 4px;font-size:22px}.sub{color:var(--muted);font-size:13px}
+    .grid{display:grid;gap:14px;grid-template-columns:1fr} @media(min-width:900px){.grid{grid-template-columns:1.1fr .9fr}}
+    .card{background:var(--card);border:1px solid #1e293b;border-radius:16px;padding:16px;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+    .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    button{appearance:none;border:none;border-radius:12px;padding:10px 14px;font-weight:600;background:#111827;color:#e5e7eb;border:1px solid #1f2937;cursor:pointer}
+    button.primary{background:linear-gradient(180deg,#0ea5e9,#0284c7);border:none}
+    button.warn{background:linear-gradient(180deg,#ef4444,#b91c1c);border:none}
+    input,select{background:#0b1220;border:1px solid #203048;border-radius:12px;color:#e5e7eb;padding:10px 12px}
+    label{font-size:12px;color:var(--muted)}
+    .pill{font-size:12px;color:#e2e8f0;background:#0b2b3a;border:1px solid #0e3b4f;border-radius:999px;padding:6px 10px}
+    .qrbox{display:grid;place-items:center;border:1px dashed #334155;border-radius:12px;min-height:260px;background:#0b1220}
+    .muted{color:var(--muted)} .status{font-weight:700}.status.ok{color:var(--ok)}.status.err{color:var(--err)}
+    table{width:100%;border-collapse:collapse;font-size:13px} th,td{border-bottom:1px solid #1f2937;padding:8px 6px;text-align:left}
+    .badge{display:inline-block;padding:.2rem .5rem;border-radius:8px;background:#0b2b3a;border:1px solid #174b63;color:#9bd6ff;font-size:12px}
+    details{border:1px solid #203048;border-radius:12px} details>summary{list-style:none;padding:12px;font-weight:600;cursor:pointer;background:#0b1220;border-radius:12px}
+    details[open]{border-color:#2a4158}
+    .foot{font-size:12px;color:#93a3b8;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .note{font-size:12px;color:#93a3b8}.chip{font-size:11px;color:#9ca3af;border:1px dashed #334155;border-radius:999px;padding:3px 8px}
+    .hidden{display:none}
+  </style>
+  <!-- QR encoder & jsQR fallback -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <script src="https://unpkg.com/jsqr@1.4.0/dist/jsQR.js" defer></script>
+</head>
+<body>
+  <header><div class="wrap">
+    <h1>QR Chấm Công – Cafe S24</h1>
+    <div class="sub">Single-file • GitHub Pages (HTTPS) • Camera + Fallback • IndexedDB • Xuất CSV</div>
+  </div></header>
+
+  <main class="wrap" style="padding-top:14px;padding-bottom:60px">
+    <div class="grid">
+      <!-- ADMIN -->
+      <section class="card">
+        <div class="row" style="justify-content:space-between">
+          <div>
+            <div class="pill">Bảng điều khiển quản lý</div>
+            <div class="muted" style="margin-top:6px">Phát QR (token quay vòng), geofence, xuất CSV. *Không cần backend*</div>
+          </div>
+          <div class="row">
+            <label>Mã quản lý</label>
+            <input id="adminPass" type="password" placeholder="nhập mã" style="min-width:160px" />
+            <button class="primary" id="btnLogin">Đăng nhập</button>
+            <button id="btnSetPass">Đặt mật khẩu</button>
+            <button class="warn" id="btnResetPass">Quên mật khẩu</button>
+          </div>
+        </div>
+        <hr style="border-color:#1f2937;margin:14px 0"/>
+
+        <div id="adminPanel" class="hidden">
+          <div class="row" style="gap:18px">
+            <div>
+              <label>Khoá bí mật quán (giữ kín – CHỈ máy phát)</label><br>
+              <input id="secret" placeholder="ví dụ: cafe-s24-secret-001" style="min-width:320px" />
+            </div>
+            <div>
+              <label>Chu kỳ đổi mã</label><br>
+              <select id="period">
+                <option value="60">60 giây</option>
+                <option value="120">120 giây</option>
+                <option value="300">5 phút</option>
+              </select>
+            </div>
+            <div>
+              <label>Vị trí quán (tuỳ chọn)</label><br>
+              <input id="geo" placeholder="lat,lon,radius_m" style="min-width:220px" />
+            </div>
+            <div class="row" style="align-items:flex-end">
+              <button class="primary" id="btnStartQR">Bắt đầu phát QR</button>
+              <button id="btnStopQR">Dừng</button>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top:12px;gap:18px;align-items:flex-start">
+            <div style="flex:1">
+              <div class="qrbox"><div id="qrBox"></div></div>
+              <div class="foot">
+                <span class="chip">Token: <span id="tokenPreview" class="muted">—</span></span>
+                <span class="chip">Cập nhật: <span id="tick" class="muted">—</span></span>
+              </div>
+            </div>
+            <div style="flex:1">
+              <details><summary>Tiện ích</summary>
+                <div style="padding:12px">
+                  <div class="row" style="gap:8px;align-items:flex-end">
+                    <div><label>Mã nhân viên nhanh</label><br><input id="quickStaff" placeholder="VD: NV001"/></div>
+                    <button id="btnQuick">Ghi công thử</button>
+                  </div>
+                  <div class="row" style="gap:8px;margin-top:6px">
+                    <button id="btnCSV">Xuất CSV</button>
+                    <button class="warn" id="btnClear">Xoá toàn bộ dữ liệu máy</button>
+                  </div>
+                  <p class="note" style="margin-top:8px">Dữ liệu lưu cục bộ (IndexedDB). Có thể đồng bộ lên server sau.</p>
+                </div>
+              </details>
+              <div style="margin-top:12px">
+                <div class="badge">Bảng chấm công (máy này)</div>
+                <div id="tableWrap" style="max-height:300px;overflow:auto;margin-top:6px">
+                  <table id="logTbl">
+                    <thead><tr><th>Thời gian</th><th>Mã NV</th><th>Loại</th><th>Token</th><th>GPS</th></tr></thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NHÂN VIÊN -->
+      <section class="card">
+        <div class="pill">Nhân viên quét QR</div>
+        <div class="muted" style="margin-top:6px">Mở camera → quét QR tại quầy → nhập mã NV → ghi nhận cục bộ.</div>
+        <div class="row" style="margin-top:10px;gap:12px">
+          <input id="staffId" placeholder="Mã nhân viên (VD: NV001)" />
+          <select id="kind"><option value="checkin">Vào ca</option><option value="checkout">Ra ca</option></select>
+          <button class="primary" id="btnStartCam">Mở camera & Quét</button>
+          <button id="btnStopCam">Tắt camera</button>
+        </div>
+        <div class="qrbox" style="margin-top:10px">
+          <video id="v" playsinline autoplay muted style="width:100%;max-height:360px;border-radius:12px"></video>
+          <canvas id="frame" class="hidden"></canvas>
+        </div>
+        <div class="row" style="margin-top:8px;justify-content:space-between">
+          <div>Trạng thái: <span id="status" class="status">Chờ quét...</span></div>
+          <div class="muted">Ưu tiên <span class="chip">BarcodeDetector</span> · Fallback <span class="chip">jsQR</span></div>
+        </div>
+      </section>
+    </div>
+
+    <p class="note" style="margin-top:14px">
+      Bảo mật tối thiểu: token quay vòng do máy phát sinh; máy quét chỉ đọc & ghi log (không biết secret).
+      Có thể nâng cấp chữ ký Ed25519/public-key hoặc API verify sau.
+    </p>
+  </main>
+
+  <script>
+  // Toàn bộ logic bọc trong 'load' để chắc chắn jsQR/QRCode (defer) đã sẵn sàng
+  window.addEventListener('load', () => {
+    // ===== IndexedDB =====
+    const DB_NAME='qr_attendance_db_v1', STORE='logs'; let db;
+    function idbOpen(){return new Promise((res,rej)=>{const r=indexedDB.open(DB_NAME,1);
+      r.onupgradeneeded=()=>{const d=r.result;if(!d.objectStoreNames.contains(STORE)) d.createObjectStore(STORE,{keyPath:'id'})};
+      r.onsuccess=()=>{db=r.result;res()}; r.onerror=()=>rej(r.error)
+    })}
+    function idbAdd(o){return new Promise((res,rej)=>{const tx=db.transaction(STORE,'readwrite'); tx.objectStore(STORE).add(o).onsuccess=()=>res(); tx.onerror=()=>rej(tx.error)})}
+    function idbAll(){return new Promise((res,rej)=>{const tx=db.transaction(STORE,'readonly'); const arr=[];
+      tx.objectStore(STORE).openCursor().onsuccess=e=>{const c=e.target.result; if(c){arr.push(c.value); c.continue()} else res(arr)};
+      tx.onerror=()=>rej(tx.error)
+    })}
+    function idbClear(){return new Promise((res,rej)=>{const tx=db.transaction(STORE,'readwrite'); tx.objectStore(STORE).clear().onsuccess=()=>res(); tx.onerror=()=>rej(tx.error)})}
+
+    // ===== Token quay vòng (HMAC-SHA256) – CHỈ máy phát dùng =====
+    function nowEpoch(){return Math.floor(Date.now()/1000)}
+    async function hmacSHA256(keyStr,msg){
+      const enc=new TextEncoder();
+      const key=await crypto.subtle.importKey('raw',enc.encode(keyStr),{name:'HMAC',hash:'SHA-256'},false,['sign']);
+      const sig=await crypto.subtle.sign('HMAC',key,enc.encode(msg));
+      return Array.from(new Uint8Array(sig)).map(b=>b.toString(16).padStart(2,'0')).join('');
+    }
+    async function makeToken(secret,period){
+      const slice=Math.floor(nowEpoch()/period);
+      const payload=`S24Café:${slice}`;
+      const mac=await hmacSHA256(secret,payload);
+      return mac.slice(0,12);
+    }
+
+    // ===== Phát QR =====
+    let loop=null, QR=null;
+    async function startQrLoop(){
+      try{
+        const secret=document.getElementById('secret').value.trim();
+        const period=+document.getElementById('period').value||60;
+        if(!secret){alert('Nhập khoá bí mật quán.');return}
+        if(!QR){QR=new QRCode(document.getElementById('qrBox'),{text:'',width:260,height:260,correctLevel:QRCode.CorrectLevel.M});}
+        await updateQR(secret,period);
+        if(loop) clearInterval(loop);
+        loop=setInterval(()=>updateQR(secret,period),1000);
+      }catch(err){ console.error('startQrLoop error:', err); }
+    }
+    function stopQrLoop(){ if(loop) clearInterval(loop); loop=null; const el=document.getElementById('tick'); if(el) el.textContent='—' }
+    async function updateQR(secret,period){
+      const token=await makeToken(secret,period); const geo=document.getElementById('geo').value.trim();
+      const data={k:'CAFES24',ver:1,token,geo,ts:Date.now()};
+      document.getElementById('tokenPreview').textContent=token;
+      document.getElementById('tick').textContent=new Date().toLocaleTimeString();
+      QR.clear(); QR.makeCode(JSON.stringify(data));
+    }
+
+    // ===== Đăng nhập admin =====
+    function getStoredPass(){const p=localStorage.getItem('ADMIN_PASS'); return (p && p.length>=4)? p : null}
+    function toggleAdmin(){
+      const pass=document.getElementById('adminPass').value.trim();
+      const ok = pass === (getStoredPass() ?? '123456');
+      document.getElementById('adminPanel').classList.toggle('hidden', !ok);
+      if(!ok) alert('Sai mã quản lý. Mặc định: 123456');
+    }
+    function setAdminPass(){
+      const p=prompt('Nhập mật khẩu quản lý mới (≥4 ký tự):','');
+      if(!p||p.trim().length<4){alert('Mật khẩu phải ≥4 ký tự');return}
+      localStorage.setItem('ADMIN_PASS', p.trim()); alert('Đã đặt mật khẩu mới. Hãy đăng nhập lại.');
+    }
+    function resetAdminPass(){localStorage.removeItem('ADMIN_PASS'); alert('Đã reset. Mật khẩu mặc định là 123456')}
+
+    // ===== Quét QR =====
+    let stream=null, detector=null, scanTimer=null;
+    const video=document.getElementById('v');
+    const frame=document.getElementById('frame'); const ctx=frame.getContext('2d');
+
+    function setStatus(msg,isErr=null){
+      const el=document.getElementById('status');
+      el.textContent=msg;
+      if(isErr===true){el.className='status err'}
+      else if(isErr===false){el.className='status ok'}
+      else {el.className='status'}
+    }
+
+    function waitMeta(v){return new Promise(res=>{ if(v.readyState>=1 && v.videoWidth) return res();
+      v.addEventListener('loadedmetadata',()=>res(),{once:true}); })}
+
+    async function startScan(){
+      try{
+        setStatus('Đang mở camera...', null);
+        if(scanTimer){ clearInterval(scanTimer); scanTimer=null; }
+        stream=await navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:'environment'},width:{ideal:1280}}});
+        video.srcObject=stream;
+        await video.play().catch(()=>{});
+        await waitMeta(video);
+
+        detector=('BarcodeDetector' in window)? new BarcodeDetector({formats:['qr_code']}): null;
+        if(detector){ setStatus('Đang quét (BarcodeDetector)...', false); scanTimer=setInterval(scanFrame, 250); }
+        else {
+          if(typeof jsQR!=='function'){ console.warn('jsQR chưa sẵn sàng?'); }
+          setStatus('Thiết bị không hỗ trợ BarcodeDetector → dùng jsQR fallback', null);
+          scanTimer=setInterval(scanFallback, 250);
+        }
+      }catch(e){ console.error(e); setStatus('Không mở được camera: '+(e.message||e.name),true) }
+    }
+
+    async function stopScan(){
+      if(scanTimer) clearInterval(scanTimer); scanTimer=null;
+      if(video.srcObject){video.pause(); video.srcObject.getTracks().forEach(t=>t.stop()); video.srcObject=null;}
+      setStatus('Đã tắt camera.', null);
+    }
+
+    async function scanFrame(){
+      try{
+        const codes=await detector.detect(video);
+        if(codes && codes.length){ handleQRText(codes[0].rawValue); }
+      }catch(e){ /* bỏ qua khung lỗi */ }
+    }
+
+    function scanFallback(){
+      if(!video.videoWidth) return;
+      const w=video.videoWidth, h=video.videoHeight; frame.width=w; frame.height=h;
+      ctx.drawImage(video,0,0,w,h);
+      const img=ctx.getImageData(0,0,w,h);
+      // jsQR có thể chưa nạp nếu không chạy trong 'load' – đã fix ở trên
+      if(typeof jsQR==='function'){
+        const code=jsQR(img.data,w,h,{inversionAttempts:'dontInvert'});
+        if(code&&code.data){ handleQRText(code.data); }
+      }
+    }
+
+    // ===== Geofence & lưu log =====
+    function parseGeo(s){ if(!s) return null; const [lat,lon,rad]=s.split(',').map(x=>+x.trim()); if(isFinite(lat)&&isFinite(lon)&&isFinite(rad)) return {lat,lon,rad}; return null }
+    function haversine(lat1,lon1,lat2,lon2){const R=6371000;const toRad=x=>x*Math.PI/180;const dLat=toRad(lat2-lat1), dLon=toRad(lon2-lon1);
+      const a=Math.sin(dLat/2)**2+Math.cos(toRad(lat1))*Math.cos(toRad(lat2))*Math.sin(dLon/2)**2; return 2*R*Math.asin(Math.sqrt(a))}
+    async function handleQRText(text){
+      let obj=null; try{obj=JSON.parse(text)}catch{setStatus('QR không hợp lệ',true); return}
+      if(obj.k!=='CAFES24'||!obj.token){setStatus('QR sai định dạng',true);return}
+      let gps=''; const fence=parseGeo(obj.geo);
+      if(fence){
+        try{ const p=await new Promise((res,rej)=>navigator.geolocation.getCurrentPosition(res,rej,{enableHighAccuracy:true,timeout:5000}));
+          const lat=p.coords.latitude, lon=p.coords.longitude; const d=haversine(lat,lon,fence.lat,fence.lon);
+          if(d>fence.rad){setStatus('Ngoài phạm vi vị trí quán',true);return}
+          gps=`${lat.toFixed(5)},${lon.toFixed(5)} (d=${Math.round(d)}m)`;
+        }catch{ setStatus('Không lấy được GPS (bỏ qua nếu không yêu cầu).', null) }
+      }
+      const staff=document.getElementById('staffId').value.trim(); if(!staff){setStatus('Nhập mã nhân viên trước khi quét.',true);return}
+      const kind=document.getElementById('kind').value;
+      const rec={id:`${Date.now()}_${Math.random().toString(36).slice(2,7)}`, ts:Date.now(), staff, kind, token:obj.token, gps};
+      await idbAdd(rec); setStatus('Đã ghi nhận '+(kind==='checkin'?'VÀO CA':'RA CA'), false); appendRow(rec);
+    }
+
+    // ===== Bảng & CSV =====
+    function fmtTime(t){const d=new Date(t);return d.toLocaleString()}
+    function appendRow(r){const tb=document.querySelector('#logTbl tbody'); const tr=document.createElement('tr');
+      tr.innerHTML=`<td>${fmtTime(r.ts)}</td><td>${r.staff}</td><td>${r.kind}</td><td>${r.token}</td><td class="muted">${r.gps||''}</td>`; tb.prepend(tr)}
+    async function refreshTable(){const all=await idbAll(); document.querySelector('#logTbl tbody').innerHTML=''; all.sort((a,b)=>b.ts-a.ts).forEach(appendRow)}
+    async function exportCSV(){
+      const all=await idbAll(); const header=['timestamp_iso','epoch_ms','staff_id','type','token','gps'];
+      const rows=all.sort((a,b)=>a.ts-b.ts).map(r=>[new Date(r.ts).toISOString(), r.ts, r.staff, r.kind, r.token, (r.gps||'')]);
+      const csv=[header.join(','), ...rows.map(a=>a.map(x=>`"${String(x).replaceAll('"','""')}"`).join(','))].join('\n');
+      const url=URL.createObjectURL(new Blob([csv],{type:'text/csv'})); const a=document.createElement('a'); a.href=url; a.download='attendance_s24.csv'; a.click(); URL.revokeObjectURL(url);
+    }
+    async function clearAll(){ if(confirm('Xoá toàn bộ dữ liệu trên thiết bị này?')){ await idbClear(); await refreshTable(); }}
+    async function quickSign(){
+      const staff=document.getElementById('quickStaff').value.trim(); if(!staff){alert('Nhập mã nhân viên');return}
+      const token=document.getElementById('tokenPreview').textContent || '(no-token)';
+      const rec={id:`${Date.now()}_${Math.random().toString(36).slice(2,7)}`, ts:Date.now(), staff, kind:'checkin', token, gps:''};
+      await idbAdd(rec); appendRow(rec); setStatus('Đã ghi nhanh 1 bản ghi thử.',false)
+    }
+
+    // ===== Wire UI =====
+    document.getElementById('btnLogin').addEventListener('click', toggleAdmin);
+    document.getElementById('btnSetPass').addEventListener('click', setAdminPass);
+    document.getElementById('btnResetPass').addEventListener('click', resetAdminPass);
+    document.getElementById('btnStartQR').addEventListener('click', startQrLoop);
+    document.getElementById('btnStopQR').addEventListener('click', stopQrLoop);
+    document.getElementById('btnQuick').addEventListener('click', quickSign);
+    document.getElementById('btnCSV').addEventListener('click', exportCSV);
+    document.getElementById('btnClear').addEventListener('click', clearAll);
+    document.getElementById('btnStartCam').addEventListener('click', startScan);
+    document.getElementById('btnStopCam').addEventListener('click', stopScan);
+    document.addEventListener('keydown',e=>{if(e.key==='Enter'&&document.activeElement.id==='adminPass'){toggleAdmin()}});
+
+    // Dừng camera khi tab ẩn
+    document.addEventListener('visibilitychange', ()=>{ if(document.hidden) stopScan(); });
+
+    // Khởi tạo DB + bảng
+    (async function init(){ await idbOpen(); await refreshTable(); })();
+  });
+  </script>
+</body>
+</html>
