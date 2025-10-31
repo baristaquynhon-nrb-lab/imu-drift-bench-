@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SEE-R Reflex Lab | Annex Ω.11 — Reflex Temporal Law</title>
+<style>
+  body {
+    font-family: "Segoe UI", Roboto, sans-serif;
+    background: #0e0e0e;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  header {
+    background: #111;
+    text-align: center;
+    padding: 2.5rem 1rem 1.5rem;
+    border-bottom: 2px solid #d4af37;
+  }
+  h1 { font-size: 1.8rem; color: #d4af37; margin: 0.2rem 0; }
+  h2 { color: #d4af37; }
+  p, li { max-width: 800px; margin: 0.5rem auto; }
+  main { padding: 1rem 2rem; }
+  a {
+    color: #58a6ff;
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+  .file-card {
+    background: #1b1b1b;
+    border: 1px solid #333;
+    border-left: 5px solid #d4af37;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+  }
+  .footer {
+    border-top: 1px solid #333;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  .crc {
+    font-family: monospace;
+    color: #888;
+    font-size: 0.8rem;
+  }
+  .logo {
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #d4af37;
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">SEE-R OS Reflex Laboratory</div>
+  <h1>Annex Ω.11 — Reflex Temporal Law</h1>
+  <p><i>“ΔS generates Time; Reflex defines Existence.”</i></p>
+</header>
+
+<main>
+  <h2>📘 Overview</h2>
+  <p>
+    This repository contains the <b>Annex Ω.11 (Reflex Temporal Law)</b> and its verification suite
+    <b>Ω.11-Test</b> designed for <b>SEE-R Reflex Lab</b> on Samsung S24.
+  </p>
+
+  <h2>📁 Files</h2>
+  <div class="file-card">
+    <b>Annex Ω.11 (Full)</b><br>
+    <a href="Annex_Omega11_Full.pdf" target="_blank">📄 Download Annex_Omega11_Full.pdf</a><br>
+    <small>ΔS–CPL Reflex Temporal Law — Theoretical Model + Phase Analysis</small>
+  </div>
+
+  <div class="file-card">
+    <b>Ω.11-Test Protocol</b><br>
+    <a href="Reflex_Time_Verification_Protocol_Omega11_Test.pdf" target="_blank">📘 Reflex_Time_Verification_Protocol_Omega11_Test.pdf</a><br>
+    <small>Experimental verification protocol for Reflex Time τ = f(ΔS)</small>
+  </div>
+
+  <div class="file-card">
+    <b>Architecture Diagram</b><br>
+    <a href="omega11_test_dual_time_arch.png" target="_blank">🖼️ omega11_test_dual_time_arch.png</a><br>
+    <small>Dual-Time Reflex Architecture (ΔS–CPL vs Physical Clock)</small>
+  </div>
+
+  <div class="file-card">
+    <b>CSV Template</b><br>
+    <a href="omega11_reflex_test_template.csv" target="_blank">📊 omega11_reflex_test_template.csv</a><br>
+    <small>Logger format: timestamp_iso, t_sys_ms, t_audio_ms, ΔS_clk_ms, τ, ε, β, κ</small>
+  </div>
+
+  <div class="file-card">
+    <b>Config File</b><br>
+    <a href="omega11_reflex_test_config.json" target="_blank">⚙️ omega11_reflex_test_config.json</a><br>
+    <small>Experimental parameters: sampling rate, detrend window, model, acceptance criteria</small>
+  </div>
+
+  <h2>⚙️ Runtime Instruction</h2>
+  <p>To verify Reflex Time on S24:</p>
+  <pre style="background:#111;color:#d4af37;padding:1rem;overflow-x:auto;max-width:800px;margin:auto;">
+const audioCtx = new (window.AudioContext||window.webkitAudioContext)({sampleRate:48000});
+const buf=[]; const hz=240;
+setInterval(()=>{
+  const t_sys = performance.now();
+  const t_audio = audioCtx.currentTime*1000;
+  buf.push([new Date().toISOString(), t_sys, t_audio]);
+}, 1000/hz);
+  </pre>
+
+  <p>
+    Log data for 1–24 h, then fit <code>τ = τ₀ + αΔS + β sin(ωΔS)</code>,
+    compute ε = τ – t, and analyze β(t), κ(t), ε(t) phase trajectories.
+  </p>
+
+  <h2>🧪 Expected Outcome</h2>
+  <ul>
+    <li>Emergence of intrinsic <em>reflex rhythm</em> in ΔS and ε.</li>
+    <li>Stable yet adaptive β(t), κ(t) — mirroring biological time oscillations.</li>
+    <li>Bounded ε(t) correlated with system conditions (temperature, load, audio jitter).</li>
+  </ul>
+</main>
+
+<div class="footer">
+  <p>© 2025 Nguyen Ngoc Thi — Independent Researcher</p>
+  <div class="crc">Ω-Seal 2025 | CRC-7: 0x7A ΔS-CPL-Reflex</div>
+</div>
+</body>
+</html>
