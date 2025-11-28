@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reflex Realtime v4.1.2 — ΔC ΔS ΔP + NRB-128 GSRA (S24)</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <style>
+    :root { color-scheme: dark; }
+    body {
+      margin: 0;
+      padding: 12px;
+      background: radial-gradient(circle at top, #050816, #000);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #e5f3ff;
+      overflow-x: hidden;
+    }
+    h1 {
+      font-size: 16px;
+      margin: 0 0 4px;
+      text-align: center;
+    }
+    .version {
+      text-align: center;
+      font-size: 11px;
+      color: #4da6ff;
+      margin-bottom: 8px;
+    }
+    #status {
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 8px;
+      color: #a8d1ff;
+      min-height: 18px;
+    }
+    .controls {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+    button {
+      border-radius: 999px;
+      border: 1px solid rgba(158, 203, 255, 0.6);
+      background: linear-gradient(135deg, #122033, #08121f);
+      color: #e5f3ff;
+      padding: 8px 16px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
+    }
+    button:active {
+      transform: scale(0.96);
+    }
+    button:disabled {
+      opacity: 0.4;
+      cursor: default;
+      box-shadow: none;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .col {
+      flex: 1 1 260px;
+      min-width: 0;
+    }
+    .panel {
+      background: rgba(8, 12, 24, 0.96);
+      border-radius: 12px;
+      padding: 8px;
+      border: 1px solid rgba(120, 180, 255, 0.28);
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.45);
+    }
+    .panel h3 {
+      margin: 0 0 4px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #9ecbff;
+    }
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      max-height: 260px;
+    }
+    video, canvas {
+      width: 100%;
+      max-height: 260px;
+      border-radius: 10px;
+      background: #111;
+      display: block;
+    }
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+    #metrics, #log {
+      font-size: 11px;
+      line-height: 1.4;
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      white-space: pre-wrap;
+    }
+    #log {
+      max-height: 220px;
+      overflow-y: auto;
+      background: #050811;
+      border-radius: 8px;
+      padding: 6px;
+      border: 1px solid rgba(80, 120, 200, 0.35);
+    }
+    @media (max-width: 600px) {
+      body { padding: 8px; }
+      h1 { font-size: 14px; }
+      .col { flex: 1 1 100%; }
+    }
+  </style>
+
+  <!-- MediaPipe Tasks Vision -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/vision_bundle.js"
+          crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1>Reflex Realtime v4.1.2 — ΔC ΔS ΔP + NRB-128 GSRA Capsule</h1>
+  <div class="version">Reflex-OS Kernel · Baseline Auto-Calibration · S24 Optimized</div>
+  <div id="status">[READY] Nhấn START để khởi động Reflex Engine</div>
+
+  <div class="controls">
+    <button id="btnStart">▶ START ENGINE</button>
+    <button id="btnBaseline" disabled>⚙ Auto Baseline (2s)</button>
+    <button id="btnStop" disabled>■ STOP</button>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="panel">
+        <h3>Tier 1 — Perception (Camera)</h3>
+        <div class="video-wrap">
+          <video id="video" autoplay muted playsinline></video>
+          <canvas id="overlay"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="panel">
+        <h3>Tier 2 — Measurement (ΔS)</h3>
+        <div id="metrics">ΔS: (chưa có dữ liệu)</div>
+      </div>
+      <div class="panel" style="margin-top:6px;">
+        <h3>Tier 3+4 — CPL-Gate · Reflex · GSRA Audit</h3>
+        <div id="log">[SYSTEM] Reflex Realtime v4.1.2 log initialized\n</div>
+      </div>
+    </div>
+  </div>
+
+<script type="module">
+/* ============================================================================
+ *  GLOBAL STATE + UTILITIES
+ * ==========================================================================*/
+const video     = document.getElementById("video");
+const overlay   = document.getElementById("overlay");
+const ctx       = overlay.getContext("2d");
+const statusEl  = document.getElementById("status");
+const metricsEl = document.getElementById("metrics");
+const logEl     = document.getElementById("log");
+const btnStart  = document.getElementById("btnStart");
+const btnStop   = document.getElementById("btnStop");
+const btnBase   = document.getElementById("btnBaseline");
+
+let faceLandmarker = null;
+let audioCtx = null;
+let analyser = null;
+let audioData = null;
+let stream = null;
+let running = false;
+let lastNose = null;
+let lastDeltaC = null;   // lưu ΔC frame gần nhất để dùng cho baseline
+let animationId = null;
+
+function log(msg) {
+  const t = new Date().toTimeString().slice(0,8);
+  const line = `[${t}] ${msg}\n`;
+  logEl.textContent = line + logEl.textContent;
+  if (logEl.textContent.length > 6000) {
+    logEl.textContent = logEl.textContent.slice(0, 6000);
+  }
+}
+
+function speak(text) {
+  if (!("speechSynthesis" in window)) return;
+  try {
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = "vi-VN";
+    u.rate = 1.08;
+    u.volume = 0.85;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(u);
+  } catch (e) {
+    console.warn("Speech error:", e);
+  }
+}
+
+// warm-up voices để giảm block
+if (window.speechSynthesis) window.speechSynthesis.getVoices();
+
+/* ============================================================================
+ *  MODULE: BASELINE ENGINE (Module ID: BASELINE_v4.1.2)
+ * ==========================================================================*/
+const BASELINE = {
+  module_id: "BASELINE_v4.1.2",
+  yaw: 0,
+  pitch: 0,
+  motion: 0,
+  rms: 0,
+  brightness: 0,
+  ready: false
+};
+
+/* ============================================================================
+ *  MODULE: ΔC ENGINE (Module ID: DELTAC_v4.1.2)
+ *  - Chuẩn hóa Condition Vector (C) + baseline compensation
+ * ==========================================================================*/
+const DeltaCEngine = {
+  module_id: "DELTAC_v4.1.2",
+  computeDeltaC(raw) {
+    // Raw từ sensor
+    let yaw        = raw.yaw        || 0;
+    let pitch      = raw.pitch      || 0;
+    let roll       = raw.roll       || 0;
+    let motion     = raw.motion     || 0;
+    let rms        = raw.rms        || 0;
+    let brightness = raw.brightness || 0;
+    const ts       = raw.ts || performance.now();
+
+    // baseline compensation
+    if (BASELINE.ready) {
+      yaw        -= BASELINE.yaw;
+      pitch      -= BASELINE.pitch;
+      motion     -= BASELINE.motion;
+      rms        -= BASELINE.rms;
+      brightness -= BASELINE.brightness;
+
+      // clamp lại cho các đại lượng dương
+      motion     = Math.max(motion, 0);
+      rms        = Math.max(rms, 0);
+      brightness = Math.max(brightness, 0);
+    }
+
+    return { yaw, pitch, roll, motion, rms, brightness, ts };
+  }
+};
+
+/* ============================================================================
+ *  MODULE: ΔS ENGINE (Module ID: DELTAS_v4.1.2)
+ *  - Measurement layer: drift / entropy / stability / confidence
+ * ==========================================================================*/
+const DeltaSEngine = (() => {
+  const module_id = "DELTAS_v4.1.2";
+  const config = {
+    epsilon      : 1e-6,
+    driftClamp   : 2.0,
+    entropyClamp : 3.5,
+    w1           : 0.4,  // drift term
+    w2           : 0.3,  // entropy term
+    w3           : 0.3,  // stability term
+    historySize  : 16
+  };
+
+  let prevC = null;
+  const history = [];
+
+  function vecFromC(C) {
+    return [
+      C.yaw || 0,
+      C.pitch || 0,
+      C.roll || 0,
+      C.motion || 0,
+      C.rms || 0,
+      C.brightness || 0
+    ];
+  }
+
+  function computeDrift(current, previous) {
+    if (!previous) return 0;
+    const a = vecFromC(current);
+    const b = vecFromC(previous);
+    let num = 0, den = 0;
+    for (let i=0; i<a.length; i++) {
+      const d = a[i]-b[i];
+      num += d*d;
+      den += b[i]*b[i];
+    }
+    return Math.sqrt(num) / (Math.sqrt(den) + config.epsilon);
+  }
+
+  function computeEntropyFromVector(vec) {
+    let total = 0;
+    const mags = [];
+    for (let i=0; i<vec.length; i++) {
+      const m = Math.abs(vec[i]);
+      mags.push(m);
+      total += m;
+    }
+    if (total <= config.epsilon) return 0;
+    let H = 0;
+    for (let i=0; i<mags.length; i++) {
+      const p = mags[i] / total;
+      if (p > 0) H -= p * Math.log2(p);
+    }
+    return H;
+  }
+
+  function computeEntropyFromHistory() {
+    if (history.length === 0) return 0;
+    const acc = [0,0,0,0,0,0];
+    for (const h of history) {
+      const v = vecFromC(h);
+      for (let i=0; i<acc.length; i++) acc[i] += Math.abs(v[i]);
+    }
+    return computeEntropyFromVector(acc);
+  }
+
+  function computeStability(drift, entropy) {
+    return 1 / (1 + drift + entropy);
+  }
+
+  function clamp(value, min, max) {
+    return Math.min(max, Math.max(min, value));
+  }
+
+  function computeConfidence(drift, entropy, stability) {
+    const dNorm = clamp(drift / config.driftClamp, 0, 1);
+    const eNorm = clamp(entropy / config.entropyClamp, 0, 1);
+    const termD = 1 / (1 + dNorm);
+    const termE = 1 / (1 + eNorm);
+    const termS = stability;
+    return config.w1*termD + config.w2*termE + config.w3*termS;
+  }
+
+  function pushHistory(C) {
+    history.push(C);
+    if (history.length > config.historySize) history.shift();
+  }
+
+  function reset() {
+    prevC = null;
+    history.length = 0;
+  }
+
+  function computeDeltaS(C) {
+    const drift = computeDrift(C, prevC);
+    pushHistory(C);
+    const entropy   = computeEntropyFromHistory();
+    const stability = computeStability(drift, entropy);
+    const confidence= computeConfidence(drift, entropy, stability);
+
+    const meas = {
+      module_id: module_id,
+      drift,
+      entropy,
+      stability,
+      confidence,
+      C,
+      C_prev: prevC
+    };
+    prevC = C;
+    return meas;
+  }
+
+  return { module_id, reset, computeDeltaS };
+})();
+
+/* ============================================================================
+ *  MODULE: ΔP / CPL-GATE (Module ID: DELTAP_v4.1.2)
+ *  - Condition → Phenomenon mapping (NOD/SHAKE/LOUD/STILL)
+ * ==========================================================================*/
+const DeltaPGate = (() => {
+  const module_id = "DELTAP_v4.1.2";
+  const cfg = {
+    minConfidence : 0.55,
+    maxEntropy    : 2.5,
+    nodPitchDelta : 0.035,
+    shakeYawDelta : 0.035,
+    stillThreshold: 0.010,
+    loudThreshold : 0.20,
+    maxYawBias    : 0.6,
+    maxPitchBias  : 0.5
+  };
+
+  function orientationInvalid(C) {
+    if (Math.abs(C.yaw)   > cfg.maxYawBias)  return true;
+    if (Math.abs(C.pitch) > cfg.maxPitchBias)return true;
+    return false;
+  }
+
+  function detectNOD(C, C_prev, drift, stability) {
+    const dp = Math.abs(C.pitch - C_prev.pitch);
+    if (dp < cfg.nodPitchDelta) return null;
+    if (drift < 0.01)           return null;
+    if (stability < 0.30)       return null;
+    return { phenomenon:"NOD", strength:dp };
+  }
+
+  function detectSHAKE(C, C_prev, drift, stability) {
+    const dy = Math.abs(C.yaw - C_prev.yaw);
+    if (dy < cfg.shakeYawDelta) return null;
+    if (drift < 0.01)           return null;
+    if (stability < 0.30)       return null;
+    return { phenomenon:"SHAKE", strength:dy };
+  }
+
+  function detectLOUD(C, drift) {
+    if (C.rms > cfg.loudThreshold && drift < 0.15) {
+      return { phenomenon:"LOUD", strength:C.rms };
+    }
+    return null;
+  }
+
+  function detectSTILL(C, drift, stability) {
+    if (drift < cfg.stillThreshold && stability > 0.40) {
+      return { phenomenon:"STILL", strength:1 - drift };
+    }
+    return null;
+  }
+
+  function computeDeltaP(meas) {
+    const { drift, entropy, stability, confidence, C, C_prev } = meas;
+
+    if (!C_prev)
+      return { module_id, ok:false, reason:"FIRST_FRAME", phenomenon:null };
+
+    if (orientationInvalid(C))
+      return { module_id, ok:false, reason:"FACE_BIAS", phenomenon:null };
+
+    if (confidence < cfg.minConfidence)
+      return { module_id, ok:false, reason:"LOW_CONFIDENCE", phenomenon:null };
+
+    if (entropy > cfg.maxEntropy)
+      return { module_id, ok:false, reason:"HIGH_ENTROPY", phenomenon:null };
+
+    const nod   = detectNOD(C, C_prev, drift, stability);
+    if (nod)   return { module_id, ok:true, ...nod };
+
+    const shake = detectSHAKE(C, C_prev, drift, stability);
+    if (shake) return { module_id, ok:true, ...shake };
+
+    const loud  = detectLOUD(C, drift);
+    if (loud)  return { module_id, ok:true, ...loud };
+
+    const still = detectSTILL(C, drift, stability);
+    if (still) return { module_id, ok:true, ...still };
+
+    return { module_id, ok:false, reason:"NO_PHENOMENON", phenomenon:null };
+  }
+
+  return { module_id, computeDeltaP };
+})();
+
+/* ============================================================================
+ *  MODULE: GSRA AUDIT GENE (Module ID: GSRA_AUDIT_v4.1.2)
+ *  - Sinh NRB-128 Capsule cho mỗi ΔP kích hoạt
+ * ==========================================================================*/
+const GSRA_AuditGene = (() => {
+  const module_id = "GSRA_AUDIT_v4.1.2";
+  let baselineSnapshot = null;
+
+  function simpleHash(str) {
+    // pseudo-hash nhẹ để gắn fingerprint
+    let h1 = 0x811c9dc5;
+    for (let i=0; i<str.length; i++) {
+      h1 ^= str.charCodeAt(i);
+      h1 = (h1 * 0x01000193) >>> 0;
+    }
+    return ("00000000" + h1.toString(16)).slice(-8);
+  }
+
+  function setBaseline(b) {
+    baselineSnapshot = b ? {...b} : null;
+  }
+
+  function buildGeneCapsule(deltaP, deltaS, deltaC) {
+    const now = new Date().toISOString();
+    const header = {
+      capsule_type : "REFLEX_EVENT",
+      version      : "4.1.2",
+      source       : "Reflex-OS_S24",
+      timestamp    : now,
+      module_ids   : {
+        deltaC : DeltaCEngine.module_id,
+        deltaS : DeltaSEngine.module_id,
+        deltaP : DeltaPGate.module_id,
+        gsra   : module_id
+      }
+    };
+
+    const payload = {
+      phenomenon : deltaP.phenomenon,
+      strength   : deltaP.strength,
+      drift      : deltaS.drift,
+      entropy    : deltaS.entropy,
+      stability  : deltaS.stability,
+      confidence : deltaS.confidence,
+      C_snapshot : {
+        yaw        : deltaC.yaw,
+        pitch      : deltaC.pitch,
+        motion     : deltaC.motion,
+        rms        : deltaC.rms,
+        brightness : deltaC.brightness
+      },
+      baseline_used : !!(baselineSnapshot && baselineSnapshot.ready)
+    };
+
+    if (baselineSnapshot && baselineSnapshot.ready) {
+      payload.baseline = {
+        yaw        : baselineSnapshot.yaw,
+        pitch      : baselineSnapshot.pitch,
+        motion     : baselineSnapshot.motion,
+        rms        : baselineSnapshot.rms,
+        brightness : baselineSnapshot.brightness
+      };
+    }
+
+    const capsule = {
+      format       : "NRB-CAPSULE-128",
+      gene_header  : header,
+      gene_payload : payload,
+      gene_signature: {}
+    };
+
+    const raw = JSON.stringify({
+      header,
+      payload
+    });
+
+    const sig = simpleHash(raw);
+    capsule.gene_signature = {
+      pseudo_hmac_sha256 : sig,
+      id_short           : sig.slice(0,12)
+    };
+
+    return capsule;
+  }
+
+  return { module_id, setBaseline, buildGeneCapsule };
+})();
+
+/* ============================================================================
+ *  AUDIO / RMS / BRIGHTNESS HELPERS
+ * ==========================================================================*/
+function getRMS() {
+  if (!analyser || !audioData) return 0;
+  analyser.getByteTimeDomainData(audioData);
+  let sum = 0;
+  for (let i=0; i<audioData.length; i++) {
+    const v = (audioData[i] - 128) / 128;
+    sum += v * v;
+  }
+  return Math.sqrt(sum / audioData.length);
+}
+
+function getBrightness() {
+  try {
+    const w = Math.min(video.videoWidth || 160, 160);
+    const h = Math.min(video.videoHeight || 120, 120);
+    const temp = document.createElement("canvas");
+    temp.width = w; temp.height = h;
+    const tctx = temp.getContext("2d");
+    tctx.drawImage(video, 0, 0, w, h);
+    const data = tctx.getImageData(0, 0, w, h).data;
+    let sum = 0;
+    for (let i=0; i<data.length; i += 4) {
+      sum += (data[i] + data[i+1] + data[i+2]) / 3;
+    }
+    return (sum / (data.length / 4)) / 255;
+  } catch (e) {
+    return 0.5;
+  }
+}
+
+/* ============================================================================
+ *  BASELINE AUTO-CALIBRATION (2s) — dùng ΔC + RMS + Brightness
+ * ==========================================================================*/
+async function runBaselineCalibration() {
+  if (!running) {
+    alert("Cần START ENGINE trước khi hiệu chuẩn baseline.");
+    return;
+  }
+  statusEl.textContent = "[CALIBRATION] Đang đo 2 giây baseline, giữ nguyên đầu mặt...";
+  log("⚙ Bắt đầu hiệu chuẩn baseline (2s)...");
+
+  const samples = [];
+  const start = performance.now();
+
+  while (performance.now() - start < 2000) {
+    if (lastDeltaC) {
+      samples.push({
+        yaw        : lastDeltaC.yaw,
+        pitch      : lastDeltaC.pitch,
+        motion     : lastDeltaC.motion,
+        rms        : lastDeltaC.rms,
+        brightness : lastDeltaC.brightness
+      });
+    }
+    await new Promise(r => setTimeout(r, 16)); // ~60 fps
+  }
+
+  if (!samples.length) {
+    log("⚠ Không đủ mẫu để hiệu chuẩn baseline.");
+    statusEl.textContent = "[WARN] Baseline calibration failed (no samples).";
+    return;
+  }
+
+  const avg = key => samples.reduce((a,s)=>a+(s[key]||0),0)/samples.length;
+
+  BASELINE.yaw        = avg("yaw");
+  BASELINE.pitch      = avg("pitch");
+  BASELINE.motion     = avg("motion");
+  BASELINE.rms        = avg("rms");
+  BASELINE.brightness = avg("brightness");
+  BASELINE.ready      = true;
+
+  GSRA_AuditGene.setBaseline(BASELINE);
+
+  log("✔ Baseline calibrated:\n" + JSON.stringify(BASELINE,null,2));
+  statusEl.textContent = "[BASELINE READY] Hệ đã bù lệch đầu/mic/ánh sáng.";
+}
+
+/* ============================================================================
+ *  MEDIAPIPE FACE LANDMARKER
+ * ==========================================================================*/
+async function loadFaceLandmarker() {
+  try {
+    if (typeof FaceLandmarker === "undefined" || typeof FilesetResolver === "undefined") {
+      throw new Error("MediaPipe Tasks Vision chưa sẵn sàng");
+    }
+    const vision = await FaceLandmarker.createFromOptions(
+      await FilesetResolver.forVisionTasks(
+        "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@latest/wasm"
+      ),
+      {
+        baseOptions: {
+          modelAssetPath: "https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task",
+          delegate: "GPU"
+        },
+        runningMode: "VIDEO",
+        numFaces: 1
+      }
+    );
+    faceLandmarker = vision;
+    log("[FaceLandmarker] Loaded (Tasks Vision v2)");
+  } catch (e) {
+    log("[ERROR] FaceLandmarker init failed: " + e.message);
+    statusEl.textContent = "[ERROR] Không thể tải FaceLandmarker.";
+    throw e;
+  }
+}
+
+/* ============================================================================
+ *  MAIN LOOP — Tier 1 → ΔC → ΔS → ΔP → GSRA Capsule
+ * ==========================================================================*/
+function updateMetrics(meas, deltaC) {
+  if (!meas || !deltaC) {
+    metricsEl.textContent = "ΔS: (chưa có dữ liệu)";
+    return;
+  }
+  metricsEl.textContent =
+    `ΔC:\n` +
+    `  yaw=${deltaC.yaw.toFixed(3)}  pitch=${deltaC.pitch.toFixed(3)}\n` +
+    `  motion=${deltaC.motion.toFixed(3)}  rms=${deltaC.rms.toFixed(3)}\n` +
+    `  brightness=${deltaC.brightness.toFixed(3)}\n\n` +
+    `ΔS:\n` +
+    `  drift     = ${meas.drift.toFixed(4)}\n` +
+    `  entropy   = ${meas.entropy.toFixed(4)}\n` +
+    `  stability = ${meas.stability.toFixed(4)}\n` +
+    `  C_sig     = ${meas.confidence.toFixed(4)}\n` +
+    (BASELINE.ready ? `\n[BASELINE READY] Bù lệch đã bật.` : `\n[BASELINE OFF] Chưa hiệu chuẩn.`);
+}
+
+function handlePhenomenon(deltaP, deltaS, deltaC) {
+  if (!deltaP.ok || !deltaP.phenomenon) return;
+
+  const p = deltaP.phenomenon;
+  let text = "";
+  if (p === "NOD")   text = "Bạn đang gật đầu phải không?";
+  if (p === "SHAKE") text = "Bạn đang lắc đầu, có điều gì không đồng ý?";
+  if (p === "LOUD")  text = "Bạn đang nói hoặc hét khá to!";
+  if (p === "STILL") text = "Bạn đang giữ rất ổn định, gần như không cử động.";
+
+  speak(text);
+
+  // GSRA Audit NRB-128 Capsule
+  const capsule = GSRA_AuditGene.buildGeneCapsule(deltaP, deltaS, deltaC);
+  log(`[REFLEX] ${p} (str=${deltaP.strength.toFixed(3)})` +
+      ` drift=${deltaS.drift.toFixed(3)} C_sig=${deltaS.confidence.toFixed(3)}`);
+  log("[NRB-128 Capsule]\n" + JSON.stringify(capsule, null, 2));
+}
+
+function processFrame() {
+  if (!running) return;
+
+  if (video.videoWidth > 0 && overlay.width !== video.videoWidth) {
+    overlay.width = video.videoWidth;
+    overlay.height = video.videoHeight;
+  }
+
+  ctx.clearRect(0, 0, overlay.width, overlay.height);
+
+  let yaw=0, pitch=0, roll=0, motion=0;
+
+  try {
+    const results = faceLandmarker?.detectForVideo(video, performance.now());
+    if (results?.faceLandmarks && results.faceLandmarks.length > 0) {
+      const lm = results.faceLandmarks[0];
+
+      // Draw simple landmarks
+      ctx.fillStyle = "#8bd5ff";
+      for (const p of lm) {
+        ctx.beginPath();
+        ctx.arc(p.x*overlay.width, p.y*overlay.height, 1.5, 0, 2*Math.PI);
+        ctx.fill();
+      }
+
+      if (lm.length >= 468) {
+        const L = lm[33];
+        const R = lm[263];
+        const N = lm[1];
+
+        yaw   = (R.x - L.x);
+        pitch = N.y - (L.y + R.y)/2;
+
+        if (lastNose) {
+          const dx = N.x - lastNose.x;
+          const dy = N.y - lastNose.y;
+          motion = Math.sqrt(dx*dx + dy*dy);
+        }
+        lastNose = { x:N.x, y:N.y };
+      }
+    } else {
+      motion = 0;
+      lastNose = null;
+    }
+  } catch (e) {
+    console.warn("FaceLandmarker error:", e);
+  }
+
+  const rawC = {
+    yaw,
+    pitch,
+    roll,
+    motion,
+    rms: getRMS(),
+    brightness: getBrightness(),
+    ts: performance.now()
+  };
+
+  // ΔC
+  const deltaC = DeltaCEngine.computeDeltaC(rawC);
+  lastDeltaC = deltaC;
+
+  // ΔS
+  const deltaS = DeltaSEngine.computeDeltaS(deltaC);
+
+  // ΔP
+  const deltaP = DeltaPGate.computeDeltaP(deltaS);
+
+  updateMetrics(deltaS, deltaC);
+  handlePhenomenon(deltaP, deltaS, deltaC);
+
+  animationId = requestAnimationFrame(processFrame);
+}
+
+/* ============================================================================
+ *  START / STOP
+ * ==========================================================================*/
+async function startEngine() {
+  if (running) return;
+  statusEl.textContent = "[INIT] Đang xin quyền Camera + Mic...";
+  log("[SYSTEM] Starting Reflex Engine v4.1.2...");
+
+  try {
+    stream = await navigator.mediaDevices.getUserMedia({
+      video: {
+        facingMode: "user",
+        width: { ideal: 640 },
+        height:{ ideal: 480 }
+      },
+      audio: {
+        echoCancellation: true,
+        noiseSuppression: true,
+        autoGainControl: true
+      }
+    });
+
+    video.srcObject = stream;
+    await new Promise(res => video.onloadedmetadata = res);
+
+    // audio
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const source = audioCtx.createMediaStreamSource(stream);
+    analyser = audioCtx.createAnalyser();
+    analyser.fftSize = 1024;
+    audioData = new Uint8Array(analyser.fftSize);
+    source.connect(analyser);
+
+    await loadFaceLandmarker();
+    DeltaSEngine.reset();
+
+    running = true;
+    statusEl.textContent = "[RUNNING] Reflex Engine đang hoạt động.";
+    btnStart.disabled = true;
+    btnStop.disabled  = false;
+    btnBase.disabled  = false;
+
+    processFrame();
+    log("[SYSTEM] All systems online.");
+
+  } catch (e) {
+    console.error(e);
+    log("[ERROR] Start failed: " + e.message);
+    statusEl.textContent = "[ERROR] Không thể khởi động Engine: " + e.message;
+    stopEngine();
+  }
+}
+
+function stopEngine() {
+  running = false;
+
+  if (animationId) {
+    cancelAnimationFrame(animationId);
+    animationId = null;
+  }
+
+  if (stream) {
+    stream.getTracks().forEach(t => t.stop());
+    stream = null;
+  }
+
+  if (video.srcObject) video.srcObject = null;
+
+  if (audioCtx) {
+    audioCtx.close().catch(()=>{});
+    audioCtx = null;
+  }
+
+  if (faceLandmarker) {
+    faceLandmarker.close?.();
+    faceLandmarker = null;
+  }
+
+  btnStart.disabled = false;
+  btnStop.disabled  = true;
+  btnBase.disabled  = true;
+  statusEl.textContent = "[STOPPED] Engine đã dừng.";
+  log("[SYSTEM] Stopped cleanly.");
+}
+
+/* ============================================================================
+ *  UI BINDINGS
+ * ==========================================================================*/
+btnStart.addEventListener("click", startEngine);
+btnStop .addEventListener("click", stopEngine);
+btnBase .addEventListener("click", runBaselineCalibration);
+
+</script>
+</body>
+</html>
