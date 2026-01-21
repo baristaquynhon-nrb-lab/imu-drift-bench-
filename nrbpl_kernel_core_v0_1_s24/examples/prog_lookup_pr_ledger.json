@@ -1,0 +1,57 @@
+{
+  "program_name": "Dictionary Lookup with PR and Ledger",
+  "program_version": "0.1.0",
+  "description": "Demonstrates end-to-end: DICT_LOOKUP → evidence → PR → ledger append → verify",
+  "instructions": [
+    {
+      "op": "DICT_LOOKUP",
+      "args": {
+        "dict_id": "en_en_lex_min",
+        "lemma": "hello"
+      }
+    },
+    {
+      "op": "ASSERT_FOUND",
+      "args": {}
+    },
+    {
+      "op": "DICT_LOOKUP",
+      "args": {
+        "dict_id": "en_en_lex_min",
+        "lemma": "world"
+      }
+    },
+    {
+      "op": "ASSERT_FOUND",
+      "args": {}
+    },
+    {
+      "op": "DICT_LOOKUP",
+      "args": {
+        "dict_id": "en_en_lex_min",
+        "lemma": "evidence"
+      }
+    },
+    {
+      "op": "ASSERT_FOUND",
+      "args": {}
+    },
+    {
+      "op": "DICT_LOOKUP",
+      "args": {
+        "dict_id": "en_en_lex_min",
+        "lemma": "verify"
+      }
+    },
+    {
+      "op": "ASSERT_FOUND",
+      "args": {}
+    },
+    {
+      "op": "HALT",
+      "args": {
+        "reason": "Program completed successfully"
+      }
+    }
+  ]
+}

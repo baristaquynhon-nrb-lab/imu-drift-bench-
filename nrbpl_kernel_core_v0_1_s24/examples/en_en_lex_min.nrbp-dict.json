@@ -1,0 +1,128 @@
+{
+  "pack_version": "0.1-json",
+  "pack_type": "dict",
+  "dict_id": "en_en_lex_min",
+  "dict_version": "0.1.0",
+  "entries": [
+    {
+      "lemma": "hello",
+      "pos": "INTJ",
+      "senses": [
+        {
+          "sense_id": "hello.01",
+          "definition": "Used as a greeting or to begin a conversation",
+          "examples": [
+            "Hello, how are you?",
+            "Hello, may I speak to John?"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "world",
+      "pos": "NOUN",
+      "senses": [
+        {
+          "sense_id": "world.01",
+          "definition": "The earth, together with all of its countries and peoples",
+          "examples": [
+            "People around the world celebrate this day",
+            "The world is getting smaller due to technology"
+          ]
+        },
+        {
+          "sense_id": "world.02",
+          "definition": "A particular region or group of countries",
+          "examples": [
+            "The Western world",
+            "The developing world"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "test",
+      "pos": "NOUN",
+      "senses": [
+        {
+          "sense_id": "test.01",
+          "definition": "A procedure intended to establish the quality, performance, or reliability of something",
+          "examples": [
+            "A spelling test",
+            "The test showed that the product was safe"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "test",
+      "pos": "VERB",
+      "senses": [
+        {
+          "sense_id": "test.02",
+          "definition": "To take measures to check the quality, performance, or reliability of something",
+          "examples": [
+            "We tested the software thoroughly",
+            "The theory has not been tested in practice"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "evidence",
+      "pos": "NOUN",
+      "senses": [
+        {
+          "sense_id": "evidence.01",
+          "definition": "The available body of facts or information indicating whether a belief or proposition is true or valid",
+          "examples": [
+            "The study finds little evidence of overt discrimination",
+            "There is no evidence to support this claim"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "proof",
+      "pos": "NOUN",
+      "senses": [
+        {
+          "sense_id": "proof.01",
+          "definition": "Evidence or argument establishing a fact or the truth of a statement",
+          "examples": [
+            "You will be asked to give proof of your identity",
+            "This is not a proof, but strong evidence"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "verify",
+      "pos": "VERB",
+      "senses": [
+        {
+          "sense_id": "verify.01",
+          "definition": "To make sure or demonstrate that something is true, accurate, or justified",
+          "examples": [
+            "Please verify that the information is correct",
+            "The system will verify your credentials"
+          ]
+        }
+      ]
+    },
+    {
+      "lemma": "refuse",
+      "pos": "VERB",
+      "senses": [
+        {
+          "sense_id": "refuse.01",
+          "definition": "To indicate or show that one is not willing to do something",
+          "examples": [
+            "I refuse to answer that question",
+            "She refused to accept the proposal"
+          ]
+        }
+      ]
+    }
+  ]
+}

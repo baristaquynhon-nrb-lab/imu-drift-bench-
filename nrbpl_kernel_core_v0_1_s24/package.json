@@ -1,0 +1,35 @@
+{
+  "name": "nrbpl-kernel-core",
+  "version": "0.1.0",
+  "description": "NRBPL Kernel-CORE v0.1 — Execution Kernel with PR Model, Ledger, and Forensic Verification",
+  "main": "src/vm/vm.js",
+  "bin": {
+    "nrbcore": "./bin/nrbcore.js"
+  },
+  "scripts": {
+    "test": "node test/run_all.js",
+    "example": "node bin/nrbcore.js run examples/prog_lookup_pr_ledger.json examples/en_en_lex_min.nrbp-dict.json"
+  },
+  "keywords": [
+    "nrbpl",
+    "provenance",
+    "ledger",
+    "verification",
+    "CPL",
+    "UGTS",
+    "forensic",
+    "evidence"
+  ],
+  "author": "Nguyen Ngoc Thi — SEE-R OS / NRB Laboratory",
+  "license": "SEE NOTICE.txt",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baristaquynhon-nrb-lab/imu-drift-bench-"
+  },
+  "bugs": {
+    "url": "https://github.com/baristaquynhon-nrb-lab/imu-drift-bench-/issues"
+  }
+}

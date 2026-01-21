@@ -1,0 +1,201 @@
+{
+  "version": "0.1",
+  "genesis_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "entries": [
+    {
+      "pr": {
+        "pr_version": "0.1",
+        "op": "DICT_LOOKUP",
+        "ΔC": {
+          "dict_id": "en_en_lex_min",
+          "dict_hash": "36a7709ac9c4f1cd1b725dfa7961552bdaa7124bc952e408f8e66fad872e5d39",
+          "lemma": "hello",
+          "found": true
+        },
+        "ΔS": {
+          "results": [
+            {
+              "lemma": "hello",
+              "pos": "INTJ",
+              "sense_count": 1
+            }
+          ]
+        },
+        "ΔP": {
+          "lookup_time": "2026-01-21T09:28:57.732Z",
+          "result_count": 1
+        },
+        "verdict": "PASS",
+        "ts": "2026-01-21T09:28:57.732Z",
+        "hash": "f0bb992321b5103fe16c998da996aea2b34ce8ecdcd78ae09d0479ffbb277fa3"
+      },
+      "chain_hash": "72b0139caae12279dbe02ac97da31ee568f1b5e0b98f7b67e87758a032474ed2"
+    },
+    {
+      "pr": {
+        "pr_version": "0.1",
+        "op": "ASSERT_FOUND",
+        "ΔC": {
+          "expected": true,
+          "actual": true
+        },
+        "ΔS": {},
+        "ΔP": {},
+        "verdict": "PASS",
+        "ts": "2026-01-21T09:28:57.733Z",
+        "hash": "dfe7d45b40cccb45d6a59cbb15b83be06ca712bf10db946838b10ec96950020c"
+      },
+      "chain_hash": "69fe666461bef5f6278fe279ac415ba94682328a396ca0e0cbf050de7a1bd139"
+    },
+    {
+      "pr": {
+        "pr_version": "0.1",
+        "op": "DICT_LOOKUP",
+        "ΔC": {
+          "dict_id": "en_en_lex_min",
+          "dict_hash": "36a7709ac9c4f1cd1b725dfa7961552bdaa7124bc952e408f8e66fad872e5d39",
+          "lemma": "world",
+          "found": true
+        },
+        "ΔS": {
+          "results": [
+            {
+              "lemma": "world",
+              "pos": "NOUN",
+              "sense_count": 2
+            }
+          ]
+        },
+        "ΔP": {
+          "lookup_time": "2026-01-21T09:28:57.733Z",
+          "result_count": 1
+        },
+        "verdict": "PASS",
+        "ts": "2026-01-21T09:28:57.733Z",
+        "hash": "16d1008f3e0b0618af831bbf371e1c4cb1ee5457812eedc82446dc20c2209514"
+      },
+      "chain_hash": "9103df80484d55303717d4d9ad5aa9e5b7700a2c040dd4a71dad623968beedb7"
+    },
+    {
+      "pr": {
+        "pr_version": "0.1",
+        "op": "ASSERT_FOUND",
+        "ΔC": {
+          "expected": true,
+          "actual": true
+        },
+        "ΔS": {},
+        "ΔP": {},
+        "verdict": "PASS",
+        "ts": "2026-01-21T09:28:57.733Z",
+        "hash": "dfe7d45b40cccb45d6a59cbb15b83be06ca712bf10db946838b10ec96950020c"
+      },
+      "chain_hash": "5f974e05c213eea175b2cc389316891d46bf74d02b54176eb1a1ba57d58a7b81"
+    },
+    {
+      "pr": {
+        "pr_version": "0.1",
+        "op": "DICT_LOOKUP",
+        "ΔC": {
+          "dict_id": "en_en_lex_min",
+          "dict_hash": "36a7709ac9c4f1cd1b725dfa7961552bdaa7124bc952e408f8e66fad872e5d39",
+          "lemma": "evidence",
+          "found": true
+        },
+        "ΔS": {
+          "results": [
+            {
+              "lemma": "evidence",
+              "pos": "NOUN",
+              "sense_count": 1
+            }
+          ]
+        },
+        "ΔP": {
+          "lookup_time": "2026-01-21T09:28:57.733Z",
+          "result_count": 1
+        },
+        "verdict": "PASS",
+        "ts": "2026-01-21T09:28:57.733Z",
+        "hash": "3cb3171dd34dc07f6465b5a6f32d4fd8ddc52eff3698fd87f866e85419d019fe"
+      },
+      "chain_hash": "238b3fff75891f39cb7a7e228f70c92de1d3775a11fe5e4cbbb9f598bf0a6f34"
+    },
+    {
+      "pr": {
+        "pr_version": "0.1",
+        "op": "ASSERT_FOUND",
+        "ΔC": {
+          "expected": true,
+          "actual": true
+        },
+        "ΔS": {},
+        "ΔP": {},
+        "verdict": "PASS",
+        "ts": "2026-01-21T09:28:57.733Z",
+        "hash": "dfe7d45b40cccb45d6a59cbb15b83be06ca712bf10db946838b10ec96950020c"
+      },
+      "chain_hash": "3355e3584fe9c5f549c5d17dbda7925a35b4ac1f5498ea9c9cd8efa409d77c53"
+    },
+    {
+      "pr": {
+        "pr_version": "0.1",
+        "op": "DICT_LOOKUP",
+        "ΔC": {
+          "dict_id": "en_en_lex_min",
+          "dict_hash": "36a7709ac9c4f1cd1b725dfa7961552bdaa7124bc952e408f8e66fad872e5d39",
+          "lemma": "verify",
+          "found": true
+        },
+        "ΔS": {
+          "results": [
+            {
+              "lemma": "verify",
+              "pos": "VERB",
+              "sense_count": 1
+            }
+          ]
+        },
+        "ΔP": {
+          "lookup_time": "2026-01-21T09:28:57.733Z",
+          "result_count": 1
+        },
+        "verdict": "PASS",
+        "ts": "2026-01-21T09:28:57.733Z",
+        "hash": "b8b89f294cb0cc4f57f4cf9dc77215e0dd633e43fb6d06194511e946794d6bea"
+      },
+      "chain_hash": "855fda554c30dc35c952b1c7284ca204456a4fbbc7d4c815689fab95698df040"
+    },
+    {
+      "pr": {
+        "pr_version": "0.1",
+        "op": "ASSERT_FOUND",
+        "ΔC": {
+          "expected": true,
+          "actual": true
+        },
+        "ΔS": {},
+        "ΔP": {},
+        "verdict": "PASS",
+        "ts": "2026-01-21T09:28:57.733Z",
+        "hash": "dfe7d45b40cccb45d6a59cbb15b83be06ca712bf10db946838b10ec96950020c"
+      },
+      "chain_hash": "e2616f7e4d5b1053f8b664b23453437f166741275c4f63d0e6a6ea297a575792"
+    },
+    {
+      "pr": {
+        "pr_version": "0.1",
+        "op": "HALT",
+        "ΔC": {
+          "reason": "Program completed successfully"
+        },
+        "ΔS": {},
+        "ΔP": {},
+        "verdict": "PASS",
+        "ts": "2026-01-21T09:28:57.733Z",
+        "hash": "a48b706b8fe20d8631f80822da668644150571f134a0c1665c47baf396b25e5d"
+      },
+      "chain_hash": "34e3877a692e0b179f90c75506f2b14b768dd5ab8b76c60a0fefce9697c44b50"
+    }
+  ]
+}
