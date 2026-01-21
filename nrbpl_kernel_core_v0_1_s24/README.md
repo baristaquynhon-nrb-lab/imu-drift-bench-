@@ -54,11 +54,25 @@ nrbpl_kernel_core_v0_1_s24/
 │   ├── runtime/          # Core runtime (PR, ledger, verdict, hash)
 │   ├── pack/             # Dictionary pack format
 │   ├── lexicon/          # Dictionary index and lookup
-│   └── vm/               # Virtual machine execution engine
+│   ├── vm/               # Virtual machine execution engine
+│   └── nl/               # NL Programming (NEW!)
+│       ├── nl_parser.js      # NL → Intent/Slots
+│       ├── cnl_generator.js  # Intent/Slots → CNL
+│       ├── cnl_to_ir.js      # CNL → IR
+│       ├── ir_to_opcodes.js  # IR → Opcodes
+│       ├── nl_pipeline.js    # End-to-end pipeline
+│       └── NL_LEXICON_VI_EN_v0_1.json  # NL patterns
+├── docs/
+│   └── spec/
+│       └── NRBPL_NL_CNL_GRAMMAR_v0_1.md  # Normative grammar
 ├── bin/
 │   └── nrbcore.js        # CLI entry point
 ├── test/
-│   └── run_all.js        # Test suite
+│   ├── run_all.js        # Core test suite
+│   └── nl/
+│       ├── run_nl_suite.js           # NL test runner
+│       └── NL_TEST_SUITE_v0_1.json   # NL test cases
+├── _audit/               # Audit logs (generated)
 └── examples/
     ├── en_en_lex_min.nrbp-dict.json      # Example dictionary
     └── prog_lookup_pr_ledger.json         # Example program
@@ -107,8 +121,99 @@ node bin/nrbcore.js replay trial_ledger.json
 ### Run Test Suite
 
 ```bash
-npm test
+npm test           # Core tests (25 tests)
+npm run test-nl    # NL Programming tests (10 tests)
+npm run test-all   # All tests
 ```
+
+---
+
+## NL Programming v0.1 (NEW!)
+
+NRBPL now supports **Natural Language Programming** — write programs in Vietnamese or English natural language that compile to CNL, IR, and finally Kernel opcodes.
+
+### Usage
+
+```bash
+# Vietnamese
+node bin/nrbcore.js nl "Tra từ 'hello' trong từ điển examples/en_en_lex_min.nrbp-dict.json"
+
+# English
+node bin/nrbcore.js nl "lookup 'world' in dictionary examples/en_en_lex_min.nrbp-dict.json" --lang=en
+
+# Verify ledger
+node bin/nrbcore.js nl "Kiểm tra sổ cái trial_ledger.json"
+
+# Assert found
+node bin/nrbcore.js nl "Xác nhận có kết quả"
+```
+
+### Pipeline: NL → CNL → IR → Opcodes
+
+The NL command processes input through 4 stages:
+
+1. **NL → Intent/Slots** (via regex patterns from `NL_LEXICON_VI_EN_v0_1.json`)
+2. **Intent/Slots → CNL** (Controlled Natural Language with strict grammar)
+3. **CNL → IR** (Intermediate Representation)
+4. **IR → Opcodes** (VM-compatible instruction format)
+
+### Supported NL Commands (v0.1)
+
+| Vietnamese | English | Intent |
+|------------|---------|--------|
+| `Tra từ '<lemma>' trong từ điển <pack>` | `lookup '<lemma>' in dictionary <pack>` | DICT_LOOKUP |
+| `Xác nhận có kết quả` | `assert found` | ASSERT_FOUND |
+| `Kiểm tra sổ cái <path>` | `verify ledger <path>` | LEDGER_VERIFY |
+| `Chạy lại sổ cái <path>` | `replay ledger <path>` | LEDGER_REPLAY |
+
+### Fail-Fast Discipline
+
+NL Programming follows strict **REFUSE > FAIL > PASS** discipline:
+
+- **REFUSE** if: intent not recognized, missing required slot, invalid characters, injection attempt
+- **PASS** if: all validation passes and CNL/IR/opcodes generated successfully
+
+### Example Output
+
+```
+=== CNL Program ===
+NRBPL_CNL v0.1
+TASK DICT_LOOKUP lemma='hello' using_pack='examples/en_en_lex_min.nrbp-dict.json'
+HALT
+
+=== IR (Intermediate Representation) ===
+{
+  "version": "0.1",
+  "instructions": [
+    { "type": "DICT_LOOKUP", "lemma": "hello", "using_pack": "..." },
+    { "type": "HALT" }
+  ]
+}
+
+=== Opcodes Program ===
+{
+  "program_name": "NL-Generated Program",
+  "instructions": [
+    { "op": "DICT_LOOKUP", "args": { "dict_id": "en_en_lex_min", "lemma": "hello" } },
+    { "op": "HALT", "args": { "reason": "NL program completed" } }
+  ]
+}
+```
+
+### Audit Trail
+
+All NL test runs generate audit logs in `_audit/` directory with:
+- NL input
+- Verdict (PASS/REFUSE/FAIL)
+- Intent and slots extracted
+- CNL/IR/Opcodes generated
+- Timestamp and test results
+
+### Specification Files
+
+- `docs/spec/NRBPL_NL_CNL_GRAMMAR_v0_1.md` — Normative CNL grammar (Section N)
+- `src/nl/NL_LEXICON_VI_EN_v0_1.json` — NL patterns and templates
+- `test/nl/NL_TEST_SUITE_v0_1.json` — 10 normative test cases
 
 ---
 
@@ -207,18 +312,20 @@ Verdict propagation:
 
 ## Roadmap Position
 
-**Current Milestone: M1 — Kernel-CORE v0.1 (COMPLETE)**
+**Current Milestone: M1 — Kernel-CORE v0.1 + NL Programming v0.1 (COMPLETE)**
 
 ✅ Execution kernel operational
 ✅ PR model implemented
 ✅ Ledger append/verify/replay working
 ✅ End-to-end verification functional
+✅ **NL Programming v0.1 (NEW!)** — NL → CNL → IR → Opcodes pipeline
+✅ **Vietnamese + English support** with deterministic translation
+✅ **10/10 NL test cases passing** with full audit trail
 
 **Next Milestone: M2 — Platform-CORE v0.1**
 
 ⛔ Section P: Binary pack format (currently JSON-pack)
 ⛔ `PACK_LOAD` / `PACK_VERIFY` opcodes
-⛔ Compiler (CNL → Program JSON)
 ⛔ Full tooling suite
 
 See `ROADMAP_POSITION.md` for detailed roadmap.
@@ -227,7 +334,7 @@ See `ROADMAP_POSITION.md` for detailed roadmap.
 
 ## Testing
 
-The test suite (`test/run_all.js`) covers:
+### Core Test Suite (`test/run_all.js`) — 25 tests
 
 1. Canonical JSON serialization
 2. PR schema validation
@@ -237,6 +344,19 @@ The test suite (`test/run_all.js`) covers:
 6. Dictionary pack and index
 7. VM execution
 8. End-to-end: evidence → PR → ledger → replay
+
+### NL Programming Test Suite (`test/nl/run_nl_suite.js`) — 10 tests
+
+1. Vietnamese DICT_LOOKUP (NL_TC01)
+2. English DICT_LOOKUP (NL_TC02)
+3. Vietnamese ASSERT_FOUND (NL_TC03)
+4. Vietnamese LEDGER_VERIFY (NL_TC04)
+5. English LEDGER_REPLAY (NL_TC05)
+6. REFUSE: No match (NL_TC06)
+7. REFUSE: Missing slot (NL_TC07)
+8. REFUSE: Ambiguous input (NL_TC08)
+9. REFUSE: Bad slot validation (NL_TC09)
+10. REFUSE: Injection attempt (NL_TC10)
 
 All tests must pass before any modification is accepted.
 

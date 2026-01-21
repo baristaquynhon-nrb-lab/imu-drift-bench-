@@ -1,0 +1,122 @@
+{
+  "spec": "NRBPL_NL_TEST_SUITE_v0.1",
+  "suite": "NRBPL_NL_PROGRAMMING_MINIMAL_v0.1",
+  "requirements": {
+    "deterministic_translation": true,
+    "clarify_or_refuse": true,
+    "no_inferred_defaults": true
+  },
+  "cases": [
+    {
+      "id": "NL_TC01",
+      "nl_lang": "vi",
+      "nl_input": "Tra từ 'hello' trong từ điển examples/en_en_lex_min.nrbp-dict.json",
+      "expected_intent": "DICT_LOOKUP",
+      "expected_slots": {
+        "lemma": "hello",
+        "using_pack": "examples/en_en_lex_min.nrbp-dict.json"
+      },
+      "expected_cnl_program": [
+        "NRBPL_CNL v0.1",
+        "TASK DICT_LOOKUP lemma='hello' using_pack='examples/en_en_lex_min.nrbp-dict.json'",
+        "HALT"
+      ],
+      "expected_verdict": "PASS"
+    },
+    {
+      "id": "NL_TC02",
+      "nl_lang": "en",
+      "nl_input": "lookup 'hello' in dictionary examples/en_en_lex_min.nrbp-dict.json",
+      "expected_intent": "DICT_LOOKUP",
+      "expected_slots": {
+        "lemma": "hello",
+        "using_pack": "examples/en_en_lex_min.nrbp-dict.json"
+      },
+      "expected_cnl_program": [
+        "NRBPL_CNL v0.1",
+        "TASK DICT_LOOKUP lemma='hello' using_pack='examples/en_en_lex_min.nrbp-dict.json'",
+        "HALT"
+      ],
+      "expected_verdict": "PASS"
+    },
+    {
+      "id": "NL_TC03",
+      "nl_lang": "vi",
+      "nl_input": "Xác nhận có kết quả",
+      "expected_intent": "ASSERT_FOUND",
+      "expected_slots": {},
+      "expected_cnl_program": [
+        "NRBPL_CNL v0.1",
+        "ASSERT FOUND on_last_lookup",
+        "HALT"
+      ],
+      "expected_verdict": "PASS"
+    },
+    {
+      "id": "NL_TC04",
+      "nl_lang": "vi",
+      "nl_input": "Kiểm tra sổ cái trial_ledger.json",
+      "expected_intent": "LEDGER_VERIFY",
+      "expected_slots": {
+        "path": "trial_ledger.json"
+      },
+      "expected_cnl_program": [
+        "NRBPL_CNL v0.1",
+        "LEDGER VERIFY path='trial_ledger.json'",
+        "HALT"
+      ],
+      "expected_verdict": "PASS"
+    },
+    {
+      "id": "NL_TC05",
+      "nl_lang": "en",
+      "nl_input": "replay ledger trial_ledger.json",
+      "expected_intent": "LEDGER_REPLAY",
+      "expected_slots": {
+        "path": "trial_ledger.json"
+      },
+      "expected_cnl_program": [
+        "NRBPL_CNL v0.1",
+        "LEDGER REPLAY path='trial_ledger.json'",
+        "HALT"
+      ],
+      "expected_verdict": "PASS"
+    },
+
+    {
+      "id": "NL_TC06_REFUSE_NO_MATCH",
+      "nl_lang": "vi",
+      "nl_input": "Hãy làm Section P ngay bây giờ",
+      "expected_verdict": "REFUSE",
+      "expected_reason_contains": "NL intent not recognized"
+    },
+    {
+      "id": "NL_TC07_REFUSE_MISSING_SLOT",
+      "nl_lang": "vi",
+      "nl_input": "Tra từ 'hello'",
+      "expected_verdict": "REFUSE",
+      "expected_reason_contains": "Missing required slot"
+    },
+    {
+      "id": "NL_TC08_REFUSE_AMBIGUOUS",
+      "nl_lang": "en",
+      "nl_input": "lookup in dictionary examples/en_en_lex_min.nrbp-dict.json",
+      "expected_verdict": "REFUSE",
+      "expected_reason_contains": "Missing required slot"
+    },
+    {
+      "id": "NL_TC09_REFUSE_BAD_SLOT",
+      "nl_lang": "vi",
+      "nl_input": "Kiểm tra sổ cái \n trial_ledger.json",
+      "expected_verdict": "REFUSE",
+      "expected_reason_contains": "Slot validation failed"
+    },
+    {
+      "id": "NL_TC10_REFUSE_INJECTION",
+      "nl_lang": "en",
+      "nl_input": "lookup 'hello' in dictionary examples/en_en_lex_min.nrbp-dict.json; rm -rf /",
+      "expected_verdict": "REFUSE",
+      "expected_reason_contains": "Slot validation failed"
+    }
+  ]
+}

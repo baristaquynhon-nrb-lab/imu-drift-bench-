@@ -1,0 +1,133 @@
+{
+  "spec": "NRBPL_NL_LEXICON_v0.1",
+  "language_pairs": ["vi-en", "en-en"],
+  "intents": {
+    "DICT_LOOKUP": {
+      "description": "Lookup lemma in dictionary pack",
+      "required_slots": ["lemma", "using_pack"],
+      "slots": {
+        "lemma": { "type": "string", "pattern": "^[^\n\r\t]{1,256}$" },
+        "using_pack": { "type": "string", "pattern": "^[^\n\r\t]{1,1024}$" }
+      },
+      "cnl_template": "TASK DICT_LOOKUP lemma='{lemma}' using_pack='{using_pack}'"
+    },
+    "ASSERT_FOUND": {
+      "description": "Assert that last lookup was found (PASS)",
+      "required_slots": [],
+      "slots": {},
+      "cnl_template": "ASSERT FOUND on_last_lookup"
+    },
+    "LEDGER_VERIFY": {
+      "description": "Verify hash-chain ledger",
+      "required_slots": ["path"],
+      "slots": {
+        "path": { "type": "string", "pattern": "^[^\n\r\t]{1,1024}$" }
+      },
+      "cnl_template": "LEDGER VERIFY path='{path}'"
+    },
+    "LEDGER_REPLAY": {
+      "description": "Replay hash-chain ledger deterministically",
+      "required_slots": ["path"],
+      "slots": {
+        "path": { "type": "string", "pattern": "^[^\n\r\t]{1,1024}$" }
+      },
+      "cnl_template": "LEDGER REPLAY path='{path}'"
+    }
+  },
+  "nl_patterns": {
+    "vi": {
+      "DICT_LOOKUP": [
+        {
+          "pattern": "tra\\s+từ\\s+'([^']+)'\\s+trong\\s+từ\\s+điển\\s+(.+)",
+          "slot_map": { "lemma": 1, "using_pack": 2 }
+        },
+        {
+          "pattern": "tra\\s+từ\\s+([^\\s]+)\\s+trong\\s+từ\\s+điển\\s+(.+)",
+          "slot_map": { "lemma": 1, "using_pack": 2 }
+        },
+        {
+          "pattern": "tra\\s+từ\\s+'?([^'\\s]+)'?",
+          "slot_map": { "lemma": 1 }
+        }
+      ],
+      "ASSERT_FOUND": [
+        { "pattern": "xác\\s+nhận\\s+có\\s+kết\\s+quả", "slot_map": {} },
+        { "pattern": "assert\\s+found", "slot_map": {} }
+      ],
+      "LEDGER_VERIFY": [
+        {
+          "pattern": "kiểm\\s+tra\\s+sổ\\s+cái\\s+(.+)",
+          "slot_map": { "path": 1 }
+        },
+        {
+          "pattern": "xác\\s+minh\\s+ledger\\s+(.+)",
+          "slot_map": { "path": 1 }
+        }
+      ],
+      "LEDGER_REPLAY": [
+        {
+          "pattern": "chạy\\s+lại\\s+sổ\\s+cái\\s+(.+)",
+          "slot_map": { "path": 1 }
+        },
+        {
+          "pattern": "replay\\s+ledger\\s+(.+)",
+          "slot_map": { "path": 1 }
+        }
+      ]
+    },
+    "en": {
+      "DICT_LOOKUP": [
+        {
+          "pattern": "lookup\\s+'([^']+)'\\s+in\\s+dictionary\\s+(.+)",
+          "slot_map": { "lemma": 1, "using_pack": 2 }
+        },
+        {
+          "pattern": "lookup\\s+([^\\s]+)\\s+in\\s+dictionary\\s+(.+)",
+          "slot_map": { "lemma": 1, "using_pack": 2 }
+        },
+        {
+          "pattern": "lookup\\s+in\\s+dictionary\\s+(.+)",
+          "slot_map": { "using_pack": 1 }
+        }
+      ],
+      "ASSERT_FOUND": [
+        { "pattern": "assert\\s+found", "slot_map": {} }
+      ],
+      "LEDGER_VERIFY": [
+        {
+          "pattern": "verify\\s+ledger\\s+(.+)",
+          "slot_map": { "path": 1 }
+        }
+      ],
+      "LEDGER_REPLAY": [
+        {
+          "pattern": "replay\\s+ledger\\s+(.+)",
+          "slot_map": { "path": 1 }
+        }
+      ]
+    }
+  },
+  "normalization": {
+    "trim_whitespace": true,
+    "collapse_spaces": true,
+    "preserve_case_in_slots": true
+  },
+  "refuse_policy": {
+    "on_no_match": {
+      "verdict": "REFUSE",
+      "reason": "NL intent not recognized"
+    },
+    "on_missing_slot": {
+      "verdict": "REFUSE",
+      "reason": "Missing required slot"
+    },
+    "on_slot_validation_fail": {
+      "verdict": "REFUSE",
+      "reason": "Slot validation failed"
+    },
+    "on_ambiguity": {
+      "verdict": "REFUSE",
+      "reason": "Ambiguous NL input"
+    }
+  }
+}

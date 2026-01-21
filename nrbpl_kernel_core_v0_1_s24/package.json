@@ -8,6 +8,8 @@
   },
   "scripts": {
     "test": "node test/run_all.js",
+    "test-nl": "node test/nl/run_nl_suite.js",
+    "test-all": "npm test && npm run test-nl",
     "example": "node bin/nrbcore.js run examples/prog_lookup_pr_ledger.json examples/en_en_lex_min.nrbp-dict.json"
   },
   "keywords": [
