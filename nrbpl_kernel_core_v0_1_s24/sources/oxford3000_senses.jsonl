@@ -1,0 +1,25 @@
+{"lemma":"be","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"tồn tại","ref":"oxford3000:be_v_sense_1"}
+{"lemma":"be","pos":"v","rank":2,"en_gloss":"equal to","vi_gloss":"bằng với","ref":"oxford3000:be_v_sense_2"}
+{"lemma":"have","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"sở hữu","ref":"oxford3000:have_v_sense_1"}
+{"lemma":"have","pos":"v","rank":2,"en_gloss":"experience","vi_gloss":"trải qua","ref":"oxford3000:have_v_sense_2"}
+{"lemma":"do","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"thực hiện","ref":"oxford3000:do_v_sense_1"}
+{"lemma":"do","pos":"v","rank":2,"en_gloss":"act","vi_gloss":"hành động","ref":"oxford3000:do_v_sense_2"}
+{"lemma":"say","pos":"v","rank":1,"en_gloss":"speak words","vi_gloss":"phát biểu","ref":"oxford3000:say_v_sense_1"}
+{"lemma":"get","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"thu được","ref":"oxford3000:get_v_sense_1"}
+{"lemma":"get","pos":"v","rank":2,"en_gloss":"become","vi_gloss":"trở nên","ref":"oxford3000:get_v_sense_2"}
+{"lemma":"make","pos":"v","rank":1,"en_gloss":"create","vi_gloss":"tạo ra","ref":"oxford3000:make_v_sense_1"}
+{"lemma":"make","pos":"v","rank":2,"en_gloss":"cause to","vi_gloss":"khiến cho","ref":"oxford3000:make_v_sense_2"}
+{"lemma":"go","pos":"v","rank":1,"en_gloss":"move","vi_gloss":"di chuyển","ref":"oxford3000:go_v_sense_1"}
+{"lemma":"go","pos":"v","rank":2,"en_gloss":"travel","vi_gloss":"đi lại","ref":"oxford3000:go_v_sense_2"}
+{"lemma":"know","pos":"v","rank":1,"en_gloss":"understand","vi_gloss":"hiểu biết","ref":"oxford3000:know_v_sense_1"}
+{"lemma":"take","pos":"v","rank":1,"en_gloss":"grab","vi_gloss":"nắm lấy","ref":"oxford3000:take_v_sense_1"}
+{"lemma":"take","pos":"v","rank":2,"en_gloss":"accept","vi_gloss":"chấp nhận","ref":"oxford3000:take_v_sense_2"}
+{"lemma":"see","pos":"v","rank":1,"en_gloss":"view","vi_gloss":"xem thấy","ref":"oxford3000:see_v_sense_1"}
+{"lemma":"come","pos":"v","rank":1,"en_gloss":"arrive","vi_gloss":"tới","ref":"oxford3000:come_v_sense_1"}
+{"lemma":"think","pos":"v","rank":1,"en_gloss":"ponder","vi_gloss":"suy nghĩ","ref":"oxford3000:think_v_sense_1"}
+{"lemma":"look","pos":"v","rank":1,"en_gloss":"observe","vi_gloss":"quan sát","ref":"oxford3000:look_v_sense_1"}
+{"lemma":"want","pos":"v","rank":1,"en_gloss":"desire","vi_gloss":"mong muốn","ref":"oxford3000:want_v_sense_1"}
+{"lemma":"give","pos":"v","rank":1,"en_gloss":"offer","vi_gloss":"trao","ref":"oxford3000:give_v_sense_1"}
+{"lemma":"use","pos":"v","rank":1,"en_gloss":"utilize","vi_gloss":"sử dụng","ref":"oxford3000:use_v_sense_1"}
+{"lemma":"find","pos":"v","rank":1,"en_gloss":"locate","vi_gloss":"tìm thấy","ref":"oxford3000:find_v_sense_1"}
+{"lemma":"tell","pos":"v","rank":1,"en_gloss":"inform","vi_gloss":"thông báo","ref":"oxford3000:tell_v_sense_1"}

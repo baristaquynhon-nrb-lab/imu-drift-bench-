@@ -1,303 +1,605 @@
 #!/usr/bin/env node
 /**
- * validators/lexicon_gate.js — NRBPL Lexicon Gate v1.0.1
+ * validators/lexicon_gate.js — NTL/NRBPL Lexicon Gate v1.1.0
  *
- * Goals:
- *   - minimal / no deps
- *   - deterministic
- *   - fail-fast with UGTS exit codes
- *   - --all mode: load 3 files + cross-check consistency
- *   - stdout: audit JSON (machine-readable)
+ * Deterministic, evidence-first, fail-fast by default.
+ * Emits a deterministic JSON Gate Report to STDOUT.
+ *
+ * Scope (v0.1):
+ * - Lemma inventory: lexicon/en_vi_lemmas*.jsonl
+ * - Optional senses: lexicon/en_vi_senses*.jsonl
+ * - Optional collocations: lexicon/collocations_en*.jsonl
+ * - Optional frames catalog: frames/meaning_frames.json
+ *
+ * Hard rules:
+ * - lemma: lowercase [a-z]+ only; MUST NOT contain spaces or '-'
+ * - pos: enum {n,v,adj,adv,prep,conj,det,pron,num,interj}
+ * - vi_gloss: MUST exist; 1–4 tokens; MUST NOT contain inference markers or multi-gloss separators
+ * - frame: MUST be "" (scope-lock v0.1)
+ * - sorted: file MUST be sorted by (lemma asc, pos asc) for lemmas; (lemma,pos,sense_id) for senses
+ * - duplicates disallowed
+ *
+ * Sense rules (if senses file provided):
+ * - sense_id: `${lemma}.${pos}.${NN}` where NN is 2-digit "01".."99"
+ * - Each sense MUST have trace: {source, source_file_sha256, record_sha256, ref}
+ * - No sense-selection without trace (if vi_gloss multiword in sense, trace MUST exist; in this gate: trace is mandatory anyway)
+ *
+ * Output:
+ * - JSON report includes:
+ *   artifact_hashes.set_sha256  (hash of artifact set)
+ *   report_hashes.canonical_sha256 (hash of canonical report with canonical_sha256="")
+ * - Sidecar report bytes hash is REQUIRED by schema but is emitted by caller tooling (repo_audit / dc pack),
+ *   or you can use: `node ... > report.json && sha256sum report.json > report.json.sha256`
  *
  * Exit codes:
  *   0: SUPPORTED
- *   2: INSUFFICIENT
- *   3: REFUSE
- *
- * Usage:
- *   node validators/lexicon_gate.js --all \
- *     --lemmas lexicon/en_vi_lemmas.jsonl \
- *     --senses lexicon/en_vi_senses.jsonl \
- *     --collocations lexicon/collocations_en.jsonl \
- *     --frames frames/meaning_frames.json
+ *   2: INSUFFICIENT / CONTRADICTORY
+ *   3: REFUSE (hard fail: schema/policy/integrity)
  */
 
 "use strict";
 
 const fs = require("fs");
+const crypto = require("crypto");
 const path = require("path");
 
-const EXIT_SUPPORTED = 0;
-const EXIT_INSUFFICIENT = 2;
+const TOOL = "validators/lexicon_gate.js";
+const VERSION = "1.1.0";
+
+const EXIT_OK = 0;
+const EXIT_SOFT = 2;
 const EXIT_REFUSE = 3;
 
+const POS_SET = new Set(["n", "v", "adj", "adv", "prep", "conj", "det", "pron", "num", "interj"]);
+
 const REASON = {
-  FILE_MISSING: "LEX_FILE_MISSING",
-  FILE_EMPTY: "LEX_FILE_EMPTY",
-  JSON_PARSE_ERROR: "LEX_JSON_PARSE_ERROR",
-
-  DUP_LEMMA_POS: "LEX_DUP_LEMMA_POS",
-  MULTIWORD_LEMMA: "LEX_MULTIWORD_LEMMA",
-  BAD_LEMMA_SCHEMA: "LEX_BAD_LEMMA_SCHEMA",
-  SENSE_COUNT_CLAIM: "LEX_SENSE_COUNT_CLAIM",
-
-  BAD_SENSE_SCHEMA: "LEX_BAD_SENSE_SCHEMA",
-  DUP_SENSE_ID: "LEX_DUP_SENSE_ID",
+  FILE_NOT_FOUND: "LEX_FILE_NOT_FOUND",
+  EMPTY_FILE: "LEX_EMPTY_FILE",
+  JSON_PARSE: "LEX_JSON_PARSE_ERROR",
+  SCHEMA: "LEX_SCHEMA_VIOLATION",
+  DUP_LEMMA_POS: "LEX_DUPLICATE_LEMMA_POS",
+  DUP_SENSE_ID: "LEX_DUPLICATE_SENSE_ID",
+  DUP_COLLOC_ID: "LEX_DUPLICATE_COLLOC_ID",
+  UNSORTED: "LEX_NOT_SORTED",
+  BAD_LEMMA: "LEX_BAD_LEMMA",
+  BAD_POS: "LEX_BAD_POS",
+  BAD_VI_GLOSS: "LEX_BAD_VI_GLOSS",
+  INFERENCE_MARKER: "LEX_INFERENCE_MARKER",
+  MULTIGLOSS: "LEX_MULTIGLOSS",
+  FRAME_SCOPE_LOCK: "LEX_FRAME_SCOPE_LOCK_VIOLATION",
+  FRAME_UNKNOWN: "LEX_UNKNOWN_FRAME",
+  SENSE_TRACE_MISSING: "LEX_SENSE_TRACE_MISSING",
   SENSE_LEMMA_MISSING: "LEX_SENSE_LEMMA_MISSING",
-
-  BAD_COLLOC_SCHEMA: "LEX_BAD_COLLOC_SCHEMA",
-  DUP_COLLOC_ID: "LEX_DUP_COLLOC_ID",
-  COLLOC_LEMMA_MISSING: "LEX_COLLOC_LEMMA_MISSING",
-
-  UNKNOWN_FRAME: "LEX_UNKNOWN_FRAME"
+  COLLOC_LEMMA_MISSING: "LEX_COLLOC_LEMMA_MISSING"
 };
 
-function nowUtcISO() {
-  // NOTE: audit may include timestamps; pack canonical must not.
-  return new Date().toISOString();
+function sha256Hex(bufOrStr) {
+  return crypto.createHash("sha256").update(bufOrStr).digest("hex");
 }
 
-function die(audit, verdict, code, reasonCode, detail) {
-  audit.verdict = verdict;
-  audit.fail_fast = true;
-  audit.reasons.push({ code: reasonCode, detail: detail || "" });
-  // stdout MUST be machine-readable JSON only
-  process.stdout.write(JSON.stringify(audit, null, 2) + "\n");
-  process.exit(code);
-}
-
-function ok(audit) {
-  // stdout MUST be machine-readable JSON only
-  process.stdout.write(JSON.stringify(audit, null, 2) + "\n");
-  process.exit(EXIT_SUPPORTED);
-}
-
-function parseArgs(argv) {
-  const args = { all: false, lemmas: null, senses: null, collocations: null, frames: null };
-  for (let i = 2; i < argv.length; i++) {
-    const a = argv[i];
-    if (a === "--all") args.all = true;
-    else if (a === "--lemmas") args.lemmas = argv[++i];
-    else if (a === "--senses") args.senses = argv[++i];
-    else if (a === "--collocations") args.collocations = argv[++i];
-    else if (a === "--frames") args.frames = argv[++i];
+function readText(filePath) {
+  if (!fs.existsSync(filePath)) {
+    throw hard(`${filePath}: not found`, REASON.FILE_NOT_FOUND, filePath, 1);
   }
-  return args;
+  const raw = fs.readFileSync(filePath, "utf8");
+  const trimmed = raw.trim();
+  if (!trimmed) {
+    throw hard(`${filePath}: empty`, REASON.EMPTY_FILE, filePath, 1);
+  }
+  return raw;
 }
 
-function loadJsonLines(filePath, audit, label) {
-  if (!filePath) die(audit, "REFUSE", EXIT_REFUSE, REASON.FILE_MISSING, `missing --${label} argument`);
-  if (!fs.existsSync(filePath)) die(audit, "REFUSE", EXIT_REFUSE, REASON.FILE_MISSING, `${label} not found: ${filePath}`);
-
-  const raw = fs.readFileSync(filePath, "utf8");
-  const content = raw.trim();
-  if (!content) die(audit, "REFUSE", EXIT_REFUSE, REASON.FILE_EMPTY, `${label} empty: ${filePath}`);
-
-  const lines = content.split("\n").filter(l => l.trim());
+function loadJsonLines(filePath) {
+  const raw = readText(filePath);
+  const lines = raw.split("\n").filter(l => l.trim().length > 0);
   const out = [];
-  for (let idx = 0; idx < lines.length; idx++) {
-    const lineNo = idx + 1;
+  for (let i = 0; i < lines.length; i++) {
+    const lineNo = i + 1;
     try {
-      const obj = JSON.parse(lines[idx]);
-      out.push({ line: lineNo, obj });
+      const obj = JSON.parse(lines[i]);
+      out.push({ file: filePath, line: lineNo, obj });
     } catch (e) {
-      die(audit, "REFUSE", EXIT_REFUSE, REASON.JSON_PARSE_ERROR, `${label} line ${lineNo}: ${e.message}`);
+      throw hard(`JSON parse error at ${filePath}:${lineNo}: ${e.message}`, REASON.JSON_PARSE, filePath, lineNo);
     }
   }
-
-  // deterministic ordering for downstream checks
-  out.sort((a, b) => JSON.stringify(a.obj).localeCompare(JSON.stringify(b.obj)));
   return out;
 }
 
-function loadFrameSet(framesPath, audit) {
-  if (!framesPath) return null;
-  if (!fs.existsSync(framesPath)) {
-    // frames missing => do not REFUSE; frames check becomes INSUFFICIENT only if frame fields exist
-    audit.notes.push(`frames catalog missing: ${framesPath} (frame existence checks relaxed)`);
-    return null;
+// Canonical JSON: sort keys recursively, JSON.stringify with no spacing.
+function canonicalize(value) {
+  if (value === null || typeof value !== "object") return value;
+  if (Array.isArray(value)) return value.map(canonicalize);
+  const keys = Object.keys(value).sort();
+  const obj = {};
+  for (const k of keys) obj[k] = canonicalize(value[k]);
+  return obj;
+}
+
+function hard(message, code, file, line) {
+  const err = new Error(message);
+  err._gate = { severity: "REFUSE", code, file, line };
+  return err;
+}
+
+function softReason(reasons, code, message, file, line) {
+  reasons.push({ code, message, file, line });
+}
+
+function isLowerAlpha(lemma) {
+  return /^[a-z]+$/.test(lemma);
+}
+
+// Inference markers / multi-gloss separators (normative deny-list for v0.1)
+function hasInferenceMarkers(s) {
+  // Minimal deny markers: "maybe", "probably", "approx", "??", "tbd", "unknown", "~"
+  return /(\?\?|\btbd\b|\bunknown\b|\bmaybe\b|\bprobably\b|\bapprox\b|~)/i.test(s);
+}
+
+function hasMultiGlossSeparators(s) {
+  // deny separators often used to pack multiple senses/glosses
+  return /[;|\/\\]/.test(s) || /\s,\s/.test(s) || /\s-\s/.test(s);
+}
+
+function tokenCount(s) {
+  return s.trim().split(/\s+/).filter(Boolean).length;
+}
+
+function validateLemmaEntry(row, reasons) {
+  const { file, line, obj } = row;
+  if (obj === null || typeof obj !== "object" || Array.isArray(obj)) {
+    softReason(reasons, REASON.SCHEMA, "Entry must be an object", file, line);
+    return;
   }
-  try {
-    const data = JSON.parse(fs.readFileSync(framesPath, "utf8"));
-    if (data && typeof data === "object") {
-      // accept either {FRAME_ID: {...}} or {frames:[{id:""}]}
-      if (Array.isArray(data.frames)) {
-        return new Set(data.frames.map(x => x.id).filter(Boolean));
+  const req = ["lemma", "pos", "vi_gloss", "frame"];
+  for (const f of req) {
+    if (!(f in obj)) {
+      softReason(reasons, REASON.SCHEMA, `Missing required field '${f}'`, file, line);
+      return;
+    }
+  }
+
+  if (typeof obj.lemma !== "string" || obj.lemma.length < 1) {
+    softReason(reasons, REASON.SCHEMA, "lemma must be non-empty string", file, line);
+    return;
+  }
+  if (!isLowerAlpha(obj.lemma)) {
+    softReason(reasons, REASON.BAD_LEMMA, "lemma must be lowercase [a-z]+ only (no mutation allowed)", file, line);
+    return;
+  }
+
+  if (typeof obj.pos !== "string" || !POS_SET.has(obj.pos)) {
+    softReason(reasons, REASON.BAD_POS, `pos must be one of: ${Array.from(POS_SET).join(",")}`, file, line);
+    return;
+  }
+
+  if (typeof obj.vi_gloss !== "string" || obj.vi_gloss.trim().length < 1) {
+    softReason(reasons, REASON.BAD_VI_GLOSS, "vi_gloss is required (evidence-first); empty is forbidden", file, line);
+    return;
+  }
+  const gloss = obj.vi_gloss.trim();
+  if (hasInferenceMarkers(gloss)) softReason(reasons, REASON.INFERENCE_MARKER, "vi_gloss contains inference marker(s)", file, line);
+  if (hasMultiGlossSeparators(gloss)) softReason(reasons, REASON.MULTIGLOSS, "vi_gloss contains multi-gloss separator(s)", file, line);
+  const tc = tokenCount(gloss);
+  if (tc < 1 || tc > 4) softReason(reasons, REASON.BAD_VI_GLOSS, "vi_gloss must be 1–4 tokens (v0.1 constraint)", file, line);
+
+  if (typeof obj.frame !== "string") {
+    softReason(reasons, REASON.SCHEMA, "frame must be string", file, line);
+    return;
+  }
+  if (obj.frame !== "") {
+    softReason(reasons, REASON.FRAME_SCOPE_LOCK, "frame MUST be empty string in v0.1 (scope-lock)", file, line);
+  }
+}
+
+function validateSenseEntry(row, reasons) {
+  const { file, line, obj } = row;
+  if (obj === null || typeof obj !== "object" || Array.isArray(obj)) {
+    softReason(reasons, REASON.SCHEMA, "Sense entry must be an object", file, line);
+    return;
+  }
+  const req = ["sense_id", "lemma", "pos", "vi_gloss", "en_gloss", "frame", "trace"];
+  for (const f of req) {
+    if (!(f in obj)) {
+      softReason(reasons, REASON.SCHEMA, `Missing required field '${f}'`, file, line);
+      return;
+    }
+  }
+  if (typeof obj.lemma !== "string" || !isLowerAlpha(obj.lemma)) {
+    softReason(reasons, REASON.BAD_LEMMA, "sense.lemma must be lowercase [a-z]+", file, line);
+    return;
+  }
+  if (typeof obj.pos !== "string" || !POS_SET.has(obj.pos)) {
+    softReason(reasons, REASON.BAD_POS, "sense.pos invalid", file, line);
+    return;
+  }
+
+  // sense_id canonical: lemma.pos.NN
+  if (typeof obj.sense_id !== "string") {
+    softReason(reasons, REASON.SCHEMA, "sense_id must be string", file, line);
+    return;
+  }
+  const expectPrefix = `${obj.lemma}.${obj.pos}.`;
+  if (!obj.sense_id.startsWith(expectPrefix) || !/^\d{2}$/.test(obj.sense_id.slice(expectPrefix.length))) {
+    softReason(reasons, REASON.SCHEMA, "sense_id must be `${lemma}.${pos}.${NN}` where NN is 2-digit", file, line);
+  }
+
+  if (typeof obj.vi_gloss !== "string" || obj.vi_gloss.trim().length < 1) {
+    softReason(reasons, REASON.BAD_VI_GLOSS, "sense.vi_gloss required", file, line);
+  } else {
+    const g = obj.vi_gloss.trim();
+    if (hasInferenceMarkers(g)) softReason(reasons, REASON.INFERENCE_MARKER, "sense.vi_gloss contains inference marker(s)", file, line);
+    if (hasMultiGlossSeparators(g)) softReason(reasons, REASON.MULTIGLOSS, "sense.vi_gloss contains multi-gloss separator(s)", file, line);
+  }
+
+  if (typeof obj.en_gloss !== "string" || obj.en_gloss.trim().length < 1) {
+    softReason(reasons, REASON.SCHEMA, "en_gloss required (evidence trace anchor for sense)", file, line);
+  }
+
+  if (typeof obj.frame !== "string" || obj.frame !== "") {
+    softReason(reasons, REASON.FRAME_SCOPE_LOCK, "sense.frame MUST be empty string in v0.1", file, line);
+  }
+
+  // trace required
+  if (obj.trace === null || typeof obj.trace !== "object" || Array.isArray(obj.trace)) {
+    softReason(reasons, REASON.SENSE_TRACE_MISSING, "trace must be object", file, line);
+    return;
+  }
+  for (const f of ["source", "source_file_sha256", "record_sha256", "ref"]) {
+    if (!(f in obj.trace) || typeof obj.trace[f] !== "string" || obj.trace[f].trim().length < 1) {
+      softReason(reasons, REASON.SENSE_TRACE_MISSING, `trace.${f} required`, file, line);
+    }
+  }
+  if ("source_file_sha256" in obj.trace && !/^[a-f0-9]{64}$/.test(obj.trace.source_file_sha256)) {
+    softReason(reasons, REASON.SCHEMA, "trace.source_file_sha256 must be sha256 hex", file, line);
+  }
+  if ("record_sha256" in obj.trace && !/^[a-f0-9]{64}$/.test(obj.trace.record_sha256)) {
+    softReason(reasons, REASON.SCHEMA, "trace.record_sha256 must be sha256 hex", file, line);
+  }
+}
+
+function validateCollocEntry(row, reasons) {
+  const { file, line, obj } = row;
+  if (obj === null || typeof obj !== "object" || Array.isArray(obj)) {
+    softReason(reasons, REASON.SCHEMA, "Collocation entry must be an object", file, line);
+    return;
+  }
+  const req = ["collocation_id", "lemma", "pos", "collocation", "frame"];
+  for (const f of req) {
+    if (!(f in obj)) {
+      softReason(reasons, REASON.SCHEMA, `Missing required field '${f}'`, file, line);
+      return;
+    }
+  }
+  if (typeof obj.collocation_id !== "string" || obj.collocation_id.trim().length < 1) {
+    softReason(reasons, REASON.SCHEMA, "collocation_id must be non-empty", file, line);
+  }
+  if (typeof obj.lemma !== "string" || !isLowerAlpha(obj.lemma)) {
+    softReason(reasons, REASON.BAD_LEMMA, "colloc.lemma must be lowercase [a-z]+", file, line);
+  }
+  if (typeof obj.pos !== "string" || !POS_SET.has(obj.pos)) {
+    softReason(reasons, REASON.BAD_POS, "colloc.pos invalid", file, line);
+  }
+  if (typeof obj.frame !== "string" || obj.frame !== "") {
+    softReason(reasons, REASON.FRAME_SCOPE_LOCK, "colloc.frame MUST be empty string in v0.1", file, line);
+  }
+}
+
+function isSortedLemmaRows(rows) {
+  // sorted by lemma asc, pos asc (stable)
+  let prev = null;
+  for (const r of rows) {
+    const o = r.obj;
+    const key = `${o.lemma}\u0000${o.pos}`;
+    if (prev !== null && key < prev) return false;
+    prev = key;
+  }
+  return true;
+}
+
+function isSortedSenseRows(rows) {
+  let prev = null;
+  for (const r of rows) {
+    const o = r.obj;
+    const key = `${o.lemma}\u0000${o.pos}\u0000${o.sense_id}`;
+    if (prev !== null && key < prev) return false;
+    prev = key;
+  }
+  return true;
+}
+
+function computeArtifactSetHash(fileShaMap) {
+  // fileShaMap: {filename: sha256hex}
+  const lines = Object.keys(fileShaMap)
+    .sort()
+    .map(fn => `${fileShaMap[fn]}  ${fn}`);
+  const setSha = sha256Hex(lines.join("\n") + "\n");
+  return { setSha, lines };
+}
+
+function main(argv) {
+  // CLI:
+  //   node validators/lexicon_gate.js --lemmas lexicon/en_vi_lemmas.jsonl [--senses ...] [--collocations ...] [--frames ...] [--all] [--no-fail-fast]
+  // Default: requires --lemmas.
+  const args = parseArgs(argv);
+
+  const lemmasPath = args.lemmas;
+  if (!lemmasPath) {
+    console.error("Usage: node validators/lexicon_gate.js --lemmas <lemmas.jsonl> [--senses <senses.jsonl>] [--collocations <collocations.jsonl>] [--frames <frames.json>] [--all] [--no-fail-fast]");
+    process.exit(EXIT_SOFT);
+  }
+
+  const failFast = args.failFast;
+
+  const reasons = [];
+  const notes = [];
+
+  // Load frames (optional)
+  let frameSet = null;
+  if (args.frames) {
+    const framesRaw = readText(args.frames);
+    let framesObj;
+    try {
+      framesObj = JSON.parse(framesRaw);
+    } catch (e) {
+      throw hard(`frames JSON parse error: ${e.message}`, REASON.JSON_PARSE, args.frames, 1);
+    }
+    if (framesObj && typeof framesObj === "object" && !Array.isArray(framesObj)) {
+      frameSet = new Set(Object.keys(framesObj));
+    } else {
+      throw hard(`frames must be an object keyed by frame_id`, REASON.SCHEMA, args.frames, 1);
+    }
+  }
+
+  // Load lemma rows
+  const lemmaRows = loadJsonLines(lemmasPath);
+  for (const row of lemmaRows) {
+    validateLemmaEntry(row, reasons);
+    if (failFast && reasons.length > 0) break;
+  }
+
+  // Duplicate lemma+pos
+  const lemmaKeySet = new Set();
+  let dupLemmaPos = 0;
+  if (!(failFast && reasons.length > 0)) {
+    for (const row of lemmaRows) {
+      const o = row.obj;
+      const key = `${o.lemma}|${o.pos}`;
+      if (lemmaKeySet.has(key)) {
+        dupLemmaPos++;
+        softReason(reasons, REASON.DUP_LEMMA_POS, `Duplicate lemma+pos: ${key}`, row.file, row.line);
+        if (failFast) break;
       }
-      return new Set(Object.keys(data));
+      lemmaKeySet.add(key);
     }
-  } catch (e) {
-    die(audit, "REFUSE", EXIT_REFUSE, REASON.JSON_PARSE_ERROR, `frames parse error: ${e.message}`);
-  }
-  return null;
-}
-
-function isMultiwordLemma(s) {
-  // inventory lemma MUST be single token base form
-  return /\s/.test(s) || /-/.test(s);
-}
-
-function validateLemmaSchema(entry, audit) {
-  const e = entry.obj;
-  if (!e || typeof e !== "object") die(audit, "REFUSE", EXIT_REFUSE, REASON.BAD_LEMMA_SCHEMA, `lemma line ${entry.line}: not an object`);
-  if (typeof e.lemma !== "string" || e.lemma.trim().length < 1) die(audit, "REFUSE", EXIT_REFUSE, REASON.BAD_LEMMA_SCHEMA, `lemma line ${entry.line}: missing lemma`);
-  if (typeof e.pos !== "string" || e.pos.trim().length < 1) die(audit, "REFUSE", EXIT_REFUSE, REASON.BAD_LEMMA_SCHEMA, `lemma line ${entry.line}: missing pos`);
-
-  // reject sense_count claim (unsupported inference)
-  if (Object.prototype.hasOwnProperty.call(e, "sense_count")) {
-    die(audit, "REFUSE", EXIT_REFUSE, REASON.SENSE_COUNT_CLAIM, `lemma line ${entry.line}: sense_count prohibited`);
   }
 
-  if (isMultiwordLemma(e.lemma)) {
-    die(audit, "REFUSE", EXIT_REFUSE, REASON.MULTIWORD_LEMMA, `lemma line ${entry.line}: multiword lemma '${e.lemma}' prohibited`);
-  }
+  // Sorted check
+  const lemmasSorted = isSortedLemmaRows(lemmaRows);
+  if (!lemmasSorted) softReason(reasons, REASON.UNSORTED, "Lemmas file must be sorted by (lemma asc, pos asc)", lemmasPath, 1);
 
-  if (Object.prototype.hasOwnProperty.call(e, "frame") && typeof e.frame !== "string") {
-    die(audit, "REFUSE", EXIT_REFUSE, REASON.BAD_LEMMA_SCHEMA, `lemma line ${entry.line}: invalid frame type`);
-  }
-}
+  // Optional senses
+  let senseRows = [];
+  let dupSenseId = 0;
+  let senseLemmaMissing = 0;
+  let sensesSorted = true;
 
-function validateSenseSchema(entry, audit) {
-  const e = entry.obj;
-  if (!e || typeof e !== "object") die(audit, "REFUSE", EXIT_REFUSE, REASON.BAD_SENSE_SCHEMA, `sense line ${entry.line}: not an object`);
-  if (typeof e.sense_id !== "string" || e.sense_id.trim().length < 1) die(audit, "REFUSE", EXIT_REFUSE, REASON.BAD_SENSE_SCHEMA, `sense line ${entry.line}: missing sense_id`);
-  if (typeof e.lemma !== "string" || e.lemma.trim().length < 1) die(audit, "REFUSE", EXIT_REFUSE, REASON.BAD_SENSE_SCHEMA, `sense line ${entry.line}: missing lemma`);
-  if (typeof e.pos !== "string" || e.pos.trim().length < 1) die(audit, "REFUSE", EXIT_REFUSE, REASON.BAD_SENSE_SCHEMA, `sense line ${entry.line}: missing pos`);
-  if (Object.prototype.hasOwnProperty.call(e, "frame") && typeof e.frame !== "string") {
-    die(audit, "REFUSE", EXIT_REFUSE, REASON.BAD_SENSE_SCHEMA, `sense line ${entry.line}: invalid frame type`);
-  }
-}
-
-function validateCollocSchema(entry, audit) {
-  const e = entry.obj;
-  if (!e || typeof e !== "object") die(audit, "REFUSE", EXIT_REFUSE, REASON.BAD_COLLOC_SCHEMA, `colloc line ${entry.line}: not an object`);
-  if (typeof e.collocation_id !== "string" || e.collocation_id.trim().length < 1) die(audit, "REFUSE", EXIT_REFUSE, REASON.BAD_COLLOC_SCHEMA, `colloc line ${entry.line}: missing collocation_id`);
-  if (typeof e.lemma !== "string" || e.lemma.trim().length < 1) die(audit, "REFUSE", EXIT_REFUSE, REASON.BAD_COLLOC_SCHEMA, `colloc line ${entry.line}: missing lemma`);
-  if (typeof e.pattern !== "string" || e.pattern.trim().length < 1) die(audit, "REFUSE", EXIT_REFUSE, REASON.BAD_COLLOC_SCHEMA, `colloc line ${entry.line}: missing pattern`);
-}
-
-function main() {
-  const args = parseArgs(process.argv);
-
-  const audit = {
-    tool: "validators/lexicon_gate.js",
-    version: "1.0.1",
-    mode: args.all ? "--all" : "single",
-    timestamp_utc: nowUtcISO(),
-    verdict: "SUPPORTED",
-    fail_fast: false,
-    reasons: [],
-    notes: [],
-    files: {
-      lemmas: args.lemmas,
-      senses: args.senses,
-      collocations: args.collocations,
-      frames: args.frames
-    },
-    stats: {
-      lemmas: 0,
-      senses: 0,
-      collocations: 0,
-      dup_lemma_pos: 0,
-      dup_sense_id: 0,
-      dup_colloc_id: 0,
-      unknown_frames: 0,
-      sense_lemma_missing: 0,
-      colloc_lemma_missing: 0
+  if (args.senses) {
+    senseRows = loadJsonLines(args.senses);
+    for (const row of senseRows) {
+      validateSenseEntry(row, reasons);
+      if (failFast && reasons.length > 0) break;
     }
+    if (!(failFast && reasons.length > 0)) {
+      const senseIdSet = new Set();
+      for (const row of senseRows) {
+        const o = row.obj;
+        if (senseIdSet.has(o.sense_id)) {
+          dupSenseId++;
+          softReason(reasons, REASON.DUP_SENSE_ID, `Duplicate sense_id: ${o.sense_id}`, row.file, row.line);
+          if (failFast) break;
+        }
+        senseIdSet.add(o.sense_id);
+
+        const lk = `${o.lemma}|${o.pos}`;
+        if (!lemmaKeySet.has(lk)) {
+          senseLemmaMissing++;
+          softReason(reasons, REASON.SENSE_LEMMA_MISSING, `Sense references missing lemma+pos: ${lk}`, row.file, row.line);
+          if (failFast) break;
+        }
+      }
+    }
+    sensesSorted = isSortedSenseRows(senseRows);
+    if (!sensesSorted) softReason(reasons, REASON.UNSORTED, "Senses file must be sorted by (lemma,pos,sense_id)", args.senses, 1);
+  }
+
+  // Optional collocations
+  let collocRows = [];
+  let dupCollocId = 0;
+  let collocLemmaMissing = 0;
+  if (args.collocations) {
+    collocRows = loadJsonLines(args.collocations);
+    for (const row of collocRows) {
+      validateCollocEntry(row, reasons);
+      if (failFast && reasons.length > 0) break;
+    }
+    if (!(failFast && reasons.length > 0)) {
+      const collocIdSet = new Set();
+      for (const row of collocRows) {
+        const o = row.obj;
+        if (collocIdSet.has(o.collocation_id)) {
+          dupCollocId++;
+          softReason(reasons, REASON.DUP_COLLOC_ID, `Duplicate collocation_id: ${o.collocation_id}`, row.file, row.line);
+          if (failFast) break;
+        }
+        collocIdSet.add(o.collocation_id);
+
+        const lk = `${o.lemma}|${o.pos}`;
+        if (!lemmaKeySet.has(lk)) {
+          collocLemmaMissing++;
+          softReason(reasons, REASON.COLLOC_LEMMA_MISSING, `Collocation references missing lemma+pos: ${lk}`, row.file, row.line);
+          if (failFast) break;
+        }
+      }
+    }
+  }
+
+  // Frame existence check: v0.1 scope-lock requires frame==""; if frames catalog exists, we only enforce "known frames" when frame non-empty.
+  // Since frame must be "", frames_known is true iff no row violated that lock (already captured).
+  const unknownFrames = 0;
+
+  // Artifact hashes
+  const fileShaMap = {};
+  fileShaMap[lemmasPath] = sha256Hex(fs.readFileSync(lemmasPath));
+  if (args.senses) fileShaMap[args.senses] = sha256Hex(fs.readFileSync(args.senses));
+  if (args.collocations) fileShaMap[args.collocations] = sha256Hex(fs.readFileSync(args.collocations));
+  if (args.frames) fileShaMap[args.frames] = sha256Hex(fs.readFileSync(args.frames));
+
+  const { setSha, lines: manifestLines } = computeArtifactSetHash(fileShaMap);
+
+  // Compute checks booleans (derived from reasons)
+  const checks = {
+    schema_pass: !reasons.some(r => r.code === REASON.SCHEMA || r.code === REASON.JSON_PARSE || r.code === REASON.FILE_NOT_FOUND || r.code === REASON.EMPTY_FILE),
+    sorted: lemmasSorted && (args.senses ? sensesSorted : true),
+    no_duplicates: (dupLemmaPos === 0) && (dupSenseId === 0) && (dupCollocId === 0),
+    no_inference_markers: !reasons.some(r => r.code === REASON.INFERENCE_MARKER),
+    no_multigloss: !reasons.some(r => r.code === REASON.MULTIGLOSS),
+    no_sense_selection_without_trace: !reasons.some(r => r.code === REASON.SENSE_TRACE_MISSING),
+    frame_scope_lock: !reasons.some(r => r.code === REASON.FRAME_SCOPE_LOCK),
+    frames_known: !reasons.some(r => r.code === REASON.FRAME_UNKNOWN),
+    crossref_sense_lemma: (senseLemmaMissing === 0),
+    crossref_colloc_lemma: (collocLemmaMissing === 0)
   };
 
-  if (!args.all) {
-    die(audit, "REFUSE", EXIT_REFUSE, REASON.BAD_LEMMA_SCHEMA, "lexicon_gate.js requires --all mode for NRBPL governance L1");
+  // Verdict mapping (deterministic):
+  // - REFUSE if schema_pass false OR frame_scope_lock false (policy hard)
+  // - else INSUFFICIENT if any reasons exist
+  // - else SUPPORTED
+  let verdict = "SUPPORTED";
+  let exitCode = EXIT_OK;
+
+  if (!checks.schema_pass || !checks.frame_scope_lock) {
+    verdict = "REFUSE";
+    exitCode = EXIT_REFUSE;
+  } else if (reasons.length > 0) {
+    verdict = "INSUFFICIENT";
+    exitCode = EXIT_SOFT;
   }
 
-  const frames = loadFrameSet(args.frames, audit);
+  // Assemble report (without report_hashes.canonical_sha256 first), then compute canonical_sha256 as specified.
+  const report = {
+    spec: "NTL_LEXICON_GATE_REPORT_v0_1",
+    tool: TOOL,
+    tool_version: VERSION,
+    mode: args.modeLabel,
+    verdict,
+    exit_code: exitCode,
+    fail_fast: failFast,
+    files: {
+      lemmas: lemmasPath,
+      ...(args.senses ? { senses: args.senses } : {}),
+      ...(args.collocations ? { collocations: args.collocations } : {}),
+      ...(args.frames ? { frames: args.frames } : {})
+    },
+    artifact_hashes: {
+      set_sha256: setSha,
+      manifest_lines: manifestLines
+    },
+    report_hashes: {
+      canonical_sha256: "",
+      bytes_sha256_sidecar_required: true
+    },
+    checks,
+    stats: {
+      lemmas: lemmaRows.length,
+      senses: senseRows.length,
+      collocations: collocRows.length,
+      dup_lemma_pos: dupLemmaPos,
+      dup_sense_id: dupSenseId,
+      dup_colloc_id: dupCollocId,
+      unknown_frames: unknownFrames,
+      sense_lemma_missing: senseLemmaMissing,
+      colloc_lemma_missing: collocLemmaMissing
+    },
+    reasons,
+    notes
+  };
 
-  // Load
-  const lemmaEntries = loadJsonLines(args.lemmas, audit, "lemmas");
-  const senseEntries = loadJsonLines(args.senses, audit, "senses");
-  const collocEntries = loadJsonLines(args.collocations, audit, "collocations");
+  const canonicalForHash = canonicalize(report);
+  canonicalForHash.report_hashes.canonical_sha256 = "";
+  const canonicalSha = sha256Hex(JSON.stringify(canonicalForHash));
+  report.report_hashes.canonical_sha256 = canonicalSha;
 
-  audit.stats.lemmas = lemmaEntries.length;
-  audit.stats.senses = senseEntries.length;
-  audit.stats.collocations = collocEntries.length;
-
-  // Validate schemas + duplicates
-  const seenLemmaPos = new Set();
-  const lemmaIndex = new Set(); // lemma|pos keys
-  for (const x of lemmaEntries) {
-    validateLemmaSchema(x, audit);
-    const e = x.obj;
-    const key = `${e.lemma}|${e.pos}`;
-    if (seenLemmaPos.has(key)) {
-      die(audit, "REFUSE", EXIT_REFUSE, REASON.DUP_LEMMA_POS, `duplicate lemma+pos '${key}' at line ${x.line}`);
-    }
-    seenLemmaPos.add(key);
-    lemmaIndex.add(key);
-
-    // frame existence => if frames available, strict REFUSE
-    if (frames && e.frame && !frames.has(e.frame)) {
-      die(audit, "REFUSE", EXIT_REFUSE, REASON.UNKNOWN_FRAME, `unknown frame '${e.frame}' in lemma '${e.lemma}'`);
-    }
-    if (!frames && e.frame) {
-      // no frames catalog: not refuse, but mark insufficient
-      audit.stats.unknown_frames++;
-    }
-  }
-
-  const seenSenseId = new Set();
-  for (const x of senseEntries) {
-    validateSenseSchema(x, audit);
-    const e = x.obj;
-
-    if (seenSenseId.has(e.sense_id)) {
-      die(audit, "REFUSE", EXIT_REFUSE, REASON.DUP_SENSE_ID, `duplicate sense_id '${e.sense_id}' at line ${x.line}`);
-    }
-    seenSenseId.add(e.sense_id);
-
-    // cross-check lemma existence
-    const key = `${e.lemma}|${e.pos}`;
-    if (!lemmaIndex.has(key)) {
-      audit.stats.sense_lemma_missing++;
-      // lemma missing => REFUSE (L1 governance requires closure)
-      die(audit, "REFUSE", EXIT_REFUSE, REASON.SENSE_LEMMA_MISSING, `sense '${e.sense_id}' references missing lemma+pos '${key}'`);
-    }
-
-    if (frames && e.frame && !frames.has(e.frame)) {
-      die(audit, "REFUSE", EXIT_REFUSE, REASON.UNKNOWN_FRAME, `unknown frame '${e.frame}' in sense '${e.sense_id}'`);
-    }
-    if (!frames && e.frame) audit.stats.unknown_frames++;
-  }
-
-  const seenCollocId = new Set();
-  for (const x of collocEntries) {
-    validateCollocSchema(x, audit);
-    const e = x.obj;
-
-    if (seenCollocId.has(e.collocation_id)) {
-      die(audit, "REFUSE", EXIT_REFUSE, REASON.DUP_COLLOC_ID, `duplicate collocation_id '${e.collocation_id}' at line ${x.line}`);
-    }
-    seenCollocId.add(e.collocation_id);
-
-    // colloc lemma should exist in lemma inventory
-    // NOTE: collocations may be surface, but lemma must be base lemma
-    const keyAnyPos = Array.from(seenLemmaPos).some(k => k.startsWith(`${e.lemma}|`));
-    if (!keyAnyPos) {
-      audit.stats.colloc_lemma_missing++;
-      die(audit, "REFUSE", EXIT_REFUSE, REASON.COLLOC_LEMMA_MISSING, `collocation '${e.collocation_id}' references missing lemma '${e.lemma}'`);
-    }
-  }
-
-  // If frames catalog missing but frames referenced => INSUFFICIENT (not REFUSE)
-  if (!frames && audit.stats.unknown_frames > 0) {
-    audit.verdict = "INSUFFICIENT";
-    audit.reasons.push({ code: REASON.UNKNOWN_FRAME, detail: "frames catalog missing; cannot verify referenced frames" });
-    process.stdout.write(JSON.stringify(audit, null, 2) + "\n");
-    process.exit(EXIT_INSUFFICIENT);
-  }
-
-  // PASS
-  ok(audit);
+  // Emit deterministic JSON
+  process.stdout.write(JSON.stringify(canonicalize(report), null, 2) + "\n");
+  process.exit(exitCode);
 }
 
-main();
+function parseArgs(argv) {
+  const out = {
+    lemmas: null,
+    senses: null,
+    collocations: null,
+    frames: null,
+    failFast: true,
+    modeLabel: "--custom"
+  };
+
+  const args = argv.slice(2);
+  if (args.includes("--all")) out.modeLabel = "--all";
+  if (args.includes("--no-fail-fast")) out.failFast = false;
+
+  for (let i = 0; i < args.length; i++) {
+    const a = args[i];
+    if (a === "--lemmas") out.lemmas = args[++i];
+    else if (a === "--senses") out.senses = args[++i];
+    else if (a === "--collocations") out.collocations = args[++i];
+    else if (a === "--frames") out.frames = args[++i];
+  }
+  if (out.modeLabel === "--all" && !out.lemmas) out.lemmas = "lexicon/en_vi_lemmas.jsonl";
+  return out;
+}
+
+if (require.main === module) {
+  try {
+    main(process.argv);
+  } catch (e) {
+    // Hard fail only: deterministic REFUSE
+    const meta = e && e._gate ? e._gate : { severity: "REFUSE", code: REASON.SCHEMA, file: "unknown", line: 1 };
+    const report = {
+      spec: "NTL_LEXICON_GATE_REPORT_v0_1",
+      tool: TOOL,
+      tool_version: VERSION,
+      mode: "--exception",
+      verdict: "REFUSE",
+      exit_code: EXIT_REFUSE,
+      fail_fast: true,
+      files: { lemmas: "UNKNOWN" },
+      artifact_hashes: { set_sha256: sha256Hex(""), manifest_lines: [] },
+      report_hashes: { canonical_sha256: sha256Hex(""), bytes_sha256_sidecar_required: true },
+      checks: {
+        schema_pass: false,
+        sorted: false,
+        no_duplicates: false,
+        no_inference_markers: false,
+        no_multigloss: false,
+        no_sense_selection_without_trace: false,
+        frame_scope_lock: false,
+        frames_known: false,
+        crossref_sense_lemma: false,
+        crossref_colloc_lemma: false
+      },
+      stats: {
+        lemmas: 0, senses: 0, collocations: 0,
+        dup_lemma_pos: 0, dup_sense_id: 0, dup_colloc_id: 0,
+        unknown_frames: 0, sense_lemma_missing: 0, colloc_lemma_missing: 0
+      },
+      reasons: [{ code: meta.code, message: String(e.message || e), file: meta.file, line: meta.line }],
+      notes: []
+    };
+    const canonicalForHash = canonicalize(report);
+    canonicalForHash.report_hashes.canonical_sha256 = "";
+    report.report_hashes.canonical_sha256 = sha256Hex(JSON.stringify(canonicalForHash));
+    process.stdout.write(JSON.stringify(canonicalize(report), null, 2) + "\n");
+    process.exit(EXIT_REFUSE);
+  }
+}
