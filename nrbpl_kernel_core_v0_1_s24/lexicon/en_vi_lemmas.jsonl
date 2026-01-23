@@ -1,0 +1,14 @@
+{"lemma":"jump","pos":"VERB","vi_gloss":"nhảy","frame":"MOTION_JUMP"}
+{"lemma":"look","pos":"VERB","vi_gloss":"nhìn","frame":"PERCEPTION_LOOK"}
+{"lemma":"chew","pos":"VERB","vi_gloss":"nhai","frame":"CONSUME_CHEW"}
+{"lemma":"chase","pos":"VERB","vi_gloss":"đuổi","frame":"PURSUIT_CHASE"}
+{"lemma":"throw","pos":"VERB","vi_gloss":"ném","frame":"MOTION_THROW"}
+{"lemma":"run","pos":"VERB","vi_gloss":"chạy","frame":"MOTION_RUN"}
+{"lemma":"play","pos":"VERB","vi_gloss":"chơi","frame":"ACTIVITY_PLAY"}
+{"lemma":"wear","pos":"VERB","vi_gloss":"mặc","frame":"WEAR_CLOTHING"}
+{"lemma":"fall","pos":"VERB","vi_gloss":"ngã","frame":"MOTION_FALL"}
+{"lemma":"stop","pos":"VERB","vi_gloss":"dừng","frame":"MOTION_STOP"}
+{"lemma":"lick","pos":"VERB","vi_gloss":"liếm","frame":"ACTION_LICK"}
+{"lemma":"stand","pos":"VERB","vi_gloss":"đứng","frame":"POSTURE_STAND"}
+{"lemma":"lie","pos":"VERB","vi_gloss":"nằm","frame":"POSTURE_LIE"}
+{"lemma":"sit","pos":"VERB","vi_gloss":"ngồi","frame":"POSTURE_SIT"}
