@@ -12,6 +12,8 @@
     "test-all": "npm test && npm run test-nl",
     "audit": "node tools/repo_audit.js --scope ntl --mode canonical",
     "audit-out": "node tools/repo_audit.js --scope ntl --mode canonical --out _audit/repo_audit.json",
+    "freeze-l1": "node tools/freeze_l1_baseline.js",
+    "freeze-l1-tag": "node tools/freeze_l1_baseline.js --tag",
     "example": "node bin/nrbcore.js run examples/prog_lookup_pr_ledger.json examples/en_en_lex_min.nrbp-dict.json"
   },
   "keywords": [
