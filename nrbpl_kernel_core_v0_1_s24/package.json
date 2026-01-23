@@ -10,6 +10,8 @@
     "test": "node test/run_all.js",
     "test-nl": "node test/nl/run_nl_suite.js",
     "test-all": "npm test && npm run test-nl",
+    "audit": "node tools/repo_audit.js --scope ntl --mode canonical",
+    "audit-out": "node tools/repo_audit.js --scope ntl --mode canonical --out _audit/repo_audit.json",
     "example": "node bin/nrbcore.js run examples/prog_lookup_pr_ledger.json examples/en_en_lex_min.nrbp-dict.json"
   },
   "keywords": [

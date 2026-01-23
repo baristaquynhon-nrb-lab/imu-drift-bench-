@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "NRBPL_AUDIT_REPORT_v0.1.schema.json",
+  "title": "NRBPL Audit Report v0.1 (Minimal)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["spec", "scope", "mode", "timestamp_utc", "verdict", "exit_code", "gates"],
+  "properties": {
+    "spec": {
+      "type": "string",
+      "const": "NRBPL_AUDIT_REPORT_v0.1"
+    },
+    "scope": {
+      "type": "string",
+      "enum": ["ntl", "all"]
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["canonical", "dev"]
+    },
+    "timestamp_utc": {
+      "type": "string",
+      "minLength": 10
+    },
+    "verdict": {
+      "type": "string",
+      "enum": ["SUPPORTED", "INSUFFICIENT", "CONTRADICTORY", "OUT_OF_SCOPE", "REFUSE"]
+    },
+    "exit_code": {
+      "type": "integer",
+      "enum": [0, 2, 3]
+    },
+    "gates": {
+      "type": "array",
+      "minItems": 0,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["gate_id", "cmd", "argv", "verdict", "exit_code", "audit", "errors"],
+        "properties": {
+          "gate_id": { "type": "string", "minLength": 1 },
+          "cmd": { "type": "string", "minLength": 1 },
+          "argv": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "verdict": {
+            "type": "string",
+            "enum": ["SUPPORTED", "INSUFFICIENT", "CONTRADICTORY", "OUT_OF_SCOPE", "REFUSE"]
+          },
+          "exit_code": {
+            "type": "integer",
+            "enum": [0, 2, 3]
+          },
+          "audit": {
+            "description": "Raw validator stdout JSON (machine readable). Null if validator violated contract.",
+            "type": ["object", "null"]
+          },
+          "errors": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["code", "message"],
+              "properties": {
+                "code": { "type": "string", "minLength": 1 },
+                "message": { "type": "string", "minLength": 1 }
+              }
+            }
+          },
+          "stderr": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "note": {
+      "type": "string",
+      "description": "Optional note for minimal audit mode or other informational purposes"
+    }
+  }
+}
