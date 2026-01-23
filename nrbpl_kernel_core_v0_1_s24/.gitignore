@@ -3,3 +3,4 @@ _audit/
 # Test lexicon files (generated during smoke tests)
 lexicon/*_test.jsonl
 lexicon/*_small.jsonl
+lexicon/*_2k.jsonl
