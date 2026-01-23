@@ -1,0 +1,42 @@
+{
+  "spec": "NRB_EVIDENCE_POINTER_v0.1",
+  "pointer_id": "NRBPL_L1_BASELINE_POINTER",
+  "subsystem_id": "NRBPL",
+  "maturity_level": "L1",
+  "baseline": {
+    "sha256": "756457d830400b99ef0c1d39de306989115c87f07e85b3031dcb78f70a7f4e48",
+    "seal_mode": "CANONICAL_SEALED",
+    "evidence_artifacts": [
+      {
+        "path": "_audit/NRBPL_AUDIT_REPORT_L1.json",
+        "role": "AUDIT_REPORT",
+        "schema": "schemas/audit_report.schema.json"
+      },
+      {
+        "path": "_audit/NRBPL_AUDIT_REPORT_L1.sha256",
+        "role": "AUDIT_REPORT_SHA256"
+      },
+      {
+        "path": "_audit/NRBPL_AUDIT_WITNESS_L1.json",
+        "role": "WITNESS_SEAL",
+        "schema": "schemas/witness_seal.schema.json"
+      }
+    ],
+    "verification_contract": {
+      "must_verify": [
+        "sha256sum of AUDIT_REPORT_L1.json equals pointer.baseline.sha256",
+        "WITNESS_SEAL binds to same sha256",
+        "audit verdict == SUPPORTED"
+      ],
+      "must_refuse_if_missing": [
+        "any evidence artifact missing",
+        "any schema invalid",
+        "any sha256 mismatch"
+      ]
+    }
+  },
+  "governance_note": {
+    "no_inference": true,
+    "pointer_only_binds_integrity": true
+  }
+}

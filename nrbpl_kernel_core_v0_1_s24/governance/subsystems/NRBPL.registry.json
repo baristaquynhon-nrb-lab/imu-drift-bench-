@@ -1,0 +1,82 @@
+{
+  "spec": "NRB_GOV_SUBSYSTEM_REGISTRY_v0.1",
+  "subsystem": {
+    "id": "NRBPL",
+    "name": "NRBPL — Governed Programming + Translation Subsystem",
+    "maturity_level": "L1",
+    "governance_mode": "CANONICAL_SEALED",
+    "scope": [
+      "Repository audit (deterministic, no deps, fail-fast)",
+      "L0 Lexicon governance gate (cross-file checks)",
+      "L1 baseline sealing (sha256 + witness binding)",
+      "Portable audit execution (tool-runner driven)"
+    ]
+  },
+  "entrypoints": {
+    "audit_runner": {
+      "path": "tools/repo_audit.js",
+      "output_contract": {
+        "stdout_json": true,
+        "schema": "schemas/audit_report.schema.json"
+      }
+    },
+    "freeze_runner": {
+      "path": "tools/freeze_l1_baseline.js",
+      "output_contract": {
+        "writes_audit_dir": "_audit/",
+        "report": "_audit/NRBPL_AUDIT_REPORT_L1.json",
+        "report_sha256": "_audit/NRBPL_AUDIT_REPORT_L1.sha256",
+        "witness": "_audit/NRBPL_AUDIT_WITNESS_L1.json",
+        "witness_schema": "schemas/witness_seal.schema.json"
+      }
+    },
+    "validators": [
+      {
+        "id": "LEXICON_GATE",
+        "path": "validators/lexicon_gate.js",
+        "mode_required": "--all",
+        "output_contract": {
+          "stdout_json": true,
+          "verdict_enum": ["SUPPORTED", "INSUFFICIENT", "REFUSE"]
+        }
+      }
+    ]
+  },
+  "commands": {
+    "audit": "npm run audit",
+    "audit_out": "npm run audit-out",
+    "freeze_l1": "npm run freeze-l1",
+    "freeze_l1_tag": "npm run freeze-l1-tag"
+  },
+  "hard_requirements": {
+    "no_external_deps": true,
+    "deterministic_execution": true,
+    "fail_fast": true,
+    "evidence_first": true
+  },
+  "required_paths_in_nrbpl_repo": [
+    "tools/repo_audit.js",
+    "tools/freeze_l1_baseline.js",
+    "validators/lexicon_gate.js",
+    "schemas/audit_report.schema.json",
+    "schemas/witness_seal.schema.json",
+    "lexicon/en_vi_lemmas.jsonl",
+    "lexicon/en_vi_senses.jsonl",
+    "lexicon/collocations_en.jsonl",
+    "frames/meaning_frames.json",
+    "_audit/NRBPL_AUDIT_REPORT_L1.json",
+    "_audit/NRBPL_AUDIT_REPORT_L1.sha256",
+    "_audit/NRBPL_AUDIT_WITNESS_L1.json"
+  ],
+  "policy": {
+    "claim_control": {
+      "any_compliance_claim_requires_verification": true,
+      "forbid_ungrounded_assertion": true
+    },
+    "baseline_immutability": {
+      "sealed_baseline_is_immutable": true,
+      "changes_require_new_freeze": true,
+      "pointer_file": "evidence/NRBPL_L1_BASELINE_POINTER.json"
+    }
+  }
+}
