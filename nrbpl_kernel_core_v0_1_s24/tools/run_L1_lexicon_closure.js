@@ -308,10 +308,15 @@ function buildEvidenceShaSumsOrRefuse() {
 }
 
 function parseLastJsonObjectFromTextOrNull(text) {
-  // heuristic: find last '{' and attempt parse until end
-  // deterministic enough for gate/build reports that output JSON
-  const idx = text.lastIndexOf("{");
+  // heuristic: find first '{' after header separator and attempt parse until end
+  // The log format is: header lines, separator "====...", then JSON output
+  const separatorIdx = text.lastIndexOf("========");
+  const searchStart = separatorIdx >= 0 ? separatorIdx : 0;
+
+  // Find first '{' after the separator
+  const idx = text.indexOf("{", searchStart);
   if (idx < 0) return null;
+
   const tail = text.slice(idx).trim();
   try {
     return JSON.parse(tail);
