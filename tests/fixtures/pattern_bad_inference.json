@@ -1,0 +1,9 @@
+{
+  "pattern_id": "STY_BAD_001",
+  "input_meaning_signature": {
+    "frame": "PLANT_OBJECT",
+    "roles": ["PLANT"]
+  },
+  "output_expression": "Có lẽ cây bắp cải này rất ngon",
+  "language": "vi"
+}

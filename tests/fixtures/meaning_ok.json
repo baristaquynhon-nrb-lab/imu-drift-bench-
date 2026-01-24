@@ -1,0 +1,6 @@
+{
+  "locked": true,
+  "frame": "PLANT_OBJECT",
+  "roles": ["PLANT"],
+  "constraints": { "type": "cabbage", "color": "green" }
+}

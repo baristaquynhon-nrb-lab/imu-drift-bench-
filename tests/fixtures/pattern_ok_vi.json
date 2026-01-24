@@ -1,0 +1,15 @@
+{
+  "pattern_id": "STY_VI_001",
+  "input_meaning_signature": {
+    "frame": "PLANT_OBJECT",
+    "roles": ["PLANT"],
+    "constraints": { "type": "cabbage", "color": "green" }
+  },
+  "output_expression": "Cây bắp cải xanh",
+  "language": "vi",
+  "trace": {
+    "source": "human_curated",
+    "ref": "image:green_cabbage",
+    "note": "no fact added"
+  }
+}

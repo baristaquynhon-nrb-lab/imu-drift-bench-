@@ -1,0 +1,18 @@
+{
+  "scan_fieldset": [
+    "pattern_id",
+    "input_meaning_signature",
+    "input_meaning_signature.frame",
+    "input_meaning_signature.roles",
+    "input_meaning_signature.roles.0",
+    "input_meaning_signature.constraints",
+    "input_meaning_signature.constraints.type",
+    "input_meaning_signature.constraints.color",
+    "output_expression",
+    "language",
+    "trace",
+    "trace.source",
+    "trace.ref",
+    "trace.note"
+  ]
+}
