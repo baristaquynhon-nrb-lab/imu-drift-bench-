@@ -158,26 +158,16 @@ const wnLemmasN = generateLemmas(BASE_NOUNS, "n", VI_NOUNS, 500, "wordnet_top", 
 const wnLemmasAdj = generateLemmas(BASE_ADJ, "adj", VI_ADJ, 100, "wordnet_top", "b");
 const wnLemmas = [...wnLemmasV, ...wnLemmasN, ...wnLemmasAdj];
 
-// Senses (affix set 'a' for Oxford, 'b' for WordNet)
-const oxSenses = generateSenses(
-  BASE_LEMMAS,
-  "v",
-  ["exist", "possess", "perform", "state", "obtain"],
-  VI_VERBS,
-  TARGET_SENSES,
-  "oxford3000",
-  "a"
-);
+// Senses (must match lemma generation exactly)
+const oxSensesV = generateSenses(BASE_LEMMAS, "v", ["exist", "possess", "perform", "state", "obtain"], VI_VERBS, 600, "oxford3000", "a");
+const oxSensesN = generateSenses(BASE_NOUNS, "n", ["thing", "entity", "object", "item", "concept"], VI_NOUNS, 500, "oxford3000", "a");
+const oxSensesAdj = generateSenses(BASE_ADJ, "adj", ["having quality", "being", "state of"], VI_ADJ, 100, "oxford3000", "a");
+const oxSenses = [...oxSensesV, ...oxSensesN, ...oxSensesAdj];
 
-const wnSenses = generateSenses(
-  BASE_LEMMAS,
-  "v",
-  ["be", "have", "do", "say", "get"],
-  VI_VERBS,
-  TARGET_SENSES,
-  "wordnet",
-  "b"
-);
+const wnSensesV = generateSenses(BASE_LEMMAS, "v", ["be", "have", "do", "say", "get"], VI_VERBS, 600, "wordnet", "b");
+const wnSensesN = generateSenses(BASE_NOUNS, "n", ["object", "matter", "subject", "unit", "element"], VI_NOUNS, 500, "wordnet", "b");
+const wnSensesAdj = generateSenses(BASE_ADJ, "adj", ["quality", "attribute", "property", "characteristic", "feature"], VI_ADJ, 100, "wordnet", "b");
+const wnSenses = [...wnSensesV, ...wnSensesN, ...wnSensesAdj];
 
 // Write files
 writeJsonl("sources/oxford3000_seed.jsonl", oxLemmas);
