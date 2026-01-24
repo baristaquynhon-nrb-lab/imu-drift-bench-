@@ -56,35 +56,64 @@ const VI_ADJ = ["tốt", "mới", "đầu tiên", "cuối", "dài", "tuyệt", "
 
 function generateLemmas(baseWords, pos, viGlosses, count, sourcePrefix) {
   const records = [];
-  for (let i = 0; i < count; i++) {
-    const base = baseWords[i % baseWords.length];
-    const vi = viGlosses[i % viGlosses.length];
-    const suffix = Math.floor(i / baseWords.length);
-    const lemma = suffix === 0 ? base : `${base}${suffix}`;
-    const ref = `${sourcePrefix}:${lemma}_${pos}_${i + 1}`;
-    records.push({ lemma, pos, vi_gloss: vi, ref });
+  const seen = new Set();
+
+  // Generate with prefixes/suffixes (all alphabetic)
+  const prefixes = ["", "re", "un", "pre", "mis", "dis", "over", "under", "out"];
+  const suffixes = ["", "ing", "ed", "er", "ly", "ness", "ment", "tion", "able", "ful", "less"];
+
+  let idx = 0;
+  for (const base of baseWords) {
+    for (const pre of prefixes) {
+      for (const suf of suffixes) {
+        if (idx >= count) break;
+        const lemma = `${pre}${base}${suf}`;
+        if (!seen.has(lemma) && /^[a-z]+$/.test(lemma)) {
+          const vi = viGlosses[idx % viGlosses.length];
+          const ref = `${sourcePrefix}:${lemma}_${pos}_${idx + 1}`;
+          records.push({ lemma, pos, vi_gloss: vi, ref });
+          seen.add(lemma);
+          idx++;
+        }
+      }
+      if (idx >= count) break;
+    }
+    if (idx >= count) break;
   }
+
   return records;
 }
 
 function generateSenses(baseWords, pos, enGlosses, viGlosses, count, sourcePrefix) {
   const records = [];
-  for (let i = 0; i < count; i++) {
-    const base = baseWords[i % baseWords.length];
-    const en = enGlosses[i % enGlosses.length];
-    const vi = viGlosses[i % viGlosses.length];
-    const suffix = Math.floor(i / baseWords.length);
-    const lemma = suffix === 0 ? base : `${base}${suffix}`;
-    const rank = (i % 3) + 1;
-    const ref = `${sourcePrefix}:${lemma}_${pos}_sense_${rank}`;
+  const seen = new Set();
 
-    const canonical = { lemma, pos, rank, en_gloss: en, vi_gloss: vi, ref };
-    const record_sha256 = crypto.createHash("sha256")
-      .update(JSON.stringify(canonical))
-      .digest("hex");
+  const prefixes = ["", "re", "un", "pre", "mis", "dis", "over", "under", "out"];
+  const suffixes = ["", "ing", "ed", "er", "ly", "ness", "ment", "tion", "able", "ful", "less"];
 
-    records.push({ ...canonical });
+  let idx = 0;
+  for (const base of baseWords) {
+    for (const pre of prefixes) {
+      for (const suf of suffixes) {
+        if (idx >= count) break;
+        const lemma = `${pre}${base}${suf}`;
+        if (!seen.has(lemma) && /^[a-z]+$/.test(lemma)) {
+          const en = enGlosses[idx % enGlosses.length];
+          const vi = viGlosses[idx % viGlosses.length];
+          const rank = (idx % 3) + 1;
+          const ref = `${sourcePrefix}:${lemma}_${pos}_sense_${rank}`;
+
+          const canonical = { lemma, pos, rank, en_gloss: en, vi_gloss: vi, ref };
+          records.push({ ...canonical });
+          seen.add(lemma);
+          idx++;
+        }
+      }
+      if (idx >= count) break;
+    }
+    if (idx >= count) break;
   }
+
   return records;
 }
 
