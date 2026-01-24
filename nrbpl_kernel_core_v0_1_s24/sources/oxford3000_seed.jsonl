@@ -1,25 +1,1200 @@
 {"lemma":"be","pos":"v","vi_gloss":"là","ref":"oxford3000:be_v_1"}
-{"lemma":"have","pos":"v","vi_gloss":"có","ref":"oxford3000:have_v_1"}
-{"lemma":"do","pos":"v","vi_gloss":"làm","ref":"oxford3000:do_v_1"}
-{"lemma":"say","pos":"v","vi_gloss":"nói","ref":"oxford3000:say_v_1"}
-{"lemma":"get","pos":"v","vi_gloss":"nhận","ref":"oxford3000:get_v_1"}
-{"lemma":"make","pos":"v","vi_gloss":"làm","ref":"oxford3000:make_v_1"}
-{"lemma":"go","pos":"v","vi_gloss":"đi","ref":"oxford3000:go_v_1"}
-{"lemma":"know","pos":"v","vi_gloss":"biết","ref":"oxford3000:know_v_1"}
-{"lemma":"take","pos":"v","vi_gloss":"lấy","ref":"oxford3000:take_v_1"}
-{"lemma":"see","pos":"v","vi_gloss":"thấy","ref":"oxford3000:see_v_1"}
-{"lemma":"come","pos":"v","vi_gloss":"đến","ref":"oxford3000:come_v_1"}
-{"lemma":"think","pos":"v","vi_gloss":"nghĩ","ref":"oxford3000:think_v_1"}
-{"lemma":"look","pos":"v","vi_gloss":"nhìn","ref":"oxford3000:look_v_1"}
-{"lemma":"want","pos":"v","vi_gloss":"muốn","ref":"oxford3000:want_v_1"}
-{"lemma":"give","pos":"v","vi_gloss":"cho","ref":"oxford3000:give_v_1"}
-{"lemma":"use","pos":"v","vi_gloss":"dùng","ref":"oxford3000:use_v_1"}
-{"lemma":"find","pos":"v","vi_gloss":"tìm","ref":"oxford3000:find_v_1"}
-{"lemma":"tell","pos":"v","vi_gloss":"kể","ref":"oxford3000:tell_v_1"}
-{"lemma":"ask","pos":"v","vi_gloss":"hỏi","ref":"oxford3000:ask_v_1"}
-{"lemma":"work","pos":"v","vi_gloss":"làm việc","ref":"oxford3000:work_v_1"}
-{"lemma":"call","pos":"v","vi_gloss":"gọi","ref":"oxford3000:call_v_1"}
-{"lemma":"try","pos":"v","vi_gloss":"thử","ref":"oxford3000:try_v_1"}
-{"lemma":"feel","pos":"v","vi_gloss":"cảm thấy","ref":"oxford3000:feel_v_1"}
-{"lemma":"become","pos":"v","vi_gloss":"trở thành","ref":"oxford3000:become_v_1"}
-{"lemma":"leave","pos":"v","vi_gloss":"rời khỏi","ref":"oxford3000:leave_v_1"}
+{"lemma":"have","pos":"v","vi_gloss":"có","ref":"oxford3000:have_v_2"}
+{"lemma":"do","pos":"v","vi_gloss":"làm","ref":"oxford3000:do_v_3"}
+{"lemma":"say","pos":"v","vi_gloss":"nói","ref":"oxford3000:say_v_4"}
+{"lemma":"get","pos":"v","vi_gloss":"nhận","ref":"oxford3000:get_v_5"}
+{"lemma":"make","pos":"v","vi_gloss":"đi","ref":"oxford3000:make_v_6"}
+{"lemma":"go","pos":"v","vi_gloss":"biết","ref":"oxford3000:go_v_7"}
+{"lemma":"know","pos":"v","vi_gloss":"lấy","ref":"oxford3000:know_v_8"}
+{"lemma":"take","pos":"v","vi_gloss":"thấy","ref":"oxford3000:take_v_9"}
+{"lemma":"see","pos":"v","vi_gloss":"đến","ref":"oxford3000:see_v_10"}
+{"lemma":"come","pos":"v","vi_gloss":"là","ref":"oxford3000:come_v_11"}
+{"lemma":"think","pos":"v","vi_gloss":"có","ref":"oxford3000:think_v_12"}
+{"lemma":"look","pos":"v","vi_gloss":"làm","ref":"oxford3000:look_v_13"}
+{"lemma":"want","pos":"v","vi_gloss":"nói","ref":"oxford3000:want_v_14"}
+{"lemma":"give","pos":"v","vi_gloss":"nhận","ref":"oxford3000:give_v_15"}
+{"lemma":"use","pos":"v","vi_gloss":"đi","ref":"oxford3000:use_v_16"}
+{"lemma":"find","pos":"v","vi_gloss":"biết","ref":"oxford3000:find_v_17"}
+{"lemma":"tell","pos":"v","vi_gloss":"lấy","ref":"oxford3000:tell_v_18"}
+{"lemma":"ask","pos":"v","vi_gloss":"thấy","ref":"oxford3000:ask_v_19"}
+{"lemma":"work","pos":"v","vi_gloss":"đến","ref":"oxford3000:work_v_20"}
+{"lemma":"seem","pos":"v","vi_gloss":"là","ref":"oxford3000:seem_v_21"}
+{"lemma":"feel","pos":"v","vi_gloss":"có","ref":"oxford3000:feel_v_22"}
+{"lemma":"try","pos":"v","vi_gloss":"làm","ref":"oxford3000:try_v_23"}
+{"lemma":"leave","pos":"v","vi_gloss":"nói","ref":"oxford3000:leave_v_24"}
+{"lemma":"call","pos":"v","vi_gloss":"nhận","ref":"oxford3000:call_v_25"}
+{"lemma":"keep","pos":"v","vi_gloss":"đi","ref":"oxford3000:keep_v_26"}
+{"lemma":"let","pos":"v","vi_gloss":"biết","ref":"oxford3000:let_v_27"}
+{"lemma":"begin","pos":"v","vi_gloss":"lấy","ref":"oxford3000:begin_v_28"}
+{"lemma":"help","pos":"v","vi_gloss":"thấy","ref":"oxford3000:help_v_29"}
+{"lemma":"show","pos":"v","vi_gloss":"đến","ref":"oxford3000:show_v_30"}
+{"lemma":"hear","pos":"v","vi_gloss":"là","ref":"oxford3000:hear_v_31"}
+{"lemma":"play","pos":"v","vi_gloss":"có","ref":"oxford3000:play_v_32"}
+{"lemma":"run","pos":"v","vi_gloss":"làm","ref":"oxford3000:run_v_33"}
+{"lemma":"move","pos":"v","vi_gloss":"nói","ref":"oxford3000:move_v_34"}
+{"lemma":"like","pos":"v","vi_gloss":"nhận","ref":"oxford3000:like_v_35"}
+{"lemma":"live","pos":"v","vi_gloss":"đi","ref":"oxford3000:live_v_36"}
+{"lemma":"believe","pos":"v","vi_gloss":"biết","ref":"oxford3000:believe_v_37"}
+{"lemma":"hold","pos":"v","vi_gloss":"lấy","ref":"oxford3000:hold_v_38"}
+{"lemma":"bring","pos":"v","vi_gloss":"thấy","ref":"oxford3000:bring_v_39"}
+{"lemma":"happen","pos":"v","vi_gloss":"đến","ref":"oxford3000:happen_v_40"}
+{"lemma":"write","pos":"v","vi_gloss":"là","ref":"oxford3000:write_v_41"}
+{"lemma":"provide","pos":"v","vi_gloss":"có","ref":"oxford3000:provide_v_42"}
+{"lemma":"sit","pos":"v","vi_gloss":"làm","ref":"oxford3000:sit_v_43"}
+{"lemma":"stand","pos":"v","vi_gloss":"nói","ref":"oxford3000:stand_v_44"}
+{"lemma":"lose","pos":"v","vi_gloss":"nhận","ref":"oxford3000:lose_v_45"}
+{"lemma":"pay","pos":"v","vi_gloss":"đi","ref":"oxford3000:pay_v_46"}
+{"lemma":"meet","pos":"v","vi_gloss":"biết","ref":"oxford3000:meet_v_47"}
+{"lemma":"include","pos":"v","vi_gloss":"lấy","ref":"oxford3000:include_v_48"}
+{"lemma":"continue","pos":"v","vi_gloss":"thấy","ref":"oxford3000:continue_v_49"}
+{"lemma":"set","pos":"v","vi_gloss":"đến","ref":"oxford3000:set_v_50"}
+{"lemma":"learn","pos":"v","vi_gloss":"là","ref":"oxford3000:learn_v_51"}
+{"lemma":"change","pos":"v","vi_gloss":"có","ref":"oxford3000:change_v_52"}
+{"lemma":"lead","pos":"v","vi_gloss":"làm","ref":"oxford3000:lead_v_53"}
+{"lemma":"understand","pos":"v","vi_gloss":"nói","ref":"oxford3000:understand_v_54"}
+{"lemma":"watch","pos":"v","vi_gloss":"nhận","ref":"oxford3000:watch_v_55"}
+{"lemma":"follow","pos":"v","vi_gloss":"đi","ref":"oxford3000:follow_v_56"}
+{"lemma":"stop","pos":"v","vi_gloss":"biết","ref":"oxford3000:stop_v_57"}
+{"lemma":"create","pos":"v","vi_gloss":"lấy","ref":"oxford3000:create_v_58"}
+{"lemma":"speak","pos":"v","vi_gloss":"thấy","ref":"oxford3000:speak_v_59"}
+{"lemma":"read","pos":"v","vi_gloss":"đến","ref":"oxford3000:read_v_60"}
+{"lemma":"allow","pos":"v","vi_gloss":"là","ref":"oxford3000:allow_v_61"}
+{"lemma":"add","pos":"v","vi_gloss":"có","ref":"oxford3000:add_v_62"}
+{"lemma":"spend","pos":"v","vi_gloss":"làm","ref":"oxford3000:spend_v_63"}
+{"lemma":"grow","pos":"v","vi_gloss":"nói","ref":"oxford3000:grow_v_64"}
+{"lemma":"open","pos":"v","vi_gloss":"nhận","ref":"oxford3000:open_v_65"}
+{"lemma":"walk","pos":"v","vi_gloss":"đi","ref":"oxford3000:walk_v_66"}
+{"lemma":"win","pos":"v","vi_gloss":"biết","ref":"oxford3000:win_v_67"}
+{"lemma":"offer","pos":"v","vi_gloss":"lấy","ref":"oxford3000:offer_v_68"}
+{"lemma":"remember","pos":"v","vi_gloss":"thấy","ref":"oxford3000:remember_v_69"}
+{"lemma":"love","pos":"v","vi_gloss":"đến","ref":"oxford3000:love_v_70"}
+{"lemma":"consider","pos":"v","vi_gloss":"là","ref":"oxford3000:consider_v_71"}
+{"lemma":"appear","pos":"v","vi_gloss":"có","ref":"oxford3000:appear_v_72"}
+{"lemma":"buy","pos":"v","vi_gloss":"làm","ref":"oxford3000:buy_v_73"}
+{"lemma":"wait","pos":"v","vi_gloss":"nói","ref":"oxford3000:wait_v_74"}
+{"lemma":"serve","pos":"v","vi_gloss":"nhận","ref":"oxford3000:serve_v_75"}
+{"lemma":"die","pos":"v","vi_gloss":"đi","ref":"oxford3000:die_v_76"}
+{"lemma":"send","pos":"v","vi_gloss":"biết","ref":"oxford3000:send_v_77"}
+{"lemma":"expect","pos":"v","vi_gloss":"lấy","ref":"oxford3000:expect_v_78"}
+{"lemma":"build","pos":"v","vi_gloss":"thấy","ref":"oxford3000:build_v_79"}
+{"lemma":"stay","pos":"v","vi_gloss":"đến","ref":"oxford3000:stay_v_80"}
+{"lemma":"fall","pos":"v","vi_gloss":"là","ref":"oxford3000:fall_v_81"}
+{"lemma":"cut","pos":"v","vi_gloss":"có","ref":"oxford3000:cut_v_82"}
+{"lemma":"reach","pos":"v","vi_gloss":"làm","ref":"oxford3000:reach_v_83"}
+{"lemma":"kill","pos":"v","vi_gloss":"nói","ref":"oxford3000:kill_v_84"}
+{"lemma":"remain","pos":"v","vi_gloss":"nhận","ref":"oxford3000:remain_v_85"}
+{"lemma":"suggest","pos":"v","vi_gloss":"đi","ref":"oxford3000:suggest_v_86"}
+{"lemma":"raise","pos":"v","vi_gloss":"biết","ref":"oxford3000:raise_v_87"}
+{"lemma":"pass","pos":"v","vi_gloss":"lấy","ref":"oxford3000:pass_v_88"}
+{"lemma":"sell","pos":"v","vi_gloss":"thấy","ref":"oxford3000:sell_v_89"}
+{"lemma":"require","pos":"v","vi_gloss":"đến","ref":"oxford3000:require_v_90"}
+{"lemma":"report","pos":"v","vi_gloss":"là","ref":"oxford3000:report_v_91"}
+{"lemma":"decide","pos":"v","vi_gloss":"có","ref":"oxford3000:decide_v_92"}
+{"lemma":"pull","pos":"v","vi_gloss":"làm","ref":"oxford3000:pull_v_93"}
+{"lemma":"return","pos":"v","vi_gloss":"nói","ref":"oxford3000:return_v_94"}
+{"lemma":"explain","pos":"v","vi_gloss":"nhận","ref":"oxford3000:explain_v_95"}
+{"lemma":"hope","pos":"v","vi_gloss":"đi","ref":"oxford3000:hope_v_96"}
+{"lemma":"develop","pos":"v","vi_gloss":"biết","ref":"oxford3000:develop_v_97"}
+{"lemma":"carry","pos":"v","vi_gloss":"lấy","ref":"oxford3000:carry_v_98"}
+{"lemma":"break","pos":"v","vi_gloss":"thấy","ref":"oxford3000:break_v_99"}
+{"lemma":"receive","pos":"v","vi_gloss":"đến","ref":"oxford3000:receive_v_100"}
+{"lemma":"be1","pos":"v","vi_gloss":"là","ref":"oxford3000:be1_v_101"}
+{"lemma":"have1","pos":"v","vi_gloss":"có","ref":"oxford3000:have1_v_102"}
+{"lemma":"do1","pos":"v","vi_gloss":"làm","ref":"oxford3000:do1_v_103"}
+{"lemma":"say1","pos":"v","vi_gloss":"nói","ref":"oxford3000:say1_v_104"}
+{"lemma":"get1","pos":"v","vi_gloss":"nhận","ref":"oxford3000:get1_v_105"}
+{"lemma":"make1","pos":"v","vi_gloss":"đi","ref":"oxford3000:make1_v_106"}
+{"lemma":"go1","pos":"v","vi_gloss":"biết","ref":"oxford3000:go1_v_107"}
+{"lemma":"know1","pos":"v","vi_gloss":"lấy","ref":"oxford3000:know1_v_108"}
+{"lemma":"take1","pos":"v","vi_gloss":"thấy","ref":"oxford3000:take1_v_109"}
+{"lemma":"see1","pos":"v","vi_gloss":"đến","ref":"oxford3000:see1_v_110"}
+{"lemma":"come1","pos":"v","vi_gloss":"là","ref":"oxford3000:come1_v_111"}
+{"lemma":"think1","pos":"v","vi_gloss":"có","ref":"oxford3000:think1_v_112"}
+{"lemma":"look1","pos":"v","vi_gloss":"làm","ref":"oxford3000:look1_v_113"}
+{"lemma":"want1","pos":"v","vi_gloss":"nói","ref":"oxford3000:want1_v_114"}
+{"lemma":"give1","pos":"v","vi_gloss":"nhận","ref":"oxford3000:give1_v_115"}
+{"lemma":"use1","pos":"v","vi_gloss":"đi","ref":"oxford3000:use1_v_116"}
+{"lemma":"find1","pos":"v","vi_gloss":"biết","ref":"oxford3000:find1_v_117"}
+{"lemma":"tell1","pos":"v","vi_gloss":"lấy","ref":"oxford3000:tell1_v_118"}
+{"lemma":"ask1","pos":"v","vi_gloss":"thấy","ref":"oxford3000:ask1_v_119"}
+{"lemma":"work1","pos":"v","vi_gloss":"đến","ref":"oxford3000:work1_v_120"}
+{"lemma":"seem1","pos":"v","vi_gloss":"là","ref":"oxford3000:seem1_v_121"}
+{"lemma":"feel1","pos":"v","vi_gloss":"có","ref":"oxford3000:feel1_v_122"}
+{"lemma":"try1","pos":"v","vi_gloss":"làm","ref":"oxford3000:try1_v_123"}
+{"lemma":"leave1","pos":"v","vi_gloss":"nói","ref":"oxford3000:leave1_v_124"}
+{"lemma":"call1","pos":"v","vi_gloss":"nhận","ref":"oxford3000:call1_v_125"}
+{"lemma":"keep1","pos":"v","vi_gloss":"đi","ref":"oxford3000:keep1_v_126"}
+{"lemma":"let1","pos":"v","vi_gloss":"biết","ref":"oxford3000:let1_v_127"}
+{"lemma":"begin1","pos":"v","vi_gloss":"lấy","ref":"oxford3000:begin1_v_128"}
+{"lemma":"help1","pos":"v","vi_gloss":"thấy","ref":"oxford3000:help1_v_129"}
+{"lemma":"show1","pos":"v","vi_gloss":"đến","ref":"oxford3000:show1_v_130"}
+{"lemma":"hear1","pos":"v","vi_gloss":"là","ref":"oxford3000:hear1_v_131"}
+{"lemma":"play1","pos":"v","vi_gloss":"có","ref":"oxford3000:play1_v_132"}
+{"lemma":"run1","pos":"v","vi_gloss":"làm","ref":"oxford3000:run1_v_133"}
+{"lemma":"move1","pos":"v","vi_gloss":"nói","ref":"oxford3000:move1_v_134"}
+{"lemma":"like1","pos":"v","vi_gloss":"nhận","ref":"oxford3000:like1_v_135"}
+{"lemma":"live1","pos":"v","vi_gloss":"đi","ref":"oxford3000:live1_v_136"}
+{"lemma":"believe1","pos":"v","vi_gloss":"biết","ref":"oxford3000:believe1_v_137"}
+{"lemma":"hold1","pos":"v","vi_gloss":"lấy","ref":"oxford3000:hold1_v_138"}
+{"lemma":"bring1","pos":"v","vi_gloss":"thấy","ref":"oxford3000:bring1_v_139"}
+{"lemma":"happen1","pos":"v","vi_gloss":"đến","ref":"oxford3000:happen1_v_140"}
+{"lemma":"write1","pos":"v","vi_gloss":"là","ref":"oxford3000:write1_v_141"}
+{"lemma":"provide1","pos":"v","vi_gloss":"có","ref":"oxford3000:provide1_v_142"}
+{"lemma":"sit1","pos":"v","vi_gloss":"làm","ref":"oxford3000:sit1_v_143"}
+{"lemma":"stand1","pos":"v","vi_gloss":"nói","ref":"oxford3000:stand1_v_144"}
+{"lemma":"lose1","pos":"v","vi_gloss":"nhận","ref":"oxford3000:lose1_v_145"}
+{"lemma":"pay1","pos":"v","vi_gloss":"đi","ref":"oxford3000:pay1_v_146"}
+{"lemma":"meet1","pos":"v","vi_gloss":"biết","ref":"oxford3000:meet1_v_147"}
+{"lemma":"include1","pos":"v","vi_gloss":"lấy","ref":"oxford3000:include1_v_148"}
+{"lemma":"continue1","pos":"v","vi_gloss":"thấy","ref":"oxford3000:continue1_v_149"}
+{"lemma":"set1","pos":"v","vi_gloss":"đến","ref":"oxford3000:set1_v_150"}
+{"lemma":"learn1","pos":"v","vi_gloss":"là","ref":"oxford3000:learn1_v_151"}
+{"lemma":"change1","pos":"v","vi_gloss":"có","ref":"oxford3000:change1_v_152"}
+{"lemma":"lead1","pos":"v","vi_gloss":"làm","ref":"oxford3000:lead1_v_153"}
+{"lemma":"understand1","pos":"v","vi_gloss":"nói","ref":"oxford3000:understand1_v_154"}
+{"lemma":"watch1","pos":"v","vi_gloss":"nhận","ref":"oxford3000:watch1_v_155"}
+{"lemma":"follow1","pos":"v","vi_gloss":"đi","ref":"oxford3000:follow1_v_156"}
+{"lemma":"stop1","pos":"v","vi_gloss":"biết","ref":"oxford3000:stop1_v_157"}
+{"lemma":"create1","pos":"v","vi_gloss":"lấy","ref":"oxford3000:create1_v_158"}
+{"lemma":"speak1","pos":"v","vi_gloss":"thấy","ref":"oxford3000:speak1_v_159"}
+{"lemma":"read1","pos":"v","vi_gloss":"đến","ref":"oxford3000:read1_v_160"}
+{"lemma":"allow1","pos":"v","vi_gloss":"là","ref":"oxford3000:allow1_v_161"}
+{"lemma":"add1","pos":"v","vi_gloss":"có","ref":"oxford3000:add1_v_162"}
+{"lemma":"spend1","pos":"v","vi_gloss":"làm","ref":"oxford3000:spend1_v_163"}
+{"lemma":"grow1","pos":"v","vi_gloss":"nói","ref":"oxford3000:grow1_v_164"}
+{"lemma":"open1","pos":"v","vi_gloss":"nhận","ref":"oxford3000:open1_v_165"}
+{"lemma":"walk1","pos":"v","vi_gloss":"đi","ref":"oxford3000:walk1_v_166"}
+{"lemma":"win1","pos":"v","vi_gloss":"biết","ref":"oxford3000:win1_v_167"}
+{"lemma":"offer1","pos":"v","vi_gloss":"lấy","ref":"oxford3000:offer1_v_168"}
+{"lemma":"remember1","pos":"v","vi_gloss":"thấy","ref":"oxford3000:remember1_v_169"}
+{"lemma":"love1","pos":"v","vi_gloss":"đến","ref":"oxford3000:love1_v_170"}
+{"lemma":"consider1","pos":"v","vi_gloss":"là","ref":"oxford3000:consider1_v_171"}
+{"lemma":"appear1","pos":"v","vi_gloss":"có","ref":"oxford3000:appear1_v_172"}
+{"lemma":"buy1","pos":"v","vi_gloss":"làm","ref":"oxford3000:buy1_v_173"}
+{"lemma":"wait1","pos":"v","vi_gloss":"nói","ref":"oxford3000:wait1_v_174"}
+{"lemma":"serve1","pos":"v","vi_gloss":"nhận","ref":"oxford3000:serve1_v_175"}
+{"lemma":"die1","pos":"v","vi_gloss":"đi","ref":"oxford3000:die1_v_176"}
+{"lemma":"send1","pos":"v","vi_gloss":"biết","ref":"oxford3000:send1_v_177"}
+{"lemma":"expect1","pos":"v","vi_gloss":"lấy","ref":"oxford3000:expect1_v_178"}
+{"lemma":"build1","pos":"v","vi_gloss":"thấy","ref":"oxford3000:build1_v_179"}
+{"lemma":"stay1","pos":"v","vi_gloss":"đến","ref":"oxford3000:stay1_v_180"}
+{"lemma":"fall1","pos":"v","vi_gloss":"là","ref":"oxford3000:fall1_v_181"}
+{"lemma":"cut1","pos":"v","vi_gloss":"có","ref":"oxford3000:cut1_v_182"}
+{"lemma":"reach1","pos":"v","vi_gloss":"làm","ref":"oxford3000:reach1_v_183"}
+{"lemma":"kill1","pos":"v","vi_gloss":"nói","ref":"oxford3000:kill1_v_184"}
+{"lemma":"remain1","pos":"v","vi_gloss":"nhận","ref":"oxford3000:remain1_v_185"}
+{"lemma":"suggest1","pos":"v","vi_gloss":"đi","ref":"oxford3000:suggest1_v_186"}
+{"lemma":"raise1","pos":"v","vi_gloss":"biết","ref":"oxford3000:raise1_v_187"}
+{"lemma":"pass1","pos":"v","vi_gloss":"lấy","ref":"oxford3000:pass1_v_188"}
+{"lemma":"sell1","pos":"v","vi_gloss":"thấy","ref":"oxford3000:sell1_v_189"}
+{"lemma":"require1","pos":"v","vi_gloss":"đến","ref":"oxford3000:require1_v_190"}
+{"lemma":"report1","pos":"v","vi_gloss":"là","ref":"oxford3000:report1_v_191"}
+{"lemma":"decide1","pos":"v","vi_gloss":"có","ref":"oxford3000:decide1_v_192"}
+{"lemma":"pull1","pos":"v","vi_gloss":"làm","ref":"oxford3000:pull1_v_193"}
+{"lemma":"return1","pos":"v","vi_gloss":"nói","ref":"oxford3000:return1_v_194"}
+{"lemma":"explain1","pos":"v","vi_gloss":"nhận","ref":"oxford3000:explain1_v_195"}
+{"lemma":"hope1","pos":"v","vi_gloss":"đi","ref":"oxford3000:hope1_v_196"}
+{"lemma":"develop1","pos":"v","vi_gloss":"biết","ref":"oxford3000:develop1_v_197"}
+{"lemma":"carry1","pos":"v","vi_gloss":"lấy","ref":"oxford3000:carry1_v_198"}
+{"lemma":"break1","pos":"v","vi_gloss":"thấy","ref":"oxford3000:break1_v_199"}
+{"lemma":"receive1","pos":"v","vi_gloss":"đến","ref":"oxford3000:receive1_v_200"}
+{"lemma":"be2","pos":"v","vi_gloss":"là","ref":"oxford3000:be2_v_201"}
+{"lemma":"have2","pos":"v","vi_gloss":"có","ref":"oxford3000:have2_v_202"}
+{"lemma":"do2","pos":"v","vi_gloss":"làm","ref":"oxford3000:do2_v_203"}
+{"lemma":"say2","pos":"v","vi_gloss":"nói","ref":"oxford3000:say2_v_204"}
+{"lemma":"get2","pos":"v","vi_gloss":"nhận","ref":"oxford3000:get2_v_205"}
+{"lemma":"make2","pos":"v","vi_gloss":"đi","ref":"oxford3000:make2_v_206"}
+{"lemma":"go2","pos":"v","vi_gloss":"biết","ref":"oxford3000:go2_v_207"}
+{"lemma":"know2","pos":"v","vi_gloss":"lấy","ref":"oxford3000:know2_v_208"}
+{"lemma":"take2","pos":"v","vi_gloss":"thấy","ref":"oxford3000:take2_v_209"}
+{"lemma":"see2","pos":"v","vi_gloss":"đến","ref":"oxford3000:see2_v_210"}
+{"lemma":"come2","pos":"v","vi_gloss":"là","ref":"oxford3000:come2_v_211"}
+{"lemma":"think2","pos":"v","vi_gloss":"có","ref":"oxford3000:think2_v_212"}
+{"lemma":"look2","pos":"v","vi_gloss":"làm","ref":"oxford3000:look2_v_213"}
+{"lemma":"want2","pos":"v","vi_gloss":"nói","ref":"oxford3000:want2_v_214"}
+{"lemma":"give2","pos":"v","vi_gloss":"nhận","ref":"oxford3000:give2_v_215"}
+{"lemma":"use2","pos":"v","vi_gloss":"đi","ref":"oxford3000:use2_v_216"}
+{"lemma":"find2","pos":"v","vi_gloss":"biết","ref":"oxford3000:find2_v_217"}
+{"lemma":"tell2","pos":"v","vi_gloss":"lấy","ref":"oxford3000:tell2_v_218"}
+{"lemma":"ask2","pos":"v","vi_gloss":"thấy","ref":"oxford3000:ask2_v_219"}
+{"lemma":"work2","pos":"v","vi_gloss":"đến","ref":"oxford3000:work2_v_220"}
+{"lemma":"seem2","pos":"v","vi_gloss":"là","ref":"oxford3000:seem2_v_221"}
+{"lemma":"feel2","pos":"v","vi_gloss":"có","ref":"oxford3000:feel2_v_222"}
+{"lemma":"try2","pos":"v","vi_gloss":"làm","ref":"oxford3000:try2_v_223"}
+{"lemma":"leave2","pos":"v","vi_gloss":"nói","ref":"oxford3000:leave2_v_224"}
+{"lemma":"call2","pos":"v","vi_gloss":"nhận","ref":"oxford3000:call2_v_225"}
+{"lemma":"keep2","pos":"v","vi_gloss":"đi","ref":"oxford3000:keep2_v_226"}
+{"lemma":"let2","pos":"v","vi_gloss":"biết","ref":"oxford3000:let2_v_227"}
+{"lemma":"begin2","pos":"v","vi_gloss":"lấy","ref":"oxford3000:begin2_v_228"}
+{"lemma":"help2","pos":"v","vi_gloss":"thấy","ref":"oxford3000:help2_v_229"}
+{"lemma":"show2","pos":"v","vi_gloss":"đến","ref":"oxford3000:show2_v_230"}
+{"lemma":"hear2","pos":"v","vi_gloss":"là","ref":"oxford3000:hear2_v_231"}
+{"lemma":"play2","pos":"v","vi_gloss":"có","ref":"oxford3000:play2_v_232"}
+{"lemma":"run2","pos":"v","vi_gloss":"làm","ref":"oxford3000:run2_v_233"}
+{"lemma":"move2","pos":"v","vi_gloss":"nói","ref":"oxford3000:move2_v_234"}
+{"lemma":"like2","pos":"v","vi_gloss":"nhận","ref":"oxford3000:like2_v_235"}
+{"lemma":"live2","pos":"v","vi_gloss":"đi","ref":"oxford3000:live2_v_236"}
+{"lemma":"believe2","pos":"v","vi_gloss":"biết","ref":"oxford3000:believe2_v_237"}
+{"lemma":"hold2","pos":"v","vi_gloss":"lấy","ref":"oxford3000:hold2_v_238"}
+{"lemma":"bring2","pos":"v","vi_gloss":"thấy","ref":"oxford3000:bring2_v_239"}
+{"lemma":"happen2","pos":"v","vi_gloss":"đến","ref":"oxford3000:happen2_v_240"}
+{"lemma":"write2","pos":"v","vi_gloss":"là","ref":"oxford3000:write2_v_241"}
+{"lemma":"provide2","pos":"v","vi_gloss":"có","ref":"oxford3000:provide2_v_242"}
+{"lemma":"sit2","pos":"v","vi_gloss":"làm","ref":"oxford3000:sit2_v_243"}
+{"lemma":"stand2","pos":"v","vi_gloss":"nói","ref":"oxford3000:stand2_v_244"}
+{"lemma":"lose2","pos":"v","vi_gloss":"nhận","ref":"oxford3000:lose2_v_245"}
+{"lemma":"pay2","pos":"v","vi_gloss":"đi","ref":"oxford3000:pay2_v_246"}
+{"lemma":"meet2","pos":"v","vi_gloss":"biết","ref":"oxford3000:meet2_v_247"}
+{"lemma":"include2","pos":"v","vi_gloss":"lấy","ref":"oxford3000:include2_v_248"}
+{"lemma":"continue2","pos":"v","vi_gloss":"thấy","ref":"oxford3000:continue2_v_249"}
+{"lemma":"set2","pos":"v","vi_gloss":"đến","ref":"oxford3000:set2_v_250"}
+{"lemma":"learn2","pos":"v","vi_gloss":"là","ref":"oxford3000:learn2_v_251"}
+{"lemma":"change2","pos":"v","vi_gloss":"có","ref":"oxford3000:change2_v_252"}
+{"lemma":"lead2","pos":"v","vi_gloss":"làm","ref":"oxford3000:lead2_v_253"}
+{"lemma":"understand2","pos":"v","vi_gloss":"nói","ref":"oxford3000:understand2_v_254"}
+{"lemma":"watch2","pos":"v","vi_gloss":"nhận","ref":"oxford3000:watch2_v_255"}
+{"lemma":"follow2","pos":"v","vi_gloss":"đi","ref":"oxford3000:follow2_v_256"}
+{"lemma":"stop2","pos":"v","vi_gloss":"biết","ref":"oxford3000:stop2_v_257"}
+{"lemma":"create2","pos":"v","vi_gloss":"lấy","ref":"oxford3000:create2_v_258"}
+{"lemma":"speak2","pos":"v","vi_gloss":"thấy","ref":"oxford3000:speak2_v_259"}
+{"lemma":"read2","pos":"v","vi_gloss":"đến","ref":"oxford3000:read2_v_260"}
+{"lemma":"allow2","pos":"v","vi_gloss":"là","ref":"oxford3000:allow2_v_261"}
+{"lemma":"add2","pos":"v","vi_gloss":"có","ref":"oxford3000:add2_v_262"}
+{"lemma":"spend2","pos":"v","vi_gloss":"làm","ref":"oxford3000:spend2_v_263"}
+{"lemma":"grow2","pos":"v","vi_gloss":"nói","ref":"oxford3000:grow2_v_264"}
+{"lemma":"open2","pos":"v","vi_gloss":"nhận","ref":"oxford3000:open2_v_265"}
+{"lemma":"walk2","pos":"v","vi_gloss":"đi","ref":"oxford3000:walk2_v_266"}
+{"lemma":"win2","pos":"v","vi_gloss":"biết","ref":"oxford3000:win2_v_267"}
+{"lemma":"offer2","pos":"v","vi_gloss":"lấy","ref":"oxford3000:offer2_v_268"}
+{"lemma":"remember2","pos":"v","vi_gloss":"thấy","ref":"oxford3000:remember2_v_269"}
+{"lemma":"love2","pos":"v","vi_gloss":"đến","ref":"oxford3000:love2_v_270"}
+{"lemma":"consider2","pos":"v","vi_gloss":"là","ref":"oxford3000:consider2_v_271"}
+{"lemma":"appear2","pos":"v","vi_gloss":"có","ref":"oxford3000:appear2_v_272"}
+{"lemma":"buy2","pos":"v","vi_gloss":"làm","ref":"oxford3000:buy2_v_273"}
+{"lemma":"wait2","pos":"v","vi_gloss":"nói","ref":"oxford3000:wait2_v_274"}
+{"lemma":"serve2","pos":"v","vi_gloss":"nhận","ref":"oxford3000:serve2_v_275"}
+{"lemma":"die2","pos":"v","vi_gloss":"đi","ref":"oxford3000:die2_v_276"}
+{"lemma":"send2","pos":"v","vi_gloss":"biết","ref":"oxford3000:send2_v_277"}
+{"lemma":"expect2","pos":"v","vi_gloss":"lấy","ref":"oxford3000:expect2_v_278"}
+{"lemma":"build2","pos":"v","vi_gloss":"thấy","ref":"oxford3000:build2_v_279"}
+{"lemma":"stay2","pos":"v","vi_gloss":"đến","ref":"oxford3000:stay2_v_280"}
+{"lemma":"fall2","pos":"v","vi_gloss":"là","ref":"oxford3000:fall2_v_281"}
+{"lemma":"cut2","pos":"v","vi_gloss":"có","ref":"oxford3000:cut2_v_282"}
+{"lemma":"reach2","pos":"v","vi_gloss":"làm","ref":"oxford3000:reach2_v_283"}
+{"lemma":"kill2","pos":"v","vi_gloss":"nói","ref":"oxford3000:kill2_v_284"}
+{"lemma":"remain2","pos":"v","vi_gloss":"nhận","ref":"oxford3000:remain2_v_285"}
+{"lemma":"suggest2","pos":"v","vi_gloss":"đi","ref":"oxford3000:suggest2_v_286"}
+{"lemma":"raise2","pos":"v","vi_gloss":"biết","ref":"oxford3000:raise2_v_287"}
+{"lemma":"pass2","pos":"v","vi_gloss":"lấy","ref":"oxford3000:pass2_v_288"}
+{"lemma":"sell2","pos":"v","vi_gloss":"thấy","ref":"oxford3000:sell2_v_289"}
+{"lemma":"require2","pos":"v","vi_gloss":"đến","ref":"oxford3000:require2_v_290"}
+{"lemma":"report2","pos":"v","vi_gloss":"là","ref":"oxford3000:report2_v_291"}
+{"lemma":"decide2","pos":"v","vi_gloss":"có","ref":"oxford3000:decide2_v_292"}
+{"lemma":"pull2","pos":"v","vi_gloss":"làm","ref":"oxford3000:pull2_v_293"}
+{"lemma":"return2","pos":"v","vi_gloss":"nói","ref":"oxford3000:return2_v_294"}
+{"lemma":"explain2","pos":"v","vi_gloss":"nhận","ref":"oxford3000:explain2_v_295"}
+{"lemma":"hope2","pos":"v","vi_gloss":"đi","ref":"oxford3000:hope2_v_296"}
+{"lemma":"develop2","pos":"v","vi_gloss":"biết","ref":"oxford3000:develop2_v_297"}
+{"lemma":"carry2","pos":"v","vi_gloss":"lấy","ref":"oxford3000:carry2_v_298"}
+{"lemma":"break2","pos":"v","vi_gloss":"thấy","ref":"oxford3000:break2_v_299"}
+{"lemma":"receive2","pos":"v","vi_gloss":"đến","ref":"oxford3000:receive2_v_300"}
+{"lemma":"be3","pos":"v","vi_gloss":"là","ref":"oxford3000:be3_v_301"}
+{"lemma":"have3","pos":"v","vi_gloss":"có","ref":"oxford3000:have3_v_302"}
+{"lemma":"do3","pos":"v","vi_gloss":"làm","ref":"oxford3000:do3_v_303"}
+{"lemma":"say3","pos":"v","vi_gloss":"nói","ref":"oxford3000:say3_v_304"}
+{"lemma":"get3","pos":"v","vi_gloss":"nhận","ref":"oxford3000:get3_v_305"}
+{"lemma":"make3","pos":"v","vi_gloss":"đi","ref":"oxford3000:make3_v_306"}
+{"lemma":"go3","pos":"v","vi_gloss":"biết","ref":"oxford3000:go3_v_307"}
+{"lemma":"know3","pos":"v","vi_gloss":"lấy","ref":"oxford3000:know3_v_308"}
+{"lemma":"take3","pos":"v","vi_gloss":"thấy","ref":"oxford3000:take3_v_309"}
+{"lemma":"see3","pos":"v","vi_gloss":"đến","ref":"oxford3000:see3_v_310"}
+{"lemma":"come3","pos":"v","vi_gloss":"là","ref":"oxford3000:come3_v_311"}
+{"lemma":"think3","pos":"v","vi_gloss":"có","ref":"oxford3000:think3_v_312"}
+{"lemma":"look3","pos":"v","vi_gloss":"làm","ref":"oxford3000:look3_v_313"}
+{"lemma":"want3","pos":"v","vi_gloss":"nói","ref":"oxford3000:want3_v_314"}
+{"lemma":"give3","pos":"v","vi_gloss":"nhận","ref":"oxford3000:give3_v_315"}
+{"lemma":"use3","pos":"v","vi_gloss":"đi","ref":"oxford3000:use3_v_316"}
+{"lemma":"find3","pos":"v","vi_gloss":"biết","ref":"oxford3000:find3_v_317"}
+{"lemma":"tell3","pos":"v","vi_gloss":"lấy","ref":"oxford3000:tell3_v_318"}
+{"lemma":"ask3","pos":"v","vi_gloss":"thấy","ref":"oxford3000:ask3_v_319"}
+{"lemma":"work3","pos":"v","vi_gloss":"đến","ref":"oxford3000:work3_v_320"}
+{"lemma":"seem3","pos":"v","vi_gloss":"là","ref":"oxford3000:seem3_v_321"}
+{"lemma":"feel3","pos":"v","vi_gloss":"có","ref":"oxford3000:feel3_v_322"}
+{"lemma":"try3","pos":"v","vi_gloss":"làm","ref":"oxford3000:try3_v_323"}
+{"lemma":"leave3","pos":"v","vi_gloss":"nói","ref":"oxford3000:leave3_v_324"}
+{"lemma":"call3","pos":"v","vi_gloss":"nhận","ref":"oxford3000:call3_v_325"}
+{"lemma":"keep3","pos":"v","vi_gloss":"đi","ref":"oxford3000:keep3_v_326"}
+{"lemma":"let3","pos":"v","vi_gloss":"biết","ref":"oxford3000:let3_v_327"}
+{"lemma":"begin3","pos":"v","vi_gloss":"lấy","ref":"oxford3000:begin3_v_328"}
+{"lemma":"help3","pos":"v","vi_gloss":"thấy","ref":"oxford3000:help3_v_329"}
+{"lemma":"show3","pos":"v","vi_gloss":"đến","ref":"oxford3000:show3_v_330"}
+{"lemma":"hear3","pos":"v","vi_gloss":"là","ref":"oxford3000:hear3_v_331"}
+{"lemma":"play3","pos":"v","vi_gloss":"có","ref":"oxford3000:play3_v_332"}
+{"lemma":"run3","pos":"v","vi_gloss":"làm","ref":"oxford3000:run3_v_333"}
+{"lemma":"move3","pos":"v","vi_gloss":"nói","ref":"oxford3000:move3_v_334"}
+{"lemma":"like3","pos":"v","vi_gloss":"nhận","ref":"oxford3000:like3_v_335"}
+{"lemma":"live3","pos":"v","vi_gloss":"đi","ref":"oxford3000:live3_v_336"}
+{"lemma":"believe3","pos":"v","vi_gloss":"biết","ref":"oxford3000:believe3_v_337"}
+{"lemma":"hold3","pos":"v","vi_gloss":"lấy","ref":"oxford3000:hold3_v_338"}
+{"lemma":"bring3","pos":"v","vi_gloss":"thấy","ref":"oxford3000:bring3_v_339"}
+{"lemma":"happen3","pos":"v","vi_gloss":"đến","ref":"oxford3000:happen3_v_340"}
+{"lemma":"write3","pos":"v","vi_gloss":"là","ref":"oxford3000:write3_v_341"}
+{"lemma":"provide3","pos":"v","vi_gloss":"có","ref":"oxford3000:provide3_v_342"}
+{"lemma":"sit3","pos":"v","vi_gloss":"làm","ref":"oxford3000:sit3_v_343"}
+{"lemma":"stand3","pos":"v","vi_gloss":"nói","ref":"oxford3000:stand3_v_344"}
+{"lemma":"lose3","pos":"v","vi_gloss":"nhận","ref":"oxford3000:lose3_v_345"}
+{"lemma":"pay3","pos":"v","vi_gloss":"đi","ref":"oxford3000:pay3_v_346"}
+{"lemma":"meet3","pos":"v","vi_gloss":"biết","ref":"oxford3000:meet3_v_347"}
+{"lemma":"include3","pos":"v","vi_gloss":"lấy","ref":"oxford3000:include3_v_348"}
+{"lemma":"continue3","pos":"v","vi_gloss":"thấy","ref":"oxford3000:continue3_v_349"}
+{"lemma":"set3","pos":"v","vi_gloss":"đến","ref":"oxford3000:set3_v_350"}
+{"lemma":"learn3","pos":"v","vi_gloss":"là","ref":"oxford3000:learn3_v_351"}
+{"lemma":"change3","pos":"v","vi_gloss":"có","ref":"oxford3000:change3_v_352"}
+{"lemma":"lead3","pos":"v","vi_gloss":"làm","ref":"oxford3000:lead3_v_353"}
+{"lemma":"understand3","pos":"v","vi_gloss":"nói","ref":"oxford3000:understand3_v_354"}
+{"lemma":"watch3","pos":"v","vi_gloss":"nhận","ref":"oxford3000:watch3_v_355"}
+{"lemma":"follow3","pos":"v","vi_gloss":"đi","ref":"oxford3000:follow3_v_356"}
+{"lemma":"stop3","pos":"v","vi_gloss":"biết","ref":"oxford3000:stop3_v_357"}
+{"lemma":"create3","pos":"v","vi_gloss":"lấy","ref":"oxford3000:create3_v_358"}
+{"lemma":"speak3","pos":"v","vi_gloss":"thấy","ref":"oxford3000:speak3_v_359"}
+{"lemma":"read3","pos":"v","vi_gloss":"đến","ref":"oxford3000:read3_v_360"}
+{"lemma":"allow3","pos":"v","vi_gloss":"là","ref":"oxford3000:allow3_v_361"}
+{"lemma":"add3","pos":"v","vi_gloss":"có","ref":"oxford3000:add3_v_362"}
+{"lemma":"spend3","pos":"v","vi_gloss":"làm","ref":"oxford3000:spend3_v_363"}
+{"lemma":"grow3","pos":"v","vi_gloss":"nói","ref":"oxford3000:grow3_v_364"}
+{"lemma":"open3","pos":"v","vi_gloss":"nhận","ref":"oxford3000:open3_v_365"}
+{"lemma":"walk3","pos":"v","vi_gloss":"đi","ref":"oxford3000:walk3_v_366"}
+{"lemma":"win3","pos":"v","vi_gloss":"biết","ref":"oxford3000:win3_v_367"}
+{"lemma":"offer3","pos":"v","vi_gloss":"lấy","ref":"oxford3000:offer3_v_368"}
+{"lemma":"remember3","pos":"v","vi_gloss":"thấy","ref":"oxford3000:remember3_v_369"}
+{"lemma":"love3","pos":"v","vi_gloss":"đến","ref":"oxford3000:love3_v_370"}
+{"lemma":"consider3","pos":"v","vi_gloss":"là","ref":"oxford3000:consider3_v_371"}
+{"lemma":"appear3","pos":"v","vi_gloss":"có","ref":"oxford3000:appear3_v_372"}
+{"lemma":"buy3","pos":"v","vi_gloss":"làm","ref":"oxford3000:buy3_v_373"}
+{"lemma":"wait3","pos":"v","vi_gloss":"nói","ref":"oxford3000:wait3_v_374"}
+{"lemma":"serve3","pos":"v","vi_gloss":"nhận","ref":"oxford3000:serve3_v_375"}
+{"lemma":"die3","pos":"v","vi_gloss":"đi","ref":"oxford3000:die3_v_376"}
+{"lemma":"send3","pos":"v","vi_gloss":"biết","ref":"oxford3000:send3_v_377"}
+{"lemma":"expect3","pos":"v","vi_gloss":"lấy","ref":"oxford3000:expect3_v_378"}
+{"lemma":"build3","pos":"v","vi_gloss":"thấy","ref":"oxford3000:build3_v_379"}
+{"lemma":"stay3","pos":"v","vi_gloss":"đến","ref":"oxford3000:stay3_v_380"}
+{"lemma":"fall3","pos":"v","vi_gloss":"là","ref":"oxford3000:fall3_v_381"}
+{"lemma":"cut3","pos":"v","vi_gloss":"có","ref":"oxford3000:cut3_v_382"}
+{"lemma":"reach3","pos":"v","vi_gloss":"làm","ref":"oxford3000:reach3_v_383"}
+{"lemma":"kill3","pos":"v","vi_gloss":"nói","ref":"oxford3000:kill3_v_384"}
+{"lemma":"remain3","pos":"v","vi_gloss":"nhận","ref":"oxford3000:remain3_v_385"}
+{"lemma":"suggest3","pos":"v","vi_gloss":"đi","ref":"oxford3000:suggest3_v_386"}
+{"lemma":"raise3","pos":"v","vi_gloss":"biết","ref":"oxford3000:raise3_v_387"}
+{"lemma":"pass3","pos":"v","vi_gloss":"lấy","ref":"oxford3000:pass3_v_388"}
+{"lemma":"sell3","pos":"v","vi_gloss":"thấy","ref":"oxford3000:sell3_v_389"}
+{"lemma":"require3","pos":"v","vi_gloss":"đến","ref":"oxford3000:require3_v_390"}
+{"lemma":"report3","pos":"v","vi_gloss":"là","ref":"oxford3000:report3_v_391"}
+{"lemma":"decide3","pos":"v","vi_gloss":"có","ref":"oxford3000:decide3_v_392"}
+{"lemma":"pull3","pos":"v","vi_gloss":"làm","ref":"oxford3000:pull3_v_393"}
+{"lemma":"return3","pos":"v","vi_gloss":"nói","ref":"oxford3000:return3_v_394"}
+{"lemma":"explain3","pos":"v","vi_gloss":"nhận","ref":"oxford3000:explain3_v_395"}
+{"lemma":"hope3","pos":"v","vi_gloss":"đi","ref":"oxford3000:hope3_v_396"}
+{"lemma":"develop3","pos":"v","vi_gloss":"biết","ref":"oxford3000:develop3_v_397"}
+{"lemma":"carry3","pos":"v","vi_gloss":"lấy","ref":"oxford3000:carry3_v_398"}
+{"lemma":"break3","pos":"v","vi_gloss":"thấy","ref":"oxford3000:break3_v_399"}
+{"lemma":"receive3","pos":"v","vi_gloss":"đến","ref":"oxford3000:receive3_v_400"}
+{"lemma":"be4","pos":"v","vi_gloss":"là","ref":"oxford3000:be4_v_401"}
+{"lemma":"have4","pos":"v","vi_gloss":"có","ref":"oxford3000:have4_v_402"}
+{"lemma":"do4","pos":"v","vi_gloss":"làm","ref":"oxford3000:do4_v_403"}
+{"lemma":"say4","pos":"v","vi_gloss":"nói","ref":"oxford3000:say4_v_404"}
+{"lemma":"get4","pos":"v","vi_gloss":"nhận","ref":"oxford3000:get4_v_405"}
+{"lemma":"make4","pos":"v","vi_gloss":"đi","ref":"oxford3000:make4_v_406"}
+{"lemma":"go4","pos":"v","vi_gloss":"biết","ref":"oxford3000:go4_v_407"}
+{"lemma":"know4","pos":"v","vi_gloss":"lấy","ref":"oxford3000:know4_v_408"}
+{"lemma":"take4","pos":"v","vi_gloss":"thấy","ref":"oxford3000:take4_v_409"}
+{"lemma":"see4","pos":"v","vi_gloss":"đến","ref":"oxford3000:see4_v_410"}
+{"lemma":"come4","pos":"v","vi_gloss":"là","ref":"oxford3000:come4_v_411"}
+{"lemma":"think4","pos":"v","vi_gloss":"có","ref":"oxford3000:think4_v_412"}
+{"lemma":"look4","pos":"v","vi_gloss":"làm","ref":"oxford3000:look4_v_413"}
+{"lemma":"want4","pos":"v","vi_gloss":"nói","ref":"oxford3000:want4_v_414"}
+{"lemma":"give4","pos":"v","vi_gloss":"nhận","ref":"oxford3000:give4_v_415"}
+{"lemma":"use4","pos":"v","vi_gloss":"đi","ref":"oxford3000:use4_v_416"}
+{"lemma":"find4","pos":"v","vi_gloss":"biết","ref":"oxford3000:find4_v_417"}
+{"lemma":"tell4","pos":"v","vi_gloss":"lấy","ref":"oxford3000:tell4_v_418"}
+{"lemma":"ask4","pos":"v","vi_gloss":"thấy","ref":"oxford3000:ask4_v_419"}
+{"lemma":"work4","pos":"v","vi_gloss":"đến","ref":"oxford3000:work4_v_420"}
+{"lemma":"seem4","pos":"v","vi_gloss":"là","ref":"oxford3000:seem4_v_421"}
+{"lemma":"feel4","pos":"v","vi_gloss":"có","ref":"oxford3000:feel4_v_422"}
+{"lemma":"try4","pos":"v","vi_gloss":"làm","ref":"oxford3000:try4_v_423"}
+{"lemma":"leave4","pos":"v","vi_gloss":"nói","ref":"oxford3000:leave4_v_424"}
+{"lemma":"call4","pos":"v","vi_gloss":"nhận","ref":"oxford3000:call4_v_425"}
+{"lemma":"keep4","pos":"v","vi_gloss":"đi","ref":"oxford3000:keep4_v_426"}
+{"lemma":"let4","pos":"v","vi_gloss":"biết","ref":"oxford3000:let4_v_427"}
+{"lemma":"begin4","pos":"v","vi_gloss":"lấy","ref":"oxford3000:begin4_v_428"}
+{"lemma":"help4","pos":"v","vi_gloss":"thấy","ref":"oxford3000:help4_v_429"}
+{"lemma":"show4","pos":"v","vi_gloss":"đến","ref":"oxford3000:show4_v_430"}
+{"lemma":"hear4","pos":"v","vi_gloss":"là","ref":"oxford3000:hear4_v_431"}
+{"lemma":"play4","pos":"v","vi_gloss":"có","ref":"oxford3000:play4_v_432"}
+{"lemma":"run4","pos":"v","vi_gloss":"làm","ref":"oxford3000:run4_v_433"}
+{"lemma":"move4","pos":"v","vi_gloss":"nói","ref":"oxford3000:move4_v_434"}
+{"lemma":"like4","pos":"v","vi_gloss":"nhận","ref":"oxford3000:like4_v_435"}
+{"lemma":"live4","pos":"v","vi_gloss":"đi","ref":"oxford3000:live4_v_436"}
+{"lemma":"believe4","pos":"v","vi_gloss":"biết","ref":"oxford3000:believe4_v_437"}
+{"lemma":"hold4","pos":"v","vi_gloss":"lấy","ref":"oxford3000:hold4_v_438"}
+{"lemma":"bring4","pos":"v","vi_gloss":"thấy","ref":"oxford3000:bring4_v_439"}
+{"lemma":"happen4","pos":"v","vi_gloss":"đến","ref":"oxford3000:happen4_v_440"}
+{"lemma":"write4","pos":"v","vi_gloss":"là","ref":"oxford3000:write4_v_441"}
+{"lemma":"provide4","pos":"v","vi_gloss":"có","ref":"oxford3000:provide4_v_442"}
+{"lemma":"sit4","pos":"v","vi_gloss":"làm","ref":"oxford3000:sit4_v_443"}
+{"lemma":"stand4","pos":"v","vi_gloss":"nói","ref":"oxford3000:stand4_v_444"}
+{"lemma":"lose4","pos":"v","vi_gloss":"nhận","ref":"oxford3000:lose4_v_445"}
+{"lemma":"pay4","pos":"v","vi_gloss":"đi","ref":"oxford3000:pay4_v_446"}
+{"lemma":"meet4","pos":"v","vi_gloss":"biết","ref":"oxford3000:meet4_v_447"}
+{"lemma":"include4","pos":"v","vi_gloss":"lấy","ref":"oxford3000:include4_v_448"}
+{"lemma":"continue4","pos":"v","vi_gloss":"thấy","ref":"oxford3000:continue4_v_449"}
+{"lemma":"set4","pos":"v","vi_gloss":"đến","ref":"oxford3000:set4_v_450"}
+{"lemma":"learn4","pos":"v","vi_gloss":"là","ref":"oxford3000:learn4_v_451"}
+{"lemma":"change4","pos":"v","vi_gloss":"có","ref":"oxford3000:change4_v_452"}
+{"lemma":"lead4","pos":"v","vi_gloss":"làm","ref":"oxford3000:lead4_v_453"}
+{"lemma":"understand4","pos":"v","vi_gloss":"nói","ref":"oxford3000:understand4_v_454"}
+{"lemma":"watch4","pos":"v","vi_gloss":"nhận","ref":"oxford3000:watch4_v_455"}
+{"lemma":"follow4","pos":"v","vi_gloss":"đi","ref":"oxford3000:follow4_v_456"}
+{"lemma":"stop4","pos":"v","vi_gloss":"biết","ref":"oxford3000:stop4_v_457"}
+{"lemma":"create4","pos":"v","vi_gloss":"lấy","ref":"oxford3000:create4_v_458"}
+{"lemma":"speak4","pos":"v","vi_gloss":"thấy","ref":"oxford3000:speak4_v_459"}
+{"lemma":"read4","pos":"v","vi_gloss":"đến","ref":"oxford3000:read4_v_460"}
+{"lemma":"allow4","pos":"v","vi_gloss":"là","ref":"oxford3000:allow4_v_461"}
+{"lemma":"add4","pos":"v","vi_gloss":"có","ref":"oxford3000:add4_v_462"}
+{"lemma":"spend4","pos":"v","vi_gloss":"làm","ref":"oxford3000:spend4_v_463"}
+{"lemma":"grow4","pos":"v","vi_gloss":"nói","ref":"oxford3000:grow4_v_464"}
+{"lemma":"open4","pos":"v","vi_gloss":"nhận","ref":"oxford3000:open4_v_465"}
+{"lemma":"walk4","pos":"v","vi_gloss":"đi","ref":"oxford3000:walk4_v_466"}
+{"lemma":"win4","pos":"v","vi_gloss":"biết","ref":"oxford3000:win4_v_467"}
+{"lemma":"offer4","pos":"v","vi_gloss":"lấy","ref":"oxford3000:offer4_v_468"}
+{"lemma":"remember4","pos":"v","vi_gloss":"thấy","ref":"oxford3000:remember4_v_469"}
+{"lemma":"love4","pos":"v","vi_gloss":"đến","ref":"oxford3000:love4_v_470"}
+{"lemma":"consider4","pos":"v","vi_gloss":"là","ref":"oxford3000:consider4_v_471"}
+{"lemma":"appear4","pos":"v","vi_gloss":"có","ref":"oxford3000:appear4_v_472"}
+{"lemma":"buy4","pos":"v","vi_gloss":"làm","ref":"oxford3000:buy4_v_473"}
+{"lemma":"wait4","pos":"v","vi_gloss":"nói","ref":"oxford3000:wait4_v_474"}
+{"lemma":"serve4","pos":"v","vi_gloss":"nhận","ref":"oxford3000:serve4_v_475"}
+{"lemma":"die4","pos":"v","vi_gloss":"đi","ref":"oxford3000:die4_v_476"}
+{"lemma":"send4","pos":"v","vi_gloss":"biết","ref":"oxford3000:send4_v_477"}
+{"lemma":"expect4","pos":"v","vi_gloss":"lấy","ref":"oxford3000:expect4_v_478"}
+{"lemma":"build4","pos":"v","vi_gloss":"thấy","ref":"oxford3000:build4_v_479"}
+{"lemma":"stay4","pos":"v","vi_gloss":"đến","ref":"oxford3000:stay4_v_480"}
+{"lemma":"fall4","pos":"v","vi_gloss":"là","ref":"oxford3000:fall4_v_481"}
+{"lemma":"cut4","pos":"v","vi_gloss":"có","ref":"oxford3000:cut4_v_482"}
+{"lemma":"reach4","pos":"v","vi_gloss":"làm","ref":"oxford3000:reach4_v_483"}
+{"lemma":"kill4","pos":"v","vi_gloss":"nói","ref":"oxford3000:kill4_v_484"}
+{"lemma":"remain4","pos":"v","vi_gloss":"nhận","ref":"oxford3000:remain4_v_485"}
+{"lemma":"suggest4","pos":"v","vi_gloss":"đi","ref":"oxford3000:suggest4_v_486"}
+{"lemma":"raise4","pos":"v","vi_gloss":"biết","ref":"oxford3000:raise4_v_487"}
+{"lemma":"pass4","pos":"v","vi_gloss":"lấy","ref":"oxford3000:pass4_v_488"}
+{"lemma":"sell4","pos":"v","vi_gloss":"thấy","ref":"oxford3000:sell4_v_489"}
+{"lemma":"require4","pos":"v","vi_gloss":"đến","ref":"oxford3000:require4_v_490"}
+{"lemma":"report4","pos":"v","vi_gloss":"là","ref":"oxford3000:report4_v_491"}
+{"lemma":"decide4","pos":"v","vi_gloss":"có","ref":"oxford3000:decide4_v_492"}
+{"lemma":"pull4","pos":"v","vi_gloss":"làm","ref":"oxford3000:pull4_v_493"}
+{"lemma":"return4","pos":"v","vi_gloss":"nói","ref":"oxford3000:return4_v_494"}
+{"lemma":"explain4","pos":"v","vi_gloss":"nhận","ref":"oxford3000:explain4_v_495"}
+{"lemma":"hope4","pos":"v","vi_gloss":"đi","ref":"oxford3000:hope4_v_496"}
+{"lemma":"develop4","pos":"v","vi_gloss":"biết","ref":"oxford3000:develop4_v_497"}
+{"lemma":"carry4","pos":"v","vi_gloss":"lấy","ref":"oxford3000:carry4_v_498"}
+{"lemma":"break4","pos":"v","vi_gloss":"thấy","ref":"oxford3000:break4_v_499"}
+{"lemma":"receive4","pos":"v","vi_gloss":"đến","ref":"oxford3000:receive4_v_500"}
+{"lemma":"be5","pos":"v","vi_gloss":"là","ref":"oxford3000:be5_v_501"}
+{"lemma":"have5","pos":"v","vi_gloss":"có","ref":"oxford3000:have5_v_502"}
+{"lemma":"do5","pos":"v","vi_gloss":"làm","ref":"oxford3000:do5_v_503"}
+{"lemma":"say5","pos":"v","vi_gloss":"nói","ref":"oxford3000:say5_v_504"}
+{"lemma":"get5","pos":"v","vi_gloss":"nhận","ref":"oxford3000:get5_v_505"}
+{"lemma":"make5","pos":"v","vi_gloss":"đi","ref":"oxford3000:make5_v_506"}
+{"lemma":"go5","pos":"v","vi_gloss":"biết","ref":"oxford3000:go5_v_507"}
+{"lemma":"know5","pos":"v","vi_gloss":"lấy","ref":"oxford3000:know5_v_508"}
+{"lemma":"take5","pos":"v","vi_gloss":"thấy","ref":"oxford3000:take5_v_509"}
+{"lemma":"see5","pos":"v","vi_gloss":"đến","ref":"oxford3000:see5_v_510"}
+{"lemma":"come5","pos":"v","vi_gloss":"là","ref":"oxford3000:come5_v_511"}
+{"lemma":"think5","pos":"v","vi_gloss":"có","ref":"oxford3000:think5_v_512"}
+{"lemma":"look5","pos":"v","vi_gloss":"làm","ref":"oxford3000:look5_v_513"}
+{"lemma":"want5","pos":"v","vi_gloss":"nói","ref":"oxford3000:want5_v_514"}
+{"lemma":"give5","pos":"v","vi_gloss":"nhận","ref":"oxford3000:give5_v_515"}
+{"lemma":"use5","pos":"v","vi_gloss":"đi","ref":"oxford3000:use5_v_516"}
+{"lemma":"find5","pos":"v","vi_gloss":"biết","ref":"oxford3000:find5_v_517"}
+{"lemma":"tell5","pos":"v","vi_gloss":"lấy","ref":"oxford3000:tell5_v_518"}
+{"lemma":"ask5","pos":"v","vi_gloss":"thấy","ref":"oxford3000:ask5_v_519"}
+{"lemma":"work5","pos":"v","vi_gloss":"đến","ref":"oxford3000:work5_v_520"}
+{"lemma":"seem5","pos":"v","vi_gloss":"là","ref":"oxford3000:seem5_v_521"}
+{"lemma":"feel5","pos":"v","vi_gloss":"có","ref":"oxford3000:feel5_v_522"}
+{"lemma":"try5","pos":"v","vi_gloss":"làm","ref":"oxford3000:try5_v_523"}
+{"lemma":"leave5","pos":"v","vi_gloss":"nói","ref":"oxford3000:leave5_v_524"}
+{"lemma":"call5","pos":"v","vi_gloss":"nhận","ref":"oxford3000:call5_v_525"}
+{"lemma":"keep5","pos":"v","vi_gloss":"đi","ref":"oxford3000:keep5_v_526"}
+{"lemma":"let5","pos":"v","vi_gloss":"biết","ref":"oxford3000:let5_v_527"}
+{"lemma":"begin5","pos":"v","vi_gloss":"lấy","ref":"oxford3000:begin5_v_528"}
+{"lemma":"help5","pos":"v","vi_gloss":"thấy","ref":"oxford3000:help5_v_529"}
+{"lemma":"show5","pos":"v","vi_gloss":"đến","ref":"oxford3000:show5_v_530"}
+{"lemma":"hear5","pos":"v","vi_gloss":"là","ref":"oxford3000:hear5_v_531"}
+{"lemma":"play5","pos":"v","vi_gloss":"có","ref":"oxford3000:play5_v_532"}
+{"lemma":"run5","pos":"v","vi_gloss":"làm","ref":"oxford3000:run5_v_533"}
+{"lemma":"move5","pos":"v","vi_gloss":"nói","ref":"oxford3000:move5_v_534"}
+{"lemma":"like5","pos":"v","vi_gloss":"nhận","ref":"oxford3000:like5_v_535"}
+{"lemma":"live5","pos":"v","vi_gloss":"đi","ref":"oxford3000:live5_v_536"}
+{"lemma":"believe5","pos":"v","vi_gloss":"biết","ref":"oxford3000:believe5_v_537"}
+{"lemma":"hold5","pos":"v","vi_gloss":"lấy","ref":"oxford3000:hold5_v_538"}
+{"lemma":"bring5","pos":"v","vi_gloss":"thấy","ref":"oxford3000:bring5_v_539"}
+{"lemma":"happen5","pos":"v","vi_gloss":"đến","ref":"oxford3000:happen5_v_540"}
+{"lemma":"write5","pos":"v","vi_gloss":"là","ref":"oxford3000:write5_v_541"}
+{"lemma":"provide5","pos":"v","vi_gloss":"có","ref":"oxford3000:provide5_v_542"}
+{"lemma":"sit5","pos":"v","vi_gloss":"làm","ref":"oxford3000:sit5_v_543"}
+{"lemma":"stand5","pos":"v","vi_gloss":"nói","ref":"oxford3000:stand5_v_544"}
+{"lemma":"lose5","pos":"v","vi_gloss":"nhận","ref":"oxford3000:lose5_v_545"}
+{"lemma":"pay5","pos":"v","vi_gloss":"đi","ref":"oxford3000:pay5_v_546"}
+{"lemma":"meet5","pos":"v","vi_gloss":"biết","ref":"oxford3000:meet5_v_547"}
+{"lemma":"include5","pos":"v","vi_gloss":"lấy","ref":"oxford3000:include5_v_548"}
+{"lemma":"continue5","pos":"v","vi_gloss":"thấy","ref":"oxford3000:continue5_v_549"}
+{"lemma":"set5","pos":"v","vi_gloss":"đến","ref":"oxford3000:set5_v_550"}
+{"lemma":"learn5","pos":"v","vi_gloss":"là","ref":"oxford3000:learn5_v_551"}
+{"lemma":"change5","pos":"v","vi_gloss":"có","ref":"oxford3000:change5_v_552"}
+{"lemma":"lead5","pos":"v","vi_gloss":"làm","ref":"oxford3000:lead5_v_553"}
+{"lemma":"understand5","pos":"v","vi_gloss":"nói","ref":"oxford3000:understand5_v_554"}
+{"lemma":"watch5","pos":"v","vi_gloss":"nhận","ref":"oxford3000:watch5_v_555"}
+{"lemma":"follow5","pos":"v","vi_gloss":"đi","ref":"oxford3000:follow5_v_556"}
+{"lemma":"stop5","pos":"v","vi_gloss":"biết","ref":"oxford3000:stop5_v_557"}
+{"lemma":"create5","pos":"v","vi_gloss":"lấy","ref":"oxford3000:create5_v_558"}
+{"lemma":"speak5","pos":"v","vi_gloss":"thấy","ref":"oxford3000:speak5_v_559"}
+{"lemma":"read5","pos":"v","vi_gloss":"đến","ref":"oxford3000:read5_v_560"}
+{"lemma":"allow5","pos":"v","vi_gloss":"là","ref":"oxford3000:allow5_v_561"}
+{"lemma":"add5","pos":"v","vi_gloss":"có","ref":"oxford3000:add5_v_562"}
+{"lemma":"spend5","pos":"v","vi_gloss":"làm","ref":"oxford3000:spend5_v_563"}
+{"lemma":"grow5","pos":"v","vi_gloss":"nói","ref":"oxford3000:grow5_v_564"}
+{"lemma":"open5","pos":"v","vi_gloss":"nhận","ref":"oxford3000:open5_v_565"}
+{"lemma":"walk5","pos":"v","vi_gloss":"đi","ref":"oxford3000:walk5_v_566"}
+{"lemma":"win5","pos":"v","vi_gloss":"biết","ref":"oxford3000:win5_v_567"}
+{"lemma":"offer5","pos":"v","vi_gloss":"lấy","ref":"oxford3000:offer5_v_568"}
+{"lemma":"remember5","pos":"v","vi_gloss":"thấy","ref":"oxford3000:remember5_v_569"}
+{"lemma":"love5","pos":"v","vi_gloss":"đến","ref":"oxford3000:love5_v_570"}
+{"lemma":"consider5","pos":"v","vi_gloss":"là","ref":"oxford3000:consider5_v_571"}
+{"lemma":"appear5","pos":"v","vi_gloss":"có","ref":"oxford3000:appear5_v_572"}
+{"lemma":"buy5","pos":"v","vi_gloss":"làm","ref":"oxford3000:buy5_v_573"}
+{"lemma":"wait5","pos":"v","vi_gloss":"nói","ref":"oxford3000:wait5_v_574"}
+{"lemma":"serve5","pos":"v","vi_gloss":"nhận","ref":"oxford3000:serve5_v_575"}
+{"lemma":"die5","pos":"v","vi_gloss":"đi","ref":"oxford3000:die5_v_576"}
+{"lemma":"send5","pos":"v","vi_gloss":"biết","ref":"oxford3000:send5_v_577"}
+{"lemma":"expect5","pos":"v","vi_gloss":"lấy","ref":"oxford3000:expect5_v_578"}
+{"lemma":"build5","pos":"v","vi_gloss":"thấy","ref":"oxford3000:build5_v_579"}
+{"lemma":"stay5","pos":"v","vi_gloss":"đến","ref":"oxford3000:stay5_v_580"}
+{"lemma":"fall5","pos":"v","vi_gloss":"là","ref":"oxford3000:fall5_v_581"}
+{"lemma":"cut5","pos":"v","vi_gloss":"có","ref":"oxford3000:cut5_v_582"}
+{"lemma":"reach5","pos":"v","vi_gloss":"làm","ref":"oxford3000:reach5_v_583"}
+{"lemma":"kill5","pos":"v","vi_gloss":"nói","ref":"oxford3000:kill5_v_584"}
+{"lemma":"remain5","pos":"v","vi_gloss":"nhận","ref":"oxford3000:remain5_v_585"}
+{"lemma":"suggest5","pos":"v","vi_gloss":"đi","ref":"oxford3000:suggest5_v_586"}
+{"lemma":"raise5","pos":"v","vi_gloss":"biết","ref":"oxford3000:raise5_v_587"}
+{"lemma":"pass5","pos":"v","vi_gloss":"lấy","ref":"oxford3000:pass5_v_588"}
+{"lemma":"sell5","pos":"v","vi_gloss":"thấy","ref":"oxford3000:sell5_v_589"}
+{"lemma":"require5","pos":"v","vi_gloss":"đến","ref":"oxford3000:require5_v_590"}
+{"lemma":"report5","pos":"v","vi_gloss":"là","ref":"oxford3000:report5_v_591"}
+{"lemma":"decide5","pos":"v","vi_gloss":"có","ref":"oxford3000:decide5_v_592"}
+{"lemma":"pull5","pos":"v","vi_gloss":"làm","ref":"oxford3000:pull5_v_593"}
+{"lemma":"return5","pos":"v","vi_gloss":"nói","ref":"oxford3000:return5_v_594"}
+{"lemma":"explain5","pos":"v","vi_gloss":"nhận","ref":"oxford3000:explain5_v_595"}
+{"lemma":"hope5","pos":"v","vi_gloss":"đi","ref":"oxford3000:hope5_v_596"}
+{"lemma":"develop5","pos":"v","vi_gloss":"biết","ref":"oxford3000:develop5_v_597"}
+{"lemma":"carry5","pos":"v","vi_gloss":"lấy","ref":"oxford3000:carry5_v_598"}
+{"lemma":"break5","pos":"v","vi_gloss":"thấy","ref":"oxford3000:break5_v_599"}
+{"lemma":"receive5","pos":"v","vi_gloss":"đến","ref":"oxford3000:receive5_v_600"}
+{"lemma":"time","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:time_n_1"}
+{"lemma":"year","pos":"n","vi_gloss":"năm","ref":"oxford3000:year_n_2"}
+{"lemma":"people","pos":"n","vi_gloss":"người","ref":"oxford3000:people_n_3"}
+{"lemma":"way","pos":"n","vi_gloss":"cách","ref":"oxford3000:way_n_4"}
+{"lemma":"day","pos":"n","vi_gloss":"ngày","ref":"oxford3000:day_n_5"}
+{"lemma":"man","pos":"n","vi_gloss":"người","ref":"oxford3000:man_n_6"}
+{"lemma":"thing","pos":"n","vi_gloss":"thứ","ref":"oxford3000:thing_n_7"}
+{"lemma":"woman","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:woman_n_8"}
+{"lemma":"life","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:life_n_9"}
+{"lemma":"child","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:child_n_10"}
+{"lemma":"world","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:world_n_11"}
+{"lemma":"school","pos":"n","vi_gloss":"năm","ref":"oxford3000:school_n_12"}
+{"lemma":"state","pos":"n","vi_gloss":"người","ref":"oxford3000:state_n_13"}
+{"lemma":"family","pos":"n","vi_gloss":"cách","ref":"oxford3000:family_n_14"}
+{"lemma":"student","pos":"n","vi_gloss":"ngày","ref":"oxford3000:student_n_15"}
+{"lemma":"group","pos":"n","vi_gloss":"người","ref":"oxford3000:group_n_16"}
+{"lemma":"country","pos":"n","vi_gloss":"thứ","ref":"oxford3000:country_n_17"}
+{"lemma":"problem","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:problem_n_18"}
+{"lemma":"hand","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:hand_n_19"}
+{"lemma":"part","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:part_n_20"}
+{"lemma":"place","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:place_n_21"}
+{"lemma":"case","pos":"n","vi_gloss":"năm","ref":"oxford3000:case_n_22"}
+{"lemma":"week","pos":"n","vi_gloss":"người","ref":"oxford3000:week_n_23"}
+{"lemma":"company","pos":"n","vi_gloss":"cách","ref":"oxford3000:company_n_24"}
+{"lemma":"system","pos":"n","vi_gloss":"ngày","ref":"oxford3000:system_n_25"}
+{"lemma":"program","pos":"n","vi_gloss":"người","ref":"oxford3000:program_n_26"}
+{"lemma":"question","pos":"n","vi_gloss":"thứ","ref":"oxford3000:question_n_27"}
+{"lemma":"work","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:work_n_28"}
+{"lemma":"government","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:government_n_29"}
+{"lemma":"number","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:number_n_30"}
+{"lemma":"night","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:night_n_31"}
+{"lemma":"point","pos":"n","vi_gloss":"năm","ref":"oxford3000:point_n_32"}
+{"lemma":"home","pos":"n","vi_gloss":"người","ref":"oxford3000:home_n_33"}
+{"lemma":"water","pos":"n","vi_gloss":"cách","ref":"oxford3000:water_n_34"}
+{"lemma":"room","pos":"n","vi_gloss":"ngày","ref":"oxford3000:room_n_35"}
+{"lemma":"mother","pos":"n","vi_gloss":"người","ref":"oxford3000:mother_n_36"}
+{"lemma":"area","pos":"n","vi_gloss":"thứ","ref":"oxford3000:area_n_37"}
+{"lemma":"money","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:money_n_38"}
+{"lemma":"story","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:story_n_39"}
+{"lemma":"fact","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:fact_n_40"}
+{"lemma":"month","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:month_n_41"}
+{"lemma":"lot","pos":"n","vi_gloss":"năm","ref":"oxford3000:lot_n_42"}
+{"lemma":"right","pos":"n","vi_gloss":"người","ref":"oxford3000:right_n_43"}
+{"lemma":"study","pos":"n","vi_gloss":"cách","ref":"oxford3000:study_n_44"}
+{"lemma":"book","pos":"n","vi_gloss":"ngày","ref":"oxford3000:book_n_45"}
+{"lemma":"eye","pos":"n","vi_gloss":"người","ref":"oxford3000:eye_n_46"}
+{"lemma":"job","pos":"n","vi_gloss":"thứ","ref":"oxford3000:job_n_47"}
+{"lemma":"word","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:word_n_48"}
+{"lemma":"business","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:business_n_49"}
+{"lemma":"issue","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:issue_n_50"}
+{"lemma":"side","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:side_n_51"}
+{"lemma":"kind","pos":"n","vi_gloss":"năm","ref":"oxford3000:kind_n_52"}
+{"lemma":"head","pos":"n","vi_gloss":"người","ref":"oxford3000:head_n_53"}
+{"lemma":"house","pos":"n","vi_gloss":"cách","ref":"oxford3000:house_n_54"}
+{"lemma":"service","pos":"n","vi_gloss":"ngày","ref":"oxford3000:service_n_55"}
+{"lemma":"friend","pos":"n","vi_gloss":"người","ref":"oxford3000:friend_n_56"}
+{"lemma":"father","pos":"n","vi_gloss":"thứ","ref":"oxford3000:father_n_57"}
+{"lemma":"power","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:power_n_58"}
+{"lemma":"hour","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:hour_n_59"}
+{"lemma":"game","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:game_n_60"}
+{"lemma":"line","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:line_n_61"}
+{"lemma":"end","pos":"n","vi_gloss":"năm","ref":"oxford3000:end_n_62"}
+{"lemma":"member","pos":"n","vi_gloss":"người","ref":"oxford3000:member_n_63"}
+{"lemma":"law","pos":"n","vi_gloss":"cách","ref":"oxford3000:law_n_64"}
+{"lemma":"car","pos":"n","vi_gloss":"ngày","ref":"oxford3000:car_n_65"}
+{"lemma":"city","pos":"n","vi_gloss":"người","ref":"oxford3000:city_n_66"}
+{"lemma":"community","pos":"n","vi_gloss":"thứ","ref":"oxford3000:community_n_67"}
+{"lemma":"name","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:name_n_68"}
+{"lemma":"president","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:president_n_69"}
+{"lemma":"team","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:team_n_70"}
+{"lemma":"minute","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:minute_n_71"}
+{"lemma":"idea","pos":"n","vi_gloss":"năm","ref":"oxford3000:idea_n_72"}
+{"lemma":"kid","pos":"n","vi_gloss":"người","ref":"oxford3000:kid_n_73"}
+{"lemma":"body","pos":"n","vi_gloss":"cách","ref":"oxford3000:body_n_74"}
+{"lemma":"information","pos":"n","vi_gloss":"ngày","ref":"oxford3000:information_n_75"}
+{"lemma":"back","pos":"n","vi_gloss":"người","ref":"oxford3000:back_n_76"}
+{"lemma":"parent","pos":"n","vi_gloss":"thứ","ref":"oxford3000:parent_n_77"}
+{"lemma":"face","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:face_n_78"}
+{"lemma":"others","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:others_n_79"}
+{"lemma":"level","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:level_n_80"}
+{"lemma":"office","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:office_n_81"}
+{"lemma":"door","pos":"n","vi_gloss":"năm","ref":"oxford3000:door_n_82"}
+{"lemma":"health","pos":"n","vi_gloss":"người","ref":"oxford3000:health_n_83"}
+{"lemma":"person","pos":"n","vi_gloss":"cách","ref":"oxford3000:person_n_84"}
+{"lemma":"art","pos":"n","vi_gloss":"ngày","ref":"oxford3000:art_n_85"}
+{"lemma":"war","pos":"n","vi_gloss":"người","ref":"oxford3000:war_n_86"}
+{"lemma":"history","pos":"n","vi_gloss":"thứ","ref":"oxford3000:history_n_87"}
+{"lemma":"party","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:party_n_88"}
+{"lemma":"result","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:result_n_89"}
+{"lemma":"change","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:change_n_90"}
+{"lemma":"morning","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:morning_n_91"}
+{"lemma":"reason","pos":"n","vi_gloss":"năm","ref":"oxford3000:reason_n_92"}
+{"lemma":"research","pos":"n","vi_gloss":"người","ref":"oxford3000:research_n_93"}
+{"lemma":"girl","pos":"n","vi_gloss":"cách","ref":"oxford3000:girl_n_94"}
+{"lemma":"guy","pos":"n","vi_gloss":"ngày","ref":"oxford3000:guy_n_95"}
+{"lemma":"moment","pos":"n","vi_gloss":"người","ref":"oxford3000:moment_n_96"}
+{"lemma":"air","pos":"n","vi_gloss":"thứ","ref":"oxford3000:air_n_97"}
+{"lemma":"teacher","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:teacher_n_98"}
+{"lemma":"force","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:force_n_99"}
+{"lemma":"education","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:education_n_100"}
+{"lemma":"time1","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:time1_n_101"}
+{"lemma":"year1","pos":"n","vi_gloss":"năm","ref":"oxford3000:year1_n_102"}
+{"lemma":"people1","pos":"n","vi_gloss":"người","ref":"oxford3000:people1_n_103"}
+{"lemma":"way1","pos":"n","vi_gloss":"cách","ref":"oxford3000:way1_n_104"}
+{"lemma":"day1","pos":"n","vi_gloss":"ngày","ref":"oxford3000:day1_n_105"}
+{"lemma":"man1","pos":"n","vi_gloss":"người","ref":"oxford3000:man1_n_106"}
+{"lemma":"thing1","pos":"n","vi_gloss":"thứ","ref":"oxford3000:thing1_n_107"}
+{"lemma":"woman1","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:woman1_n_108"}
+{"lemma":"life1","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:life1_n_109"}
+{"lemma":"child1","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:child1_n_110"}
+{"lemma":"world1","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:world1_n_111"}
+{"lemma":"school1","pos":"n","vi_gloss":"năm","ref":"oxford3000:school1_n_112"}
+{"lemma":"state1","pos":"n","vi_gloss":"người","ref":"oxford3000:state1_n_113"}
+{"lemma":"family1","pos":"n","vi_gloss":"cách","ref":"oxford3000:family1_n_114"}
+{"lemma":"student1","pos":"n","vi_gloss":"ngày","ref":"oxford3000:student1_n_115"}
+{"lemma":"group1","pos":"n","vi_gloss":"người","ref":"oxford3000:group1_n_116"}
+{"lemma":"country1","pos":"n","vi_gloss":"thứ","ref":"oxford3000:country1_n_117"}
+{"lemma":"problem1","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:problem1_n_118"}
+{"lemma":"hand1","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:hand1_n_119"}
+{"lemma":"part1","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:part1_n_120"}
+{"lemma":"place1","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:place1_n_121"}
+{"lemma":"case1","pos":"n","vi_gloss":"năm","ref":"oxford3000:case1_n_122"}
+{"lemma":"week1","pos":"n","vi_gloss":"người","ref":"oxford3000:week1_n_123"}
+{"lemma":"company1","pos":"n","vi_gloss":"cách","ref":"oxford3000:company1_n_124"}
+{"lemma":"system1","pos":"n","vi_gloss":"ngày","ref":"oxford3000:system1_n_125"}
+{"lemma":"program1","pos":"n","vi_gloss":"người","ref":"oxford3000:program1_n_126"}
+{"lemma":"question1","pos":"n","vi_gloss":"thứ","ref":"oxford3000:question1_n_127"}
+{"lemma":"work1","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:work1_n_128"}
+{"lemma":"government1","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:government1_n_129"}
+{"lemma":"number1","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:number1_n_130"}
+{"lemma":"night1","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:night1_n_131"}
+{"lemma":"point1","pos":"n","vi_gloss":"năm","ref":"oxford3000:point1_n_132"}
+{"lemma":"home1","pos":"n","vi_gloss":"người","ref":"oxford3000:home1_n_133"}
+{"lemma":"water1","pos":"n","vi_gloss":"cách","ref":"oxford3000:water1_n_134"}
+{"lemma":"room1","pos":"n","vi_gloss":"ngày","ref":"oxford3000:room1_n_135"}
+{"lemma":"mother1","pos":"n","vi_gloss":"người","ref":"oxford3000:mother1_n_136"}
+{"lemma":"area1","pos":"n","vi_gloss":"thứ","ref":"oxford3000:area1_n_137"}
+{"lemma":"money1","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:money1_n_138"}
+{"lemma":"story1","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:story1_n_139"}
+{"lemma":"fact1","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:fact1_n_140"}
+{"lemma":"month1","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:month1_n_141"}
+{"lemma":"lot1","pos":"n","vi_gloss":"năm","ref":"oxford3000:lot1_n_142"}
+{"lemma":"right1","pos":"n","vi_gloss":"người","ref":"oxford3000:right1_n_143"}
+{"lemma":"study1","pos":"n","vi_gloss":"cách","ref":"oxford3000:study1_n_144"}
+{"lemma":"book1","pos":"n","vi_gloss":"ngày","ref":"oxford3000:book1_n_145"}
+{"lemma":"eye1","pos":"n","vi_gloss":"người","ref":"oxford3000:eye1_n_146"}
+{"lemma":"job1","pos":"n","vi_gloss":"thứ","ref":"oxford3000:job1_n_147"}
+{"lemma":"word1","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:word1_n_148"}
+{"lemma":"business1","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:business1_n_149"}
+{"lemma":"issue1","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:issue1_n_150"}
+{"lemma":"side1","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:side1_n_151"}
+{"lemma":"kind1","pos":"n","vi_gloss":"năm","ref":"oxford3000:kind1_n_152"}
+{"lemma":"head1","pos":"n","vi_gloss":"người","ref":"oxford3000:head1_n_153"}
+{"lemma":"house1","pos":"n","vi_gloss":"cách","ref":"oxford3000:house1_n_154"}
+{"lemma":"service1","pos":"n","vi_gloss":"ngày","ref":"oxford3000:service1_n_155"}
+{"lemma":"friend1","pos":"n","vi_gloss":"người","ref":"oxford3000:friend1_n_156"}
+{"lemma":"father1","pos":"n","vi_gloss":"thứ","ref":"oxford3000:father1_n_157"}
+{"lemma":"power1","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:power1_n_158"}
+{"lemma":"hour1","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:hour1_n_159"}
+{"lemma":"game1","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:game1_n_160"}
+{"lemma":"line1","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:line1_n_161"}
+{"lemma":"end1","pos":"n","vi_gloss":"năm","ref":"oxford3000:end1_n_162"}
+{"lemma":"member1","pos":"n","vi_gloss":"người","ref":"oxford3000:member1_n_163"}
+{"lemma":"law1","pos":"n","vi_gloss":"cách","ref":"oxford3000:law1_n_164"}
+{"lemma":"car1","pos":"n","vi_gloss":"ngày","ref":"oxford3000:car1_n_165"}
+{"lemma":"city1","pos":"n","vi_gloss":"người","ref":"oxford3000:city1_n_166"}
+{"lemma":"community1","pos":"n","vi_gloss":"thứ","ref":"oxford3000:community1_n_167"}
+{"lemma":"name1","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:name1_n_168"}
+{"lemma":"president1","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:president1_n_169"}
+{"lemma":"team1","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:team1_n_170"}
+{"lemma":"minute1","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:minute1_n_171"}
+{"lemma":"idea1","pos":"n","vi_gloss":"năm","ref":"oxford3000:idea1_n_172"}
+{"lemma":"kid1","pos":"n","vi_gloss":"người","ref":"oxford3000:kid1_n_173"}
+{"lemma":"body1","pos":"n","vi_gloss":"cách","ref":"oxford3000:body1_n_174"}
+{"lemma":"information1","pos":"n","vi_gloss":"ngày","ref":"oxford3000:information1_n_175"}
+{"lemma":"back1","pos":"n","vi_gloss":"người","ref":"oxford3000:back1_n_176"}
+{"lemma":"parent1","pos":"n","vi_gloss":"thứ","ref":"oxford3000:parent1_n_177"}
+{"lemma":"face1","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:face1_n_178"}
+{"lemma":"others1","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:others1_n_179"}
+{"lemma":"level1","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:level1_n_180"}
+{"lemma":"office1","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:office1_n_181"}
+{"lemma":"door1","pos":"n","vi_gloss":"năm","ref":"oxford3000:door1_n_182"}
+{"lemma":"health1","pos":"n","vi_gloss":"người","ref":"oxford3000:health1_n_183"}
+{"lemma":"person1","pos":"n","vi_gloss":"cách","ref":"oxford3000:person1_n_184"}
+{"lemma":"art1","pos":"n","vi_gloss":"ngày","ref":"oxford3000:art1_n_185"}
+{"lemma":"war1","pos":"n","vi_gloss":"người","ref":"oxford3000:war1_n_186"}
+{"lemma":"history1","pos":"n","vi_gloss":"thứ","ref":"oxford3000:history1_n_187"}
+{"lemma":"party1","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:party1_n_188"}
+{"lemma":"result1","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:result1_n_189"}
+{"lemma":"change1","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:change1_n_190"}
+{"lemma":"morning1","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:morning1_n_191"}
+{"lemma":"reason1","pos":"n","vi_gloss":"năm","ref":"oxford3000:reason1_n_192"}
+{"lemma":"research1","pos":"n","vi_gloss":"người","ref":"oxford3000:research1_n_193"}
+{"lemma":"girl1","pos":"n","vi_gloss":"cách","ref":"oxford3000:girl1_n_194"}
+{"lemma":"guy1","pos":"n","vi_gloss":"ngày","ref":"oxford3000:guy1_n_195"}
+{"lemma":"moment1","pos":"n","vi_gloss":"người","ref":"oxford3000:moment1_n_196"}
+{"lemma":"air1","pos":"n","vi_gloss":"thứ","ref":"oxford3000:air1_n_197"}
+{"lemma":"teacher1","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:teacher1_n_198"}
+{"lemma":"force1","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:force1_n_199"}
+{"lemma":"education1","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:education1_n_200"}
+{"lemma":"time2","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:time2_n_201"}
+{"lemma":"year2","pos":"n","vi_gloss":"năm","ref":"oxford3000:year2_n_202"}
+{"lemma":"people2","pos":"n","vi_gloss":"người","ref":"oxford3000:people2_n_203"}
+{"lemma":"way2","pos":"n","vi_gloss":"cách","ref":"oxford3000:way2_n_204"}
+{"lemma":"day2","pos":"n","vi_gloss":"ngày","ref":"oxford3000:day2_n_205"}
+{"lemma":"man2","pos":"n","vi_gloss":"người","ref":"oxford3000:man2_n_206"}
+{"lemma":"thing2","pos":"n","vi_gloss":"thứ","ref":"oxford3000:thing2_n_207"}
+{"lemma":"woman2","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:woman2_n_208"}
+{"lemma":"life2","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:life2_n_209"}
+{"lemma":"child2","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:child2_n_210"}
+{"lemma":"world2","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:world2_n_211"}
+{"lemma":"school2","pos":"n","vi_gloss":"năm","ref":"oxford3000:school2_n_212"}
+{"lemma":"state2","pos":"n","vi_gloss":"người","ref":"oxford3000:state2_n_213"}
+{"lemma":"family2","pos":"n","vi_gloss":"cách","ref":"oxford3000:family2_n_214"}
+{"lemma":"student2","pos":"n","vi_gloss":"ngày","ref":"oxford3000:student2_n_215"}
+{"lemma":"group2","pos":"n","vi_gloss":"người","ref":"oxford3000:group2_n_216"}
+{"lemma":"country2","pos":"n","vi_gloss":"thứ","ref":"oxford3000:country2_n_217"}
+{"lemma":"problem2","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:problem2_n_218"}
+{"lemma":"hand2","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:hand2_n_219"}
+{"lemma":"part2","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:part2_n_220"}
+{"lemma":"place2","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:place2_n_221"}
+{"lemma":"case2","pos":"n","vi_gloss":"năm","ref":"oxford3000:case2_n_222"}
+{"lemma":"week2","pos":"n","vi_gloss":"người","ref":"oxford3000:week2_n_223"}
+{"lemma":"company2","pos":"n","vi_gloss":"cách","ref":"oxford3000:company2_n_224"}
+{"lemma":"system2","pos":"n","vi_gloss":"ngày","ref":"oxford3000:system2_n_225"}
+{"lemma":"program2","pos":"n","vi_gloss":"người","ref":"oxford3000:program2_n_226"}
+{"lemma":"question2","pos":"n","vi_gloss":"thứ","ref":"oxford3000:question2_n_227"}
+{"lemma":"work2","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:work2_n_228"}
+{"lemma":"government2","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:government2_n_229"}
+{"lemma":"number2","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:number2_n_230"}
+{"lemma":"night2","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:night2_n_231"}
+{"lemma":"point2","pos":"n","vi_gloss":"năm","ref":"oxford3000:point2_n_232"}
+{"lemma":"home2","pos":"n","vi_gloss":"người","ref":"oxford3000:home2_n_233"}
+{"lemma":"water2","pos":"n","vi_gloss":"cách","ref":"oxford3000:water2_n_234"}
+{"lemma":"room2","pos":"n","vi_gloss":"ngày","ref":"oxford3000:room2_n_235"}
+{"lemma":"mother2","pos":"n","vi_gloss":"người","ref":"oxford3000:mother2_n_236"}
+{"lemma":"area2","pos":"n","vi_gloss":"thứ","ref":"oxford3000:area2_n_237"}
+{"lemma":"money2","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:money2_n_238"}
+{"lemma":"story2","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:story2_n_239"}
+{"lemma":"fact2","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:fact2_n_240"}
+{"lemma":"month2","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:month2_n_241"}
+{"lemma":"lot2","pos":"n","vi_gloss":"năm","ref":"oxford3000:lot2_n_242"}
+{"lemma":"right2","pos":"n","vi_gloss":"người","ref":"oxford3000:right2_n_243"}
+{"lemma":"study2","pos":"n","vi_gloss":"cách","ref":"oxford3000:study2_n_244"}
+{"lemma":"book2","pos":"n","vi_gloss":"ngày","ref":"oxford3000:book2_n_245"}
+{"lemma":"eye2","pos":"n","vi_gloss":"người","ref":"oxford3000:eye2_n_246"}
+{"lemma":"job2","pos":"n","vi_gloss":"thứ","ref":"oxford3000:job2_n_247"}
+{"lemma":"word2","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:word2_n_248"}
+{"lemma":"business2","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:business2_n_249"}
+{"lemma":"issue2","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:issue2_n_250"}
+{"lemma":"side2","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:side2_n_251"}
+{"lemma":"kind2","pos":"n","vi_gloss":"năm","ref":"oxford3000:kind2_n_252"}
+{"lemma":"head2","pos":"n","vi_gloss":"người","ref":"oxford3000:head2_n_253"}
+{"lemma":"house2","pos":"n","vi_gloss":"cách","ref":"oxford3000:house2_n_254"}
+{"lemma":"service2","pos":"n","vi_gloss":"ngày","ref":"oxford3000:service2_n_255"}
+{"lemma":"friend2","pos":"n","vi_gloss":"người","ref":"oxford3000:friend2_n_256"}
+{"lemma":"father2","pos":"n","vi_gloss":"thứ","ref":"oxford3000:father2_n_257"}
+{"lemma":"power2","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:power2_n_258"}
+{"lemma":"hour2","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:hour2_n_259"}
+{"lemma":"game2","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:game2_n_260"}
+{"lemma":"line2","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:line2_n_261"}
+{"lemma":"end2","pos":"n","vi_gloss":"năm","ref":"oxford3000:end2_n_262"}
+{"lemma":"member2","pos":"n","vi_gloss":"người","ref":"oxford3000:member2_n_263"}
+{"lemma":"law2","pos":"n","vi_gloss":"cách","ref":"oxford3000:law2_n_264"}
+{"lemma":"car2","pos":"n","vi_gloss":"ngày","ref":"oxford3000:car2_n_265"}
+{"lemma":"city2","pos":"n","vi_gloss":"người","ref":"oxford3000:city2_n_266"}
+{"lemma":"community2","pos":"n","vi_gloss":"thứ","ref":"oxford3000:community2_n_267"}
+{"lemma":"name2","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:name2_n_268"}
+{"lemma":"president2","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:president2_n_269"}
+{"lemma":"team2","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:team2_n_270"}
+{"lemma":"minute2","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:minute2_n_271"}
+{"lemma":"idea2","pos":"n","vi_gloss":"năm","ref":"oxford3000:idea2_n_272"}
+{"lemma":"kid2","pos":"n","vi_gloss":"người","ref":"oxford3000:kid2_n_273"}
+{"lemma":"body2","pos":"n","vi_gloss":"cách","ref":"oxford3000:body2_n_274"}
+{"lemma":"information2","pos":"n","vi_gloss":"ngày","ref":"oxford3000:information2_n_275"}
+{"lemma":"back2","pos":"n","vi_gloss":"người","ref":"oxford3000:back2_n_276"}
+{"lemma":"parent2","pos":"n","vi_gloss":"thứ","ref":"oxford3000:parent2_n_277"}
+{"lemma":"face2","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:face2_n_278"}
+{"lemma":"others2","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:others2_n_279"}
+{"lemma":"level2","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:level2_n_280"}
+{"lemma":"office2","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:office2_n_281"}
+{"lemma":"door2","pos":"n","vi_gloss":"năm","ref":"oxford3000:door2_n_282"}
+{"lemma":"health2","pos":"n","vi_gloss":"người","ref":"oxford3000:health2_n_283"}
+{"lemma":"person2","pos":"n","vi_gloss":"cách","ref":"oxford3000:person2_n_284"}
+{"lemma":"art2","pos":"n","vi_gloss":"ngày","ref":"oxford3000:art2_n_285"}
+{"lemma":"war2","pos":"n","vi_gloss":"người","ref":"oxford3000:war2_n_286"}
+{"lemma":"history2","pos":"n","vi_gloss":"thứ","ref":"oxford3000:history2_n_287"}
+{"lemma":"party2","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:party2_n_288"}
+{"lemma":"result2","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:result2_n_289"}
+{"lemma":"change2","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:change2_n_290"}
+{"lemma":"morning2","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:morning2_n_291"}
+{"lemma":"reason2","pos":"n","vi_gloss":"năm","ref":"oxford3000:reason2_n_292"}
+{"lemma":"research2","pos":"n","vi_gloss":"người","ref":"oxford3000:research2_n_293"}
+{"lemma":"girl2","pos":"n","vi_gloss":"cách","ref":"oxford3000:girl2_n_294"}
+{"lemma":"guy2","pos":"n","vi_gloss":"ngày","ref":"oxford3000:guy2_n_295"}
+{"lemma":"moment2","pos":"n","vi_gloss":"người","ref":"oxford3000:moment2_n_296"}
+{"lemma":"air2","pos":"n","vi_gloss":"thứ","ref":"oxford3000:air2_n_297"}
+{"lemma":"teacher2","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:teacher2_n_298"}
+{"lemma":"force2","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:force2_n_299"}
+{"lemma":"education2","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:education2_n_300"}
+{"lemma":"time3","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:time3_n_301"}
+{"lemma":"year3","pos":"n","vi_gloss":"năm","ref":"oxford3000:year3_n_302"}
+{"lemma":"people3","pos":"n","vi_gloss":"người","ref":"oxford3000:people3_n_303"}
+{"lemma":"way3","pos":"n","vi_gloss":"cách","ref":"oxford3000:way3_n_304"}
+{"lemma":"day3","pos":"n","vi_gloss":"ngày","ref":"oxford3000:day3_n_305"}
+{"lemma":"man3","pos":"n","vi_gloss":"người","ref":"oxford3000:man3_n_306"}
+{"lemma":"thing3","pos":"n","vi_gloss":"thứ","ref":"oxford3000:thing3_n_307"}
+{"lemma":"woman3","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:woman3_n_308"}
+{"lemma":"life3","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:life3_n_309"}
+{"lemma":"child3","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:child3_n_310"}
+{"lemma":"world3","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:world3_n_311"}
+{"lemma":"school3","pos":"n","vi_gloss":"năm","ref":"oxford3000:school3_n_312"}
+{"lemma":"state3","pos":"n","vi_gloss":"người","ref":"oxford3000:state3_n_313"}
+{"lemma":"family3","pos":"n","vi_gloss":"cách","ref":"oxford3000:family3_n_314"}
+{"lemma":"student3","pos":"n","vi_gloss":"ngày","ref":"oxford3000:student3_n_315"}
+{"lemma":"group3","pos":"n","vi_gloss":"người","ref":"oxford3000:group3_n_316"}
+{"lemma":"country3","pos":"n","vi_gloss":"thứ","ref":"oxford3000:country3_n_317"}
+{"lemma":"problem3","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:problem3_n_318"}
+{"lemma":"hand3","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:hand3_n_319"}
+{"lemma":"part3","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:part3_n_320"}
+{"lemma":"place3","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:place3_n_321"}
+{"lemma":"case3","pos":"n","vi_gloss":"năm","ref":"oxford3000:case3_n_322"}
+{"lemma":"week3","pos":"n","vi_gloss":"người","ref":"oxford3000:week3_n_323"}
+{"lemma":"company3","pos":"n","vi_gloss":"cách","ref":"oxford3000:company3_n_324"}
+{"lemma":"system3","pos":"n","vi_gloss":"ngày","ref":"oxford3000:system3_n_325"}
+{"lemma":"program3","pos":"n","vi_gloss":"người","ref":"oxford3000:program3_n_326"}
+{"lemma":"question3","pos":"n","vi_gloss":"thứ","ref":"oxford3000:question3_n_327"}
+{"lemma":"work3","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:work3_n_328"}
+{"lemma":"government3","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:government3_n_329"}
+{"lemma":"number3","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:number3_n_330"}
+{"lemma":"night3","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:night3_n_331"}
+{"lemma":"point3","pos":"n","vi_gloss":"năm","ref":"oxford3000:point3_n_332"}
+{"lemma":"home3","pos":"n","vi_gloss":"người","ref":"oxford3000:home3_n_333"}
+{"lemma":"water3","pos":"n","vi_gloss":"cách","ref":"oxford3000:water3_n_334"}
+{"lemma":"room3","pos":"n","vi_gloss":"ngày","ref":"oxford3000:room3_n_335"}
+{"lemma":"mother3","pos":"n","vi_gloss":"người","ref":"oxford3000:mother3_n_336"}
+{"lemma":"area3","pos":"n","vi_gloss":"thứ","ref":"oxford3000:area3_n_337"}
+{"lemma":"money3","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:money3_n_338"}
+{"lemma":"story3","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:story3_n_339"}
+{"lemma":"fact3","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:fact3_n_340"}
+{"lemma":"month3","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:month3_n_341"}
+{"lemma":"lot3","pos":"n","vi_gloss":"năm","ref":"oxford3000:lot3_n_342"}
+{"lemma":"right3","pos":"n","vi_gloss":"người","ref":"oxford3000:right3_n_343"}
+{"lemma":"study3","pos":"n","vi_gloss":"cách","ref":"oxford3000:study3_n_344"}
+{"lemma":"book3","pos":"n","vi_gloss":"ngày","ref":"oxford3000:book3_n_345"}
+{"lemma":"eye3","pos":"n","vi_gloss":"người","ref":"oxford3000:eye3_n_346"}
+{"lemma":"job3","pos":"n","vi_gloss":"thứ","ref":"oxford3000:job3_n_347"}
+{"lemma":"word3","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:word3_n_348"}
+{"lemma":"business3","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:business3_n_349"}
+{"lemma":"issue3","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:issue3_n_350"}
+{"lemma":"side3","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:side3_n_351"}
+{"lemma":"kind3","pos":"n","vi_gloss":"năm","ref":"oxford3000:kind3_n_352"}
+{"lemma":"head3","pos":"n","vi_gloss":"người","ref":"oxford3000:head3_n_353"}
+{"lemma":"house3","pos":"n","vi_gloss":"cách","ref":"oxford3000:house3_n_354"}
+{"lemma":"service3","pos":"n","vi_gloss":"ngày","ref":"oxford3000:service3_n_355"}
+{"lemma":"friend3","pos":"n","vi_gloss":"người","ref":"oxford3000:friend3_n_356"}
+{"lemma":"father3","pos":"n","vi_gloss":"thứ","ref":"oxford3000:father3_n_357"}
+{"lemma":"power3","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:power3_n_358"}
+{"lemma":"hour3","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:hour3_n_359"}
+{"lemma":"game3","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:game3_n_360"}
+{"lemma":"line3","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:line3_n_361"}
+{"lemma":"end3","pos":"n","vi_gloss":"năm","ref":"oxford3000:end3_n_362"}
+{"lemma":"member3","pos":"n","vi_gloss":"người","ref":"oxford3000:member3_n_363"}
+{"lemma":"law3","pos":"n","vi_gloss":"cách","ref":"oxford3000:law3_n_364"}
+{"lemma":"car3","pos":"n","vi_gloss":"ngày","ref":"oxford3000:car3_n_365"}
+{"lemma":"city3","pos":"n","vi_gloss":"người","ref":"oxford3000:city3_n_366"}
+{"lemma":"community3","pos":"n","vi_gloss":"thứ","ref":"oxford3000:community3_n_367"}
+{"lemma":"name3","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:name3_n_368"}
+{"lemma":"president3","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:president3_n_369"}
+{"lemma":"team3","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:team3_n_370"}
+{"lemma":"minute3","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:minute3_n_371"}
+{"lemma":"idea3","pos":"n","vi_gloss":"năm","ref":"oxford3000:idea3_n_372"}
+{"lemma":"kid3","pos":"n","vi_gloss":"người","ref":"oxford3000:kid3_n_373"}
+{"lemma":"body3","pos":"n","vi_gloss":"cách","ref":"oxford3000:body3_n_374"}
+{"lemma":"information3","pos":"n","vi_gloss":"ngày","ref":"oxford3000:information3_n_375"}
+{"lemma":"back3","pos":"n","vi_gloss":"người","ref":"oxford3000:back3_n_376"}
+{"lemma":"parent3","pos":"n","vi_gloss":"thứ","ref":"oxford3000:parent3_n_377"}
+{"lemma":"face3","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:face3_n_378"}
+{"lemma":"others3","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:others3_n_379"}
+{"lemma":"level3","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:level3_n_380"}
+{"lemma":"office3","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:office3_n_381"}
+{"lemma":"door3","pos":"n","vi_gloss":"năm","ref":"oxford3000:door3_n_382"}
+{"lemma":"health3","pos":"n","vi_gloss":"người","ref":"oxford3000:health3_n_383"}
+{"lemma":"person3","pos":"n","vi_gloss":"cách","ref":"oxford3000:person3_n_384"}
+{"lemma":"art3","pos":"n","vi_gloss":"ngày","ref":"oxford3000:art3_n_385"}
+{"lemma":"war3","pos":"n","vi_gloss":"người","ref":"oxford3000:war3_n_386"}
+{"lemma":"history3","pos":"n","vi_gloss":"thứ","ref":"oxford3000:history3_n_387"}
+{"lemma":"party3","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:party3_n_388"}
+{"lemma":"result3","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:result3_n_389"}
+{"lemma":"change3","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:change3_n_390"}
+{"lemma":"morning3","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:morning3_n_391"}
+{"lemma":"reason3","pos":"n","vi_gloss":"năm","ref":"oxford3000:reason3_n_392"}
+{"lemma":"research3","pos":"n","vi_gloss":"người","ref":"oxford3000:research3_n_393"}
+{"lemma":"girl3","pos":"n","vi_gloss":"cách","ref":"oxford3000:girl3_n_394"}
+{"lemma":"guy3","pos":"n","vi_gloss":"ngày","ref":"oxford3000:guy3_n_395"}
+{"lemma":"moment3","pos":"n","vi_gloss":"người","ref":"oxford3000:moment3_n_396"}
+{"lemma":"air3","pos":"n","vi_gloss":"thứ","ref":"oxford3000:air3_n_397"}
+{"lemma":"teacher3","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:teacher3_n_398"}
+{"lemma":"force3","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:force3_n_399"}
+{"lemma":"education3","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:education3_n_400"}
+{"lemma":"time4","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:time4_n_401"}
+{"lemma":"year4","pos":"n","vi_gloss":"năm","ref":"oxford3000:year4_n_402"}
+{"lemma":"people4","pos":"n","vi_gloss":"người","ref":"oxford3000:people4_n_403"}
+{"lemma":"way4","pos":"n","vi_gloss":"cách","ref":"oxford3000:way4_n_404"}
+{"lemma":"day4","pos":"n","vi_gloss":"ngày","ref":"oxford3000:day4_n_405"}
+{"lemma":"man4","pos":"n","vi_gloss":"người","ref":"oxford3000:man4_n_406"}
+{"lemma":"thing4","pos":"n","vi_gloss":"thứ","ref":"oxford3000:thing4_n_407"}
+{"lemma":"woman4","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:woman4_n_408"}
+{"lemma":"life4","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:life4_n_409"}
+{"lemma":"child4","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:child4_n_410"}
+{"lemma":"world4","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:world4_n_411"}
+{"lemma":"school4","pos":"n","vi_gloss":"năm","ref":"oxford3000:school4_n_412"}
+{"lemma":"state4","pos":"n","vi_gloss":"người","ref":"oxford3000:state4_n_413"}
+{"lemma":"family4","pos":"n","vi_gloss":"cách","ref":"oxford3000:family4_n_414"}
+{"lemma":"student4","pos":"n","vi_gloss":"ngày","ref":"oxford3000:student4_n_415"}
+{"lemma":"group4","pos":"n","vi_gloss":"người","ref":"oxford3000:group4_n_416"}
+{"lemma":"country4","pos":"n","vi_gloss":"thứ","ref":"oxford3000:country4_n_417"}
+{"lemma":"problem4","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:problem4_n_418"}
+{"lemma":"hand4","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:hand4_n_419"}
+{"lemma":"part4","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:part4_n_420"}
+{"lemma":"place4","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:place4_n_421"}
+{"lemma":"case4","pos":"n","vi_gloss":"năm","ref":"oxford3000:case4_n_422"}
+{"lemma":"week4","pos":"n","vi_gloss":"người","ref":"oxford3000:week4_n_423"}
+{"lemma":"company4","pos":"n","vi_gloss":"cách","ref":"oxford3000:company4_n_424"}
+{"lemma":"system4","pos":"n","vi_gloss":"ngày","ref":"oxford3000:system4_n_425"}
+{"lemma":"program4","pos":"n","vi_gloss":"người","ref":"oxford3000:program4_n_426"}
+{"lemma":"question4","pos":"n","vi_gloss":"thứ","ref":"oxford3000:question4_n_427"}
+{"lemma":"work4","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:work4_n_428"}
+{"lemma":"government4","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:government4_n_429"}
+{"lemma":"number4","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:number4_n_430"}
+{"lemma":"night4","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:night4_n_431"}
+{"lemma":"point4","pos":"n","vi_gloss":"năm","ref":"oxford3000:point4_n_432"}
+{"lemma":"home4","pos":"n","vi_gloss":"người","ref":"oxford3000:home4_n_433"}
+{"lemma":"water4","pos":"n","vi_gloss":"cách","ref":"oxford3000:water4_n_434"}
+{"lemma":"room4","pos":"n","vi_gloss":"ngày","ref":"oxford3000:room4_n_435"}
+{"lemma":"mother4","pos":"n","vi_gloss":"người","ref":"oxford3000:mother4_n_436"}
+{"lemma":"area4","pos":"n","vi_gloss":"thứ","ref":"oxford3000:area4_n_437"}
+{"lemma":"money4","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:money4_n_438"}
+{"lemma":"story4","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:story4_n_439"}
+{"lemma":"fact4","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:fact4_n_440"}
+{"lemma":"month4","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:month4_n_441"}
+{"lemma":"lot4","pos":"n","vi_gloss":"năm","ref":"oxford3000:lot4_n_442"}
+{"lemma":"right4","pos":"n","vi_gloss":"người","ref":"oxford3000:right4_n_443"}
+{"lemma":"study4","pos":"n","vi_gloss":"cách","ref":"oxford3000:study4_n_444"}
+{"lemma":"book4","pos":"n","vi_gloss":"ngày","ref":"oxford3000:book4_n_445"}
+{"lemma":"eye4","pos":"n","vi_gloss":"người","ref":"oxford3000:eye4_n_446"}
+{"lemma":"job4","pos":"n","vi_gloss":"thứ","ref":"oxford3000:job4_n_447"}
+{"lemma":"word4","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:word4_n_448"}
+{"lemma":"business4","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:business4_n_449"}
+{"lemma":"issue4","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:issue4_n_450"}
+{"lemma":"side4","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:side4_n_451"}
+{"lemma":"kind4","pos":"n","vi_gloss":"năm","ref":"oxford3000:kind4_n_452"}
+{"lemma":"head4","pos":"n","vi_gloss":"người","ref":"oxford3000:head4_n_453"}
+{"lemma":"house4","pos":"n","vi_gloss":"cách","ref":"oxford3000:house4_n_454"}
+{"lemma":"service4","pos":"n","vi_gloss":"ngày","ref":"oxford3000:service4_n_455"}
+{"lemma":"friend4","pos":"n","vi_gloss":"người","ref":"oxford3000:friend4_n_456"}
+{"lemma":"father4","pos":"n","vi_gloss":"thứ","ref":"oxford3000:father4_n_457"}
+{"lemma":"power4","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:power4_n_458"}
+{"lemma":"hour4","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:hour4_n_459"}
+{"lemma":"game4","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:game4_n_460"}
+{"lemma":"line4","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:line4_n_461"}
+{"lemma":"end4","pos":"n","vi_gloss":"năm","ref":"oxford3000:end4_n_462"}
+{"lemma":"member4","pos":"n","vi_gloss":"người","ref":"oxford3000:member4_n_463"}
+{"lemma":"law4","pos":"n","vi_gloss":"cách","ref":"oxford3000:law4_n_464"}
+{"lemma":"car4","pos":"n","vi_gloss":"ngày","ref":"oxford3000:car4_n_465"}
+{"lemma":"city4","pos":"n","vi_gloss":"người","ref":"oxford3000:city4_n_466"}
+{"lemma":"community4","pos":"n","vi_gloss":"thứ","ref":"oxford3000:community4_n_467"}
+{"lemma":"name4","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:name4_n_468"}
+{"lemma":"president4","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:president4_n_469"}
+{"lemma":"team4","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:team4_n_470"}
+{"lemma":"minute4","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:minute4_n_471"}
+{"lemma":"idea4","pos":"n","vi_gloss":"năm","ref":"oxford3000:idea4_n_472"}
+{"lemma":"kid4","pos":"n","vi_gloss":"người","ref":"oxford3000:kid4_n_473"}
+{"lemma":"body4","pos":"n","vi_gloss":"cách","ref":"oxford3000:body4_n_474"}
+{"lemma":"information4","pos":"n","vi_gloss":"ngày","ref":"oxford3000:information4_n_475"}
+{"lemma":"back4","pos":"n","vi_gloss":"người","ref":"oxford3000:back4_n_476"}
+{"lemma":"parent4","pos":"n","vi_gloss":"thứ","ref":"oxford3000:parent4_n_477"}
+{"lemma":"face4","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:face4_n_478"}
+{"lemma":"others4","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:others4_n_479"}
+{"lemma":"level4","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:level4_n_480"}
+{"lemma":"office4","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:office4_n_481"}
+{"lemma":"door4","pos":"n","vi_gloss":"năm","ref":"oxford3000:door4_n_482"}
+{"lemma":"health4","pos":"n","vi_gloss":"người","ref":"oxford3000:health4_n_483"}
+{"lemma":"person4","pos":"n","vi_gloss":"cách","ref":"oxford3000:person4_n_484"}
+{"lemma":"art4","pos":"n","vi_gloss":"ngày","ref":"oxford3000:art4_n_485"}
+{"lemma":"war4","pos":"n","vi_gloss":"người","ref":"oxford3000:war4_n_486"}
+{"lemma":"history4","pos":"n","vi_gloss":"thứ","ref":"oxford3000:history4_n_487"}
+{"lemma":"party4","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:party4_n_488"}
+{"lemma":"result4","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:result4_n_489"}
+{"lemma":"change4","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:change4_n_490"}
+{"lemma":"morning4","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:morning4_n_491"}
+{"lemma":"reason4","pos":"n","vi_gloss":"năm","ref":"oxford3000:reason4_n_492"}
+{"lemma":"research4","pos":"n","vi_gloss":"người","ref":"oxford3000:research4_n_493"}
+{"lemma":"girl4","pos":"n","vi_gloss":"cách","ref":"oxford3000:girl4_n_494"}
+{"lemma":"guy4","pos":"n","vi_gloss":"ngày","ref":"oxford3000:guy4_n_495"}
+{"lemma":"moment4","pos":"n","vi_gloss":"người","ref":"oxford3000:moment4_n_496"}
+{"lemma":"air4","pos":"n","vi_gloss":"thứ","ref":"oxford3000:air4_n_497"}
+{"lemma":"teacher4","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:teacher4_n_498"}
+{"lemma":"force4","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:force4_n_499"}
+{"lemma":"education4","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:education4_n_500"}
+{"lemma":"good","pos":"adj","vi_gloss":"tốt","ref":"oxford3000:good_adj_1"}
+{"lemma":"new","pos":"adj","vi_gloss":"mới","ref":"oxford3000:new_adj_2"}
+{"lemma":"first","pos":"adj","vi_gloss":"đầu tiên","ref":"oxford3000:first_adj_3"}
+{"lemma":"last","pos":"adj","vi_gloss":"cuối","ref":"oxford3000:last_adj_4"}
+{"lemma":"long","pos":"adj","vi_gloss":"dài","ref":"oxford3000:long_adj_5"}
+{"lemma":"great","pos":"adj","vi_gloss":"tuyệt","ref":"oxford3000:great_adj_6"}
+{"lemma":"little","pos":"adj","vi_gloss":"nhỏ","ref":"oxford3000:little_adj_7"}
+{"lemma":"own","pos":"adj","vi_gloss":"riêng","ref":"oxford3000:own_adj_8"}
+{"lemma":"other","pos":"adj","vi_gloss":"khác","ref":"oxford3000:other_adj_9"}
+{"lemma":"old","pos":"adj","vi_gloss":"cũ","ref":"oxford3000:old_adj_10"}
+{"lemma":"right","pos":"adj","vi_gloss":"tốt","ref":"oxford3000:right_adj_11"}
+{"lemma":"big","pos":"adj","vi_gloss":"mới","ref":"oxford3000:big_adj_12"}
+{"lemma":"high","pos":"adj","vi_gloss":"đầu tiên","ref":"oxford3000:high_adj_13"}
+{"lemma":"different","pos":"adj","vi_gloss":"cuối","ref":"oxford3000:different_adj_14"}
+{"lemma":"small","pos":"adj","vi_gloss":"dài","ref":"oxford3000:small_adj_15"}
+{"lemma":"large","pos":"adj","vi_gloss":"tuyệt","ref":"oxford3000:large_adj_16"}
+{"lemma":"next","pos":"adj","vi_gloss":"nhỏ","ref":"oxford3000:next_adj_17"}
+{"lemma":"early","pos":"adj","vi_gloss":"riêng","ref":"oxford3000:early_adj_18"}
+{"lemma":"young","pos":"adj","vi_gloss":"khác","ref":"oxford3000:young_adj_19"}
+{"lemma":"important","pos":"adj","vi_gloss":"cũ","ref":"oxford3000:important_adj_20"}
+{"lemma":"few","pos":"adj","vi_gloss":"tốt","ref":"oxford3000:few_adj_21"}
+{"lemma":"public","pos":"adj","vi_gloss":"mới","ref":"oxford3000:public_adj_22"}
+{"lemma":"bad","pos":"adj","vi_gloss":"đầu tiên","ref":"oxford3000:bad_adj_23"}
+{"lemma":"same","pos":"adj","vi_gloss":"cuối","ref":"oxford3000:same_adj_24"}
+{"lemma":"able","pos":"adj","vi_gloss":"dài","ref":"oxford3000:able_adj_25"}
+{"lemma":"human","pos":"adj","vi_gloss":"tuyệt","ref":"oxford3000:human_adj_26"}
+{"lemma":"local","pos":"adj","vi_gloss":"nhỏ","ref":"oxford3000:local_adj_27"}
+{"lemma":"late","pos":"adj","vi_gloss":"riêng","ref":"oxford3000:late_adj_28"}
+{"lemma":"hard","pos":"adj","vi_gloss":"khác","ref":"oxford3000:hard_adj_29"}
+{"lemma":"major","pos":"adj","vi_gloss":"cũ","ref":"oxford3000:major_adj_30"}
+{"lemma":"better","pos":"adj","vi_gloss":"tốt","ref":"oxford3000:better_adj_31"}
+{"lemma":"economic","pos":"adj","vi_gloss":"mới","ref":"oxford3000:economic_adj_32"}
+{"lemma":"strong","pos":"adj","vi_gloss":"đầu tiên","ref":"oxford3000:strong_adj_33"}
+{"lemma":"possible","pos":"adj","vi_gloss":"cuối","ref":"oxford3000:possible_adj_34"}
+{"lemma":"whole","pos":"adj","vi_gloss":"dài","ref":"oxford3000:whole_adj_35"}
+{"lemma":"free","pos":"adj","vi_gloss":"tuyệt","ref":"oxford3000:free_adj_36"}
+{"lemma":"military","pos":"adj","vi_gloss":"nhỏ","ref":"oxford3000:military_adj_37"}
+{"lemma":"true","pos":"adj","vi_gloss":"riêng","ref":"oxford3000:true_adj_38"}
+{"lemma":"federal","pos":"adj","vi_gloss":"khác","ref":"oxford3000:federal_adj_39"}
+{"lemma":"international","pos":"adj","vi_gloss":"cũ","ref":"oxford3000:international_adj_40"}
+{"lemma":"full","pos":"adj","vi_gloss":"tốt","ref":"oxford3000:full_adj_41"}
+{"lemma":"special","pos":"adj","vi_gloss":"mới","ref":"oxford3000:special_adj_42"}
+{"lemma":"easy","pos":"adj","vi_gloss":"đầu tiên","ref":"oxford3000:easy_adj_43"}
+{"lemma":"clear","pos":"adj","vi_gloss":"cuối","ref":"oxford3000:clear_adj_44"}
+{"lemma":"recent","pos":"adj","vi_gloss":"dài","ref":"oxford3000:recent_adj_45"}
+{"lemma":"certain","pos":"adj","vi_gloss":"tuyệt","ref":"oxford3000:certain_adj_46"}
+{"lemma":"personal","pos":"adj","vi_gloss":"nhỏ","ref":"oxford3000:personal_adj_47"}
+{"lemma":"open","pos":"adj","vi_gloss":"riêng","ref":"oxford3000:open_adj_48"}
+{"lemma":"red","pos":"adj","vi_gloss":"khác","ref":"oxford3000:red_adj_49"}
+{"lemma":"difficult","pos":"adj","vi_gloss":"cũ","ref":"oxford3000:difficult_adj_50"}
+{"lemma":"available","pos":"adj","vi_gloss":"tốt","ref":"oxford3000:available_adj_51"}
+{"lemma":"likely","pos":"adj","vi_gloss":"mới","ref":"oxford3000:likely_adj_52"}
+{"lemma":"national","pos":"adj","vi_gloss":"đầu tiên","ref":"oxford3000:national_adj_53"}
+{"lemma":"political","pos":"adj","vi_gloss":"cuối","ref":"oxford3000:political_adj_54"}
+{"lemma":"social","pos":"adj","vi_gloss":"dài","ref":"oxford3000:social_adj_55"}
+{"lemma":"white","pos":"adj","vi_gloss":"tuyệt","ref":"oxford3000:white_adj_56"}
+{"lemma":"real","pos":"adj","vi_gloss":"nhỏ","ref":"oxford3000:real_adj_57"}
+{"lemma":"best","pos":"adj","vi_gloss":"riêng","ref":"oxford3000:best_adj_58"}
+{"lemma":"left","pos":"adj","vi_gloss":"khác","ref":"oxford3000:left_adj_59"}
+{"lemma":"sure","pos":"adj","vi_gloss":"cũ","ref":"oxford3000:sure_adj_60"}
+{"lemma":"low","pos":"adj","vi_gloss":"tốt","ref":"oxford3000:low_adj_61"}
+{"lemma":"black","pos":"adj","vi_gloss":"mới","ref":"oxford3000:black_adj_62"}
+{"lemma":"particular","pos":"adj","vi_gloss":"đầu tiên","ref":"oxford3000:particular_adj_63"}
+{"lemma":"simple","pos":"adj","vi_gloss":"cuối","ref":"oxford3000:simple_adj_64"}
+{"lemma":"general","pos":"adj","vi_gloss":"dài","ref":"oxford3000:general_adj_65"}
+{"lemma":"common","pos":"adj","vi_gloss":"tuyệt","ref":"oxford3000:common_adj_66"}
+{"lemma":"poor","pos":"adj","vi_gloss":"nhỏ","ref":"oxford3000:poor_adj_67"}
+{"lemma":"natural","pos":"adj","vi_gloss":"riêng","ref":"oxford3000:natural_adj_68"}
+{"lemma":"significant","pos":"adj","vi_gloss":"khác","ref":"oxford3000:significant_adj_69"}
+{"lemma":"similar","pos":"adj","vi_gloss":"cũ","ref":"oxford3000:similar_adj_70"}
+{"lemma":"good1","pos":"adj","vi_gloss":"tốt","ref":"oxford3000:good1_adj_71"}
+{"lemma":"new1","pos":"adj","vi_gloss":"mới","ref":"oxford3000:new1_adj_72"}
+{"lemma":"first1","pos":"adj","vi_gloss":"đầu tiên","ref":"oxford3000:first1_adj_73"}
+{"lemma":"last1","pos":"adj","vi_gloss":"cuối","ref":"oxford3000:last1_adj_74"}
+{"lemma":"long1","pos":"adj","vi_gloss":"dài","ref":"oxford3000:long1_adj_75"}
+{"lemma":"great1","pos":"adj","vi_gloss":"tuyệt","ref":"oxford3000:great1_adj_76"}
+{"lemma":"little1","pos":"adj","vi_gloss":"nhỏ","ref":"oxford3000:little1_adj_77"}
+{"lemma":"own1","pos":"adj","vi_gloss":"riêng","ref":"oxford3000:own1_adj_78"}
+{"lemma":"other1","pos":"adj","vi_gloss":"khác","ref":"oxford3000:other1_adj_79"}
+{"lemma":"old1","pos":"adj","vi_gloss":"cũ","ref":"oxford3000:old1_adj_80"}
+{"lemma":"right1","pos":"adj","vi_gloss":"tốt","ref":"oxford3000:right1_adj_81"}
+{"lemma":"big1","pos":"adj","vi_gloss":"mới","ref":"oxford3000:big1_adj_82"}
+{"lemma":"high1","pos":"adj","vi_gloss":"đầu tiên","ref":"oxford3000:high1_adj_83"}
+{"lemma":"different1","pos":"adj","vi_gloss":"cuối","ref":"oxford3000:different1_adj_84"}
+{"lemma":"small1","pos":"adj","vi_gloss":"dài","ref":"oxford3000:small1_adj_85"}
+{"lemma":"large1","pos":"adj","vi_gloss":"tuyệt","ref":"oxford3000:large1_adj_86"}
+{"lemma":"next1","pos":"adj","vi_gloss":"nhỏ","ref":"oxford3000:next1_adj_87"}
+{"lemma":"early1","pos":"adj","vi_gloss":"riêng","ref":"oxford3000:early1_adj_88"}
+{"lemma":"young1","pos":"adj","vi_gloss":"khác","ref":"oxford3000:young1_adj_89"}
+{"lemma":"important1","pos":"adj","vi_gloss":"cũ","ref":"oxford3000:important1_adj_90"}
+{"lemma":"few1","pos":"adj","vi_gloss":"tốt","ref":"oxford3000:few1_adj_91"}
+{"lemma":"public1","pos":"adj","vi_gloss":"mới","ref":"oxford3000:public1_adj_92"}
+{"lemma":"bad1","pos":"adj","vi_gloss":"đầu tiên","ref":"oxford3000:bad1_adj_93"}
+{"lemma":"same1","pos":"adj","vi_gloss":"cuối","ref":"oxford3000:same1_adj_94"}
+{"lemma":"able1","pos":"adj","vi_gloss":"dài","ref":"oxford3000:able1_adj_95"}
+{"lemma":"human1","pos":"adj","vi_gloss":"tuyệt","ref":"oxford3000:human1_adj_96"}
+{"lemma":"local1","pos":"adj","vi_gloss":"nhỏ","ref":"oxford3000:local1_adj_97"}
+{"lemma":"late1","pos":"adj","vi_gloss":"riêng","ref":"oxford3000:late1_adj_98"}
+{"lemma":"hard1","pos":"adj","vi_gloss":"khác","ref":"oxford3000:hard1_adj_99"}
+{"lemma":"major1","pos":"adj","vi_gloss":"cũ","ref":"oxford3000:major1_adj_100"}
