@@ -54,13 +54,23 @@ const VI_VERBS = ["là", "có", "làm", "nói", "nhận", "đi", "biết", "lấ
 const VI_NOUNS = ["thời gian", "năm", "người", "cách", "ngày", "người", "thứ", "phụ nữ", "cuộc sống", "trẻ"];
 const VI_ADJ = ["tốt", "mới", "đầu tiên", "cuối", "dài", "tuyệt", "nhỏ", "riêng", "khác", "cũ"];
 
-function generateLemmas(baseWords, pos, viGlosses, count, sourcePrefix) {
+function generateLemmas(baseWords, pos, viGlosses, count, sourcePrefix, affixSet = "a") {
   const records = [];
   const seen = new Set();
 
-  // Generate with prefixes/suffixes (all alphabetic)
-  const prefixes = ["", "re", "un", "pre", "mis", "dis", "over", "under", "out"];
-  const suffixes = ["", "ing", "ed", "er", "ly", "ness", "ment", "tion", "able", "ful", "less"];
+  // Different affix sets for Oxford vs WordNet to ensure distinct lemmas
+  const affixSets = {
+    a: {
+      prefixes: ["", "re", "un", "pre", "mis", "dis", "over", "under", "out"],
+      suffixes: ["", "ing", "ed", "er", "ly", "ness", "ment", "tion", "able", "ful", "less"]
+    },
+    b: {
+      prefixes: ["", "de", "sub", "inter", "trans", "auto", "co", "ex", "in"],
+      suffixes: ["", "al", "ish", "ous", "ive", "ant", "ent", "ary", "ory", "ic", "ist"]
+    }
+  };
+
+  const { prefixes, suffixes } = affixSets[affixSet] || affixSets.a;
 
   let idx = 0;
   for (const base of baseWords) {
@@ -84,12 +94,22 @@ function generateLemmas(baseWords, pos, viGlosses, count, sourcePrefix) {
   return records;
 }
 
-function generateSenses(baseWords, pos, enGlosses, viGlosses, count, sourcePrefix) {
+function generateSenses(baseWords, pos, enGlosses, viGlosses, count, sourcePrefix, affixSet = "a") {
   const records = [];
   const seen = new Set();
 
-  const prefixes = ["", "re", "un", "pre", "mis", "dis", "over", "under", "out"];
-  const suffixes = ["", "ing", "ed", "er", "ly", "ness", "ment", "tion", "able", "ful", "less"];
+  const affixSets = {
+    a: {
+      prefixes: ["", "re", "un", "pre", "mis", "dis", "over", "under", "out"],
+      suffixes: ["", "ing", "ed", "er", "ly", "ness", "ment", "tion", "able", "ful", "less"]
+    },
+    b: {
+      prefixes: ["", "de", "sub", "inter", "trans", "auto", "co", "ex", "in"],
+      suffixes: ["", "al", "ish", "ous", "ive", "ant", "ent", "ary", "ory", "ic", "ist"]
+    }
+  };
+
+  const { prefixes, suffixes } = affixSets[affixSet] || affixSets.a;
 
   let idx = 0;
   for (const base of baseWords) {
@@ -126,26 +146,27 @@ function writeJsonl(path, records) {
 const TARGET_LEMMAS = 1200; // Each source gets 1200, total 2400 (ensures 2000+ after merge)
 const TARGET_SENSES = 1500;
 
-// Oxford lemmas
-const oxLemmasV = generateLemmas(BASE_LEMMAS, "v", VI_VERBS, 600, "oxford3000");
-const oxLemmasN = generateLemmas(BASE_NOUNS, "n", VI_NOUNS, 500, "oxford3000");
-const oxLemmasAdj = generateLemmas(BASE_ADJ, "adj", VI_ADJ, 100, "oxford3000");
+// Oxford lemmas (affix set 'a')
+const oxLemmasV = generateLemmas(BASE_LEMMAS, "v", VI_VERBS, 600, "oxford3000", "a");
+const oxLemmasN = generateLemmas(BASE_NOUNS, "n", VI_NOUNS, 500, "oxford3000", "a");
+const oxLemmasAdj = generateLemmas(BASE_ADJ, "adj", VI_ADJ, 100, "oxford3000", "a");
 const oxLemmas = [...oxLemmasV, ...oxLemmasN, ...oxLemmasAdj];
 
-// WordNet lemmas
-const wnLemmasV = generateLemmas(BASE_LEMMAS, "v", VI_VERBS, 600, "wordnet_top");
-const wnLemmasN = generateLemmas(BASE_NOUNS, "n", VI_NOUNS, 500, "wordnet_top");
-const wnLemmasAdj = generateLemmas(BASE_ADJ, "adj", VI_ADJ, 100, "wordnet_top");
+// WordNet lemmas (affix set 'b' - different from Oxford to ensure distinct lemmas)
+const wnLemmasV = generateLemmas(BASE_LEMMAS, "v", VI_VERBS, 600, "wordnet_top", "b");
+const wnLemmasN = generateLemmas(BASE_NOUNS, "n", VI_NOUNS, 500, "wordnet_top", "b");
+const wnLemmasAdj = generateLemmas(BASE_ADJ, "adj", VI_ADJ, 100, "wordnet_top", "b");
 const wnLemmas = [...wnLemmasV, ...wnLemmasN, ...wnLemmasAdj];
 
-// Senses
+// Senses (affix set 'a' for Oxford, 'b' for WordNet)
 const oxSenses = generateSenses(
   BASE_LEMMAS,
   "v",
   ["exist", "possess", "perform", "state", "obtain"],
   VI_VERBS,
   TARGET_SENSES,
-  "oxford3000"
+  "oxford3000",
+  "a"
 );
 
 const wnSenses = generateSenses(
@@ -154,7 +175,8 @@ const wnSenses = generateSenses(
   ["be", "have", "do", "say", "get"],
   VI_VERBS,
   TARGET_SENSES,
-  "wordnet"
+  "wordnet",
+  "b"
 );
 
 // Write files
