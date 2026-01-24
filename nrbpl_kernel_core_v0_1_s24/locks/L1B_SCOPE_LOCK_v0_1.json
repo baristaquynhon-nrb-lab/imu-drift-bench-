@@ -1,0 +1,17 @@
+{
+  "spec": "L1B_SCOPE_LOCK_v0_1",
+  "level": "L1B",
+  "scope": "collocation_frame_extension",
+  "collocations_count_target": 100,
+  "frames_count_target": 20,
+  "policy": {
+    "collocation_generation": "deterministic_synthetic",
+    "frame_generation": "deterministic_synthetic",
+    "allow_empty_frame": true
+  },
+  "notes": [
+    "L1-B extends L1 lexicon with collocations and frames.",
+    "Count targets are scope-locked to prevent inference.",
+    "Synthetic generation permitted for L1-B testing only."
+  ]
+}

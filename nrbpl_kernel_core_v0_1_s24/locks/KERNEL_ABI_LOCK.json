@@ -2,6 +2,8 @@
   "spec": "NRBPL_KERNEL_ABI_LOCK_v0_1",
   "kernel_version": "0.1.0",
   "abi_version": "0.1.0",
+  "lexicon_level": "L1B",
+  "allow_empty_frame": true,
   "contracts": {
     "lemma_record": {
       "mandatory_fields": ["lemma", "pos", "vi_gloss"],

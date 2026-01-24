@@ -1,47 +1,86 @@
 {
-  "spec": "NRBPL_SEMANTIC_LAW_LOCK_v0_1",
-  "law_reference": "docs/spec/NRBPL_L2_SEMANTIC_VALIDATION_LAW_v0_1.md",
-  "status": "NORMATIVE",
-  "level": "L2",
-  "scope": "semantic_validation",
-  "enforcement": {
-    "meaning_preservation_required": true,
-    "truth_condition_stability_required": true,
-    "no_implicit_inference": true,
-    "semantic_scope_conservation": true,
-    "deterministic_replay_required": true
-  },
-  "eligible_semantic_units": [
-    "sense",
-    "sense_pair",
-    "collocation",
-    "frame",
-    "translation_unit"
-  ],
-  "verdicts": {
-    "SUPPORTED": 0,
-    "INSUFFICIENT": 2,
-    "REFUSE": 3
-  },
-  "mandatory_report_fields": [
-    "semantic_unit_id",
-    "unit_type",
-    "declared_truth_conditions",
-    "observed_conditions",
-    "preservation_result",
-    "violation_reason",
-    "sha256_binding"
-  ],
-  "non_override_failures": [
-    "semantic_REFUSE",
-    "truth_condition_failure",
-    "scope_violation"
-  ],
+  "spec": "SEMANTIC_LAW_LOCK_v0_1",
   "version": "0.1.0",
-  "created": "2026-01-24T00:00:00Z",
-  "notes": [
-    "This lock enforces the L2 Semantic Validation Law.",
-    "Any violation of semantic invariants MUST result in REFUSE (exit 3).",
-    "This lock MUST be present for all L2 semantic validation pipelines."
+  "scan_fieldset": {
+    "senses": [
+      "en_gloss",
+      "vi_gloss",
+      "constraints_text"
+    ],
+    "collocations": [
+      "pattern",
+      "slots[].label",
+      "slots[].constraint_text"
+    ],
+    "frames": [
+      "frame_label",
+      "roles[].label",
+      "constraints[]",
+      "truth_conditions[]"
+    ]
+  },
+  "allow_string_fields": {
+    "senses": [
+      "sense_id",
+      "lemma",
+      "pos",
+      "en_gloss",
+      "vi_gloss",
+      "frame",
+      "constraints_text",
+      "trace.source",
+      "trace.ref",
+      "trace.source_file_sha256",
+      "trace.record_sha256"
+    ],
+    "collocations": [
+      "colloc_id",
+      "head_lemma",
+      "head_pos",
+      "pattern",
+      "frame",
+      "slots[].label",
+      "slots[].constraint_text",
+      "trace.source",
+      "trace.ref",
+      "trace.source_file_sha256",
+      "trace.record_sha256"
+    ],
+    "frames": [
+      "frame_id",
+      "frame_label",
+      "roles[].label",
+      "constraints[]",
+      "truth_conditions[]",
+      "trace.source",
+      "trace.ref",
+      "trace.source_file_sha256",
+      "trace.record_sha256"
+    ]
+  },
+  "inference_markers": [
+    "maybe",
+    "probably",
+    "seems",
+    "guess",
+    "~",
+    "tbd",
+    "?",
+    "có thể",
+    "có lẽ",
+    "hình như",
+    "tạm",
+    "ước chừng"
+  ],
+  "allowed_trace_sources": [
+    "oxford3000",
+    "wordnet",
+    "wordnet_top",
+    "synthetic_l1b"
+  ],
+  "allowed_trace_ref_prefixes": [
+    "oxford3000:",
+    "wordnet:",
+    "synthetic:"
   ]
 }
