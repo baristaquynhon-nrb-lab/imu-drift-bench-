@@ -57,7 +57,7 @@ if (registryPath) {
 // ---------------------------------------------------------------------------
 // Opcode parser
 // ---------------------------------------------------------------------------
-const OPCODE_RE = /^([A-Z][A-Z0-9_]*):([A-Z]+)\(([A-Z0-9_]+)\)(->([A-Z][A-Z0-9_]*))?$/;
+const OPCODE_RE = /^([A-Z][A-Z0-9_]*):([A-Z_]+)\(([A-Z0-9_]+)\)(->([A-Z][A-Z0-9_]*))?$/;
 
 function parseOpcode(raw) {
   const m = raw.match(OPCODE_RE);
@@ -212,22 +212,114 @@ class WorldState {
     this.assertions++;
     this.timeline.push({ step: this.timeline.length, type: "EXPRESSION", entity, verb: "FACE", argument: expression });
   }
+
+  // --- Extended verbs (ASE v1.0 mapped) ---
+
+  execMOVE_TO(agent, location) {
+    const a = this.ensureEntity(agent);
+    this.ensureEntity(location);
+
+    a.actions.push({ verb: "MOVE_TO", location });
+    a.state.location = location;
+
+    this.assertions++;
+    this.timeline.push({ step: this.timeline.length, type: "MOVEMENT", entity: agent, verb: "MOVE_TO", argument: location });
+  }
+
+  execMOVE_STATE(agent, state) {
+    const a = this.ensureEntity(agent);
+    a.state.moveState = state;
+    a.actions.push({ verb: "MOVE_STATE", state });
+
+    this.assertions++;
+    this.timeline.push({ step: this.timeline.length, type: "MOVE_STATE", entity: agent, verb: "MOVE_STATE", argument: state });
+  }
+
+  execHEAR(agent, object) {
+    const a = this.ensureEntity(agent);
+    this.ensureEntity(object);
+
+    a.actions.push({ verb: "HEAR", object });
+    a.state.lastHeard = object;
+
+    this.assertions++;
+    this.timeline.push({ step: this.timeline.length, type: "PERCEPTION", entity: agent, verb: "HEAR", argument: object });
+  }
+
+  execDO(agent, action) {
+    const a = this.ensureEntity(agent);
+    a.actions.push({ verb: "DO", action });
+
+    this.assertions++;
+    this.timeline.push({ step: this.timeline.length, type: "ACTION", entity: agent, verb: "DO", argument: action });
+  }
+
+  execEAT(agent, object) {
+    const a = this.ensureEntity(agent);
+    this.ensureEntity(object);
+
+    a.actions.push({ verb: "EAT", object });
+
+    this.assertions++;
+    this.timeline.push({ step: this.timeline.length, type: "CONSUMPTION", entity: agent, verb: "EAT", argument: object });
+  }
+
+  execSAY(agent, speechType, target) {
+    const a = this.ensureEntity(agent);
+    this.ensureEntity(target);
+
+    a.actions.push({ verb: "SAY", speechType, target });
+
+    this.assertions++;
+    this.timeline.push({ step: this.timeline.length, type: "SPEECH", entity: agent, verb: "SAY", argument: speechType, target });
+  }
+
+  execLOSE(agent, object) {
+    const a = this.ensureEntity(agent);
+    const o = this.ensureEntity(object);
+
+    a.actions.push({ verb: "LOSE", object });
+    o.relations.push({ rel: "LOST_BY", entity: agent });
+
+    this.assertions++;
+    this.timeline.push({ step: this.timeline.length, type: "LOSS", entity: agent, verb: "LOSE", argument: object });
+  }
+
+  execSTATE(agent, fromState, toState) {
+    const a = this.ensureEntity(agent);
+    a.state.previousState = fromState;
+    a.state.currentState = toState;
+    a.actions.push({ verb: "STATE", from: fromState, to: toState });
+
+    this.assertions++;
+    this.timeline.push({ step: this.timeline.length, type: "TRANSITION", entity: agent, verb: "STATE", argument: fromState, target: toState });
+  }
 }
 
 // ---------------------------------------------------------------------------
 // Verb dispatch table
 // ---------------------------------------------------------------------------
 const VERB_DISPATCH = {
-  GIVE:     (ws, op) => ws.execGIVE(op.entity, op.argument, op.target),
-  IN:       (ws, op) => ws.execIN(op.entity, op.argument),
-  OPEN:     (ws, op) => ws.execOPEN(op.entity, op.argument),
-  SEE:      (ws, op) => ws.execSEE(op.entity, op.argument),
-  IS:       (ws, op) => ws.execIS(op.entity, op.argument),
-  HAS:      (ws, op) => ws.execHAS(op.entity, op.argument),
-  MOVE:     (ws, op) => ws.execMOVE(op.entity, op.argument),
-  FEEL:     (ws, op) => ws.execFEEL(op.entity, op.argument),
-  HUG:      (ws, op) => ws.execHUG(op.entity, op.argument),
-  FACE:     (ws, op) => ws.execFACE(op.entity, op.argument),
+  // Original verbs
+  GIVE:       (ws, op) => ws.execGIVE(op.entity, op.argument, op.target),
+  IN:         (ws, op) => ws.execIN(op.entity, op.argument),
+  OPEN:       (ws, op) => ws.execOPEN(op.entity, op.argument),
+  SEE:        (ws, op) => ws.execSEE(op.entity, op.argument),
+  IS:         (ws, op) => ws.execIS(op.entity, op.argument),
+  HAS:        (ws, op) => ws.execHAS(op.entity, op.argument),
+  MOVE:       (ws, op) => ws.execMOVE(op.entity, op.argument),
+  FEEL:       (ws, op) => ws.execFEEL(op.entity, op.argument),
+  HUG:        (ws, op) => ws.execHUG(op.entity, op.argument),
+  FACE:       (ws, op) => ws.execFACE(op.entity, op.argument),
+  // Extended verbs (ASE v1.0 mapped)
+  MOVE_TO:    (ws, op) => ws.execMOVE_TO(op.entity, op.argument),
+  MOVE_STATE: (ws, op) => ws.execMOVE_STATE(op.entity, op.argument),
+  HEAR:       (ws, op) => ws.execHEAR(op.entity, op.argument),
+  DO:         (ws, op) => ws.execDO(op.entity, op.argument),
+  EAT:        (ws, op) => ws.execEAT(op.entity, op.argument),
+  SAY:        (ws, op) => ws.execSAY(op.entity, op.argument, op.target),
+  LOSE:       (ws, op) => ws.execLOSE(op.entity, op.argument),
+  STATE:      (ws, op) => ws.execSTATE(op.entity, op.argument, op.target),
 };
 
 // ---------------------------------------------------------------------------

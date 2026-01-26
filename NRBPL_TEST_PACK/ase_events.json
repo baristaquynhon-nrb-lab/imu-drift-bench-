@@ -1,0 +1,69 @@
+[
+  {
+    "event_id": "E1",
+    "schema": "TEMPORAL_CONTEXT",
+    "value": "CHRISTMAS"
+  },
+  {
+    "event_id": "E2",
+    "schema": "GIFT_GIVING",
+    "agent": "DAD",
+    "recipient": "TIM",
+    "object": "TOY"
+  },
+  {
+    "event_id": "E3",
+    "schema": "OBJECT_LOCATION",
+    "object": "TOY",
+    "location": "BOX"
+  },
+  {
+    "event_id": "E4",
+    "schema": "CONTAINER_OPEN",
+    "agent": "TIM",
+    "object": "BOX"
+  },
+  {
+    "event_id": "E5",
+    "schema": "PERCEPTION_VISUAL",
+    "agent": "TIM",
+    "object": "TOY"
+  },
+  {
+    "event_id": "E6",
+    "schema": "OBJECT_IDENTIFICATION",
+    "object": "TOY",
+    "identity": "CAR"
+  },
+  {
+    "event_id": "E7",
+    "schema": "PHYSICAL_ATTRIBUTE",
+    "object": "CAR",
+    "attribute": "RED"
+  },
+  {
+    "event_id": "E8",
+    "schema": "OBJECT_MOTION",
+    "agent": "CAR",
+    "speed": "FAST"
+  },
+  {
+    "event_id": "E9",
+    "schema": "EMOTIONAL_STATE",
+    "agent": "TIM",
+    "state": "HAPPY"
+  },
+  {
+    "event_id": "E10",
+    "schema": "AFFECTION_ACTION",
+    "agent": "TIM",
+    "target": "DAD",
+    "action": "HUG"
+  },
+  {
+    "event_id": "E11",
+    "schema": "FACIAL_EXPRESSION",
+    "agent": "DAD",
+    "expression": "SMILE"
+  }
+]

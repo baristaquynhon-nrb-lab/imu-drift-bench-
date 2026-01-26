@@ -1,0 +1,25 @@
+{
+  "spec": "NRBPL_OPCODE_STREAM_v0_1",
+  "source": {
+    "type": "ASE_EVENT_GRAPH",
+    "ase_spec": "ASE_SPEC_v1_0",
+    "registry": "ASE_SCHEMA_REGISTRY_v1_0"
+  },
+  "meta": {
+    "input_file": "ase_events.json",
+    "event_count": 11
+  },
+  "opcodes": [
+    "CTX:TEMPORAL(CHRISTMAS)",
+    "DAD:GIVE(TOY)->TIM",
+    "TOY:IN(BOX)",
+    "TIM:OPEN(BOX)",
+    "TIM:SEE(TOY)",
+    "TOY:IS(CAR)",
+    "CAR:HAS(RED)",
+    "CAR:MOVE(FAST)",
+    "TIM:FEEL(HAPPY)",
+    "TIM:HUG(DAD)",
+    "DAD:FACE(SMILE)"
+  ]
+}
