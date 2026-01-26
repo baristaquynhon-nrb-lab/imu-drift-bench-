@@ -1,0 +1,214 @@
+{
+  "runtime": "NRBPL_RUNTIME_v0_1",
+  "version": "0.1.0",
+  "timestamp": "2026-01-26T11:42:52.657Z",
+  "stream_file": "sample_stream.json",
+  "registry_file": "NRBPL_OPCODE_REGISTRY_v0_1.json",
+  "summary": {
+    "opcode_count": 11,
+    "entity_count": 5,
+    "assertion_count": 11,
+    "error_count": 0,
+    "context_keys": [
+      "TEMPORAL"
+    ]
+  },
+  "context": {
+    "TEMPORAL": "CHRISTMAS"
+  },
+  "entities": {
+    "DAD": {
+      "name": "DAD",
+      "type": null,
+      "properties": [],
+      "relations": [],
+      "emotions": [],
+      "actions": [
+        {
+          "verb": "GIVE",
+          "object": "TOY",
+          "to": "TIM"
+        },
+        {
+          "verb": "FACE",
+          "expression": "SMILE"
+        }
+      ],
+      "state": {
+        "faceExpression": "SMILE"
+      }
+    },
+    "TIM": {
+      "name": "TIM",
+      "type": null,
+      "properties": [],
+      "relations": [
+        {
+          "rel": "HAS",
+          "object": "TOY",
+          "from": "DAD"
+        }
+      ],
+      "emotions": [
+        "HAPPY"
+      ],
+      "actions": [
+        {
+          "verb": "OPEN",
+          "object": "BOX"
+        },
+        {
+          "verb": "SEE",
+          "object": "TOY"
+        },
+        {
+          "verb": "HUG",
+          "target": "DAD"
+        }
+      ],
+      "state": {
+        "lastSeen": "TOY",
+        "currentEmotion": "HAPPY"
+      }
+    },
+    "TOY": {
+      "name": "TOY",
+      "type": "CAR",
+      "properties": [],
+      "relations": [
+        {
+          "rel": "OWNED_BY",
+          "entity": "TIM"
+        },
+        {
+          "rel": "INSIDE",
+          "container": "BOX"
+        }
+      ],
+      "emotions": [],
+      "actions": [],
+      "state": {
+        "location": "BOX",
+        "accessible": true
+      }
+    },
+    "BOX": {
+      "name": "BOX",
+      "type": null,
+      "properties": [],
+      "relations": [
+        {
+          "rel": "CONTAINS",
+          "object": "TOY"
+        }
+      ],
+      "emotions": [],
+      "actions": [],
+      "state": {
+        "opened": true
+      }
+    },
+    "CAR": {
+      "name": "CAR",
+      "type": null,
+      "properties": [
+        "RED"
+      ],
+      "relations": [],
+      "emotions": [],
+      "actions": [
+        {
+          "verb": "MOVE",
+          "manner": "FAST"
+        }
+      ],
+      "state": {
+        "moving": true,
+        "moveManner": "FAST"
+      }
+    }
+  },
+  "timeline": [
+    {
+      "step": 0,
+      "type": "CTX",
+      "category": "TEMPORAL",
+      "value": "CHRISTMAS"
+    },
+    {
+      "step": 1,
+      "type": "ACTION",
+      "entity": "DAD",
+      "verb": "GIVE",
+      "argument": "TOY",
+      "target": "TIM"
+    },
+    {
+      "step": 2,
+      "type": "RELATION",
+      "entity": "TOY",
+      "verb": "IN",
+      "argument": "BOX"
+    },
+    {
+      "step": 3,
+      "type": "ACTION",
+      "entity": "TIM",
+      "verb": "OPEN",
+      "argument": "BOX"
+    },
+    {
+      "step": 4,
+      "type": "PERCEPTION",
+      "entity": "TIM",
+      "verb": "SEE",
+      "argument": "TOY"
+    },
+    {
+      "step": 5,
+      "type": "IDENTITY",
+      "entity": "TOY",
+      "verb": "IS",
+      "argument": "CAR"
+    },
+    {
+      "step": 6,
+      "type": "PROPERTY",
+      "entity": "CAR",
+      "verb": "HAS",
+      "argument": "RED"
+    },
+    {
+      "step": 7,
+      "type": "MOTION",
+      "entity": "CAR",
+      "verb": "MOVE",
+      "argument": "FAST"
+    },
+    {
+      "step": 8,
+      "type": "EMOTION",
+      "entity": "TIM",
+      "verb": "FEEL",
+      "argument": "HAPPY"
+    },
+    {
+      "step": 9,
+      "type": "SOCIAL",
+      "entity": "TIM",
+      "verb": "HUG",
+      "argument": "DAD"
+    },
+    {
+      "step": 10,
+      "type": "EXPRESSION",
+      "entity": "DAD",
+      "verb": "FACE",
+      "argument": "SMILE"
+    }
+  ],
+  "errors": [],
+  "verdict": "PASS",
+  "exit_code": 0,
+  "state_hash": "c1d5be668b886cf17016d34fe5731efa169c2029b94172568363d316f0938959"
+}
