@@ -1,17 +1,4 @@
 {
-  "runtime": "NRBPL_RUNTIME_v0_1",
-  "version": "0.1.0",
-  "stream_file": "compiled_stream.json",
-  "registry_file": "NRBPL_OPCODE_REGISTRY_v0_1.json",
-  "summary": {
-    "assertion_count": 11,
-    "context_keys": [
-      "TEMPORAL"
-    ],
-    "entity_count": 5,
-    "error_count": 0,
-    "opcode_count": 11
-  },
   "context": {
     "TEMPORAL": "CHRISTMAS"
   },
@@ -127,6 +114,18 @@
       "type": "CAR"
     }
   },
+  "registry_file": "NRBPL_OPCODE_REGISTRY_v0_1.json",
+  "runtime": "NRBPL_RUNTIME_v0_1",
+  "stream_file": "compiled_stream.json",
+  "summary": {
+    "assertion_count": 11,
+    "context_keys": [
+      "TEMPORAL"
+    ],
+    "entity_count": 5,
+    "error_count": 0,
+    "opcode_count": 11
+  },
   "timeline": [
     {
       "category": "TEMPORAL",
@@ -207,5 +206,6 @@
     }
   ],
   "verdict": "PASS",
+  "version": "0.1.0",
   "state_hash_canonical": "e839fd7587c1e067a12b229b271c4ee95876a2719300ead8173da344884ad245"
 }

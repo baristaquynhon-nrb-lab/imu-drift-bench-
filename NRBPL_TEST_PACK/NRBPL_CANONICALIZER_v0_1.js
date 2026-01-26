@@ -2,16 +2,22 @@
 /**
  * NRBPL_CANONICALIZER v0.1
  *
- * Produces a byte-stable canonical representation of runtime state.
- * Strips non-deterministic fields (timestamp), sorts all keys and arrays,
- * computes canonical SHA-256 hash.
+ * Goal:
+ *   Same opcode stream -> same canonical JSON -> same SHA-256 hash
  *
- * Input:  final_state.json (from NRBPL_RUNTIME)
- * Output: canonical_state.json (byte-stable, hash-auditable)
+ * What it does:
+ *   - Removes non-deterministic fields (timestamp, exit_code, any runtime-only noise)
+ *   - Deep-sorts all object keys (recursive)
+ *   - Sorts arrays deterministically (entities/actions/relations/properties/emotions/timeline/errors)
+ *   - Emits byte-stable JSON (with trailing newline)
+ *   - Computes SHA-256 over the semantic core: { context, entities, timeline }
+ *
+ * Usage:
+ *   node NRBPL_CANONICALIZER_v0_1.js <final_state.json> <canonical_state.json>
  *
  * Exit codes:
- *   0  PASS
- *   2  FAIL (IO/parse error)
+ *   0 = PASS
+ *   2 = FAIL (IO/parse/write error)
  */
 
 "use strict";
@@ -19,10 +25,6 @@
 const fs = require("fs");
 const path = require("path");
 const crypto = require("crypto");
-
-// ---------------------------------------------------------------------------
-// Helpers
-// ---------------------------------------------------------------------------
 
 function die(code, msg) {
   console.error(msg);
@@ -37,39 +39,168 @@ function readJson(p) {
   }
 }
 
+// ---------------------------------------------------------------------------
+// Deterministic comparison helpers
+// ---------------------------------------------------------------------------
+
+/** Lexicographic compare with numeric fallback (stable across locales). */
+function cmp(a, b) {
+  if (a === b) return 0;
+  const sa = String(a);
+  const sb = String(b);
+  return sa < sb ? -1 : 1;
+}
+
+function cmpNumOrStr(a, b) {
+  const na = typeof a === "number" ? a : Number.NaN;
+  const nb = typeof b === "number" ? b : Number.NaN;
+  const aNum = Number.isFinite(na);
+  const bNum = Number.isFinite(nb);
+  if (aNum && bNum) return na - nb;
+  return cmp(a, b);
+}
+
 /**
- * Deep-sort all object keys recursively for byte-stable JSON output.
- * Arrays of objects are sorted by a stable key (step, event_id, name, rel, verb).
+ * Choose a stable sort key for arrays of objects.
+ * Intentionally conservative: only keys that exist in NRBPL artifacts.
  */
-function canonicalize(obj) {
-  if (obj === null || typeof obj !== "object") return obj;
+function bestKey(obj) {
+  const candidates = [
+    "step",
+    "index",
+    "event_id",
+    "name",
+    "entity",
+    "rel",
+    "verb",
+    "type",
+    "object",
+    "container",
+    "to",
+    "from",
+    "target",
+    "argument",
+    "category",
+    "value"
+  ];
+  for (const k of candidates) {
+    if (obj && typeof obj === "object" && k in obj) return k;
+  }
+  return null;
+}
 
-  if (Array.isArray(obj)) {
-    // Sort arrays of objects by stable key for determinism
-    const sorted = obj.map(canonicalize);
-    if (sorted.length > 0 && typeof sorted[0] === "object" && sorted[0] !== null) {
-      // Find best sort key
-      const sortKey = ["step", "event_id", "name", "rel", "verb", "index"]
-        .find(k => k in sorted[0]);
-      if (sortKey) {
-        sorted.sort((a, b) => {
-          const av = a[sortKey];
-          const bv = b[sortKey];
-          if (typeof av === "number" && typeof bv === "number") return av - bv;
-          return String(av).localeCompare(String(bv));
-        });
+// ---------------------------------------------------------------------------
+// Array sorting — schema-aware, deterministic
+// ---------------------------------------------------------------------------
+
+function sortArrayDeterministically(arr) {
+  if (arr.length === 0) return arr;
+
+  const isScalar = (v) => v === null || ["string", "number", "boolean"].includes(typeof v);
+
+  // Scalar array: sort lexicographically (stable for sets like properties/emotions).
+  if (arr.every(isScalar)) {
+    return arr.slice().sort((a, b) => cmpNumOrStr(a, b));
+  }
+
+  // Object array: sort by bestKey, then multi-level tie-break, then JSON fallback.
+  const canon = arr.slice();
+  canon.sort((a, b) => {
+    const ka = bestKey(a);
+    const kb = bestKey(b);
+
+    if (ka && kb) {
+      const primary = cmpNumOrStr(a[ka], b[kb]);
+      if (primary !== 0) return primary;
+
+      // Tie-break with second-level keys if present
+      const tieKeys = [
+        "verb", "rel", "object", "container", "target",
+        "argument", "entity", "name"
+      ];
+      for (const tk of tieKeys) {
+        const ha = a && typeof a === "object" ? a[tk] : undefined;
+        const hb = b && typeof b === "object" ? b[tk] : undefined;
+        if (ha !== undefined || hb !== undefined) {
+          const t = cmpNumOrStr(ha, hb);
+          if (t !== 0) return t;
+        }
       }
+    } else if (ka && !kb) {
+      return -1;
+    } else if (!ka && kb) {
+      return 1;
     }
-    return sorted;
+
+    // Final fallback: stable JSON compare
+    const sa = JSON.stringify(a);
+    const sb = JSON.stringify(b);
+    return cmp(sa, sb);
+  });
+
+  return canon;
+}
+
+// ---------------------------------------------------------------------------
+// Deep canonicalization — remove noise, sort keys, sort arrays
+// ---------------------------------------------------------------------------
+
+const DROP_KEYS = new Set([
+  "timestamp",
+  "exit_code",
+  "state_hash",
+  "state_hash_canonical",
+]);
+
+function canonicalizeNode(node) {
+  if (node === null || typeof node !== "object") return node;
+
+  if (Array.isArray(node)) {
+    const mapped = node.map((x) => canonicalizeNode(x));
+    return sortArrayDeterministically(mapped);
   }
 
-  // Sort object keys
-  const keys = Object.keys(obj).sort();
-  const result = {};
+  // Object: filter out non-deterministic keys, sort remaining
+  const keys = Object.keys(node)
+    .filter((k) => !DROP_KEYS.has(k))
+    .sort();
+
+  const out = {};
   for (const k of keys) {
-    result[k] = canonicalize(obj[k]);
+    out[k] = canonicalizeNode(node[k]);
   }
-  return result;
+  return out;
+}
+
+// ---------------------------------------------------------------------------
+// Build canonical state with explicit field selection
+// ---------------------------------------------------------------------------
+
+function buildCanonicalState(raw) {
+  const canonical = {
+    runtime: raw.runtime || "NRBPL_RUNTIME_v0_1",
+    version: raw.version || "0.1.0",
+
+    // Traceability (stable strings only)
+    stream_file: raw.stream_file || null,
+    registry_file: raw.registry_file || null,
+
+    // Deterministic semantic core
+    context: raw.context || {},
+    entities: raw.entities || {},
+    timeline: raw.timeline || [],
+
+    // Keep summary if present (not in hash core, but canonicalized)
+    summary: raw.summary || {},
+
+    verdict: raw.verdict || "UNKNOWN",
+  };
+
+  return canonicalizeNode(canonical);
+}
+
+function sha256Hex(s) {
+  return crypto.createHash("sha256").update(s).digest("hex");
 }
 
 // ---------------------------------------------------------------------------
@@ -85,49 +216,40 @@ if (args.length < 2) {
 const inputPath = path.resolve(args[0]);
 const outputPath = path.resolve(args[1]);
 
-const state = readJson(inputPath);
+const raw = readJson(inputPath);
+const canonical = buildCanonicalState(raw);
 
-// Strip non-deterministic fields
-const canonical = {
-  runtime: state.runtime || "NRBPL_RUNTIME_v0_1",
-  version: state.version || "0.1.0",
-  stream_file: state.stream_file || null,
-  registry_file: state.registry_file || null,
-  summary: canonicalize(state.summary || {}),
-  context: canonicalize(state.context || {}),
-  entities: canonicalize(state.entities || {}),
-  timeline: canonicalize(state.timeline || []),
-  verdict: state.verdict || "UNKNOWN"
-};
+// Hash only semantic core (strict)
+const hashPayload = JSON.stringify(
+  {
+    context: canonical.context || {},
+    entities: canonical.entities || {},
+    timeline: canonical.timeline || [],
+  },
+  null,
+  0
+);
 
-// Compute canonical hash (of entities + context + timeline only — the semantic core)
-const hashPayload = JSON.stringify({
-  context: canonical.context,
-  entities: canonical.entities,
-  timeline: canonical.timeline
-});
-const stateHash = crypto.createHash("sha256").update(hashPayload).digest("hex");
+const stateHashCanonical = sha256Hex(hashPayload);
+canonical.state_hash_canonical = stateHashCanonical;
 
-canonical.state_hash_canonical = stateHash;
-
-// Write byte-stable output
-const output = JSON.stringify(canonical, null, 2) + "\n";
+// Byte-stable JSON output
+const outText = JSON.stringify(canonical, null, 2) + "\n";
 try {
-  fs.writeFileSync(outputPath, output, "utf8");
+  fs.writeFileSync(outputPath, outText, "utf8");
 } catch (e) {
   die(2, `FAIL: cannot write output: ${outputPath} -- ${e.message}`);
 }
 
-// Summary
 const report = {
   canonicalizer: "NRBPL_CANONICALIZER_v0.1",
   verdict: "PASS",
   exit_code: 0,
   input_file: path.basename(inputPath),
   output_file: path.basename(outputPath),
-  state_hash_canonical: stateHash,
-  entity_count: Object.keys(canonical.entities).length,
-  timeline_steps: canonical.timeline.length
+  entity_count: canonical.entities ? Object.keys(canonical.entities).length : 0,
+  timeline_steps: Array.isArray(canonical.timeline) ? canonical.timeline.length : 0,
+  state_hash_canonical: stateHashCanonical,
 };
 
 console.log(JSON.stringify(report, null, 2));
