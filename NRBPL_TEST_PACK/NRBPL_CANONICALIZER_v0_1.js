@@ -89,28 +89,34 @@ function bestKey(obj) {
   return null;
 }
 
+/**
+ * Stable stringify requires:
+ * - deterministic key order (we will deep-sort keys)
+ * - deterministic array order (we will apply schema-aware sorts)
+ */
+
 // ---------------------------------------------------------------------------
 // Array sorting — schema-aware, deterministic
 // ---------------------------------------------------------------------------
 
 function sortArrayDeterministically(arr) {
+  // Scalar array: sort lexicographically (stable meaning for sets like properties/emotions).
   if (arr.length === 0) return arr;
-
+  const first = arr[0];
   const isScalar = (v) => v === null || ["string", "number", "boolean"].includes(typeof v);
 
-  // Scalar array: sort lexicographically (stable for sets like properties/emotions).
   if (arr.every(isScalar)) {
     return arr.slice().sort((a, b) => cmpNumOrStr(a, b));
   }
 
-  // Object array: sort by bestKey, then multi-level tie-break, then JSON fallback.
+  // Object array: sort by bestKey, then by JSON string fallback.
   const canon = arr.slice();
   canon.sort((a, b) => {
     const ka = bestKey(a);
     const kb = bestKey(b);
 
     if (ka && kb) {
-      const primary = cmpNumOrStr(a[ka], b[kb]);
+      const primary = cmpNumOrStr(a[ka], b[kb]); // note: kb == ka usually; safe
       if (primary !== 0) return primary;
 
       // Tie-break with second-level keys if present
@@ -145,29 +151,32 @@ function sortArrayDeterministically(arr) {
 // Deep canonicalization — remove noise, sort keys, sort arrays
 // ---------------------------------------------------------------------------
 
-const DROP_KEYS = new Set([
-  "timestamp",
-  "exit_code",
-  "state_hash",
-  "state_hash_canonical",
+const DROP_KEYS_GLOBAL = new Set([
+  "timestamp",            // non-deterministic
+  "exit_code",            // derived
+  "state_hash",           // derived in runtime
+  "state_hash_canonical", // derived here
+  "output_file",          // environment-dependent naming sometimes
+  "input_file",
+  "errors",               // keep errors if you want; we keep but canonicalize below
 ]);
 
-function canonicalizeNode(node) {
+function canonicalizeNode(node, ctx = { path: "" }) {
   if (node === null || typeof node !== "object") return node;
 
   if (Array.isArray(node)) {
-    const mapped = node.map((x) => canonicalizeNode(x));
+    const mapped = node.map((x, i) => canonicalizeNode(x, { path: `${ctx.path}[${i}]` }));
     return sortArrayDeterministically(mapped);
   }
 
   // Object: filter out non-deterministic keys, sort remaining
   const keys = Object.keys(node)
-    .filter((k) => !DROP_KEYS.has(k))
+    .filter((k) => !DROP_KEYS_GLOBAL.has(k))
     .sort();
 
   const out = {};
   for (const k of keys) {
-    out[k] = canonicalizeNode(node[k]);
+    out[k] = canonicalizeNode(node[k], { path: ctx.path ? `${ctx.path}.${k}` : k });
   }
   return out;
 }
@@ -196,6 +205,7 @@ function buildCanonicalState(raw) {
     verdict: raw.verdict || "UNKNOWN",
   };
 
+  // Canonicalize recursively (keys + arrays)
   return canonicalizeNode(canonical);
 }
 
@@ -203,10 +213,7 @@ function sha256Hex(s) {
   return crypto.createHash("sha256").update(s).digest("hex");
 }
 
-// ---------------------------------------------------------------------------
-// Main
-// ---------------------------------------------------------------------------
-
+// ----------------------- Main -----------------------
 const args = process.argv.slice(2);
 if (args.length < 2) {
   console.error("Usage: node NRBPL_CANONICALIZER_v0_1.js <final_state.json> <canonical_state.json>");
@@ -233,7 +240,7 @@ const hashPayload = JSON.stringify(
 const stateHashCanonical = sha256Hex(hashPayload);
 canonical.state_hash_canonical = stateHashCanonical;
 
-// Byte-stable JSON output
+// Byte-stable JSON output (sorted keys already, arrays already)
 const outText = JSON.stringify(canonical, null, 2) + "\n";
 try {
   fs.writeFileSync(outputPath, outText, "utf8");
