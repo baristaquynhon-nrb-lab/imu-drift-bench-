@@ -1,0 +1,107 @@
+{
+  "registry": "NRBPL_OPCODE_REGISTRY",
+  "version": "0.1.0",
+  "description": "Canonical opcode definitions for Natural-Reflex-Based Programming Language",
+
+  "opcode_patterns": {
+    "CTX": {
+      "description": "Context-setting opcode. Sets environmental/temporal frame.",
+      "syntax": "CTX:<CATEGORY>(<VALUE>)",
+      "categories": ["TEMPORAL", "SPATIAL", "SOCIAL", "EMOTIONAL"],
+      "examples": ["CTX:TEMPORAL(CHRISTMAS)", "CTX:SPATIAL(HOME)", "CTX:SOCIAL(FAMILY)"]
+    },
+    "GIVE": {
+      "description": "Transfer action. Entity gives object to target.",
+      "syntax": "<AGENT>:GIVE(<OBJECT>)-><TARGET>",
+      "requires_target": true,
+      "creates_relation": ["HAS", "FROM"],
+      "examples": ["DAD:GIVE(TOY)->TIM"]
+    },
+    "IN": {
+      "description": "Containment relation. Object is inside container.",
+      "syntax": "<OBJECT>:IN(<CONTAINER>)",
+      "relation_type": "spatial",
+      "examples": ["TOY:IN(BOX)"]
+    },
+    "OPEN": {
+      "description": "Action to open a container/object.",
+      "syntax": "<AGENT>:OPEN(<OBJECT>)",
+      "precondition": "OBJECT must exist in state",
+      "effect": "reveals_contents",
+      "examples": ["TIM:OPEN(BOX)"]
+    },
+    "SEE": {
+      "description": "Perception action. Agent perceives object.",
+      "syntax": "<AGENT>:SEE(<OBJECT>)",
+      "precondition": "OBJECT must be accessible (not hidden)",
+      "examples": ["TIM:SEE(TOY)"]
+    },
+    "IS": {
+      "description": "Identity/type assertion. Declares what an entity is.",
+      "syntax": "<ENTITY>:IS(<TYPE>)",
+      "relation_type": "identity",
+      "examples": ["TOY:IS(CAR)"]
+    },
+    "HAS": {
+      "description": "Property/attribute assertion. Entity has attribute.",
+      "syntax": "<ENTITY>:HAS(<ATTRIBUTE>)",
+      "relation_type": "property",
+      "examples": ["CAR:HAS(RED)"]
+    },
+    "MOVE": {
+      "description": "Motion action. Entity moves with given manner.",
+      "syntax": "<ENTITY>:MOVE(<MANNER>)",
+      "manners": ["FAST", "SLOW", "FORWARD", "BACKWARD", "LEFT", "RIGHT"],
+      "examples": ["CAR:MOVE(FAST)"]
+    },
+    "FEEL": {
+      "description": "Emotional state. Agent experiences emotion.",
+      "syntax": "<AGENT>:FEEL(<EMOTION>)",
+      "emotions": ["HAPPY", "SAD", "ANGRY", "SURPRISED", "SCARED", "CALM"],
+      "examples": ["TIM:FEEL(HAPPY)"]
+    },
+    "HUG": {
+      "description": "Physical interaction. Agent hugs target.",
+      "syntax": "<AGENT>:HUG(<TARGET>)",
+      "relation_type": "social_action",
+      "examples": ["TIM:HUG(DAD)"]
+    },
+    "FACE": {
+      "description": "Facial expression. Entity displays expression.",
+      "syntax": "<ENTITY>:FACE(<EXPRESSION>)",
+      "expressions": ["SMILE", "FROWN", "NEUTRAL", "CRY", "LAUGH"],
+      "examples": ["DAD:FACE(SMILE)"]
+    }
+  },
+
+  "syntax_rules": {
+    "opcode_regex": "^([A-Z][A-Z0-9_]*):([A-Z]+)\\(([A-Z0-9_]+)\\)(->([A-Z][A-Z0-9_]*))?$",
+    "entity_regex": "^[A-Z][A-Z0-9_]*$",
+    "argument_regex": "^[A-Z0-9_]+$",
+    "max_entity_name_length": 32,
+    "max_argument_length": 32
+  },
+
+  "entity_classes": {
+    "AGENT": {
+      "description": "Can perform actions (GIVE, OPEN, SEE, FEEL, HUG)",
+      "capabilities": ["GIVE", "OPEN", "SEE", "FEEL", "HUG", "MOVE", "FACE"]
+    },
+    "OBJECT": {
+      "description": "Can be acted upon, have properties",
+      "capabilities": ["IN", "IS", "HAS", "MOVE"]
+    },
+    "CONTEXT": {
+      "description": "Frame-setting entity",
+      "capabilities": ["TEMPORAL", "SPATIAL", "SOCIAL", "EMOTIONAL"]
+    }
+  },
+
+  "validation_rules": {
+    "stream_must_not_be_empty": true,
+    "all_opcodes_must_match_syntax": true,
+    "verbs_must_be_registered": true,
+    "target_required_for": ["GIVE"],
+    "max_stream_length": 10000
+  }
+}
