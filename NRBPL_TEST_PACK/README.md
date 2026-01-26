@@ -18,6 +18,7 @@ Natural-Reflex-Based Programming Language (NRBPL) runtime.
 | `sample_stream.json` | Example 11-opcode narrative stream |
 | `run_test.sh` | End-to-end pipeline runner |
 | `ASE_SPEC_v1_0.md` | Agent-Schema-Event specification (normative) |
+| `ASE_SCHEMA_REGISTRY_v1_0.json` | Machine-readable ASE schema registry (21 schemas) |
 
 ## Quick Start
 

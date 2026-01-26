@@ -1,0 +1,90 @@
+{
+  "version": "1.0",
+  "status": "NORMATIVE",
+  "schemas": {
+    "TEMPORAL_CONTEXT": {
+      "roles": ["value"],
+      "description": "Time or occasion context"
+    },
+    "MOVE_TO_LOCATION": {
+      "roles": ["agent", "location"],
+      "description": "Agent moves to a specific location"
+    },
+    "MOVE_STATE": {
+      "roles": ["agent", "state"],
+      "description": "Agent transitions movement state"
+    },
+    "PERCEPTION_VISUAL": {
+      "roles": ["agent", "object"],
+      "description": "Agent visually perceives an object"
+    },
+    "PERCEPTION_AUDITORY": {
+      "roles": ["agent", "object"],
+      "description": "Agent auditorily perceives an object"
+    },
+    "OBJECT_LOCATION": {
+      "roles": ["object", "location"],
+      "description": "Object is at a location or inside a container"
+    },
+    "CONTAINER_OPEN": {
+      "roles": ["agent", "object"],
+      "description": "Agent opens a container object"
+    },
+    "OBJECT_IDENTIFICATION": {
+      "roles": ["object", "identity"],
+      "description": "Object is identified as a type"
+    },
+    "PHYSICAL_ATTRIBUTE": {
+      "roles": ["object", "attribute"],
+      "description": "Object has a physical attribute"
+    },
+    "OBJECT_ACTION": {
+      "roles": ["agent", "action"],
+      "description": "Agent performs a generic action on or as object"
+    },
+    "OBJECT_MOTION": {
+      "roles": ["agent", "speed"],
+      "description": "Object moves with a given speed or manner"
+    },
+    "GIFT_GIVING": {
+      "roles": ["agent", "recipient", "object"],
+      "description": "Agent gives object to recipient"
+    },
+    "CONSUMPTION": {
+      "roles": ["agent", "object"],
+      "description": "Agent consumes an object"
+    },
+    "EMOTIONAL_STATE": {
+      "roles": ["agent", "state"],
+      "description": "Agent experiences an emotional state"
+    },
+    "AFFECTION_ACTION": {
+      "roles": ["agent", "target", "action"],
+      "description": "Agent performs an affectionate action toward target"
+    },
+    "SPEECH_ACT_ADMONISH": {
+      "roles": ["agent", "target"],
+      "description": "Agent admonishes target"
+    },
+    "SPEECH_ACT_ADVISE": {
+      "roles": ["agent", "target"],
+      "description": "Agent advises target"
+    },
+    "SPEECH_ACT_CHALLENGE": {
+      "roles": ["agent", "target"],
+      "description": "Agent challenges target"
+    },
+    "FACIAL_EXPRESSION": {
+      "roles": ["agent", "expression"],
+      "description": "Agent displays a facial expression"
+    },
+    "LOSS_EVENT": {
+      "roles": ["agent", "object"],
+      "description": "Agent loses an object"
+    },
+    "STATE_TRANSITION": {
+      "roles": ["agent", "from_state", "to_state"],
+      "description": "Agent transitions from one state to another"
+    }
+  }
+}
