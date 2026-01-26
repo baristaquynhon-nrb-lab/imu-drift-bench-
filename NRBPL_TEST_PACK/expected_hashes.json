@@ -1,0 +1,11 @@
+{
+  "description": "Frozen expected hashes for NRBPL pipeline verification",
+  "source": "sample_stream.json (11 opcodes, Christmas narrative)",
+  "pipeline": "ASE -> VALIDATE -> COMPILE -> VALIDATE -> RUNTIME -> CANONICALIZE",
+  "frozen_at": "2026-01-26",
+
+  "opcode_stream_sha256": "8c77236e6bb7ee8f751463b14c1dad28811acd7be451638b0af9f12766d9b0c1",
+  "runtime_state_hash": "c1d5be668b886cf17016d34fe5731efa169c2029b94172568363d316f0938959",
+  "state_hash_canonical": "e839fd7587c1e067a12b229b271c4ee95876a2719300ead8173da344884ad245",
+  "file_hash_canonical": "f0d422fe75b626a90bf5569b4e39415dd71f1a1558cb7ed47056ab03a03360b9"
+}

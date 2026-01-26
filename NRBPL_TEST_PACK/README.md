@@ -29,9 +29,11 @@ Natural-Reflex-Based Programming Language (NRBPL) runtime.
 | `NRBPL_STREAM_VALIDATOR.js` | Validates opcode streams (UGTS exit codes: 0/2/3) |
 | `NRBPL_RUNTIME_v0_1.js` | Executes streams, builds world state + SHA-256 hash |
 | `NRBPL_CANONICALIZER_v0_1.js` | Byte-stable canonical state + deterministic hash |
+| `NRBPL_HASH_GATE_v0_1.js` | Hash gate: expected vs computed hash verification |
+| `expected_hashes.json` | Frozen expected hashes (manifest for hash gate) |
 | `sample_stream.json` | Example 11-opcode narrative stream |
 | `run_test.sh` | Phase-by-phase test runner (ASE + NRBPL) |
-| `run_full_pipeline.sh` | Full 6-step orchestrator (validate → canonicalize) |
+| `run_full_pipeline.sh` | Full 7-step orchestrator (validate → hash gate) |
 | `verify_hash.sh` | SHA-256 verification of all output files |
 
 ## Quick Start
@@ -60,18 +62,18 @@ node NRBPL_STREAM_VALIDATOR.js compiled_stream.json NRBPL_OPCODE_REGISTRY_v0_1.j
 node NRBPL_RUNTIME_v0_1.js compiled_stream.json final_state.json NRBPL_OPCODE_REGISTRY_v0_1.json
 node NRBPL_CANONICALIZER_v0_1.js final_state.json canonical_state.json
 
-# --- Verify ---
-sha256sum canonical_state.json
+# --- Hash Gate ---
+node NRBPL_HASH_GATE_v0_1.js canonical_state.json expected_hashes.json
 ```
 
 ## Pipeline
 
 ```
-ASE Events -> VALIDATE -> COMPILE -> VALIDATE OPCODE -> RUNTIME -> CANONICALIZE -> HASH
-    |            |           |             |                |            |            |
-ase_events  ASE_VALIDATOR COMPILER  STREAM_VALIDATOR    RUNTIME   CANONICALIZER   SHA-256
-                 |           |             |                |            |
-            registry   compiled_stream  opcode_reg   final_state  canonical_state
+ASE Events -> VALIDATE -> COMPILE -> VALIDATE OPCODE -> RUNTIME -> CANONICALIZE -> HASH GATE
+    |            |           |             |                |            |              |
+ase_events  ASE_VALIDATOR COMPILER  STREAM_VALIDATOR    RUNTIME   CANONICALIZER    HASH_GATE
+                 |           |             |                |            |              |
+            registry   compiled_stream  opcode_reg   final_state  canonical_state  expected_hashes
 ```
 
 ## Exit Codes (UGTS)
@@ -79,6 +81,7 @@ ase_events  ASE_VALIDATOR COMPILER  STREAM_VALIDATOR    RUNTIME   CANONICALIZER 
 | Code | Meaning |
 |------|---------|
 | 0 | **PASS** |
+| 1 | **FAIL** (hash mismatch -- runtime drift) |
 | 2 | **FAIL** (IO/format error) |
 | 3 | **REFUSE** (spec/gate violation) |
 
@@ -110,3 +113,4 @@ See [Compliance Test Suite](ASE_COMPLIANCE_TEST_SUITE_v1_0.md) for PASS/REFUSE t
 - **Schema-locked**: Only registered ASE schemas and NRBPL opcodes accepted
 - **UGTS-gated**: REFUSE on missing roles, unknown schemas, style contamination
 - **Byte-stable**: Canonicalizer strips timestamps, sorts all keys for cross-machine reproducibility
+- **Drift-protected**: Hash gate verifies expected vs computed hash every run
