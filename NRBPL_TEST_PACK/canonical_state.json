@@ -1,0 +1,211 @@
+{
+  "runtime": "NRBPL_RUNTIME_v0_1",
+  "version": "0.1.0",
+  "stream_file": "compiled_stream.json",
+  "registry_file": "NRBPL_OPCODE_REGISTRY_v0_1.json",
+  "summary": {
+    "assertion_count": 11,
+    "context_keys": [
+      "TEMPORAL"
+    ],
+    "entity_count": 5,
+    "error_count": 0,
+    "opcode_count": 11
+  },
+  "context": {
+    "TEMPORAL": "CHRISTMAS"
+  },
+  "entities": {
+    "BOX": {
+      "actions": [],
+      "emotions": [],
+      "name": "BOX",
+      "properties": [],
+      "relations": [
+        {
+          "object": "TOY",
+          "rel": "CONTAINS"
+        }
+      ],
+      "state": {
+        "opened": true
+      },
+      "type": null
+    },
+    "CAR": {
+      "actions": [
+        {
+          "manner": "FAST",
+          "verb": "MOVE"
+        }
+      ],
+      "emotions": [],
+      "name": "CAR",
+      "properties": [
+        "RED"
+      ],
+      "relations": [],
+      "state": {
+        "moveManner": "FAST",
+        "moving": true
+      },
+      "type": null
+    },
+    "DAD": {
+      "actions": [
+        {
+          "expression": "SMILE",
+          "verb": "FACE"
+        },
+        {
+          "object": "TOY",
+          "to": "TIM",
+          "verb": "GIVE"
+        }
+      ],
+      "emotions": [],
+      "name": "DAD",
+      "properties": [],
+      "relations": [],
+      "state": {
+        "faceExpression": "SMILE"
+      },
+      "type": null
+    },
+    "TIM": {
+      "actions": [
+        {
+          "target": "DAD",
+          "verb": "HUG"
+        },
+        {
+          "object": "BOX",
+          "verb": "OPEN"
+        },
+        {
+          "object": "TOY",
+          "verb": "SEE"
+        }
+      ],
+      "emotions": [
+        "HAPPY"
+      ],
+      "name": "TIM",
+      "properties": [],
+      "relations": [
+        {
+          "from": "DAD",
+          "object": "TOY",
+          "rel": "HAS"
+        }
+      ],
+      "state": {
+        "currentEmotion": "HAPPY",
+        "lastSeen": "TOY"
+      },
+      "type": null
+    },
+    "TOY": {
+      "actions": [],
+      "emotions": [],
+      "name": "TOY",
+      "properties": [],
+      "relations": [
+        {
+          "container": "BOX",
+          "rel": "INSIDE"
+        },
+        {
+          "entity": "TIM",
+          "rel": "OWNED_BY"
+        }
+      ],
+      "state": {
+        "accessible": true,
+        "location": "BOX"
+      },
+      "type": "CAR"
+    }
+  },
+  "timeline": [
+    {
+      "category": "TEMPORAL",
+      "step": 0,
+      "type": "CTX",
+      "value": "CHRISTMAS"
+    },
+    {
+      "argument": "TOY",
+      "entity": "DAD",
+      "step": 1,
+      "target": "TIM",
+      "type": "ACTION",
+      "verb": "GIVE"
+    },
+    {
+      "argument": "BOX",
+      "entity": "TOY",
+      "step": 2,
+      "type": "RELATION",
+      "verb": "IN"
+    },
+    {
+      "argument": "BOX",
+      "entity": "TIM",
+      "step": 3,
+      "type": "ACTION",
+      "verb": "OPEN"
+    },
+    {
+      "argument": "TOY",
+      "entity": "TIM",
+      "step": 4,
+      "type": "PERCEPTION",
+      "verb": "SEE"
+    },
+    {
+      "argument": "CAR",
+      "entity": "TOY",
+      "step": 5,
+      "type": "IDENTITY",
+      "verb": "IS"
+    },
+    {
+      "argument": "RED",
+      "entity": "CAR",
+      "step": 6,
+      "type": "PROPERTY",
+      "verb": "HAS"
+    },
+    {
+      "argument": "FAST",
+      "entity": "CAR",
+      "step": 7,
+      "type": "MOTION",
+      "verb": "MOVE"
+    },
+    {
+      "argument": "HAPPY",
+      "entity": "TIM",
+      "step": 8,
+      "type": "EMOTION",
+      "verb": "FEEL"
+    },
+    {
+      "argument": "DAD",
+      "entity": "TIM",
+      "step": 9,
+      "type": "SOCIAL",
+      "verb": "HUG"
+    },
+    {
+      "argument": "SMILE",
+      "entity": "DAD",
+      "step": 10,
+      "type": "EXPRESSION",
+      "verb": "FACE"
+    }
+  ],
+  "verdict": "PASS",
+  "state_hash_canonical": "e839fd7587c1e067a12b229b271c4ee95876a2719300ead8173da344884ad245"
+}

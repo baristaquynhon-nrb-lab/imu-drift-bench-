@@ -28,45 +28,50 @@ Natural-Reflex-Based Programming Language (NRBPL) runtime.
 | `NRBPL_OPCODE_REGISTRY_v0_1.json` | Frozen opcode registry mapped from ASE v1.0 (19 opcodes) |
 | `NRBPL_STREAM_VALIDATOR.js` | Validates opcode streams (UGTS exit codes: 0/2/3) |
 | `NRBPL_RUNTIME_v0_1.js` | Executes streams, builds world state + SHA-256 hash |
+| `NRBPL_CANONICALIZER_v0_1.js` | Byte-stable canonical state + deterministic hash |
 | `sample_stream.json` | Example 11-opcode narrative stream |
-| `run_test.sh` | Full pipeline runner (ASE + NRBPL phases) |
+| `run_test.sh` | Phase-by-phase test runner (ASE + NRBPL) |
+| `run_full_pipeline.sh` | Full 6-step orchestrator (validate → canonicalize) |
+| `verify_hash.sh` | SHA-256 verification of all output files |
 
 ## Quick Start
 
 ```bash
-chmod +x run_test.sh
+chmod +x run_full_pipeline.sh verify_hash.sh run_test.sh
+./run_full_pipeline.sh
+./verify_hash.sh
+```
+
+Or run the phase-by-phase test:
+
+```bash
 ./run_test.sh
 ```
 
-Or run each phase manually:
+Or run each step manually:
 
 ```bash
-# --- Phase A: ASE Layer ---
-# A1: Validate ASE events
+# --- ASE Layer ---
 node ASE_VALIDATOR.js ase_events.json ASE_SCHEMA_REGISTRY_v1_0.json
-
-# A2: Compile ASE -> NRBPL opcodes
 node ASE_EVENT_COMPILER.js ase_events.json compiled_stream.json ASE_SCHEMA_REGISTRY_v1_0.json
 
-# --- Phase B: NRBPL Layer ---
-# B1: Validate opcode stream
-node NRBPL_STREAM_VALIDATOR.js sample_stream.json NRBPL_OPCODE_REGISTRY_v0_1.json
+# --- NRBPL Layer ---
+node NRBPL_STREAM_VALIDATOR.js compiled_stream.json NRBPL_OPCODE_REGISTRY_v0_1.json
+node NRBPL_RUNTIME_v0_1.js compiled_stream.json final_state.json NRBPL_OPCODE_REGISTRY_v0_1.json
+node NRBPL_CANONICALIZER_v0_1.js final_state.json canonical_state.json
 
-# B2: Execute runtime
-node NRBPL_RUNTIME_v0_1.js sample_stream.json final_state.json NRBPL_OPCODE_REGISTRY_v0_1.json
-
-# B3: Hash verify
-sha256sum final_state.json
+# --- Verify ---
+sha256sum canonical_state.json
 ```
 
 ## Pipeline
 
 ```
-Text -> ASE Event Graph -> VALIDATE -> COMPILE -> VALIDATE OPCODE -> RUNTIME -> HASH
-          |                   |           |             |                |         |
-     ase_events.json    ASE_VALIDATOR  COMPILER   STREAM_VALIDATOR   RUNTIME   SHA-256
-                              |           |             |                |
-                         registry    compiled_stream  opcode_reg    final_state
+ASE Events -> VALIDATE -> COMPILE -> VALIDATE OPCODE -> RUNTIME -> CANONICALIZE -> HASH
+    |            |           |             |                |            |            |
+ase_events  ASE_VALIDATOR COMPILER  STREAM_VALIDATOR    RUNTIME   CANONICALIZER   SHA-256
+                 |           |             |                |            |
+            registry   compiled_stream  opcode_reg   final_state  canonical_state
 ```
 
 ## Exit Codes (UGTS)
@@ -88,11 +93,20 @@ The [ASE Spec v1.0](ASE_SPEC_v1_0.md) defines the canonical semantic IR upstream
 
 See [Compliance Test Suite](ASE_COMPLIANCE_TEST_SUITE_v1_0.md) for PASS/REFUSE test cases.
 
+## Outputs
+
+| File | Description |
+|------|-------------|
+| `compiled_stream.json` | NRBPL opcode stream compiled from ASE events |
+| `final_state.json` | Raw world state from runtime |
+| `canonical_state.json` | Byte-stable canonical state (sorted keys, no timestamp) |
+
 ## Guarantees
 
 - **LLM-independent**: Pure Node.js, no AI calls
-- **Deterministic**: Same input always produces same entity graph
-- **Hash-auditable**: `state_hash` in output = SHA-256 of canonical state
+- **Deterministic**: Same input always produces same canonical JSON
+- **Hash-auditable**: `state_hash_canonical` = SHA-256 of canonical world state
 - **Replayable**: Feed any valid stream, get reproducible state
 - **Schema-locked**: Only registered ASE schemas and NRBPL opcodes accepted
 - **UGTS-gated**: REFUSE on missing roles, unknown schemas, style contamination
+- **Byte-stable**: Canonicalizer strips timestamps, sorts all keys for cross-machine reproducibility

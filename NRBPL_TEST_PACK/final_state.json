@@ -1,8 +1,8 @@
 {
   "runtime": "NRBPL_RUNTIME_v0_1",
   "version": "0.1.0",
-  "timestamp": "2026-01-26T12:16:21.797Z",
-  "stream_file": "sample_stream.json",
+  "timestamp": "2026-01-26T12:21:23.206Z",
+  "stream_file": "compiled_stream.json",
   "registry_file": "NRBPL_OPCODE_REGISTRY_v0_1.json",
   "summary": {
     "opcode_count": 11,
