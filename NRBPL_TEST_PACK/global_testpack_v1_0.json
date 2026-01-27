@@ -1,0 +1,92 @@
+{
+  "spec": "NRBPL_GLOBAL_TESTPACK_v1_0",
+  "status": "FROZEN",
+  "description": "Normative test pack for NRBPL_GLOBAL_DETERMINISM_TESTER_v1_0. Covers all 5 domains + 2 REFUSE cases. Oracle hashes are cryptographically frozen.",
+  "tests": [
+    {
+      "id": "TC-DESC-01",
+      "description": "Descriptive domain: ADD_FACT + CLASSIFY + SET_PROP + ADD_REL",
+      "expected_verdict": "PASS",
+      "oracle_hash": "sha256:23f0a7e9d94b1ef4fb4839b2019117182ef642effa780507a6485666eea57388",
+      "context_pack": { "time": null, "active_event": null, "agents": null, "jurisdiction": null },
+      "initial_state": null,
+      "event_sequence": [
+        { "event": { "domain": "descriptive", "opcode": "ADD_FACT", "args": { "entity": "DAD", "fact": "ARRIVED" } } },
+        { "event": { "domain": "descriptive", "opcode": "CLASSIFY", "args": { "entity": "DAD", "class": "PARENT" } } },
+        { "event": { "domain": "descriptive", "opcode": "SET_PROP", "args": { "entity": "DAD", "prop": "LOCATED_IN", "value": "HOME" } } },
+        { "event": { "domain": "descriptive", "opcode": "ADD_REL", "args": { "a": "DAD", "rel": "PARENT_OF", "b": "TIM" } } }
+      ]
+    },
+    {
+      "id": "TC-PRAG-01",
+      "description": "Pragmatic domain: GREET + WISH + THANK",
+      "expected_verdict": "PASS",
+      "oracle_hash": "sha256:8c216c27ff7eecc17687466f172fc65759e43f5956c1d84392cdbe317e45f6ce",
+      "context_pack": { "time": null, "active_event": null, "agents": null, "jurisdiction": null },
+      "initial_state": null,
+      "event_sequence": [
+        { "event": { "domain": "pragmatic", "opcode": "GREET", "args": { "speaker": "DAD", "addressee": "TIM", "formula": "HELLO" } } },
+        { "event": { "domain": "pragmatic", "opcode": "WISH", "args": { "speaker": "DAD", "addressee": "TIM", "formula": "HAPPY_BIRTHDAY" } } },
+        { "event": { "domain": "pragmatic", "opcode": "THANK", "args": { "speaker": "TIM", "addressee": "DAD", "formula": "THANK_YOU" } } }
+      ]
+    },
+    {
+      "id": "TC-MODAL-01",
+      "description": "Modal domain: POSSIBLY + NECESSARILY",
+      "expected_verdict": "PASS",
+      "oracle_hash": "sha256:7cf86e07a8f75db6272db988a98d47c6b63347b2b339abf17f1c8d394fa79394",
+      "context_pack": { "time": null, "active_event": null, "agents": null, "jurisdiction": null },
+      "initial_state": null,
+      "event_sequence": [
+        { "event": { "domain": "modal", "opcode": "POSSIBLY", "args": { "proposition": "RAIN_TOMORROW" } } },
+        { "event": { "domain": "modal", "opcode": "NECESSARILY", "args": { "proposition": "SUN_RISES" } } }
+      ]
+    },
+    {
+      "id": "TC-NORM-01",
+      "description": "Normative domain: OBLIGATED (LAW, requires jurisdiction) + PERMITTED (CUSTOM)",
+      "expected_verdict": "PASS",
+      "oracle_hash": "sha256:e1edf79bbf9ea50a24fc944777d6b961866ac92a78386c43247a32eb27bb7a7e",
+      "context_pack": { "time": null, "active_event": null, "agents": null, "jurisdiction": { "country": "VN" } },
+      "initial_state": null,
+      "event_sequence": [
+        { "event": { "domain": "normative", "opcode": "OBLIGATED", "args": { "src_type": "LAW", "subject": "CITIZEN", "act": "PAY_TAX" } } },
+        { "event": { "domain": "normative", "opcode": "PERMITTED", "args": { "src_type": "CUSTOM", "subject": "STUDENT", "act": "ASK_QUESTION", "jurisdiction": "" } } }
+      ]
+    },
+    {
+      "id": "TC-AFFECT-01",
+      "description": "Affective domain: FEEL_HAPPY + EXCLAIM",
+      "expected_verdict": "PASS",
+      "oracle_hash": "sha256:1f34d1bf5c4de1f26311011ecfa2d2938e22346ab530fb41234ec575e87bec61",
+      "context_pack": { "time": null, "active_event": null, "agents": null, "jurisdiction": null },
+      "initial_state": null,
+      "event_sequence": [
+        { "event": { "domain": "affective", "opcode": "FEEL_HAPPY", "args": { "agent": "TIM", "intensity": 3, "label": "JOY" } } },
+        { "event": { "domain": "affective", "opcode": "EXCLAIM", "args": { "agent": "TIM", "label": "WOW" } } }
+      ]
+    },
+    {
+      "id": "TC-REFUSE-BINDING-01",
+      "description": "REFUSE: normative LAW without jurisdiction binding => fail-fast",
+      "expected_verdict": "REFUSE",
+      "oracle_hash": null,
+      "context_pack": { "time": null, "active_event": null, "agents": null, "jurisdiction": null },
+      "initial_state": null,
+      "event_sequence": [
+        { "event": { "domain": "normative", "opcode": "OBLIGATED", "args": { "src_type": "LAW", "subject": "CITIZEN", "act": "PAY_TAX" } } }
+      ]
+    },
+    {
+      "id": "TC-REFUSE-DOMAIN-01",
+      "description": "REFUSE: unknown domain => firewall rejection",
+      "expected_verdict": "REFUSE",
+      "oracle_hash": null,
+      "context_pack": { "time": null, "active_event": null, "agents": null, "jurisdiction": null },
+      "initial_state": null,
+      "event_sequence": [
+        { "event": { "domain": "unknown_layer", "opcode": "DO_MAGIC", "args": {} } }
+      ]
+    }
+  ]
+}
