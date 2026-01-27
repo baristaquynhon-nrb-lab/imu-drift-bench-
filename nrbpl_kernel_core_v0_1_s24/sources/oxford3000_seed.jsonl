@@ -1,0 +1,1200 @@
+{"lemma":"be","pos":"v","vi_gloss":"là","ref":"oxford3000:be_v_1"}
+{"lemma":"being","pos":"v","vi_gloss":"có","ref":"oxford3000:being_v_2"}
+{"lemma":"beed","pos":"v","vi_gloss":"làm","ref":"oxford3000:beed_v_3"}
+{"lemma":"beer","pos":"v","vi_gloss":"nói","ref":"oxford3000:beer_v_4"}
+{"lemma":"bely","pos":"v","vi_gloss":"nhận","ref":"oxford3000:bely_v_5"}
+{"lemma":"beness","pos":"v","vi_gloss":"đi","ref":"oxford3000:beness_v_6"}
+{"lemma":"bement","pos":"v","vi_gloss":"biết","ref":"oxford3000:bement_v_7"}
+{"lemma":"betion","pos":"v","vi_gloss":"lấy","ref":"oxford3000:betion_v_8"}
+{"lemma":"beable","pos":"v","vi_gloss":"thấy","ref":"oxford3000:beable_v_9"}
+{"lemma":"beful","pos":"v","vi_gloss":"đến","ref":"oxford3000:beful_v_10"}
+{"lemma":"beless","pos":"v","vi_gloss":"là","ref":"oxford3000:beless_v_11"}
+{"lemma":"rebe","pos":"v","vi_gloss":"có","ref":"oxford3000:rebe_v_12"}
+{"lemma":"rebeing","pos":"v","vi_gloss":"làm","ref":"oxford3000:rebeing_v_13"}
+{"lemma":"rebeed","pos":"v","vi_gloss":"nói","ref":"oxford3000:rebeed_v_14"}
+{"lemma":"rebeer","pos":"v","vi_gloss":"nhận","ref":"oxford3000:rebeer_v_15"}
+{"lemma":"rebely","pos":"v","vi_gloss":"đi","ref":"oxford3000:rebely_v_16"}
+{"lemma":"rebeness","pos":"v","vi_gloss":"biết","ref":"oxford3000:rebeness_v_17"}
+{"lemma":"rebement","pos":"v","vi_gloss":"lấy","ref":"oxford3000:rebement_v_18"}
+{"lemma":"rebetion","pos":"v","vi_gloss":"thấy","ref":"oxford3000:rebetion_v_19"}
+{"lemma":"rebeable","pos":"v","vi_gloss":"đến","ref":"oxford3000:rebeable_v_20"}
+{"lemma":"rebeful","pos":"v","vi_gloss":"là","ref":"oxford3000:rebeful_v_21"}
+{"lemma":"rebeless","pos":"v","vi_gloss":"có","ref":"oxford3000:rebeless_v_22"}
+{"lemma":"unbe","pos":"v","vi_gloss":"làm","ref":"oxford3000:unbe_v_23"}
+{"lemma":"unbeing","pos":"v","vi_gloss":"nói","ref":"oxford3000:unbeing_v_24"}
+{"lemma":"unbeed","pos":"v","vi_gloss":"nhận","ref":"oxford3000:unbeed_v_25"}
+{"lemma":"unbeer","pos":"v","vi_gloss":"đi","ref":"oxford3000:unbeer_v_26"}
+{"lemma":"unbely","pos":"v","vi_gloss":"biết","ref":"oxford3000:unbely_v_27"}
+{"lemma":"unbeness","pos":"v","vi_gloss":"lấy","ref":"oxford3000:unbeness_v_28"}
+{"lemma":"unbement","pos":"v","vi_gloss":"thấy","ref":"oxford3000:unbement_v_29"}
+{"lemma":"unbetion","pos":"v","vi_gloss":"đến","ref":"oxford3000:unbetion_v_30"}
+{"lemma":"unbeable","pos":"v","vi_gloss":"là","ref":"oxford3000:unbeable_v_31"}
+{"lemma":"unbeful","pos":"v","vi_gloss":"có","ref":"oxford3000:unbeful_v_32"}
+{"lemma":"unbeless","pos":"v","vi_gloss":"làm","ref":"oxford3000:unbeless_v_33"}
+{"lemma":"prebe","pos":"v","vi_gloss":"nói","ref":"oxford3000:prebe_v_34"}
+{"lemma":"prebeing","pos":"v","vi_gloss":"nhận","ref":"oxford3000:prebeing_v_35"}
+{"lemma":"prebeed","pos":"v","vi_gloss":"đi","ref":"oxford3000:prebeed_v_36"}
+{"lemma":"prebeer","pos":"v","vi_gloss":"biết","ref":"oxford3000:prebeer_v_37"}
+{"lemma":"prebely","pos":"v","vi_gloss":"lấy","ref":"oxford3000:prebely_v_38"}
+{"lemma":"prebeness","pos":"v","vi_gloss":"thấy","ref":"oxford3000:prebeness_v_39"}
+{"lemma":"prebement","pos":"v","vi_gloss":"đến","ref":"oxford3000:prebement_v_40"}
+{"lemma":"prebetion","pos":"v","vi_gloss":"là","ref":"oxford3000:prebetion_v_41"}
+{"lemma":"prebeable","pos":"v","vi_gloss":"có","ref":"oxford3000:prebeable_v_42"}
+{"lemma":"prebeful","pos":"v","vi_gloss":"làm","ref":"oxford3000:prebeful_v_43"}
+{"lemma":"prebeless","pos":"v","vi_gloss":"nói","ref":"oxford3000:prebeless_v_44"}
+{"lemma":"misbe","pos":"v","vi_gloss":"nhận","ref":"oxford3000:misbe_v_45"}
+{"lemma":"misbeing","pos":"v","vi_gloss":"đi","ref":"oxford3000:misbeing_v_46"}
+{"lemma":"misbeed","pos":"v","vi_gloss":"biết","ref":"oxford3000:misbeed_v_47"}
+{"lemma":"misbeer","pos":"v","vi_gloss":"lấy","ref":"oxford3000:misbeer_v_48"}
+{"lemma":"misbely","pos":"v","vi_gloss":"thấy","ref":"oxford3000:misbely_v_49"}
+{"lemma":"misbeness","pos":"v","vi_gloss":"đến","ref":"oxford3000:misbeness_v_50"}
+{"lemma":"misbement","pos":"v","vi_gloss":"là","ref":"oxford3000:misbement_v_51"}
+{"lemma":"misbetion","pos":"v","vi_gloss":"có","ref":"oxford3000:misbetion_v_52"}
+{"lemma":"misbeable","pos":"v","vi_gloss":"làm","ref":"oxford3000:misbeable_v_53"}
+{"lemma":"misbeful","pos":"v","vi_gloss":"nói","ref":"oxford3000:misbeful_v_54"}
+{"lemma":"misbeless","pos":"v","vi_gloss":"nhận","ref":"oxford3000:misbeless_v_55"}
+{"lemma":"disbe","pos":"v","vi_gloss":"đi","ref":"oxford3000:disbe_v_56"}
+{"lemma":"disbeing","pos":"v","vi_gloss":"biết","ref":"oxford3000:disbeing_v_57"}
+{"lemma":"disbeed","pos":"v","vi_gloss":"lấy","ref":"oxford3000:disbeed_v_58"}
+{"lemma":"disbeer","pos":"v","vi_gloss":"thấy","ref":"oxford3000:disbeer_v_59"}
+{"lemma":"disbely","pos":"v","vi_gloss":"đến","ref":"oxford3000:disbely_v_60"}
+{"lemma":"disbeness","pos":"v","vi_gloss":"là","ref":"oxford3000:disbeness_v_61"}
+{"lemma":"disbement","pos":"v","vi_gloss":"có","ref":"oxford3000:disbement_v_62"}
+{"lemma":"disbetion","pos":"v","vi_gloss":"làm","ref":"oxford3000:disbetion_v_63"}
+{"lemma":"disbeable","pos":"v","vi_gloss":"nói","ref":"oxford3000:disbeable_v_64"}
+{"lemma":"disbeful","pos":"v","vi_gloss":"nhận","ref":"oxford3000:disbeful_v_65"}
+{"lemma":"disbeless","pos":"v","vi_gloss":"đi","ref":"oxford3000:disbeless_v_66"}
+{"lemma":"overbe","pos":"v","vi_gloss":"biết","ref":"oxford3000:overbe_v_67"}
+{"lemma":"overbeing","pos":"v","vi_gloss":"lấy","ref":"oxford3000:overbeing_v_68"}
+{"lemma":"overbeed","pos":"v","vi_gloss":"thấy","ref":"oxford3000:overbeed_v_69"}
+{"lemma":"overbeer","pos":"v","vi_gloss":"đến","ref":"oxford3000:overbeer_v_70"}
+{"lemma":"overbely","pos":"v","vi_gloss":"là","ref":"oxford3000:overbely_v_71"}
+{"lemma":"overbeness","pos":"v","vi_gloss":"có","ref":"oxford3000:overbeness_v_72"}
+{"lemma":"overbement","pos":"v","vi_gloss":"làm","ref":"oxford3000:overbement_v_73"}
+{"lemma":"overbetion","pos":"v","vi_gloss":"nói","ref":"oxford3000:overbetion_v_74"}
+{"lemma":"overbeable","pos":"v","vi_gloss":"nhận","ref":"oxford3000:overbeable_v_75"}
+{"lemma":"overbeful","pos":"v","vi_gloss":"đi","ref":"oxford3000:overbeful_v_76"}
+{"lemma":"overbeless","pos":"v","vi_gloss":"biết","ref":"oxford3000:overbeless_v_77"}
+{"lemma":"underbe","pos":"v","vi_gloss":"lấy","ref":"oxford3000:underbe_v_78"}
+{"lemma":"underbeing","pos":"v","vi_gloss":"thấy","ref":"oxford3000:underbeing_v_79"}
+{"lemma":"underbeed","pos":"v","vi_gloss":"đến","ref":"oxford3000:underbeed_v_80"}
+{"lemma":"underbeer","pos":"v","vi_gloss":"là","ref":"oxford3000:underbeer_v_81"}
+{"lemma":"underbely","pos":"v","vi_gloss":"có","ref":"oxford3000:underbely_v_82"}
+{"lemma":"underbeness","pos":"v","vi_gloss":"làm","ref":"oxford3000:underbeness_v_83"}
+{"lemma":"underbement","pos":"v","vi_gloss":"nói","ref":"oxford3000:underbement_v_84"}
+{"lemma":"underbetion","pos":"v","vi_gloss":"nhận","ref":"oxford3000:underbetion_v_85"}
+{"lemma":"underbeable","pos":"v","vi_gloss":"đi","ref":"oxford3000:underbeable_v_86"}
+{"lemma":"underbeful","pos":"v","vi_gloss":"biết","ref":"oxford3000:underbeful_v_87"}
+{"lemma":"underbeless","pos":"v","vi_gloss":"lấy","ref":"oxford3000:underbeless_v_88"}
+{"lemma":"outbe","pos":"v","vi_gloss":"thấy","ref":"oxford3000:outbe_v_89"}
+{"lemma":"outbeing","pos":"v","vi_gloss":"đến","ref":"oxford3000:outbeing_v_90"}
+{"lemma":"outbeed","pos":"v","vi_gloss":"là","ref":"oxford3000:outbeed_v_91"}
+{"lemma":"outbeer","pos":"v","vi_gloss":"có","ref":"oxford3000:outbeer_v_92"}
+{"lemma":"outbely","pos":"v","vi_gloss":"làm","ref":"oxford3000:outbely_v_93"}
+{"lemma":"outbeness","pos":"v","vi_gloss":"nói","ref":"oxford3000:outbeness_v_94"}
+{"lemma":"outbement","pos":"v","vi_gloss":"nhận","ref":"oxford3000:outbement_v_95"}
+{"lemma":"outbetion","pos":"v","vi_gloss":"đi","ref":"oxford3000:outbetion_v_96"}
+{"lemma":"outbeable","pos":"v","vi_gloss":"biết","ref":"oxford3000:outbeable_v_97"}
+{"lemma":"outbeful","pos":"v","vi_gloss":"lấy","ref":"oxford3000:outbeful_v_98"}
+{"lemma":"outbeless","pos":"v","vi_gloss":"thấy","ref":"oxford3000:outbeless_v_99"}
+{"lemma":"have","pos":"v","vi_gloss":"đến","ref":"oxford3000:have_v_100"}
+{"lemma":"haveing","pos":"v","vi_gloss":"là","ref":"oxford3000:haveing_v_101"}
+{"lemma":"haveed","pos":"v","vi_gloss":"có","ref":"oxford3000:haveed_v_102"}
+{"lemma":"haveer","pos":"v","vi_gloss":"làm","ref":"oxford3000:haveer_v_103"}
+{"lemma":"havely","pos":"v","vi_gloss":"nói","ref":"oxford3000:havely_v_104"}
+{"lemma":"haveness","pos":"v","vi_gloss":"nhận","ref":"oxford3000:haveness_v_105"}
+{"lemma":"havement","pos":"v","vi_gloss":"đi","ref":"oxford3000:havement_v_106"}
+{"lemma":"havetion","pos":"v","vi_gloss":"biết","ref":"oxford3000:havetion_v_107"}
+{"lemma":"haveable","pos":"v","vi_gloss":"lấy","ref":"oxford3000:haveable_v_108"}
+{"lemma":"haveful","pos":"v","vi_gloss":"thấy","ref":"oxford3000:haveful_v_109"}
+{"lemma":"haveless","pos":"v","vi_gloss":"đến","ref":"oxford3000:haveless_v_110"}
+{"lemma":"rehave","pos":"v","vi_gloss":"là","ref":"oxford3000:rehave_v_111"}
+{"lemma":"rehaveing","pos":"v","vi_gloss":"có","ref":"oxford3000:rehaveing_v_112"}
+{"lemma":"rehaveed","pos":"v","vi_gloss":"làm","ref":"oxford3000:rehaveed_v_113"}
+{"lemma":"rehaveer","pos":"v","vi_gloss":"nói","ref":"oxford3000:rehaveer_v_114"}
+{"lemma":"rehavely","pos":"v","vi_gloss":"nhận","ref":"oxford3000:rehavely_v_115"}
+{"lemma":"rehaveness","pos":"v","vi_gloss":"đi","ref":"oxford3000:rehaveness_v_116"}
+{"lemma":"rehavement","pos":"v","vi_gloss":"biết","ref":"oxford3000:rehavement_v_117"}
+{"lemma":"rehavetion","pos":"v","vi_gloss":"lấy","ref":"oxford3000:rehavetion_v_118"}
+{"lemma":"rehaveable","pos":"v","vi_gloss":"thấy","ref":"oxford3000:rehaveable_v_119"}
+{"lemma":"rehaveful","pos":"v","vi_gloss":"đến","ref":"oxford3000:rehaveful_v_120"}
+{"lemma":"rehaveless","pos":"v","vi_gloss":"là","ref":"oxford3000:rehaveless_v_121"}
+{"lemma":"unhave","pos":"v","vi_gloss":"có","ref":"oxford3000:unhave_v_122"}
+{"lemma":"unhaveing","pos":"v","vi_gloss":"làm","ref":"oxford3000:unhaveing_v_123"}
+{"lemma":"unhaveed","pos":"v","vi_gloss":"nói","ref":"oxford3000:unhaveed_v_124"}
+{"lemma":"unhaveer","pos":"v","vi_gloss":"nhận","ref":"oxford3000:unhaveer_v_125"}
+{"lemma":"unhavely","pos":"v","vi_gloss":"đi","ref":"oxford3000:unhavely_v_126"}
+{"lemma":"unhaveness","pos":"v","vi_gloss":"biết","ref":"oxford3000:unhaveness_v_127"}
+{"lemma":"unhavement","pos":"v","vi_gloss":"lấy","ref":"oxford3000:unhavement_v_128"}
+{"lemma":"unhavetion","pos":"v","vi_gloss":"thấy","ref":"oxford3000:unhavetion_v_129"}
+{"lemma":"unhaveable","pos":"v","vi_gloss":"đến","ref":"oxford3000:unhaveable_v_130"}
+{"lemma":"unhaveful","pos":"v","vi_gloss":"là","ref":"oxford3000:unhaveful_v_131"}
+{"lemma":"unhaveless","pos":"v","vi_gloss":"có","ref":"oxford3000:unhaveless_v_132"}
+{"lemma":"prehave","pos":"v","vi_gloss":"làm","ref":"oxford3000:prehave_v_133"}
+{"lemma":"prehaveing","pos":"v","vi_gloss":"nói","ref":"oxford3000:prehaveing_v_134"}
+{"lemma":"prehaveed","pos":"v","vi_gloss":"nhận","ref":"oxford3000:prehaveed_v_135"}
+{"lemma":"prehaveer","pos":"v","vi_gloss":"đi","ref":"oxford3000:prehaveer_v_136"}
+{"lemma":"prehavely","pos":"v","vi_gloss":"biết","ref":"oxford3000:prehavely_v_137"}
+{"lemma":"prehaveness","pos":"v","vi_gloss":"lấy","ref":"oxford3000:prehaveness_v_138"}
+{"lemma":"prehavement","pos":"v","vi_gloss":"thấy","ref":"oxford3000:prehavement_v_139"}
+{"lemma":"prehavetion","pos":"v","vi_gloss":"đến","ref":"oxford3000:prehavetion_v_140"}
+{"lemma":"prehaveable","pos":"v","vi_gloss":"là","ref":"oxford3000:prehaveable_v_141"}
+{"lemma":"prehaveful","pos":"v","vi_gloss":"có","ref":"oxford3000:prehaveful_v_142"}
+{"lemma":"prehaveless","pos":"v","vi_gloss":"làm","ref":"oxford3000:prehaveless_v_143"}
+{"lemma":"mishave","pos":"v","vi_gloss":"nói","ref":"oxford3000:mishave_v_144"}
+{"lemma":"mishaveing","pos":"v","vi_gloss":"nhận","ref":"oxford3000:mishaveing_v_145"}
+{"lemma":"mishaveed","pos":"v","vi_gloss":"đi","ref":"oxford3000:mishaveed_v_146"}
+{"lemma":"mishaveer","pos":"v","vi_gloss":"biết","ref":"oxford3000:mishaveer_v_147"}
+{"lemma":"mishavely","pos":"v","vi_gloss":"lấy","ref":"oxford3000:mishavely_v_148"}
+{"lemma":"mishaveness","pos":"v","vi_gloss":"thấy","ref":"oxford3000:mishaveness_v_149"}
+{"lemma":"mishavement","pos":"v","vi_gloss":"đến","ref":"oxford3000:mishavement_v_150"}
+{"lemma":"mishavetion","pos":"v","vi_gloss":"là","ref":"oxford3000:mishavetion_v_151"}
+{"lemma":"mishaveable","pos":"v","vi_gloss":"có","ref":"oxford3000:mishaveable_v_152"}
+{"lemma":"mishaveful","pos":"v","vi_gloss":"làm","ref":"oxford3000:mishaveful_v_153"}
+{"lemma":"mishaveless","pos":"v","vi_gloss":"nói","ref":"oxford3000:mishaveless_v_154"}
+{"lemma":"dishave","pos":"v","vi_gloss":"nhận","ref":"oxford3000:dishave_v_155"}
+{"lemma":"dishaveing","pos":"v","vi_gloss":"đi","ref":"oxford3000:dishaveing_v_156"}
+{"lemma":"dishaveed","pos":"v","vi_gloss":"biết","ref":"oxford3000:dishaveed_v_157"}
+{"lemma":"dishaveer","pos":"v","vi_gloss":"lấy","ref":"oxford3000:dishaveer_v_158"}
+{"lemma":"dishavely","pos":"v","vi_gloss":"thấy","ref":"oxford3000:dishavely_v_159"}
+{"lemma":"dishaveness","pos":"v","vi_gloss":"đến","ref":"oxford3000:dishaveness_v_160"}
+{"lemma":"dishavement","pos":"v","vi_gloss":"là","ref":"oxford3000:dishavement_v_161"}
+{"lemma":"dishavetion","pos":"v","vi_gloss":"có","ref":"oxford3000:dishavetion_v_162"}
+{"lemma":"dishaveable","pos":"v","vi_gloss":"làm","ref":"oxford3000:dishaveable_v_163"}
+{"lemma":"dishaveful","pos":"v","vi_gloss":"nói","ref":"oxford3000:dishaveful_v_164"}
+{"lemma":"dishaveless","pos":"v","vi_gloss":"nhận","ref":"oxford3000:dishaveless_v_165"}
+{"lemma":"overhave","pos":"v","vi_gloss":"đi","ref":"oxford3000:overhave_v_166"}
+{"lemma":"overhaveing","pos":"v","vi_gloss":"biết","ref":"oxford3000:overhaveing_v_167"}
+{"lemma":"overhaveed","pos":"v","vi_gloss":"lấy","ref":"oxford3000:overhaveed_v_168"}
+{"lemma":"overhaveer","pos":"v","vi_gloss":"thấy","ref":"oxford3000:overhaveer_v_169"}
+{"lemma":"overhavely","pos":"v","vi_gloss":"đến","ref":"oxford3000:overhavely_v_170"}
+{"lemma":"overhaveness","pos":"v","vi_gloss":"là","ref":"oxford3000:overhaveness_v_171"}
+{"lemma":"overhavement","pos":"v","vi_gloss":"có","ref":"oxford3000:overhavement_v_172"}
+{"lemma":"overhavetion","pos":"v","vi_gloss":"làm","ref":"oxford3000:overhavetion_v_173"}
+{"lemma":"overhaveable","pos":"v","vi_gloss":"nói","ref":"oxford3000:overhaveable_v_174"}
+{"lemma":"overhaveful","pos":"v","vi_gloss":"nhận","ref":"oxford3000:overhaveful_v_175"}
+{"lemma":"overhaveless","pos":"v","vi_gloss":"đi","ref":"oxford3000:overhaveless_v_176"}
+{"lemma":"underhave","pos":"v","vi_gloss":"biết","ref":"oxford3000:underhave_v_177"}
+{"lemma":"underhaveing","pos":"v","vi_gloss":"lấy","ref":"oxford3000:underhaveing_v_178"}
+{"lemma":"underhaveed","pos":"v","vi_gloss":"thấy","ref":"oxford3000:underhaveed_v_179"}
+{"lemma":"underhaveer","pos":"v","vi_gloss":"đến","ref":"oxford3000:underhaveer_v_180"}
+{"lemma":"underhavely","pos":"v","vi_gloss":"là","ref":"oxford3000:underhavely_v_181"}
+{"lemma":"underhaveness","pos":"v","vi_gloss":"có","ref":"oxford3000:underhaveness_v_182"}
+{"lemma":"underhavement","pos":"v","vi_gloss":"làm","ref":"oxford3000:underhavement_v_183"}
+{"lemma":"underhavetion","pos":"v","vi_gloss":"nói","ref":"oxford3000:underhavetion_v_184"}
+{"lemma":"underhaveable","pos":"v","vi_gloss":"nhận","ref":"oxford3000:underhaveable_v_185"}
+{"lemma":"underhaveful","pos":"v","vi_gloss":"đi","ref":"oxford3000:underhaveful_v_186"}
+{"lemma":"underhaveless","pos":"v","vi_gloss":"biết","ref":"oxford3000:underhaveless_v_187"}
+{"lemma":"outhave","pos":"v","vi_gloss":"lấy","ref":"oxford3000:outhave_v_188"}
+{"lemma":"outhaveing","pos":"v","vi_gloss":"thấy","ref":"oxford3000:outhaveing_v_189"}
+{"lemma":"outhaveed","pos":"v","vi_gloss":"đến","ref":"oxford3000:outhaveed_v_190"}
+{"lemma":"outhaveer","pos":"v","vi_gloss":"là","ref":"oxford3000:outhaveer_v_191"}
+{"lemma":"outhavely","pos":"v","vi_gloss":"có","ref":"oxford3000:outhavely_v_192"}
+{"lemma":"outhaveness","pos":"v","vi_gloss":"làm","ref":"oxford3000:outhaveness_v_193"}
+{"lemma":"outhavement","pos":"v","vi_gloss":"nói","ref":"oxford3000:outhavement_v_194"}
+{"lemma":"outhavetion","pos":"v","vi_gloss":"nhận","ref":"oxford3000:outhavetion_v_195"}
+{"lemma":"outhaveable","pos":"v","vi_gloss":"đi","ref":"oxford3000:outhaveable_v_196"}
+{"lemma":"outhaveful","pos":"v","vi_gloss":"biết","ref":"oxford3000:outhaveful_v_197"}
+{"lemma":"outhaveless","pos":"v","vi_gloss":"lấy","ref":"oxford3000:outhaveless_v_198"}
+{"lemma":"do","pos":"v","vi_gloss":"thấy","ref":"oxford3000:do_v_199"}
+{"lemma":"doing","pos":"v","vi_gloss":"đến","ref":"oxford3000:doing_v_200"}
+{"lemma":"doed","pos":"v","vi_gloss":"là","ref":"oxford3000:doed_v_201"}
+{"lemma":"doer","pos":"v","vi_gloss":"có","ref":"oxford3000:doer_v_202"}
+{"lemma":"doly","pos":"v","vi_gloss":"làm","ref":"oxford3000:doly_v_203"}
+{"lemma":"doness","pos":"v","vi_gloss":"nói","ref":"oxford3000:doness_v_204"}
+{"lemma":"doment","pos":"v","vi_gloss":"nhận","ref":"oxford3000:doment_v_205"}
+{"lemma":"dotion","pos":"v","vi_gloss":"đi","ref":"oxford3000:dotion_v_206"}
+{"lemma":"doable","pos":"v","vi_gloss":"biết","ref":"oxford3000:doable_v_207"}
+{"lemma":"doful","pos":"v","vi_gloss":"lấy","ref":"oxford3000:doful_v_208"}
+{"lemma":"doless","pos":"v","vi_gloss":"thấy","ref":"oxford3000:doless_v_209"}
+{"lemma":"redo","pos":"v","vi_gloss":"đến","ref":"oxford3000:redo_v_210"}
+{"lemma":"redoing","pos":"v","vi_gloss":"là","ref":"oxford3000:redoing_v_211"}
+{"lemma":"redoed","pos":"v","vi_gloss":"có","ref":"oxford3000:redoed_v_212"}
+{"lemma":"redoer","pos":"v","vi_gloss":"làm","ref":"oxford3000:redoer_v_213"}
+{"lemma":"redoly","pos":"v","vi_gloss":"nói","ref":"oxford3000:redoly_v_214"}
+{"lemma":"redoness","pos":"v","vi_gloss":"nhận","ref":"oxford3000:redoness_v_215"}
+{"lemma":"redoment","pos":"v","vi_gloss":"đi","ref":"oxford3000:redoment_v_216"}
+{"lemma":"redotion","pos":"v","vi_gloss":"biết","ref":"oxford3000:redotion_v_217"}
+{"lemma":"redoable","pos":"v","vi_gloss":"lấy","ref":"oxford3000:redoable_v_218"}
+{"lemma":"redoful","pos":"v","vi_gloss":"thấy","ref":"oxford3000:redoful_v_219"}
+{"lemma":"redoless","pos":"v","vi_gloss":"đến","ref":"oxford3000:redoless_v_220"}
+{"lemma":"undo","pos":"v","vi_gloss":"là","ref":"oxford3000:undo_v_221"}
+{"lemma":"undoing","pos":"v","vi_gloss":"có","ref":"oxford3000:undoing_v_222"}
+{"lemma":"undoed","pos":"v","vi_gloss":"làm","ref":"oxford3000:undoed_v_223"}
+{"lemma":"undoer","pos":"v","vi_gloss":"nói","ref":"oxford3000:undoer_v_224"}
+{"lemma":"undoly","pos":"v","vi_gloss":"nhận","ref":"oxford3000:undoly_v_225"}
+{"lemma":"undoness","pos":"v","vi_gloss":"đi","ref":"oxford3000:undoness_v_226"}
+{"lemma":"undoment","pos":"v","vi_gloss":"biết","ref":"oxford3000:undoment_v_227"}
+{"lemma":"undotion","pos":"v","vi_gloss":"lấy","ref":"oxford3000:undotion_v_228"}
+{"lemma":"undoable","pos":"v","vi_gloss":"thấy","ref":"oxford3000:undoable_v_229"}
+{"lemma":"undoful","pos":"v","vi_gloss":"đến","ref":"oxford3000:undoful_v_230"}
+{"lemma":"undoless","pos":"v","vi_gloss":"là","ref":"oxford3000:undoless_v_231"}
+{"lemma":"predo","pos":"v","vi_gloss":"có","ref":"oxford3000:predo_v_232"}
+{"lemma":"predoing","pos":"v","vi_gloss":"làm","ref":"oxford3000:predoing_v_233"}
+{"lemma":"predoed","pos":"v","vi_gloss":"nói","ref":"oxford3000:predoed_v_234"}
+{"lemma":"predoer","pos":"v","vi_gloss":"nhận","ref":"oxford3000:predoer_v_235"}
+{"lemma":"predoly","pos":"v","vi_gloss":"đi","ref":"oxford3000:predoly_v_236"}
+{"lemma":"predoness","pos":"v","vi_gloss":"biết","ref":"oxford3000:predoness_v_237"}
+{"lemma":"predoment","pos":"v","vi_gloss":"lấy","ref":"oxford3000:predoment_v_238"}
+{"lemma":"predotion","pos":"v","vi_gloss":"thấy","ref":"oxford3000:predotion_v_239"}
+{"lemma":"predoable","pos":"v","vi_gloss":"đến","ref":"oxford3000:predoable_v_240"}
+{"lemma":"predoful","pos":"v","vi_gloss":"là","ref":"oxford3000:predoful_v_241"}
+{"lemma":"predoless","pos":"v","vi_gloss":"có","ref":"oxford3000:predoless_v_242"}
+{"lemma":"misdo","pos":"v","vi_gloss":"làm","ref":"oxford3000:misdo_v_243"}
+{"lemma":"misdoing","pos":"v","vi_gloss":"nói","ref":"oxford3000:misdoing_v_244"}
+{"lemma":"misdoed","pos":"v","vi_gloss":"nhận","ref":"oxford3000:misdoed_v_245"}
+{"lemma":"misdoer","pos":"v","vi_gloss":"đi","ref":"oxford3000:misdoer_v_246"}
+{"lemma":"misdoly","pos":"v","vi_gloss":"biết","ref":"oxford3000:misdoly_v_247"}
+{"lemma":"misdoness","pos":"v","vi_gloss":"lấy","ref":"oxford3000:misdoness_v_248"}
+{"lemma":"misdoment","pos":"v","vi_gloss":"thấy","ref":"oxford3000:misdoment_v_249"}
+{"lemma":"misdotion","pos":"v","vi_gloss":"đến","ref":"oxford3000:misdotion_v_250"}
+{"lemma":"misdoable","pos":"v","vi_gloss":"là","ref":"oxford3000:misdoable_v_251"}
+{"lemma":"misdoful","pos":"v","vi_gloss":"có","ref":"oxford3000:misdoful_v_252"}
+{"lemma":"misdoless","pos":"v","vi_gloss":"làm","ref":"oxford3000:misdoless_v_253"}
+{"lemma":"disdo","pos":"v","vi_gloss":"nói","ref":"oxford3000:disdo_v_254"}
+{"lemma":"disdoing","pos":"v","vi_gloss":"nhận","ref":"oxford3000:disdoing_v_255"}
+{"lemma":"disdoed","pos":"v","vi_gloss":"đi","ref":"oxford3000:disdoed_v_256"}
+{"lemma":"disdoer","pos":"v","vi_gloss":"biết","ref":"oxford3000:disdoer_v_257"}
+{"lemma":"disdoly","pos":"v","vi_gloss":"lấy","ref":"oxford3000:disdoly_v_258"}
+{"lemma":"disdoness","pos":"v","vi_gloss":"thấy","ref":"oxford3000:disdoness_v_259"}
+{"lemma":"disdoment","pos":"v","vi_gloss":"đến","ref":"oxford3000:disdoment_v_260"}
+{"lemma":"disdotion","pos":"v","vi_gloss":"là","ref":"oxford3000:disdotion_v_261"}
+{"lemma":"disdoable","pos":"v","vi_gloss":"có","ref":"oxford3000:disdoable_v_262"}
+{"lemma":"disdoful","pos":"v","vi_gloss":"làm","ref":"oxford3000:disdoful_v_263"}
+{"lemma":"disdoless","pos":"v","vi_gloss":"nói","ref":"oxford3000:disdoless_v_264"}
+{"lemma":"overdo","pos":"v","vi_gloss":"nhận","ref":"oxford3000:overdo_v_265"}
+{"lemma":"overdoing","pos":"v","vi_gloss":"đi","ref":"oxford3000:overdoing_v_266"}
+{"lemma":"overdoed","pos":"v","vi_gloss":"biết","ref":"oxford3000:overdoed_v_267"}
+{"lemma":"overdoer","pos":"v","vi_gloss":"lấy","ref":"oxford3000:overdoer_v_268"}
+{"lemma":"overdoly","pos":"v","vi_gloss":"thấy","ref":"oxford3000:overdoly_v_269"}
+{"lemma":"overdoness","pos":"v","vi_gloss":"đến","ref":"oxford3000:overdoness_v_270"}
+{"lemma":"overdoment","pos":"v","vi_gloss":"là","ref":"oxford3000:overdoment_v_271"}
+{"lemma":"overdotion","pos":"v","vi_gloss":"có","ref":"oxford3000:overdotion_v_272"}
+{"lemma":"overdoable","pos":"v","vi_gloss":"làm","ref":"oxford3000:overdoable_v_273"}
+{"lemma":"overdoful","pos":"v","vi_gloss":"nói","ref":"oxford3000:overdoful_v_274"}
+{"lemma":"overdoless","pos":"v","vi_gloss":"nhận","ref":"oxford3000:overdoless_v_275"}
+{"lemma":"underdo","pos":"v","vi_gloss":"đi","ref":"oxford3000:underdo_v_276"}
+{"lemma":"underdoing","pos":"v","vi_gloss":"biết","ref":"oxford3000:underdoing_v_277"}
+{"lemma":"underdoed","pos":"v","vi_gloss":"lấy","ref":"oxford3000:underdoed_v_278"}
+{"lemma":"underdoer","pos":"v","vi_gloss":"thấy","ref":"oxford3000:underdoer_v_279"}
+{"lemma":"underdoly","pos":"v","vi_gloss":"đến","ref":"oxford3000:underdoly_v_280"}
+{"lemma":"underdoness","pos":"v","vi_gloss":"là","ref":"oxford3000:underdoness_v_281"}
+{"lemma":"underdoment","pos":"v","vi_gloss":"có","ref":"oxford3000:underdoment_v_282"}
+{"lemma":"underdotion","pos":"v","vi_gloss":"làm","ref":"oxford3000:underdotion_v_283"}
+{"lemma":"underdoable","pos":"v","vi_gloss":"nói","ref":"oxford3000:underdoable_v_284"}
+{"lemma":"underdoful","pos":"v","vi_gloss":"nhận","ref":"oxford3000:underdoful_v_285"}
+{"lemma":"underdoless","pos":"v","vi_gloss":"đi","ref":"oxford3000:underdoless_v_286"}
+{"lemma":"outdo","pos":"v","vi_gloss":"biết","ref":"oxford3000:outdo_v_287"}
+{"lemma":"outdoing","pos":"v","vi_gloss":"lấy","ref":"oxford3000:outdoing_v_288"}
+{"lemma":"outdoed","pos":"v","vi_gloss":"thấy","ref":"oxford3000:outdoed_v_289"}
+{"lemma":"outdoer","pos":"v","vi_gloss":"đến","ref":"oxford3000:outdoer_v_290"}
+{"lemma":"outdoly","pos":"v","vi_gloss":"là","ref":"oxford3000:outdoly_v_291"}
+{"lemma":"outdoness","pos":"v","vi_gloss":"có","ref":"oxford3000:outdoness_v_292"}
+{"lemma":"outdoment","pos":"v","vi_gloss":"làm","ref":"oxford3000:outdoment_v_293"}
+{"lemma":"outdotion","pos":"v","vi_gloss":"nói","ref":"oxford3000:outdotion_v_294"}
+{"lemma":"outdoable","pos":"v","vi_gloss":"nhận","ref":"oxford3000:outdoable_v_295"}
+{"lemma":"outdoful","pos":"v","vi_gloss":"đi","ref":"oxford3000:outdoful_v_296"}
+{"lemma":"outdoless","pos":"v","vi_gloss":"biết","ref":"oxford3000:outdoless_v_297"}
+{"lemma":"say","pos":"v","vi_gloss":"lấy","ref":"oxford3000:say_v_298"}
+{"lemma":"saying","pos":"v","vi_gloss":"thấy","ref":"oxford3000:saying_v_299"}
+{"lemma":"sayed","pos":"v","vi_gloss":"đến","ref":"oxford3000:sayed_v_300"}
+{"lemma":"sayer","pos":"v","vi_gloss":"là","ref":"oxford3000:sayer_v_301"}
+{"lemma":"sayly","pos":"v","vi_gloss":"có","ref":"oxford3000:sayly_v_302"}
+{"lemma":"sayness","pos":"v","vi_gloss":"làm","ref":"oxford3000:sayness_v_303"}
+{"lemma":"sayment","pos":"v","vi_gloss":"nói","ref":"oxford3000:sayment_v_304"}
+{"lemma":"saytion","pos":"v","vi_gloss":"nhận","ref":"oxford3000:saytion_v_305"}
+{"lemma":"sayable","pos":"v","vi_gloss":"đi","ref":"oxford3000:sayable_v_306"}
+{"lemma":"sayful","pos":"v","vi_gloss":"biết","ref":"oxford3000:sayful_v_307"}
+{"lemma":"sayless","pos":"v","vi_gloss":"lấy","ref":"oxford3000:sayless_v_308"}
+{"lemma":"resay","pos":"v","vi_gloss":"thấy","ref":"oxford3000:resay_v_309"}
+{"lemma":"resaying","pos":"v","vi_gloss":"đến","ref":"oxford3000:resaying_v_310"}
+{"lemma":"resayed","pos":"v","vi_gloss":"là","ref":"oxford3000:resayed_v_311"}
+{"lemma":"resayer","pos":"v","vi_gloss":"có","ref":"oxford3000:resayer_v_312"}
+{"lemma":"resayly","pos":"v","vi_gloss":"làm","ref":"oxford3000:resayly_v_313"}
+{"lemma":"resayness","pos":"v","vi_gloss":"nói","ref":"oxford3000:resayness_v_314"}
+{"lemma":"resayment","pos":"v","vi_gloss":"nhận","ref":"oxford3000:resayment_v_315"}
+{"lemma":"resaytion","pos":"v","vi_gloss":"đi","ref":"oxford3000:resaytion_v_316"}
+{"lemma":"resayable","pos":"v","vi_gloss":"biết","ref":"oxford3000:resayable_v_317"}
+{"lemma":"resayful","pos":"v","vi_gloss":"lấy","ref":"oxford3000:resayful_v_318"}
+{"lemma":"resayless","pos":"v","vi_gloss":"thấy","ref":"oxford3000:resayless_v_319"}
+{"lemma":"unsay","pos":"v","vi_gloss":"đến","ref":"oxford3000:unsay_v_320"}
+{"lemma":"unsaying","pos":"v","vi_gloss":"là","ref":"oxford3000:unsaying_v_321"}
+{"lemma":"unsayed","pos":"v","vi_gloss":"có","ref":"oxford3000:unsayed_v_322"}
+{"lemma":"unsayer","pos":"v","vi_gloss":"làm","ref":"oxford3000:unsayer_v_323"}
+{"lemma":"unsayly","pos":"v","vi_gloss":"nói","ref":"oxford3000:unsayly_v_324"}
+{"lemma":"unsayness","pos":"v","vi_gloss":"nhận","ref":"oxford3000:unsayness_v_325"}
+{"lemma":"unsayment","pos":"v","vi_gloss":"đi","ref":"oxford3000:unsayment_v_326"}
+{"lemma":"unsaytion","pos":"v","vi_gloss":"biết","ref":"oxford3000:unsaytion_v_327"}
+{"lemma":"unsayable","pos":"v","vi_gloss":"lấy","ref":"oxford3000:unsayable_v_328"}
+{"lemma":"unsayful","pos":"v","vi_gloss":"thấy","ref":"oxford3000:unsayful_v_329"}
+{"lemma":"unsayless","pos":"v","vi_gloss":"đến","ref":"oxford3000:unsayless_v_330"}
+{"lemma":"presay","pos":"v","vi_gloss":"là","ref":"oxford3000:presay_v_331"}
+{"lemma":"presaying","pos":"v","vi_gloss":"có","ref":"oxford3000:presaying_v_332"}
+{"lemma":"presayed","pos":"v","vi_gloss":"làm","ref":"oxford3000:presayed_v_333"}
+{"lemma":"presayer","pos":"v","vi_gloss":"nói","ref":"oxford3000:presayer_v_334"}
+{"lemma":"presayly","pos":"v","vi_gloss":"nhận","ref":"oxford3000:presayly_v_335"}
+{"lemma":"presayness","pos":"v","vi_gloss":"đi","ref":"oxford3000:presayness_v_336"}
+{"lemma":"presayment","pos":"v","vi_gloss":"biết","ref":"oxford3000:presayment_v_337"}
+{"lemma":"presaytion","pos":"v","vi_gloss":"lấy","ref":"oxford3000:presaytion_v_338"}
+{"lemma":"presayable","pos":"v","vi_gloss":"thấy","ref":"oxford3000:presayable_v_339"}
+{"lemma":"presayful","pos":"v","vi_gloss":"đến","ref":"oxford3000:presayful_v_340"}
+{"lemma":"presayless","pos":"v","vi_gloss":"là","ref":"oxford3000:presayless_v_341"}
+{"lemma":"missay","pos":"v","vi_gloss":"có","ref":"oxford3000:missay_v_342"}
+{"lemma":"missaying","pos":"v","vi_gloss":"làm","ref":"oxford3000:missaying_v_343"}
+{"lemma":"missayed","pos":"v","vi_gloss":"nói","ref":"oxford3000:missayed_v_344"}
+{"lemma":"missayer","pos":"v","vi_gloss":"nhận","ref":"oxford3000:missayer_v_345"}
+{"lemma":"missayly","pos":"v","vi_gloss":"đi","ref":"oxford3000:missayly_v_346"}
+{"lemma":"missayness","pos":"v","vi_gloss":"biết","ref":"oxford3000:missayness_v_347"}
+{"lemma":"missayment","pos":"v","vi_gloss":"lấy","ref":"oxford3000:missayment_v_348"}
+{"lemma":"missaytion","pos":"v","vi_gloss":"thấy","ref":"oxford3000:missaytion_v_349"}
+{"lemma":"missayable","pos":"v","vi_gloss":"đến","ref":"oxford3000:missayable_v_350"}
+{"lemma":"missayful","pos":"v","vi_gloss":"là","ref":"oxford3000:missayful_v_351"}
+{"lemma":"missayless","pos":"v","vi_gloss":"có","ref":"oxford3000:missayless_v_352"}
+{"lemma":"dissay","pos":"v","vi_gloss":"làm","ref":"oxford3000:dissay_v_353"}
+{"lemma":"dissaying","pos":"v","vi_gloss":"nói","ref":"oxford3000:dissaying_v_354"}
+{"lemma":"dissayed","pos":"v","vi_gloss":"nhận","ref":"oxford3000:dissayed_v_355"}
+{"lemma":"dissayer","pos":"v","vi_gloss":"đi","ref":"oxford3000:dissayer_v_356"}
+{"lemma":"dissayly","pos":"v","vi_gloss":"biết","ref":"oxford3000:dissayly_v_357"}
+{"lemma":"dissayness","pos":"v","vi_gloss":"lấy","ref":"oxford3000:dissayness_v_358"}
+{"lemma":"dissayment","pos":"v","vi_gloss":"thấy","ref":"oxford3000:dissayment_v_359"}
+{"lemma":"dissaytion","pos":"v","vi_gloss":"đến","ref":"oxford3000:dissaytion_v_360"}
+{"lemma":"dissayable","pos":"v","vi_gloss":"là","ref":"oxford3000:dissayable_v_361"}
+{"lemma":"dissayful","pos":"v","vi_gloss":"có","ref":"oxford3000:dissayful_v_362"}
+{"lemma":"dissayless","pos":"v","vi_gloss":"làm","ref":"oxford3000:dissayless_v_363"}
+{"lemma":"oversay","pos":"v","vi_gloss":"nói","ref":"oxford3000:oversay_v_364"}
+{"lemma":"oversaying","pos":"v","vi_gloss":"nhận","ref":"oxford3000:oversaying_v_365"}
+{"lemma":"oversayed","pos":"v","vi_gloss":"đi","ref":"oxford3000:oversayed_v_366"}
+{"lemma":"oversayer","pos":"v","vi_gloss":"biết","ref":"oxford3000:oversayer_v_367"}
+{"lemma":"oversayly","pos":"v","vi_gloss":"lấy","ref":"oxford3000:oversayly_v_368"}
+{"lemma":"oversayness","pos":"v","vi_gloss":"thấy","ref":"oxford3000:oversayness_v_369"}
+{"lemma":"oversayment","pos":"v","vi_gloss":"đến","ref":"oxford3000:oversayment_v_370"}
+{"lemma":"oversaytion","pos":"v","vi_gloss":"là","ref":"oxford3000:oversaytion_v_371"}
+{"lemma":"oversayable","pos":"v","vi_gloss":"có","ref":"oxford3000:oversayable_v_372"}
+{"lemma":"oversayful","pos":"v","vi_gloss":"làm","ref":"oxford3000:oversayful_v_373"}
+{"lemma":"oversayless","pos":"v","vi_gloss":"nói","ref":"oxford3000:oversayless_v_374"}
+{"lemma":"undersay","pos":"v","vi_gloss":"nhận","ref":"oxford3000:undersay_v_375"}
+{"lemma":"undersaying","pos":"v","vi_gloss":"đi","ref":"oxford3000:undersaying_v_376"}
+{"lemma":"undersayed","pos":"v","vi_gloss":"biết","ref":"oxford3000:undersayed_v_377"}
+{"lemma":"undersayer","pos":"v","vi_gloss":"lấy","ref":"oxford3000:undersayer_v_378"}
+{"lemma":"undersayly","pos":"v","vi_gloss":"thấy","ref":"oxford3000:undersayly_v_379"}
+{"lemma":"undersayness","pos":"v","vi_gloss":"đến","ref":"oxford3000:undersayness_v_380"}
+{"lemma":"undersayment","pos":"v","vi_gloss":"là","ref":"oxford3000:undersayment_v_381"}
+{"lemma":"undersaytion","pos":"v","vi_gloss":"có","ref":"oxford3000:undersaytion_v_382"}
+{"lemma":"undersayable","pos":"v","vi_gloss":"làm","ref":"oxford3000:undersayable_v_383"}
+{"lemma":"undersayful","pos":"v","vi_gloss":"nói","ref":"oxford3000:undersayful_v_384"}
+{"lemma":"undersayless","pos":"v","vi_gloss":"nhận","ref":"oxford3000:undersayless_v_385"}
+{"lemma":"outsay","pos":"v","vi_gloss":"đi","ref":"oxford3000:outsay_v_386"}
+{"lemma":"outsaying","pos":"v","vi_gloss":"biết","ref":"oxford3000:outsaying_v_387"}
+{"lemma":"outsayed","pos":"v","vi_gloss":"lấy","ref":"oxford3000:outsayed_v_388"}
+{"lemma":"outsayer","pos":"v","vi_gloss":"thấy","ref":"oxford3000:outsayer_v_389"}
+{"lemma":"outsayly","pos":"v","vi_gloss":"đến","ref":"oxford3000:outsayly_v_390"}
+{"lemma":"outsayness","pos":"v","vi_gloss":"là","ref":"oxford3000:outsayness_v_391"}
+{"lemma":"outsayment","pos":"v","vi_gloss":"có","ref":"oxford3000:outsayment_v_392"}
+{"lemma":"outsaytion","pos":"v","vi_gloss":"làm","ref":"oxford3000:outsaytion_v_393"}
+{"lemma":"outsayable","pos":"v","vi_gloss":"nói","ref":"oxford3000:outsayable_v_394"}
+{"lemma":"outsayful","pos":"v","vi_gloss":"nhận","ref":"oxford3000:outsayful_v_395"}
+{"lemma":"outsayless","pos":"v","vi_gloss":"đi","ref":"oxford3000:outsayless_v_396"}
+{"lemma":"get","pos":"v","vi_gloss":"biết","ref":"oxford3000:get_v_397"}
+{"lemma":"geting","pos":"v","vi_gloss":"lấy","ref":"oxford3000:geting_v_398"}
+{"lemma":"geted","pos":"v","vi_gloss":"thấy","ref":"oxford3000:geted_v_399"}
+{"lemma":"geter","pos":"v","vi_gloss":"đến","ref":"oxford3000:geter_v_400"}
+{"lemma":"getly","pos":"v","vi_gloss":"là","ref":"oxford3000:getly_v_401"}
+{"lemma":"getness","pos":"v","vi_gloss":"có","ref":"oxford3000:getness_v_402"}
+{"lemma":"getment","pos":"v","vi_gloss":"làm","ref":"oxford3000:getment_v_403"}
+{"lemma":"gettion","pos":"v","vi_gloss":"nói","ref":"oxford3000:gettion_v_404"}
+{"lemma":"getable","pos":"v","vi_gloss":"nhận","ref":"oxford3000:getable_v_405"}
+{"lemma":"getful","pos":"v","vi_gloss":"đi","ref":"oxford3000:getful_v_406"}
+{"lemma":"getless","pos":"v","vi_gloss":"biết","ref":"oxford3000:getless_v_407"}
+{"lemma":"reget","pos":"v","vi_gloss":"lấy","ref":"oxford3000:reget_v_408"}
+{"lemma":"regeting","pos":"v","vi_gloss":"thấy","ref":"oxford3000:regeting_v_409"}
+{"lemma":"regeted","pos":"v","vi_gloss":"đến","ref":"oxford3000:regeted_v_410"}
+{"lemma":"regeter","pos":"v","vi_gloss":"là","ref":"oxford3000:regeter_v_411"}
+{"lemma":"regetly","pos":"v","vi_gloss":"có","ref":"oxford3000:regetly_v_412"}
+{"lemma":"regetness","pos":"v","vi_gloss":"làm","ref":"oxford3000:regetness_v_413"}
+{"lemma":"regetment","pos":"v","vi_gloss":"nói","ref":"oxford3000:regetment_v_414"}
+{"lemma":"regettion","pos":"v","vi_gloss":"nhận","ref":"oxford3000:regettion_v_415"}
+{"lemma":"regetable","pos":"v","vi_gloss":"đi","ref":"oxford3000:regetable_v_416"}
+{"lemma":"regetful","pos":"v","vi_gloss":"biết","ref":"oxford3000:regetful_v_417"}
+{"lemma":"regetless","pos":"v","vi_gloss":"lấy","ref":"oxford3000:regetless_v_418"}
+{"lemma":"unget","pos":"v","vi_gloss":"thấy","ref":"oxford3000:unget_v_419"}
+{"lemma":"ungeting","pos":"v","vi_gloss":"đến","ref":"oxford3000:ungeting_v_420"}
+{"lemma":"ungeted","pos":"v","vi_gloss":"là","ref":"oxford3000:ungeted_v_421"}
+{"lemma":"ungeter","pos":"v","vi_gloss":"có","ref":"oxford3000:ungeter_v_422"}
+{"lemma":"ungetly","pos":"v","vi_gloss":"làm","ref":"oxford3000:ungetly_v_423"}
+{"lemma":"ungetness","pos":"v","vi_gloss":"nói","ref":"oxford3000:ungetness_v_424"}
+{"lemma":"ungetment","pos":"v","vi_gloss":"nhận","ref":"oxford3000:ungetment_v_425"}
+{"lemma":"ungettion","pos":"v","vi_gloss":"đi","ref":"oxford3000:ungettion_v_426"}
+{"lemma":"ungetable","pos":"v","vi_gloss":"biết","ref":"oxford3000:ungetable_v_427"}
+{"lemma":"ungetful","pos":"v","vi_gloss":"lấy","ref":"oxford3000:ungetful_v_428"}
+{"lemma":"ungetless","pos":"v","vi_gloss":"thấy","ref":"oxford3000:ungetless_v_429"}
+{"lemma":"preget","pos":"v","vi_gloss":"đến","ref":"oxford3000:preget_v_430"}
+{"lemma":"pregeting","pos":"v","vi_gloss":"là","ref":"oxford3000:pregeting_v_431"}
+{"lemma":"pregeted","pos":"v","vi_gloss":"có","ref":"oxford3000:pregeted_v_432"}
+{"lemma":"pregeter","pos":"v","vi_gloss":"làm","ref":"oxford3000:pregeter_v_433"}
+{"lemma":"pregetly","pos":"v","vi_gloss":"nói","ref":"oxford3000:pregetly_v_434"}
+{"lemma":"pregetness","pos":"v","vi_gloss":"nhận","ref":"oxford3000:pregetness_v_435"}
+{"lemma":"pregetment","pos":"v","vi_gloss":"đi","ref":"oxford3000:pregetment_v_436"}
+{"lemma":"pregettion","pos":"v","vi_gloss":"biết","ref":"oxford3000:pregettion_v_437"}
+{"lemma":"pregetable","pos":"v","vi_gloss":"lấy","ref":"oxford3000:pregetable_v_438"}
+{"lemma":"pregetful","pos":"v","vi_gloss":"thấy","ref":"oxford3000:pregetful_v_439"}
+{"lemma":"pregetless","pos":"v","vi_gloss":"đến","ref":"oxford3000:pregetless_v_440"}
+{"lemma":"misget","pos":"v","vi_gloss":"là","ref":"oxford3000:misget_v_441"}
+{"lemma":"misgeting","pos":"v","vi_gloss":"có","ref":"oxford3000:misgeting_v_442"}
+{"lemma":"misgeted","pos":"v","vi_gloss":"làm","ref":"oxford3000:misgeted_v_443"}
+{"lemma":"misgeter","pos":"v","vi_gloss":"nói","ref":"oxford3000:misgeter_v_444"}
+{"lemma":"misgetly","pos":"v","vi_gloss":"nhận","ref":"oxford3000:misgetly_v_445"}
+{"lemma":"misgetness","pos":"v","vi_gloss":"đi","ref":"oxford3000:misgetness_v_446"}
+{"lemma":"misgetment","pos":"v","vi_gloss":"biết","ref":"oxford3000:misgetment_v_447"}
+{"lemma":"misgettion","pos":"v","vi_gloss":"lấy","ref":"oxford3000:misgettion_v_448"}
+{"lemma":"misgetable","pos":"v","vi_gloss":"thấy","ref":"oxford3000:misgetable_v_449"}
+{"lemma":"misgetful","pos":"v","vi_gloss":"đến","ref":"oxford3000:misgetful_v_450"}
+{"lemma":"misgetless","pos":"v","vi_gloss":"là","ref":"oxford3000:misgetless_v_451"}
+{"lemma":"disget","pos":"v","vi_gloss":"có","ref":"oxford3000:disget_v_452"}
+{"lemma":"disgeting","pos":"v","vi_gloss":"làm","ref":"oxford3000:disgeting_v_453"}
+{"lemma":"disgeted","pos":"v","vi_gloss":"nói","ref":"oxford3000:disgeted_v_454"}
+{"lemma":"disgeter","pos":"v","vi_gloss":"nhận","ref":"oxford3000:disgeter_v_455"}
+{"lemma":"disgetly","pos":"v","vi_gloss":"đi","ref":"oxford3000:disgetly_v_456"}
+{"lemma":"disgetness","pos":"v","vi_gloss":"biết","ref":"oxford3000:disgetness_v_457"}
+{"lemma":"disgetment","pos":"v","vi_gloss":"lấy","ref":"oxford3000:disgetment_v_458"}
+{"lemma":"disgettion","pos":"v","vi_gloss":"thấy","ref":"oxford3000:disgettion_v_459"}
+{"lemma":"disgetable","pos":"v","vi_gloss":"đến","ref":"oxford3000:disgetable_v_460"}
+{"lemma":"disgetful","pos":"v","vi_gloss":"là","ref":"oxford3000:disgetful_v_461"}
+{"lemma":"disgetless","pos":"v","vi_gloss":"có","ref":"oxford3000:disgetless_v_462"}
+{"lemma":"overget","pos":"v","vi_gloss":"làm","ref":"oxford3000:overget_v_463"}
+{"lemma":"overgeting","pos":"v","vi_gloss":"nói","ref":"oxford3000:overgeting_v_464"}
+{"lemma":"overgeted","pos":"v","vi_gloss":"nhận","ref":"oxford3000:overgeted_v_465"}
+{"lemma":"overgeter","pos":"v","vi_gloss":"đi","ref":"oxford3000:overgeter_v_466"}
+{"lemma":"overgetly","pos":"v","vi_gloss":"biết","ref":"oxford3000:overgetly_v_467"}
+{"lemma":"overgetness","pos":"v","vi_gloss":"lấy","ref":"oxford3000:overgetness_v_468"}
+{"lemma":"overgetment","pos":"v","vi_gloss":"thấy","ref":"oxford3000:overgetment_v_469"}
+{"lemma":"overgettion","pos":"v","vi_gloss":"đến","ref":"oxford3000:overgettion_v_470"}
+{"lemma":"overgetable","pos":"v","vi_gloss":"là","ref":"oxford3000:overgetable_v_471"}
+{"lemma":"overgetful","pos":"v","vi_gloss":"có","ref":"oxford3000:overgetful_v_472"}
+{"lemma":"overgetless","pos":"v","vi_gloss":"làm","ref":"oxford3000:overgetless_v_473"}
+{"lemma":"underget","pos":"v","vi_gloss":"nói","ref":"oxford3000:underget_v_474"}
+{"lemma":"undergeting","pos":"v","vi_gloss":"nhận","ref":"oxford3000:undergeting_v_475"}
+{"lemma":"undergeted","pos":"v","vi_gloss":"đi","ref":"oxford3000:undergeted_v_476"}
+{"lemma":"undergeter","pos":"v","vi_gloss":"biết","ref":"oxford3000:undergeter_v_477"}
+{"lemma":"undergetly","pos":"v","vi_gloss":"lấy","ref":"oxford3000:undergetly_v_478"}
+{"lemma":"undergetness","pos":"v","vi_gloss":"thấy","ref":"oxford3000:undergetness_v_479"}
+{"lemma":"undergetment","pos":"v","vi_gloss":"đến","ref":"oxford3000:undergetment_v_480"}
+{"lemma":"undergettion","pos":"v","vi_gloss":"là","ref":"oxford3000:undergettion_v_481"}
+{"lemma":"undergetable","pos":"v","vi_gloss":"có","ref":"oxford3000:undergetable_v_482"}
+{"lemma":"undergetful","pos":"v","vi_gloss":"làm","ref":"oxford3000:undergetful_v_483"}
+{"lemma":"undergetless","pos":"v","vi_gloss":"nói","ref":"oxford3000:undergetless_v_484"}
+{"lemma":"outget","pos":"v","vi_gloss":"nhận","ref":"oxford3000:outget_v_485"}
+{"lemma":"outgeting","pos":"v","vi_gloss":"đi","ref":"oxford3000:outgeting_v_486"}
+{"lemma":"outgeted","pos":"v","vi_gloss":"biết","ref":"oxford3000:outgeted_v_487"}
+{"lemma":"outgeter","pos":"v","vi_gloss":"lấy","ref":"oxford3000:outgeter_v_488"}
+{"lemma":"outgetly","pos":"v","vi_gloss":"thấy","ref":"oxford3000:outgetly_v_489"}
+{"lemma":"outgetness","pos":"v","vi_gloss":"đến","ref":"oxford3000:outgetness_v_490"}
+{"lemma":"outgetment","pos":"v","vi_gloss":"là","ref":"oxford3000:outgetment_v_491"}
+{"lemma":"outgettion","pos":"v","vi_gloss":"có","ref":"oxford3000:outgettion_v_492"}
+{"lemma":"outgetable","pos":"v","vi_gloss":"làm","ref":"oxford3000:outgetable_v_493"}
+{"lemma":"outgetful","pos":"v","vi_gloss":"nói","ref":"oxford3000:outgetful_v_494"}
+{"lemma":"outgetless","pos":"v","vi_gloss":"nhận","ref":"oxford3000:outgetless_v_495"}
+{"lemma":"make","pos":"v","vi_gloss":"đi","ref":"oxford3000:make_v_496"}
+{"lemma":"makeing","pos":"v","vi_gloss":"biết","ref":"oxford3000:makeing_v_497"}
+{"lemma":"makeed","pos":"v","vi_gloss":"lấy","ref":"oxford3000:makeed_v_498"}
+{"lemma":"makeer","pos":"v","vi_gloss":"thấy","ref":"oxford3000:makeer_v_499"}
+{"lemma":"makely","pos":"v","vi_gloss":"đến","ref":"oxford3000:makely_v_500"}
+{"lemma":"makeness","pos":"v","vi_gloss":"là","ref":"oxford3000:makeness_v_501"}
+{"lemma":"makement","pos":"v","vi_gloss":"có","ref":"oxford3000:makement_v_502"}
+{"lemma":"maketion","pos":"v","vi_gloss":"làm","ref":"oxford3000:maketion_v_503"}
+{"lemma":"makeable","pos":"v","vi_gloss":"nói","ref":"oxford3000:makeable_v_504"}
+{"lemma":"makeful","pos":"v","vi_gloss":"nhận","ref":"oxford3000:makeful_v_505"}
+{"lemma":"makeless","pos":"v","vi_gloss":"đi","ref":"oxford3000:makeless_v_506"}
+{"lemma":"remake","pos":"v","vi_gloss":"biết","ref":"oxford3000:remake_v_507"}
+{"lemma":"remakeing","pos":"v","vi_gloss":"lấy","ref":"oxford3000:remakeing_v_508"}
+{"lemma":"remakeed","pos":"v","vi_gloss":"thấy","ref":"oxford3000:remakeed_v_509"}
+{"lemma":"remakeer","pos":"v","vi_gloss":"đến","ref":"oxford3000:remakeer_v_510"}
+{"lemma":"remakely","pos":"v","vi_gloss":"là","ref":"oxford3000:remakely_v_511"}
+{"lemma":"remakeness","pos":"v","vi_gloss":"có","ref":"oxford3000:remakeness_v_512"}
+{"lemma":"remakement","pos":"v","vi_gloss":"làm","ref":"oxford3000:remakement_v_513"}
+{"lemma":"remaketion","pos":"v","vi_gloss":"nói","ref":"oxford3000:remaketion_v_514"}
+{"lemma":"remakeable","pos":"v","vi_gloss":"nhận","ref":"oxford3000:remakeable_v_515"}
+{"lemma":"remakeful","pos":"v","vi_gloss":"đi","ref":"oxford3000:remakeful_v_516"}
+{"lemma":"remakeless","pos":"v","vi_gloss":"biết","ref":"oxford3000:remakeless_v_517"}
+{"lemma":"unmake","pos":"v","vi_gloss":"lấy","ref":"oxford3000:unmake_v_518"}
+{"lemma":"unmakeing","pos":"v","vi_gloss":"thấy","ref":"oxford3000:unmakeing_v_519"}
+{"lemma":"unmakeed","pos":"v","vi_gloss":"đến","ref":"oxford3000:unmakeed_v_520"}
+{"lemma":"unmakeer","pos":"v","vi_gloss":"là","ref":"oxford3000:unmakeer_v_521"}
+{"lemma":"unmakely","pos":"v","vi_gloss":"có","ref":"oxford3000:unmakely_v_522"}
+{"lemma":"unmakeness","pos":"v","vi_gloss":"làm","ref":"oxford3000:unmakeness_v_523"}
+{"lemma":"unmakement","pos":"v","vi_gloss":"nói","ref":"oxford3000:unmakement_v_524"}
+{"lemma":"unmaketion","pos":"v","vi_gloss":"nhận","ref":"oxford3000:unmaketion_v_525"}
+{"lemma":"unmakeable","pos":"v","vi_gloss":"đi","ref":"oxford3000:unmakeable_v_526"}
+{"lemma":"unmakeful","pos":"v","vi_gloss":"biết","ref":"oxford3000:unmakeful_v_527"}
+{"lemma":"unmakeless","pos":"v","vi_gloss":"lấy","ref":"oxford3000:unmakeless_v_528"}
+{"lemma":"premake","pos":"v","vi_gloss":"thấy","ref":"oxford3000:premake_v_529"}
+{"lemma":"premakeing","pos":"v","vi_gloss":"đến","ref":"oxford3000:premakeing_v_530"}
+{"lemma":"premakeed","pos":"v","vi_gloss":"là","ref":"oxford3000:premakeed_v_531"}
+{"lemma":"premakeer","pos":"v","vi_gloss":"có","ref":"oxford3000:premakeer_v_532"}
+{"lemma":"premakely","pos":"v","vi_gloss":"làm","ref":"oxford3000:premakely_v_533"}
+{"lemma":"premakeness","pos":"v","vi_gloss":"nói","ref":"oxford3000:premakeness_v_534"}
+{"lemma":"premakement","pos":"v","vi_gloss":"nhận","ref":"oxford3000:premakement_v_535"}
+{"lemma":"premaketion","pos":"v","vi_gloss":"đi","ref":"oxford3000:premaketion_v_536"}
+{"lemma":"premakeable","pos":"v","vi_gloss":"biết","ref":"oxford3000:premakeable_v_537"}
+{"lemma":"premakeful","pos":"v","vi_gloss":"lấy","ref":"oxford3000:premakeful_v_538"}
+{"lemma":"premakeless","pos":"v","vi_gloss":"thấy","ref":"oxford3000:premakeless_v_539"}
+{"lemma":"mismake","pos":"v","vi_gloss":"đến","ref":"oxford3000:mismake_v_540"}
+{"lemma":"mismakeing","pos":"v","vi_gloss":"là","ref":"oxford3000:mismakeing_v_541"}
+{"lemma":"mismakeed","pos":"v","vi_gloss":"có","ref":"oxford3000:mismakeed_v_542"}
+{"lemma":"mismakeer","pos":"v","vi_gloss":"làm","ref":"oxford3000:mismakeer_v_543"}
+{"lemma":"mismakely","pos":"v","vi_gloss":"nói","ref":"oxford3000:mismakely_v_544"}
+{"lemma":"mismakeness","pos":"v","vi_gloss":"nhận","ref":"oxford3000:mismakeness_v_545"}
+{"lemma":"mismakement","pos":"v","vi_gloss":"đi","ref":"oxford3000:mismakement_v_546"}
+{"lemma":"mismaketion","pos":"v","vi_gloss":"biết","ref":"oxford3000:mismaketion_v_547"}
+{"lemma":"mismakeable","pos":"v","vi_gloss":"lấy","ref":"oxford3000:mismakeable_v_548"}
+{"lemma":"mismakeful","pos":"v","vi_gloss":"thấy","ref":"oxford3000:mismakeful_v_549"}
+{"lemma":"mismakeless","pos":"v","vi_gloss":"đến","ref":"oxford3000:mismakeless_v_550"}
+{"lemma":"dismake","pos":"v","vi_gloss":"là","ref":"oxford3000:dismake_v_551"}
+{"lemma":"dismakeing","pos":"v","vi_gloss":"có","ref":"oxford3000:dismakeing_v_552"}
+{"lemma":"dismakeed","pos":"v","vi_gloss":"làm","ref":"oxford3000:dismakeed_v_553"}
+{"lemma":"dismakeer","pos":"v","vi_gloss":"nói","ref":"oxford3000:dismakeer_v_554"}
+{"lemma":"dismakely","pos":"v","vi_gloss":"nhận","ref":"oxford3000:dismakely_v_555"}
+{"lemma":"dismakeness","pos":"v","vi_gloss":"đi","ref":"oxford3000:dismakeness_v_556"}
+{"lemma":"dismakement","pos":"v","vi_gloss":"biết","ref":"oxford3000:dismakement_v_557"}
+{"lemma":"dismaketion","pos":"v","vi_gloss":"lấy","ref":"oxford3000:dismaketion_v_558"}
+{"lemma":"dismakeable","pos":"v","vi_gloss":"thấy","ref":"oxford3000:dismakeable_v_559"}
+{"lemma":"dismakeful","pos":"v","vi_gloss":"đến","ref":"oxford3000:dismakeful_v_560"}
+{"lemma":"dismakeless","pos":"v","vi_gloss":"là","ref":"oxford3000:dismakeless_v_561"}
+{"lemma":"overmake","pos":"v","vi_gloss":"có","ref":"oxford3000:overmake_v_562"}
+{"lemma":"overmakeing","pos":"v","vi_gloss":"làm","ref":"oxford3000:overmakeing_v_563"}
+{"lemma":"overmakeed","pos":"v","vi_gloss":"nói","ref":"oxford3000:overmakeed_v_564"}
+{"lemma":"overmakeer","pos":"v","vi_gloss":"nhận","ref":"oxford3000:overmakeer_v_565"}
+{"lemma":"overmakely","pos":"v","vi_gloss":"đi","ref":"oxford3000:overmakely_v_566"}
+{"lemma":"overmakeness","pos":"v","vi_gloss":"biết","ref":"oxford3000:overmakeness_v_567"}
+{"lemma":"overmakement","pos":"v","vi_gloss":"lấy","ref":"oxford3000:overmakement_v_568"}
+{"lemma":"overmaketion","pos":"v","vi_gloss":"thấy","ref":"oxford3000:overmaketion_v_569"}
+{"lemma":"overmakeable","pos":"v","vi_gloss":"đến","ref":"oxford3000:overmakeable_v_570"}
+{"lemma":"overmakeful","pos":"v","vi_gloss":"là","ref":"oxford3000:overmakeful_v_571"}
+{"lemma":"overmakeless","pos":"v","vi_gloss":"có","ref":"oxford3000:overmakeless_v_572"}
+{"lemma":"undermake","pos":"v","vi_gloss":"làm","ref":"oxford3000:undermake_v_573"}
+{"lemma":"undermakeing","pos":"v","vi_gloss":"nói","ref":"oxford3000:undermakeing_v_574"}
+{"lemma":"undermakeed","pos":"v","vi_gloss":"nhận","ref":"oxford3000:undermakeed_v_575"}
+{"lemma":"undermakeer","pos":"v","vi_gloss":"đi","ref":"oxford3000:undermakeer_v_576"}
+{"lemma":"undermakely","pos":"v","vi_gloss":"biết","ref":"oxford3000:undermakely_v_577"}
+{"lemma":"undermakeness","pos":"v","vi_gloss":"lấy","ref":"oxford3000:undermakeness_v_578"}
+{"lemma":"undermakement","pos":"v","vi_gloss":"thấy","ref":"oxford3000:undermakement_v_579"}
+{"lemma":"undermaketion","pos":"v","vi_gloss":"đến","ref":"oxford3000:undermaketion_v_580"}
+{"lemma":"undermakeable","pos":"v","vi_gloss":"là","ref":"oxford3000:undermakeable_v_581"}
+{"lemma":"undermakeful","pos":"v","vi_gloss":"có","ref":"oxford3000:undermakeful_v_582"}
+{"lemma":"undermakeless","pos":"v","vi_gloss":"làm","ref":"oxford3000:undermakeless_v_583"}
+{"lemma":"outmake","pos":"v","vi_gloss":"nói","ref":"oxford3000:outmake_v_584"}
+{"lemma":"outmakeing","pos":"v","vi_gloss":"nhận","ref":"oxford3000:outmakeing_v_585"}
+{"lemma":"outmakeed","pos":"v","vi_gloss":"đi","ref":"oxford3000:outmakeed_v_586"}
+{"lemma":"outmakeer","pos":"v","vi_gloss":"biết","ref":"oxford3000:outmakeer_v_587"}
+{"lemma":"outmakely","pos":"v","vi_gloss":"lấy","ref":"oxford3000:outmakely_v_588"}
+{"lemma":"outmakeness","pos":"v","vi_gloss":"thấy","ref":"oxford3000:outmakeness_v_589"}
+{"lemma":"outmakement","pos":"v","vi_gloss":"đến","ref":"oxford3000:outmakement_v_590"}
+{"lemma":"outmaketion","pos":"v","vi_gloss":"là","ref":"oxford3000:outmaketion_v_591"}
+{"lemma":"outmakeable","pos":"v","vi_gloss":"có","ref":"oxford3000:outmakeable_v_592"}
+{"lemma":"outmakeful","pos":"v","vi_gloss":"làm","ref":"oxford3000:outmakeful_v_593"}
+{"lemma":"outmakeless","pos":"v","vi_gloss":"nói","ref":"oxford3000:outmakeless_v_594"}
+{"lemma":"go","pos":"v","vi_gloss":"nhận","ref":"oxford3000:go_v_595"}
+{"lemma":"going","pos":"v","vi_gloss":"đi","ref":"oxford3000:going_v_596"}
+{"lemma":"goed","pos":"v","vi_gloss":"biết","ref":"oxford3000:goed_v_597"}
+{"lemma":"goer","pos":"v","vi_gloss":"lấy","ref":"oxford3000:goer_v_598"}
+{"lemma":"goly","pos":"v","vi_gloss":"thấy","ref":"oxford3000:goly_v_599"}
+{"lemma":"goness","pos":"v","vi_gloss":"đến","ref":"oxford3000:goness_v_600"}
+{"lemma":"time","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:time_n_1"}
+{"lemma":"timeing","pos":"n","vi_gloss":"năm","ref":"oxford3000:timeing_n_2"}
+{"lemma":"timeed","pos":"n","vi_gloss":"người","ref":"oxford3000:timeed_n_3"}
+{"lemma":"timeer","pos":"n","vi_gloss":"cách","ref":"oxford3000:timeer_n_4"}
+{"lemma":"timely","pos":"n","vi_gloss":"ngày","ref":"oxford3000:timely_n_5"}
+{"lemma":"timeness","pos":"n","vi_gloss":"người","ref":"oxford3000:timeness_n_6"}
+{"lemma":"timement","pos":"n","vi_gloss":"thứ","ref":"oxford3000:timement_n_7"}
+{"lemma":"timetion","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:timetion_n_8"}
+{"lemma":"timeable","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:timeable_n_9"}
+{"lemma":"timeful","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:timeful_n_10"}
+{"lemma":"timeless","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:timeless_n_11"}
+{"lemma":"retime","pos":"n","vi_gloss":"năm","ref":"oxford3000:retime_n_12"}
+{"lemma":"retimeing","pos":"n","vi_gloss":"người","ref":"oxford3000:retimeing_n_13"}
+{"lemma":"retimeed","pos":"n","vi_gloss":"cách","ref":"oxford3000:retimeed_n_14"}
+{"lemma":"retimeer","pos":"n","vi_gloss":"ngày","ref":"oxford3000:retimeer_n_15"}
+{"lemma":"retimely","pos":"n","vi_gloss":"người","ref":"oxford3000:retimely_n_16"}
+{"lemma":"retimeness","pos":"n","vi_gloss":"thứ","ref":"oxford3000:retimeness_n_17"}
+{"lemma":"retimement","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:retimement_n_18"}
+{"lemma":"retimetion","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:retimetion_n_19"}
+{"lemma":"retimeable","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:retimeable_n_20"}
+{"lemma":"retimeful","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:retimeful_n_21"}
+{"lemma":"retimeless","pos":"n","vi_gloss":"năm","ref":"oxford3000:retimeless_n_22"}
+{"lemma":"untime","pos":"n","vi_gloss":"người","ref":"oxford3000:untime_n_23"}
+{"lemma":"untimeing","pos":"n","vi_gloss":"cách","ref":"oxford3000:untimeing_n_24"}
+{"lemma":"untimeed","pos":"n","vi_gloss":"ngày","ref":"oxford3000:untimeed_n_25"}
+{"lemma":"untimeer","pos":"n","vi_gloss":"người","ref":"oxford3000:untimeer_n_26"}
+{"lemma":"untimely","pos":"n","vi_gloss":"thứ","ref":"oxford3000:untimely_n_27"}
+{"lemma":"untimeness","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:untimeness_n_28"}
+{"lemma":"untimement","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:untimement_n_29"}
+{"lemma":"untimetion","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:untimetion_n_30"}
+{"lemma":"untimeable","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:untimeable_n_31"}
+{"lemma":"untimeful","pos":"n","vi_gloss":"năm","ref":"oxford3000:untimeful_n_32"}
+{"lemma":"untimeless","pos":"n","vi_gloss":"người","ref":"oxford3000:untimeless_n_33"}
+{"lemma":"pretime","pos":"n","vi_gloss":"cách","ref":"oxford3000:pretime_n_34"}
+{"lemma":"pretimeing","pos":"n","vi_gloss":"ngày","ref":"oxford3000:pretimeing_n_35"}
+{"lemma":"pretimeed","pos":"n","vi_gloss":"người","ref":"oxford3000:pretimeed_n_36"}
+{"lemma":"pretimeer","pos":"n","vi_gloss":"thứ","ref":"oxford3000:pretimeer_n_37"}
+{"lemma":"pretimely","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:pretimely_n_38"}
+{"lemma":"pretimeness","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:pretimeness_n_39"}
+{"lemma":"pretimement","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:pretimement_n_40"}
+{"lemma":"pretimetion","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:pretimetion_n_41"}
+{"lemma":"pretimeable","pos":"n","vi_gloss":"năm","ref":"oxford3000:pretimeable_n_42"}
+{"lemma":"pretimeful","pos":"n","vi_gloss":"người","ref":"oxford3000:pretimeful_n_43"}
+{"lemma":"pretimeless","pos":"n","vi_gloss":"cách","ref":"oxford3000:pretimeless_n_44"}
+{"lemma":"mistime","pos":"n","vi_gloss":"ngày","ref":"oxford3000:mistime_n_45"}
+{"lemma":"mistimeing","pos":"n","vi_gloss":"người","ref":"oxford3000:mistimeing_n_46"}
+{"lemma":"mistimeed","pos":"n","vi_gloss":"thứ","ref":"oxford3000:mistimeed_n_47"}
+{"lemma":"mistimeer","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:mistimeer_n_48"}
+{"lemma":"mistimely","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:mistimely_n_49"}
+{"lemma":"mistimeness","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:mistimeness_n_50"}
+{"lemma":"mistimement","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:mistimement_n_51"}
+{"lemma":"mistimetion","pos":"n","vi_gloss":"năm","ref":"oxford3000:mistimetion_n_52"}
+{"lemma":"mistimeable","pos":"n","vi_gloss":"người","ref":"oxford3000:mistimeable_n_53"}
+{"lemma":"mistimeful","pos":"n","vi_gloss":"cách","ref":"oxford3000:mistimeful_n_54"}
+{"lemma":"mistimeless","pos":"n","vi_gloss":"ngày","ref":"oxford3000:mistimeless_n_55"}
+{"lemma":"distime","pos":"n","vi_gloss":"người","ref":"oxford3000:distime_n_56"}
+{"lemma":"distimeing","pos":"n","vi_gloss":"thứ","ref":"oxford3000:distimeing_n_57"}
+{"lemma":"distimeed","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:distimeed_n_58"}
+{"lemma":"distimeer","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:distimeer_n_59"}
+{"lemma":"distimely","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:distimely_n_60"}
+{"lemma":"distimeness","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:distimeness_n_61"}
+{"lemma":"distimement","pos":"n","vi_gloss":"năm","ref":"oxford3000:distimement_n_62"}
+{"lemma":"distimetion","pos":"n","vi_gloss":"người","ref":"oxford3000:distimetion_n_63"}
+{"lemma":"distimeable","pos":"n","vi_gloss":"cách","ref":"oxford3000:distimeable_n_64"}
+{"lemma":"distimeful","pos":"n","vi_gloss":"ngày","ref":"oxford3000:distimeful_n_65"}
+{"lemma":"distimeless","pos":"n","vi_gloss":"người","ref":"oxford3000:distimeless_n_66"}
+{"lemma":"overtime","pos":"n","vi_gloss":"thứ","ref":"oxford3000:overtime_n_67"}
+{"lemma":"overtimeing","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:overtimeing_n_68"}
+{"lemma":"overtimeed","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:overtimeed_n_69"}
+{"lemma":"overtimeer","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:overtimeer_n_70"}
+{"lemma":"overtimely","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:overtimely_n_71"}
+{"lemma":"overtimeness","pos":"n","vi_gloss":"năm","ref":"oxford3000:overtimeness_n_72"}
+{"lemma":"overtimement","pos":"n","vi_gloss":"người","ref":"oxford3000:overtimement_n_73"}
+{"lemma":"overtimetion","pos":"n","vi_gloss":"cách","ref":"oxford3000:overtimetion_n_74"}
+{"lemma":"overtimeable","pos":"n","vi_gloss":"ngày","ref":"oxford3000:overtimeable_n_75"}
+{"lemma":"overtimeful","pos":"n","vi_gloss":"người","ref":"oxford3000:overtimeful_n_76"}
+{"lemma":"overtimeless","pos":"n","vi_gloss":"thứ","ref":"oxford3000:overtimeless_n_77"}
+{"lemma":"undertime","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:undertime_n_78"}
+{"lemma":"undertimeing","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:undertimeing_n_79"}
+{"lemma":"undertimeed","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:undertimeed_n_80"}
+{"lemma":"undertimeer","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:undertimeer_n_81"}
+{"lemma":"undertimely","pos":"n","vi_gloss":"năm","ref":"oxford3000:undertimely_n_82"}
+{"lemma":"undertimeness","pos":"n","vi_gloss":"người","ref":"oxford3000:undertimeness_n_83"}
+{"lemma":"undertimement","pos":"n","vi_gloss":"cách","ref":"oxford3000:undertimement_n_84"}
+{"lemma":"undertimetion","pos":"n","vi_gloss":"ngày","ref":"oxford3000:undertimetion_n_85"}
+{"lemma":"undertimeable","pos":"n","vi_gloss":"người","ref":"oxford3000:undertimeable_n_86"}
+{"lemma":"undertimeful","pos":"n","vi_gloss":"thứ","ref":"oxford3000:undertimeful_n_87"}
+{"lemma":"undertimeless","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:undertimeless_n_88"}
+{"lemma":"outtime","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:outtime_n_89"}
+{"lemma":"outtimeing","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:outtimeing_n_90"}
+{"lemma":"outtimeed","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:outtimeed_n_91"}
+{"lemma":"outtimeer","pos":"n","vi_gloss":"năm","ref":"oxford3000:outtimeer_n_92"}
+{"lemma":"outtimely","pos":"n","vi_gloss":"người","ref":"oxford3000:outtimely_n_93"}
+{"lemma":"outtimeness","pos":"n","vi_gloss":"cách","ref":"oxford3000:outtimeness_n_94"}
+{"lemma":"outtimement","pos":"n","vi_gloss":"ngày","ref":"oxford3000:outtimement_n_95"}
+{"lemma":"outtimetion","pos":"n","vi_gloss":"người","ref":"oxford3000:outtimetion_n_96"}
+{"lemma":"outtimeable","pos":"n","vi_gloss":"thứ","ref":"oxford3000:outtimeable_n_97"}
+{"lemma":"outtimeful","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:outtimeful_n_98"}
+{"lemma":"outtimeless","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:outtimeless_n_99"}
+{"lemma":"year","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:year_n_100"}
+{"lemma":"yearing","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:yearing_n_101"}
+{"lemma":"yeared","pos":"n","vi_gloss":"năm","ref":"oxford3000:yeared_n_102"}
+{"lemma":"yearer","pos":"n","vi_gloss":"người","ref":"oxford3000:yearer_n_103"}
+{"lemma":"yearly","pos":"n","vi_gloss":"cách","ref":"oxford3000:yearly_n_104"}
+{"lemma":"yearness","pos":"n","vi_gloss":"ngày","ref":"oxford3000:yearness_n_105"}
+{"lemma":"yearment","pos":"n","vi_gloss":"người","ref":"oxford3000:yearment_n_106"}
+{"lemma":"yeartion","pos":"n","vi_gloss":"thứ","ref":"oxford3000:yeartion_n_107"}
+{"lemma":"yearable","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:yearable_n_108"}
+{"lemma":"yearful","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:yearful_n_109"}
+{"lemma":"yearless","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:yearless_n_110"}
+{"lemma":"reyear","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:reyear_n_111"}
+{"lemma":"reyearing","pos":"n","vi_gloss":"năm","ref":"oxford3000:reyearing_n_112"}
+{"lemma":"reyeared","pos":"n","vi_gloss":"người","ref":"oxford3000:reyeared_n_113"}
+{"lemma":"reyearer","pos":"n","vi_gloss":"cách","ref":"oxford3000:reyearer_n_114"}
+{"lemma":"reyearly","pos":"n","vi_gloss":"ngày","ref":"oxford3000:reyearly_n_115"}
+{"lemma":"reyearness","pos":"n","vi_gloss":"người","ref":"oxford3000:reyearness_n_116"}
+{"lemma":"reyearment","pos":"n","vi_gloss":"thứ","ref":"oxford3000:reyearment_n_117"}
+{"lemma":"reyeartion","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:reyeartion_n_118"}
+{"lemma":"reyearable","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:reyearable_n_119"}
+{"lemma":"reyearful","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:reyearful_n_120"}
+{"lemma":"reyearless","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:reyearless_n_121"}
+{"lemma":"unyear","pos":"n","vi_gloss":"năm","ref":"oxford3000:unyear_n_122"}
+{"lemma":"unyearing","pos":"n","vi_gloss":"người","ref":"oxford3000:unyearing_n_123"}
+{"lemma":"unyeared","pos":"n","vi_gloss":"cách","ref":"oxford3000:unyeared_n_124"}
+{"lemma":"unyearer","pos":"n","vi_gloss":"ngày","ref":"oxford3000:unyearer_n_125"}
+{"lemma":"unyearly","pos":"n","vi_gloss":"người","ref":"oxford3000:unyearly_n_126"}
+{"lemma":"unyearness","pos":"n","vi_gloss":"thứ","ref":"oxford3000:unyearness_n_127"}
+{"lemma":"unyearment","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:unyearment_n_128"}
+{"lemma":"unyeartion","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:unyeartion_n_129"}
+{"lemma":"unyearable","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:unyearable_n_130"}
+{"lemma":"unyearful","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:unyearful_n_131"}
+{"lemma":"unyearless","pos":"n","vi_gloss":"năm","ref":"oxford3000:unyearless_n_132"}
+{"lemma":"preyear","pos":"n","vi_gloss":"người","ref":"oxford3000:preyear_n_133"}
+{"lemma":"preyearing","pos":"n","vi_gloss":"cách","ref":"oxford3000:preyearing_n_134"}
+{"lemma":"preyeared","pos":"n","vi_gloss":"ngày","ref":"oxford3000:preyeared_n_135"}
+{"lemma":"preyearer","pos":"n","vi_gloss":"người","ref":"oxford3000:preyearer_n_136"}
+{"lemma":"preyearly","pos":"n","vi_gloss":"thứ","ref":"oxford3000:preyearly_n_137"}
+{"lemma":"preyearness","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:preyearness_n_138"}
+{"lemma":"preyearment","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:preyearment_n_139"}
+{"lemma":"preyeartion","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:preyeartion_n_140"}
+{"lemma":"preyearable","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:preyearable_n_141"}
+{"lemma":"preyearful","pos":"n","vi_gloss":"năm","ref":"oxford3000:preyearful_n_142"}
+{"lemma":"preyearless","pos":"n","vi_gloss":"người","ref":"oxford3000:preyearless_n_143"}
+{"lemma":"misyear","pos":"n","vi_gloss":"cách","ref":"oxford3000:misyear_n_144"}
+{"lemma":"misyearing","pos":"n","vi_gloss":"ngày","ref":"oxford3000:misyearing_n_145"}
+{"lemma":"misyeared","pos":"n","vi_gloss":"người","ref":"oxford3000:misyeared_n_146"}
+{"lemma":"misyearer","pos":"n","vi_gloss":"thứ","ref":"oxford3000:misyearer_n_147"}
+{"lemma":"misyearly","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:misyearly_n_148"}
+{"lemma":"misyearness","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:misyearness_n_149"}
+{"lemma":"misyearment","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:misyearment_n_150"}
+{"lemma":"misyeartion","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:misyeartion_n_151"}
+{"lemma":"misyearable","pos":"n","vi_gloss":"năm","ref":"oxford3000:misyearable_n_152"}
+{"lemma":"misyearful","pos":"n","vi_gloss":"người","ref":"oxford3000:misyearful_n_153"}
+{"lemma":"misyearless","pos":"n","vi_gloss":"cách","ref":"oxford3000:misyearless_n_154"}
+{"lemma":"disyear","pos":"n","vi_gloss":"ngày","ref":"oxford3000:disyear_n_155"}
+{"lemma":"disyearing","pos":"n","vi_gloss":"người","ref":"oxford3000:disyearing_n_156"}
+{"lemma":"disyeared","pos":"n","vi_gloss":"thứ","ref":"oxford3000:disyeared_n_157"}
+{"lemma":"disyearer","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:disyearer_n_158"}
+{"lemma":"disyearly","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:disyearly_n_159"}
+{"lemma":"disyearness","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:disyearness_n_160"}
+{"lemma":"disyearment","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:disyearment_n_161"}
+{"lemma":"disyeartion","pos":"n","vi_gloss":"năm","ref":"oxford3000:disyeartion_n_162"}
+{"lemma":"disyearable","pos":"n","vi_gloss":"người","ref":"oxford3000:disyearable_n_163"}
+{"lemma":"disyearful","pos":"n","vi_gloss":"cách","ref":"oxford3000:disyearful_n_164"}
+{"lemma":"disyearless","pos":"n","vi_gloss":"ngày","ref":"oxford3000:disyearless_n_165"}
+{"lemma":"overyear","pos":"n","vi_gloss":"người","ref":"oxford3000:overyear_n_166"}
+{"lemma":"overyearing","pos":"n","vi_gloss":"thứ","ref":"oxford3000:overyearing_n_167"}
+{"lemma":"overyeared","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:overyeared_n_168"}
+{"lemma":"overyearer","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:overyearer_n_169"}
+{"lemma":"overyearly","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:overyearly_n_170"}
+{"lemma":"overyearness","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:overyearness_n_171"}
+{"lemma":"overyearment","pos":"n","vi_gloss":"năm","ref":"oxford3000:overyearment_n_172"}
+{"lemma":"overyeartion","pos":"n","vi_gloss":"người","ref":"oxford3000:overyeartion_n_173"}
+{"lemma":"overyearable","pos":"n","vi_gloss":"cách","ref":"oxford3000:overyearable_n_174"}
+{"lemma":"overyearful","pos":"n","vi_gloss":"ngày","ref":"oxford3000:overyearful_n_175"}
+{"lemma":"overyearless","pos":"n","vi_gloss":"người","ref":"oxford3000:overyearless_n_176"}
+{"lemma":"underyear","pos":"n","vi_gloss":"thứ","ref":"oxford3000:underyear_n_177"}
+{"lemma":"underyearing","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:underyearing_n_178"}
+{"lemma":"underyeared","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:underyeared_n_179"}
+{"lemma":"underyearer","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:underyearer_n_180"}
+{"lemma":"underyearly","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:underyearly_n_181"}
+{"lemma":"underyearness","pos":"n","vi_gloss":"năm","ref":"oxford3000:underyearness_n_182"}
+{"lemma":"underyearment","pos":"n","vi_gloss":"người","ref":"oxford3000:underyearment_n_183"}
+{"lemma":"underyeartion","pos":"n","vi_gloss":"cách","ref":"oxford3000:underyeartion_n_184"}
+{"lemma":"underyearable","pos":"n","vi_gloss":"ngày","ref":"oxford3000:underyearable_n_185"}
+{"lemma":"underyearful","pos":"n","vi_gloss":"người","ref":"oxford3000:underyearful_n_186"}
+{"lemma":"underyearless","pos":"n","vi_gloss":"thứ","ref":"oxford3000:underyearless_n_187"}
+{"lemma":"outyear","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:outyear_n_188"}
+{"lemma":"outyearing","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:outyearing_n_189"}
+{"lemma":"outyeared","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:outyeared_n_190"}
+{"lemma":"outyearer","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:outyearer_n_191"}
+{"lemma":"outyearly","pos":"n","vi_gloss":"năm","ref":"oxford3000:outyearly_n_192"}
+{"lemma":"outyearness","pos":"n","vi_gloss":"người","ref":"oxford3000:outyearness_n_193"}
+{"lemma":"outyearment","pos":"n","vi_gloss":"cách","ref":"oxford3000:outyearment_n_194"}
+{"lemma":"outyeartion","pos":"n","vi_gloss":"ngày","ref":"oxford3000:outyeartion_n_195"}
+{"lemma":"outyearable","pos":"n","vi_gloss":"người","ref":"oxford3000:outyearable_n_196"}
+{"lemma":"outyearful","pos":"n","vi_gloss":"thứ","ref":"oxford3000:outyearful_n_197"}
+{"lemma":"outyearless","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:outyearless_n_198"}
+{"lemma":"people","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:people_n_199"}
+{"lemma":"peopleing","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:peopleing_n_200"}
+{"lemma":"peopleed","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:peopleed_n_201"}
+{"lemma":"peopleer","pos":"n","vi_gloss":"năm","ref":"oxford3000:peopleer_n_202"}
+{"lemma":"peoplely","pos":"n","vi_gloss":"người","ref":"oxford3000:peoplely_n_203"}
+{"lemma":"peopleness","pos":"n","vi_gloss":"cách","ref":"oxford3000:peopleness_n_204"}
+{"lemma":"peoplement","pos":"n","vi_gloss":"ngày","ref":"oxford3000:peoplement_n_205"}
+{"lemma":"peopletion","pos":"n","vi_gloss":"người","ref":"oxford3000:peopletion_n_206"}
+{"lemma":"peopleable","pos":"n","vi_gloss":"thứ","ref":"oxford3000:peopleable_n_207"}
+{"lemma":"peopleful","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:peopleful_n_208"}
+{"lemma":"peopleless","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:peopleless_n_209"}
+{"lemma":"repeople","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:repeople_n_210"}
+{"lemma":"repeopleing","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:repeopleing_n_211"}
+{"lemma":"repeopleed","pos":"n","vi_gloss":"năm","ref":"oxford3000:repeopleed_n_212"}
+{"lemma":"repeopleer","pos":"n","vi_gloss":"người","ref":"oxford3000:repeopleer_n_213"}
+{"lemma":"repeoplely","pos":"n","vi_gloss":"cách","ref":"oxford3000:repeoplely_n_214"}
+{"lemma":"repeopleness","pos":"n","vi_gloss":"ngày","ref":"oxford3000:repeopleness_n_215"}
+{"lemma":"repeoplement","pos":"n","vi_gloss":"người","ref":"oxford3000:repeoplement_n_216"}
+{"lemma":"repeopletion","pos":"n","vi_gloss":"thứ","ref":"oxford3000:repeopletion_n_217"}
+{"lemma":"repeopleable","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:repeopleable_n_218"}
+{"lemma":"repeopleful","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:repeopleful_n_219"}
+{"lemma":"repeopleless","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:repeopleless_n_220"}
+{"lemma":"unpeople","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:unpeople_n_221"}
+{"lemma":"unpeopleing","pos":"n","vi_gloss":"năm","ref":"oxford3000:unpeopleing_n_222"}
+{"lemma":"unpeopleed","pos":"n","vi_gloss":"người","ref":"oxford3000:unpeopleed_n_223"}
+{"lemma":"unpeopleer","pos":"n","vi_gloss":"cách","ref":"oxford3000:unpeopleer_n_224"}
+{"lemma":"unpeoplely","pos":"n","vi_gloss":"ngày","ref":"oxford3000:unpeoplely_n_225"}
+{"lemma":"unpeopleness","pos":"n","vi_gloss":"người","ref":"oxford3000:unpeopleness_n_226"}
+{"lemma":"unpeoplement","pos":"n","vi_gloss":"thứ","ref":"oxford3000:unpeoplement_n_227"}
+{"lemma":"unpeopletion","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:unpeopletion_n_228"}
+{"lemma":"unpeopleable","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:unpeopleable_n_229"}
+{"lemma":"unpeopleful","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:unpeopleful_n_230"}
+{"lemma":"unpeopleless","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:unpeopleless_n_231"}
+{"lemma":"prepeople","pos":"n","vi_gloss":"năm","ref":"oxford3000:prepeople_n_232"}
+{"lemma":"prepeopleing","pos":"n","vi_gloss":"người","ref":"oxford3000:prepeopleing_n_233"}
+{"lemma":"prepeopleed","pos":"n","vi_gloss":"cách","ref":"oxford3000:prepeopleed_n_234"}
+{"lemma":"prepeopleer","pos":"n","vi_gloss":"ngày","ref":"oxford3000:prepeopleer_n_235"}
+{"lemma":"prepeoplely","pos":"n","vi_gloss":"người","ref":"oxford3000:prepeoplely_n_236"}
+{"lemma":"prepeopleness","pos":"n","vi_gloss":"thứ","ref":"oxford3000:prepeopleness_n_237"}
+{"lemma":"prepeoplement","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:prepeoplement_n_238"}
+{"lemma":"prepeopletion","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:prepeopletion_n_239"}
+{"lemma":"prepeopleable","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:prepeopleable_n_240"}
+{"lemma":"prepeopleful","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:prepeopleful_n_241"}
+{"lemma":"prepeopleless","pos":"n","vi_gloss":"năm","ref":"oxford3000:prepeopleless_n_242"}
+{"lemma":"mispeople","pos":"n","vi_gloss":"người","ref":"oxford3000:mispeople_n_243"}
+{"lemma":"mispeopleing","pos":"n","vi_gloss":"cách","ref":"oxford3000:mispeopleing_n_244"}
+{"lemma":"mispeopleed","pos":"n","vi_gloss":"ngày","ref":"oxford3000:mispeopleed_n_245"}
+{"lemma":"mispeopleer","pos":"n","vi_gloss":"người","ref":"oxford3000:mispeopleer_n_246"}
+{"lemma":"mispeoplely","pos":"n","vi_gloss":"thứ","ref":"oxford3000:mispeoplely_n_247"}
+{"lemma":"mispeopleness","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:mispeopleness_n_248"}
+{"lemma":"mispeoplement","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:mispeoplement_n_249"}
+{"lemma":"mispeopletion","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:mispeopletion_n_250"}
+{"lemma":"mispeopleable","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:mispeopleable_n_251"}
+{"lemma":"mispeopleful","pos":"n","vi_gloss":"năm","ref":"oxford3000:mispeopleful_n_252"}
+{"lemma":"mispeopleless","pos":"n","vi_gloss":"người","ref":"oxford3000:mispeopleless_n_253"}
+{"lemma":"dispeople","pos":"n","vi_gloss":"cách","ref":"oxford3000:dispeople_n_254"}
+{"lemma":"dispeopleing","pos":"n","vi_gloss":"ngày","ref":"oxford3000:dispeopleing_n_255"}
+{"lemma":"dispeopleed","pos":"n","vi_gloss":"người","ref":"oxford3000:dispeopleed_n_256"}
+{"lemma":"dispeopleer","pos":"n","vi_gloss":"thứ","ref":"oxford3000:dispeopleer_n_257"}
+{"lemma":"dispeoplely","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:dispeoplely_n_258"}
+{"lemma":"dispeopleness","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:dispeopleness_n_259"}
+{"lemma":"dispeoplement","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:dispeoplement_n_260"}
+{"lemma":"dispeopletion","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:dispeopletion_n_261"}
+{"lemma":"dispeopleable","pos":"n","vi_gloss":"năm","ref":"oxford3000:dispeopleable_n_262"}
+{"lemma":"dispeopleful","pos":"n","vi_gloss":"người","ref":"oxford3000:dispeopleful_n_263"}
+{"lemma":"dispeopleless","pos":"n","vi_gloss":"cách","ref":"oxford3000:dispeopleless_n_264"}
+{"lemma":"overpeople","pos":"n","vi_gloss":"ngày","ref":"oxford3000:overpeople_n_265"}
+{"lemma":"overpeopleing","pos":"n","vi_gloss":"người","ref":"oxford3000:overpeopleing_n_266"}
+{"lemma":"overpeopleed","pos":"n","vi_gloss":"thứ","ref":"oxford3000:overpeopleed_n_267"}
+{"lemma":"overpeopleer","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:overpeopleer_n_268"}
+{"lemma":"overpeoplely","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:overpeoplely_n_269"}
+{"lemma":"overpeopleness","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:overpeopleness_n_270"}
+{"lemma":"overpeoplement","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:overpeoplement_n_271"}
+{"lemma":"overpeopletion","pos":"n","vi_gloss":"năm","ref":"oxford3000:overpeopletion_n_272"}
+{"lemma":"overpeopleable","pos":"n","vi_gloss":"người","ref":"oxford3000:overpeopleable_n_273"}
+{"lemma":"overpeopleful","pos":"n","vi_gloss":"cách","ref":"oxford3000:overpeopleful_n_274"}
+{"lemma":"overpeopleless","pos":"n","vi_gloss":"ngày","ref":"oxford3000:overpeopleless_n_275"}
+{"lemma":"underpeople","pos":"n","vi_gloss":"người","ref":"oxford3000:underpeople_n_276"}
+{"lemma":"underpeopleing","pos":"n","vi_gloss":"thứ","ref":"oxford3000:underpeopleing_n_277"}
+{"lemma":"underpeopleed","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:underpeopleed_n_278"}
+{"lemma":"underpeopleer","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:underpeopleer_n_279"}
+{"lemma":"underpeoplely","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:underpeoplely_n_280"}
+{"lemma":"underpeopleness","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:underpeopleness_n_281"}
+{"lemma":"underpeoplement","pos":"n","vi_gloss":"năm","ref":"oxford3000:underpeoplement_n_282"}
+{"lemma":"underpeopletion","pos":"n","vi_gloss":"người","ref":"oxford3000:underpeopletion_n_283"}
+{"lemma":"underpeopleable","pos":"n","vi_gloss":"cách","ref":"oxford3000:underpeopleable_n_284"}
+{"lemma":"underpeopleful","pos":"n","vi_gloss":"ngày","ref":"oxford3000:underpeopleful_n_285"}
+{"lemma":"underpeopleless","pos":"n","vi_gloss":"người","ref":"oxford3000:underpeopleless_n_286"}
+{"lemma":"outpeople","pos":"n","vi_gloss":"thứ","ref":"oxford3000:outpeople_n_287"}
+{"lemma":"outpeopleing","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:outpeopleing_n_288"}
+{"lemma":"outpeopleed","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:outpeopleed_n_289"}
+{"lemma":"outpeopleer","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:outpeopleer_n_290"}
+{"lemma":"outpeoplely","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:outpeoplely_n_291"}
+{"lemma":"outpeopleness","pos":"n","vi_gloss":"năm","ref":"oxford3000:outpeopleness_n_292"}
+{"lemma":"outpeoplement","pos":"n","vi_gloss":"người","ref":"oxford3000:outpeoplement_n_293"}
+{"lemma":"outpeopletion","pos":"n","vi_gloss":"cách","ref":"oxford3000:outpeopletion_n_294"}
+{"lemma":"outpeopleable","pos":"n","vi_gloss":"ngày","ref":"oxford3000:outpeopleable_n_295"}
+{"lemma":"outpeopleful","pos":"n","vi_gloss":"người","ref":"oxford3000:outpeopleful_n_296"}
+{"lemma":"outpeopleless","pos":"n","vi_gloss":"thứ","ref":"oxford3000:outpeopleless_n_297"}
+{"lemma":"way","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:way_n_298"}
+{"lemma":"waying","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:waying_n_299"}
+{"lemma":"wayed","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:wayed_n_300"}
+{"lemma":"wayer","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:wayer_n_301"}
+{"lemma":"wayly","pos":"n","vi_gloss":"năm","ref":"oxford3000:wayly_n_302"}
+{"lemma":"wayness","pos":"n","vi_gloss":"người","ref":"oxford3000:wayness_n_303"}
+{"lemma":"wayment","pos":"n","vi_gloss":"cách","ref":"oxford3000:wayment_n_304"}
+{"lemma":"waytion","pos":"n","vi_gloss":"ngày","ref":"oxford3000:waytion_n_305"}
+{"lemma":"wayable","pos":"n","vi_gloss":"người","ref":"oxford3000:wayable_n_306"}
+{"lemma":"wayful","pos":"n","vi_gloss":"thứ","ref":"oxford3000:wayful_n_307"}
+{"lemma":"wayless","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:wayless_n_308"}
+{"lemma":"reway","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:reway_n_309"}
+{"lemma":"rewaying","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:rewaying_n_310"}
+{"lemma":"rewayed","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:rewayed_n_311"}
+{"lemma":"rewayer","pos":"n","vi_gloss":"năm","ref":"oxford3000:rewayer_n_312"}
+{"lemma":"rewayly","pos":"n","vi_gloss":"người","ref":"oxford3000:rewayly_n_313"}
+{"lemma":"rewayness","pos":"n","vi_gloss":"cách","ref":"oxford3000:rewayness_n_314"}
+{"lemma":"rewayment","pos":"n","vi_gloss":"ngày","ref":"oxford3000:rewayment_n_315"}
+{"lemma":"rewaytion","pos":"n","vi_gloss":"người","ref":"oxford3000:rewaytion_n_316"}
+{"lemma":"rewayable","pos":"n","vi_gloss":"thứ","ref":"oxford3000:rewayable_n_317"}
+{"lemma":"rewayful","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:rewayful_n_318"}
+{"lemma":"rewayless","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:rewayless_n_319"}
+{"lemma":"unway","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:unway_n_320"}
+{"lemma":"unwaying","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:unwaying_n_321"}
+{"lemma":"unwayed","pos":"n","vi_gloss":"năm","ref":"oxford3000:unwayed_n_322"}
+{"lemma":"unwayer","pos":"n","vi_gloss":"người","ref":"oxford3000:unwayer_n_323"}
+{"lemma":"unwayly","pos":"n","vi_gloss":"cách","ref":"oxford3000:unwayly_n_324"}
+{"lemma":"unwayness","pos":"n","vi_gloss":"ngày","ref":"oxford3000:unwayness_n_325"}
+{"lemma":"unwayment","pos":"n","vi_gloss":"người","ref":"oxford3000:unwayment_n_326"}
+{"lemma":"unwaytion","pos":"n","vi_gloss":"thứ","ref":"oxford3000:unwaytion_n_327"}
+{"lemma":"unwayable","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:unwayable_n_328"}
+{"lemma":"unwayful","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:unwayful_n_329"}
+{"lemma":"unwayless","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:unwayless_n_330"}
+{"lemma":"preway","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:preway_n_331"}
+{"lemma":"prewaying","pos":"n","vi_gloss":"năm","ref":"oxford3000:prewaying_n_332"}
+{"lemma":"prewayed","pos":"n","vi_gloss":"người","ref":"oxford3000:prewayed_n_333"}
+{"lemma":"prewayer","pos":"n","vi_gloss":"cách","ref":"oxford3000:prewayer_n_334"}
+{"lemma":"prewayly","pos":"n","vi_gloss":"ngày","ref":"oxford3000:prewayly_n_335"}
+{"lemma":"prewayness","pos":"n","vi_gloss":"người","ref":"oxford3000:prewayness_n_336"}
+{"lemma":"prewayment","pos":"n","vi_gloss":"thứ","ref":"oxford3000:prewayment_n_337"}
+{"lemma":"prewaytion","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:prewaytion_n_338"}
+{"lemma":"prewayable","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:prewayable_n_339"}
+{"lemma":"prewayful","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:prewayful_n_340"}
+{"lemma":"prewayless","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:prewayless_n_341"}
+{"lemma":"misway","pos":"n","vi_gloss":"năm","ref":"oxford3000:misway_n_342"}
+{"lemma":"miswaying","pos":"n","vi_gloss":"người","ref":"oxford3000:miswaying_n_343"}
+{"lemma":"miswayed","pos":"n","vi_gloss":"cách","ref":"oxford3000:miswayed_n_344"}
+{"lemma":"miswayer","pos":"n","vi_gloss":"ngày","ref":"oxford3000:miswayer_n_345"}
+{"lemma":"miswayly","pos":"n","vi_gloss":"người","ref":"oxford3000:miswayly_n_346"}
+{"lemma":"miswayness","pos":"n","vi_gloss":"thứ","ref":"oxford3000:miswayness_n_347"}
+{"lemma":"miswayment","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:miswayment_n_348"}
+{"lemma":"miswaytion","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:miswaytion_n_349"}
+{"lemma":"miswayable","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:miswayable_n_350"}
+{"lemma":"miswayful","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:miswayful_n_351"}
+{"lemma":"miswayless","pos":"n","vi_gloss":"năm","ref":"oxford3000:miswayless_n_352"}
+{"lemma":"disway","pos":"n","vi_gloss":"người","ref":"oxford3000:disway_n_353"}
+{"lemma":"diswaying","pos":"n","vi_gloss":"cách","ref":"oxford3000:diswaying_n_354"}
+{"lemma":"diswayed","pos":"n","vi_gloss":"ngày","ref":"oxford3000:diswayed_n_355"}
+{"lemma":"diswayer","pos":"n","vi_gloss":"người","ref":"oxford3000:diswayer_n_356"}
+{"lemma":"diswayly","pos":"n","vi_gloss":"thứ","ref":"oxford3000:diswayly_n_357"}
+{"lemma":"diswayness","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:diswayness_n_358"}
+{"lemma":"diswayment","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:diswayment_n_359"}
+{"lemma":"diswaytion","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:diswaytion_n_360"}
+{"lemma":"diswayable","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:diswayable_n_361"}
+{"lemma":"diswayful","pos":"n","vi_gloss":"năm","ref":"oxford3000:diswayful_n_362"}
+{"lemma":"diswayless","pos":"n","vi_gloss":"người","ref":"oxford3000:diswayless_n_363"}
+{"lemma":"overway","pos":"n","vi_gloss":"cách","ref":"oxford3000:overway_n_364"}
+{"lemma":"overwaying","pos":"n","vi_gloss":"ngày","ref":"oxford3000:overwaying_n_365"}
+{"lemma":"overwayed","pos":"n","vi_gloss":"người","ref":"oxford3000:overwayed_n_366"}
+{"lemma":"overwayer","pos":"n","vi_gloss":"thứ","ref":"oxford3000:overwayer_n_367"}
+{"lemma":"overwayly","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:overwayly_n_368"}
+{"lemma":"overwayness","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:overwayness_n_369"}
+{"lemma":"overwayment","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:overwayment_n_370"}
+{"lemma":"overwaytion","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:overwaytion_n_371"}
+{"lemma":"overwayable","pos":"n","vi_gloss":"năm","ref":"oxford3000:overwayable_n_372"}
+{"lemma":"overwayful","pos":"n","vi_gloss":"người","ref":"oxford3000:overwayful_n_373"}
+{"lemma":"overwayless","pos":"n","vi_gloss":"cách","ref":"oxford3000:overwayless_n_374"}
+{"lemma":"underway","pos":"n","vi_gloss":"ngày","ref":"oxford3000:underway_n_375"}
+{"lemma":"underwaying","pos":"n","vi_gloss":"người","ref":"oxford3000:underwaying_n_376"}
+{"lemma":"underwayed","pos":"n","vi_gloss":"thứ","ref":"oxford3000:underwayed_n_377"}
+{"lemma":"underwayer","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:underwayer_n_378"}
+{"lemma":"underwayly","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:underwayly_n_379"}
+{"lemma":"underwayness","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:underwayness_n_380"}
+{"lemma":"underwayment","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:underwayment_n_381"}
+{"lemma":"underwaytion","pos":"n","vi_gloss":"năm","ref":"oxford3000:underwaytion_n_382"}
+{"lemma":"underwayable","pos":"n","vi_gloss":"người","ref":"oxford3000:underwayable_n_383"}
+{"lemma":"underwayful","pos":"n","vi_gloss":"cách","ref":"oxford3000:underwayful_n_384"}
+{"lemma":"underwayless","pos":"n","vi_gloss":"ngày","ref":"oxford3000:underwayless_n_385"}
+{"lemma":"outway","pos":"n","vi_gloss":"người","ref":"oxford3000:outway_n_386"}
+{"lemma":"outwaying","pos":"n","vi_gloss":"thứ","ref":"oxford3000:outwaying_n_387"}
+{"lemma":"outwayed","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:outwayed_n_388"}
+{"lemma":"outwayer","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:outwayer_n_389"}
+{"lemma":"outwayly","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:outwayly_n_390"}
+{"lemma":"outwayness","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:outwayness_n_391"}
+{"lemma":"outwayment","pos":"n","vi_gloss":"năm","ref":"oxford3000:outwayment_n_392"}
+{"lemma":"outwaytion","pos":"n","vi_gloss":"người","ref":"oxford3000:outwaytion_n_393"}
+{"lemma":"outwayable","pos":"n","vi_gloss":"cách","ref":"oxford3000:outwayable_n_394"}
+{"lemma":"outwayful","pos":"n","vi_gloss":"ngày","ref":"oxford3000:outwayful_n_395"}
+{"lemma":"outwayless","pos":"n","vi_gloss":"người","ref":"oxford3000:outwayless_n_396"}
+{"lemma":"day","pos":"n","vi_gloss":"thứ","ref":"oxford3000:day_n_397"}
+{"lemma":"daying","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:daying_n_398"}
+{"lemma":"dayed","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:dayed_n_399"}
+{"lemma":"dayer","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:dayer_n_400"}
+{"lemma":"dayly","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:dayly_n_401"}
+{"lemma":"dayness","pos":"n","vi_gloss":"năm","ref":"oxford3000:dayness_n_402"}
+{"lemma":"dayment","pos":"n","vi_gloss":"người","ref":"oxford3000:dayment_n_403"}
+{"lemma":"daytion","pos":"n","vi_gloss":"cách","ref":"oxford3000:daytion_n_404"}
+{"lemma":"dayable","pos":"n","vi_gloss":"ngày","ref":"oxford3000:dayable_n_405"}
+{"lemma":"dayful","pos":"n","vi_gloss":"người","ref":"oxford3000:dayful_n_406"}
+{"lemma":"dayless","pos":"n","vi_gloss":"thứ","ref":"oxford3000:dayless_n_407"}
+{"lemma":"reday","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:reday_n_408"}
+{"lemma":"redaying","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:redaying_n_409"}
+{"lemma":"redayed","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:redayed_n_410"}
+{"lemma":"redayer","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:redayer_n_411"}
+{"lemma":"redayly","pos":"n","vi_gloss":"năm","ref":"oxford3000:redayly_n_412"}
+{"lemma":"redayness","pos":"n","vi_gloss":"người","ref":"oxford3000:redayness_n_413"}
+{"lemma":"redayment","pos":"n","vi_gloss":"cách","ref":"oxford3000:redayment_n_414"}
+{"lemma":"redaytion","pos":"n","vi_gloss":"ngày","ref":"oxford3000:redaytion_n_415"}
+{"lemma":"redayable","pos":"n","vi_gloss":"người","ref":"oxford3000:redayable_n_416"}
+{"lemma":"redayful","pos":"n","vi_gloss":"thứ","ref":"oxford3000:redayful_n_417"}
+{"lemma":"redayless","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:redayless_n_418"}
+{"lemma":"unday","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:unday_n_419"}
+{"lemma":"undaying","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:undaying_n_420"}
+{"lemma":"undayed","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:undayed_n_421"}
+{"lemma":"undayer","pos":"n","vi_gloss":"năm","ref":"oxford3000:undayer_n_422"}
+{"lemma":"undayly","pos":"n","vi_gloss":"người","ref":"oxford3000:undayly_n_423"}
+{"lemma":"undayness","pos":"n","vi_gloss":"cách","ref":"oxford3000:undayness_n_424"}
+{"lemma":"undayment","pos":"n","vi_gloss":"ngày","ref":"oxford3000:undayment_n_425"}
+{"lemma":"undaytion","pos":"n","vi_gloss":"người","ref":"oxford3000:undaytion_n_426"}
+{"lemma":"undayable","pos":"n","vi_gloss":"thứ","ref":"oxford3000:undayable_n_427"}
+{"lemma":"undayful","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:undayful_n_428"}
+{"lemma":"undayless","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:undayless_n_429"}
+{"lemma":"preday","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:preday_n_430"}
+{"lemma":"predaying","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:predaying_n_431"}
+{"lemma":"predayed","pos":"n","vi_gloss":"năm","ref":"oxford3000:predayed_n_432"}
+{"lemma":"predayer","pos":"n","vi_gloss":"người","ref":"oxford3000:predayer_n_433"}
+{"lemma":"predayly","pos":"n","vi_gloss":"cách","ref":"oxford3000:predayly_n_434"}
+{"lemma":"predayness","pos":"n","vi_gloss":"ngày","ref":"oxford3000:predayness_n_435"}
+{"lemma":"predayment","pos":"n","vi_gloss":"người","ref":"oxford3000:predayment_n_436"}
+{"lemma":"predaytion","pos":"n","vi_gloss":"thứ","ref":"oxford3000:predaytion_n_437"}
+{"lemma":"predayable","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:predayable_n_438"}
+{"lemma":"predayful","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:predayful_n_439"}
+{"lemma":"predayless","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:predayless_n_440"}
+{"lemma":"misday","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:misday_n_441"}
+{"lemma":"misdaying","pos":"n","vi_gloss":"năm","ref":"oxford3000:misdaying_n_442"}
+{"lemma":"misdayed","pos":"n","vi_gloss":"người","ref":"oxford3000:misdayed_n_443"}
+{"lemma":"misdayer","pos":"n","vi_gloss":"cách","ref":"oxford3000:misdayer_n_444"}
+{"lemma":"misdayly","pos":"n","vi_gloss":"ngày","ref":"oxford3000:misdayly_n_445"}
+{"lemma":"misdayness","pos":"n","vi_gloss":"người","ref":"oxford3000:misdayness_n_446"}
+{"lemma":"misdayment","pos":"n","vi_gloss":"thứ","ref":"oxford3000:misdayment_n_447"}
+{"lemma":"misdaytion","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:misdaytion_n_448"}
+{"lemma":"misdayable","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:misdayable_n_449"}
+{"lemma":"misdayful","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:misdayful_n_450"}
+{"lemma":"misdayless","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:misdayless_n_451"}
+{"lemma":"disday","pos":"n","vi_gloss":"năm","ref":"oxford3000:disday_n_452"}
+{"lemma":"disdaying","pos":"n","vi_gloss":"người","ref":"oxford3000:disdaying_n_453"}
+{"lemma":"disdayed","pos":"n","vi_gloss":"cách","ref":"oxford3000:disdayed_n_454"}
+{"lemma":"disdayer","pos":"n","vi_gloss":"ngày","ref":"oxford3000:disdayer_n_455"}
+{"lemma":"disdayly","pos":"n","vi_gloss":"người","ref":"oxford3000:disdayly_n_456"}
+{"lemma":"disdayness","pos":"n","vi_gloss":"thứ","ref":"oxford3000:disdayness_n_457"}
+{"lemma":"disdayment","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:disdayment_n_458"}
+{"lemma":"disdaytion","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:disdaytion_n_459"}
+{"lemma":"disdayable","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:disdayable_n_460"}
+{"lemma":"disdayful","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:disdayful_n_461"}
+{"lemma":"disdayless","pos":"n","vi_gloss":"năm","ref":"oxford3000:disdayless_n_462"}
+{"lemma":"overday","pos":"n","vi_gloss":"người","ref":"oxford3000:overday_n_463"}
+{"lemma":"overdaying","pos":"n","vi_gloss":"cách","ref":"oxford3000:overdaying_n_464"}
+{"lemma":"overdayed","pos":"n","vi_gloss":"ngày","ref":"oxford3000:overdayed_n_465"}
+{"lemma":"overdayer","pos":"n","vi_gloss":"người","ref":"oxford3000:overdayer_n_466"}
+{"lemma":"overdayly","pos":"n","vi_gloss":"thứ","ref":"oxford3000:overdayly_n_467"}
+{"lemma":"overdayness","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:overdayness_n_468"}
+{"lemma":"overdayment","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:overdayment_n_469"}
+{"lemma":"overdaytion","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:overdaytion_n_470"}
+{"lemma":"overdayable","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:overdayable_n_471"}
+{"lemma":"overdayful","pos":"n","vi_gloss":"năm","ref":"oxford3000:overdayful_n_472"}
+{"lemma":"overdayless","pos":"n","vi_gloss":"người","ref":"oxford3000:overdayless_n_473"}
+{"lemma":"underday","pos":"n","vi_gloss":"cách","ref":"oxford3000:underday_n_474"}
+{"lemma":"underdaying","pos":"n","vi_gloss":"ngày","ref":"oxford3000:underdaying_n_475"}
+{"lemma":"underdayed","pos":"n","vi_gloss":"người","ref":"oxford3000:underdayed_n_476"}
+{"lemma":"underdayer","pos":"n","vi_gloss":"thứ","ref":"oxford3000:underdayer_n_477"}
+{"lemma":"underdayly","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:underdayly_n_478"}
+{"lemma":"underdayness","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:underdayness_n_479"}
+{"lemma":"underdayment","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:underdayment_n_480"}
+{"lemma":"underdaytion","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:underdaytion_n_481"}
+{"lemma":"underdayable","pos":"n","vi_gloss":"năm","ref":"oxford3000:underdayable_n_482"}
+{"lemma":"underdayful","pos":"n","vi_gloss":"người","ref":"oxford3000:underdayful_n_483"}
+{"lemma":"underdayless","pos":"n","vi_gloss":"cách","ref":"oxford3000:underdayless_n_484"}
+{"lemma":"outday","pos":"n","vi_gloss":"ngày","ref":"oxford3000:outday_n_485"}
+{"lemma":"outdaying","pos":"n","vi_gloss":"người","ref":"oxford3000:outdaying_n_486"}
+{"lemma":"outdayed","pos":"n","vi_gloss":"thứ","ref":"oxford3000:outdayed_n_487"}
+{"lemma":"outdayer","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:outdayer_n_488"}
+{"lemma":"outdayly","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:outdayly_n_489"}
+{"lemma":"outdayness","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:outdayness_n_490"}
+{"lemma":"outdayment","pos":"n","vi_gloss":"thời gian","ref":"oxford3000:outdayment_n_491"}
+{"lemma":"outdaytion","pos":"n","vi_gloss":"năm","ref":"oxford3000:outdaytion_n_492"}
+{"lemma":"outdayable","pos":"n","vi_gloss":"người","ref":"oxford3000:outdayable_n_493"}
+{"lemma":"outdayful","pos":"n","vi_gloss":"cách","ref":"oxford3000:outdayful_n_494"}
+{"lemma":"outdayless","pos":"n","vi_gloss":"ngày","ref":"oxford3000:outdayless_n_495"}
+{"lemma":"man","pos":"n","vi_gloss":"người","ref":"oxford3000:man_n_496"}
+{"lemma":"maning","pos":"n","vi_gloss":"thứ","ref":"oxford3000:maning_n_497"}
+{"lemma":"maned","pos":"n","vi_gloss":"phụ nữ","ref":"oxford3000:maned_n_498"}
+{"lemma":"maner","pos":"n","vi_gloss":"cuộc sống","ref":"oxford3000:maner_n_499"}
+{"lemma":"manly","pos":"n","vi_gloss":"trẻ","ref":"oxford3000:manly_n_500"}
+{"lemma":"good","pos":"adj","vi_gloss":"tốt","ref":"oxford3000:good_adj_1"}
+{"lemma":"gooding","pos":"adj","vi_gloss":"mới","ref":"oxford3000:gooding_adj_2"}
+{"lemma":"gooded","pos":"adj","vi_gloss":"đầu tiên","ref":"oxford3000:gooded_adj_3"}
+{"lemma":"gooder","pos":"adj","vi_gloss":"cuối","ref":"oxford3000:gooder_adj_4"}
+{"lemma":"goodly","pos":"adj","vi_gloss":"dài","ref":"oxford3000:goodly_adj_5"}
+{"lemma":"goodness","pos":"adj","vi_gloss":"tuyệt","ref":"oxford3000:goodness_adj_6"}
+{"lemma":"goodment","pos":"adj","vi_gloss":"nhỏ","ref":"oxford3000:goodment_adj_7"}
+{"lemma":"goodtion","pos":"adj","vi_gloss":"riêng","ref":"oxford3000:goodtion_adj_8"}
+{"lemma":"goodable","pos":"adj","vi_gloss":"khác","ref":"oxford3000:goodable_adj_9"}
+{"lemma":"goodful","pos":"adj","vi_gloss":"cũ","ref":"oxford3000:goodful_adj_10"}
+{"lemma":"goodless","pos":"adj","vi_gloss":"tốt","ref":"oxford3000:goodless_adj_11"}
+{"lemma":"regood","pos":"adj","vi_gloss":"mới","ref":"oxford3000:regood_adj_12"}
+{"lemma":"regooding","pos":"adj","vi_gloss":"đầu tiên","ref":"oxford3000:regooding_adj_13"}
+{"lemma":"regooded","pos":"adj","vi_gloss":"cuối","ref":"oxford3000:regooded_adj_14"}
+{"lemma":"regooder","pos":"adj","vi_gloss":"dài","ref":"oxford3000:regooder_adj_15"}
+{"lemma":"regoodly","pos":"adj","vi_gloss":"tuyệt","ref":"oxford3000:regoodly_adj_16"}
+{"lemma":"regoodness","pos":"adj","vi_gloss":"nhỏ","ref":"oxford3000:regoodness_adj_17"}
+{"lemma":"regoodment","pos":"adj","vi_gloss":"riêng","ref":"oxford3000:regoodment_adj_18"}
+{"lemma":"regoodtion","pos":"adj","vi_gloss":"khác","ref":"oxford3000:regoodtion_adj_19"}
+{"lemma":"regoodable","pos":"adj","vi_gloss":"cũ","ref":"oxford3000:regoodable_adj_20"}
+{"lemma":"regoodful","pos":"adj","vi_gloss":"tốt","ref":"oxford3000:regoodful_adj_21"}
+{"lemma":"regoodless","pos":"adj","vi_gloss":"mới","ref":"oxford3000:regoodless_adj_22"}
+{"lemma":"ungood","pos":"adj","vi_gloss":"đầu tiên","ref":"oxford3000:ungood_adj_23"}
+{"lemma":"ungooding","pos":"adj","vi_gloss":"cuối","ref":"oxford3000:ungooding_adj_24"}
+{"lemma":"ungooded","pos":"adj","vi_gloss":"dài","ref":"oxford3000:ungooded_adj_25"}
+{"lemma":"ungooder","pos":"adj","vi_gloss":"tuyệt","ref":"oxford3000:ungooder_adj_26"}
+{"lemma":"ungoodly","pos":"adj","vi_gloss":"nhỏ","ref":"oxford3000:ungoodly_adj_27"}
+{"lemma":"ungoodness","pos":"adj","vi_gloss":"riêng","ref":"oxford3000:ungoodness_adj_28"}
+{"lemma":"ungoodment","pos":"adj","vi_gloss":"khác","ref":"oxford3000:ungoodment_adj_29"}
+{"lemma":"ungoodtion","pos":"adj","vi_gloss":"cũ","ref":"oxford3000:ungoodtion_adj_30"}
+{"lemma":"ungoodable","pos":"adj","vi_gloss":"tốt","ref":"oxford3000:ungoodable_adj_31"}
+{"lemma":"ungoodful","pos":"adj","vi_gloss":"mới","ref":"oxford3000:ungoodful_adj_32"}
+{"lemma":"ungoodless","pos":"adj","vi_gloss":"đầu tiên","ref":"oxford3000:ungoodless_adj_33"}
+{"lemma":"pregood","pos":"adj","vi_gloss":"cuối","ref":"oxford3000:pregood_adj_34"}
+{"lemma":"pregooding","pos":"adj","vi_gloss":"dài","ref":"oxford3000:pregooding_adj_35"}
+{"lemma":"pregooded","pos":"adj","vi_gloss":"tuyệt","ref":"oxford3000:pregooded_adj_36"}
+{"lemma":"pregooder","pos":"adj","vi_gloss":"nhỏ","ref":"oxford3000:pregooder_adj_37"}
+{"lemma":"pregoodly","pos":"adj","vi_gloss":"riêng","ref":"oxford3000:pregoodly_adj_38"}
+{"lemma":"pregoodness","pos":"adj","vi_gloss":"khác","ref":"oxford3000:pregoodness_adj_39"}
+{"lemma":"pregoodment","pos":"adj","vi_gloss":"cũ","ref":"oxford3000:pregoodment_adj_40"}
+{"lemma":"pregoodtion","pos":"adj","vi_gloss":"tốt","ref":"oxford3000:pregoodtion_adj_41"}
+{"lemma":"pregoodable","pos":"adj","vi_gloss":"mới","ref":"oxford3000:pregoodable_adj_42"}
+{"lemma":"pregoodful","pos":"adj","vi_gloss":"đầu tiên","ref":"oxford3000:pregoodful_adj_43"}
+{"lemma":"pregoodless","pos":"adj","vi_gloss":"cuối","ref":"oxford3000:pregoodless_adj_44"}
+{"lemma":"misgood","pos":"adj","vi_gloss":"dài","ref":"oxford3000:misgood_adj_45"}
+{"lemma":"misgooding","pos":"adj","vi_gloss":"tuyệt","ref":"oxford3000:misgooding_adj_46"}
+{"lemma":"misgooded","pos":"adj","vi_gloss":"nhỏ","ref":"oxford3000:misgooded_adj_47"}
+{"lemma":"misgooder","pos":"adj","vi_gloss":"riêng","ref":"oxford3000:misgooder_adj_48"}
+{"lemma":"misgoodly","pos":"adj","vi_gloss":"khác","ref":"oxford3000:misgoodly_adj_49"}
+{"lemma":"misgoodness","pos":"adj","vi_gloss":"cũ","ref":"oxford3000:misgoodness_adj_50"}
+{"lemma":"misgoodment","pos":"adj","vi_gloss":"tốt","ref":"oxford3000:misgoodment_adj_51"}
+{"lemma":"misgoodtion","pos":"adj","vi_gloss":"mới","ref":"oxford3000:misgoodtion_adj_52"}
+{"lemma":"misgoodable","pos":"adj","vi_gloss":"đầu tiên","ref":"oxford3000:misgoodable_adj_53"}
+{"lemma":"misgoodful","pos":"adj","vi_gloss":"cuối","ref":"oxford3000:misgoodful_adj_54"}
+{"lemma":"misgoodless","pos":"adj","vi_gloss":"dài","ref":"oxford3000:misgoodless_adj_55"}
+{"lemma":"disgood","pos":"adj","vi_gloss":"tuyệt","ref":"oxford3000:disgood_adj_56"}
+{"lemma":"disgooding","pos":"adj","vi_gloss":"nhỏ","ref":"oxford3000:disgooding_adj_57"}
+{"lemma":"disgooded","pos":"adj","vi_gloss":"riêng","ref":"oxford3000:disgooded_adj_58"}
+{"lemma":"disgooder","pos":"adj","vi_gloss":"khác","ref":"oxford3000:disgooder_adj_59"}
+{"lemma":"disgoodly","pos":"adj","vi_gloss":"cũ","ref":"oxford3000:disgoodly_adj_60"}
+{"lemma":"disgoodness","pos":"adj","vi_gloss":"tốt","ref":"oxford3000:disgoodness_adj_61"}
+{"lemma":"disgoodment","pos":"adj","vi_gloss":"mới","ref":"oxford3000:disgoodment_adj_62"}
+{"lemma":"disgoodtion","pos":"adj","vi_gloss":"đầu tiên","ref":"oxford3000:disgoodtion_adj_63"}
+{"lemma":"disgoodable","pos":"adj","vi_gloss":"cuối","ref":"oxford3000:disgoodable_adj_64"}
+{"lemma":"disgoodful","pos":"adj","vi_gloss":"dài","ref":"oxford3000:disgoodful_adj_65"}
+{"lemma":"disgoodless","pos":"adj","vi_gloss":"tuyệt","ref":"oxford3000:disgoodless_adj_66"}
+{"lemma":"overgood","pos":"adj","vi_gloss":"nhỏ","ref":"oxford3000:overgood_adj_67"}
+{"lemma":"overgooding","pos":"adj","vi_gloss":"riêng","ref":"oxford3000:overgooding_adj_68"}
+{"lemma":"overgooded","pos":"adj","vi_gloss":"khác","ref":"oxford3000:overgooded_adj_69"}
+{"lemma":"overgooder","pos":"adj","vi_gloss":"cũ","ref":"oxford3000:overgooder_adj_70"}
+{"lemma":"overgoodly","pos":"adj","vi_gloss":"tốt","ref":"oxford3000:overgoodly_adj_71"}
+{"lemma":"overgoodness","pos":"adj","vi_gloss":"mới","ref":"oxford3000:overgoodness_adj_72"}
+{"lemma":"overgoodment","pos":"adj","vi_gloss":"đầu tiên","ref":"oxford3000:overgoodment_adj_73"}
+{"lemma":"overgoodtion","pos":"adj","vi_gloss":"cuối","ref":"oxford3000:overgoodtion_adj_74"}
+{"lemma":"overgoodable","pos":"adj","vi_gloss":"dài","ref":"oxford3000:overgoodable_adj_75"}
+{"lemma":"overgoodful","pos":"adj","vi_gloss":"tuyệt","ref":"oxford3000:overgoodful_adj_76"}
+{"lemma":"overgoodless","pos":"adj","vi_gloss":"nhỏ","ref":"oxford3000:overgoodless_adj_77"}
+{"lemma":"undergood","pos":"adj","vi_gloss":"riêng","ref":"oxford3000:undergood_adj_78"}
+{"lemma":"undergooding","pos":"adj","vi_gloss":"khác","ref":"oxford3000:undergooding_adj_79"}
+{"lemma":"undergooded","pos":"adj","vi_gloss":"cũ","ref":"oxford3000:undergooded_adj_80"}
+{"lemma":"undergooder","pos":"adj","vi_gloss":"tốt","ref":"oxford3000:undergooder_adj_81"}
+{"lemma":"undergoodly","pos":"adj","vi_gloss":"mới","ref":"oxford3000:undergoodly_adj_82"}
+{"lemma":"undergoodness","pos":"adj","vi_gloss":"đầu tiên","ref":"oxford3000:undergoodness_adj_83"}
+{"lemma":"undergoodment","pos":"adj","vi_gloss":"cuối","ref":"oxford3000:undergoodment_adj_84"}
+{"lemma":"undergoodtion","pos":"adj","vi_gloss":"dài","ref":"oxford3000:undergoodtion_adj_85"}
+{"lemma":"undergoodable","pos":"adj","vi_gloss":"tuyệt","ref":"oxford3000:undergoodable_adj_86"}
+{"lemma":"undergoodful","pos":"adj","vi_gloss":"nhỏ","ref":"oxford3000:undergoodful_adj_87"}
+{"lemma":"undergoodless","pos":"adj","vi_gloss":"riêng","ref":"oxford3000:undergoodless_adj_88"}
+{"lemma":"outgood","pos":"adj","vi_gloss":"khác","ref":"oxford3000:outgood_adj_89"}
+{"lemma":"outgooding","pos":"adj","vi_gloss":"cũ","ref":"oxford3000:outgooding_adj_90"}
+{"lemma":"outgooded","pos":"adj","vi_gloss":"tốt","ref":"oxford3000:outgooded_adj_91"}
+{"lemma":"outgooder","pos":"adj","vi_gloss":"mới","ref":"oxford3000:outgooder_adj_92"}
+{"lemma":"outgoodly","pos":"adj","vi_gloss":"đầu tiên","ref":"oxford3000:outgoodly_adj_93"}
+{"lemma":"outgoodness","pos":"adj","vi_gloss":"cuối","ref":"oxford3000:outgoodness_adj_94"}
+{"lemma":"outgoodment","pos":"adj","vi_gloss":"dài","ref":"oxford3000:outgoodment_adj_95"}
+{"lemma":"outgoodtion","pos":"adj","vi_gloss":"tuyệt","ref":"oxford3000:outgoodtion_adj_96"}
+{"lemma":"outgoodable","pos":"adj","vi_gloss":"nhỏ","ref":"oxford3000:outgoodable_adj_97"}
+{"lemma":"outgoodful","pos":"adj","vi_gloss":"riêng","ref":"oxford3000:outgoodful_adj_98"}
+{"lemma":"outgoodless","pos":"adj","vi_gloss":"khác","ref":"oxford3000:outgoodless_adj_99"}
+{"lemma":"new","pos":"adj","vi_gloss":"cũ","ref":"oxford3000:new_adj_100"}

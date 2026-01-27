@@ -1,0 +1,1200 @@
+{"lemma":"be","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:be_v_sense_1"}
+{"lemma":"beal","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:beal_v_sense_2"}
+{"lemma":"beish","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:beish_v_sense_3"}
+{"lemma":"beous","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:beous_v_sense_1"}
+{"lemma":"beive","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:beive_v_sense_2"}
+{"lemma":"beant","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:beant_v_sense_3"}
+{"lemma":"beent","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:beent_v_sense_1"}
+{"lemma":"beary","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:beary_v_sense_2"}
+{"lemma":"beory","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:beory_v_sense_3"}
+{"lemma":"beic","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:beic_v_sense_1"}
+{"lemma":"beist","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:beist_v_sense_2"}
+{"lemma":"debe","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:debe_v_sense_3"}
+{"lemma":"debeal","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:debeal_v_sense_1"}
+{"lemma":"debeish","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:debeish_v_sense_2"}
+{"lemma":"debeous","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:debeous_v_sense_3"}
+{"lemma":"debeive","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:debeive_v_sense_1"}
+{"lemma":"debeant","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:debeant_v_sense_2"}
+{"lemma":"debeent","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:debeent_v_sense_3"}
+{"lemma":"debeary","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:debeary_v_sense_1"}
+{"lemma":"debeory","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:debeory_v_sense_2"}
+{"lemma":"debeic","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:debeic_v_sense_3"}
+{"lemma":"debeist","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:debeist_v_sense_1"}
+{"lemma":"subbe","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:subbe_v_sense_2"}
+{"lemma":"subbeal","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:subbeal_v_sense_3"}
+{"lemma":"subbeish","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:subbeish_v_sense_1"}
+{"lemma":"subbeous","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:subbeous_v_sense_2"}
+{"lemma":"subbeive","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:subbeive_v_sense_3"}
+{"lemma":"subbeant","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:subbeant_v_sense_1"}
+{"lemma":"subbeent","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:subbeent_v_sense_2"}
+{"lemma":"subbeary","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:subbeary_v_sense_3"}
+{"lemma":"subbeory","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:subbeory_v_sense_1"}
+{"lemma":"subbeic","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:subbeic_v_sense_2"}
+{"lemma":"subbeist","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:subbeist_v_sense_3"}
+{"lemma":"interbe","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:interbe_v_sense_1"}
+{"lemma":"interbeal","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:interbeal_v_sense_2"}
+{"lemma":"interbeish","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:interbeish_v_sense_3"}
+{"lemma":"interbeous","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:interbeous_v_sense_1"}
+{"lemma":"interbeive","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:interbeive_v_sense_2"}
+{"lemma":"interbeant","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:interbeant_v_sense_3"}
+{"lemma":"interbeent","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:interbeent_v_sense_1"}
+{"lemma":"interbeary","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:interbeary_v_sense_2"}
+{"lemma":"interbeory","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:interbeory_v_sense_3"}
+{"lemma":"interbeic","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:interbeic_v_sense_1"}
+{"lemma":"interbeist","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:interbeist_v_sense_2"}
+{"lemma":"transbe","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:transbe_v_sense_3"}
+{"lemma":"transbeal","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:transbeal_v_sense_1"}
+{"lemma":"transbeish","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:transbeish_v_sense_2"}
+{"lemma":"transbeous","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:transbeous_v_sense_3"}
+{"lemma":"transbeive","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:transbeive_v_sense_1"}
+{"lemma":"transbeant","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:transbeant_v_sense_2"}
+{"lemma":"transbeent","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:transbeent_v_sense_3"}
+{"lemma":"transbeary","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:transbeary_v_sense_1"}
+{"lemma":"transbeory","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:transbeory_v_sense_2"}
+{"lemma":"transbeic","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:transbeic_v_sense_3"}
+{"lemma":"transbeist","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:transbeist_v_sense_1"}
+{"lemma":"autobe","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:autobe_v_sense_2"}
+{"lemma":"autobeal","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:autobeal_v_sense_3"}
+{"lemma":"autobeish","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:autobeish_v_sense_1"}
+{"lemma":"autobeous","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:autobeous_v_sense_2"}
+{"lemma":"autobeive","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:autobeive_v_sense_3"}
+{"lemma":"autobeant","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:autobeant_v_sense_1"}
+{"lemma":"autobeent","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:autobeent_v_sense_2"}
+{"lemma":"autobeary","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:autobeary_v_sense_3"}
+{"lemma":"autobeory","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:autobeory_v_sense_1"}
+{"lemma":"autobeic","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:autobeic_v_sense_2"}
+{"lemma":"autobeist","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:autobeist_v_sense_3"}
+{"lemma":"cobe","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:cobe_v_sense_1"}
+{"lemma":"cobeal","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:cobeal_v_sense_2"}
+{"lemma":"cobeish","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:cobeish_v_sense_3"}
+{"lemma":"cobeous","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:cobeous_v_sense_1"}
+{"lemma":"cobeive","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:cobeive_v_sense_2"}
+{"lemma":"cobeant","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:cobeant_v_sense_3"}
+{"lemma":"cobeent","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:cobeent_v_sense_1"}
+{"lemma":"cobeary","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:cobeary_v_sense_2"}
+{"lemma":"cobeory","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:cobeory_v_sense_3"}
+{"lemma":"cobeic","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:cobeic_v_sense_1"}
+{"lemma":"cobeist","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:cobeist_v_sense_2"}
+{"lemma":"exbe","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:exbe_v_sense_3"}
+{"lemma":"exbeal","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:exbeal_v_sense_1"}
+{"lemma":"exbeish","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:exbeish_v_sense_2"}
+{"lemma":"exbeous","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:exbeous_v_sense_3"}
+{"lemma":"exbeive","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:exbeive_v_sense_1"}
+{"lemma":"exbeant","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:exbeant_v_sense_2"}
+{"lemma":"exbeent","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:exbeent_v_sense_3"}
+{"lemma":"exbeary","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:exbeary_v_sense_1"}
+{"lemma":"exbeory","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:exbeory_v_sense_2"}
+{"lemma":"exbeic","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:exbeic_v_sense_3"}
+{"lemma":"exbeist","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:exbeist_v_sense_1"}
+{"lemma":"inbe","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:inbe_v_sense_2"}
+{"lemma":"inbeal","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:inbeal_v_sense_3"}
+{"lemma":"inbeish","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:inbeish_v_sense_1"}
+{"lemma":"inbeous","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:inbeous_v_sense_2"}
+{"lemma":"inbeive","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:inbeive_v_sense_3"}
+{"lemma":"inbeant","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:inbeant_v_sense_1"}
+{"lemma":"inbeent","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:inbeent_v_sense_2"}
+{"lemma":"inbeary","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:inbeary_v_sense_3"}
+{"lemma":"inbeory","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:inbeory_v_sense_1"}
+{"lemma":"inbeic","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:inbeic_v_sense_2"}
+{"lemma":"inbeist","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:inbeist_v_sense_3"}
+{"lemma":"have","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:have_v_sense_1"}
+{"lemma":"haveal","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:haveal_v_sense_2"}
+{"lemma":"haveish","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:haveish_v_sense_3"}
+{"lemma":"haveous","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:haveous_v_sense_1"}
+{"lemma":"haveive","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:haveive_v_sense_2"}
+{"lemma":"haveant","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:haveant_v_sense_3"}
+{"lemma":"haveent","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:haveent_v_sense_1"}
+{"lemma":"haveary","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:haveary_v_sense_2"}
+{"lemma":"haveory","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:haveory_v_sense_3"}
+{"lemma":"haveic","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:haveic_v_sense_1"}
+{"lemma":"haveist","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:haveist_v_sense_2"}
+{"lemma":"dehave","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:dehave_v_sense_3"}
+{"lemma":"dehaveal","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:dehaveal_v_sense_1"}
+{"lemma":"dehaveish","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:dehaveish_v_sense_2"}
+{"lemma":"dehaveous","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:dehaveous_v_sense_3"}
+{"lemma":"dehaveive","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:dehaveive_v_sense_1"}
+{"lemma":"dehaveant","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:dehaveant_v_sense_2"}
+{"lemma":"dehaveent","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:dehaveent_v_sense_3"}
+{"lemma":"dehaveary","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:dehaveary_v_sense_1"}
+{"lemma":"dehaveory","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:dehaveory_v_sense_2"}
+{"lemma":"dehaveic","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:dehaveic_v_sense_3"}
+{"lemma":"dehaveist","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:dehaveist_v_sense_1"}
+{"lemma":"subhave","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:subhave_v_sense_2"}
+{"lemma":"subhaveal","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:subhaveal_v_sense_3"}
+{"lemma":"subhaveish","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:subhaveish_v_sense_1"}
+{"lemma":"subhaveous","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:subhaveous_v_sense_2"}
+{"lemma":"subhaveive","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:subhaveive_v_sense_3"}
+{"lemma":"subhaveant","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:subhaveant_v_sense_1"}
+{"lemma":"subhaveent","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:subhaveent_v_sense_2"}
+{"lemma":"subhaveary","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:subhaveary_v_sense_3"}
+{"lemma":"subhaveory","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:subhaveory_v_sense_1"}
+{"lemma":"subhaveic","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:subhaveic_v_sense_2"}
+{"lemma":"subhaveist","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:subhaveist_v_sense_3"}
+{"lemma":"interhave","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:interhave_v_sense_1"}
+{"lemma":"interhaveal","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:interhaveal_v_sense_2"}
+{"lemma":"interhaveish","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:interhaveish_v_sense_3"}
+{"lemma":"interhaveous","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:interhaveous_v_sense_1"}
+{"lemma":"interhaveive","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:interhaveive_v_sense_2"}
+{"lemma":"interhaveant","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:interhaveant_v_sense_3"}
+{"lemma":"interhaveent","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:interhaveent_v_sense_1"}
+{"lemma":"interhaveary","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:interhaveary_v_sense_2"}
+{"lemma":"interhaveory","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:interhaveory_v_sense_3"}
+{"lemma":"interhaveic","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:interhaveic_v_sense_1"}
+{"lemma":"interhaveist","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:interhaveist_v_sense_2"}
+{"lemma":"transhave","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:transhave_v_sense_3"}
+{"lemma":"transhaveal","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:transhaveal_v_sense_1"}
+{"lemma":"transhaveish","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:transhaveish_v_sense_2"}
+{"lemma":"transhaveous","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:transhaveous_v_sense_3"}
+{"lemma":"transhaveive","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:transhaveive_v_sense_1"}
+{"lemma":"transhaveant","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:transhaveant_v_sense_2"}
+{"lemma":"transhaveent","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:transhaveent_v_sense_3"}
+{"lemma":"transhaveary","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:transhaveary_v_sense_1"}
+{"lemma":"transhaveory","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:transhaveory_v_sense_2"}
+{"lemma":"transhaveic","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:transhaveic_v_sense_3"}
+{"lemma":"transhaveist","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:transhaveist_v_sense_1"}
+{"lemma":"autohave","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:autohave_v_sense_2"}
+{"lemma":"autohaveal","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:autohaveal_v_sense_3"}
+{"lemma":"autohaveish","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:autohaveish_v_sense_1"}
+{"lemma":"autohaveous","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:autohaveous_v_sense_2"}
+{"lemma":"autohaveive","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:autohaveive_v_sense_3"}
+{"lemma":"autohaveant","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:autohaveant_v_sense_1"}
+{"lemma":"autohaveent","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:autohaveent_v_sense_2"}
+{"lemma":"autohaveary","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:autohaveary_v_sense_3"}
+{"lemma":"autohaveory","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:autohaveory_v_sense_1"}
+{"lemma":"autohaveic","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:autohaveic_v_sense_2"}
+{"lemma":"autohaveist","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:autohaveist_v_sense_3"}
+{"lemma":"cohave","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:cohave_v_sense_1"}
+{"lemma":"cohaveal","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:cohaveal_v_sense_2"}
+{"lemma":"cohaveish","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:cohaveish_v_sense_3"}
+{"lemma":"cohaveous","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:cohaveous_v_sense_1"}
+{"lemma":"cohaveive","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:cohaveive_v_sense_2"}
+{"lemma":"cohaveant","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:cohaveant_v_sense_3"}
+{"lemma":"cohaveent","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:cohaveent_v_sense_1"}
+{"lemma":"cohaveary","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:cohaveary_v_sense_2"}
+{"lemma":"cohaveory","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:cohaveory_v_sense_3"}
+{"lemma":"cohaveic","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:cohaveic_v_sense_1"}
+{"lemma":"cohaveist","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:cohaveist_v_sense_2"}
+{"lemma":"exhave","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:exhave_v_sense_3"}
+{"lemma":"exhaveal","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:exhaveal_v_sense_1"}
+{"lemma":"exhaveish","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:exhaveish_v_sense_2"}
+{"lemma":"exhaveous","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:exhaveous_v_sense_3"}
+{"lemma":"exhaveive","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:exhaveive_v_sense_1"}
+{"lemma":"exhaveant","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:exhaveant_v_sense_2"}
+{"lemma":"exhaveent","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:exhaveent_v_sense_3"}
+{"lemma":"exhaveary","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:exhaveary_v_sense_1"}
+{"lemma":"exhaveory","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:exhaveory_v_sense_2"}
+{"lemma":"exhaveic","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:exhaveic_v_sense_3"}
+{"lemma":"exhaveist","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:exhaveist_v_sense_1"}
+{"lemma":"inhave","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:inhave_v_sense_2"}
+{"lemma":"inhaveal","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:inhaveal_v_sense_3"}
+{"lemma":"inhaveish","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:inhaveish_v_sense_1"}
+{"lemma":"inhaveous","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:inhaveous_v_sense_2"}
+{"lemma":"inhaveive","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:inhaveive_v_sense_3"}
+{"lemma":"inhaveant","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:inhaveant_v_sense_1"}
+{"lemma":"inhaveent","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:inhaveent_v_sense_2"}
+{"lemma":"inhaveary","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:inhaveary_v_sense_3"}
+{"lemma":"inhaveory","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:inhaveory_v_sense_1"}
+{"lemma":"inhaveic","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:inhaveic_v_sense_2"}
+{"lemma":"inhaveist","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:inhaveist_v_sense_3"}
+{"lemma":"do","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:do_v_sense_1"}
+{"lemma":"doal","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:doal_v_sense_2"}
+{"lemma":"doish","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:doish_v_sense_3"}
+{"lemma":"doous","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:doous_v_sense_1"}
+{"lemma":"doive","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:doive_v_sense_2"}
+{"lemma":"doant","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:doant_v_sense_3"}
+{"lemma":"doent","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:doent_v_sense_1"}
+{"lemma":"doary","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:doary_v_sense_2"}
+{"lemma":"doory","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:doory_v_sense_3"}
+{"lemma":"doic","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:doic_v_sense_1"}
+{"lemma":"doist","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:doist_v_sense_2"}
+{"lemma":"dedo","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:dedo_v_sense_3"}
+{"lemma":"dedoal","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:dedoal_v_sense_1"}
+{"lemma":"dedoish","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:dedoish_v_sense_2"}
+{"lemma":"dedoous","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:dedoous_v_sense_3"}
+{"lemma":"dedoive","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:dedoive_v_sense_1"}
+{"lemma":"dedoant","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:dedoant_v_sense_2"}
+{"lemma":"dedoent","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:dedoent_v_sense_3"}
+{"lemma":"dedoary","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:dedoary_v_sense_1"}
+{"lemma":"dedoory","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:dedoory_v_sense_2"}
+{"lemma":"dedoic","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:dedoic_v_sense_3"}
+{"lemma":"dedoist","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:dedoist_v_sense_1"}
+{"lemma":"subdo","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:subdo_v_sense_2"}
+{"lemma":"subdoal","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:subdoal_v_sense_3"}
+{"lemma":"subdoish","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:subdoish_v_sense_1"}
+{"lemma":"subdoous","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:subdoous_v_sense_2"}
+{"lemma":"subdoive","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:subdoive_v_sense_3"}
+{"lemma":"subdoant","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:subdoant_v_sense_1"}
+{"lemma":"subdoent","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:subdoent_v_sense_2"}
+{"lemma":"subdoary","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:subdoary_v_sense_3"}
+{"lemma":"subdoory","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:subdoory_v_sense_1"}
+{"lemma":"subdoic","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:subdoic_v_sense_2"}
+{"lemma":"subdoist","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:subdoist_v_sense_3"}
+{"lemma":"interdo","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:interdo_v_sense_1"}
+{"lemma":"interdoal","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:interdoal_v_sense_2"}
+{"lemma":"interdoish","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:interdoish_v_sense_3"}
+{"lemma":"interdoous","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:interdoous_v_sense_1"}
+{"lemma":"interdoive","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:interdoive_v_sense_2"}
+{"lemma":"interdoant","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:interdoant_v_sense_3"}
+{"lemma":"interdoent","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:interdoent_v_sense_1"}
+{"lemma":"interdoary","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:interdoary_v_sense_2"}
+{"lemma":"interdoory","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:interdoory_v_sense_3"}
+{"lemma":"interdoic","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:interdoic_v_sense_1"}
+{"lemma":"interdoist","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:interdoist_v_sense_2"}
+{"lemma":"transdo","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:transdo_v_sense_3"}
+{"lemma":"transdoal","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:transdoal_v_sense_1"}
+{"lemma":"transdoish","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:transdoish_v_sense_2"}
+{"lemma":"transdoous","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:transdoous_v_sense_3"}
+{"lemma":"transdoive","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:transdoive_v_sense_1"}
+{"lemma":"transdoant","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:transdoant_v_sense_2"}
+{"lemma":"transdoent","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:transdoent_v_sense_3"}
+{"lemma":"transdoary","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:transdoary_v_sense_1"}
+{"lemma":"transdoory","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:transdoory_v_sense_2"}
+{"lemma":"transdoic","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:transdoic_v_sense_3"}
+{"lemma":"transdoist","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:transdoist_v_sense_1"}
+{"lemma":"autodo","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:autodo_v_sense_2"}
+{"lemma":"autodoal","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:autodoal_v_sense_3"}
+{"lemma":"autodoish","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:autodoish_v_sense_1"}
+{"lemma":"autodoous","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:autodoous_v_sense_2"}
+{"lemma":"autodoive","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:autodoive_v_sense_3"}
+{"lemma":"autodoant","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:autodoant_v_sense_1"}
+{"lemma":"autodoent","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:autodoent_v_sense_2"}
+{"lemma":"autodoary","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:autodoary_v_sense_3"}
+{"lemma":"autodoory","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:autodoory_v_sense_1"}
+{"lemma":"autodoic","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:autodoic_v_sense_2"}
+{"lemma":"autodoist","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:autodoist_v_sense_3"}
+{"lemma":"codo","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:codo_v_sense_1"}
+{"lemma":"codoal","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:codoal_v_sense_2"}
+{"lemma":"codoish","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:codoish_v_sense_3"}
+{"lemma":"codoous","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:codoous_v_sense_1"}
+{"lemma":"codoive","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:codoive_v_sense_2"}
+{"lemma":"codoant","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:codoant_v_sense_3"}
+{"lemma":"codoent","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:codoent_v_sense_1"}
+{"lemma":"codoary","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:codoary_v_sense_2"}
+{"lemma":"codoory","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:codoory_v_sense_3"}
+{"lemma":"codoic","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:codoic_v_sense_1"}
+{"lemma":"codoist","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:codoist_v_sense_2"}
+{"lemma":"exdo","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:exdo_v_sense_3"}
+{"lemma":"exdoal","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:exdoal_v_sense_1"}
+{"lemma":"exdoish","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:exdoish_v_sense_2"}
+{"lemma":"exdoous","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:exdoous_v_sense_3"}
+{"lemma":"exdoive","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:exdoive_v_sense_1"}
+{"lemma":"exdoant","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:exdoant_v_sense_2"}
+{"lemma":"exdoent","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:exdoent_v_sense_3"}
+{"lemma":"exdoary","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:exdoary_v_sense_1"}
+{"lemma":"exdoory","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:exdoory_v_sense_2"}
+{"lemma":"exdoic","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:exdoic_v_sense_3"}
+{"lemma":"exdoist","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:exdoist_v_sense_1"}
+{"lemma":"indo","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:indo_v_sense_2"}
+{"lemma":"indoal","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:indoal_v_sense_3"}
+{"lemma":"indoish","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:indoish_v_sense_1"}
+{"lemma":"indoous","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:indoous_v_sense_2"}
+{"lemma":"indoive","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:indoive_v_sense_3"}
+{"lemma":"indoant","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:indoant_v_sense_1"}
+{"lemma":"indoent","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:indoent_v_sense_2"}
+{"lemma":"indoary","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:indoary_v_sense_3"}
+{"lemma":"indoory","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:indoory_v_sense_1"}
+{"lemma":"indoic","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:indoic_v_sense_2"}
+{"lemma":"indoist","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:indoist_v_sense_3"}
+{"lemma":"say","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:say_v_sense_1"}
+{"lemma":"sayal","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:sayal_v_sense_2"}
+{"lemma":"sayish","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:sayish_v_sense_3"}
+{"lemma":"sayous","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:sayous_v_sense_1"}
+{"lemma":"sayive","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:sayive_v_sense_2"}
+{"lemma":"sayant","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:sayant_v_sense_3"}
+{"lemma":"sayent","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:sayent_v_sense_1"}
+{"lemma":"sayary","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:sayary_v_sense_2"}
+{"lemma":"sayory","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:sayory_v_sense_3"}
+{"lemma":"sayic","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:sayic_v_sense_1"}
+{"lemma":"sayist","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:sayist_v_sense_2"}
+{"lemma":"desay","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:desay_v_sense_3"}
+{"lemma":"desayal","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:desayal_v_sense_1"}
+{"lemma":"desayish","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:desayish_v_sense_2"}
+{"lemma":"desayous","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:desayous_v_sense_3"}
+{"lemma":"desayive","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:desayive_v_sense_1"}
+{"lemma":"desayant","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:desayant_v_sense_2"}
+{"lemma":"desayent","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:desayent_v_sense_3"}
+{"lemma":"desayary","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:desayary_v_sense_1"}
+{"lemma":"desayory","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:desayory_v_sense_2"}
+{"lemma":"desayic","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:desayic_v_sense_3"}
+{"lemma":"desayist","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:desayist_v_sense_1"}
+{"lemma":"subsay","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:subsay_v_sense_2"}
+{"lemma":"subsayal","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:subsayal_v_sense_3"}
+{"lemma":"subsayish","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:subsayish_v_sense_1"}
+{"lemma":"subsayous","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:subsayous_v_sense_2"}
+{"lemma":"subsayive","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:subsayive_v_sense_3"}
+{"lemma":"subsayant","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:subsayant_v_sense_1"}
+{"lemma":"subsayent","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:subsayent_v_sense_2"}
+{"lemma":"subsayary","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:subsayary_v_sense_3"}
+{"lemma":"subsayory","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:subsayory_v_sense_1"}
+{"lemma":"subsayic","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:subsayic_v_sense_2"}
+{"lemma":"subsayist","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:subsayist_v_sense_3"}
+{"lemma":"intersay","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:intersay_v_sense_1"}
+{"lemma":"intersayal","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:intersayal_v_sense_2"}
+{"lemma":"intersayish","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:intersayish_v_sense_3"}
+{"lemma":"intersayous","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:intersayous_v_sense_1"}
+{"lemma":"intersayive","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:intersayive_v_sense_2"}
+{"lemma":"intersayant","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:intersayant_v_sense_3"}
+{"lemma":"intersayent","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:intersayent_v_sense_1"}
+{"lemma":"intersayary","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:intersayary_v_sense_2"}
+{"lemma":"intersayory","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:intersayory_v_sense_3"}
+{"lemma":"intersayic","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:intersayic_v_sense_1"}
+{"lemma":"intersayist","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:intersayist_v_sense_2"}
+{"lemma":"transsay","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:transsay_v_sense_3"}
+{"lemma":"transsayal","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:transsayal_v_sense_1"}
+{"lemma":"transsayish","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:transsayish_v_sense_2"}
+{"lemma":"transsayous","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:transsayous_v_sense_3"}
+{"lemma":"transsayive","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:transsayive_v_sense_1"}
+{"lemma":"transsayant","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:transsayant_v_sense_2"}
+{"lemma":"transsayent","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:transsayent_v_sense_3"}
+{"lemma":"transsayary","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:transsayary_v_sense_1"}
+{"lemma":"transsayory","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:transsayory_v_sense_2"}
+{"lemma":"transsayic","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:transsayic_v_sense_3"}
+{"lemma":"transsayist","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:transsayist_v_sense_1"}
+{"lemma":"autosay","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:autosay_v_sense_2"}
+{"lemma":"autosayal","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:autosayal_v_sense_3"}
+{"lemma":"autosayish","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:autosayish_v_sense_1"}
+{"lemma":"autosayous","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:autosayous_v_sense_2"}
+{"lemma":"autosayive","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:autosayive_v_sense_3"}
+{"lemma":"autosayant","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:autosayant_v_sense_1"}
+{"lemma":"autosayent","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:autosayent_v_sense_2"}
+{"lemma":"autosayary","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:autosayary_v_sense_3"}
+{"lemma":"autosayory","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:autosayory_v_sense_1"}
+{"lemma":"autosayic","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:autosayic_v_sense_2"}
+{"lemma":"autosayist","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:autosayist_v_sense_3"}
+{"lemma":"cosay","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:cosay_v_sense_1"}
+{"lemma":"cosayal","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:cosayal_v_sense_2"}
+{"lemma":"cosayish","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:cosayish_v_sense_3"}
+{"lemma":"cosayous","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:cosayous_v_sense_1"}
+{"lemma":"cosayive","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:cosayive_v_sense_2"}
+{"lemma":"cosayant","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:cosayant_v_sense_3"}
+{"lemma":"cosayent","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:cosayent_v_sense_1"}
+{"lemma":"cosayary","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:cosayary_v_sense_2"}
+{"lemma":"cosayory","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:cosayory_v_sense_3"}
+{"lemma":"cosayic","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:cosayic_v_sense_1"}
+{"lemma":"cosayist","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:cosayist_v_sense_2"}
+{"lemma":"exsay","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:exsay_v_sense_3"}
+{"lemma":"exsayal","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:exsayal_v_sense_1"}
+{"lemma":"exsayish","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:exsayish_v_sense_2"}
+{"lemma":"exsayous","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:exsayous_v_sense_3"}
+{"lemma":"exsayive","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:exsayive_v_sense_1"}
+{"lemma":"exsayant","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:exsayant_v_sense_2"}
+{"lemma":"exsayent","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:exsayent_v_sense_3"}
+{"lemma":"exsayary","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:exsayary_v_sense_1"}
+{"lemma":"exsayory","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:exsayory_v_sense_2"}
+{"lemma":"exsayic","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:exsayic_v_sense_3"}
+{"lemma":"exsayist","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:exsayist_v_sense_1"}
+{"lemma":"insay","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:insay_v_sense_2"}
+{"lemma":"insayal","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:insayal_v_sense_3"}
+{"lemma":"insayish","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:insayish_v_sense_1"}
+{"lemma":"insayous","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:insayous_v_sense_2"}
+{"lemma":"insayive","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:insayive_v_sense_3"}
+{"lemma":"insayant","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:insayant_v_sense_1"}
+{"lemma":"insayent","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:insayent_v_sense_2"}
+{"lemma":"insayary","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:insayary_v_sense_3"}
+{"lemma":"insayory","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:insayory_v_sense_1"}
+{"lemma":"insayic","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:insayic_v_sense_2"}
+{"lemma":"insayist","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:insayist_v_sense_3"}
+{"lemma":"get","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:get_v_sense_1"}
+{"lemma":"getal","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:getal_v_sense_2"}
+{"lemma":"getish","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:getish_v_sense_3"}
+{"lemma":"getous","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:getous_v_sense_1"}
+{"lemma":"getive","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:getive_v_sense_2"}
+{"lemma":"getant","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:getant_v_sense_3"}
+{"lemma":"getent","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:getent_v_sense_1"}
+{"lemma":"getary","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:getary_v_sense_2"}
+{"lemma":"getory","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:getory_v_sense_3"}
+{"lemma":"getic","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:getic_v_sense_1"}
+{"lemma":"getist","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:getist_v_sense_2"}
+{"lemma":"deget","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:deget_v_sense_3"}
+{"lemma":"degetal","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:degetal_v_sense_1"}
+{"lemma":"degetish","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:degetish_v_sense_2"}
+{"lemma":"degetous","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:degetous_v_sense_3"}
+{"lemma":"degetive","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:degetive_v_sense_1"}
+{"lemma":"degetant","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:degetant_v_sense_2"}
+{"lemma":"degetent","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:degetent_v_sense_3"}
+{"lemma":"degetary","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:degetary_v_sense_1"}
+{"lemma":"degetory","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:degetory_v_sense_2"}
+{"lemma":"degetic","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:degetic_v_sense_3"}
+{"lemma":"degetist","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:degetist_v_sense_1"}
+{"lemma":"subget","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:subget_v_sense_2"}
+{"lemma":"subgetal","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:subgetal_v_sense_3"}
+{"lemma":"subgetish","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:subgetish_v_sense_1"}
+{"lemma":"subgetous","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:subgetous_v_sense_2"}
+{"lemma":"subgetive","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:subgetive_v_sense_3"}
+{"lemma":"subgetant","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:subgetant_v_sense_1"}
+{"lemma":"subgetent","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:subgetent_v_sense_2"}
+{"lemma":"subgetary","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:subgetary_v_sense_3"}
+{"lemma":"subgetory","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:subgetory_v_sense_1"}
+{"lemma":"subgetic","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:subgetic_v_sense_2"}
+{"lemma":"subgetist","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:subgetist_v_sense_3"}
+{"lemma":"interget","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:interget_v_sense_1"}
+{"lemma":"intergetal","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:intergetal_v_sense_2"}
+{"lemma":"intergetish","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:intergetish_v_sense_3"}
+{"lemma":"intergetous","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:intergetous_v_sense_1"}
+{"lemma":"intergetive","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:intergetive_v_sense_2"}
+{"lemma":"intergetant","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:intergetant_v_sense_3"}
+{"lemma":"intergetent","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:intergetent_v_sense_1"}
+{"lemma":"intergetary","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:intergetary_v_sense_2"}
+{"lemma":"intergetory","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:intergetory_v_sense_3"}
+{"lemma":"intergetic","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:intergetic_v_sense_1"}
+{"lemma":"intergetist","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:intergetist_v_sense_2"}
+{"lemma":"transget","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:transget_v_sense_3"}
+{"lemma":"transgetal","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:transgetal_v_sense_1"}
+{"lemma":"transgetish","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:transgetish_v_sense_2"}
+{"lemma":"transgetous","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:transgetous_v_sense_3"}
+{"lemma":"transgetive","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:transgetive_v_sense_1"}
+{"lemma":"transgetant","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:transgetant_v_sense_2"}
+{"lemma":"transgetent","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:transgetent_v_sense_3"}
+{"lemma":"transgetary","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:transgetary_v_sense_1"}
+{"lemma":"transgetory","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:transgetory_v_sense_2"}
+{"lemma":"transgetic","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:transgetic_v_sense_3"}
+{"lemma":"transgetist","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:transgetist_v_sense_1"}
+{"lemma":"autoget","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:autoget_v_sense_2"}
+{"lemma":"autogetal","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:autogetal_v_sense_3"}
+{"lemma":"autogetish","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:autogetish_v_sense_1"}
+{"lemma":"autogetous","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:autogetous_v_sense_2"}
+{"lemma":"autogetive","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:autogetive_v_sense_3"}
+{"lemma":"autogetant","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:autogetant_v_sense_1"}
+{"lemma":"autogetent","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:autogetent_v_sense_2"}
+{"lemma":"autogetary","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:autogetary_v_sense_3"}
+{"lemma":"autogetory","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:autogetory_v_sense_1"}
+{"lemma":"autogetic","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:autogetic_v_sense_2"}
+{"lemma":"autogetist","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:autogetist_v_sense_3"}
+{"lemma":"coget","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:coget_v_sense_1"}
+{"lemma":"cogetal","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:cogetal_v_sense_2"}
+{"lemma":"cogetish","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:cogetish_v_sense_3"}
+{"lemma":"cogetous","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:cogetous_v_sense_1"}
+{"lemma":"cogetive","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:cogetive_v_sense_2"}
+{"lemma":"cogetant","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:cogetant_v_sense_3"}
+{"lemma":"cogetent","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:cogetent_v_sense_1"}
+{"lemma":"cogetary","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:cogetary_v_sense_2"}
+{"lemma":"cogetory","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:cogetory_v_sense_3"}
+{"lemma":"cogetic","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:cogetic_v_sense_1"}
+{"lemma":"cogetist","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:cogetist_v_sense_2"}
+{"lemma":"exget","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:exget_v_sense_3"}
+{"lemma":"exgetal","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:exgetal_v_sense_1"}
+{"lemma":"exgetish","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:exgetish_v_sense_2"}
+{"lemma":"exgetous","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:exgetous_v_sense_3"}
+{"lemma":"exgetive","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:exgetive_v_sense_1"}
+{"lemma":"exgetant","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:exgetant_v_sense_2"}
+{"lemma":"exgetent","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:exgetent_v_sense_3"}
+{"lemma":"exgetary","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:exgetary_v_sense_1"}
+{"lemma":"exgetory","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:exgetory_v_sense_2"}
+{"lemma":"exgetic","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:exgetic_v_sense_3"}
+{"lemma":"exgetist","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:exgetist_v_sense_1"}
+{"lemma":"inget","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:inget_v_sense_2"}
+{"lemma":"ingetal","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:ingetal_v_sense_3"}
+{"lemma":"ingetish","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:ingetish_v_sense_1"}
+{"lemma":"ingetous","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:ingetous_v_sense_2"}
+{"lemma":"ingetive","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:ingetive_v_sense_3"}
+{"lemma":"ingetant","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:ingetant_v_sense_1"}
+{"lemma":"ingetent","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:ingetent_v_sense_2"}
+{"lemma":"ingetary","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:ingetary_v_sense_3"}
+{"lemma":"ingetory","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:ingetory_v_sense_1"}
+{"lemma":"ingetic","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:ingetic_v_sense_2"}
+{"lemma":"ingetist","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:ingetist_v_sense_3"}
+{"lemma":"make","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:make_v_sense_1"}
+{"lemma":"makeal","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:makeal_v_sense_2"}
+{"lemma":"makeish","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:makeish_v_sense_3"}
+{"lemma":"makeous","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:makeous_v_sense_1"}
+{"lemma":"makeive","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:makeive_v_sense_2"}
+{"lemma":"makeant","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:makeant_v_sense_3"}
+{"lemma":"makeent","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:makeent_v_sense_1"}
+{"lemma":"makeary","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:makeary_v_sense_2"}
+{"lemma":"makeory","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:makeory_v_sense_3"}
+{"lemma":"makeic","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:makeic_v_sense_1"}
+{"lemma":"makeist","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:makeist_v_sense_2"}
+{"lemma":"demake","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:demake_v_sense_3"}
+{"lemma":"demakeal","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:demakeal_v_sense_1"}
+{"lemma":"demakeish","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:demakeish_v_sense_2"}
+{"lemma":"demakeous","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:demakeous_v_sense_3"}
+{"lemma":"demakeive","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:demakeive_v_sense_1"}
+{"lemma":"demakeant","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:demakeant_v_sense_2"}
+{"lemma":"demakeent","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:demakeent_v_sense_3"}
+{"lemma":"demakeary","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:demakeary_v_sense_1"}
+{"lemma":"demakeory","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:demakeory_v_sense_2"}
+{"lemma":"demakeic","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:demakeic_v_sense_3"}
+{"lemma":"demakeist","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:demakeist_v_sense_1"}
+{"lemma":"submake","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:submake_v_sense_2"}
+{"lemma":"submakeal","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:submakeal_v_sense_3"}
+{"lemma":"submakeish","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:submakeish_v_sense_1"}
+{"lemma":"submakeous","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:submakeous_v_sense_2"}
+{"lemma":"submakeive","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:submakeive_v_sense_3"}
+{"lemma":"submakeant","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:submakeant_v_sense_1"}
+{"lemma":"submakeent","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:submakeent_v_sense_2"}
+{"lemma":"submakeary","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:submakeary_v_sense_3"}
+{"lemma":"submakeory","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:submakeory_v_sense_1"}
+{"lemma":"submakeic","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:submakeic_v_sense_2"}
+{"lemma":"submakeist","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:submakeist_v_sense_3"}
+{"lemma":"intermake","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:intermake_v_sense_1"}
+{"lemma":"intermakeal","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:intermakeal_v_sense_2"}
+{"lemma":"intermakeish","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:intermakeish_v_sense_3"}
+{"lemma":"intermakeous","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:intermakeous_v_sense_1"}
+{"lemma":"intermakeive","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:intermakeive_v_sense_2"}
+{"lemma":"intermakeant","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:intermakeant_v_sense_3"}
+{"lemma":"intermakeent","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:intermakeent_v_sense_1"}
+{"lemma":"intermakeary","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:intermakeary_v_sense_2"}
+{"lemma":"intermakeory","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:intermakeory_v_sense_3"}
+{"lemma":"intermakeic","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:intermakeic_v_sense_1"}
+{"lemma":"intermakeist","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:intermakeist_v_sense_2"}
+{"lemma":"transmake","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:transmake_v_sense_3"}
+{"lemma":"transmakeal","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:transmakeal_v_sense_1"}
+{"lemma":"transmakeish","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:transmakeish_v_sense_2"}
+{"lemma":"transmakeous","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:transmakeous_v_sense_3"}
+{"lemma":"transmakeive","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:transmakeive_v_sense_1"}
+{"lemma":"transmakeant","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:transmakeant_v_sense_2"}
+{"lemma":"transmakeent","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:transmakeent_v_sense_3"}
+{"lemma":"transmakeary","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:transmakeary_v_sense_1"}
+{"lemma":"transmakeory","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:transmakeory_v_sense_2"}
+{"lemma":"transmakeic","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:transmakeic_v_sense_3"}
+{"lemma":"transmakeist","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:transmakeist_v_sense_1"}
+{"lemma":"automake","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:automake_v_sense_2"}
+{"lemma":"automakeal","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:automakeal_v_sense_3"}
+{"lemma":"automakeish","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:automakeish_v_sense_1"}
+{"lemma":"automakeous","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:automakeous_v_sense_2"}
+{"lemma":"automakeive","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:automakeive_v_sense_3"}
+{"lemma":"automakeant","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:automakeant_v_sense_1"}
+{"lemma":"automakeent","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:automakeent_v_sense_2"}
+{"lemma":"automakeary","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:automakeary_v_sense_3"}
+{"lemma":"automakeory","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:automakeory_v_sense_1"}
+{"lemma":"automakeic","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:automakeic_v_sense_2"}
+{"lemma":"automakeist","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:automakeist_v_sense_3"}
+{"lemma":"comake","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:comake_v_sense_1"}
+{"lemma":"comakeal","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:comakeal_v_sense_2"}
+{"lemma":"comakeish","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:comakeish_v_sense_3"}
+{"lemma":"comakeous","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:comakeous_v_sense_1"}
+{"lemma":"comakeive","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:comakeive_v_sense_2"}
+{"lemma":"comakeant","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:comakeant_v_sense_3"}
+{"lemma":"comakeent","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:comakeent_v_sense_1"}
+{"lemma":"comakeary","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:comakeary_v_sense_2"}
+{"lemma":"comakeory","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:comakeory_v_sense_3"}
+{"lemma":"comakeic","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:comakeic_v_sense_1"}
+{"lemma":"comakeist","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:comakeist_v_sense_2"}
+{"lemma":"exmake","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:exmake_v_sense_3"}
+{"lemma":"exmakeal","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:exmakeal_v_sense_1"}
+{"lemma":"exmakeish","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:exmakeish_v_sense_2"}
+{"lemma":"exmakeous","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:exmakeous_v_sense_3"}
+{"lemma":"exmakeive","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:exmakeive_v_sense_1"}
+{"lemma":"exmakeant","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:exmakeant_v_sense_2"}
+{"lemma":"exmakeent","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:exmakeent_v_sense_3"}
+{"lemma":"exmakeary","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:exmakeary_v_sense_1"}
+{"lemma":"exmakeory","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:exmakeory_v_sense_2"}
+{"lemma":"exmakeic","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:exmakeic_v_sense_3"}
+{"lemma":"exmakeist","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:exmakeist_v_sense_1"}
+{"lemma":"inmake","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:inmake_v_sense_2"}
+{"lemma":"inmakeal","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:inmakeal_v_sense_3"}
+{"lemma":"inmakeish","pos":"v","rank":1,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:inmakeish_v_sense_1"}
+{"lemma":"inmakeous","pos":"v","rank":2,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:inmakeous_v_sense_2"}
+{"lemma":"inmakeive","pos":"v","rank":3,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:inmakeive_v_sense_3"}
+{"lemma":"inmakeant","pos":"v","rank":1,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:inmakeant_v_sense_1"}
+{"lemma":"inmakeent","pos":"v","rank":2,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:inmakeent_v_sense_2"}
+{"lemma":"inmakeary","pos":"v","rank":3,"en_gloss":"be","vi_gloss":"là","ref":"wordnet:inmakeary_v_sense_3"}
+{"lemma":"inmakeory","pos":"v","rank":1,"en_gloss":"have","vi_gloss":"có","ref":"wordnet:inmakeory_v_sense_1"}
+{"lemma":"inmakeic","pos":"v","rank":2,"en_gloss":"do","vi_gloss":"làm","ref":"wordnet:inmakeic_v_sense_2"}
+{"lemma":"inmakeist","pos":"v","rank":3,"en_gloss":"say","vi_gloss":"nói","ref":"wordnet:inmakeist_v_sense_3"}
+{"lemma":"go","pos":"v","rank":1,"en_gloss":"get","vi_gloss":"nhận","ref":"wordnet:go_v_sense_1"}
+{"lemma":"goal","pos":"v","rank":2,"en_gloss":"be","vi_gloss":"đi","ref":"wordnet:goal_v_sense_2"}
+{"lemma":"goish","pos":"v","rank":3,"en_gloss":"have","vi_gloss":"biết","ref":"wordnet:goish_v_sense_3"}
+{"lemma":"goous","pos":"v","rank":1,"en_gloss":"do","vi_gloss":"lấy","ref":"wordnet:goous_v_sense_1"}
+{"lemma":"goive","pos":"v","rank":2,"en_gloss":"say","vi_gloss":"thấy","ref":"wordnet:goive_v_sense_2"}
+{"lemma":"goant","pos":"v","rank":3,"en_gloss":"get","vi_gloss":"đến","ref":"wordnet:goant_v_sense_3"}
+{"lemma":"time","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:time_n_sense_1"}
+{"lemma":"timeal","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:timeal_n_sense_2"}
+{"lemma":"timeish","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:timeish_n_sense_3"}
+{"lemma":"timeous","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:timeous_n_sense_1"}
+{"lemma":"timeive","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:timeive_n_sense_2"}
+{"lemma":"timeant","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:timeant_n_sense_3"}
+{"lemma":"timeent","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:timeent_n_sense_1"}
+{"lemma":"timeary","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:timeary_n_sense_2"}
+{"lemma":"timeory","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:timeory_n_sense_3"}
+{"lemma":"timeic","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:timeic_n_sense_1"}
+{"lemma":"timeist","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:timeist_n_sense_2"}
+{"lemma":"detime","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:detime_n_sense_3"}
+{"lemma":"detimeal","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:detimeal_n_sense_1"}
+{"lemma":"detimeish","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:detimeish_n_sense_2"}
+{"lemma":"detimeous","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:detimeous_n_sense_3"}
+{"lemma":"detimeive","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:detimeive_n_sense_1"}
+{"lemma":"detimeant","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:detimeant_n_sense_2"}
+{"lemma":"detimeent","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:detimeent_n_sense_3"}
+{"lemma":"detimeary","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:detimeary_n_sense_1"}
+{"lemma":"detimeory","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:detimeory_n_sense_2"}
+{"lemma":"detimeic","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:detimeic_n_sense_3"}
+{"lemma":"detimeist","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:detimeist_n_sense_1"}
+{"lemma":"subtime","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:subtime_n_sense_2"}
+{"lemma":"subtimeal","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:subtimeal_n_sense_3"}
+{"lemma":"subtimeish","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:subtimeish_n_sense_1"}
+{"lemma":"subtimeous","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:subtimeous_n_sense_2"}
+{"lemma":"subtimeive","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:subtimeive_n_sense_3"}
+{"lemma":"subtimeant","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:subtimeant_n_sense_1"}
+{"lemma":"subtimeent","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:subtimeent_n_sense_2"}
+{"lemma":"subtimeary","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:subtimeary_n_sense_3"}
+{"lemma":"subtimeory","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:subtimeory_n_sense_1"}
+{"lemma":"subtimeic","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:subtimeic_n_sense_2"}
+{"lemma":"subtimeist","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:subtimeist_n_sense_3"}
+{"lemma":"intertime","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:intertime_n_sense_1"}
+{"lemma":"intertimeal","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:intertimeal_n_sense_2"}
+{"lemma":"intertimeish","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:intertimeish_n_sense_3"}
+{"lemma":"intertimeous","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:intertimeous_n_sense_1"}
+{"lemma":"intertimeive","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:intertimeive_n_sense_2"}
+{"lemma":"intertimeant","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:intertimeant_n_sense_3"}
+{"lemma":"intertimeent","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:intertimeent_n_sense_1"}
+{"lemma":"intertimeary","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:intertimeary_n_sense_2"}
+{"lemma":"intertimeory","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:intertimeory_n_sense_3"}
+{"lemma":"intertimeic","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:intertimeic_n_sense_1"}
+{"lemma":"intertimeist","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:intertimeist_n_sense_2"}
+{"lemma":"transtime","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:transtime_n_sense_3"}
+{"lemma":"transtimeal","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:transtimeal_n_sense_1"}
+{"lemma":"transtimeish","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:transtimeish_n_sense_2"}
+{"lemma":"transtimeous","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:transtimeous_n_sense_3"}
+{"lemma":"transtimeive","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:transtimeive_n_sense_1"}
+{"lemma":"transtimeant","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:transtimeant_n_sense_2"}
+{"lemma":"transtimeent","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:transtimeent_n_sense_3"}
+{"lemma":"transtimeary","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:transtimeary_n_sense_1"}
+{"lemma":"transtimeory","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:transtimeory_n_sense_2"}
+{"lemma":"transtimeic","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:transtimeic_n_sense_3"}
+{"lemma":"transtimeist","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:transtimeist_n_sense_1"}
+{"lemma":"autotime","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:autotime_n_sense_2"}
+{"lemma":"autotimeal","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:autotimeal_n_sense_3"}
+{"lemma":"autotimeish","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:autotimeish_n_sense_1"}
+{"lemma":"autotimeous","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:autotimeous_n_sense_2"}
+{"lemma":"autotimeive","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:autotimeive_n_sense_3"}
+{"lemma":"autotimeant","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:autotimeant_n_sense_1"}
+{"lemma":"autotimeent","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:autotimeent_n_sense_2"}
+{"lemma":"autotimeary","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:autotimeary_n_sense_3"}
+{"lemma":"autotimeory","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:autotimeory_n_sense_1"}
+{"lemma":"autotimeic","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:autotimeic_n_sense_2"}
+{"lemma":"autotimeist","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:autotimeist_n_sense_3"}
+{"lemma":"cotime","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:cotime_n_sense_1"}
+{"lemma":"cotimeal","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:cotimeal_n_sense_2"}
+{"lemma":"cotimeish","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:cotimeish_n_sense_3"}
+{"lemma":"cotimeous","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:cotimeous_n_sense_1"}
+{"lemma":"cotimeive","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:cotimeive_n_sense_2"}
+{"lemma":"cotimeant","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:cotimeant_n_sense_3"}
+{"lemma":"cotimeent","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:cotimeent_n_sense_1"}
+{"lemma":"cotimeary","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:cotimeary_n_sense_2"}
+{"lemma":"cotimeory","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:cotimeory_n_sense_3"}
+{"lemma":"cotimeic","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:cotimeic_n_sense_1"}
+{"lemma":"cotimeist","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:cotimeist_n_sense_2"}
+{"lemma":"extime","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:extime_n_sense_3"}
+{"lemma":"extimeal","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:extimeal_n_sense_1"}
+{"lemma":"extimeish","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:extimeish_n_sense_2"}
+{"lemma":"extimeous","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:extimeous_n_sense_3"}
+{"lemma":"extimeive","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:extimeive_n_sense_1"}
+{"lemma":"extimeant","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:extimeant_n_sense_2"}
+{"lemma":"extimeent","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:extimeent_n_sense_3"}
+{"lemma":"extimeary","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:extimeary_n_sense_1"}
+{"lemma":"extimeory","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:extimeory_n_sense_2"}
+{"lemma":"extimeic","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:extimeic_n_sense_3"}
+{"lemma":"extimeist","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:extimeist_n_sense_1"}
+{"lemma":"intime","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:intime_n_sense_2"}
+{"lemma":"intimeal","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:intimeal_n_sense_3"}
+{"lemma":"intimeish","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:intimeish_n_sense_1"}
+{"lemma":"intimeous","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:intimeous_n_sense_2"}
+{"lemma":"intimeive","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:intimeive_n_sense_3"}
+{"lemma":"intimeant","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:intimeant_n_sense_1"}
+{"lemma":"intimeent","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:intimeent_n_sense_2"}
+{"lemma":"intimeary","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:intimeary_n_sense_3"}
+{"lemma":"intimeory","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:intimeory_n_sense_1"}
+{"lemma":"intimeic","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:intimeic_n_sense_2"}
+{"lemma":"intimeist","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:intimeist_n_sense_3"}
+{"lemma":"year","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:year_n_sense_1"}
+{"lemma":"yearal","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:yearal_n_sense_2"}
+{"lemma":"yearish","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:yearish_n_sense_3"}
+{"lemma":"yearous","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:yearous_n_sense_1"}
+{"lemma":"yearive","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:yearive_n_sense_2"}
+{"lemma":"yearant","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:yearant_n_sense_3"}
+{"lemma":"yearent","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:yearent_n_sense_1"}
+{"lemma":"yearary","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:yearary_n_sense_2"}
+{"lemma":"yearory","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:yearory_n_sense_3"}
+{"lemma":"yearic","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:yearic_n_sense_1"}
+{"lemma":"yearist","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:yearist_n_sense_2"}
+{"lemma":"deyear","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:deyear_n_sense_3"}
+{"lemma":"deyearal","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:deyearal_n_sense_1"}
+{"lemma":"deyearish","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:deyearish_n_sense_2"}
+{"lemma":"deyearous","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:deyearous_n_sense_3"}
+{"lemma":"deyearive","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:deyearive_n_sense_1"}
+{"lemma":"deyearant","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:deyearant_n_sense_2"}
+{"lemma":"deyearent","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:deyearent_n_sense_3"}
+{"lemma":"deyearary","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:deyearary_n_sense_1"}
+{"lemma":"deyearory","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:deyearory_n_sense_2"}
+{"lemma":"deyearic","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:deyearic_n_sense_3"}
+{"lemma":"deyearist","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:deyearist_n_sense_1"}
+{"lemma":"subyear","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:subyear_n_sense_2"}
+{"lemma":"subyearal","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:subyearal_n_sense_3"}
+{"lemma":"subyearish","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:subyearish_n_sense_1"}
+{"lemma":"subyearous","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:subyearous_n_sense_2"}
+{"lemma":"subyearive","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:subyearive_n_sense_3"}
+{"lemma":"subyearant","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:subyearant_n_sense_1"}
+{"lemma":"subyearent","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:subyearent_n_sense_2"}
+{"lemma":"subyearary","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:subyearary_n_sense_3"}
+{"lemma":"subyearory","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:subyearory_n_sense_1"}
+{"lemma":"subyearic","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:subyearic_n_sense_2"}
+{"lemma":"subyearist","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:subyearist_n_sense_3"}
+{"lemma":"interyear","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:interyear_n_sense_1"}
+{"lemma":"interyearal","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:interyearal_n_sense_2"}
+{"lemma":"interyearish","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:interyearish_n_sense_3"}
+{"lemma":"interyearous","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:interyearous_n_sense_1"}
+{"lemma":"interyearive","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:interyearive_n_sense_2"}
+{"lemma":"interyearant","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:interyearant_n_sense_3"}
+{"lemma":"interyearent","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:interyearent_n_sense_1"}
+{"lemma":"interyearary","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:interyearary_n_sense_2"}
+{"lemma":"interyearory","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:interyearory_n_sense_3"}
+{"lemma":"interyearic","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:interyearic_n_sense_1"}
+{"lemma":"interyearist","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:interyearist_n_sense_2"}
+{"lemma":"transyear","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:transyear_n_sense_3"}
+{"lemma":"transyearal","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:transyearal_n_sense_1"}
+{"lemma":"transyearish","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:transyearish_n_sense_2"}
+{"lemma":"transyearous","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:transyearous_n_sense_3"}
+{"lemma":"transyearive","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:transyearive_n_sense_1"}
+{"lemma":"transyearant","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:transyearant_n_sense_2"}
+{"lemma":"transyearent","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:transyearent_n_sense_3"}
+{"lemma":"transyearary","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:transyearary_n_sense_1"}
+{"lemma":"transyearory","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:transyearory_n_sense_2"}
+{"lemma":"transyearic","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:transyearic_n_sense_3"}
+{"lemma":"transyearist","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:transyearist_n_sense_1"}
+{"lemma":"autoyear","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:autoyear_n_sense_2"}
+{"lemma":"autoyearal","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:autoyearal_n_sense_3"}
+{"lemma":"autoyearish","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:autoyearish_n_sense_1"}
+{"lemma":"autoyearous","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:autoyearous_n_sense_2"}
+{"lemma":"autoyearive","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:autoyearive_n_sense_3"}
+{"lemma":"autoyearant","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:autoyearant_n_sense_1"}
+{"lemma":"autoyearent","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:autoyearent_n_sense_2"}
+{"lemma":"autoyearary","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:autoyearary_n_sense_3"}
+{"lemma":"autoyearory","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:autoyearory_n_sense_1"}
+{"lemma":"autoyearic","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:autoyearic_n_sense_2"}
+{"lemma":"autoyearist","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:autoyearist_n_sense_3"}
+{"lemma":"coyear","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:coyear_n_sense_1"}
+{"lemma":"coyearal","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:coyearal_n_sense_2"}
+{"lemma":"coyearish","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:coyearish_n_sense_3"}
+{"lemma":"coyearous","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:coyearous_n_sense_1"}
+{"lemma":"coyearive","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:coyearive_n_sense_2"}
+{"lemma":"coyearant","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:coyearant_n_sense_3"}
+{"lemma":"coyearent","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:coyearent_n_sense_1"}
+{"lemma":"coyearary","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:coyearary_n_sense_2"}
+{"lemma":"coyearory","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:coyearory_n_sense_3"}
+{"lemma":"coyearic","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:coyearic_n_sense_1"}
+{"lemma":"coyearist","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:coyearist_n_sense_2"}
+{"lemma":"exyear","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:exyear_n_sense_3"}
+{"lemma":"exyearal","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:exyearal_n_sense_1"}
+{"lemma":"exyearish","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:exyearish_n_sense_2"}
+{"lemma":"exyearous","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:exyearous_n_sense_3"}
+{"lemma":"exyearive","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:exyearive_n_sense_1"}
+{"lemma":"exyearant","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:exyearant_n_sense_2"}
+{"lemma":"exyearent","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:exyearent_n_sense_3"}
+{"lemma":"exyearary","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:exyearary_n_sense_1"}
+{"lemma":"exyearory","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:exyearory_n_sense_2"}
+{"lemma":"exyearic","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:exyearic_n_sense_3"}
+{"lemma":"exyearist","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:exyearist_n_sense_1"}
+{"lemma":"inyear","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:inyear_n_sense_2"}
+{"lemma":"inyearal","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:inyearal_n_sense_3"}
+{"lemma":"inyearish","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:inyearish_n_sense_1"}
+{"lemma":"inyearous","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:inyearous_n_sense_2"}
+{"lemma":"inyearive","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:inyearive_n_sense_3"}
+{"lemma":"inyearant","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:inyearant_n_sense_1"}
+{"lemma":"inyearent","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:inyearent_n_sense_2"}
+{"lemma":"inyearary","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:inyearary_n_sense_3"}
+{"lemma":"inyearory","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:inyearory_n_sense_1"}
+{"lemma":"inyearic","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:inyearic_n_sense_2"}
+{"lemma":"inyearist","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:inyearist_n_sense_3"}
+{"lemma":"people","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:people_n_sense_1"}
+{"lemma":"peopleal","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:peopleal_n_sense_2"}
+{"lemma":"peopleish","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:peopleish_n_sense_3"}
+{"lemma":"peopleous","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:peopleous_n_sense_1"}
+{"lemma":"peopleive","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:peopleive_n_sense_2"}
+{"lemma":"peopleant","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:peopleant_n_sense_3"}
+{"lemma":"peopleent","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:peopleent_n_sense_1"}
+{"lemma":"peopleary","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:peopleary_n_sense_2"}
+{"lemma":"peopleory","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:peopleory_n_sense_3"}
+{"lemma":"peopleic","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:peopleic_n_sense_1"}
+{"lemma":"peopleist","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:peopleist_n_sense_2"}
+{"lemma":"depeople","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:depeople_n_sense_3"}
+{"lemma":"depeopleal","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:depeopleal_n_sense_1"}
+{"lemma":"depeopleish","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:depeopleish_n_sense_2"}
+{"lemma":"depeopleous","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:depeopleous_n_sense_3"}
+{"lemma":"depeopleive","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:depeopleive_n_sense_1"}
+{"lemma":"depeopleant","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:depeopleant_n_sense_2"}
+{"lemma":"depeopleent","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:depeopleent_n_sense_3"}
+{"lemma":"depeopleary","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:depeopleary_n_sense_1"}
+{"lemma":"depeopleory","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:depeopleory_n_sense_2"}
+{"lemma":"depeopleic","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:depeopleic_n_sense_3"}
+{"lemma":"depeopleist","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:depeopleist_n_sense_1"}
+{"lemma":"subpeople","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:subpeople_n_sense_2"}
+{"lemma":"subpeopleal","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:subpeopleal_n_sense_3"}
+{"lemma":"subpeopleish","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:subpeopleish_n_sense_1"}
+{"lemma":"subpeopleous","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:subpeopleous_n_sense_2"}
+{"lemma":"subpeopleive","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:subpeopleive_n_sense_3"}
+{"lemma":"subpeopleant","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:subpeopleant_n_sense_1"}
+{"lemma":"subpeopleent","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:subpeopleent_n_sense_2"}
+{"lemma":"subpeopleary","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:subpeopleary_n_sense_3"}
+{"lemma":"subpeopleory","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:subpeopleory_n_sense_1"}
+{"lemma":"subpeopleic","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:subpeopleic_n_sense_2"}
+{"lemma":"subpeopleist","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:subpeopleist_n_sense_3"}
+{"lemma":"interpeople","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:interpeople_n_sense_1"}
+{"lemma":"interpeopleal","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:interpeopleal_n_sense_2"}
+{"lemma":"interpeopleish","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:interpeopleish_n_sense_3"}
+{"lemma":"interpeopleous","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:interpeopleous_n_sense_1"}
+{"lemma":"interpeopleive","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:interpeopleive_n_sense_2"}
+{"lemma":"interpeopleant","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:interpeopleant_n_sense_3"}
+{"lemma":"interpeopleent","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:interpeopleent_n_sense_1"}
+{"lemma":"interpeopleary","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:interpeopleary_n_sense_2"}
+{"lemma":"interpeopleory","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:interpeopleory_n_sense_3"}
+{"lemma":"interpeopleic","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:interpeopleic_n_sense_1"}
+{"lemma":"interpeopleist","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:interpeopleist_n_sense_2"}
+{"lemma":"transpeople","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:transpeople_n_sense_3"}
+{"lemma":"transpeopleal","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:transpeopleal_n_sense_1"}
+{"lemma":"transpeopleish","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:transpeopleish_n_sense_2"}
+{"lemma":"transpeopleous","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:transpeopleous_n_sense_3"}
+{"lemma":"transpeopleive","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:transpeopleive_n_sense_1"}
+{"lemma":"transpeopleant","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:transpeopleant_n_sense_2"}
+{"lemma":"transpeopleent","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:transpeopleent_n_sense_3"}
+{"lemma":"transpeopleary","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:transpeopleary_n_sense_1"}
+{"lemma":"transpeopleory","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:transpeopleory_n_sense_2"}
+{"lemma":"transpeopleic","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:transpeopleic_n_sense_3"}
+{"lemma":"transpeopleist","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:transpeopleist_n_sense_1"}
+{"lemma":"autopeople","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:autopeople_n_sense_2"}
+{"lemma":"autopeopleal","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:autopeopleal_n_sense_3"}
+{"lemma":"autopeopleish","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:autopeopleish_n_sense_1"}
+{"lemma":"autopeopleous","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:autopeopleous_n_sense_2"}
+{"lemma":"autopeopleive","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:autopeopleive_n_sense_3"}
+{"lemma":"autopeopleant","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:autopeopleant_n_sense_1"}
+{"lemma":"autopeopleent","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:autopeopleent_n_sense_2"}
+{"lemma":"autopeopleary","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:autopeopleary_n_sense_3"}
+{"lemma":"autopeopleory","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:autopeopleory_n_sense_1"}
+{"lemma":"autopeopleic","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:autopeopleic_n_sense_2"}
+{"lemma":"autopeopleist","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:autopeopleist_n_sense_3"}
+{"lemma":"copeople","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:copeople_n_sense_1"}
+{"lemma":"copeopleal","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:copeopleal_n_sense_2"}
+{"lemma":"copeopleish","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:copeopleish_n_sense_3"}
+{"lemma":"copeopleous","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:copeopleous_n_sense_1"}
+{"lemma":"copeopleive","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:copeopleive_n_sense_2"}
+{"lemma":"copeopleant","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:copeopleant_n_sense_3"}
+{"lemma":"copeopleent","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:copeopleent_n_sense_1"}
+{"lemma":"copeopleary","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:copeopleary_n_sense_2"}
+{"lemma":"copeopleory","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:copeopleory_n_sense_3"}
+{"lemma":"copeopleic","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:copeopleic_n_sense_1"}
+{"lemma":"copeopleist","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:copeopleist_n_sense_2"}
+{"lemma":"expeople","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:expeople_n_sense_3"}
+{"lemma":"expeopleal","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:expeopleal_n_sense_1"}
+{"lemma":"expeopleish","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:expeopleish_n_sense_2"}
+{"lemma":"expeopleous","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:expeopleous_n_sense_3"}
+{"lemma":"expeopleive","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:expeopleive_n_sense_1"}
+{"lemma":"expeopleant","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:expeopleant_n_sense_2"}
+{"lemma":"expeopleent","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:expeopleent_n_sense_3"}
+{"lemma":"expeopleary","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:expeopleary_n_sense_1"}
+{"lemma":"expeopleory","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:expeopleory_n_sense_2"}
+{"lemma":"expeopleic","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:expeopleic_n_sense_3"}
+{"lemma":"expeopleist","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:expeopleist_n_sense_1"}
+{"lemma":"inpeople","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:inpeople_n_sense_2"}
+{"lemma":"inpeopleal","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:inpeopleal_n_sense_3"}
+{"lemma":"inpeopleish","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:inpeopleish_n_sense_1"}
+{"lemma":"inpeopleous","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:inpeopleous_n_sense_2"}
+{"lemma":"inpeopleive","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:inpeopleive_n_sense_3"}
+{"lemma":"inpeopleant","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:inpeopleant_n_sense_1"}
+{"lemma":"inpeopleent","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:inpeopleent_n_sense_2"}
+{"lemma":"inpeopleary","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:inpeopleary_n_sense_3"}
+{"lemma":"inpeopleory","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:inpeopleory_n_sense_1"}
+{"lemma":"inpeopleic","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:inpeopleic_n_sense_2"}
+{"lemma":"inpeopleist","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:inpeopleist_n_sense_3"}
+{"lemma":"way","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:way_n_sense_1"}
+{"lemma":"wayal","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:wayal_n_sense_2"}
+{"lemma":"wayish","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:wayish_n_sense_3"}
+{"lemma":"wayous","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:wayous_n_sense_1"}
+{"lemma":"wayive","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:wayive_n_sense_2"}
+{"lemma":"wayant","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:wayant_n_sense_3"}
+{"lemma":"wayent","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:wayent_n_sense_1"}
+{"lemma":"wayary","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:wayary_n_sense_2"}
+{"lemma":"wayory","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:wayory_n_sense_3"}
+{"lemma":"wayic","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:wayic_n_sense_1"}
+{"lemma":"wayist","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:wayist_n_sense_2"}
+{"lemma":"deway","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:deway_n_sense_3"}
+{"lemma":"dewayal","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:dewayal_n_sense_1"}
+{"lemma":"dewayish","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:dewayish_n_sense_2"}
+{"lemma":"dewayous","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:dewayous_n_sense_3"}
+{"lemma":"dewayive","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:dewayive_n_sense_1"}
+{"lemma":"dewayant","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:dewayant_n_sense_2"}
+{"lemma":"dewayent","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:dewayent_n_sense_3"}
+{"lemma":"dewayary","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:dewayary_n_sense_1"}
+{"lemma":"dewayory","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:dewayory_n_sense_2"}
+{"lemma":"dewayic","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:dewayic_n_sense_3"}
+{"lemma":"dewayist","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:dewayist_n_sense_1"}
+{"lemma":"subway","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:subway_n_sense_2"}
+{"lemma":"subwayal","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:subwayal_n_sense_3"}
+{"lemma":"subwayish","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:subwayish_n_sense_1"}
+{"lemma":"subwayous","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:subwayous_n_sense_2"}
+{"lemma":"subwayive","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:subwayive_n_sense_3"}
+{"lemma":"subwayant","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:subwayant_n_sense_1"}
+{"lemma":"subwayent","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:subwayent_n_sense_2"}
+{"lemma":"subwayary","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:subwayary_n_sense_3"}
+{"lemma":"subwayory","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:subwayory_n_sense_1"}
+{"lemma":"subwayic","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:subwayic_n_sense_2"}
+{"lemma":"subwayist","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:subwayist_n_sense_3"}
+{"lemma":"interway","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:interway_n_sense_1"}
+{"lemma":"interwayal","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:interwayal_n_sense_2"}
+{"lemma":"interwayish","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:interwayish_n_sense_3"}
+{"lemma":"interwayous","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:interwayous_n_sense_1"}
+{"lemma":"interwayive","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:interwayive_n_sense_2"}
+{"lemma":"interwayant","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:interwayant_n_sense_3"}
+{"lemma":"interwayent","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:interwayent_n_sense_1"}
+{"lemma":"interwayary","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:interwayary_n_sense_2"}
+{"lemma":"interwayory","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:interwayory_n_sense_3"}
+{"lemma":"interwayic","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:interwayic_n_sense_1"}
+{"lemma":"interwayist","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:interwayist_n_sense_2"}
+{"lemma":"transway","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:transway_n_sense_3"}
+{"lemma":"transwayal","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:transwayal_n_sense_1"}
+{"lemma":"transwayish","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:transwayish_n_sense_2"}
+{"lemma":"transwayous","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:transwayous_n_sense_3"}
+{"lemma":"transwayive","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:transwayive_n_sense_1"}
+{"lemma":"transwayant","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:transwayant_n_sense_2"}
+{"lemma":"transwayent","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:transwayent_n_sense_3"}
+{"lemma":"transwayary","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:transwayary_n_sense_1"}
+{"lemma":"transwayory","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:transwayory_n_sense_2"}
+{"lemma":"transwayic","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:transwayic_n_sense_3"}
+{"lemma":"transwayist","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:transwayist_n_sense_1"}
+{"lemma":"autoway","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:autoway_n_sense_2"}
+{"lemma":"autowayal","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:autowayal_n_sense_3"}
+{"lemma":"autowayish","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:autowayish_n_sense_1"}
+{"lemma":"autowayous","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:autowayous_n_sense_2"}
+{"lemma":"autowayive","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:autowayive_n_sense_3"}
+{"lemma":"autowayant","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:autowayant_n_sense_1"}
+{"lemma":"autowayent","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:autowayent_n_sense_2"}
+{"lemma":"autowayary","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:autowayary_n_sense_3"}
+{"lemma":"autowayory","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:autowayory_n_sense_1"}
+{"lemma":"autowayic","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:autowayic_n_sense_2"}
+{"lemma":"autowayist","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:autowayist_n_sense_3"}
+{"lemma":"coway","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:coway_n_sense_1"}
+{"lemma":"cowayal","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:cowayal_n_sense_2"}
+{"lemma":"cowayish","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:cowayish_n_sense_3"}
+{"lemma":"cowayous","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:cowayous_n_sense_1"}
+{"lemma":"cowayive","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:cowayive_n_sense_2"}
+{"lemma":"cowayant","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:cowayant_n_sense_3"}
+{"lemma":"cowayent","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:cowayent_n_sense_1"}
+{"lemma":"cowayary","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:cowayary_n_sense_2"}
+{"lemma":"cowayory","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:cowayory_n_sense_3"}
+{"lemma":"cowayic","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:cowayic_n_sense_1"}
+{"lemma":"cowayist","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:cowayist_n_sense_2"}
+{"lemma":"exway","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:exway_n_sense_3"}
+{"lemma":"exwayal","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:exwayal_n_sense_1"}
+{"lemma":"exwayish","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:exwayish_n_sense_2"}
+{"lemma":"exwayous","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:exwayous_n_sense_3"}
+{"lemma":"exwayive","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:exwayive_n_sense_1"}
+{"lemma":"exwayant","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:exwayant_n_sense_2"}
+{"lemma":"exwayent","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:exwayent_n_sense_3"}
+{"lemma":"exwayary","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:exwayary_n_sense_1"}
+{"lemma":"exwayory","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:exwayory_n_sense_2"}
+{"lemma":"exwayic","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:exwayic_n_sense_3"}
+{"lemma":"exwayist","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:exwayist_n_sense_1"}
+{"lemma":"inway","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:inway_n_sense_2"}
+{"lemma":"inwayal","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:inwayal_n_sense_3"}
+{"lemma":"inwayish","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:inwayish_n_sense_1"}
+{"lemma":"inwayous","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:inwayous_n_sense_2"}
+{"lemma":"inwayive","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:inwayive_n_sense_3"}
+{"lemma":"inwayant","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:inwayant_n_sense_1"}
+{"lemma":"inwayent","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:inwayent_n_sense_2"}
+{"lemma":"inwayary","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:inwayary_n_sense_3"}
+{"lemma":"inwayory","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:inwayory_n_sense_1"}
+{"lemma":"inwayic","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:inwayic_n_sense_2"}
+{"lemma":"inwayist","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:inwayist_n_sense_3"}
+{"lemma":"day","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:day_n_sense_1"}
+{"lemma":"dayal","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:dayal_n_sense_2"}
+{"lemma":"dayish","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:dayish_n_sense_3"}
+{"lemma":"dayous","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:dayous_n_sense_1"}
+{"lemma":"dayive","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:dayive_n_sense_2"}
+{"lemma":"dayant","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:dayant_n_sense_3"}
+{"lemma":"dayent","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:dayent_n_sense_1"}
+{"lemma":"dayary","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:dayary_n_sense_2"}
+{"lemma":"dayory","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:dayory_n_sense_3"}
+{"lemma":"dayic","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:dayic_n_sense_1"}
+{"lemma":"dayist","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:dayist_n_sense_2"}
+{"lemma":"deday","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:deday_n_sense_3"}
+{"lemma":"dedayal","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:dedayal_n_sense_1"}
+{"lemma":"dedayish","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:dedayish_n_sense_2"}
+{"lemma":"dedayous","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:dedayous_n_sense_3"}
+{"lemma":"dedayive","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:dedayive_n_sense_1"}
+{"lemma":"dedayant","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:dedayant_n_sense_2"}
+{"lemma":"dedayent","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:dedayent_n_sense_3"}
+{"lemma":"dedayary","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:dedayary_n_sense_1"}
+{"lemma":"dedayory","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:dedayory_n_sense_2"}
+{"lemma":"dedayic","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:dedayic_n_sense_3"}
+{"lemma":"dedayist","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:dedayist_n_sense_1"}
+{"lemma":"subday","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:subday_n_sense_2"}
+{"lemma":"subdayal","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:subdayal_n_sense_3"}
+{"lemma":"subdayish","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:subdayish_n_sense_1"}
+{"lemma":"subdayous","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:subdayous_n_sense_2"}
+{"lemma":"subdayive","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:subdayive_n_sense_3"}
+{"lemma":"subdayant","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:subdayant_n_sense_1"}
+{"lemma":"subdayent","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:subdayent_n_sense_2"}
+{"lemma":"subdayary","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:subdayary_n_sense_3"}
+{"lemma":"subdayory","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:subdayory_n_sense_1"}
+{"lemma":"subdayic","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:subdayic_n_sense_2"}
+{"lemma":"subdayist","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:subdayist_n_sense_3"}
+{"lemma":"interday","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:interday_n_sense_1"}
+{"lemma":"interdayal","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:interdayal_n_sense_2"}
+{"lemma":"interdayish","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:interdayish_n_sense_3"}
+{"lemma":"interdayous","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:interdayous_n_sense_1"}
+{"lemma":"interdayive","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:interdayive_n_sense_2"}
+{"lemma":"interdayant","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:interdayant_n_sense_3"}
+{"lemma":"interdayent","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:interdayent_n_sense_1"}
+{"lemma":"interdayary","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:interdayary_n_sense_2"}
+{"lemma":"interdayory","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:interdayory_n_sense_3"}
+{"lemma":"interdayic","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:interdayic_n_sense_1"}
+{"lemma":"interdayist","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:interdayist_n_sense_2"}
+{"lemma":"transday","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:transday_n_sense_3"}
+{"lemma":"transdayal","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:transdayal_n_sense_1"}
+{"lemma":"transdayish","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:transdayish_n_sense_2"}
+{"lemma":"transdayous","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:transdayous_n_sense_3"}
+{"lemma":"transdayive","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:transdayive_n_sense_1"}
+{"lemma":"transdayant","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:transdayant_n_sense_2"}
+{"lemma":"transdayent","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:transdayent_n_sense_3"}
+{"lemma":"transdayary","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:transdayary_n_sense_1"}
+{"lemma":"transdayory","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:transdayory_n_sense_2"}
+{"lemma":"transdayic","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:transdayic_n_sense_3"}
+{"lemma":"transdayist","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:transdayist_n_sense_1"}
+{"lemma":"autoday","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:autoday_n_sense_2"}
+{"lemma":"autodayal","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:autodayal_n_sense_3"}
+{"lemma":"autodayish","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:autodayish_n_sense_1"}
+{"lemma":"autodayous","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:autodayous_n_sense_2"}
+{"lemma":"autodayive","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:autodayive_n_sense_3"}
+{"lemma":"autodayant","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:autodayant_n_sense_1"}
+{"lemma":"autodayent","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:autodayent_n_sense_2"}
+{"lemma":"autodayary","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:autodayary_n_sense_3"}
+{"lemma":"autodayory","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:autodayory_n_sense_1"}
+{"lemma":"autodayic","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:autodayic_n_sense_2"}
+{"lemma":"autodayist","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:autodayist_n_sense_3"}
+{"lemma":"coday","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:coday_n_sense_1"}
+{"lemma":"codayal","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:codayal_n_sense_2"}
+{"lemma":"codayish","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:codayish_n_sense_3"}
+{"lemma":"codayous","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:codayous_n_sense_1"}
+{"lemma":"codayive","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:codayive_n_sense_2"}
+{"lemma":"codayant","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:codayant_n_sense_3"}
+{"lemma":"codayent","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:codayent_n_sense_1"}
+{"lemma":"codayary","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:codayary_n_sense_2"}
+{"lemma":"codayory","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:codayory_n_sense_3"}
+{"lemma":"codayic","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:codayic_n_sense_1"}
+{"lemma":"codayist","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:codayist_n_sense_2"}
+{"lemma":"exday","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:exday_n_sense_3"}
+{"lemma":"exdayal","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:exdayal_n_sense_1"}
+{"lemma":"exdayish","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:exdayish_n_sense_2"}
+{"lemma":"exdayous","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:exdayous_n_sense_3"}
+{"lemma":"exdayive","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:exdayive_n_sense_1"}
+{"lemma":"exdayant","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:exdayant_n_sense_2"}
+{"lemma":"exdayent","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:exdayent_n_sense_3"}
+{"lemma":"exdayary","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:exdayary_n_sense_1"}
+{"lemma":"exdayory","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:exdayory_n_sense_2"}
+{"lemma":"exdayic","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:exdayic_n_sense_3"}
+{"lemma":"exdayist","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:exdayist_n_sense_1"}
+{"lemma":"inday","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:inday_n_sense_2"}
+{"lemma":"indayal","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:indayal_n_sense_3"}
+{"lemma":"indayish","pos":"n","rank":1,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:indayish_n_sense_1"}
+{"lemma":"indayous","pos":"n","rank":2,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:indayous_n_sense_2"}
+{"lemma":"indayive","pos":"n","rank":3,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:indayive_n_sense_3"}
+{"lemma":"indayant","pos":"n","rank":1,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:indayant_n_sense_1"}
+{"lemma":"indayent","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"thời gian","ref":"wordnet:indayent_n_sense_2"}
+{"lemma":"indayary","pos":"n","rank":3,"en_gloss":"matter","vi_gloss":"năm","ref":"wordnet:indayary_n_sense_3"}
+{"lemma":"indayory","pos":"n","rank":1,"en_gloss":"subject","vi_gloss":"người","ref":"wordnet:indayory_n_sense_1"}
+{"lemma":"indayic","pos":"n","rank":2,"en_gloss":"unit","vi_gloss":"cách","ref":"wordnet:indayic_n_sense_2"}
+{"lemma":"indayist","pos":"n","rank":3,"en_gloss":"element","vi_gloss":"ngày","ref":"wordnet:indayist_n_sense_3"}
+{"lemma":"man","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"wordnet:man_n_sense_1"}
+{"lemma":"manal","pos":"n","rank":2,"en_gloss":"matter","vi_gloss":"thứ","ref":"wordnet:manal_n_sense_2"}
+{"lemma":"manish","pos":"n","rank":3,"en_gloss":"subject","vi_gloss":"phụ nữ","ref":"wordnet:manish_n_sense_3"}
+{"lemma":"manous","pos":"n","rank":1,"en_gloss":"unit","vi_gloss":"cuộc sống","ref":"wordnet:manous_n_sense_1"}
+{"lemma":"manive","pos":"n","rank":2,"en_gloss":"element","vi_gloss":"trẻ","ref":"wordnet:manive_n_sense_2"}
+{"lemma":"good","pos":"adj","rank":1,"en_gloss":"quality","vi_gloss":"tốt","ref":"wordnet:good_adj_sense_1"}
+{"lemma":"goodal","pos":"adj","rank":2,"en_gloss":"attribute","vi_gloss":"mới","ref":"wordnet:goodal_adj_sense_2"}
+{"lemma":"goodish","pos":"adj","rank":3,"en_gloss":"property","vi_gloss":"đầu tiên","ref":"wordnet:goodish_adj_sense_3"}
+{"lemma":"goodous","pos":"adj","rank":1,"en_gloss":"characteristic","vi_gloss":"cuối","ref":"wordnet:goodous_adj_sense_1"}
+{"lemma":"goodive","pos":"adj","rank":2,"en_gloss":"feature","vi_gloss":"dài","ref":"wordnet:goodive_adj_sense_2"}
+{"lemma":"goodant","pos":"adj","rank":3,"en_gloss":"quality","vi_gloss":"tuyệt","ref":"wordnet:goodant_adj_sense_3"}
+{"lemma":"goodent","pos":"adj","rank":1,"en_gloss":"attribute","vi_gloss":"nhỏ","ref":"wordnet:goodent_adj_sense_1"}
+{"lemma":"goodary","pos":"adj","rank":2,"en_gloss":"property","vi_gloss":"riêng","ref":"wordnet:goodary_adj_sense_2"}
+{"lemma":"goodory","pos":"adj","rank":3,"en_gloss":"characteristic","vi_gloss":"khác","ref":"wordnet:goodory_adj_sense_3"}
+{"lemma":"goodic","pos":"adj","rank":1,"en_gloss":"feature","vi_gloss":"cũ","ref":"wordnet:goodic_adj_sense_1"}
+{"lemma":"goodist","pos":"adj","rank":2,"en_gloss":"quality","vi_gloss":"tốt","ref":"wordnet:goodist_adj_sense_2"}
+{"lemma":"degood","pos":"adj","rank":3,"en_gloss":"attribute","vi_gloss":"mới","ref":"wordnet:degood_adj_sense_3"}
+{"lemma":"degoodal","pos":"adj","rank":1,"en_gloss":"property","vi_gloss":"đầu tiên","ref":"wordnet:degoodal_adj_sense_1"}
+{"lemma":"degoodish","pos":"adj","rank":2,"en_gloss":"characteristic","vi_gloss":"cuối","ref":"wordnet:degoodish_adj_sense_2"}
+{"lemma":"degoodous","pos":"adj","rank":3,"en_gloss":"feature","vi_gloss":"dài","ref":"wordnet:degoodous_adj_sense_3"}
+{"lemma":"degoodive","pos":"adj","rank":1,"en_gloss":"quality","vi_gloss":"tuyệt","ref":"wordnet:degoodive_adj_sense_1"}
+{"lemma":"degoodant","pos":"adj","rank":2,"en_gloss":"attribute","vi_gloss":"nhỏ","ref":"wordnet:degoodant_adj_sense_2"}
+{"lemma":"degoodent","pos":"adj","rank":3,"en_gloss":"property","vi_gloss":"riêng","ref":"wordnet:degoodent_adj_sense_3"}
+{"lemma":"degoodary","pos":"adj","rank":1,"en_gloss":"characteristic","vi_gloss":"khác","ref":"wordnet:degoodary_adj_sense_1"}
+{"lemma":"degoodory","pos":"adj","rank":2,"en_gloss":"feature","vi_gloss":"cũ","ref":"wordnet:degoodory_adj_sense_2"}
+{"lemma":"degoodic","pos":"adj","rank":3,"en_gloss":"quality","vi_gloss":"tốt","ref":"wordnet:degoodic_adj_sense_3"}
+{"lemma":"degoodist","pos":"adj","rank":1,"en_gloss":"attribute","vi_gloss":"mới","ref":"wordnet:degoodist_adj_sense_1"}
+{"lemma":"subgood","pos":"adj","rank":2,"en_gloss":"property","vi_gloss":"đầu tiên","ref":"wordnet:subgood_adj_sense_2"}
+{"lemma":"subgoodal","pos":"adj","rank":3,"en_gloss":"characteristic","vi_gloss":"cuối","ref":"wordnet:subgoodal_adj_sense_3"}
+{"lemma":"subgoodish","pos":"adj","rank":1,"en_gloss":"feature","vi_gloss":"dài","ref":"wordnet:subgoodish_adj_sense_1"}
+{"lemma":"subgoodous","pos":"adj","rank":2,"en_gloss":"quality","vi_gloss":"tuyệt","ref":"wordnet:subgoodous_adj_sense_2"}
+{"lemma":"subgoodive","pos":"adj","rank":3,"en_gloss":"attribute","vi_gloss":"nhỏ","ref":"wordnet:subgoodive_adj_sense_3"}
+{"lemma":"subgoodant","pos":"adj","rank":1,"en_gloss":"property","vi_gloss":"riêng","ref":"wordnet:subgoodant_adj_sense_1"}
+{"lemma":"subgoodent","pos":"adj","rank":2,"en_gloss":"characteristic","vi_gloss":"khác","ref":"wordnet:subgoodent_adj_sense_2"}
+{"lemma":"subgoodary","pos":"adj","rank":3,"en_gloss":"feature","vi_gloss":"cũ","ref":"wordnet:subgoodary_adj_sense_3"}
+{"lemma":"subgoodory","pos":"adj","rank":1,"en_gloss":"quality","vi_gloss":"tốt","ref":"wordnet:subgoodory_adj_sense_1"}
+{"lemma":"subgoodic","pos":"adj","rank":2,"en_gloss":"attribute","vi_gloss":"mới","ref":"wordnet:subgoodic_adj_sense_2"}
+{"lemma":"subgoodist","pos":"adj","rank":3,"en_gloss":"property","vi_gloss":"đầu tiên","ref":"wordnet:subgoodist_adj_sense_3"}
+{"lemma":"intergood","pos":"adj","rank":1,"en_gloss":"characteristic","vi_gloss":"cuối","ref":"wordnet:intergood_adj_sense_1"}
+{"lemma":"intergoodal","pos":"adj","rank":2,"en_gloss":"feature","vi_gloss":"dài","ref":"wordnet:intergoodal_adj_sense_2"}
+{"lemma":"intergoodish","pos":"adj","rank":3,"en_gloss":"quality","vi_gloss":"tuyệt","ref":"wordnet:intergoodish_adj_sense_3"}
+{"lemma":"intergoodous","pos":"adj","rank":1,"en_gloss":"attribute","vi_gloss":"nhỏ","ref":"wordnet:intergoodous_adj_sense_1"}
+{"lemma":"intergoodive","pos":"adj","rank":2,"en_gloss":"property","vi_gloss":"riêng","ref":"wordnet:intergoodive_adj_sense_2"}
+{"lemma":"intergoodant","pos":"adj","rank":3,"en_gloss":"characteristic","vi_gloss":"khác","ref":"wordnet:intergoodant_adj_sense_3"}
+{"lemma":"intergoodent","pos":"adj","rank":1,"en_gloss":"feature","vi_gloss":"cũ","ref":"wordnet:intergoodent_adj_sense_1"}
+{"lemma":"intergoodary","pos":"adj","rank":2,"en_gloss":"quality","vi_gloss":"tốt","ref":"wordnet:intergoodary_adj_sense_2"}
+{"lemma":"intergoodory","pos":"adj","rank":3,"en_gloss":"attribute","vi_gloss":"mới","ref":"wordnet:intergoodory_adj_sense_3"}
+{"lemma":"intergoodic","pos":"adj","rank":1,"en_gloss":"property","vi_gloss":"đầu tiên","ref":"wordnet:intergoodic_adj_sense_1"}
+{"lemma":"intergoodist","pos":"adj","rank":2,"en_gloss":"characteristic","vi_gloss":"cuối","ref":"wordnet:intergoodist_adj_sense_2"}
+{"lemma":"transgood","pos":"adj","rank":3,"en_gloss":"feature","vi_gloss":"dài","ref":"wordnet:transgood_adj_sense_3"}
+{"lemma":"transgoodal","pos":"adj","rank":1,"en_gloss":"quality","vi_gloss":"tuyệt","ref":"wordnet:transgoodal_adj_sense_1"}
+{"lemma":"transgoodish","pos":"adj","rank":2,"en_gloss":"attribute","vi_gloss":"nhỏ","ref":"wordnet:transgoodish_adj_sense_2"}
+{"lemma":"transgoodous","pos":"adj","rank":3,"en_gloss":"property","vi_gloss":"riêng","ref":"wordnet:transgoodous_adj_sense_3"}
+{"lemma":"transgoodive","pos":"adj","rank":1,"en_gloss":"characteristic","vi_gloss":"khác","ref":"wordnet:transgoodive_adj_sense_1"}
+{"lemma":"transgoodant","pos":"adj","rank":2,"en_gloss":"feature","vi_gloss":"cũ","ref":"wordnet:transgoodant_adj_sense_2"}
+{"lemma":"transgoodent","pos":"adj","rank":3,"en_gloss":"quality","vi_gloss":"tốt","ref":"wordnet:transgoodent_adj_sense_3"}
+{"lemma":"transgoodary","pos":"adj","rank":1,"en_gloss":"attribute","vi_gloss":"mới","ref":"wordnet:transgoodary_adj_sense_1"}
+{"lemma":"transgoodory","pos":"adj","rank":2,"en_gloss":"property","vi_gloss":"đầu tiên","ref":"wordnet:transgoodory_adj_sense_2"}
+{"lemma":"transgoodic","pos":"adj","rank":3,"en_gloss":"characteristic","vi_gloss":"cuối","ref":"wordnet:transgoodic_adj_sense_3"}
+{"lemma":"transgoodist","pos":"adj","rank":1,"en_gloss":"feature","vi_gloss":"dài","ref":"wordnet:transgoodist_adj_sense_1"}
+{"lemma":"autogood","pos":"adj","rank":2,"en_gloss":"quality","vi_gloss":"tuyệt","ref":"wordnet:autogood_adj_sense_2"}
+{"lemma":"autogoodal","pos":"adj","rank":3,"en_gloss":"attribute","vi_gloss":"nhỏ","ref":"wordnet:autogoodal_adj_sense_3"}
+{"lemma":"autogoodish","pos":"adj","rank":1,"en_gloss":"property","vi_gloss":"riêng","ref":"wordnet:autogoodish_adj_sense_1"}
+{"lemma":"autogoodous","pos":"adj","rank":2,"en_gloss":"characteristic","vi_gloss":"khác","ref":"wordnet:autogoodous_adj_sense_2"}
+{"lemma":"autogoodive","pos":"adj","rank":3,"en_gloss":"feature","vi_gloss":"cũ","ref":"wordnet:autogoodive_adj_sense_3"}
+{"lemma":"autogoodant","pos":"adj","rank":1,"en_gloss":"quality","vi_gloss":"tốt","ref":"wordnet:autogoodant_adj_sense_1"}
+{"lemma":"autogoodent","pos":"adj","rank":2,"en_gloss":"attribute","vi_gloss":"mới","ref":"wordnet:autogoodent_adj_sense_2"}
+{"lemma":"autogoodary","pos":"adj","rank":3,"en_gloss":"property","vi_gloss":"đầu tiên","ref":"wordnet:autogoodary_adj_sense_3"}
+{"lemma":"autogoodory","pos":"adj","rank":1,"en_gloss":"characteristic","vi_gloss":"cuối","ref":"wordnet:autogoodory_adj_sense_1"}
+{"lemma":"autogoodic","pos":"adj","rank":2,"en_gloss":"feature","vi_gloss":"dài","ref":"wordnet:autogoodic_adj_sense_2"}
+{"lemma":"autogoodist","pos":"adj","rank":3,"en_gloss":"quality","vi_gloss":"tuyệt","ref":"wordnet:autogoodist_adj_sense_3"}
+{"lemma":"cogood","pos":"adj","rank":1,"en_gloss":"attribute","vi_gloss":"nhỏ","ref":"wordnet:cogood_adj_sense_1"}
+{"lemma":"cogoodal","pos":"adj","rank":2,"en_gloss":"property","vi_gloss":"riêng","ref":"wordnet:cogoodal_adj_sense_2"}
+{"lemma":"cogoodish","pos":"adj","rank":3,"en_gloss":"characteristic","vi_gloss":"khác","ref":"wordnet:cogoodish_adj_sense_3"}
+{"lemma":"cogoodous","pos":"adj","rank":1,"en_gloss":"feature","vi_gloss":"cũ","ref":"wordnet:cogoodous_adj_sense_1"}
+{"lemma":"cogoodive","pos":"adj","rank":2,"en_gloss":"quality","vi_gloss":"tốt","ref":"wordnet:cogoodive_adj_sense_2"}
+{"lemma":"cogoodant","pos":"adj","rank":3,"en_gloss":"attribute","vi_gloss":"mới","ref":"wordnet:cogoodant_adj_sense_3"}
+{"lemma":"cogoodent","pos":"adj","rank":1,"en_gloss":"property","vi_gloss":"đầu tiên","ref":"wordnet:cogoodent_adj_sense_1"}
+{"lemma":"cogoodary","pos":"adj","rank":2,"en_gloss":"characteristic","vi_gloss":"cuối","ref":"wordnet:cogoodary_adj_sense_2"}
+{"lemma":"cogoodory","pos":"adj","rank":3,"en_gloss":"feature","vi_gloss":"dài","ref":"wordnet:cogoodory_adj_sense_3"}
+{"lemma":"cogoodic","pos":"adj","rank":1,"en_gloss":"quality","vi_gloss":"tuyệt","ref":"wordnet:cogoodic_adj_sense_1"}
+{"lemma":"cogoodist","pos":"adj","rank":2,"en_gloss":"attribute","vi_gloss":"nhỏ","ref":"wordnet:cogoodist_adj_sense_2"}
+{"lemma":"exgood","pos":"adj","rank":3,"en_gloss":"property","vi_gloss":"riêng","ref":"wordnet:exgood_adj_sense_3"}
+{"lemma":"exgoodal","pos":"adj","rank":1,"en_gloss":"characteristic","vi_gloss":"khác","ref":"wordnet:exgoodal_adj_sense_1"}
+{"lemma":"exgoodish","pos":"adj","rank":2,"en_gloss":"feature","vi_gloss":"cũ","ref":"wordnet:exgoodish_adj_sense_2"}
+{"lemma":"exgoodous","pos":"adj","rank":3,"en_gloss":"quality","vi_gloss":"tốt","ref":"wordnet:exgoodous_adj_sense_3"}
+{"lemma":"exgoodive","pos":"adj","rank":1,"en_gloss":"attribute","vi_gloss":"mới","ref":"wordnet:exgoodive_adj_sense_1"}
+{"lemma":"exgoodant","pos":"adj","rank":2,"en_gloss":"property","vi_gloss":"đầu tiên","ref":"wordnet:exgoodant_adj_sense_2"}
+{"lemma":"exgoodent","pos":"adj","rank":3,"en_gloss":"characteristic","vi_gloss":"cuối","ref":"wordnet:exgoodent_adj_sense_3"}
+{"lemma":"exgoodary","pos":"adj","rank":1,"en_gloss":"feature","vi_gloss":"dài","ref":"wordnet:exgoodary_adj_sense_1"}
+{"lemma":"exgoodory","pos":"adj","rank":2,"en_gloss":"quality","vi_gloss":"tuyệt","ref":"wordnet:exgoodory_adj_sense_2"}
+{"lemma":"exgoodic","pos":"adj","rank":3,"en_gloss":"attribute","vi_gloss":"nhỏ","ref":"wordnet:exgoodic_adj_sense_3"}
+{"lemma":"exgoodist","pos":"adj","rank":1,"en_gloss":"property","vi_gloss":"riêng","ref":"wordnet:exgoodist_adj_sense_1"}
+{"lemma":"ingood","pos":"adj","rank":2,"en_gloss":"characteristic","vi_gloss":"khác","ref":"wordnet:ingood_adj_sense_2"}
+{"lemma":"ingoodal","pos":"adj","rank":3,"en_gloss":"feature","vi_gloss":"cũ","ref":"wordnet:ingoodal_adj_sense_3"}
+{"lemma":"ingoodish","pos":"adj","rank":1,"en_gloss":"quality","vi_gloss":"tốt","ref":"wordnet:ingoodish_adj_sense_1"}
+{"lemma":"ingoodous","pos":"adj","rank":2,"en_gloss":"attribute","vi_gloss":"mới","ref":"wordnet:ingoodous_adj_sense_2"}
+{"lemma":"ingoodive","pos":"adj","rank":3,"en_gloss":"property","vi_gloss":"đầu tiên","ref":"wordnet:ingoodive_adj_sense_3"}
+{"lemma":"ingoodant","pos":"adj","rank":1,"en_gloss":"characteristic","vi_gloss":"cuối","ref":"wordnet:ingoodant_adj_sense_1"}
+{"lemma":"ingoodent","pos":"adj","rank":2,"en_gloss":"feature","vi_gloss":"dài","ref":"wordnet:ingoodent_adj_sense_2"}
+{"lemma":"ingoodary","pos":"adj","rank":3,"en_gloss":"quality","vi_gloss":"tuyệt","ref":"wordnet:ingoodary_adj_sense_3"}
+{"lemma":"ingoodory","pos":"adj","rank":1,"en_gloss":"attribute","vi_gloss":"nhỏ","ref":"wordnet:ingoodory_adj_sense_1"}
+{"lemma":"ingoodic","pos":"adj","rank":2,"en_gloss":"property","vi_gloss":"riêng","ref":"wordnet:ingoodic_adj_sense_2"}
+{"lemma":"ingoodist","pos":"adj","rank":3,"en_gloss":"characteristic","vi_gloss":"khác","ref":"wordnet:ingoodist_adj_sense_3"}
+{"lemma":"new","pos":"adj","rank":1,"en_gloss":"feature","vi_gloss":"cũ","ref":"wordnet:new_adj_sense_1"}

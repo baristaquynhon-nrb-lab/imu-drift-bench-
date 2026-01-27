@@ -1,0 +1,16 @@
+{
+  "MOTION_JUMP": { "tier": "L1", "roles": ["agent"] },
+  "PERCEPTION_LOOK": { "tier": "L1", "roles": ["agent","target"] },
+  "CONSUME_CHEW": { "tier": "L1", "roles": ["agent","object"] },
+  "PURSUIT_CHASE": { "tier": "L1", "roles": ["agent","target"] },
+  "MOTION_THROW": { "tier": "L1", "roles": ["agent","object"] },
+  "MOTION_RUN": { "tier": "L1", "roles": ["agent"] },
+  "ACTIVITY_PLAY": { "tier": "L1", "roles": ["agent","partner"] },
+  "WEAR_CLOTHING": { "tier": "L1", "roles": ["agent","object"] },
+  "MOTION_FALL": { "tier": "L1", "roles": ["theme"] },
+  "MOTION_STOP": { "tier": "L1", "roles": ["agent"] },
+  "ACTION_LICK": { "tier": "L1", "roles": ["agent","target"] },
+  "POSTURE_STAND": { "tier": "L1", "roles": ["agent"] },
+  "POSTURE_LIE": { "tier": "L1", "roles": ["agent"] },
+  "POSTURE_SIT": { "tier": "L1", "roles": ["agent"] }
+}

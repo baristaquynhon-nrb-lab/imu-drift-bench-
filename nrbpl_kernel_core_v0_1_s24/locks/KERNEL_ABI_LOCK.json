@@ -1,0 +1,62 @@
+{
+  "spec": "NRBPL_KERNEL_ABI_LOCK_v0_1",
+  "kernel_version": "0.1.0",
+  "abi_version": "0.1.0",
+  "lexicon_level": "L1B",
+  "allow_empty_frame": true,
+  "contracts": {
+    "lemma_record": {
+      "mandatory_fields": ["lemma", "pos", "vi_gloss"],
+      "lemma_format": "^[a-z]+$",
+      "pos_enum": ["n", "v", "adj", "adv", "prep", "conj", "det", "pron", "num", "interj"],
+      "vi_gloss_constraints": {
+        "min_tokens": 1,
+        "max_tokens": 4,
+        "forbidden_markers": ["?", "tbd", "maybe", "~"],
+        "forbidden_separators": [";", "|", "/", "\\"]
+      }
+    },
+    "sense_record": {
+      "mandatory_fields": ["sense_id", "lemma", "pos", "vi_gloss", "en_gloss", "frame", "trace"],
+      "sense_id_format": "${lemma}.${pos}.${NN}",
+      "trace_mandatory_fields": ["source", "source_file_sha256", "record_sha256", "ref"],
+      "frame_scope_lock": "v0.1",
+      "max_senses_per_lemma": 9
+    },
+    "trace_record": {
+      "source_enum": ["oxford3000", "wordnet"],
+      "hash_format": "^[a-f0-9]{64}$",
+      "ref_format": "non_empty_string"
+    }
+  },
+  "gate": {
+    "mandatory_checks": [
+      "schema_pass",
+      "sorted",
+      "no_duplicates",
+      "no_inference_markers",
+      "no_multigloss",
+      "no_sense_selection_without_trace",
+      "frame_scope_lock",
+      "frames_known",
+      "crossref_sense_lemma",
+      "crossref_colloc_lemma"
+    ],
+    "exit_codes": {
+      "SUPPORTED": 0,
+      "INSUFFICIENT_CONTRADICTORY": 2,
+      "REFUSE": 3
+    }
+  },
+  "determinism": {
+    "canonical_json": {
+      "required": true,
+      "key_sort": "recursive",
+      "whitespace": "none"
+    },
+    "hash_separation": {
+      "artifact_hashes": "set_sha256",
+      "report_hashes": "canonical_sha256"
+    }
+  }
+}

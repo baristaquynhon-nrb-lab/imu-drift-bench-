@@ -1,0 +1,1200 @@
+{"lemma":"be","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:be_v_sense_1"}
+{"lemma":"being","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:being_v_sense_2"}
+{"lemma":"beed","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:beed_v_sense_3"}
+{"lemma":"beer","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:beer_v_sense_1"}
+{"lemma":"bely","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:bely_v_sense_2"}
+{"lemma":"beness","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:beness_v_sense_3"}
+{"lemma":"bement","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:bement_v_sense_1"}
+{"lemma":"betion","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:betion_v_sense_2"}
+{"lemma":"beable","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:beable_v_sense_3"}
+{"lemma":"beful","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:beful_v_sense_1"}
+{"lemma":"beless","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:beless_v_sense_2"}
+{"lemma":"rebe","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:rebe_v_sense_3"}
+{"lemma":"rebeing","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:rebeing_v_sense_1"}
+{"lemma":"rebeed","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:rebeed_v_sense_2"}
+{"lemma":"rebeer","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:rebeer_v_sense_3"}
+{"lemma":"rebely","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:rebely_v_sense_1"}
+{"lemma":"rebeness","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:rebeness_v_sense_2"}
+{"lemma":"rebement","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:rebement_v_sense_3"}
+{"lemma":"rebetion","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:rebetion_v_sense_1"}
+{"lemma":"rebeable","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:rebeable_v_sense_2"}
+{"lemma":"rebeful","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:rebeful_v_sense_3"}
+{"lemma":"rebeless","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:rebeless_v_sense_1"}
+{"lemma":"unbe","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:unbe_v_sense_2"}
+{"lemma":"unbeing","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:unbeing_v_sense_3"}
+{"lemma":"unbeed","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:unbeed_v_sense_1"}
+{"lemma":"unbeer","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:unbeer_v_sense_2"}
+{"lemma":"unbely","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:unbely_v_sense_3"}
+{"lemma":"unbeness","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:unbeness_v_sense_1"}
+{"lemma":"unbement","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:unbement_v_sense_2"}
+{"lemma":"unbetion","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:unbetion_v_sense_3"}
+{"lemma":"unbeable","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:unbeable_v_sense_1"}
+{"lemma":"unbeful","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:unbeful_v_sense_2"}
+{"lemma":"unbeless","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:unbeless_v_sense_3"}
+{"lemma":"prebe","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:prebe_v_sense_1"}
+{"lemma":"prebeing","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:prebeing_v_sense_2"}
+{"lemma":"prebeed","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:prebeed_v_sense_3"}
+{"lemma":"prebeer","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:prebeer_v_sense_1"}
+{"lemma":"prebely","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:prebely_v_sense_2"}
+{"lemma":"prebeness","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:prebeness_v_sense_3"}
+{"lemma":"prebement","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:prebement_v_sense_1"}
+{"lemma":"prebetion","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:prebetion_v_sense_2"}
+{"lemma":"prebeable","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:prebeable_v_sense_3"}
+{"lemma":"prebeful","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:prebeful_v_sense_1"}
+{"lemma":"prebeless","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:prebeless_v_sense_2"}
+{"lemma":"misbe","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:misbe_v_sense_3"}
+{"lemma":"misbeing","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:misbeing_v_sense_1"}
+{"lemma":"misbeed","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:misbeed_v_sense_2"}
+{"lemma":"misbeer","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:misbeer_v_sense_3"}
+{"lemma":"misbely","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:misbely_v_sense_1"}
+{"lemma":"misbeness","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:misbeness_v_sense_2"}
+{"lemma":"misbement","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:misbement_v_sense_3"}
+{"lemma":"misbetion","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:misbetion_v_sense_1"}
+{"lemma":"misbeable","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:misbeable_v_sense_2"}
+{"lemma":"misbeful","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:misbeful_v_sense_3"}
+{"lemma":"misbeless","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:misbeless_v_sense_1"}
+{"lemma":"disbe","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:disbe_v_sense_2"}
+{"lemma":"disbeing","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:disbeing_v_sense_3"}
+{"lemma":"disbeed","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:disbeed_v_sense_1"}
+{"lemma":"disbeer","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:disbeer_v_sense_2"}
+{"lemma":"disbely","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:disbely_v_sense_3"}
+{"lemma":"disbeness","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:disbeness_v_sense_1"}
+{"lemma":"disbement","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:disbement_v_sense_2"}
+{"lemma":"disbetion","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:disbetion_v_sense_3"}
+{"lemma":"disbeable","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:disbeable_v_sense_1"}
+{"lemma":"disbeful","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:disbeful_v_sense_2"}
+{"lemma":"disbeless","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:disbeless_v_sense_3"}
+{"lemma":"overbe","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:overbe_v_sense_1"}
+{"lemma":"overbeing","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:overbeing_v_sense_2"}
+{"lemma":"overbeed","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:overbeed_v_sense_3"}
+{"lemma":"overbeer","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:overbeer_v_sense_1"}
+{"lemma":"overbely","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:overbely_v_sense_2"}
+{"lemma":"overbeness","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:overbeness_v_sense_3"}
+{"lemma":"overbement","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:overbement_v_sense_1"}
+{"lemma":"overbetion","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:overbetion_v_sense_2"}
+{"lemma":"overbeable","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:overbeable_v_sense_3"}
+{"lemma":"overbeful","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:overbeful_v_sense_1"}
+{"lemma":"overbeless","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:overbeless_v_sense_2"}
+{"lemma":"underbe","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:underbe_v_sense_3"}
+{"lemma":"underbeing","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:underbeing_v_sense_1"}
+{"lemma":"underbeed","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:underbeed_v_sense_2"}
+{"lemma":"underbeer","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:underbeer_v_sense_3"}
+{"lemma":"underbely","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:underbely_v_sense_1"}
+{"lemma":"underbeness","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:underbeness_v_sense_2"}
+{"lemma":"underbement","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:underbement_v_sense_3"}
+{"lemma":"underbetion","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:underbetion_v_sense_1"}
+{"lemma":"underbeable","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:underbeable_v_sense_2"}
+{"lemma":"underbeful","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:underbeful_v_sense_3"}
+{"lemma":"underbeless","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:underbeless_v_sense_1"}
+{"lemma":"outbe","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:outbe_v_sense_2"}
+{"lemma":"outbeing","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:outbeing_v_sense_3"}
+{"lemma":"outbeed","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:outbeed_v_sense_1"}
+{"lemma":"outbeer","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:outbeer_v_sense_2"}
+{"lemma":"outbely","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:outbely_v_sense_3"}
+{"lemma":"outbeness","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:outbeness_v_sense_1"}
+{"lemma":"outbement","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:outbement_v_sense_2"}
+{"lemma":"outbetion","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:outbetion_v_sense_3"}
+{"lemma":"outbeable","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:outbeable_v_sense_1"}
+{"lemma":"outbeful","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:outbeful_v_sense_2"}
+{"lemma":"outbeless","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:outbeless_v_sense_3"}
+{"lemma":"have","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:have_v_sense_1"}
+{"lemma":"haveing","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:haveing_v_sense_2"}
+{"lemma":"haveed","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:haveed_v_sense_3"}
+{"lemma":"haveer","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:haveer_v_sense_1"}
+{"lemma":"havely","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:havely_v_sense_2"}
+{"lemma":"haveness","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:haveness_v_sense_3"}
+{"lemma":"havement","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:havement_v_sense_1"}
+{"lemma":"havetion","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:havetion_v_sense_2"}
+{"lemma":"haveable","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:haveable_v_sense_3"}
+{"lemma":"haveful","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:haveful_v_sense_1"}
+{"lemma":"haveless","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:haveless_v_sense_2"}
+{"lemma":"rehave","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:rehave_v_sense_3"}
+{"lemma":"rehaveing","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:rehaveing_v_sense_1"}
+{"lemma":"rehaveed","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:rehaveed_v_sense_2"}
+{"lemma":"rehaveer","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:rehaveer_v_sense_3"}
+{"lemma":"rehavely","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:rehavely_v_sense_1"}
+{"lemma":"rehaveness","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:rehaveness_v_sense_2"}
+{"lemma":"rehavement","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:rehavement_v_sense_3"}
+{"lemma":"rehavetion","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:rehavetion_v_sense_1"}
+{"lemma":"rehaveable","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:rehaveable_v_sense_2"}
+{"lemma":"rehaveful","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:rehaveful_v_sense_3"}
+{"lemma":"rehaveless","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:rehaveless_v_sense_1"}
+{"lemma":"unhave","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:unhave_v_sense_2"}
+{"lemma":"unhaveing","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:unhaveing_v_sense_3"}
+{"lemma":"unhaveed","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:unhaveed_v_sense_1"}
+{"lemma":"unhaveer","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:unhaveer_v_sense_2"}
+{"lemma":"unhavely","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:unhavely_v_sense_3"}
+{"lemma":"unhaveness","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:unhaveness_v_sense_1"}
+{"lemma":"unhavement","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:unhavement_v_sense_2"}
+{"lemma":"unhavetion","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:unhavetion_v_sense_3"}
+{"lemma":"unhaveable","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:unhaveable_v_sense_1"}
+{"lemma":"unhaveful","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:unhaveful_v_sense_2"}
+{"lemma":"unhaveless","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:unhaveless_v_sense_3"}
+{"lemma":"prehave","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:prehave_v_sense_1"}
+{"lemma":"prehaveing","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:prehaveing_v_sense_2"}
+{"lemma":"prehaveed","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:prehaveed_v_sense_3"}
+{"lemma":"prehaveer","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:prehaveer_v_sense_1"}
+{"lemma":"prehavely","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:prehavely_v_sense_2"}
+{"lemma":"prehaveness","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:prehaveness_v_sense_3"}
+{"lemma":"prehavement","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:prehavement_v_sense_1"}
+{"lemma":"prehavetion","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:prehavetion_v_sense_2"}
+{"lemma":"prehaveable","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:prehaveable_v_sense_3"}
+{"lemma":"prehaveful","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:prehaveful_v_sense_1"}
+{"lemma":"prehaveless","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:prehaveless_v_sense_2"}
+{"lemma":"mishave","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:mishave_v_sense_3"}
+{"lemma":"mishaveing","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:mishaveing_v_sense_1"}
+{"lemma":"mishaveed","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:mishaveed_v_sense_2"}
+{"lemma":"mishaveer","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:mishaveer_v_sense_3"}
+{"lemma":"mishavely","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:mishavely_v_sense_1"}
+{"lemma":"mishaveness","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:mishaveness_v_sense_2"}
+{"lemma":"mishavement","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:mishavement_v_sense_3"}
+{"lemma":"mishavetion","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:mishavetion_v_sense_1"}
+{"lemma":"mishaveable","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:mishaveable_v_sense_2"}
+{"lemma":"mishaveful","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:mishaveful_v_sense_3"}
+{"lemma":"mishaveless","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:mishaveless_v_sense_1"}
+{"lemma":"dishave","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:dishave_v_sense_2"}
+{"lemma":"dishaveing","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:dishaveing_v_sense_3"}
+{"lemma":"dishaveed","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:dishaveed_v_sense_1"}
+{"lemma":"dishaveer","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:dishaveer_v_sense_2"}
+{"lemma":"dishavely","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:dishavely_v_sense_3"}
+{"lemma":"dishaveness","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:dishaveness_v_sense_1"}
+{"lemma":"dishavement","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:dishavement_v_sense_2"}
+{"lemma":"dishavetion","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:dishavetion_v_sense_3"}
+{"lemma":"dishaveable","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:dishaveable_v_sense_1"}
+{"lemma":"dishaveful","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:dishaveful_v_sense_2"}
+{"lemma":"dishaveless","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:dishaveless_v_sense_3"}
+{"lemma":"overhave","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:overhave_v_sense_1"}
+{"lemma":"overhaveing","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:overhaveing_v_sense_2"}
+{"lemma":"overhaveed","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:overhaveed_v_sense_3"}
+{"lemma":"overhaveer","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:overhaveer_v_sense_1"}
+{"lemma":"overhavely","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:overhavely_v_sense_2"}
+{"lemma":"overhaveness","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:overhaveness_v_sense_3"}
+{"lemma":"overhavement","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:overhavement_v_sense_1"}
+{"lemma":"overhavetion","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:overhavetion_v_sense_2"}
+{"lemma":"overhaveable","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:overhaveable_v_sense_3"}
+{"lemma":"overhaveful","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:overhaveful_v_sense_1"}
+{"lemma":"overhaveless","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:overhaveless_v_sense_2"}
+{"lemma":"underhave","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:underhave_v_sense_3"}
+{"lemma":"underhaveing","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:underhaveing_v_sense_1"}
+{"lemma":"underhaveed","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:underhaveed_v_sense_2"}
+{"lemma":"underhaveer","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:underhaveer_v_sense_3"}
+{"lemma":"underhavely","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:underhavely_v_sense_1"}
+{"lemma":"underhaveness","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:underhaveness_v_sense_2"}
+{"lemma":"underhavement","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:underhavement_v_sense_3"}
+{"lemma":"underhavetion","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:underhavetion_v_sense_1"}
+{"lemma":"underhaveable","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:underhaveable_v_sense_2"}
+{"lemma":"underhaveful","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:underhaveful_v_sense_3"}
+{"lemma":"underhaveless","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:underhaveless_v_sense_1"}
+{"lemma":"outhave","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:outhave_v_sense_2"}
+{"lemma":"outhaveing","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:outhaveing_v_sense_3"}
+{"lemma":"outhaveed","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:outhaveed_v_sense_1"}
+{"lemma":"outhaveer","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:outhaveer_v_sense_2"}
+{"lemma":"outhavely","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:outhavely_v_sense_3"}
+{"lemma":"outhaveness","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:outhaveness_v_sense_1"}
+{"lemma":"outhavement","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:outhavement_v_sense_2"}
+{"lemma":"outhavetion","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:outhavetion_v_sense_3"}
+{"lemma":"outhaveable","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:outhaveable_v_sense_1"}
+{"lemma":"outhaveful","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:outhaveful_v_sense_2"}
+{"lemma":"outhaveless","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:outhaveless_v_sense_3"}
+{"lemma":"do","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:do_v_sense_1"}
+{"lemma":"doing","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:doing_v_sense_2"}
+{"lemma":"doed","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:doed_v_sense_3"}
+{"lemma":"doer","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:doer_v_sense_1"}
+{"lemma":"doly","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:doly_v_sense_2"}
+{"lemma":"doness","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:doness_v_sense_3"}
+{"lemma":"doment","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:doment_v_sense_1"}
+{"lemma":"dotion","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:dotion_v_sense_2"}
+{"lemma":"doable","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:doable_v_sense_3"}
+{"lemma":"doful","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:doful_v_sense_1"}
+{"lemma":"doless","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:doless_v_sense_2"}
+{"lemma":"redo","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:redo_v_sense_3"}
+{"lemma":"redoing","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:redoing_v_sense_1"}
+{"lemma":"redoed","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:redoed_v_sense_2"}
+{"lemma":"redoer","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:redoer_v_sense_3"}
+{"lemma":"redoly","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:redoly_v_sense_1"}
+{"lemma":"redoness","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:redoness_v_sense_2"}
+{"lemma":"redoment","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:redoment_v_sense_3"}
+{"lemma":"redotion","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:redotion_v_sense_1"}
+{"lemma":"redoable","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:redoable_v_sense_2"}
+{"lemma":"redoful","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:redoful_v_sense_3"}
+{"lemma":"redoless","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:redoless_v_sense_1"}
+{"lemma":"undo","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:undo_v_sense_2"}
+{"lemma":"undoing","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:undoing_v_sense_3"}
+{"lemma":"undoed","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:undoed_v_sense_1"}
+{"lemma":"undoer","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:undoer_v_sense_2"}
+{"lemma":"undoly","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:undoly_v_sense_3"}
+{"lemma":"undoness","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:undoness_v_sense_1"}
+{"lemma":"undoment","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:undoment_v_sense_2"}
+{"lemma":"undotion","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:undotion_v_sense_3"}
+{"lemma":"undoable","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:undoable_v_sense_1"}
+{"lemma":"undoful","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:undoful_v_sense_2"}
+{"lemma":"undoless","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:undoless_v_sense_3"}
+{"lemma":"predo","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:predo_v_sense_1"}
+{"lemma":"predoing","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:predoing_v_sense_2"}
+{"lemma":"predoed","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:predoed_v_sense_3"}
+{"lemma":"predoer","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:predoer_v_sense_1"}
+{"lemma":"predoly","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:predoly_v_sense_2"}
+{"lemma":"predoness","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:predoness_v_sense_3"}
+{"lemma":"predoment","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:predoment_v_sense_1"}
+{"lemma":"predotion","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:predotion_v_sense_2"}
+{"lemma":"predoable","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:predoable_v_sense_3"}
+{"lemma":"predoful","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:predoful_v_sense_1"}
+{"lemma":"predoless","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:predoless_v_sense_2"}
+{"lemma":"misdo","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:misdo_v_sense_3"}
+{"lemma":"misdoing","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:misdoing_v_sense_1"}
+{"lemma":"misdoed","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:misdoed_v_sense_2"}
+{"lemma":"misdoer","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:misdoer_v_sense_3"}
+{"lemma":"misdoly","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:misdoly_v_sense_1"}
+{"lemma":"misdoness","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:misdoness_v_sense_2"}
+{"lemma":"misdoment","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:misdoment_v_sense_3"}
+{"lemma":"misdotion","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:misdotion_v_sense_1"}
+{"lemma":"misdoable","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:misdoable_v_sense_2"}
+{"lemma":"misdoful","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:misdoful_v_sense_3"}
+{"lemma":"misdoless","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:misdoless_v_sense_1"}
+{"lemma":"disdo","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:disdo_v_sense_2"}
+{"lemma":"disdoing","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:disdoing_v_sense_3"}
+{"lemma":"disdoed","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:disdoed_v_sense_1"}
+{"lemma":"disdoer","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:disdoer_v_sense_2"}
+{"lemma":"disdoly","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:disdoly_v_sense_3"}
+{"lemma":"disdoness","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:disdoness_v_sense_1"}
+{"lemma":"disdoment","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:disdoment_v_sense_2"}
+{"lemma":"disdotion","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:disdotion_v_sense_3"}
+{"lemma":"disdoable","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:disdoable_v_sense_1"}
+{"lemma":"disdoful","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:disdoful_v_sense_2"}
+{"lemma":"disdoless","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:disdoless_v_sense_3"}
+{"lemma":"overdo","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:overdo_v_sense_1"}
+{"lemma":"overdoing","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:overdoing_v_sense_2"}
+{"lemma":"overdoed","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:overdoed_v_sense_3"}
+{"lemma":"overdoer","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:overdoer_v_sense_1"}
+{"lemma":"overdoly","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:overdoly_v_sense_2"}
+{"lemma":"overdoness","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:overdoness_v_sense_3"}
+{"lemma":"overdoment","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:overdoment_v_sense_1"}
+{"lemma":"overdotion","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:overdotion_v_sense_2"}
+{"lemma":"overdoable","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:overdoable_v_sense_3"}
+{"lemma":"overdoful","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:overdoful_v_sense_1"}
+{"lemma":"overdoless","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:overdoless_v_sense_2"}
+{"lemma":"underdo","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:underdo_v_sense_3"}
+{"lemma":"underdoing","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:underdoing_v_sense_1"}
+{"lemma":"underdoed","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:underdoed_v_sense_2"}
+{"lemma":"underdoer","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:underdoer_v_sense_3"}
+{"lemma":"underdoly","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:underdoly_v_sense_1"}
+{"lemma":"underdoness","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:underdoness_v_sense_2"}
+{"lemma":"underdoment","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:underdoment_v_sense_3"}
+{"lemma":"underdotion","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:underdotion_v_sense_1"}
+{"lemma":"underdoable","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:underdoable_v_sense_2"}
+{"lemma":"underdoful","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:underdoful_v_sense_3"}
+{"lemma":"underdoless","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:underdoless_v_sense_1"}
+{"lemma":"outdo","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:outdo_v_sense_2"}
+{"lemma":"outdoing","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:outdoing_v_sense_3"}
+{"lemma":"outdoed","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:outdoed_v_sense_1"}
+{"lemma":"outdoer","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:outdoer_v_sense_2"}
+{"lemma":"outdoly","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:outdoly_v_sense_3"}
+{"lemma":"outdoness","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:outdoness_v_sense_1"}
+{"lemma":"outdoment","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:outdoment_v_sense_2"}
+{"lemma":"outdotion","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:outdotion_v_sense_3"}
+{"lemma":"outdoable","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:outdoable_v_sense_1"}
+{"lemma":"outdoful","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:outdoful_v_sense_2"}
+{"lemma":"outdoless","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:outdoless_v_sense_3"}
+{"lemma":"say","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:say_v_sense_1"}
+{"lemma":"saying","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:saying_v_sense_2"}
+{"lemma":"sayed","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:sayed_v_sense_3"}
+{"lemma":"sayer","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:sayer_v_sense_1"}
+{"lemma":"sayly","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:sayly_v_sense_2"}
+{"lemma":"sayness","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:sayness_v_sense_3"}
+{"lemma":"sayment","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:sayment_v_sense_1"}
+{"lemma":"saytion","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:saytion_v_sense_2"}
+{"lemma":"sayable","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:sayable_v_sense_3"}
+{"lemma":"sayful","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:sayful_v_sense_1"}
+{"lemma":"sayless","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:sayless_v_sense_2"}
+{"lemma":"resay","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:resay_v_sense_3"}
+{"lemma":"resaying","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:resaying_v_sense_1"}
+{"lemma":"resayed","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:resayed_v_sense_2"}
+{"lemma":"resayer","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:resayer_v_sense_3"}
+{"lemma":"resayly","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:resayly_v_sense_1"}
+{"lemma":"resayness","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:resayness_v_sense_2"}
+{"lemma":"resayment","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:resayment_v_sense_3"}
+{"lemma":"resaytion","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:resaytion_v_sense_1"}
+{"lemma":"resayable","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:resayable_v_sense_2"}
+{"lemma":"resayful","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:resayful_v_sense_3"}
+{"lemma":"resayless","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:resayless_v_sense_1"}
+{"lemma":"unsay","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:unsay_v_sense_2"}
+{"lemma":"unsaying","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:unsaying_v_sense_3"}
+{"lemma":"unsayed","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:unsayed_v_sense_1"}
+{"lemma":"unsayer","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:unsayer_v_sense_2"}
+{"lemma":"unsayly","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:unsayly_v_sense_3"}
+{"lemma":"unsayness","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:unsayness_v_sense_1"}
+{"lemma":"unsayment","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:unsayment_v_sense_2"}
+{"lemma":"unsaytion","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:unsaytion_v_sense_3"}
+{"lemma":"unsayable","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:unsayable_v_sense_1"}
+{"lemma":"unsayful","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:unsayful_v_sense_2"}
+{"lemma":"unsayless","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:unsayless_v_sense_3"}
+{"lemma":"presay","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:presay_v_sense_1"}
+{"lemma":"presaying","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:presaying_v_sense_2"}
+{"lemma":"presayed","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:presayed_v_sense_3"}
+{"lemma":"presayer","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:presayer_v_sense_1"}
+{"lemma":"presayly","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:presayly_v_sense_2"}
+{"lemma":"presayness","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:presayness_v_sense_3"}
+{"lemma":"presayment","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:presayment_v_sense_1"}
+{"lemma":"presaytion","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:presaytion_v_sense_2"}
+{"lemma":"presayable","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:presayable_v_sense_3"}
+{"lemma":"presayful","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:presayful_v_sense_1"}
+{"lemma":"presayless","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:presayless_v_sense_2"}
+{"lemma":"missay","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:missay_v_sense_3"}
+{"lemma":"missaying","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:missaying_v_sense_1"}
+{"lemma":"missayed","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:missayed_v_sense_2"}
+{"lemma":"missayer","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:missayer_v_sense_3"}
+{"lemma":"missayly","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:missayly_v_sense_1"}
+{"lemma":"missayness","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:missayness_v_sense_2"}
+{"lemma":"missayment","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:missayment_v_sense_3"}
+{"lemma":"missaytion","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:missaytion_v_sense_1"}
+{"lemma":"missayable","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:missayable_v_sense_2"}
+{"lemma":"missayful","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:missayful_v_sense_3"}
+{"lemma":"missayless","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:missayless_v_sense_1"}
+{"lemma":"dissay","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:dissay_v_sense_2"}
+{"lemma":"dissaying","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:dissaying_v_sense_3"}
+{"lemma":"dissayed","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:dissayed_v_sense_1"}
+{"lemma":"dissayer","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:dissayer_v_sense_2"}
+{"lemma":"dissayly","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:dissayly_v_sense_3"}
+{"lemma":"dissayness","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:dissayness_v_sense_1"}
+{"lemma":"dissayment","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:dissayment_v_sense_2"}
+{"lemma":"dissaytion","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:dissaytion_v_sense_3"}
+{"lemma":"dissayable","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:dissayable_v_sense_1"}
+{"lemma":"dissayful","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:dissayful_v_sense_2"}
+{"lemma":"dissayless","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:dissayless_v_sense_3"}
+{"lemma":"oversay","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:oversay_v_sense_1"}
+{"lemma":"oversaying","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:oversaying_v_sense_2"}
+{"lemma":"oversayed","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:oversayed_v_sense_3"}
+{"lemma":"oversayer","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:oversayer_v_sense_1"}
+{"lemma":"oversayly","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:oversayly_v_sense_2"}
+{"lemma":"oversayness","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:oversayness_v_sense_3"}
+{"lemma":"oversayment","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:oversayment_v_sense_1"}
+{"lemma":"oversaytion","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:oversaytion_v_sense_2"}
+{"lemma":"oversayable","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:oversayable_v_sense_3"}
+{"lemma":"oversayful","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:oversayful_v_sense_1"}
+{"lemma":"oversayless","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:oversayless_v_sense_2"}
+{"lemma":"undersay","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:undersay_v_sense_3"}
+{"lemma":"undersaying","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:undersaying_v_sense_1"}
+{"lemma":"undersayed","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:undersayed_v_sense_2"}
+{"lemma":"undersayer","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:undersayer_v_sense_3"}
+{"lemma":"undersayly","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:undersayly_v_sense_1"}
+{"lemma":"undersayness","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:undersayness_v_sense_2"}
+{"lemma":"undersayment","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:undersayment_v_sense_3"}
+{"lemma":"undersaytion","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:undersaytion_v_sense_1"}
+{"lemma":"undersayable","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:undersayable_v_sense_2"}
+{"lemma":"undersayful","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:undersayful_v_sense_3"}
+{"lemma":"undersayless","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:undersayless_v_sense_1"}
+{"lemma":"outsay","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:outsay_v_sense_2"}
+{"lemma":"outsaying","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:outsaying_v_sense_3"}
+{"lemma":"outsayed","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:outsayed_v_sense_1"}
+{"lemma":"outsayer","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:outsayer_v_sense_2"}
+{"lemma":"outsayly","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:outsayly_v_sense_3"}
+{"lemma":"outsayness","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:outsayness_v_sense_1"}
+{"lemma":"outsayment","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:outsayment_v_sense_2"}
+{"lemma":"outsaytion","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:outsaytion_v_sense_3"}
+{"lemma":"outsayable","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:outsayable_v_sense_1"}
+{"lemma":"outsayful","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:outsayful_v_sense_2"}
+{"lemma":"outsayless","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:outsayless_v_sense_3"}
+{"lemma":"get","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:get_v_sense_1"}
+{"lemma":"geting","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:geting_v_sense_2"}
+{"lemma":"geted","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:geted_v_sense_3"}
+{"lemma":"geter","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:geter_v_sense_1"}
+{"lemma":"getly","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:getly_v_sense_2"}
+{"lemma":"getness","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:getness_v_sense_3"}
+{"lemma":"getment","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:getment_v_sense_1"}
+{"lemma":"gettion","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:gettion_v_sense_2"}
+{"lemma":"getable","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:getable_v_sense_3"}
+{"lemma":"getful","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:getful_v_sense_1"}
+{"lemma":"getless","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:getless_v_sense_2"}
+{"lemma":"reget","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:reget_v_sense_3"}
+{"lemma":"regeting","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:regeting_v_sense_1"}
+{"lemma":"regeted","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:regeted_v_sense_2"}
+{"lemma":"regeter","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:regeter_v_sense_3"}
+{"lemma":"regetly","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:regetly_v_sense_1"}
+{"lemma":"regetness","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:regetness_v_sense_2"}
+{"lemma":"regetment","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:regetment_v_sense_3"}
+{"lemma":"regettion","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:regettion_v_sense_1"}
+{"lemma":"regetable","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:regetable_v_sense_2"}
+{"lemma":"regetful","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:regetful_v_sense_3"}
+{"lemma":"regetless","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:regetless_v_sense_1"}
+{"lemma":"unget","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:unget_v_sense_2"}
+{"lemma":"ungeting","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:ungeting_v_sense_3"}
+{"lemma":"ungeted","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:ungeted_v_sense_1"}
+{"lemma":"ungeter","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:ungeter_v_sense_2"}
+{"lemma":"ungetly","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:ungetly_v_sense_3"}
+{"lemma":"ungetness","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:ungetness_v_sense_1"}
+{"lemma":"ungetment","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:ungetment_v_sense_2"}
+{"lemma":"ungettion","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:ungettion_v_sense_3"}
+{"lemma":"ungetable","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:ungetable_v_sense_1"}
+{"lemma":"ungetful","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:ungetful_v_sense_2"}
+{"lemma":"ungetless","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:ungetless_v_sense_3"}
+{"lemma":"preget","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:preget_v_sense_1"}
+{"lemma":"pregeting","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:pregeting_v_sense_2"}
+{"lemma":"pregeted","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:pregeted_v_sense_3"}
+{"lemma":"pregeter","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:pregeter_v_sense_1"}
+{"lemma":"pregetly","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:pregetly_v_sense_2"}
+{"lemma":"pregetness","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:pregetness_v_sense_3"}
+{"lemma":"pregetment","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:pregetment_v_sense_1"}
+{"lemma":"pregettion","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:pregettion_v_sense_2"}
+{"lemma":"pregetable","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:pregetable_v_sense_3"}
+{"lemma":"pregetful","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:pregetful_v_sense_1"}
+{"lemma":"pregetless","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:pregetless_v_sense_2"}
+{"lemma":"misget","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:misget_v_sense_3"}
+{"lemma":"misgeting","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:misgeting_v_sense_1"}
+{"lemma":"misgeted","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:misgeted_v_sense_2"}
+{"lemma":"misgeter","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:misgeter_v_sense_3"}
+{"lemma":"misgetly","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:misgetly_v_sense_1"}
+{"lemma":"misgetness","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:misgetness_v_sense_2"}
+{"lemma":"misgetment","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:misgetment_v_sense_3"}
+{"lemma":"misgettion","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:misgettion_v_sense_1"}
+{"lemma":"misgetable","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:misgetable_v_sense_2"}
+{"lemma":"misgetful","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:misgetful_v_sense_3"}
+{"lemma":"misgetless","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:misgetless_v_sense_1"}
+{"lemma":"disget","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:disget_v_sense_2"}
+{"lemma":"disgeting","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:disgeting_v_sense_3"}
+{"lemma":"disgeted","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:disgeted_v_sense_1"}
+{"lemma":"disgeter","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:disgeter_v_sense_2"}
+{"lemma":"disgetly","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:disgetly_v_sense_3"}
+{"lemma":"disgetness","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:disgetness_v_sense_1"}
+{"lemma":"disgetment","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:disgetment_v_sense_2"}
+{"lemma":"disgettion","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:disgettion_v_sense_3"}
+{"lemma":"disgetable","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:disgetable_v_sense_1"}
+{"lemma":"disgetful","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:disgetful_v_sense_2"}
+{"lemma":"disgetless","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:disgetless_v_sense_3"}
+{"lemma":"overget","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:overget_v_sense_1"}
+{"lemma":"overgeting","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:overgeting_v_sense_2"}
+{"lemma":"overgeted","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:overgeted_v_sense_3"}
+{"lemma":"overgeter","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:overgeter_v_sense_1"}
+{"lemma":"overgetly","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:overgetly_v_sense_2"}
+{"lemma":"overgetness","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:overgetness_v_sense_3"}
+{"lemma":"overgetment","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:overgetment_v_sense_1"}
+{"lemma":"overgettion","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:overgettion_v_sense_2"}
+{"lemma":"overgetable","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:overgetable_v_sense_3"}
+{"lemma":"overgetful","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:overgetful_v_sense_1"}
+{"lemma":"overgetless","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:overgetless_v_sense_2"}
+{"lemma":"underget","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:underget_v_sense_3"}
+{"lemma":"undergeting","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:undergeting_v_sense_1"}
+{"lemma":"undergeted","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:undergeted_v_sense_2"}
+{"lemma":"undergeter","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:undergeter_v_sense_3"}
+{"lemma":"undergetly","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:undergetly_v_sense_1"}
+{"lemma":"undergetness","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:undergetness_v_sense_2"}
+{"lemma":"undergetment","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:undergetment_v_sense_3"}
+{"lemma":"undergettion","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:undergettion_v_sense_1"}
+{"lemma":"undergetable","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:undergetable_v_sense_2"}
+{"lemma":"undergetful","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:undergetful_v_sense_3"}
+{"lemma":"undergetless","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:undergetless_v_sense_1"}
+{"lemma":"outget","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:outget_v_sense_2"}
+{"lemma":"outgeting","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:outgeting_v_sense_3"}
+{"lemma":"outgeted","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:outgeted_v_sense_1"}
+{"lemma":"outgeter","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:outgeter_v_sense_2"}
+{"lemma":"outgetly","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:outgetly_v_sense_3"}
+{"lemma":"outgetness","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:outgetness_v_sense_1"}
+{"lemma":"outgetment","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:outgetment_v_sense_2"}
+{"lemma":"outgettion","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:outgettion_v_sense_3"}
+{"lemma":"outgetable","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:outgetable_v_sense_1"}
+{"lemma":"outgetful","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:outgetful_v_sense_2"}
+{"lemma":"outgetless","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:outgetless_v_sense_3"}
+{"lemma":"make","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:make_v_sense_1"}
+{"lemma":"makeing","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:makeing_v_sense_2"}
+{"lemma":"makeed","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:makeed_v_sense_3"}
+{"lemma":"makeer","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:makeer_v_sense_1"}
+{"lemma":"makely","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:makely_v_sense_2"}
+{"lemma":"makeness","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:makeness_v_sense_3"}
+{"lemma":"makement","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:makement_v_sense_1"}
+{"lemma":"maketion","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:maketion_v_sense_2"}
+{"lemma":"makeable","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:makeable_v_sense_3"}
+{"lemma":"makeful","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:makeful_v_sense_1"}
+{"lemma":"makeless","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:makeless_v_sense_2"}
+{"lemma":"remake","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:remake_v_sense_3"}
+{"lemma":"remakeing","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:remakeing_v_sense_1"}
+{"lemma":"remakeed","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:remakeed_v_sense_2"}
+{"lemma":"remakeer","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:remakeer_v_sense_3"}
+{"lemma":"remakely","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:remakely_v_sense_1"}
+{"lemma":"remakeness","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:remakeness_v_sense_2"}
+{"lemma":"remakement","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:remakement_v_sense_3"}
+{"lemma":"remaketion","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:remaketion_v_sense_1"}
+{"lemma":"remakeable","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:remakeable_v_sense_2"}
+{"lemma":"remakeful","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:remakeful_v_sense_3"}
+{"lemma":"remakeless","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:remakeless_v_sense_1"}
+{"lemma":"unmake","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:unmake_v_sense_2"}
+{"lemma":"unmakeing","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:unmakeing_v_sense_3"}
+{"lemma":"unmakeed","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:unmakeed_v_sense_1"}
+{"lemma":"unmakeer","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:unmakeer_v_sense_2"}
+{"lemma":"unmakely","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:unmakely_v_sense_3"}
+{"lemma":"unmakeness","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:unmakeness_v_sense_1"}
+{"lemma":"unmakement","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:unmakement_v_sense_2"}
+{"lemma":"unmaketion","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:unmaketion_v_sense_3"}
+{"lemma":"unmakeable","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:unmakeable_v_sense_1"}
+{"lemma":"unmakeful","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:unmakeful_v_sense_2"}
+{"lemma":"unmakeless","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:unmakeless_v_sense_3"}
+{"lemma":"premake","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:premake_v_sense_1"}
+{"lemma":"premakeing","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:premakeing_v_sense_2"}
+{"lemma":"premakeed","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:premakeed_v_sense_3"}
+{"lemma":"premakeer","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:premakeer_v_sense_1"}
+{"lemma":"premakely","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:premakely_v_sense_2"}
+{"lemma":"premakeness","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:premakeness_v_sense_3"}
+{"lemma":"premakement","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:premakement_v_sense_1"}
+{"lemma":"premaketion","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:premaketion_v_sense_2"}
+{"lemma":"premakeable","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:premakeable_v_sense_3"}
+{"lemma":"premakeful","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:premakeful_v_sense_1"}
+{"lemma":"premakeless","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:premakeless_v_sense_2"}
+{"lemma":"mismake","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:mismake_v_sense_3"}
+{"lemma":"mismakeing","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:mismakeing_v_sense_1"}
+{"lemma":"mismakeed","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:mismakeed_v_sense_2"}
+{"lemma":"mismakeer","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:mismakeer_v_sense_3"}
+{"lemma":"mismakely","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:mismakely_v_sense_1"}
+{"lemma":"mismakeness","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:mismakeness_v_sense_2"}
+{"lemma":"mismakement","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:mismakement_v_sense_3"}
+{"lemma":"mismaketion","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:mismaketion_v_sense_1"}
+{"lemma":"mismakeable","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:mismakeable_v_sense_2"}
+{"lemma":"mismakeful","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:mismakeful_v_sense_3"}
+{"lemma":"mismakeless","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:mismakeless_v_sense_1"}
+{"lemma":"dismake","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:dismake_v_sense_2"}
+{"lemma":"dismakeing","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:dismakeing_v_sense_3"}
+{"lemma":"dismakeed","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:dismakeed_v_sense_1"}
+{"lemma":"dismakeer","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:dismakeer_v_sense_2"}
+{"lemma":"dismakely","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:dismakely_v_sense_3"}
+{"lemma":"dismakeness","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:dismakeness_v_sense_1"}
+{"lemma":"dismakement","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:dismakement_v_sense_2"}
+{"lemma":"dismaketion","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:dismaketion_v_sense_3"}
+{"lemma":"dismakeable","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:dismakeable_v_sense_1"}
+{"lemma":"dismakeful","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:dismakeful_v_sense_2"}
+{"lemma":"dismakeless","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:dismakeless_v_sense_3"}
+{"lemma":"overmake","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:overmake_v_sense_1"}
+{"lemma":"overmakeing","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:overmakeing_v_sense_2"}
+{"lemma":"overmakeed","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:overmakeed_v_sense_3"}
+{"lemma":"overmakeer","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:overmakeer_v_sense_1"}
+{"lemma":"overmakely","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:overmakely_v_sense_2"}
+{"lemma":"overmakeness","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:overmakeness_v_sense_3"}
+{"lemma":"overmakement","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:overmakement_v_sense_1"}
+{"lemma":"overmaketion","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:overmaketion_v_sense_2"}
+{"lemma":"overmakeable","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:overmakeable_v_sense_3"}
+{"lemma":"overmakeful","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:overmakeful_v_sense_1"}
+{"lemma":"overmakeless","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:overmakeless_v_sense_2"}
+{"lemma":"undermake","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:undermake_v_sense_3"}
+{"lemma":"undermakeing","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:undermakeing_v_sense_1"}
+{"lemma":"undermakeed","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:undermakeed_v_sense_2"}
+{"lemma":"undermakeer","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:undermakeer_v_sense_3"}
+{"lemma":"undermakely","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:undermakely_v_sense_1"}
+{"lemma":"undermakeness","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:undermakeness_v_sense_2"}
+{"lemma":"undermakement","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:undermakement_v_sense_3"}
+{"lemma":"undermaketion","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:undermaketion_v_sense_1"}
+{"lemma":"undermakeable","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:undermakeable_v_sense_2"}
+{"lemma":"undermakeful","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:undermakeful_v_sense_3"}
+{"lemma":"undermakeless","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:undermakeless_v_sense_1"}
+{"lemma":"outmake","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:outmake_v_sense_2"}
+{"lemma":"outmakeing","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:outmakeing_v_sense_3"}
+{"lemma":"outmakeed","pos":"v","rank":1,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:outmakeed_v_sense_1"}
+{"lemma":"outmakeer","pos":"v","rank":2,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:outmakeer_v_sense_2"}
+{"lemma":"outmakely","pos":"v","rank":3,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:outmakely_v_sense_3"}
+{"lemma":"outmakeness","pos":"v","rank":1,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:outmakeness_v_sense_1"}
+{"lemma":"outmakement","pos":"v","rank":2,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:outmakement_v_sense_2"}
+{"lemma":"outmaketion","pos":"v","rank":3,"en_gloss":"exist","vi_gloss":"là","ref":"oxford3000:outmaketion_v_sense_3"}
+{"lemma":"outmakeable","pos":"v","rank":1,"en_gloss":"possess","vi_gloss":"có","ref":"oxford3000:outmakeable_v_sense_1"}
+{"lemma":"outmakeful","pos":"v","rank":2,"en_gloss":"perform","vi_gloss":"làm","ref":"oxford3000:outmakeful_v_sense_2"}
+{"lemma":"outmakeless","pos":"v","rank":3,"en_gloss":"state","vi_gloss":"nói","ref":"oxford3000:outmakeless_v_sense_3"}
+{"lemma":"go","pos":"v","rank":1,"en_gloss":"obtain","vi_gloss":"nhận","ref":"oxford3000:go_v_sense_1"}
+{"lemma":"going","pos":"v","rank":2,"en_gloss":"exist","vi_gloss":"đi","ref":"oxford3000:going_v_sense_2"}
+{"lemma":"goed","pos":"v","rank":3,"en_gloss":"possess","vi_gloss":"biết","ref":"oxford3000:goed_v_sense_3"}
+{"lemma":"goer","pos":"v","rank":1,"en_gloss":"perform","vi_gloss":"lấy","ref":"oxford3000:goer_v_sense_1"}
+{"lemma":"goly","pos":"v","rank":2,"en_gloss":"state","vi_gloss":"thấy","ref":"oxford3000:goly_v_sense_2"}
+{"lemma":"goness","pos":"v","rank":3,"en_gloss":"obtain","vi_gloss":"đến","ref":"oxford3000:goness_v_sense_3"}
+{"lemma":"time","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:time_n_sense_1"}
+{"lemma":"timeing","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:timeing_n_sense_2"}
+{"lemma":"timeed","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:timeed_n_sense_3"}
+{"lemma":"timeer","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:timeer_n_sense_1"}
+{"lemma":"timely","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:timely_n_sense_2"}
+{"lemma":"timeness","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:timeness_n_sense_3"}
+{"lemma":"timement","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:timement_n_sense_1"}
+{"lemma":"timetion","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:timetion_n_sense_2"}
+{"lemma":"timeable","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:timeable_n_sense_3"}
+{"lemma":"timeful","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:timeful_n_sense_1"}
+{"lemma":"timeless","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:timeless_n_sense_2"}
+{"lemma":"retime","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:retime_n_sense_3"}
+{"lemma":"retimeing","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:retimeing_n_sense_1"}
+{"lemma":"retimeed","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:retimeed_n_sense_2"}
+{"lemma":"retimeer","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:retimeer_n_sense_3"}
+{"lemma":"retimely","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:retimely_n_sense_1"}
+{"lemma":"retimeness","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:retimeness_n_sense_2"}
+{"lemma":"retimement","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:retimement_n_sense_3"}
+{"lemma":"retimetion","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:retimetion_n_sense_1"}
+{"lemma":"retimeable","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:retimeable_n_sense_2"}
+{"lemma":"retimeful","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:retimeful_n_sense_3"}
+{"lemma":"retimeless","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:retimeless_n_sense_1"}
+{"lemma":"untime","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:untime_n_sense_2"}
+{"lemma":"untimeing","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:untimeing_n_sense_3"}
+{"lemma":"untimeed","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:untimeed_n_sense_1"}
+{"lemma":"untimeer","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:untimeer_n_sense_2"}
+{"lemma":"untimely","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:untimely_n_sense_3"}
+{"lemma":"untimeness","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:untimeness_n_sense_1"}
+{"lemma":"untimement","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:untimement_n_sense_2"}
+{"lemma":"untimetion","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:untimetion_n_sense_3"}
+{"lemma":"untimeable","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:untimeable_n_sense_1"}
+{"lemma":"untimeful","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:untimeful_n_sense_2"}
+{"lemma":"untimeless","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:untimeless_n_sense_3"}
+{"lemma":"pretime","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:pretime_n_sense_1"}
+{"lemma":"pretimeing","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:pretimeing_n_sense_2"}
+{"lemma":"pretimeed","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:pretimeed_n_sense_3"}
+{"lemma":"pretimeer","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:pretimeer_n_sense_1"}
+{"lemma":"pretimely","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:pretimely_n_sense_2"}
+{"lemma":"pretimeness","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:pretimeness_n_sense_3"}
+{"lemma":"pretimement","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:pretimement_n_sense_1"}
+{"lemma":"pretimetion","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:pretimetion_n_sense_2"}
+{"lemma":"pretimeable","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:pretimeable_n_sense_3"}
+{"lemma":"pretimeful","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:pretimeful_n_sense_1"}
+{"lemma":"pretimeless","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:pretimeless_n_sense_2"}
+{"lemma":"mistime","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:mistime_n_sense_3"}
+{"lemma":"mistimeing","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:mistimeing_n_sense_1"}
+{"lemma":"mistimeed","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:mistimeed_n_sense_2"}
+{"lemma":"mistimeer","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:mistimeer_n_sense_3"}
+{"lemma":"mistimely","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:mistimely_n_sense_1"}
+{"lemma":"mistimeness","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:mistimeness_n_sense_2"}
+{"lemma":"mistimement","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:mistimement_n_sense_3"}
+{"lemma":"mistimetion","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:mistimetion_n_sense_1"}
+{"lemma":"mistimeable","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:mistimeable_n_sense_2"}
+{"lemma":"mistimeful","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:mistimeful_n_sense_3"}
+{"lemma":"mistimeless","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:mistimeless_n_sense_1"}
+{"lemma":"distime","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:distime_n_sense_2"}
+{"lemma":"distimeing","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:distimeing_n_sense_3"}
+{"lemma":"distimeed","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:distimeed_n_sense_1"}
+{"lemma":"distimeer","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:distimeer_n_sense_2"}
+{"lemma":"distimely","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:distimely_n_sense_3"}
+{"lemma":"distimeness","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:distimeness_n_sense_1"}
+{"lemma":"distimement","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:distimement_n_sense_2"}
+{"lemma":"distimetion","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:distimetion_n_sense_3"}
+{"lemma":"distimeable","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:distimeable_n_sense_1"}
+{"lemma":"distimeful","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:distimeful_n_sense_2"}
+{"lemma":"distimeless","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:distimeless_n_sense_3"}
+{"lemma":"overtime","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:overtime_n_sense_1"}
+{"lemma":"overtimeing","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:overtimeing_n_sense_2"}
+{"lemma":"overtimeed","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:overtimeed_n_sense_3"}
+{"lemma":"overtimeer","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:overtimeer_n_sense_1"}
+{"lemma":"overtimely","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:overtimely_n_sense_2"}
+{"lemma":"overtimeness","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:overtimeness_n_sense_3"}
+{"lemma":"overtimement","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:overtimement_n_sense_1"}
+{"lemma":"overtimetion","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:overtimetion_n_sense_2"}
+{"lemma":"overtimeable","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:overtimeable_n_sense_3"}
+{"lemma":"overtimeful","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:overtimeful_n_sense_1"}
+{"lemma":"overtimeless","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:overtimeless_n_sense_2"}
+{"lemma":"undertime","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:undertime_n_sense_3"}
+{"lemma":"undertimeing","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:undertimeing_n_sense_1"}
+{"lemma":"undertimeed","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:undertimeed_n_sense_2"}
+{"lemma":"undertimeer","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:undertimeer_n_sense_3"}
+{"lemma":"undertimely","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:undertimely_n_sense_1"}
+{"lemma":"undertimeness","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:undertimeness_n_sense_2"}
+{"lemma":"undertimement","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:undertimement_n_sense_3"}
+{"lemma":"undertimetion","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:undertimetion_n_sense_1"}
+{"lemma":"undertimeable","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:undertimeable_n_sense_2"}
+{"lemma":"undertimeful","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:undertimeful_n_sense_3"}
+{"lemma":"undertimeless","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:undertimeless_n_sense_1"}
+{"lemma":"outtime","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:outtime_n_sense_2"}
+{"lemma":"outtimeing","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:outtimeing_n_sense_3"}
+{"lemma":"outtimeed","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:outtimeed_n_sense_1"}
+{"lemma":"outtimeer","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:outtimeer_n_sense_2"}
+{"lemma":"outtimely","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:outtimely_n_sense_3"}
+{"lemma":"outtimeness","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:outtimeness_n_sense_1"}
+{"lemma":"outtimement","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:outtimement_n_sense_2"}
+{"lemma":"outtimetion","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:outtimetion_n_sense_3"}
+{"lemma":"outtimeable","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:outtimeable_n_sense_1"}
+{"lemma":"outtimeful","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:outtimeful_n_sense_2"}
+{"lemma":"outtimeless","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:outtimeless_n_sense_3"}
+{"lemma":"year","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:year_n_sense_1"}
+{"lemma":"yearing","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:yearing_n_sense_2"}
+{"lemma":"yeared","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:yeared_n_sense_3"}
+{"lemma":"yearer","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:yearer_n_sense_1"}
+{"lemma":"yearly","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:yearly_n_sense_2"}
+{"lemma":"yearness","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:yearness_n_sense_3"}
+{"lemma":"yearment","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:yearment_n_sense_1"}
+{"lemma":"yeartion","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:yeartion_n_sense_2"}
+{"lemma":"yearable","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:yearable_n_sense_3"}
+{"lemma":"yearful","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:yearful_n_sense_1"}
+{"lemma":"yearless","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:yearless_n_sense_2"}
+{"lemma":"reyear","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:reyear_n_sense_3"}
+{"lemma":"reyearing","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:reyearing_n_sense_1"}
+{"lemma":"reyeared","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:reyeared_n_sense_2"}
+{"lemma":"reyearer","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:reyearer_n_sense_3"}
+{"lemma":"reyearly","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:reyearly_n_sense_1"}
+{"lemma":"reyearness","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:reyearness_n_sense_2"}
+{"lemma":"reyearment","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:reyearment_n_sense_3"}
+{"lemma":"reyeartion","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:reyeartion_n_sense_1"}
+{"lemma":"reyearable","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:reyearable_n_sense_2"}
+{"lemma":"reyearful","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:reyearful_n_sense_3"}
+{"lemma":"reyearless","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:reyearless_n_sense_1"}
+{"lemma":"unyear","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:unyear_n_sense_2"}
+{"lemma":"unyearing","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:unyearing_n_sense_3"}
+{"lemma":"unyeared","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:unyeared_n_sense_1"}
+{"lemma":"unyearer","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:unyearer_n_sense_2"}
+{"lemma":"unyearly","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:unyearly_n_sense_3"}
+{"lemma":"unyearness","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:unyearness_n_sense_1"}
+{"lemma":"unyearment","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:unyearment_n_sense_2"}
+{"lemma":"unyeartion","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:unyeartion_n_sense_3"}
+{"lemma":"unyearable","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:unyearable_n_sense_1"}
+{"lemma":"unyearful","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:unyearful_n_sense_2"}
+{"lemma":"unyearless","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:unyearless_n_sense_3"}
+{"lemma":"preyear","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:preyear_n_sense_1"}
+{"lemma":"preyearing","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:preyearing_n_sense_2"}
+{"lemma":"preyeared","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:preyeared_n_sense_3"}
+{"lemma":"preyearer","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:preyearer_n_sense_1"}
+{"lemma":"preyearly","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:preyearly_n_sense_2"}
+{"lemma":"preyearness","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:preyearness_n_sense_3"}
+{"lemma":"preyearment","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:preyearment_n_sense_1"}
+{"lemma":"preyeartion","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:preyeartion_n_sense_2"}
+{"lemma":"preyearable","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:preyearable_n_sense_3"}
+{"lemma":"preyearful","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:preyearful_n_sense_1"}
+{"lemma":"preyearless","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:preyearless_n_sense_2"}
+{"lemma":"misyear","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:misyear_n_sense_3"}
+{"lemma":"misyearing","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:misyearing_n_sense_1"}
+{"lemma":"misyeared","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:misyeared_n_sense_2"}
+{"lemma":"misyearer","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:misyearer_n_sense_3"}
+{"lemma":"misyearly","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:misyearly_n_sense_1"}
+{"lemma":"misyearness","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:misyearness_n_sense_2"}
+{"lemma":"misyearment","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:misyearment_n_sense_3"}
+{"lemma":"misyeartion","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:misyeartion_n_sense_1"}
+{"lemma":"misyearable","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:misyearable_n_sense_2"}
+{"lemma":"misyearful","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:misyearful_n_sense_3"}
+{"lemma":"misyearless","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:misyearless_n_sense_1"}
+{"lemma":"disyear","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:disyear_n_sense_2"}
+{"lemma":"disyearing","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:disyearing_n_sense_3"}
+{"lemma":"disyeared","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:disyeared_n_sense_1"}
+{"lemma":"disyearer","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:disyearer_n_sense_2"}
+{"lemma":"disyearly","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:disyearly_n_sense_3"}
+{"lemma":"disyearness","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:disyearness_n_sense_1"}
+{"lemma":"disyearment","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:disyearment_n_sense_2"}
+{"lemma":"disyeartion","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:disyeartion_n_sense_3"}
+{"lemma":"disyearable","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:disyearable_n_sense_1"}
+{"lemma":"disyearful","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:disyearful_n_sense_2"}
+{"lemma":"disyearless","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:disyearless_n_sense_3"}
+{"lemma":"overyear","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:overyear_n_sense_1"}
+{"lemma":"overyearing","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:overyearing_n_sense_2"}
+{"lemma":"overyeared","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:overyeared_n_sense_3"}
+{"lemma":"overyearer","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:overyearer_n_sense_1"}
+{"lemma":"overyearly","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:overyearly_n_sense_2"}
+{"lemma":"overyearness","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:overyearness_n_sense_3"}
+{"lemma":"overyearment","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:overyearment_n_sense_1"}
+{"lemma":"overyeartion","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:overyeartion_n_sense_2"}
+{"lemma":"overyearable","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:overyearable_n_sense_3"}
+{"lemma":"overyearful","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:overyearful_n_sense_1"}
+{"lemma":"overyearless","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:overyearless_n_sense_2"}
+{"lemma":"underyear","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:underyear_n_sense_3"}
+{"lemma":"underyearing","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:underyearing_n_sense_1"}
+{"lemma":"underyeared","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:underyeared_n_sense_2"}
+{"lemma":"underyearer","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:underyearer_n_sense_3"}
+{"lemma":"underyearly","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:underyearly_n_sense_1"}
+{"lemma":"underyearness","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:underyearness_n_sense_2"}
+{"lemma":"underyearment","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:underyearment_n_sense_3"}
+{"lemma":"underyeartion","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:underyeartion_n_sense_1"}
+{"lemma":"underyearable","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:underyearable_n_sense_2"}
+{"lemma":"underyearful","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:underyearful_n_sense_3"}
+{"lemma":"underyearless","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:underyearless_n_sense_1"}
+{"lemma":"outyear","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:outyear_n_sense_2"}
+{"lemma":"outyearing","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:outyearing_n_sense_3"}
+{"lemma":"outyeared","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:outyeared_n_sense_1"}
+{"lemma":"outyearer","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:outyearer_n_sense_2"}
+{"lemma":"outyearly","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:outyearly_n_sense_3"}
+{"lemma":"outyearness","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:outyearness_n_sense_1"}
+{"lemma":"outyearment","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:outyearment_n_sense_2"}
+{"lemma":"outyeartion","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:outyeartion_n_sense_3"}
+{"lemma":"outyearable","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:outyearable_n_sense_1"}
+{"lemma":"outyearful","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:outyearful_n_sense_2"}
+{"lemma":"outyearless","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:outyearless_n_sense_3"}
+{"lemma":"people","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:people_n_sense_1"}
+{"lemma":"peopleing","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:peopleing_n_sense_2"}
+{"lemma":"peopleed","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:peopleed_n_sense_3"}
+{"lemma":"peopleer","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:peopleer_n_sense_1"}
+{"lemma":"peoplely","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:peoplely_n_sense_2"}
+{"lemma":"peopleness","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:peopleness_n_sense_3"}
+{"lemma":"peoplement","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:peoplement_n_sense_1"}
+{"lemma":"peopletion","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:peopletion_n_sense_2"}
+{"lemma":"peopleable","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:peopleable_n_sense_3"}
+{"lemma":"peopleful","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:peopleful_n_sense_1"}
+{"lemma":"peopleless","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:peopleless_n_sense_2"}
+{"lemma":"repeople","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:repeople_n_sense_3"}
+{"lemma":"repeopleing","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:repeopleing_n_sense_1"}
+{"lemma":"repeopleed","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:repeopleed_n_sense_2"}
+{"lemma":"repeopleer","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:repeopleer_n_sense_3"}
+{"lemma":"repeoplely","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:repeoplely_n_sense_1"}
+{"lemma":"repeopleness","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:repeopleness_n_sense_2"}
+{"lemma":"repeoplement","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:repeoplement_n_sense_3"}
+{"lemma":"repeopletion","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:repeopletion_n_sense_1"}
+{"lemma":"repeopleable","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:repeopleable_n_sense_2"}
+{"lemma":"repeopleful","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:repeopleful_n_sense_3"}
+{"lemma":"repeopleless","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:repeopleless_n_sense_1"}
+{"lemma":"unpeople","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:unpeople_n_sense_2"}
+{"lemma":"unpeopleing","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:unpeopleing_n_sense_3"}
+{"lemma":"unpeopleed","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:unpeopleed_n_sense_1"}
+{"lemma":"unpeopleer","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:unpeopleer_n_sense_2"}
+{"lemma":"unpeoplely","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:unpeoplely_n_sense_3"}
+{"lemma":"unpeopleness","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:unpeopleness_n_sense_1"}
+{"lemma":"unpeoplement","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:unpeoplement_n_sense_2"}
+{"lemma":"unpeopletion","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:unpeopletion_n_sense_3"}
+{"lemma":"unpeopleable","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:unpeopleable_n_sense_1"}
+{"lemma":"unpeopleful","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:unpeopleful_n_sense_2"}
+{"lemma":"unpeopleless","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:unpeopleless_n_sense_3"}
+{"lemma":"prepeople","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:prepeople_n_sense_1"}
+{"lemma":"prepeopleing","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:prepeopleing_n_sense_2"}
+{"lemma":"prepeopleed","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:prepeopleed_n_sense_3"}
+{"lemma":"prepeopleer","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:prepeopleer_n_sense_1"}
+{"lemma":"prepeoplely","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:prepeoplely_n_sense_2"}
+{"lemma":"prepeopleness","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:prepeopleness_n_sense_3"}
+{"lemma":"prepeoplement","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:prepeoplement_n_sense_1"}
+{"lemma":"prepeopletion","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:prepeopletion_n_sense_2"}
+{"lemma":"prepeopleable","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:prepeopleable_n_sense_3"}
+{"lemma":"prepeopleful","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:prepeopleful_n_sense_1"}
+{"lemma":"prepeopleless","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:prepeopleless_n_sense_2"}
+{"lemma":"mispeople","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:mispeople_n_sense_3"}
+{"lemma":"mispeopleing","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:mispeopleing_n_sense_1"}
+{"lemma":"mispeopleed","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:mispeopleed_n_sense_2"}
+{"lemma":"mispeopleer","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:mispeopleer_n_sense_3"}
+{"lemma":"mispeoplely","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:mispeoplely_n_sense_1"}
+{"lemma":"mispeopleness","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:mispeopleness_n_sense_2"}
+{"lemma":"mispeoplement","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:mispeoplement_n_sense_3"}
+{"lemma":"mispeopletion","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:mispeopletion_n_sense_1"}
+{"lemma":"mispeopleable","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:mispeopleable_n_sense_2"}
+{"lemma":"mispeopleful","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:mispeopleful_n_sense_3"}
+{"lemma":"mispeopleless","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:mispeopleless_n_sense_1"}
+{"lemma":"dispeople","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:dispeople_n_sense_2"}
+{"lemma":"dispeopleing","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:dispeopleing_n_sense_3"}
+{"lemma":"dispeopleed","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:dispeopleed_n_sense_1"}
+{"lemma":"dispeopleer","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:dispeopleer_n_sense_2"}
+{"lemma":"dispeoplely","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:dispeoplely_n_sense_3"}
+{"lemma":"dispeopleness","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:dispeopleness_n_sense_1"}
+{"lemma":"dispeoplement","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:dispeoplement_n_sense_2"}
+{"lemma":"dispeopletion","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:dispeopletion_n_sense_3"}
+{"lemma":"dispeopleable","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:dispeopleable_n_sense_1"}
+{"lemma":"dispeopleful","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:dispeopleful_n_sense_2"}
+{"lemma":"dispeopleless","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:dispeopleless_n_sense_3"}
+{"lemma":"overpeople","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:overpeople_n_sense_1"}
+{"lemma":"overpeopleing","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:overpeopleing_n_sense_2"}
+{"lemma":"overpeopleed","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:overpeopleed_n_sense_3"}
+{"lemma":"overpeopleer","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:overpeopleer_n_sense_1"}
+{"lemma":"overpeoplely","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:overpeoplely_n_sense_2"}
+{"lemma":"overpeopleness","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:overpeopleness_n_sense_3"}
+{"lemma":"overpeoplement","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:overpeoplement_n_sense_1"}
+{"lemma":"overpeopletion","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:overpeopletion_n_sense_2"}
+{"lemma":"overpeopleable","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:overpeopleable_n_sense_3"}
+{"lemma":"overpeopleful","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:overpeopleful_n_sense_1"}
+{"lemma":"overpeopleless","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:overpeopleless_n_sense_2"}
+{"lemma":"underpeople","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:underpeople_n_sense_3"}
+{"lemma":"underpeopleing","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:underpeopleing_n_sense_1"}
+{"lemma":"underpeopleed","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:underpeopleed_n_sense_2"}
+{"lemma":"underpeopleer","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:underpeopleer_n_sense_3"}
+{"lemma":"underpeoplely","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:underpeoplely_n_sense_1"}
+{"lemma":"underpeopleness","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:underpeopleness_n_sense_2"}
+{"lemma":"underpeoplement","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:underpeoplement_n_sense_3"}
+{"lemma":"underpeopletion","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:underpeopletion_n_sense_1"}
+{"lemma":"underpeopleable","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:underpeopleable_n_sense_2"}
+{"lemma":"underpeopleful","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:underpeopleful_n_sense_3"}
+{"lemma":"underpeopleless","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:underpeopleless_n_sense_1"}
+{"lemma":"outpeople","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:outpeople_n_sense_2"}
+{"lemma":"outpeopleing","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:outpeopleing_n_sense_3"}
+{"lemma":"outpeopleed","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:outpeopleed_n_sense_1"}
+{"lemma":"outpeopleer","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:outpeopleer_n_sense_2"}
+{"lemma":"outpeoplely","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:outpeoplely_n_sense_3"}
+{"lemma":"outpeopleness","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:outpeopleness_n_sense_1"}
+{"lemma":"outpeoplement","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:outpeoplement_n_sense_2"}
+{"lemma":"outpeopletion","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:outpeopletion_n_sense_3"}
+{"lemma":"outpeopleable","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:outpeopleable_n_sense_1"}
+{"lemma":"outpeopleful","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:outpeopleful_n_sense_2"}
+{"lemma":"outpeopleless","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:outpeopleless_n_sense_3"}
+{"lemma":"way","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:way_n_sense_1"}
+{"lemma":"waying","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:waying_n_sense_2"}
+{"lemma":"wayed","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:wayed_n_sense_3"}
+{"lemma":"wayer","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:wayer_n_sense_1"}
+{"lemma":"wayly","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:wayly_n_sense_2"}
+{"lemma":"wayness","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:wayness_n_sense_3"}
+{"lemma":"wayment","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:wayment_n_sense_1"}
+{"lemma":"waytion","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:waytion_n_sense_2"}
+{"lemma":"wayable","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:wayable_n_sense_3"}
+{"lemma":"wayful","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:wayful_n_sense_1"}
+{"lemma":"wayless","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:wayless_n_sense_2"}
+{"lemma":"reway","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:reway_n_sense_3"}
+{"lemma":"rewaying","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:rewaying_n_sense_1"}
+{"lemma":"rewayed","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:rewayed_n_sense_2"}
+{"lemma":"rewayer","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:rewayer_n_sense_3"}
+{"lemma":"rewayly","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:rewayly_n_sense_1"}
+{"lemma":"rewayness","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:rewayness_n_sense_2"}
+{"lemma":"rewayment","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:rewayment_n_sense_3"}
+{"lemma":"rewaytion","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:rewaytion_n_sense_1"}
+{"lemma":"rewayable","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:rewayable_n_sense_2"}
+{"lemma":"rewayful","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:rewayful_n_sense_3"}
+{"lemma":"rewayless","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:rewayless_n_sense_1"}
+{"lemma":"unway","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:unway_n_sense_2"}
+{"lemma":"unwaying","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:unwaying_n_sense_3"}
+{"lemma":"unwayed","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:unwayed_n_sense_1"}
+{"lemma":"unwayer","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:unwayer_n_sense_2"}
+{"lemma":"unwayly","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:unwayly_n_sense_3"}
+{"lemma":"unwayness","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:unwayness_n_sense_1"}
+{"lemma":"unwayment","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:unwayment_n_sense_2"}
+{"lemma":"unwaytion","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:unwaytion_n_sense_3"}
+{"lemma":"unwayable","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:unwayable_n_sense_1"}
+{"lemma":"unwayful","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:unwayful_n_sense_2"}
+{"lemma":"unwayless","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:unwayless_n_sense_3"}
+{"lemma":"preway","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:preway_n_sense_1"}
+{"lemma":"prewaying","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:prewaying_n_sense_2"}
+{"lemma":"prewayed","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:prewayed_n_sense_3"}
+{"lemma":"prewayer","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:prewayer_n_sense_1"}
+{"lemma":"prewayly","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:prewayly_n_sense_2"}
+{"lemma":"prewayness","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:prewayness_n_sense_3"}
+{"lemma":"prewayment","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:prewayment_n_sense_1"}
+{"lemma":"prewaytion","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:prewaytion_n_sense_2"}
+{"lemma":"prewayable","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:prewayable_n_sense_3"}
+{"lemma":"prewayful","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:prewayful_n_sense_1"}
+{"lemma":"prewayless","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:prewayless_n_sense_2"}
+{"lemma":"misway","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:misway_n_sense_3"}
+{"lemma":"miswaying","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:miswaying_n_sense_1"}
+{"lemma":"miswayed","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:miswayed_n_sense_2"}
+{"lemma":"miswayer","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:miswayer_n_sense_3"}
+{"lemma":"miswayly","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:miswayly_n_sense_1"}
+{"lemma":"miswayness","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:miswayness_n_sense_2"}
+{"lemma":"miswayment","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:miswayment_n_sense_3"}
+{"lemma":"miswaytion","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:miswaytion_n_sense_1"}
+{"lemma":"miswayable","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:miswayable_n_sense_2"}
+{"lemma":"miswayful","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:miswayful_n_sense_3"}
+{"lemma":"miswayless","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:miswayless_n_sense_1"}
+{"lemma":"disway","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:disway_n_sense_2"}
+{"lemma":"diswaying","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:diswaying_n_sense_3"}
+{"lemma":"diswayed","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:diswayed_n_sense_1"}
+{"lemma":"diswayer","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:diswayer_n_sense_2"}
+{"lemma":"diswayly","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:diswayly_n_sense_3"}
+{"lemma":"diswayness","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:diswayness_n_sense_1"}
+{"lemma":"diswayment","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:diswayment_n_sense_2"}
+{"lemma":"diswaytion","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:diswaytion_n_sense_3"}
+{"lemma":"diswayable","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:diswayable_n_sense_1"}
+{"lemma":"diswayful","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:diswayful_n_sense_2"}
+{"lemma":"diswayless","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:diswayless_n_sense_3"}
+{"lemma":"overway","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:overway_n_sense_1"}
+{"lemma":"overwaying","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:overwaying_n_sense_2"}
+{"lemma":"overwayed","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:overwayed_n_sense_3"}
+{"lemma":"overwayer","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:overwayer_n_sense_1"}
+{"lemma":"overwayly","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:overwayly_n_sense_2"}
+{"lemma":"overwayness","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:overwayness_n_sense_3"}
+{"lemma":"overwayment","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:overwayment_n_sense_1"}
+{"lemma":"overwaytion","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:overwaytion_n_sense_2"}
+{"lemma":"overwayable","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:overwayable_n_sense_3"}
+{"lemma":"overwayful","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:overwayful_n_sense_1"}
+{"lemma":"overwayless","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:overwayless_n_sense_2"}
+{"lemma":"underway","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:underway_n_sense_3"}
+{"lemma":"underwaying","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:underwaying_n_sense_1"}
+{"lemma":"underwayed","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:underwayed_n_sense_2"}
+{"lemma":"underwayer","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:underwayer_n_sense_3"}
+{"lemma":"underwayly","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:underwayly_n_sense_1"}
+{"lemma":"underwayness","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:underwayness_n_sense_2"}
+{"lemma":"underwayment","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:underwayment_n_sense_3"}
+{"lemma":"underwaytion","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:underwaytion_n_sense_1"}
+{"lemma":"underwayable","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:underwayable_n_sense_2"}
+{"lemma":"underwayful","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:underwayful_n_sense_3"}
+{"lemma":"underwayless","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:underwayless_n_sense_1"}
+{"lemma":"outway","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:outway_n_sense_2"}
+{"lemma":"outwaying","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:outwaying_n_sense_3"}
+{"lemma":"outwayed","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:outwayed_n_sense_1"}
+{"lemma":"outwayer","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:outwayer_n_sense_2"}
+{"lemma":"outwayly","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:outwayly_n_sense_3"}
+{"lemma":"outwayness","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:outwayness_n_sense_1"}
+{"lemma":"outwayment","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:outwayment_n_sense_2"}
+{"lemma":"outwaytion","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:outwaytion_n_sense_3"}
+{"lemma":"outwayable","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:outwayable_n_sense_1"}
+{"lemma":"outwayful","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:outwayful_n_sense_2"}
+{"lemma":"outwayless","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:outwayless_n_sense_3"}
+{"lemma":"day","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:day_n_sense_1"}
+{"lemma":"daying","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:daying_n_sense_2"}
+{"lemma":"dayed","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:dayed_n_sense_3"}
+{"lemma":"dayer","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:dayer_n_sense_1"}
+{"lemma":"dayly","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:dayly_n_sense_2"}
+{"lemma":"dayness","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:dayness_n_sense_3"}
+{"lemma":"dayment","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:dayment_n_sense_1"}
+{"lemma":"daytion","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:daytion_n_sense_2"}
+{"lemma":"dayable","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:dayable_n_sense_3"}
+{"lemma":"dayful","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:dayful_n_sense_1"}
+{"lemma":"dayless","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:dayless_n_sense_2"}
+{"lemma":"reday","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:reday_n_sense_3"}
+{"lemma":"redaying","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:redaying_n_sense_1"}
+{"lemma":"redayed","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:redayed_n_sense_2"}
+{"lemma":"redayer","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:redayer_n_sense_3"}
+{"lemma":"redayly","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:redayly_n_sense_1"}
+{"lemma":"redayness","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:redayness_n_sense_2"}
+{"lemma":"redayment","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:redayment_n_sense_3"}
+{"lemma":"redaytion","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:redaytion_n_sense_1"}
+{"lemma":"redayable","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:redayable_n_sense_2"}
+{"lemma":"redayful","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:redayful_n_sense_3"}
+{"lemma":"redayless","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:redayless_n_sense_1"}
+{"lemma":"unday","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:unday_n_sense_2"}
+{"lemma":"undaying","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:undaying_n_sense_3"}
+{"lemma":"undayed","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:undayed_n_sense_1"}
+{"lemma":"undayer","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:undayer_n_sense_2"}
+{"lemma":"undayly","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:undayly_n_sense_3"}
+{"lemma":"undayness","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:undayness_n_sense_1"}
+{"lemma":"undayment","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:undayment_n_sense_2"}
+{"lemma":"undaytion","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:undaytion_n_sense_3"}
+{"lemma":"undayable","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:undayable_n_sense_1"}
+{"lemma":"undayful","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:undayful_n_sense_2"}
+{"lemma":"undayless","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:undayless_n_sense_3"}
+{"lemma":"preday","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:preday_n_sense_1"}
+{"lemma":"predaying","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:predaying_n_sense_2"}
+{"lemma":"predayed","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:predayed_n_sense_3"}
+{"lemma":"predayer","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:predayer_n_sense_1"}
+{"lemma":"predayly","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:predayly_n_sense_2"}
+{"lemma":"predayness","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:predayness_n_sense_3"}
+{"lemma":"predayment","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:predayment_n_sense_1"}
+{"lemma":"predaytion","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:predaytion_n_sense_2"}
+{"lemma":"predayable","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:predayable_n_sense_3"}
+{"lemma":"predayful","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:predayful_n_sense_1"}
+{"lemma":"predayless","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:predayless_n_sense_2"}
+{"lemma":"misday","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:misday_n_sense_3"}
+{"lemma":"misdaying","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:misdaying_n_sense_1"}
+{"lemma":"misdayed","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:misdayed_n_sense_2"}
+{"lemma":"misdayer","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:misdayer_n_sense_3"}
+{"lemma":"misdayly","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:misdayly_n_sense_1"}
+{"lemma":"misdayness","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:misdayness_n_sense_2"}
+{"lemma":"misdayment","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:misdayment_n_sense_3"}
+{"lemma":"misdaytion","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:misdaytion_n_sense_1"}
+{"lemma":"misdayable","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:misdayable_n_sense_2"}
+{"lemma":"misdayful","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:misdayful_n_sense_3"}
+{"lemma":"misdayless","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:misdayless_n_sense_1"}
+{"lemma":"disday","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:disday_n_sense_2"}
+{"lemma":"disdaying","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:disdaying_n_sense_3"}
+{"lemma":"disdayed","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:disdayed_n_sense_1"}
+{"lemma":"disdayer","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:disdayer_n_sense_2"}
+{"lemma":"disdayly","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:disdayly_n_sense_3"}
+{"lemma":"disdayness","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:disdayness_n_sense_1"}
+{"lemma":"disdayment","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:disdayment_n_sense_2"}
+{"lemma":"disdaytion","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:disdaytion_n_sense_3"}
+{"lemma":"disdayable","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:disdayable_n_sense_1"}
+{"lemma":"disdayful","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:disdayful_n_sense_2"}
+{"lemma":"disdayless","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:disdayless_n_sense_3"}
+{"lemma":"overday","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:overday_n_sense_1"}
+{"lemma":"overdaying","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:overdaying_n_sense_2"}
+{"lemma":"overdayed","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:overdayed_n_sense_3"}
+{"lemma":"overdayer","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:overdayer_n_sense_1"}
+{"lemma":"overdayly","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:overdayly_n_sense_2"}
+{"lemma":"overdayness","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:overdayness_n_sense_3"}
+{"lemma":"overdayment","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:overdayment_n_sense_1"}
+{"lemma":"overdaytion","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:overdaytion_n_sense_2"}
+{"lemma":"overdayable","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:overdayable_n_sense_3"}
+{"lemma":"overdayful","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:overdayful_n_sense_1"}
+{"lemma":"overdayless","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:overdayless_n_sense_2"}
+{"lemma":"underday","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:underday_n_sense_3"}
+{"lemma":"underdaying","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:underdaying_n_sense_1"}
+{"lemma":"underdayed","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:underdayed_n_sense_2"}
+{"lemma":"underdayer","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:underdayer_n_sense_3"}
+{"lemma":"underdayly","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:underdayly_n_sense_1"}
+{"lemma":"underdayness","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:underdayness_n_sense_2"}
+{"lemma":"underdayment","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:underdayment_n_sense_3"}
+{"lemma":"underdaytion","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:underdaytion_n_sense_1"}
+{"lemma":"underdayable","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:underdayable_n_sense_2"}
+{"lemma":"underdayful","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:underdayful_n_sense_3"}
+{"lemma":"underdayless","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:underdayless_n_sense_1"}
+{"lemma":"outday","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:outday_n_sense_2"}
+{"lemma":"outdaying","pos":"n","rank":3,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:outdaying_n_sense_3"}
+{"lemma":"outdayed","pos":"n","rank":1,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:outdayed_n_sense_1"}
+{"lemma":"outdayer","pos":"n","rank":2,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:outdayer_n_sense_2"}
+{"lemma":"outdayly","pos":"n","rank":3,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:outdayly_n_sense_3"}
+{"lemma":"outdayness","pos":"n","rank":1,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:outdayness_n_sense_1"}
+{"lemma":"outdayment","pos":"n","rank":2,"en_gloss":"thing","vi_gloss":"thời gian","ref":"oxford3000:outdayment_n_sense_2"}
+{"lemma":"outdaytion","pos":"n","rank":3,"en_gloss":"entity","vi_gloss":"năm","ref":"oxford3000:outdaytion_n_sense_3"}
+{"lemma":"outdayable","pos":"n","rank":1,"en_gloss":"object","vi_gloss":"người","ref":"oxford3000:outdayable_n_sense_1"}
+{"lemma":"outdayful","pos":"n","rank":2,"en_gloss":"item","vi_gloss":"cách","ref":"oxford3000:outdayful_n_sense_2"}
+{"lemma":"outdayless","pos":"n","rank":3,"en_gloss":"concept","vi_gloss":"ngày","ref":"oxford3000:outdayless_n_sense_3"}
+{"lemma":"man","pos":"n","rank":1,"en_gloss":"thing","vi_gloss":"người","ref":"oxford3000:man_n_sense_1"}
+{"lemma":"maning","pos":"n","rank":2,"en_gloss":"entity","vi_gloss":"thứ","ref":"oxford3000:maning_n_sense_2"}
+{"lemma":"maned","pos":"n","rank":3,"en_gloss":"object","vi_gloss":"phụ nữ","ref":"oxford3000:maned_n_sense_3"}
+{"lemma":"maner","pos":"n","rank":1,"en_gloss":"item","vi_gloss":"cuộc sống","ref":"oxford3000:maner_n_sense_1"}
+{"lemma":"manly","pos":"n","rank":2,"en_gloss":"concept","vi_gloss":"trẻ","ref":"oxford3000:manly_n_sense_2"}
+{"lemma":"good","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"tốt","ref":"oxford3000:good_adj_sense_1"}
+{"lemma":"gooding","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"mới","ref":"oxford3000:gooding_adj_sense_2"}
+{"lemma":"gooded","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"đầu tiên","ref":"oxford3000:gooded_adj_sense_3"}
+{"lemma":"gooder","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"cuối","ref":"oxford3000:gooder_adj_sense_1"}
+{"lemma":"goodly","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"dài","ref":"oxford3000:goodly_adj_sense_2"}
+{"lemma":"goodness","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"tuyệt","ref":"oxford3000:goodness_adj_sense_3"}
+{"lemma":"goodment","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"nhỏ","ref":"oxford3000:goodment_adj_sense_1"}
+{"lemma":"goodtion","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"riêng","ref":"oxford3000:goodtion_adj_sense_2"}
+{"lemma":"goodable","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"khác","ref":"oxford3000:goodable_adj_sense_3"}
+{"lemma":"goodful","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"cũ","ref":"oxford3000:goodful_adj_sense_1"}
+{"lemma":"goodless","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"tốt","ref":"oxford3000:goodless_adj_sense_2"}
+{"lemma":"regood","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"mới","ref":"oxford3000:regood_adj_sense_3"}
+{"lemma":"regooding","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"đầu tiên","ref":"oxford3000:regooding_adj_sense_1"}
+{"lemma":"regooded","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"cuối","ref":"oxford3000:regooded_adj_sense_2"}
+{"lemma":"regooder","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"dài","ref":"oxford3000:regooder_adj_sense_3"}
+{"lemma":"regoodly","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"tuyệt","ref":"oxford3000:regoodly_adj_sense_1"}
+{"lemma":"regoodness","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"nhỏ","ref":"oxford3000:regoodness_adj_sense_2"}
+{"lemma":"regoodment","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"riêng","ref":"oxford3000:regoodment_adj_sense_3"}
+{"lemma":"regoodtion","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"khác","ref":"oxford3000:regoodtion_adj_sense_1"}
+{"lemma":"regoodable","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"cũ","ref":"oxford3000:regoodable_adj_sense_2"}
+{"lemma":"regoodful","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"tốt","ref":"oxford3000:regoodful_adj_sense_3"}
+{"lemma":"regoodless","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"mới","ref":"oxford3000:regoodless_adj_sense_1"}
+{"lemma":"ungood","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"đầu tiên","ref":"oxford3000:ungood_adj_sense_2"}
+{"lemma":"ungooding","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"cuối","ref":"oxford3000:ungooding_adj_sense_3"}
+{"lemma":"ungooded","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"dài","ref":"oxford3000:ungooded_adj_sense_1"}
+{"lemma":"ungooder","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"tuyệt","ref":"oxford3000:ungooder_adj_sense_2"}
+{"lemma":"ungoodly","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"nhỏ","ref":"oxford3000:ungoodly_adj_sense_3"}
+{"lemma":"ungoodness","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"riêng","ref":"oxford3000:ungoodness_adj_sense_1"}
+{"lemma":"ungoodment","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"khác","ref":"oxford3000:ungoodment_adj_sense_2"}
+{"lemma":"ungoodtion","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"cũ","ref":"oxford3000:ungoodtion_adj_sense_3"}
+{"lemma":"ungoodable","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"tốt","ref":"oxford3000:ungoodable_adj_sense_1"}
+{"lemma":"ungoodful","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"mới","ref":"oxford3000:ungoodful_adj_sense_2"}
+{"lemma":"ungoodless","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"đầu tiên","ref":"oxford3000:ungoodless_adj_sense_3"}
+{"lemma":"pregood","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"cuối","ref":"oxford3000:pregood_adj_sense_1"}
+{"lemma":"pregooding","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"dài","ref":"oxford3000:pregooding_adj_sense_2"}
+{"lemma":"pregooded","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"tuyệt","ref":"oxford3000:pregooded_adj_sense_3"}
+{"lemma":"pregooder","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"nhỏ","ref":"oxford3000:pregooder_adj_sense_1"}
+{"lemma":"pregoodly","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"riêng","ref":"oxford3000:pregoodly_adj_sense_2"}
+{"lemma":"pregoodness","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"khác","ref":"oxford3000:pregoodness_adj_sense_3"}
+{"lemma":"pregoodment","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"cũ","ref":"oxford3000:pregoodment_adj_sense_1"}
+{"lemma":"pregoodtion","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"tốt","ref":"oxford3000:pregoodtion_adj_sense_2"}
+{"lemma":"pregoodable","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"mới","ref":"oxford3000:pregoodable_adj_sense_3"}
+{"lemma":"pregoodful","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"đầu tiên","ref":"oxford3000:pregoodful_adj_sense_1"}
+{"lemma":"pregoodless","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"cuối","ref":"oxford3000:pregoodless_adj_sense_2"}
+{"lemma":"misgood","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"dài","ref":"oxford3000:misgood_adj_sense_3"}
+{"lemma":"misgooding","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"tuyệt","ref":"oxford3000:misgooding_adj_sense_1"}
+{"lemma":"misgooded","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"nhỏ","ref":"oxford3000:misgooded_adj_sense_2"}
+{"lemma":"misgooder","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"riêng","ref":"oxford3000:misgooder_adj_sense_3"}
+{"lemma":"misgoodly","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"khác","ref":"oxford3000:misgoodly_adj_sense_1"}
+{"lemma":"misgoodness","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"cũ","ref":"oxford3000:misgoodness_adj_sense_2"}
+{"lemma":"misgoodment","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"tốt","ref":"oxford3000:misgoodment_adj_sense_3"}
+{"lemma":"misgoodtion","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"mới","ref":"oxford3000:misgoodtion_adj_sense_1"}
+{"lemma":"misgoodable","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"đầu tiên","ref":"oxford3000:misgoodable_adj_sense_2"}
+{"lemma":"misgoodful","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"cuối","ref":"oxford3000:misgoodful_adj_sense_3"}
+{"lemma":"misgoodless","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"dài","ref":"oxford3000:misgoodless_adj_sense_1"}
+{"lemma":"disgood","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"tuyệt","ref":"oxford3000:disgood_adj_sense_2"}
+{"lemma":"disgooding","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"nhỏ","ref":"oxford3000:disgooding_adj_sense_3"}
+{"lemma":"disgooded","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"riêng","ref":"oxford3000:disgooded_adj_sense_1"}
+{"lemma":"disgooder","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"khác","ref":"oxford3000:disgooder_adj_sense_2"}
+{"lemma":"disgoodly","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"cũ","ref":"oxford3000:disgoodly_adj_sense_3"}
+{"lemma":"disgoodness","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"tốt","ref":"oxford3000:disgoodness_adj_sense_1"}
+{"lemma":"disgoodment","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"mới","ref":"oxford3000:disgoodment_adj_sense_2"}
+{"lemma":"disgoodtion","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"đầu tiên","ref":"oxford3000:disgoodtion_adj_sense_3"}
+{"lemma":"disgoodable","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"cuối","ref":"oxford3000:disgoodable_adj_sense_1"}
+{"lemma":"disgoodful","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"dài","ref":"oxford3000:disgoodful_adj_sense_2"}
+{"lemma":"disgoodless","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"tuyệt","ref":"oxford3000:disgoodless_adj_sense_3"}
+{"lemma":"overgood","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"nhỏ","ref":"oxford3000:overgood_adj_sense_1"}
+{"lemma":"overgooding","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"riêng","ref":"oxford3000:overgooding_adj_sense_2"}
+{"lemma":"overgooded","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"khác","ref":"oxford3000:overgooded_adj_sense_3"}
+{"lemma":"overgooder","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"cũ","ref":"oxford3000:overgooder_adj_sense_1"}
+{"lemma":"overgoodly","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"tốt","ref":"oxford3000:overgoodly_adj_sense_2"}
+{"lemma":"overgoodness","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"mới","ref":"oxford3000:overgoodness_adj_sense_3"}
+{"lemma":"overgoodment","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"đầu tiên","ref":"oxford3000:overgoodment_adj_sense_1"}
+{"lemma":"overgoodtion","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"cuối","ref":"oxford3000:overgoodtion_adj_sense_2"}
+{"lemma":"overgoodable","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"dài","ref":"oxford3000:overgoodable_adj_sense_3"}
+{"lemma":"overgoodful","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"tuyệt","ref":"oxford3000:overgoodful_adj_sense_1"}
+{"lemma":"overgoodless","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"nhỏ","ref":"oxford3000:overgoodless_adj_sense_2"}
+{"lemma":"undergood","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"riêng","ref":"oxford3000:undergood_adj_sense_3"}
+{"lemma":"undergooding","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"khác","ref":"oxford3000:undergooding_adj_sense_1"}
+{"lemma":"undergooded","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"cũ","ref":"oxford3000:undergooded_adj_sense_2"}
+{"lemma":"undergooder","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"tốt","ref":"oxford3000:undergooder_adj_sense_3"}
+{"lemma":"undergoodly","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"mới","ref":"oxford3000:undergoodly_adj_sense_1"}
+{"lemma":"undergoodness","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"đầu tiên","ref":"oxford3000:undergoodness_adj_sense_2"}
+{"lemma":"undergoodment","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"cuối","ref":"oxford3000:undergoodment_adj_sense_3"}
+{"lemma":"undergoodtion","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"dài","ref":"oxford3000:undergoodtion_adj_sense_1"}
+{"lemma":"undergoodable","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"tuyệt","ref":"oxford3000:undergoodable_adj_sense_2"}
+{"lemma":"undergoodful","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"nhỏ","ref":"oxford3000:undergoodful_adj_sense_3"}
+{"lemma":"undergoodless","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"riêng","ref":"oxford3000:undergoodless_adj_sense_1"}
+{"lemma":"outgood","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"khác","ref":"oxford3000:outgood_adj_sense_2"}
+{"lemma":"outgooding","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"cũ","ref":"oxford3000:outgooding_adj_sense_3"}
+{"lemma":"outgooded","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"tốt","ref":"oxford3000:outgooded_adj_sense_1"}
+{"lemma":"outgooder","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"mới","ref":"oxford3000:outgooder_adj_sense_2"}
+{"lemma":"outgoodly","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"đầu tiên","ref":"oxford3000:outgoodly_adj_sense_3"}
+{"lemma":"outgoodness","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"cuối","ref":"oxford3000:outgoodness_adj_sense_1"}
+{"lemma":"outgoodment","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"dài","ref":"oxford3000:outgoodment_adj_sense_2"}
+{"lemma":"outgoodtion","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"tuyệt","ref":"oxford3000:outgoodtion_adj_sense_3"}
+{"lemma":"outgoodable","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"nhỏ","ref":"oxford3000:outgoodable_adj_sense_1"}
+{"lemma":"outgoodful","pos":"adj","rank":2,"en_gloss":"being","vi_gloss":"riêng","ref":"oxford3000:outgoodful_adj_sense_2"}
+{"lemma":"outgoodless","pos":"adj","rank":3,"en_gloss":"state of","vi_gloss":"khác","ref":"oxford3000:outgoodless_adj_sense_3"}
+{"lemma":"new","pos":"adj","rank":1,"en_gloss":"having quality","vi_gloss":"cũ","ref":"oxford3000:new_adj_sense_1"}

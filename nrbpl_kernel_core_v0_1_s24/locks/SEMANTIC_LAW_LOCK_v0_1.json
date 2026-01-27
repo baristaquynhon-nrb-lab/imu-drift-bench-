@@ -1,0 +1,86 @@
+{
+  "spec": "SEMANTIC_LAW_LOCK_v0_1",
+  "version": "0.1.0",
+  "scan_fieldset": {
+    "senses": [
+      "en_gloss",
+      "vi_gloss",
+      "constraints_text"
+    ],
+    "collocations": [
+      "pattern",
+      "slots[].label",
+      "slots[].constraint_text"
+    ],
+    "frames": [
+      "frame_label",
+      "roles[].label",
+      "constraints[]",
+      "truth_conditions[]"
+    ]
+  },
+  "allow_string_fields": {
+    "senses": [
+      "sense_id",
+      "lemma",
+      "pos",
+      "en_gloss",
+      "vi_gloss",
+      "frame",
+      "constraints_text",
+      "trace.source",
+      "trace.ref",
+      "trace.source_file_sha256",
+      "trace.record_sha256"
+    ],
+    "collocations": [
+      "colloc_id",
+      "head_lemma",
+      "head_pos",
+      "pattern",
+      "frame",
+      "slots[].label",
+      "slots[].constraint_text",
+      "trace.source",
+      "trace.ref",
+      "trace.source_file_sha256",
+      "trace.record_sha256"
+    ],
+    "frames": [
+      "frame_id",
+      "frame_label",
+      "roles[].label",
+      "constraints[]",
+      "truth_conditions[]",
+      "trace.source",
+      "trace.ref",
+      "trace.source_file_sha256",
+      "trace.record_sha256"
+    ]
+  },
+  "inference_markers": [
+    "maybe",
+    "probably",
+    "seems",
+    "guess",
+    "~",
+    "tbd",
+    "?",
+    "có thể",
+    "có lẽ",
+    "hình như",
+    "tạm",
+    "ước chừng"
+  ],
+  "allowed_trace_sources": [
+    "oxford3000",
+    "wordnet",
+    "wordnet_top",
+    "synthetic_l1b"
+  ],
+  "allowed_trace_ref_prefixes": [
+    "oxford3000:",
+    "wordnet:",
+    "synthetic:"
+  ]
+}

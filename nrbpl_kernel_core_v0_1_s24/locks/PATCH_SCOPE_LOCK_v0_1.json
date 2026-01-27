@@ -1,0 +1,37 @@
+{
+  "spec": "NRBPL_PATCH_SCOPE_LOCK_v0_1",
+  "level": "L1",
+  "scope": "lexicon_2k",
+  "policy": {
+    "n_lemmas": 2000,
+    "max_senses_per_lemma": 3,
+    "merge_priority": "oxford3000_then_wordnet",
+    "lemma_mutation": "FORBIDDEN",
+    "missing_gloss": "REFUSE"
+  },
+  "mandatory_sources": {
+    "lemma_sources": [
+      "sources/oxford3000_seed.jsonl",
+      "sources/wordnet_top.jsonl"
+    ],
+    "sense_sources": [
+      "sources/oxford3000_senses.jsonl",
+      "sources/wordnet_senses.jsonl"
+    ]
+  },
+  "outputs": {
+    "lemmas": "lexicon/en_vi_lemmas_2k.jsonl",
+    "senses": "lexicon/en_vi_senses_2k.jsonl"
+  },
+  "determinism": {
+    "required": true,
+    "hash_algorithm": "SHA-256",
+    "canonical_json": true
+  },
+  "gate_requirements": {
+    "validator": "validators/lexicon_gate.js",
+    "min_version": "1.1.0",
+    "mode": "all",
+    "exit_code_success": 0
+  }
+}

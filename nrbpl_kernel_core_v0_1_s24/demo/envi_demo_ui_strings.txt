@@ -1,0 +1,33 @@
+# NRBPL EN→VI Runtime Demo UI Strings
+# Status: L2-compliant (no forbidden claims)
+# Version: 0.1.0
+
+# Welcome screen
+welcome_title=NRBPL EN→VI Runtime Demo
+welcome_subtitle=Evidence-first translation with grounded semantics
+
+# Input section
+input_label=English input:
+input_placeholder=Enter English text...
+translate_button=Translate (NRBPL L2)
+
+# Output section
+output_label=Vietnamese output:
+sense_trace_label=Sense trace (evidence):
+truth_conditions_label=Truth conditions:
+
+# Error messages
+error_lemma_not_found=Lemma not found in lexicon
+error_sense_missing=Sense record missing
+error_trace_invalid=Trace validation failed
+error_gate_not_passed=Semantic gate validation not passed
+
+# Footer
+footer_notice=This demo operates within L2 semantic validation law constraints.
+footer_claim=Translation output is evidence-bound and falsifiable.
+footer_disclaimer=No claims of "understanding" or "semantic equivalence" are made.
+
+# Status indicators
+status_supported=SUPPORTED (exit 0)
+status_insufficient=INSUFFICIENT (exit 2)
+status_refuse=REFUSE (exit 3)

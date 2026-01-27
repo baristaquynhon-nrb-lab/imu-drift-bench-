@@ -1,0 +1,14 @@
+{"sense_id":"JUMP_V1","lemma":"jump","pos":"VERB","definition_en":"push yourself off the ground and move through the air","vi_gloss":"nhảy","frame":"MOTION_JUMP"}
+{"sense_id":"LOOK_V1","lemma":"look","pos":"VERB","definition_en":"direct your eyes in a particular direction","vi_gloss":"nhìn","frame":"PERCEPTION_LOOK"}
+{"sense_id":"CHEW_V1","lemma":"chew","pos":"VERB","definition_en":"bite food many times in the mouth","vi_gloss":"nhai","frame":"CONSUME_CHEW"}
+{"sense_id":"CHASE_V1","lemma":"chase","pos":"VERB","definition_en":"run after someone or something to catch it","vi_gloss":"đuổi theo","frame":"PURSUIT_CHASE"}
+{"sense_id":"THROW_V1","lemma":"throw","pos":"VERB","definition_en":"send something through the air with your hand","vi_gloss":"ném","frame":"MOTION_THROW"}
+{"sense_id":"RUN_V1","lemma":"run","pos":"VERB","definition_en":"move faster than walking using your legs","vi_gloss":"chạy","frame":"MOTION_RUN"}
+{"sense_id":"PLAY_V1","lemma":"play","pos":"VERB","definition_en":"do something enjoyable, often with others","vi_gloss":"chơi","frame":"ACTIVITY_PLAY"}
+{"sense_id":"WEAR_V1","lemma":"wear","pos":"VERB","definition_en":"have clothes on your body","vi_gloss":"mặc","frame":"WEAR_CLOTHING"}
+{"sense_id":"FALL_V1","lemma":"fall","pos":"VERB","definition_en":"drop down to a lower level","vi_gloss":"ngã","frame":"MOTION_FALL"}
+{"sense_id":"STOP_V1","lemma":"stop","pos":"VERB","definition_en":"not move anymore","vi_gloss":"dừng lại","frame":"MOTION_STOP"}
+{"sense_id":"LICK_V1","lemma":"lick","pos":"VERB","definition_en":"move your tongue over something","vi_gloss":"liếm","frame":"ACTION_LICK"}
+{"sense_id":"STAND_V1","lemma":"stand","pos":"VERB","definition_en":"be in an upright position on your feet","vi_gloss":"đứng","frame":"POSTURE_STAND"}
+{"sense_id":"LIE_V1","lemma":"lie","pos":"VERB","definition_en":"be in a flat position on a surface","vi_gloss":"nằm","frame":"POSTURE_LIE"}
+{"sense_id":"SIT_V1","lemma":"sit","pos":"VERB","definition_en":"be in a resting position on your bottom","vi_gloss":"ngồi","frame":"POSTURE_SIT"}

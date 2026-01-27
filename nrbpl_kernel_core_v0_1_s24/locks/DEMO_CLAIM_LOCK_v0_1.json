@@ -1,0 +1,23 @@
+{
+  "spec": "DEMO_CLAIM_LOCK_v0_1",
+  "reason_code_enum": [
+    "DEMO_MISSING_ARTIFACT",
+    "DEMO_LEMMA_NOT_FOUND",
+    "DEMO_SENSE_TRACE_MISSING",
+    "DEMO_SEMANTIC_GATE_NOT_PASSED",
+    "DEMO_REPLAY_MISMATCH",
+    "DEMO_FORBIDDEN_CLAIM_TEXT_DETECTED"
+  ],
+  "forbidden_claim_texts": [
+    "understands meaning like humans",
+    "hiểu meaning giống con người",
+    "correct translation",
+    "semantic equivalence",
+    "AI understands",
+    "truly understands",
+    "real understanding"
+  ],
+  "ui_string_files": [
+    "demo/envi_demo_ui_strings.txt"
+  ]
+}

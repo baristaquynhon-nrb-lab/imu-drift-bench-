@@ -1,0 +1,45 @@
+{
+  "name": "nrbpl-kernel-core",
+  "version": "0.1.0",
+  "description": "NRBPL Kernel-CORE v0.1 — Execution Kernel with PR Model, Ledger, and Forensic Verification",
+  "main": "src/vm/vm.js",
+  "bin": {
+    "nrbcore": "./bin/nrbcore.js"
+  },
+  "scripts": {
+    "test": "node test/run_all.js",
+    "test-nl": "node test/nl/run_nl_suite.js",
+    "test-all": "npm test && npm run test-nl",
+    "audit": "node tools/repo_audit.js --scope ntl --mode canonical",
+    "audit-out": "node tools/repo_audit.js --scope ntl --mode canonical --out _audit/repo_audit.json",
+    "freeze-l1": "node tools/freeze_l1_baseline.js",
+    "freeze-l1-tag": "node tools/freeze_l1_baseline.js --tag",
+    "gen-lexicon-2k": "node tools/gen_lexicon_2k.js --n 2000",
+    "gen-senses-2k": "node tools/gen_senses_2k.js --max 3",
+    "gate-lexicon-2k": "node validators/lexicon_gate.js --lemmas lexicon/en_vi_lemmas_2k.jsonl",
+    "gate-lexicon-2k-all": "node validators/lexicon_gate.js --all --lemmas lexicon/en_vi_lemmas_2k.jsonl --senses lexicon/en_vi_senses_2k.jsonl --collocations lexicon/collocations_en.jsonl --frames frames/meaning_frames.json",
+    "example": "node bin/nrbcore.js run examples/prog_lookup_pr_ledger.json examples/en_en_lex_min.nrbp-dict.json"
+  },
+  "keywords": [
+    "nrbpl",
+    "provenance",
+    "ledger",
+    "verification",
+    "CPL",
+    "UGTS",
+    "forensic",
+    "evidence"
+  ],
+  "author": "Nguyen Ngoc Thi — SEE-R OS / NRB Laboratory",
+  "license": "SEE NOTICE.txt",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baristaquynhon-nrb-lab/imu-drift-bench-"
+  },
+  "bugs": {
+    "url": "https://github.com/baristaquynhon-nrb-lab/imu-drift-bench-/issues"
+  }
+}

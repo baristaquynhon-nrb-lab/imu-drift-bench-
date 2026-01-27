@@ -1,0 +1,73 @@
+================================================================================
+NRBPL Kernel-CORE v0.1
+================================================================================
+
+Copyright © 2025 Nguyen Ngoc Thi — SEE-R OS / NRB Laboratory
+All rights reserved.
+
+This software is part of the NRBPL (Neuro-Reflex Barrier Programming Language)
+research project, based on the Condition–Phenomenon Law (CPL) and Universal
+Grounded Truth System (UGTS) framework.
+
+--------------------------------------------------------------------------------
+LICENSE TERMS
+--------------------------------------------------------------------------------
+
+This is research software provided for academic, educational, and research
+purposes only.
+
+PERMITTED USES:
+- Academic research and education
+- Non-commercial experimentation
+- Security research and forensic verification studies
+- Contribution to NRBPL specification development
+
+PROHIBITED USES:
+- Commercial use without explicit written permission
+- Modification of core ABI/opcode semantics without specification compliance
+- Use in production systems without explicit approval
+- Removal or modification of attribution and provenance records
+
+--------------------------------------------------------------------------------
+PROVENANCE AND IMMUTABILITY
+--------------------------------------------------------------------------------
+
+This implementation follows the NRBPL Provenance Record (PR) model and
+Ledger-based verification discipline. Any modifications to this codebase
+must maintain:
+
+1. ABI/opcode semantic compatibility (Section E)
+2. PR schema compliance (Section K)
+3. Ledger hash-chain integrity (Section D)
+4. Verdict propagation discipline (Section V)
+
+--------------------------------------------------------------------------------
+DISCLAIMER
+--------------------------------------------------------------------------------
+
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--------------------------------------------------------------------------------
+ATTRIBUTION
+--------------------------------------------------------------------------------
+
+If you use this software in your research, please cite:
+
+  Nguyen Ngoc Thi. "NRBPL Kernel-CORE v0.1: Execution Kernel with Provenance
+  Record Model and Forensic Verification." SEE-R OS / NRB Laboratory, 2025.
+
+--------------------------------------------------------------------------------
+CONTACT
+--------------------------------------------------------------------------------
+
+For licensing inquiries, collaboration, or specification contributions:
+  Email: [Contact via GitHub Issues]
+  Project: https://github.com/baristaquynhon-nrb-lab/imu-drift-bench-
+
+================================================================================

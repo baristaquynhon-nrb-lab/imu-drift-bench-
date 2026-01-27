@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "NRB_NTL_LEXICON_GATE_REPORT_SCHEMA_v0_1",
+  "title": "NTL Lexicon Gate Report v0.1 (Normative)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "spec",
+    "tool",
+    "tool_version",
+    "mode",
+    "verdict",
+    "exit_code",
+    "fail_fast",
+    "files",
+    "artifact_hashes",
+    "report_hashes",
+    "checks",
+    "stats",
+    "reasons",
+    "notes"
+  ],
+  "properties": {
+    "spec": { "const": "NTL_LEXICON_GATE_REPORT_v0_1" },
+    "tool": { "type": "string", "minLength": 1 },
+    "tool_version": { "type": "string", "minLength": 1 },
+    "mode": { "type": "string", "minLength": 1 },
+
+    "verdict": {
+      "type": "string",
+      "enum": ["SUPPORTED", "INSUFFICIENT", "CONTRADICTORY", "OUT_OF_SCOPE", "REFUSE"]
+    },
+    "exit_code": { "type": "integer", "enum": [0, 2, 3] },
+    "fail_fast": { "type": "boolean" },
+
+    "files": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lemmas"],
+      "properties": {
+        "lemmas": { "type": "string", "minLength": 1 },
+        "senses": { "type": "string" },
+        "collocations": { "type": "string" },
+        "frames": { "type": "string" }
+      }
+    },
+
+    "artifact_hashes": {
+      "description": "Hash binding for validated artifacts. MUST be deterministic.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["set_sha256", "manifest_lines"],
+      "properties": {
+        "set_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "manifest_lines": {
+          "description": "Canonical manifest lines used to compute set_sha256 (sorted lexicographically).",
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+
+    "report_hashes": {
+      "description": "Two-hash separation requirement: (1) artifact set hash; (2) report canonical hash. Sidecar file hash is optional convenience.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["canonical_sha256", "bytes_sha256_sidecar_required"],
+      "properties": {
+        "canonical_sha256": {
+          "description": "SHA256 over canonical JSON serialization of this report AFTER setting report_hashes.canonical_sha256 = \"\" (empty string).",
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "bytes_sha256_sidecar_required": {
+          "description": "If report is persisted, a sidecar '<report>.sha256' MUST be emitted containing sha256sum over report bytes.",
+          "type": "boolean",
+          "const": true
+        }
+      }
+    },
+
+    "checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_pass",
+        "sorted",
+        "no_duplicates",
+        "no_inference_markers",
+        "no_multigloss",
+        "no_sense_selection_without_trace",
+        "frame_scope_lock",
+        "frames_known",
+        "crossref_sense_lemma",
+        "crossref_colloc_lemma"
+      ],
+      "properties": {
+        "schema_pass": { "type": "boolean" },
+        "sorted": { "type": "boolean" },
+        "no_duplicates": { "type": "boolean" },
+        "no_inference_markers": { "type": "boolean" },
+        "no_multigloss": { "type": "boolean" },
+        "no_sense_selection_without_trace": { "type": "boolean" },
+        "frame_scope_lock": { "type": "boolean" },
+        "frames_known": { "type": "boolean" },
+        "crossref_sense_lemma": { "type": "boolean" },
+        "crossref_colloc_lemma": { "type": "boolean" }
+      }
+    },
+
+    "stats": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lemmas",
+        "senses",
+        "collocations",
+        "dup_lemma_pos",
+        "dup_sense_id",
+        "dup_colloc_id",
+        "unknown_frames",
+        "sense_lemma_missing",
+        "colloc_lemma_missing"
+      ],
+      "properties": {
+        "lemmas": { "type": "integer", "minimum": 0 },
+        "senses": { "type": "integer", "minimum": 0 },
+        "collocations": { "type": "integer", "minimum": 0 },
+        "dup_lemma_pos": { "type": "integer", "minimum": 0 },
+        "dup_sense_id": { "type": "integer", "minimum": 0 },
+        "dup_colloc_id": { "type": "integer", "minimum": 0 },
+        "unknown_frames": { "type": "integer", "minimum": 0 },
+        "sense_lemma_missing": { "type": "integer", "minimum": 0 },
+        "colloc_lemma_missing": { "type": "integer", "minimum": 0 }
+      }
+    },
+
+    "reasons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["code", "message", "file", "line"],
+        "properties": {
+          "code": { "type": "string", "minLength": 1 },
+          "message": { "type": "string", "minLength": 1 },
+          "file": { "type": "string", "minLength": 1 },
+          "line": { "type": "integer", "minimum": 1 }
+        }
+      }
+    },
+
+    "notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

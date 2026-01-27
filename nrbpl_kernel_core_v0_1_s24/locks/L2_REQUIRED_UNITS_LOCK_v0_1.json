@@ -1,0 +1,8 @@
+{
+  "spec": "L2_REQUIRED_UNITS_LOCK_v0_1",
+  "required_units": {
+    "senses": true,
+    "collocations": false,
+    "frames": false
+  }
+}
