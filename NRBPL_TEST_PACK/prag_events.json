@@ -1,0 +1,10 @@
+[
+  {
+    "event_id": "E1",
+    "schema": "SPEECH_ACT_WISH",
+    "speaker": "AGENT_1",
+    "addressee": "YOU",
+    "formula": "HAPPY_BIRTHDAY",
+    "mode": "CELEBRATORY"
+  }
+]
