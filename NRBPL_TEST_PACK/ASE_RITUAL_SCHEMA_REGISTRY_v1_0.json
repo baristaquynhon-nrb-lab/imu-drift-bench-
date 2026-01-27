@@ -1,0 +1,77 @@
+{
+  "spec": "ASE_RITUAL_SCHEMA_REGISTRY_v1_0",
+  "version": "1.0",
+  "status": "NORMATIVE",
+  "discipline": ["UGTS", "evidence-first", "fail-fast", "audit-ready"],
+  "domain": "PRAGMATIC_RITUAL",
+  "notes": [
+    "Closed registry for cyclical ritual execution schemas.",
+    "Events MUST reference registered schemas and agents.",
+    "No free-form interpretation; all opcodes are registry-locked."
+  ],
+  "agents": {
+    "FAMILY":        { "type": "COLLECTIVE_HUMAN",           "description": "Human family unit as collective agent" },
+    "ANCESTORS":     { "type": "SPIRITUAL_LINEAGE",          "description": "Ancestral spirits in lineage" },
+    "KITCHEN_GOD":   { "type": "HOUSEHOLD_GUARDIAN_SPIRIT",  "description": "Ong Tao - household guardian spirit" },
+    "EARTH_SPIRIT":  { "type": "COSMOLOGICAL_ENTITY",        "description": "Earth deity in cosmological hierarchy" },
+    "COSMIC_ORDER":  { "type": "COSMOLOGICAL_ENTITY",        "description": "Abstract cosmic renewal force" },
+    "GRAVE_SITE":    { "type": "MEMORIAL_LOCATION",          "description": "Physical site of ancestor graves" },
+    "FAMILY_ALTAR":  { "type": "RITUAL_OBJECT",              "description": "Household altar for offerings" },
+    "HEAVENS":       { "type": "COSMOLOGICAL_ENTITY",        "description": "Celestial destination for Kitchen God report" },
+    "CALENDAR":      { "type": "LUNAR_SYSTEM",               "description": "Vietnamese lunar calendar system" }
+  },
+  "schemas": {
+    "SCH_KITCHEN_GOD_OFFERING": {
+      "description": "Offering ritual to Kitchen God on 23rd of 12th lunar month",
+      "temporal_trigger": { "calendar": "LUNAR", "month": 12, "day": 23 },
+      "required_agents": ["FAMILY", "KITCHEN_GOD"],
+      "opcodes": ["EXECUTE_SCHEMA", "OFFER", "SEND_REPORT"]
+    },
+    "SCH_TET_FOOD_PRODUCTION": {
+      "description": "Production of banh chung and banh tet",
+      "temporal_trigger": { "period": "PRE_TET" },
+      "required_agents": ["FAMILY"],
+      "opcodes": ["EXECUTE_SCHEMA", "PRODUCE", "SHARE"]
+    },
+    "SCH_FIVE_FRUIT_ALTAR": {
+      "description": "Arrangement of five-fruit tray on family altar",
+      "temporal_trigger": { "period": "PRE_TET" },
+      "required_agents": ["FAMILY", "FAMILY_ALTAR", "ANCESTORS"],
+      "opcodes": ["EXECUTE_SCHEMA", "ARRANGE_OFFERING", "SYMBOLIC_INVOKE"]
+    },
+    "SCH_ANCESTOR_GRAVE_VISIT": {
+      "description": "Visit and clean ancestor graves, offer incense",
+      "temporal_trigger": { "period": "PRE_TET" },
+      "required_agents": ["FAMILY", "GRAVE_SITE", "ANCESTORS"],
+      "opcodes": ["EXECUTE_SCHEMA", "VISIT", "CLEAN", "OFFER", "HONOR"]
+    },
+    "SCH_TAT_NIEN_YEAR_CLOSURE": {
+      "description": "Year-end ceremony (cung tat nien) to ancestors and earth",
+      "temporal_trigger": { "event": "END_OF_LUNAR_YEAR" },
+      "required_agents": ["FAMILY", "ANCESTORS", "EARTH_SPIRIT"],
+      "opcodes": ["EXECUTE_SCHEMA", "OFFER", "CLOSE_YEAR"]
+    },
+    "SCH_NEW_YEAR_THRESHOLD": {
+      "description": "New Year's Eve threshold celebration and cosmic renewal",
+      "temporal_trigger": { "event": "MIDNIGHT_LUNAR_NEW_YEAR" },
+      "required_agents": ["FAMILY", "COSMIC_ORDER"],
+      "opcodes": ["EXECUTE_SCHEMA", "CELEBRATE", "TRANSITION_STATE", "INVOKE"]
+    }
+  },
+  "opcodes": {
+    "EXECUTE_SCHEMA":    { "args": ["schema_id"],                     "description": "Begin execution of named schema" },
+    "OFFER":             { "args": ["agent", "recipient", "object"],  "description": "Agent presents ritual offering to recipient" },
+    "SEND_REPORT":       { "args": ["agent", "destination", "purpose"], "description": "Agent dispatches report to authority" },
+    "PRODUCE":           { "args": ["agent", "object", "symbol"],     "description": "Agent creates ritual food/object with symbolic meaning" },
+    "SHARE":             { "args": ["object", "group", "role"],       "description": "Communal sharing of produced goods" },
+    "ARRANGE_OFFERING":  { "args": ["agent", "location", "object"],   "description": "Agent arranges offering at ritual location" },
+    "SYMBOLIC_INVOKE":   { "args": ["agent", "recipient", "meaning"], "description": "Agent invokes symbolic meaning toward recipient" },
+    "VISIT":             { "args": ["agent", "location"],             "description": "Agent visits ritual location" },
+    "CLEAN":             { "args": ["agent", "target"],               "description": "Agent cleans/maintains ritual site" },
+    "HONOR":             { "args": ["agent", "recipient", "type"],    "description": "Agent pays respect to recipient" },
+    "CLOSE_YEAR":        { "args": ["agent", "state"],                "description": "Agent formally closes the year cycle" },
+    "CELEBRATE":         { "args": ["agent", "type"],                 "description": "Agent performs celebration ritual" },
+    "TRANSITION_STATE":  { "args": ["entity", "from_state", "to_state"], "description": "State transition from old to new" },
+    "INVOKE":            { "args": ["agent", "recipient", "meaning"], "description": "Agent invokes cosmic/spiritual meaning" }
+  }
+}

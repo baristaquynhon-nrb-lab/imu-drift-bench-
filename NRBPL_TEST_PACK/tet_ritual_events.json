@@ -1,0 +1,151 @@
+{
+  "protocol": "RITUAL_TET_PREPARATION_VN_v1.0",
+  "domain": "PRAGMATIC_RITUAL",
+  "nature": "CYCLICAL_CALENDAR_TRIGGERED",
+  "events": [
+    {
+      "event_id": "R01",
+      "schema": "SCH_KITCHEN_GOD_OFFERING",
+      "opcode": "EXECUTE_SCHEMA",
+      "args": { "schema_id": "SCH_KITCHEN_GOD_OFFERING" }
+    },
+    {
+      "event_id": "R02",
+      "schema": "SCH_KITCHEN_GOD_OFFERING",
+      "opcode": "OFFER",
+      "args": { "agent": "FAMILY", "recipient": "KITCHEN_GOD", "object": "RITUAL_FOOD" }
+    },
+    {
+      "event_id": "R03",
+      "schema": "SCH_KITCHEN_GOD_OFFERING",
+      "opcode": "SEND_REPORT",
+      "args": { "agent": "KITCHEN_GOD", "destination": "HEAVENS", "purpose": "ANNUAL_STATUS" }
+    },
+    {
+      "event_id": "R04",
+      "schema": "SCH_TET_FOOD_PRODUCTION",
+      "opcode": "EXECUTE_SCHEMA",
+      "args": { "schema_id": "SCH_TET_FOOD_PRODUCTION" }
+    },
+    {
+      "event_id": "R05",
+      "schema": "SCH_TET_FOOD_PRODUCTION",
+      "opcode": "PRODUCE",
+      "args": { "agent": "FAMILY", "object": "BANH_CHUNG", "symbol": "EARTH" }
+    },
+    {
+      "event_id": "R06",
+      "schema": "SCH_TET_FOOD_PRODUCTION",
+      "opcode": "PRODUCE",
+      "args": { "agent": "FAMILY", "object": "BANH_TET", "symbol": "HEAVEN" }
+    },
+    {
+      "event_id": "R07",
+      "schema": "SCH_TET_FOOD_PRODUCTION",
+      "opcode": "SHARE",
+      "args": { "object": "FOOD", "group": "FAMILY", "role": "COMMUNAL_BONDING" }
+    },
+    {
+      "event_id": "R08",
+      "schema": "SCH_FIVE_FRUIT_ALTAR",
+      "opcode": "EXECUTE_SCHEMA",
+      "args": { "schema_id": "SCH_FIVE_FRUIT_ALTAR" }
+    },
+    {
+      "event_id": "R09",
+      "schema": "SCH_FIVE_FRUIT_ALTAR",
+      "opcode": "ARRANGE_OFFERING",
+      "args": { "agent": "FAMILY", "location": "FAMILY_ALTAR", "object": "FIVE_FRUITS" }
+    },
+    {
+      "event_id": "R10",
+      "schema": "SCH_FIVE_FRUIT_ALTAR",
+      "opcode": "SYMBOLIC_INVOKE",
+      "args": { "agent": "FAMILY", "recipient": "ANCESTORS", "meaning": "PROSPERITY" }
+    },
+    {
+      "event_id": "R11",
+      "schema": "SCH_ANCESTOR_GRAVE_VISIT",
+      "opcode": "EXECUTE_SCHEMA",
+      "args": { "schema_id": "SCH_ANCESTOR_GRAVE_VISIT" }
+    },
+    {
+      "event_id": "R12",
+      "schema": "SCH_ANCESTOR_GRAVE_VISIT",
+      "opcode": "VISIT",
+      "args": { "agent": "FAMILY", "location": "GRAVE_SITE" }
+    },
+    {
+      "event_id": "R13",
+      "schema": "SCH_ANCESTOR_GRAVE_VISIT",
+      "opcode": "CLEAN",
+      "args": { "agent": "FAMILY", "target": "GRAVE_SITE" }
+    },
+    {
+      "event_id": "R14",
+      "schema": "SCH_ANCESTOR_GRAVE_VISIT",
+      "opcode": "OFFER",
+      "args": { "agent": "FAMILY", "recipient": "ANCESTORS", "object": "INCENSE" }
+    },
+    {
+      "event_id": "R15",
+      "schema": "SCH_ANCESTOR_GRAVE_VISIT",
+      "opcode": "HONOR",
+      "args": { "agent": "FAMILY", "recipient": "ANCESTORS", "type": "LINEAGE_RESPECT" }
+    },
+    {
+      "event_id": "R16",
+      "schema": "SCH_TAT_NIEN_YEAR_CLOSURE",
+      "opcode": "EXECUTE_SCHEMA",
+      "args": { "schema_id": "SCH_TAT_NIEN_YEAR_CLOSURE" }
+    },
+    {
+      "event_id": "R17",
+      "schema": "SCH_TAT_NIEN_YEAR_CLOSURE",
+      "opcode": "OFFER",
+      "args": { "agent": "FAMILY", "recipient": "ANCESTORS", "object": "YEAR_END_FOOD" }
+    },
+    {
+      "event_id": "R18",
+      "schema": "SCH_TAT_NIEN_YEAR_CLOSURE",
+      "opcode": "OFFER",
+      "args": { "agent": "FAMILY", "recipient": "EARTH_SPIRIT", "object": "RITUAL_SYMBOLS" }
+    },
+    {
+      "event_id": "R19",
+      "schema": "SCH_TAT_NIEN_YEAR_CLOSURE",
+      "opcode": "CLOSE_YEAR",
+      "args": { "agent": "FAMILY", "state": "PAST_YEAR_COMPLETED" }
+    },
+    {
+      "event_id": "R20",
+      "schema": "SCH_NEW_YEAR_THRESHOLD",
+      "opcode": "EXECUTE_SCHEMA",
+      "args": { "schema_id": "SCH_NEW_YEAR_THRESHOLD" }
+    },
+    {
+      "event_id": "R21",
+      "schema": "SCH_NEW_YEAR_THRESHOLD",
+      "opcode": "CELEBRATE",
+      "args": { "agent": "FAMILY", "type": "THRESHOLD_RITUAL" }
+    },
+    {
+      "event_id": "R22",
+      "schema": "SCH_NEW_YEAR_THRESHOLD",
+      "opcode": "TRANSITION_STATE",
+      "args": { "entity": "YEAR", "from_state": "OLD_YEAR", "to_state": "NEW_YEAR" }
+    },
+    {
+      "event_id": "R23",
+      "schema": "SCH_NEW_YEAR_THRESHOLD",
+      "opcode": "INVOKE",
+      "args": { "agent": "FAMILY", "recipient": "COSMIC_ORDER", "meaning": "RENEWAL" }
+    }
+  ],
+  "state_updates": [
+    { "key": "SOCIAL_CONTINUITY",   "value": "MAINTAINED" },
+    { "key": "LINEAGE_CONNECTION",  "value": "REINFORCED" },
+    { "key": "SPIRITUAL_BALANCE",   "value": "RESTORED" },
+    { "key": "TEMPORAL_RESET",      "value": "COMPLETED" }
+  ]
+}

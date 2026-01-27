@@ -1,0 +1,62 @@
+{
+  "spec": "NRBPL_GLOBAL_TESTPACK_v1_0",
+  "status": "FROZEN",
+  "description": "Tet Preparation Ritual: 6 schemas, 27 events mapped to descriptive + pragmatic domains. Oracle hashes cryptographically frozen.",
+  "tests": [
+    {
+      "id": "TC-TET-RITUAL-01",
+      "description": "Full Tet preparation ritual: Kitchen God + Food Production + Altar + Grave Visit + Year-End + New Year Threshold",
+      "expected_verdict": "PASS",
+      "oracle_hash": "sha256:8280709b096e63e2eec1d7ad531fb5be4e440c81e1fefb0ed5693515906decab",
+      "context_pack": {
+        "time": null,
+        "active_event": null,
+        "agents": {
+          "FAMILY": "COLLECTIVE_HUMAN",
+          "ANCESTORS": "SPIRITUAL_LINEAGE",
+          "KITCHEN_GOD": "HOUSEHOLD_GUARDIAN_SPIRIT",
+          "EARTH_SPIRIT": "COSMOLOGICAL_ENTITY"
+        },
+        "jurisdiction": { "country": "VN" }
+      },
+      "initial_state": null,
+      "event_sequence": [
+        { "event": { "domain": "descriptive", "opcode": "ADD_FACT", "args": { "entity": "FAMILY", "fact": "RITUAL_ACTIVE" } } },
+        { "event": { "domain": "descriptive", "opcode": "CLASSIFY", "args": { "entity": "FAMILY", "class": "COLLECTIVE_HUMAN" } } },
+        { "event": { "domain": "descriptive", "opcode": "CLASSIFY", "args": { "entity": "KITCHEN_GOD", "class": "HOUSEHOLD_GUARDIAN_SPIRIT" } } },
+        { "event": { "domain": "descriptive", "opcode": "CLASSIFY", "args": { "entity": "ANCESTORS", "class": "SPIRITUAL_LINEAGE" } } },
+
+        { "event": { "domain": "descriptive", "opcode": "ADD_FACT", "args": { "entity": "KITCHEN_GOD", "fact": "OFFERING_RECEIVED" } } },
+        { "event": { "domain": "descriptive", "opcode": "ADD_REL", "args": { "a": "FAMILY", "rel": "OFFERED_TO", "b": "KITCHEN_GOD" } } },
+        { "event": { "domain": "descriptive", "opcode": "ADD_REL", "args": { "a": "KITCHEN_GOD", "rel": "REPORT_SENT_TO", "b": "HEAVENS" } } },
+
+        { "event": { "domain": "descriptive", "opcode": "ADD_FACT", "args": { "entity": "BANH_CHUNG", "fact": "PRODUCED" } } },
+        { "event": { "domain": "descriptive", "opcode": "SET_PROP", "args": { "entity": "BANH_CHUNG", "prop": "SYMBOL", "value": "EARTH" } } },
+        { "event": { "domain": "descriptive", "opcode": "ADD_FACT", "args": { "entity": "BANH_TET", "fact": "PRODUCED" } } },
+        { "event": { "domain": "descriptive", "opcode": "SET_PROP", "args": { "entity": "BANH_TET", "prop": "SYMBOL", "value": "HEAVEN" } } },
+
+        { "event": { "domain": "descriptive", "opcode": "ADD_FACT", "args": { "entity": "FAMILY_ALTAR", "fact": "FIVE_FRUITS_ARRANGED" } } },
+        { "event": { "domain": "descriptive", "opcode": "ADD_REL", "args": { "a": "FAMILY", "rel": "INVOKED_PROSPERITY_TO", "b": "ANCESTORS" } } },
+
+        { "event": { "domain": "descriptive", "opcode": "ADD_FACT", "args": { "entity": "GRAVE_SITE", "fact": "VISITED" } } },
+        { "event": { "domain": "descriptive", "opcode": "ADD_FACT", "args": { "entity": "GRAVE_SITE", "fact": "CLEANED" } } },
+        { "event": { "domain": "descriptive", "opcode": "ADD_REL", "args": { "a": "FAMILY", "rel": "OFFERED_INCENSE_TO", "b": "ANCESTORS" } } },
+        { "event": { "domain": "descriptive", "opcode": "ADD_REL", "args": { "a": "FAMILY", "rel": "HONORED", "b": "ANCESTORS" } } },
+
+        { "event": { "domain": "descriptive", "opcode": "ADD_REL", "args": { "a": "FAMILY", "rel": "OFFERED_YEAR_END_TO", "b": "ANCESTORS" } } },
+        { "event": { "domain": "descriptive", "opcode": "ADD_REL", "args": { "a": "FAMILY", "rel": "OFFERED_RITUAL_TO", "b": "EARTH_SPIRIT" } } },
+        { "event": { "domain": "descriptive", "opcode": "ADD_FACT", "args": { "entity": "FAMILY", "fact": "PAST_YEAR_COMPLETED" } } },
+
+        { "event": { "domain": "descriptive", "opcode": "ADD_FACT", "args": { "entity": "FAMILY", "fact": "THRESHOLD_CELEBRATED" } } },
+        { "event": { "domain": "descriptive", "opcode": "ADD_FACT", "args": { "entity": "YEAR", "fact": "TRANSITIONED_TO_NEW" } } },
+
+        { "event": { "domain": "pragmatic", "opcode": "WISH", "args": { "speaker": "FAMILY", "addressee": "COSMIC_ORDER", "formula": "RENEWAL" } } },
+
+        { "event": { "domain": "descriptive", "opcode": "ADD_FACT", "args": { "entity": "SOCIAL_CONTINUITY", "fact": "MAINTAINED" } } },
+        { "event": { "domain": "descriptive", "opcode": "ADD_FACT", "args": { "entity": "LINEAGE_CONNECTION", "fact": "REINFORCED" } } },
+        { "event": { "domain": "descriptive", "opcode": "ADD_FACT", "args": { "entity": "SPIRITUAL_BALANCE", "fact": "RESTORED" } } },
+        { "event": { "domain": "descriptive", "opcode": "ADD_FACT", "args": { "entity": "TEMPORAL_RESET", "fact": "COMPLETED" } } }
+      ]
+    }
+  ]
+}
