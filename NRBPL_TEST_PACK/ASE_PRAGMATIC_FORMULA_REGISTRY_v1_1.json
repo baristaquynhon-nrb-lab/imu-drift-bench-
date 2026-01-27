@@ -1,0 +1,183 @@
+{
+  "spec": "ASE_PRAGMATIC_FORMULA_REGISTRY_v1_1",
+  "version": "1.1",
+  "status": "NORMATIVE",
+  "discipline": ["UGTS", "evidence-first", "fail-fast", "audit-ready"],
+  "notes": [
+    "Closed registry for ritual / social-performative speech formulas.",
+    "Events MUST reference formula IDs in this registry; otherwise REFUSE.",
+    "Registry is schema-locked: no free-form formulas."
+  ],
+  "schema_family": "SPEECH_ACT_RITUAL",
+  "schemas": {
+    "SPEECH_ACT_WISH": {
+      "required_fields": ["event_id", "schema", "speaker", "addressee", "formula"],
+      "optional_fields": ["mode", "evidence"],
+      "allowed_formulas": ["HAPPY_BIRTHDAY", "GOOD_LUCK", "BEST_WISHES", "GET_WELL_SOON"]
+    },
+    "SPEECH_ACT_GREETING": {
+      "required_fields": ["event_id", "schema", "speaker", "addressee", "formula"],
+      "optional_fields": ["mode", "evidence"],
+      "allowed_formulas": ["HELLO", "HI", "GOOD_MORNING", "GOOD_AFTERNOON", "GOOD_EVENING"]
+    },
+    "SPEECH_ACT_CONGRATULATE": {
+      "required_fields": ["event_id", "schema", "speaker", "addressee", "formula"],
+      "optional_fields": ["mode", "evidence"],
+      "allowed_formulas": ["CONGRATS_GENERIC", "CONGRATS_ON_SUCCESS", "CONGRATS_ON_GRADUATION"]
+    },
+    "SPEECH_ACT_APOLOGIZE": {
+      "required_fields": ["event_id", "schema", "speaker", "addressee", "formula"],
+      "optional_fields": ["mode", "evidence"],
+      "allowed_formulas": ["SORRY", "I_APOLOGIZE", "EXCUSE_ME"]
+    },
+    "SPEECH_ACT_THANK": {
+      "required_fields": ["event_id", "schema", "speaker", "addressee", "formula"],
+      "optional_fields": ["mode", "evidence"],
+      "allowed_formulas": ["THANK_YOU", "THANKS", "MUCH_APPRECIATED"]
+    },
+    "SPEECH_ACT_FAREWELL": {
+      "required_fields": ["event_id", "schema", "speaker", "addressee", "formula"],
+      "optional_fields": ["mode", "evidence"],
+      "allowed_formulas": ["GOODBYE", "BYE", "SEE_YOU", "TAKE_CARE"]
+    }
+  },
+  "formulas": {
+    "HAPPY_BIRTHDAY": {
+      "gloss": "Birthday wish formula",
+      "surface_examples": ["Happy birthday to you", "Happy birthday!"],
+      "language_tags": ["EN", "VI"],
+      "canonical_intent": "WISH_BIRTHDAY"
+    },
+    "GOOD_LUCK": {
+      "gloss": "Wish of good luck",
+      "surface_examples": ["Good luck!", "Best of luck!"],
+      "language_tags": ["EN", "VI"],
+      "canonical_intent": "WISH_GOOD_LUCK"
+    },
+    "BEST_WISHES": {
+      "gloss": "General wish",
+      "surface_examples": ["Best wishes", "All the best"],
+      "language_tags": ["EN"],
+      "canonical_intent": "WISH_GENERAL"
+    },
+    "GET_WELL_SOON": {
+      "gloss": "Wish recovery",
+      "surface_examples": ["Get well soon"],
+      "language_tags": ["EN"],
+      "canonical_intent": "WISH_RECOVERY"
+    },
+
+    "HELLO": {
+      "gloss": "Greeting formula",
+      "surface_examples": ["Hello"],
+      "language_tags": ["EN", "VI"],
+      "canonical_intent": "GREET"
+    },
+    "HI": {
+      "gloss": "Informal greeting",
+      "surface_examples": ["Hi"],
+      "language_tags": ["EN"],
+      "canonical_intent": "GREET_INFORMAL"
+    },
+    "GOOD_MORNING": {
+      "gloss": "Time-specific greeting",
+      "surface_examples": ["Good morning"],
+      "language_tags": ["EN"],
+      "canonical_intent": "GREET_MORNING"
+    },
+    "GOOD_AFTERNOON": {
+      "gloss": "Time-specific greeting",
+      "surface_examples": ["Good afternoon"],
+      "language_tags": ["EN"],
+      "canonical_intent": "GREET_AFTERNOON"
+    },
+    "GOOD_EVENING": {
+      "gloss": "Time-specific greeting",
+      "surface_examples": ["Good evening"],
+      "language_tags": ["EN"],
+      "canonical_intent": "GREET_EVENING"
+    },
+
+    "CONGRATS_GENERIC": {
+      "gloss": "Generic congratulations",
+      "surface_examples": ["Congratulations!", "Congrats!"],
+      "language_tags": ["EN", "VI"],
+      "canonical_intent": "CONGRATULATE"
+    },
+    "CONGRATS_ON_SUCCESS": {
+      "gloss": "Congratulations on success",
+      "surface_examples": ["Congratulations on your success"],
+      "language_tags": ["EN"],
+      "canonical_intent": "CONGRATULATE_SUCCESS"
+    },
+    "CONGRATS_ON_GRADUATION": {
+      "gloss": "Congratulations on graduation",
+      "surface_examples": ["Congratulations on your graduation"],
+      "language_tags": ["EN"],
+      "canonical_intent": "CONGRATULATE_GRADUATION"
+    },
+
+    "SORRY": {
+      "gloss": "Apology formula",
+      "surface_examples": ["Sorry", "I'm sorry"],
+      "language_tags": ["EN", "VI"],
+      "canonical_intent": "APOLOGIZE"
+    },
+    "I_APOLOGIZE": {
+      "gloss": "Formal apology",
+      "surface_examples": ["I apologize"],
+      "language_tags": ["EN"],
+      "canonical_intent": "APOLOGIZE_FORMAL"
+    },
+    "EXCUSE_ME": {
+      "gloss": "Polite apology/attention request",
+      "surface_examples": ["Excuse me"],
+      "language_tags": ["EN"],
+      "canonical_intent": "APOLOGIZE_OR_ATTENTION"
+    },
+
+    "THANK_YOU": {
+      "gloss": "Thanks formula",
+      "surface_examples": ["Thank you"],
+      "language_tags": ["EN", "VI"],
+      "canonical_intent": "THANK"
+    },
+    "THANKS": {
+      "gloss": "Informal thanks",
+      "surface_examples": ["Thanks"],
+      "language_tags": ["EN"],
+      "canonical_intent": "THANK_INFORMAL"
+    },
+    "MUCH_APPRECIATED": {
+      "gloss": "Formal thanks",
+      "surface_examples": ["Much appreciated"],
+      "language_tags": ["EN"],
+      "canonical_intent": "THANK_FORMAL"
+    },
+
+    "GOODBYE": {
+      "gloss": "Farewell formula",
+      "surface_examples": ["Goodbye"],
+      "language_tags": ["EN", "VI"],
+      "canonical_intent": "FAREWELL"
+    },
+    "BYE": {
+      "gloss": "Informal farewell",
+      "surface_examples": ["Bye"],
+      "language_tags": ["EN", "VI"],
+      "canonical_intent": "FAREWELL_INFORMAL"
+    },
+    "SEE_YOU": {
+      "gloss": "Farewell with future meeting implication",
+      "surface_examples": ["See you", "See you later"],
+      "language_tags": ["EN"],
+      "canonical_intent": "FAREWELL_SEE_YOU"
+    },
+    "TAKE_CARE": {
+      "gloss": "Farewell wish",
+      "surface_examples": ["Take care"],
+      "language_tags": ["EN"],
+      "canonical_intent": "FAREWELL_WISH"
+    }
+  }
+}
