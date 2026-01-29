@@ -90,6 +90,102 @@ If any of these tests fail, the gate has not implemented Law-Tracking correctly 
 
 ---
 
+## 🔬 Intervention Planning Algorithm (IPA) — Minimum Hitting Set
+
+When the Law Governance Gate detects conflicting laws, IPA computes the **minimum set of physical interventions** (measurements, queries) that separates all competing law pairs. Uses exact subset enumeration with action-level grouping: conditions sharing the same physical action (type + variable) are merged so a single measurement can disambiguate multiple pairs.
+
+### Files
+
+| File | Description |
+|------|-------------|
+| `intervention_planner.js` | IPA runtime: action grouping + exact min hitting set solver |
+| `test_intervention_planner.js` | IPA test suite (6 tests: refuse, coverage, minimality, determinism) |
+
+### Run
+
+```bash
+node test_intervention_planner.js
+```
+
+### Properties Validated
+
+| ID | Property | If violated |
+|----|----------|-------------|
+| T1 | No conflict → REFUSE | IPA runs without conflict input |
+| T2 | LDP not PASS → REFUSE | IPA accepts unvalidated LDP output |
+| T3 | Missing pair binding → REFUSE | IPA allows evidence-free coverage claims |
+| T4 | Minimum hitting set (size=2, not 3) | IPA wastes interventions (not minimal) |
+| T5 | Uncovered pairs → REFUSE | IPA claims progress without full coverage |
+| T6 | Determinism (same input → same output) | IPA is non-reproducible |
+
+### Test Results
+
+```
+T1_NoConflict PASS
+T2_LDPNotPass PASS
+T2_Reason PASS
+T3_MissingPairBinding PASS
+T3_Reason PASS
+T4_MinHittingSet_VERDICT PASS
+T4_MinSizeIs2 PASS  (interventions.length === 2, strategy: EXACT_MIN_HITTING_SET)
+T5_UnhitPairs_VERDICT PASS
+T5_Reason PASS
+T6_Determinism PASS
+ALL_TESTS PASS (exit code 0)
+```
+
+---
+
+## 🧬 LDP v1.1 — Law Disambiguation Protocol (Pair-Witness)
+
+LDP v1.1 generates **pair-witness disambiguation conditions** from law-declared distinguishers. Each condition is bound to exactly one competing pair (`cond.pair = [A, B]`), enabling IPA to prove coverage. If two laws share identical distinguisher sets (inseparable), LDP refuses immediately.
+
+### Files
+
+| File | Description |
+|------|-------------|
+| `law_disambiguation_protocol_v1_1.js` | LDP v1.1: pair-witness condition generation from law distinguishers |
+| `test_ldp_v1_1_to_ipa.js` | End-to-end test: LDP v1.1 → IPA pipeline (4 tests) |
+
+### Run
+
+```bash
+node test_ldp_v1_1_to_ipa.js
+```
+
+### Properties Validated
+
+| ID | Property | If violated |
+|----|----------|-------------|
+| T1 | LDP PASS + all conditions have pair binding | Conditions lack provable coverage |
+| T2 | IPA PASS with minimal intervention plan | Pipeline broken between LDP and IPA |
+| T3 | Inseparable laws → LDP REFUSE | LDP fabricates distinguishers |
+| T4 | Determinism (same input → same output) | Pipeline is non-reproducible |
+
+### Test Results
+
+```
+T1_LDP_VERDICT PASS
+T1_AllHavePair PASS
+T2_IPA_VERDICT PASS
+T2_InterventionsNonEmpty PASS  (2 interventions, strategy: EXACT_MIN_HITTING_SET)
+T2_InterventionsBounded PASS
+T3_Inseparable_VERDICT PASS
+T3_Inseparable_REASON PASS
+T4_Determinism PASS
+ALL_TESTS PASS (exit code 0)
+```
+
+### Full Pipeline Architecture
+
+```
+Law Governance Gate → LDP v1.1 (pair-witness) → IPA (min hitting set)
+```
+
+No proof gap: every condition carries a `pair` binding, IPA verifies full coverage, and the hitting set solver is exact + deterministic.
+
+---
+
 ## 📜 License
 Open standard license (non-commercial academic use).  
 © 2025 Nguyen Ngoc Thi — SEE-R OS / ΔS-Field Laboratory
