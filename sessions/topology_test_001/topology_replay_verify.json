@@ -1,8 +1,76 @@
 {
   "verdict": "PASS",
   "session": "topology_test_001",
-  "recorded_topology_hash": "9f23013f42e3e47bc18488b90319734dbbc2ff17f72d03b94c194030fd1ca6f7",
-  "rebuilt_topology_hash": "9f23013f42e3e47bc18488b90319734dbbc2ff17f72d03b94c194030fd1ca6f7",
-  "clp_last_hash": "ff4bcad7bd7bba4b800ae57507822f1b15fb1eb2f847f65b060cbf45f5f70cff",
-  "checked_event_timestamp": "2026-01-30T05:47:43.625Z"
+  "clp_last_hash": "bc012816c24e75c0a0a04dc8cc78a939beef21dfb1b95069d4eecf5722dd88f2",
+  "checked_event_timestamp": "2026-01-30T06:01:32.950Z",
+  "invariants": [
+    {
+      "name": "input_hash",
+      "ok": true,
+      "expected": "e207d71790f862123b5152f3bda3f3ed3575664b4cdc0bf3bb59e417cf6b2692",
+      "got": "e207d71790f862123b5152f3bda3f3ed3575664b4cdc0bf3bb59e417cf6b2692"
+    },
+    {
+      "name": "topology_hash",
+      "ok": true,
+      "expected": "f5854f47943de91d042556829b9ecb6beaa4217e33dd2af5879461191cf5bfde",
+      "got": "f5854f47943de91d042556829b9ecb6beaa4217e33dd2af5879461191cf5bfde"
+    },
+    {
+      "name": "LSI(last)",
+      "ok": true,
+      "expected": 0.7233333333333333,
+      "got": 0.7233333333333333
+    },
+    {
+      "name": "law_drift_algebra(last)",
+      "ok": true,
+      "expected": 0.36455452267116367,
+      "got": 0.36455452267116367
+    },
+    {
+      "name": "topology_drift(last)",
+      "ok": true,
+      "expected": 0.36455452267116367,
+      "got": 0.36455452267116367
+    },
+    {
+      "name": "topology_region(last)",
+      "ok": true,
+      "expected": "Mutation",
+      "got": "Mutation"
+    },
+    {
+      "name": "leae_S(last)",
+      "ok": true,
+      "expected": [
+        0.95,
+        0.6,
+        0.62
+      ],
+      "got": [
+        0.95,
+        0.6,
+        0.62
+      ]
+    },
+    {
+      "name": "topology_X(last)",
+      "ok": true,
+      "expected": [
+        0.95,
+        0.6,
+        0.62
+      ],
+      "got": [
+        0.95,
+        0.6,
+        0.62
+      ]
+    }
+  ],
+  "recomputed": {
+    "input_hash": "e207d71790f862123b5152f3bda3f3ed3575664b4cdc0bf3bb59e417cf6b2692",
+    "topology_hash": "f5854f47943de91d042556829b9ecb6beaa4217e33dd2af5879461191cf5bfde"
+  }
 }
