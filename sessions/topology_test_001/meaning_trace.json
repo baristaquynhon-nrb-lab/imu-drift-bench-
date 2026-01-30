@@ -1,0 +1,56 @@
+[
+  {
+    "i": 0,
+    "meaning_state": {
+      "meaning_vec": [
+        0.8,
+        0.85,
+        0.83
+      ],
+      "meaning_assertions": [
+        "ALIGNMENT_HIGH",
+        "CONSISTENCY_HIGH",
+        "COVERAGE_MED"
+      ]
+    },
+    "meaning_state_hash": "3b389f4613069818cbd5b0fdbf4618fa61da6cc751cd5e79b04b291b35590b19",
+    "MSI": 0.8266666666666667,
+    "meaning_drift": 0
+  },
+  {
+    "i": 1,
+    "meaning_state": {
+      "meaning_vec": [
+        0.82,
+        0.86,
+        0.84
+      ],
+      "meaning_assertions": [
+        "ALIGNMENT_HIGH",
+        "CONSISTENCY_HIGH",
+        "COVERAGE_MED"
+      ]
+    },
+    "meaning_state_hash": "c8a15e3872e2ee6d800314a685f9e997dc80413fa1f0601ec50ced8c05d36385",
+    "MSI": 0.84,
+    "meaning_drift": 0.024494897427831713
+  },
+  {
+    "i": 2,
+    "meaning_state": {
+      "meaning_vec": [
+        0.95,
+        0.6,
+        0.62
+      ],
+      "meaning_assertions": [
+        "ALIGNMENT_LOW",
+        "CONSISTENCY_LOW",
+        "COVERAGE_HIGH"
+      ]
+    },
+    "meaning_state_hash": "863e8c79ac64b0fec7d623bc4b0af0c3d0801b158917eff45aea103bfcd1262a",
+    "MSI": 0.7233333333333333,
+    "meaning_drift": 0.36455452267116367
+  }
+]

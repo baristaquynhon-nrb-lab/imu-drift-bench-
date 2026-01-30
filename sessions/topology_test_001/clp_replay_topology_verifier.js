@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 /**
- * CLP REPLAY TOPOLOGY VERIFIER — L4+ FULL EPISTEMIC CLOSURE
+ * CLP REPLAY TOPOLOGY VERIFIER — L4++ FULL CAS EPISTEMIC CLOSURE
  *
  * Verifies forensic reproducibility for:
- *   LEAE → LSTI → LDTM → LDBC  (+ LSI algebra binding)
+ *   Meaning (MSI) + LEAE → LSTI → LDTM → LDBC
  *
  * Requirements:
  *  - sessions/<session>/input_bundle.json
@@ -13,16 +13,16 @@
  * It will:
  *  1) Read ledger events (JSONL)
  *  2) Verify chain continuity (prevHash/hash) using canonical decision hashing
- *  3) Select latest event with test_type = "CAS_FULL_EPISTEMIC_TOPOLOGY"
- *  4) Recompute:
- *        - input_hash
- *        - topology_trace
- *        - topology_hash
- *        - LSI(last)
- *        - law_drift_algebra(last)
- *        - topology_drift(last)
- *        - topology_region(last)
- *  5) Cross-check all invariants against the CLP event
+ *  3) Select latest event with test_type = "CAS_FULL_EPISTEMIC_TOPOLOGY_MEANING"
+ *  4) Recompute ALL from input_bundle.json:
+ *        - input_hash, meaning_input_hash
+ *        - topology_trace + topology_hash
+ *        - meaning_trace + meaning_trace_hash
+ *        - LSI(last), MSI(last)
+ *        - law_drift_algebra(last), meaning_drift(last)
+ *        - topology_drift(last), topology_region(last)
+ *        - meaning_state_hash(last)
+ *  5) Cross-check all invariants against the CLP event (12 checks)
  *  6) Emit sessions/<session>/topology_replay_verify.json
  *
  * Exit codes:
@@ -81,7 +81,7 @@ function norm(a, b, w = [1, 1, 1]) {
   );
 }
 
-/** ---------------- Deterministic Topology Pipeline (MUST match runner) ---------------- **/
+/** ---------------- Deterministic Law->Topology Pipeline (MUST match runner) ---------------- **/
 
 function LEAE(law) {
   return [law.coverage, law.consistency, law.alignment];
@@ -101,21 +101,47 @@ function classifyTopology(drift) {
   return "Mutation";
 }
 
-function rebuildTopologyTrace(inputBundle) {
-  if (
-    !inputBundle ||
-    !Array.isArray(inputBundle.law_states) ||
-    inputBundle.law_states.length === 0
-  ) {
-    throw new Error("INVALID_INPUT_BUNDLE: missing law_states[]");
-  }
+/** ---------------- Deterministic Meaning Pipeline (MUST match runner) ---------------- **/
 
+function meaningStateFromLaw(law) {
+  const vec = [law.coverage, law.consistency, law.alignment];
+
+  const assertions = [];
+  if (law.coverage >= 0.9) assertions.push("COVERAGE_HIGH");
+  else if (law.coverage >= 0.8) assertions.push("COVERAGE_MED");
+  else assertions.push("COVERAGE_LOW");
+
+  if (law.consistency >= 0.85) assertions.push("CONSISTENCY_HIGH");
+  else if (law.consistency >= 0.7) assertions.push("CONSISTENCY_MED");
+  else assertions.push("CONSISTENCY_LOW");
+
+  if (law.alignment >= 0.8) assertions.push("ALIGNMENT_HIGH");
+  else if (law.alignment >= 0.65) assertions.push("ALIGNMENT_MED");
+  else assertions.push("ALIGNMENT_LOW");
+
+  return {
+    meaning_vec: vec,
+    meaning_assertions: assertions.sort()
+  };
+}
+
+function computeMSI(meaningVec) {
+  return (meaningVec[0] + meaningVec[1] + meaningVec[2]) / 3;
+}
+
+/** ---------------- Rebuild traces from input ---------------- **/
+
+function rebuildTraces(input, session) {
   const topology_trace = [];
+  const meaning_trace = [];
+
   let prevX = null;
   let prevS = null;
+  let prevMeaningVec = null;
 
-  for (let i = 0; i < inputBundle.law_states.length; i++) {
-    const S = LEAE(inputBundle.law_states[i]);
+  for (let i = 0; i < input.law_states.length; i++) {
+    // Law/Topology
+    const S = LEAE(input.law_states[i]);
     const X = LSTI(S);
     const LSI = computeLSI(S);
 
@@ -127,16 +153,12 @@ function rebuildTopologyTrace(inputBundle) {
       topology_drift = norm(prevX, X);
       topology_region = classifyTopology(topology_drift);
     }
-
     if (prevS) {
       law_drift_algebra = norm(prevS, S);
     }
 
     topology_trace.push({
-      i,
-      S,
-      X,
-      LSI,
+      i, S, X, LSI,
       law_drift_algebra,
       topology_drift,
       topology_region
@@ -144,9 +166,44 @@ function rebuildTopologyTrace(inputBundle) {
 
     prevX = X;
     prevS = S;
+
+    // Meaning
+    const ms = meaningStateFromLaw(input.law_states[i]);
+    const MSI = computeMSI(ms.meaning_vec);
+
+    let meaning_drift = 0;
+    if (prevMeaningVec) {
+      meaning_drift = norm(prevMeaningVec, ms.meaning_vec);
+    }
+
+    const meaning_state_hash = sha256(stableStringify(ms));
+
+    meaning_trace.push({
+      i,
+      meaning_state: ms,
+      meaning_state_hash,
+      MSI,
+      meaning_drift
+    });
+
+    prevMeaningVec = ms.meaning_vec;
   }
 
-  return topology_trace;
+  // Meaning input bundle (bench proxy, MUST match runner)
+  const meaning_input_bundle = {
+    source: "BENCH_PROXY",
+    session,
+    law_states: input.law_states
+  };
+
+  return {
+    topology_trace,
+    meaning_trace,
+    input_hash: sha256(stableStringify(input)),
+    meaning_input_hash: sha256(stableStringify(meaning_input_bundle)),
+    topology_hash: sha256(stableStringify(topology_trace)),
+    meaning_trace_hash: sha256(stableStringify(meaning_trace))
+  };
 }
 
 /** ---------------- CLP Verification ---------------- **/
@@ -209,8 +266,8 @@ function verifyCLPChain(events, headFromFileOrNull = null) {
   return { ok: true, lastHash };
 }
 
-function pickLatestFullEpistemicEvent(events) {
-  const matches = events.filter((e) => e && e.test_type === "CAS_FULL_EPISTEMIC_TOPOLOGY");
+function pickLatestFullCASEvent(events) {
+  const matches = events.filter((e) => e && e.test_type === "CAS_FULL_EPISTEMIC_TOPOLOGY_MEANING");
   if (matches.length === 0) return null;
   return matches[matches.length - 1];
 }
@@ -260,83 +317,110 @@ function run() {
     process.exit(2);
   }
 
-  // 3) Pick latest full-epistemic event
-  const ev = pickLatestFullEpistemicEvent(events);
+  // 3) Pick latest full-CAS event
+  const ev = pickLatestFullCASEvent(events);
   if (!ev) {
-    console.error('FAIL: no event with test_type="CAS_FULL_EPISTEMIC_TOPOLOGY" found');
+    console.error('FAIL: no event with test_type="CAS_FULL_EPISTEMIC_TOPOLOGY_MEANING" found');
     process.exit(2);
   }
 
   // 4) Rebuild deterministically from input bundle
   const input = readJSON(inputPath);
+  const rebuilt = rebuildTraces(input, session);
 
-  const recomputed_input_hash = sha256(stableStringify(input));
-  const topology_trace = rebuildTopologyTrace(input);
-  const recomputed_topology_hash = sha256(stableStringify(topology_trace));
+  const lastTopo = rebuilt.topology_trace[rebuilt.topology_trace.length - 1];
+  const lastMeaning = rebuilt.meaning_trace[rebuilt.meaning_trace.length - 1];
 
-  const last = topology_trace[topology_trace.length - 1];
-
-  // 5) Cross-check invariants
+  // 5) Cross-check invariants (12 checks)
   const checks = [];
 
   // Evidence anchors
   checks.push({
     name: "input_hash",
-    ok: ev.input_hash === recomputed_input_hash,
-    expected: recomputed_input_hash,
+    ok: ev.input_hash === rebuilt.input_hash,
+    expected: rebuilt.input_hash,
     got: ev.input_hash
   });
 
-  // Topology hash
+  checks.push({
+    name: "meaning_input_hash",
+    ok: ev.meaning_input_hash === rebuilt.meaning_input_hash,
+    expected: rebuilt.meaning_input_hash,
+    got: ev.meaning_input_hash
+  });
+
+  // Trace hashes
   checks.push({
     name: "topology_hash",
-    ok: ev.topology_hash === recomputed_topology_hash,
-    expected: recomputed_topology_hash,
+    ok: ev.topology_hash === rebuilt.topology_hash,
+    expected: rebuilt.topology_hash,
     got: ev.topology_hash
   });
 
-  // LSI + drifts + region (last-step binding)
+  checks.push({
+    name: "meaning_trace_hash",
+    ok: ev.meaning_trace_hash === rebuilt.meaning_trace_hash,
+    expected: rebuilt.meaning_trace_hash,
+    got: ev.meaning_trace_hash
+  });
+
+  // Meaning binding (last step)
+  checks.push({
+    name: "MSI(last)",
+    ok: nearlyEqual(ev.MSI, lastMeaning.MSI),
+    expected: lastMeaning.MSI,
+    got: ev.MSI
+  });
+
+  checks.push({
+    name: "meaning_state_hash(last)",
+    ok: ev.meaning_state_hash === lastMeaning.meaning_state_hash,
+    expected: lastMeaning.meaning_state_hash,
+    got: ev.meaning_state_hash
+  });
+
+  checks.push({
+    name: "meaning_drift(last)",
+    ok: nearlyEqual(ev.meaning_drift, lastMeaning.meaning_drift),
+    expected: lastMeaning.meaning_drift,
+    got: ev.meaning_drift
+  });
+
+  // Law/Topology binding (last step)
   checks.push({
     name: "LSI(last)",
-    ok: nearlyEqual(ev.LSI, last.LSI),
-    expected: last.LSI,
+    ok: nearlyEqual(ev.LSI, lastTopo.LSI),
+    expected: lastTopo.LSI,
     got: ev.LSI
   });
 
   checks.push({
     name: "law_drift_algebra(last)",
-    ok: nearlyEqual(ev.law_drift_algebra, last.law_drift_algebra),
-    expected: last.law_drift_algebra,
+    ok: nearlyEqual(ev.law_drift_algebra, lastTopo.law_drift_algebra),
+    expected: lastTopo.law_drift_algebra,
     got: ev.law_drift_algebra
   });
 
   checks.push({
     name: "topology_drift(last)",
-    ok: nearlyEqual(ev.topology_drift, last.topology_drift),
-    expected: last.topology_drift,
+    ok: nearlyEqual(ev.topology_drift, lastTopo.topology_drift),
+    expected: lastTopo.topology_drift,
     got: ev.topology_drift
   });
 
   checks.push({
     name: "topology_region(last)",
-    ok: ev.topology_region === last.topology_region,
-    expected: last.topology_region,
+    ok: ev.topology_region === lastTopo.topology_region,
+    expected: lastTopo.topology_region,
     got: ev.topology_region
   });
 
-  // Optional structural checks (vector equality via canonical)
+  // Structural vector checks
   checks.push({
     name: "leae_S(last)",
-    ok: stableStringify(ev.leae_S) === stableStringify(last.S),
-    expected: last.S,
+    ok: stableStringify(ev.leae_S) === stableStringify(lastTopo.S),
+    expected: lastTopo.S,
     got: ev.leae_S
-  });
-
-  checks.push({
-    name: "topology_X(last)",
-    ok: stableStringify(ev.topology_X) === stableStringify(last.X),
-    expected: last.X,
-    got: ev.topology_X
   });
 
   const allOk = checks.every((c) => c.ok);
@@ -347,24 +431,29 @@ function run() {
     session,
     clp_last_hash: chain.lastHash,
     checked_event_timestamp: ev.timestamp || null,
+    total_checks: checks.length,
+    passed_checks: checks.filter((c) => c.ok).length,
+    failed_checks: checks.filter((c) => !c.ok).length,
     invariants: checks,
     recomputed: {
-      input_hash: recomputed_input_hash,
-      topology_hash: recomputed_topology_hash
+      input_hash: rebuilt.input_hash,
+      meaning_input_hash: rebuilt.meaning_input_hash,
+      topology_hash: rebuilt.topology_hash,
+      meaning_trace_hash: rebuilt.meaning_trace_hash
     }
   };
 
   writeJSON(path.join(dir, "topology_replay_verify.json"), replayOut);
 
   if (!allOk) {
-    console.error("FAIL: full-epistemic replay mismatch");
+    console.error("FAIL: full-CAS epistemic replay mismatch");
     for (const c of checks.filter((x) => !x.ok)) {
-      console.error(` - ${c.name} mismatch`);
+      console.error(` - ${c.name}: expected=${JSON.stringify(c.expected)} got=${JSON.stringify(c.got)}`);
     }
     process.exit(2);
   }
 
-  console.log("PASS: CLP chain OK, full-epistemic replay OK");
+  console.log(`PASS: CLP chain OK, full-CAS epistemic replay OK (${checks.length}/${checks.length} invariants)`);
   process.exit(0);
 }
 

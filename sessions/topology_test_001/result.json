@@ -1,4 +1,7 @@
 {
   "verdict": "PASS",
-  "topology_hash": "f5854f47943de91d042556829b9ecb6beaa4217e33dd2af5879461191cf5bfde"
+  "input_hash": "e207d71790f862123b5152f3bda3f3ed3575664b4cdc0bf3bb59e417cf6b2692",
+  "meaning_input_hash": "28b4da22aa4b5a4edaa333acfce3461aa4fc4f01e2143e17548b816a2d1663ac",
+  "topology_hash": "f5854f47943de91d042556829b9ecb6beaa4217e33dd2af5879461191cf5bfde",
+  "meaning_trace_hash": "cda19b8327f02dc5153d9faf08da1e296f8aeab2eb5e3bb7affb07024464c66d"
 }

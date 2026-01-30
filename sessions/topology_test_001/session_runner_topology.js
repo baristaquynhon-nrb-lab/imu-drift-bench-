@@ -1,14 +1,21 @@
 #!/usr/bin/env node
 /**
- * LAW–TOPOLOGY CONSISTENCY VALIDATION SESSION (L4+ FULL EPISTEMIC)
+ * LAW–TOPOLOGY CONSISTENCY VALIDATION SESSION (L4++ FULL CAS EPISTEMIC)
+ *
  * Validates: LEAE → LSTI → LDTM → LDBC chain
- * Persists: topology_trace.json + result.json
- * Binds: CLP append-only ledger with FULL epistemic payload:
- *   - input_hash
- *   - LEAE algebra state + LSI
- *   - algebra drift
- *   - topology drift + region
- *   - topology_hash
+ * Extends: Meaning-layer MSI binding into the same CLP event schema.
+ *
+ * Persists:
+ *   - topology_trace.json
+ *   - meaning_trace.json
+ *   - result.json
+ *
+ * Binds: CLP append-only ledger with FULL CAS epistemic payload:
+ *   - input_hash                      (law/topology input anchor)
+ *   - meaning_input_hash              (meaning input anchor)
+ *   - meaning_state_hash + MSI + meaning_drift
+ *   - LEAE algebra state + LSI + algebra drift
+ *   - topology drift + region + topology_hash
  *
  * Exit codes:
  *  0 = PASS
@@ -65,7 +72,7 @@ function norm(a, b, w = [1, 1, 1]) {
   );
 }
 
-/** ---------------- Deterministic Topology Pipeline ---------------- **/
+/** ---------------- Deterministic Law->Topology Pipeline ---------------- **/
 
 // LEAE: law -> algebraic state S (vector)
 function LEAE(law) {
@@ -77,7 +84,7 @@ function LSTI(S) {
   return S;
 }
 
-// LSI: law stability index derived from algebraic invariants (simple profile for this bench)
+// LSI: law stability index derived from algebraic invariants (bench profile)
 function computeLSI(S) {
   return (S[0] + S[1] + S[2]) / 3;
 }
@@ -87,6 +94,46 @@ function classifyTopology(drift) {
   if (drift < 0.05) return "Stable";
   if (drift < 0.25) return "Transition";
   return "Mutation";
+}
+
+/** ---------------- Deterministic Meaning Pipeline (MSI binding) ----------------
+ *
+ * This bench provides a deterministic "meaning extraction" from law_states
+ * to a canonical meaning_state object, then derives:
+ *   - meaning_state_hash
+ *   - MSI (Meaning Stability Index)
+ *   - meaning_drift (distance between last two meaning vectors)
+ *
+ * IMPORTANT:
+ * - This is a bench-grade meaning proxy, NOT a full GSRA/NRB meaning runtime.
+ * - Still: deterministic + replay-verifiable + evidence-anchored.
+ */
+
+// Deterministic meaning state derived from law state
+function meaningStateFromLaw(law) {
+  const vec = [law.coverage, law.consistency, law.alignment];
+
+  const assertions = [];
+  if (law.coverage >= 0.9) assertions.push("COVERAGE_HIGH");
+  else if (law.coverage >= 0.8) assertions.push("COVERAGE_MED");
+  else assertions.push("COVERAGE_LOW");
+
+  if (law.consistency >= 0.85) assertions.push("CONSISTENCY_HIGH");
+  else if (law.consistency >= 0.7) assertions.push("CONSISTENCY_MED");
+  else assertions.push("CONSISTENCY_LOW");
+
+  if (law.alignment >= 0.8) assertions.push("ALIGNMENT_HIGH");
+  else if (law.alignment >= 0.65) assertions.push("ALIGNMENT_MED");
+  else assertions.push("ALIGNMENT_LOW");
+
+  return {
+    meaning_vec: vec,
+    meaning_assertions: assertions.sort() // stable ordering
+  };
+}
+
+function computeMSI(meaningVec) {
+  return (meaningVec[0] + meaningVec[1] + meaningVec[2]) / 3;
 }
 
 function run() {
@@ -111,38 +158,46 @@ function run() {
     process.exit(3);
   }
 
-  // Forensic anchor: input hash (canonical)
+  // Forensic anchor: law/topology input hash (canonical)
   const input_hash = sha256(stableStringify(input));
 
-  const topology_trace = [];
+  // Meaning input bundle (bench): derived deterministically from input
+  const meaning_input_bundle = {
+    source: "BENCH_PROXY",
+    session,
+    law_states: input.law_states
+  };
+  const meaning_input_hash = sha256(stableStringify(meaning_input_bundle));
 
+  /** --------- Build topology trace --------- **/
+  const topology_trace = [];
   let prevX = null;
   let prevS = null;
+
+  /** --------- Build meaning trace --------- **/
+  const meaning_trace = [];
+  let prevMeaningVec = null;
 
   let continuityPass = true;
 
   for (let i = 0; i < input.law_states.length; i++) {
+    // Law/Topology branch
     const S = LEAE(input.law_states[i]); // Algebra
     const X = LSTI(S);                   // Embedding
-
     const LSI = computeLSI(S);
 
     let topology_drift = 0;
     let topology_region = "GENESIS";
-
     let law_drift_algebra = 0;
 
     if (prevX) {
       topology_drift = norm(prevX, X);
       topology_region = classifyTopology(topology_drift);
-      // continuity constraint (bench-specific): any absurd jump is a FAIL
-      if (topology_drift > 1.0) continuityPass = false;
+      if (topology_drift > 1.0) continuityPass = false; // bench constraint
     }
-
     if (prevS) {
       law_drift_algebra = norm(prevS, S);
-      // Optional: also enforce bounded algebra motion (bench-specific)
-      if (law_drift_algebra > 1.0) continuityPass = false;
+      if (law_drift_algebra > 1.0) continuityPass = false; // bench constraint
     }
 
     topology_trace.push({
@@ -157,53 +212,90 @@ function run() {
 
     prevX = X;
     prevS = S;
+
+    // Meaning branch (bench proxy)
+    const ms = meaningStateFromLaw(input.law_states[i]); // deterministic meaning_state
+    const MSI = computeMSI(ms.meaning_vec);
+
+    let meaning_drift = 0;
+    if (prevMeaningVec) {
+      meaning_drift = norm(prevMeaningVec, ms.meaning_vec);
+      if (meaning_drift > 1.0) continuityPass = false; // bench constraint
+    }
+
+    const meaning_state_hash = sha256(stableStringify(ms));
+
+    meaning_trace.push({
+      i,
+      meaning_state: ms,
+      meaning_state_hash,
+      MSI,
+      meaning_drift
+    });
+
+    prevMeaningVec = ms.meaning_vec;
   }
 
-  // Persist trace
-  const tracePath = path.join(dir, "topology_trace.json");
-  writeJSON(tracePath, topology_trace);
+  // Persist traces
+  writeJSON(path.join(dir, "topology_trace.json"), topology_trace);
+  writeJSON(path.join(dir, "meaning_trace.json"), meaning_trace);
 
-  // Deterministic trace hash (canonical)
+  // Deterministic hashes (canonical)
   const topology_hash = sha256(stableStringify(topology_trace));
+  const meaning_trace_hash = sha256(stableStringify(meaning_trace));
 
+  // Latest step bindings
+  const lastTopo = topology_trace[topology_trace.length - 1] || null;
+  const lastMeaning = meaning_trace[meaning_trace.length - 1] || null;
+
+  // Verdict
   const verdict = continuityPass ? "PASS" : "FAIL";
 
   // Persist non-CLP result artifact (kept for convenience)
-  const resultPath = path.join(dir, "result.json");
-  writeJSON(resultPath, { verdict, topology_hash });
+  writeJSON(path.join(dir, "result.json"), {
+    verdict,
+    input_hash,
+    meaning_input_hash,
+    topology_hash,
+    meaning_trace_hash
+  });
 
-  // ================== CLP BINDING (L4+ FULL EPISTEMIC) ==================
+  // ================== CLP BINDING (L4++ FULL CAS EPISTEMIC) ==================
   const ledgerPath = path.join(dir, "clp_ledger_append.jsonl");
   const hashHeadPath = path.join(dir, "clp_hash_head.txt");
-
-  const last = topology_trace[topology_trace.length - 1];
 
   const decision = {
     // --- meta ---
     timestamp: new Date().toISOString(),
-    test_type: "CAS_FULL_EPISTEMIC_TOPOLOGY",
-    profile: "LEAE_LSTI_LDTM_LDBC_CLP_REPLAY",
+    test_type: "CAS_FULL_EPISTEMIC_TOPOLOGY_MEANING",
+    profile: "MEANING_LEAE_LSTI_LDTM_LDBC_CLP_REPLAY",
     session,
 
     // --- verdict ---
     verdict,
 
     // --- coherence tuple (CG/CLP) ---
-    MSI: null,                 // not evaluated in this bench
-    LSI: last ? last.LSI : null,
-    LMC: "TOPOLOGY_VALIDATION", // bench label; in full CAS this is numeric or structured
+    MSI: lastMeaning ? lastMeaning.MSI : null,
+    LSI: lastTopo ? lastTopo.LSI : null,
+    LMC: "TOPOLOGY_VALIDATION",
 
     // --- evidence anchors ---
     input_hash,
+    meaning_input_hash,
 
-    // --- algebra (LEAE) ---
-    leae_S: last ? last.S : null,
-    law_drift_algebra: last ? last.law_drift_algebra : null,
+    // --- meaning binding (replay-verifiable) ---
+    meaning_state_hash: lastMeaning ? lastMeaning.meaning_state_hash : null,
+    meaning_drift: lastMeaning ? lastMeaning.meaning_drift : null,
+    meaning_trace_hash,
 
-    // --- topology (LSTI/LDTM/LDBC) ---
-    topology_X: last ? last.X : null,
-    topology_drift: last ? last.topology_drift : null,
-    topology_region: last ? last.topology_region : null,
+    // --- algebra binding (LEAE) ---
+    leae_S: lastTopo ? lastTopo.S : null,
+    law_drift_algebra: lastTopo ? lastTopo.law_drift_algebra : null,
+
+    // --- topology binding (LSTI/LDTM/LDBC) ---
+    topology_X: lastTopo ? lastTopo.X : null,
+    topology_drift: lastTopo ? lastTopo.topology_drift : null,
+    topology_region: lastTopo ? lastTopo.topology_region : null,
     topology_hash
   };
 
@@ -226,10 +318,12 @@ function run() {
   // Update head
   fs.writeFileSync(hashHeadPath, newHash);
 
-  console.log("SESSION RESULT:", verdict);
-  console.log("TOPOLOGY HASH :", topology_hash);
-  console.log("INPUT HASH    :", input_hash);
-  console.log("CLP HASH HEAD :", newHash);
+  console.log("SESSION RESULT     :", verdict);
+  console.log("INPUT HASH         :", input_hash);
+  console.log("MEANING INPUT HASH :", meaning_input_hash);
+  console.log("MEANING TRACE HASH :", meaning_trace_hash);
+  console.log("TOPOLOGY HASH      :", topology_hash);
+  console.log("CLP HASH HEAD      :", newHash);
 
   process.exit(verdict === "PASS" ? 0 : 2);
 }
