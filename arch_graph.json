@@ -1,0 +1,16 @@
+{
+  "nodes": ["COG","LAW","CG","FCEE","CLP","LEAE","LSTI","LDTM","LDBC","LGO","LUEIP"],
+  "edges": [
+    ["COG","CG"],
+    ["LAW","CG"],
+    ["CG","FCEE"],
+    ["FCEE","CLP"],
+    ["LAW","LEAE"],
+    ["LEAE","LSTI"],
+    ["LSTI","LDTM"],
+    ["LDTM","LDBC"],
+    ["LDBC","LGO"],
+    ["LGO","LUEIP"],
+    ["LUEIP","LAW"]
+  ]
+}

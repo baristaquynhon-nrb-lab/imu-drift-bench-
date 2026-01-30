@@ -1,0 +1,19 @@
+{
+  "cases": [
+    {
+      "name": "stable-low-drift",
+      "features": { "topology_region": "Stable", "topology_drift": 0.02, "law_drift_algebra": 0.01, "LSI": 0.90, "MSI": 0.92, "LMC": "TOPOLOGY_VALIDATION" },
+      "expected_action": "NOOP"
+    },
+    {
+      "name": "transition-moderate-drift",
+      "features": { "topology_region": "Transition", "topology_drift": 0.12, "law_drift_algebra": 0.10, "LSI": 0.75, "MSI": 0.78, "LMC": "TOPOLOGY_VALIDATION" },
+      "expected_action": "PATCH"
+    },
+    {
+      "name": "mutation-high-drift",
+      "features": { "topology_region": "Mutation", "topology_drift": 0.40, "law_drift_algebra": 0.55, "LSI": 0.50, "MSI": 0.52, "LMC": "TOPOLOGY_VALIDATION" },
+      "expected_action": "FORK"
+    }
+  ]
+}
