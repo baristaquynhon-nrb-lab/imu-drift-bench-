@@ -1,7 +1,0 @@
-{
-  "law_states": [
-    { "coverage": 0.80, "consistency": 0.85, "alignment": 0.83 },
-    { "coverage": 0.82, "consistency": 0.86, "alignment": 0.84 },
-    { "coverage": 0.95, "consistency": 0.60, "alignment": 0.62 }
-  ]
-}
