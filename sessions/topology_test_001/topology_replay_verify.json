@@ -1,0 +1,8 @@
+{
+  "verdict": "PASS",
+  "session": "topology_test_001",
+  "recorded_topology_hash": "9f23013f42e3e47bc18488b90319734dbbc2ff17f72d03b94c194030fd1ca6f7",
+  "rebuilt_topology_hash": "9f23013f42e3e47bc18488b90319734dbbc2ff17f72d03b94c194030fd1ca6f7",
+  "clp_last_hash": "ff4bcad7bd7bba4b800ae57507822f1b15fb1eb2f847f65b060cbf45f5f70cff",
+  "checked_event_timestamp": "2026-01-30T05:47:43.625Z"
+}
