@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "suite": "PSG-VTS v1.0",
+    "layer": "1.2.ah",
+    "description": "Test vectors for CAS Phase Space Geometry validation",
+    "covers": ["PSG-1", "PSG-2", "PSG-3", "PSG-4", "PSG-5"]
+  },
+  "config": {
+    "epsilon_L": 0.2,
+    "margin": 0.05,
+    "recovery_allowed": false,
+    "recovery_k": 1
+  },
+
+  "single_step_cases": [
+    {
+      "name": "PSG-1: CG fail, zero drift → Mutation + outside Ω",
+      "features": { "law_drift_algebra": 0.0, "cg_ok": false },
+      "expect_region": "Mutation",
+      "expect_cause": "COHERENCE",
+      "expect_action": "DEPRECATE"
+    },
+    {
+      "name": "PSG-1: CG fail, low drift → Mutation + outside Ω",
+      "features": { "law_drift_algebra": 0.10, "cg_ok": false },
+      "expect_region": "Mutation",
+      "expect_cause": "COHERENCE",
+      "expect_action": "DEPRECATE"
+    },
+    {
+      "name": "PSG-2: deep basin — drift well below ε−m",
+      "features": { "law_drift_algebra": 0.05, "cg_ok": true },
+      "expect_region": "Stable",
+      "expect_action": "NOOP"
+    },
+    {
+      "name": "PSG-2: basin edge — drift just below ε−m",
+      "features": { "law_drift_algebra": 0.14, "cg_ok": true },
+      "expect_region": "Stable",
+      "expect_action": "NOOP"
+    },
+    {
+      "name": "PSG-2: transition shell — drift at ε−m boundary",
+      "features": { "law_drift_algebra": 0.16, "cg_ok": true },
+      "expect_region": "Transition",
+      "expect_action": "PATCH"
+    },
+    {
+      "name": "PSG-2: transition shell — drift at ε center",
+      "features": { "law_drift_algebra": 0.20, "cg_ok": true },
+      "expect_region": "Transition",
+      "expect_action": "PATCH"
+    },
+    {
+      "name": "PSG-2: transition shell — drift at ε+m boundary",
+      "features": { "law_drift_algebra": 0.24, "cg_ok": true },
+      "expect_region": "Transition",
+      "expect_action": "PATCH"
+    },
+    {
+      "name": "PSG-2: mutation — drift beyond ε+m",
+      "features": { "law_drift_algebra": 0.30, "cg_ok": true },
+      "expect_region": "Mutation",
+      "expect_cause": "DRIFT",
+      "expect_action": "FORK"
+    },
+    {
+      "name": "PSG-2: mutation — large drift",
+      "features": { "law_drift_algebra": 0.60, "cg_ok": true },
+      "expect_region": "Mutation",
+      "expect_cause": "DRIFT",
+      "expect_action": "FORK"
+    },
+    {
+      "name": "PSG-5: compound — high drift AND CG fail",
+      "features": { "law_drift_algebra": 0.50, "cg_ok": false },
+      "expect_region": "Mutation",
+      "expect_cause": "COMPOUND",
+      "expect_action": "FORK"
+    },
+    {
+      "name": "PSG-5: drift-caused mutation — governance selects FORK",
+      "features": { "law_drift_algebra": 0.35, "cg_ok": true },
+      "expect_region": "Mutation",
+      "expect_cause": "DRIFT",
+      "expect_action": "FORK"
+    },
+    {
+      "name": "PSG-5: coherence-caused mutation — governance selects DEPRECATE",
+      "features": { "law_drift_algebra": 0.08, "cg_ok": false },
+      "expect_region": "Mutation",
+      "expect_cause": "COHERENCE",
+      "expect_action": "DEPRECATE"
+    },
+    {
+      "name": "PSG-2: zero drift, CG OK → deep Stable",
+      "features": { "law_drift_algebra": 0.0, "cg_ok": true },
+      "expect_region": "Stable",
+      "expect_action": "NOOP"
+    }
+  ],
+
+  "trajectory_cases": [
+    {
+      "name": "PSG-3: legal Stable→Transition→Mutation",
+      "steps": [
+        { "features": { "law_drift_algebra": 0.05, "cg_ok": true } },
+        { "features": { "law_drift_algebra": 0.10, "cg_ok": true } },
+        { "features": { "law_drift_algebra": 0.18, "cg_ok": true } },
+        { "features": { "law_drift_algebra": 0.35, "cg_ok": true } }
+      ],
+      "expect_regions": ["Stable", "Stable", "Transition", "Mutation"]
+    },
+    {
+      "name": "PSG-3: legal Stable→Mutation via CG failure",
+      "steps": [
+        { "features": { "law_drift_algebra": 0.05, "cg_ok": true } },
+        { "features": { "law_drift_algebra": 0.05, "cg_ok": false } }
+      ],
+      "expect_regions": ["Stable", "Mutation"]
+    },
+    {
+      "name": "PSG-3: legal Stable→Mutation via large drift jump",
+      "steps": [
+        { "features": { "law_drift_algebra": 0.02, "cg_ok": true } },
+        { "features": { "law_drift_algebra": 0.50, "cg_ok": true } }
+      ],
+      "expect_regions": ["Stable", "Mutation"]
+    },
+    {
+      "name": "PSG-3: Stable→Transition→Stable (retreat from boundary)",
+      "steps": [
+        { "features": { "law_drift_algebra": 0.05, "cg_ok": true } },
+        { "features": { "law_drift_algebra": 0.18, "cg_ok": true } },
+        { "features": { "law_drift_algebra": 0.05, "cg_ok": true } }
+      ],
+      "expect_regions": ["Stable", "Transition", "Stable"]
+    },
+    {
+      "name": "PSG-3: Transition hovering (stays in shell)",
+      "steps": [
+        { "features": { "law_drift_algebra": 0.16, "cg_ok": true } },
+        { "features": { "law_drift_algebra": 0.19, "cg_ok": true } },
+        { "features": { "law_drift_algebra": 0.20, "cg_ok": true } },
+        { "features": { "law_drift_algebra": 0.17, "cg_ok": true } }
+      ],
+      "expect_regions": ["Transition", "Transition", "Transition", "Transition"]
+    },
+    {
+      "name": "PSG-4: Mutation absorbing (no recovery allowed)",
+      "recovery_allowed": false,
+      "steps": [
+        { "features": { "law_drift_algebra": 0.05, "cg_ok": true } },
+        { "features": { "law_drift_algebra": 0.40, "cg_ok": true } },
+        { "features": { "law_drift_algebra": 0.40, "cg_ok": true } },
+        { "features": { "law_drift_algebra": 0.40, "cg_ok": true } }
+      ],
+      "expect_regions": ["Stable", "Mutation", "Mutation", "Mutation"]
+    },
+    {
+      "name": "PSG-4: Mutation absorbing — drift drops but still Mutation",
+      "recovery_allowed": false,
+      "steps": [
+        { "features": { "law_drift_algebra": 0.40, "cg_ok": true } },
+        { "features": { "law_drift_algebra": 0.05, "cg_ok": true } }
+      ],
+      "expect_regions": ["Mutation", "Mutation"],
+      "_note": "Even though drift dropped, recovery_allowed=false means Mutation sticks"
+    },
+    {
+      "name": "PSG-3+4: full lifecycle Stable→Transition→Mutation→Mutation",
+      "recovery_allowed": false,
+      "steps": [
+        { "features": { "law_drift_algebra": 0.02, "cg_ok": true } },
+        { "features": { "law_drift_algebra": 0.08, "cg_ok": true } },
+        { "features": { "law_drift_algebra": 0.16, "cg_ok": true } },
+        { "features": { "law_drift_algebra": 0.20, "cg_ok": true } },
+        { "features": { "law_drift_algebra": 0.30, "cg_ok": true } },
+        { "features": { "law_drift_algebra": 0.30, "cg_ok": true } },
+        { "features": { "law_drift_algebra": 0.10, "cg_ok": true } }
+      ],
+      "expect_regions": ["Stable", "Stable", "Transition", "Transition", "Mutation", "Mutation", "Mutation"]
+    },
+    {
+      "name": "PSG-3: coherence break mid-trajectory",
+      "steps": [
+        { "features": { "law_drift_algebra": 0.05, "cg_ok": true } },
+        { "features": { "law_drift_algebra": 0.05, "cg_ok": true } },
+        { "features": { "law_drift_algebra": 0.05, "cg_ok": false } }
+      ],
+      "expect_regions": ["Stable", "Stable", "Mutation"]
+    }
+  ],
+
+  "epsilon_sweep_cases": [
+    {
+      "name": "PSG sweep: fixed drift=0.15, varying ε_L",
+      "drift": 0.15,
+      "cg_ok": true,
+      "margin": 0.05,
+      "_calc": "ε=0.10: |0.05|≤m→Trans; ε=0.12: |0.03|≤m→Trans; ε=0.15: |0|≤m→Trans; ε=0.18: |0.03|≤m→Trans; ε=0.20: IEEE754 0.2-0.05=0.150..02 so 0.15<ε−m→Stable; ε=0.25: 0.15<0.20→Stable; ε=0.30: 0.15<0.25→Stable",
+      "epsilon_values": [0.10, 0.12, 0.15, 0.18, 0.20, 0.25, 0.30],
+      "expect_regions": ["Transition", "Transition", "Transition", "Transition", "Stable", "Stable", "Stable"]
+    },
+    {
+      "name": "PSG sweep: fixed drift=0.25, varying ε_L",
+      "drift": 0.25,
+      "cg_ok": true,
+      "margin": 0.05,
+      "_calc": "ε=0.10: 0.25>0.15→Mut; ε=0.15: 0.25>0.20→Mut; ε=0.20: |0.05|≤m→Trans; ε=0.25: |0|≤m→Trans; ε=0.30: |0.05|≤m→Trans; ε=0.35: 0.25<0.30→Stable; ε=0.40: 0.25<0.35→Stable",
+      "epsilon_values": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40],
+      "expect_regions": ["Mutation", "Mutation", "Transition", "Transition", "Transition", "Stable", "Stable"]
+    },
+    {
+      "name": "PSG sweep: CG fail overrides all ε_L values",
+      "drift": 0.05,
+      "cg_ok": false,
+      "margin": 0.05,
+      "epsilon_values": [0.10, 0.20, 0.50, 1.00],
+      "expect_regions": ["Mutation", "Mutation", "Mutation", "Mutation"]
+    }
+  ]
+}
