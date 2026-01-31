@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "suite": "CCEP-VTS v1.0",
+    "layer": "1.2.aj",
+    "description": "Synthetic cases for deterministic coupling constant estimation",
+    "notes": [
+      "K_ML = median(|ΔL|, admissible) / median(|ΔM|, admissible)",
+      "K_LT = median(|ΔX|, admissible) / median(|ΔL|, admissible)",
+      "K_C = median(|ΔL|, CG_OK) / median(|ΔL|, CG_FAIL)",
+      "Q99 outlier removal applied before median computation",
+      "Minimum n=5 per axis after filtering"
+    ]
+  },
+  "cases": [
+    {
+      "name": "CCEP-2: Uniform coupling, all CG_OK",
+      "_work": "All uniform per axis → Q99 removes nothing → K_ML=0.08/0.10=0.8, K_LT=0.06/0.08=0.75, K_C=null (no CG_FAIL)",
+      "tol": 1e-10,
+      "steps": [
+        {"delta_M": 0.10, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true}
+      ],
+      "expect": {
+        "K_ML": 0.8,
+        "K_LT": 0.75,
+        "K_C": null
+      }
+    },
+    {
+      "name": "CCEP-3: CG filtering + K_C coherence dampening",
+      "_work": "6 CG_OK (dL=0.05) + 6 CG_FAIL (dL=0.15) → K_ML=0.05/0.10=0.5, K_LT=0.04/0.05=0.8, K_C=0.05/0.15=0.333...",
+      "tol": 1e-10,
+      "steps": [
+        {"delta_M": 0.10, "delta_L": 0.05, "delta_X": 0.04, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.20, "delta_L": 0.15, "delta_X": 0.12, "delta_C": 0.08, "cg_ok": false},
+        {"delta_M": 0.10, "delta_L": 0.05, "delta_X": 0.04, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.20, "delta_L": 0.15, "delta_X": 0.12, "delta_C": 0.08, "cg_ok": false},
+        {"delta_M": 0.10, "delta_L": 0.05, "delta_X": 0.04, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.20, "delta_L": 0.15, "delta_X": 0.12, "delta_C": 0.08, "cg_ok": false},
+        {"delta_M": 0.10, "delta_L": 0.05, "delta_X": 0.04, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.20, "delta_L": 0.15, "delta_X": 0.12, "delta_C": 0.08, "cg_ok": false},
+        {"delta_M": 0.10, "delta_L": 0.05, "delta_X": 0.04, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.20, "delta_L": 0.15, "delta_X": 0.12, "delta_C": 0.08, "cg_ok": false},
+        {"delta_M": 0.10, "delta_L": 0.05, "delta_X": 0.04, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.20, "delta_L": 0.15, "delta_X": 0.12, "delta_C": 0.08, "cg_ok": false}
+      ],
+      "expect": {
+        "K_ML": 0.5,
+        "K_LT": 0.8,
+        "K_C": 0.3333333333333333
+      }
+    },
+    {
+      "name": "CCEP-4: Outlier on delta_L axis removed by Q99",
+      "_work": "9x dL=0.05 + 1x dL=5.00 → Q99=sorted[8]=0.05 → outlier removed → medL=0.05; K_ML=0.05/0.10=0.5, K_LT=0.06/0.05=1.2",
+      "tol": 1e-10,
+      "steps": [
+        {"delta_M": 0.10, "delta_L": 0.05, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.05, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.05, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.05, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.05, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.05, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.05, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.05, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.05, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 5.00, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true}
+      ],
+      "expect": {
+        "K_ML": 0.5,
+        "K_LT": 1.2,
+        "K_C": null
+      }
+    },
+    {
+      "name": "CCEP-5: Insufficient data → REFUSE",
+      "_work": "Only 3 steps → n<5 after Q99 → REFUSE",
+      "steps": [
+        {"delta_M": 0.10, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true}
+      ],
+      "expect_refuse": true
+    },
+    {
+      "name": "CCEP-5: Zero denominator → K_ML null",
+      "_work": "All delta_M=0 → median_M=0 → K_ML=null; K_LT=0.06/0.08=0.75",
+      "tol": 1e-10,
+      "steps": [
+        {"delta_M": 0.00, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.00, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.00, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.00, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.00, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.00, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.00, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.00, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.00, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.00, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true}
+      ],
+      "expect": {
+        "K_ML": null,
+        "K_LT": 0.75,
+        "K_C": null
+      }
+    },
+    {
+      "name": "CCEP-3: K_C null when insufficient CG_FAIL steps",
+      "_work": "8 CG_OK + 2 CG_FAIL → CG_FAIL n=2 < 5 → K_C=null; K_ML and K_LT still computed",
+      "tol": 1e-10,
+      "steps": [
+        {"delta_M": 0.10, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.10, "delta_L": 0.08, "delta_X": 0.06, "delta_C": 0.02, "cg_ok": true},
+        {"delta_M": 0.20, "delta_L": 0.15, "delta_X": 0.12, "delta_C": 0.08, "cg_ok": false},
+        {"delta_M": 0.20, "delta_L": 0.15, "delta_X": 0.12, "delta_C": 0.08, "cg_ok": false}
+      ],
+      "expect": {
+        "K_ML": 0.8,
+        "K_LT": 0.75,
+        "K_C": null
+      }
+    }
+  ]
+}
