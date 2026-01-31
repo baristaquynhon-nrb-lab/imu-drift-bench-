@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "suite": "ECT-VTS v1.0",
+    "layer": "1.2.al",
+    "description": "Synthetic observation/encoding pairs for epistemic closure validation"
+  },
+  "cases": [
+    {
+      "name": "ECT-1+2: Verification result observation",
+      "observation": {
+        "observation_type": "VERIFICATION_EVENT",
+        "fields": {
+          "verdict": "PASS",
+          "layer": "1.2.ag",
+          "spec_hash": "sha256:abc",
+          "runner_hash": "sha256:def",
+          "result_hash": "sha256:ghi"
+        }
+      },
+      "initial_state": { "M": {"v": 1}, "L": {"v": 2}, "X": {"v": 3}, "C": {"v": 4}, "H": [], "V": [] }
+    },
+    {
+      "name": "ECT-1+2: Drift observation",
+      "observation": {
+        "observation_type": "DRIFT_OBSERVATION",
+        "fields": {
+          "law_drift_algebra": 0.15,
+          "drift_metric": 0.12,
+          "cg_ok": true
+        }
+      },
+      "initial_state": { "M": {}, "L": {"drift": 0.1}, "X": {}, "C": {"coherent": true}, "H": [], "V": [] }
+    },
+    {
+      "name": "ECT-1+2: Phase classification observation",
+      "observation": {
+        "observation_type": "PHASE_CLASSIFICATION",
+        "fields": {
+          "phase_region": "Transition",
+          "law_drift_algebra": 0.19,
+          "cg_ok": true
+        }
+      },
+      "initial_state": { "M": {}, "L": {}, "X": {"region": "Stable"}, "C": {}, "H": [], "V": [] }
+    },
+    {
+      "name": "ECT-3: Transition preserves base axes",
+      "observation": {
+        "observation_type": "VERIFICATION_EVENT",
+        "fields": {
+          "verdict": "PASS",
+          "layer": "1.2.ah"
+        }
+      },
+      "initial_state": {
+        "M": {"meaning": "stable"},
+        "L": {"laws": ["law1", "law2"]},
+        "X": {"topology": "connected"},
+        "C": {"coherence": 0.95},
+        "H": [{"prev_event": "init"}],
+        "V": [{"prev_verification": "genesis"}]
+      }
+    },
+    {
+      "name": "ECT-4: Chain integrity with existing chain head",
+      "observation": {
+        "observation_type": "GOVERNANCE_ACTION",
+        "fields": {
+          "verdict": "FAIL",
+          "layer": "1.2.aj"
+        }
+      },
+      "initial_state": { "M": {}, "L": {}, "X": {}, "C": {}, "H": [], "V": [] },
+      "chain_head": "sha256:abc123def456"
+    },
+    {
+      "name": "ECT-2+3: State description observation",
+      "observation": {
+        "observation_type": "STATE_DESCRIPTION",
+        "fields": {
+          "meaning_state": "coherent",
+          "history_ref": "step_42",
+          "cg_ok": true
+        }
+      },
+      "initial_state": { "M": {"s": "x"}, "L": {"s": "y"}, "X": {"s": "z"}, "C": {"s": "w"}, "H": [], "V": [] }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "suite": "RVE-VTS v1.0",
+    "layer": "1.2.ak",
+    "description": "Synthetic verification events for reflexive embedding validation"
+  },
+  "cases": [
+    {
+      "name": "RVE-1+2: Basic event formation and hash canonicality",
+      "spec": { "layer": "1.2.ag", "title": "CPTT", "version": "1.0" },
+      "runner": { "name": "cptt_phase_transition_test.js", "version": "1.0" },
+      "case_data": { "cases": [{"name": "test1", "drift": 0.5}] },
+      "result": { "verdict": "PASS", "tests_passed": 4, "tests_total": 4 },
+      "chain": []
+    },
+    {
+      "name": "RVE-3: Replay produces identical result_hash",
+      "spec": { "layer": "1.2.ah", "title": "PSG", "version": "1.0" },
+      "runner": { "name": "psg_phase_space_geometry_test.js", "version": "1.0" },
+      "case_data": { "single_step_cases": [{"name": "s1"}], "trajectory_cases": [] },
+      "result": { "verdict": "PASS", "tests_passed": 26, "tests_total": 26 },
+      "chain": []
+    },
+    {
+      "name": "RVE-4: Chain immutability with prior events",
+      "spec": { "layer": "1.2.ai", "title": "BREP", "version": "1.0" },
+      "runner": { "name": "brep_basin_radius_test.js", "version": "1.0" },
+      "case_data": { "cases": [{"name": "c1"}, {"name": "c2"}] },
+      "result": { "verdict": "PASS", "tests_passed": 6, "tests_total": 6 },
+      "chain": [
+        {
+          "event_type": "VERIFICATION_EVENT",
+          "layer": "1.2.ag",
+          "spec_hash": "sha256:prev_spec",
+          "runner_hash": "sha256:prev_runner",
+          "case_hash": "sha256:prev_case",
+          "result_hash": "sha256:prev_result",
+          "verdict": "PASS"
+        },
+        {
+          "event_type": "VERIFICATION_EVENT",
+          "layer": "1.2.ah",
+          "spec_hash": "sha256:prev_spec2",
+          "runner_hash": "sha256:prev_runner2",
+          "case_hash": "sha256:prev_case2",
+          "result_hash": "sha256:prev_result2",
+          "verdict": "PASS"
+        }
+      ]
+    },
+    {
+      "name": "RVE-1+4: FAIL verdict event still valid structurally",
+      "spec": { "layer": "1.2.aj", "title": "CCEP", "version": "1.0" },
+      "runner": { "name": "ccep_coupling_constant_test.js", "version": "1.0" },
+      "case_data": { "cases": [{"name": "fail_case"}] },
+      "result": { "verdict": "FAIL", "tests_passed": 3, "tests_total": 6 },
+      "chain": [
+        {
+          "event_type": "VERIFICATION_EVENT",
+          "layer": "1.2.ag",
+          "spec_hash": "sha256:a",
+          "runner_hash": "sha256:b",
+          "case_hash": "sha256:c",
+          "result_hash": "sha256:d",
+          "verdict": "PASS"
+        }
+      ]
+    },
+    {
+      "name": "RVE-2: Hash stability across REFUSE verdict",
+      "spec": { "layer": "1.2.ai", "title": "BREP", "version": "1.0" },
+      "runner": { "name": "brep_basin_radius_test.js", "version": "1.0" },
+      "case_data": { "cases": [] },
+      "result": { "verdict": "REFUSE", "reason": "insufficient data" },
+      "chain": []
+    }
+  ]
+}

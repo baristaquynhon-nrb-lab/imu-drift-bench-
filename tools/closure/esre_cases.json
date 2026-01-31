@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "suite": "ESRE-VTS v1.0",
+    "layer": "1.2.am",
+    "description": "Synthetic cases for epistemic stability under reflexive embedding"
+  },
+  "cases": [
+    {
+      "name": "ESRE-1: HOE mode — base state preserved across 3 RVE events",
+      "rve_mode": "HOE",
+      "config": { "B_V": 1.0 },
+      "steps": [
+        {
+          "base_state_before": {"M": {"v": 1}, "L": {"v": 2}, "X": {"v": 3}, "C": {"v": 4}},
+          "base_state_after":  {"M": {"v": 1}, "L": {"v": 2}, "X": {"v": 3}, "C": {"v": 4}},
+          "rve_event": {"event_type": "VERIFICATION_EVENT", "layer": "1.2.ag", "verdict": "PASS"},
+          "W_V_delta": 0.5,
+          "law_drift_before": 0.15, "law_drift_after": 0.15,
+          "cg_ok_before": true, "cg_ok_after": true
+        },
+        {
+          "base_state_before": {"M": {"v": 1}, "L": {"v": 2}, "X": {"v": 3}, "C": {"v": 4}},
+          "base_state_after":  {"M": {"v": 1}, "L": {"v": 2}, "X": {"v": 3}, "C": {"v": 4}},
+          "rve_event": {"event_type": "VERIFICATION_EVENT", "layer": "1.2.ah", "verdict": "PASS"},
+          "W_V_delta": 0.5,
+          "law_drift_before": 0.15, "law_drift_after": 0.15,
+          "cg_ok_before": true, "cg_ok_after": true
+        },
+        {
+          "base_state_before": {"M": {"v": 1}, "L": {"v": 2}, "X": {"v": 3}, "C": {"v": 4}},
+          "base_state_after":  {"M": {"v": 1}, "L": {"v": 2}, "X": {"v": 3}, "C": {"v": 4}},
+          "rve_event": {"event_type": "VERIFICATION_EVENT", "layer": "1.2.ai", "verdict": "PASS"},
+          "W_V_delta": 0.3,
+          "law_drift_before": 0.15, "law_drift_after": 0.15,
+          "cg_ok_before": true, "cg_ok_after": true
+        }
+      ]
+    },
+    {
+      "name": "ESRE-2: Extended Lyapunov — W_V bounded per step",
+      "rve_mode": "HOE",
+      "config": { "B_V": 2.0 },
+      "steps": [
+        {
+          "base_state_before": {"M": {}, "L": {}, "X": {}, "C": {}},
+          "base_state_after":  {"M": {}, "L": {}, "X": {}, "C": {}},
+          "rve_event": {"event_type": "VERIFICATION_EVENT", "layer": "1.2.ag", "verdict": "PASS"},
+          "W_V_delta": 1.5
+        },
+        {
+          "base_state_before": {"M": {}, "L": {}, "X": {}, "C": {}},
+          "base_state_after":  {"M": {}, "L": {}, "X": {}, "C": {}},
+          "rve_event": {"event_type": "VERIFICATION_EVENT", "layer": "1.2.ah", "verdict": "PASS"},
+          "W_V_delta": 0.8
+        }
+      ]
+    },
+    {
+      "name": "ESRE-3: BCE mode — small-gain satisfied (α·λ_V < β)",
+      "rve_mode": "BCE",
+      "config": {
+        "lambda_V": 0.1,
+        "alpha_max": 0.05,
+        "stability_margin_beta": 0.2,
+        "B_V": 1.0
+      },
+      "steps": [
+        {
+          "base_state_before": {"M": {"v": 1}, "L": {"v": 2}, "X": {"v": 3}, "C": {"v": 4}},
+          "base_state_after":  {"M": {"v": 1}, "L": {"v": 2}, "X": {"v": 3}, "C": {"v": 4}},
+          "rve_event": {"event_type": "VERIFICATION_EVENT", "layer": "1.2.aj", "verdict": "PASS"},
+          "W_V_delta": 0.5,
+          "base_drift_from_rve": 0.003,
+          "v_delta_norm": 0.1,
+          "law_drift_before": 0.10, "law_drift_after": 0.10,
+          "cg_ok_before": true, "cg_ok_after": true
+        }
+      ]
+    },
+    {
+      "name": "ESRE-3: BCE mode — small-gain VIOLATED (α·λ_V ≥ β) → expect fail",
+      "rve_mode": "BCE",
+      "config": {
+        "lambda_V": 0.5,
+        "alpha_max": 0.6,
+        "stability_margin_beta": 0.2,
+        "B_V": 1.0
+      },
+      "expect_refuse": true,
+      "steps": [
+        {
+          "base_state_before": {"M": {}, "L": {}, "X": {}, "C": {}},
+          "base_state_after":  {"M": {}, "L": {}, "X": {}, "C": {}},
+          "rve_event": {"event_type": "VERIFICATION_EVENT", "layer": "1.2.ag", "verdict": "PASS"},
+          "W_V_delta": 0.5,
+          "base_drift_from_rve": 0.02,
+          "v_delta_norm": 0.1
+        }
+      ]
+    },
+    {
+      "name": "ESRE-4: Phase geometry preserved — law_drift and cg_ok unchanged",
+      "rve_mode": "HOE",
+      "config": { "B_V": 1.0 },
+      "steps": [
+        {
+          "base_state_before": {"M": {}, "L": {}, "X": {}, "C": {}},
+          "base_state_after":  {"M": {}, "L": {}, "X": {}, "C": {}},
+          "rve_event": {"event_type": "VERIFICATION_EVENT", "layer": "1.2.ah", "verdict": "PASS"},
+          "W_V_delta": 0.2,
+          "law_drift_before": 0.18, "law_drift_after": 0.18,
+          "cg_ok_before": true, "cg_ok_after": true
+        },
+        {
+          "base_state_before": {"M": {}, "L": {}, "X": {}, "C": {}},
+          "base_state_after":  {"M": {}, "L": {}, "X": {}, "C": {}},
+          "rve_event": {"event_type": "VERIFICATION_EVENT", "layer": "1.2.ai", "verdict": "FAIL"},
+          "W_V_delta": 0.4,
+          "law_drift_before": 0.30, "law_drift_after": 0.30,
+          "cg_ok_before": false, "cg_ok_after": false
+        }
+      ]
+    },
+    {
+      "name": "ESRE-5: Chain integrity across multiple appends",
+      "rve_mode": "HOE",
+      "config": { "B_V": 1.0 },
+      "steps": [
+        {
+          "base_state_before": {"M": {}, "L": {}, "X": {}, "C": {}},
+          "base_state_after":  {"M": {}, "L": {}, "X": {}, "C": {}},
+          "rve_event": {"event_type": "VERIFICATION_EVENT", "layer": "1.2.ag", "verdict": "PASS"},
+          "W_V_delta": 0.1
+        },
+        {
+          "base_state_before": {"M": {}, "L": {}, "X": {}, "C": {}},
+          "base_state_after":  {"M": {}, "L": {}, "X": {}, "C": {}},
+          "rve_event": {"event_type": "VERIFICATION_EVENT", "layer": "1.2.ah", "verdict": "PASS"},
+          "W_V_delta": 0.1
+        },
+        {
+          "base_state_before": {"M": {}, "L": {}, "X": {}, "C": {}},
+          "base_state_after":  {"M": {}, "L": {}, "X": {}, "C": {}},
+          "rve_event": {"event_type": "VERIFICATION_EVENT", "layer": "1.2.ai", "verdict": "PASS"},
+          "W_V_delta": 0.1
+        },
+        {
+          "base_state_before": {"M": {}, "L": {}, "X": {}, "C": {}},
+          "base_state_after":  {"M": {}, "L": {}, "X": {}, "C": {}},
+          "rve_event": {"event_type": "VERIFICATION_EVENT", "layer": "1.2.aj", "verdict": "PASS"},
+          "W_V_delta": 0.1
+        }
+      ]
+    }
+  ]
+}
