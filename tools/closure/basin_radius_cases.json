@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "suite": "BREP-VTS v1.0",
+    "layer": "1.2.ai",
+    "description": "Synthetic cases for deterministic basin radius and shell width estimation",
+    "notes": [
+      "Quantile uses floor index: idx = floor(p * (n-1)).",
+      "MAD and sigma_hat are computed on CG-admissible drifts only.",
+      "m_hat is clamped to 0.5*epsilon_L_hat if m_hat >= epsilon_L_hat."
+    ]
+  },
+  "cases": [
+    {
+      "name": "BREP-2: Simple admissible distribution (p=0.80)",
+      "_work": "D=[0.01,0.02,0.03,0.10,0.20], n=5, Q_0.8=D[floor(3.2)]=D[3]=0.10; median=0.03, devs=[0,0.01,0.02,0.07,0.17], MAD=0.02, sigma=0.029652, m=max(0.02,0.029652)=0.029652",
+      "params": { "p": 0.8, "k": 1.0, "m_min": 0.02 },
+      "tol": 1e-12,
+      "drifts": [0.01, 0.02, 0.03, 0.10, 0.20],
+      "cg_ok":  [true, true, true, true, true],
+      "expect": {
+        "quantile_eps": 0.10,
+        "m_hat": 0.029652
+      }
+    },
+    {
+      "name": "BREP-2+5: Coherence removes points (admissible subset only)",
+      "_work": "D=[0.01,0.02,0.03] (indices 0,2,4 admissible), n=3, Q_0.5=D[floor(1)]=D[1]=0.02; median=0.02, devs=[0,0.01,0.01], MAD=0.01, sigma=0.014826, m=max(0.02,0.014826)=0.02; m(0.02)>=eps(0.02) -> clamp m=0.01",
+      "params": { "p": 0.5, "k": 1.0, "m_min": 0.02 },
+      "tol": 1e-12,
+      "drifts": [0.01, 0.50, 0.02, 0.60, 0.03],
+      "cg_ok":  [true, false, true, false, true],
+      "expect": {
+        "quantile_eps": 0.02,
+        "m_hat": 0.01
+      }
+    },
+    {
+      "name": "BREP-3: m_min dominates (tiny MAD, sigma=0)",
+      "_work": "D=[0.10,0.10,0.10,0.10,0.11], n=5, Q_0.95=D[floor(3.8)]=D[3]=0.10; median=0.10, devs=[0,0,0,0,0.01], MAD=0, sigma=0, m=max(0.05,0)=0.05; m(0.05)<eps(0.10) OK",
+      "params": { "p": 0.95, "k": 1.0, "m_min": 0.05 },
+      "tol": 1e-12,
+      "drifts": [0.10, 0.10, 0.10, 0.10, 0.11],
+      "cg_ok":  [true, true, true, true, true],
+      "expect": {
+        "quantile_eps": 0.10,
+        "m_hat": 0.05
+      }
+    },
+    {
+      "name": "BREP-5: Coherence dominance (cg_ok=false always Mutation)",
+      "_work": "D=[0.05,0.06,0.07] (indices 0,2,4 admissible), n=3, Q_0.95=D[floor(1.9)]=D[1]=0.06; median=0.06, devs=[0,0.01,0.01], MAD=0.01, sigma=0.014826, m=max(0.02,0.014826)=0.02; m(0.02)<eps(0.06) OK",
+      "params": { "p": 0.95, "k": 1.0, "m_min": 0.02 },
+      "tol": 1e-12,
+      "drifts": [0.05, 0.50, 0.06, 0.60, 0.07],
+      "cg_ok":  [true, false, true, false, true],
+      "expect": {
+        "quantile_eps": 0.06
+      }
+    },
+    {
+      "name": "BREP-2: Larger dataset, default p=0.95",
+      "_work": "D sorted=[0.02,0.03,0.05,0.07,0.08,0.10,0.12,0.15,0.18,0.22], n=10, Q_0.95=D[floor(8.55)]=D[8]=0.18; median=(0.08+0.10)/2=0.09, devs sorted=[0.01,0.01,0.02,0.03,0.04,0.06,0.06,0.07,0.09,0.13], MAD=(0.04+0.06)/2=0.05, sigma=1.4826*0.05=0.07413, m=max(0.02,0.07413)=0.07413",
+      "params": { "p": 0.95, "k": 1.0, "m_min": 0.02 },
+      "tol": 1e-10,
+      "drifts": [0.10, 0.05, 0.22, 0.03, 0.18, 0.07, 0.15, 0.02, 0.12, 0.08],
+      "cg_ok":  [true, true, true, true, true, true, true, true, true, true],
+      "expect": {
+        "quantile_eps": 0.18,
+        "m_hat": 0.07413
+      }
+    },
+    {
+      "name": "BREP-1+4: All identical drifts (degenerate, MAD=0)",
+      "_work": "D=[0.10,0.10,0.10,0.10], n=4, Q_0.95=D[floor(2.85)]=D[2]=0.10; median=0.10, MAD=0, sigma=0, m=max(0.02,0)=0.02; m(0.02)<eps(0.10) OK; all drifts should be Transition (|0.10-0.10|=0<=0.02)",
+      "params": { "p": 0.95, "k": 1.0, "m_min": 0.02 },
+      "tol": 1e-12,
+      "drifts": [0.10, 0.10, 0.10, 0.10],
+      "cg_ok":  [true, true, true, true],
+      "expect": {
+        "quantile_eps": 0.10,
+        "m_hat": 0.02
+      }
+    }
+  ]
+}
