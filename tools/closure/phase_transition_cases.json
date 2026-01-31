@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "suite": "CPTT-VTS v1.0",
+    "layer": "1.2.ag",
+    "description": "Synthetic test vectors for CAS Phase Transition Theorem validation",
+    "epsilon_L_default": 0.2,
+    "transition_margin": 0.05
+  },
+  "cases": [
+    {
+      "name": "CPTT-1: Threshold Crossing — large drift",
+      "description": "law_drift far exceeds epsilon_L → must be Mutation",
+      "features": {
+        "law_drift_algebra": 0.50,
+        "cg_ok": true
+      },
+      "epsilon_L": 0.2,
+      "expect_region": "Mutation",
+      "expect_action": "FORK"
+    },
+    {
+      "name": "CPTT-1: Threshold Crossing — just above epsilon",
+      "description": "law_drift slightly above epsilon_L (outside transition margin) → Mutation",
+      "features": {
+        "law_drift_algebra": 0.26,
+        "cg_ok": true
+      },
+      "epsilon_L": 0.2,
+      "expect_region": "Mutation",
+      "expect_action": "FORK"
+    },
+    {
+      "name": "CPTT-2: Coherence Saturation — CG REFUSE with low drift",
+      "description": "CG not OK even though drift is small → must be Mutation",
+      "features": {
+        "law_drift_algebra": 0.05,
+        "cg_ok": false
+      },
+      "epsilon_L": 0.2,
+      "expect_region": "Mutation",
+      "expect_action": "FORK"
+    },
+    {
+      "name": "CPTT-2: Coherence Saturation — CG REFUSE with zero drift",
+      "description": "CG failure with zero law change → Mutation (pure coherence break)",
+      "features": {
+        "law_drift_algebra": 0.0,
+        "cg_ok": false
+      },
+      "epsilon_L": 0.2,
+      "expect_region": "Mutation",
+      "expect_action": "FORK"
+    },
+    {
+      "name": "CPTT-3: Transition Band — drift at boundary",
+      "description": "drift ≈ epsilon_L within margin, CG admissible → Transition",
+      "features": {
+        "law_drift_algebra": 0.19,
+        "cg_ok": true
+      },
+      "epsilon_L": 0.2,
+      "expect_region": "Transition",
+      "expect_action": "PATCH"
+    },
+    {
+      "name": "CPTT-3: Transition Band — drift just below boundary",
+      "description": "drift slightly below epsilon within margin → Transition",
+      "features": {
+        "law_drift_algebra": 0.18,
+        "cg_ok": true
+      },
+      "epsilon_L": 0.2,
+      "expect_region": "Transition",
+      "expect_action": "PATCH"
+    },
+    {
+      "name": "CPTT-4: Governance Phase Control — Mutation triggers FORK",
+      "description": "Mutation from threshold crossing must produce FORK/SHIFT/DEPRECATE",
+      "features": {
+        "law_drift_algebra": 0.40,
+        "cg_ok": true
+      },
+      "epsilon_L": 0.2,
+      "expect_region": "Mutation",
+      "expect_action": "FORK"
+    },
+    {
+      "name": "CPTT-4: Governance Phase Control — Mutation from CG failure",
+      "description": "Mutation from coherence saturation must produce governance action",
+      "features": {
+        "law_drift_algebra": 0.10,
+        "cg_ok": false
+      },
+      "epsilon_L": 0.2,
+      "expect_region": "Mutation",
+      "expect_action": "FORK"
+    },
+    {
+      "name": "Stable baseline — low drift, CG OK",
+      "description": "Well within stability basin → Stable with NOOP",
+      "features": {
+        "law_drift_algebra": 0.05,
+        "cg_ok": true
+      },
+      "epsilon_L": 0.2,
+      "expect_region": "Stable",
+      "expect_action": "NOOP"
+    },
+    {
+      "name": "Stable baseline — zero drift",
+      "description": "No revision at all → Stable",
+      "features": {
+        "law_drift_algebra": 0.0,
+        "cg_ok": true
+      },
+      "epsilon_L": 0.2,
+      "expect_region": "Stable",
+      "expect_action": "NOOP"
+    },
+    {
+      "name": "Compound failure — high drift AND CG REFUSE",
+      "description": "Both conditions violated simultaneously → Mutation",
+      "features": {
+        "law_drift_algebra": 0.60,
+        "cg_ok": false
+      },
+      "epsilon_L": 0.2,
+      "expect_region": "Mutation",
+      "expect_action": "FORK"
+    },
+    {
+      "name": "Custom epsilon — strict threshold",
+      "description": "Smaller epsilon_L = stricter stability basin",
+      "features": {
+        "law_drift_algebra": 0.12,
+        "cg_ok": true
+      },
+      "epsilon_L": 0.1,
+      "expect_region": "Mutation",
+      "expect_action": "FORK"
+    }
+  ]
+}
