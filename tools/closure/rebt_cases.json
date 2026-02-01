@@ -1,0 +1,550 @@
+[
+  {
+    "id": "REBT-1",
+    "description": "Identity operator — trivially RP, round-trip preserved",
+    "operator": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "checks": {
+      "classify": {
+        "expected": "RP"
+      },
+      "round_trip": {
+        "expect_preserved": true
+      },
+      "cg_required": false,
+      "determinism": true
+    }
+  },
+  {
+    "id": "REBT-2",
+    "description": "Fiber rotation (cos/sin 0.7) — RP, base axes untouched",
+    "operator": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0.7648421872844885,
+        -0.644217687237691
+      ],
+      [
+        0,
+        0,
+        0.644217687237691,
+        0.7648421872844885
+      ]
+    ],
+    "checks": {
+      "classify": {
+        "expected": "RP"
+      },
+      "round_trip": {
+        "expect_preserved": true
+      },
+      "cg_required": false
+    }
+  },
+  {
+    "id": "REBT-3",
+    "description": "Epistemic scaling (1.5×) — EP, alters base projection",
+    "operator": [
+      [
+        1.5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1.5,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "checks": {
+      "classify": {
+        "expected": "EP"
+      },
+      "round_trip": {
+        "expect_preserved": false
+      },
+      "cg_required": true,
+      "round_trip_values": [
+        {
+          "dp": [
+            1,
+            0
+          ],
+          "expected": [
+            1.5,
+            0
+          ],
+          "tol": 1e-15
+        },
+        {
+          "dp": [
+            0,
+            1
+          ],
+          "expected": [
+            0,
+            1.5
+          ],
+          "tol": 1e-15
+        },
+        {
+          "dp": [
+            0.5,
+            0.75
+          ],
+          "expected": [
+            0.75,
+            1.125
+          ],
+          "tol": 1e-15
+        }
+      ]
+    }
+  },
+  {
+    "id": "REBT-4",
+    "description": "Base rotation (0.8/0.6) — EP, rotates epistemic projection",
+    "operator": [
+      [
+        0.8,
+        0.6,
+        0,
+        0
+      ],
+      [
+        -0.6,
+        0.8,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "checks": {
+      "classify": {
+        "expected": "EP"
+      },
+      "round_trip": {
+        "expect_preserved": false
+      },
+      "cg_required": true,
+      "round_trip_values": [
+        {
+          "dp": [
+            1,
+            0
+          ],
+          "expected": [
+            0.8,
+            -0.6
+          ],
+          "tol": 1e-15
+        },
+        {
+          "dp": [
+            0,
+            1
+          ],
+          "expected": [
+            0.6,
+            0.8
+          ],
+          "tol": 1e-15
+        }
+      ]
+    }
+  },
+  {
+    "id": "REBT-5",
+    "description": "Gauge group closure — RP · RP = RP",
+    "operator": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "checks": {
+      "composition": {
+        "T_a": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0.5,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0.3,
+            0,
+            1
+          ]
+        ],
+        "T_b": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0.5,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ]
+        ],
+        "expected_class": "RP"
+      }
+    }
+  },
+  {
+    "id": "REBT-6",
+    "description": "Base shear (T[0][1]=0.1) — EP, subtle epistemic alteration",
+    "operator": [
+      [
+        1,
+        0.1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "checks": {
+      "classify": {
+        "expected": "EP"
+      },
+      "round_trip": {
+        "expect_preserved": false
+      },
+      "cg_required": true,
+      "round_trip_values": [
+        {
+          "dp": [
+            1,
+            0
+          ],
+          "expected": [
+            1,
+            0
+          ],
+          "tol": 1e-15
+        },
+        {
+          "dp": [
+            0,
+            1
+          ],
+          "expected": [
+            0.1,
+            1
+          ],
+          "tol": 1e-15
+        },
+        {
+          "dp": [
+            0.5,
+            0.75
+          ],
+          "expected": [
+            0.575,
+            0.75
+          ],
+          "tol": 1e-15
+        },
+        {
+          "dp": [
+            -1,
+            2
+          ],
+          "expected": [
+            -0.8,
+            2
+          ],
+          "tol": 1e-15
+        }
+      ]
+    }
+  },
+  {
+    "id": "REBT-7",
+    "description": "Near-identity perturbation (ε=1e-8) — EP, no silent drift allowed",
+    "operator": [
+      [
+        1.00000001,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "checks": {
+      "classify": {
+        "expected": "EP",
+        "tol": 1e-12
+      },
+      "cg_required": true,
+      "round_trip_values": [
+        {
+          "dp": [
+            1,
+            0
+          ],
+          "expected": [
+            1.00000001,
+            0
+          ],
+          "tol": 1e-15
+        },
+        {
+          "dp": [
+            0,
+            1
+          ],
+          "expected": [
+            0,
+            1
+          ],
+          "tol": 1e-15
+        }
+      ]
+    }
+  },
+  {
+    "id": "REBT-8",
+    "description": "Fiber-to-base coupling — RP by criterion (Encode zeros fiber axes)",
+    "operator": [
+      [
+        1,
+        0,
+        0.3,
+        0.5
+      ],
+      [
+        0,
+        1,
+        0.2,
+        0.1
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "checks": {
+      "classify": {
+        "expected": "RP"
+      },
+      "round_trip": {
+        "expect_preserved": true
+      },
+      "cg_required": false
+    }
+  },
+  {
+    "id": "REBT-9",
+    "description": "Deterministic replay — EP classification + round-trips identical",
+    "operator": [
+      [
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0.5,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "checks": {
+      "classify": {
+        "expected": "EP"
+      },
+      "determinism": true,
+      "round_trip_values": [
+        {
+          "dp": [
+            1,
+            0
+          ],
+          "expected": [
+            2,
+            0
+          ],
+          "tol": 1e-15
+        },
+        {
+          "dp": [
+            0,
+            1
+          ],
+          "expected": [
+            0,
+            0.5
+          ],
+          "tol": 1e-15
+        }
+      ]
+    }
+  }
+]
