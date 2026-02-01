@@ -1,0 +1,273 @@
+[
+  {
+    "id": "RPP-1a",
+    "description": "HOE fiber ascent — Z constant, V grows, basin preserved",
+    "params": {
+      "Z_0": 0.5,
+      "mode": "HOE",
+      "alpha": 0,
+      "beta": 0,
+      "lambda_V": 0,
+      "B_V": 1,
+      "steps": 15,
+      "gamma": 0
+    },
+    "expect_refuse": false,
+    "checks": {
+      "basin_convergence": {
+        "Z_inf": 0.5,
+        "tol": 1e-15
+      },
+      "chain_monotone": true,
+      "replay_determinism": true,
+      "fiber_ascent": true,
+      "spot": [
+        {
+          "field": "Z",
+          "t": 0,
+          "expected": 0.5,
+          "tol": 1e-15
+        },
+        {
+          "field": "Z",
+          "t": 15,
+          "expected": 0.5,
+          "tol": 1e-15
+        },
+        {
+          "field": "W_Z",
+          "t": 0,
+          "expected": 0.25,
+          "tol": 1e-15
+        },
+        {
+          "field": "W_Z",
+          "t": 15,
+          "expected": 0.25,
+          "tol": 1e-15
+        },
+        {
+          "field": "V_count",
+          "t": 15,
+          "expected": 15,
+          "tol": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "RPP-1b",
+    "description": "BCE spiral descent — Z converges, W(Z) decreasing, chain grows",
+    "params": {
+      "Z_0": 1,
+      "mode": "BCE",
+      "alpha": 0.1,
+      "beta": 0.3,
+      "lambda_V": 0.05,
+      "B_V": 1,
+      "steps": 50,
+      "gamma": 0.005
+    },
+    "expect_refuse": false,
+    "checks": {
+      "basin_convergence": {
+        "Z_inf": 0.01666666666666667,
+        "tol": 0.000001
+      },
+      "w_z_monotone": true,
+      "w_star_monotone": {
+        "horizon": 7
+      },
+      "chain_monotone": true,
+      "replay_determinism": true,
+      "spiral_descent": {
+        "Z_inf": 0.01666666666666667,
+        "tol": 0.000001
+      },
+      "spot": [
+        {
+          "field": "Z",
+          "t": 0,
+          "expected": 1,
+          "tol": 1e-12
+        },
+        {
+          "field": "W_Z",
+          "t": 0,
+          "expected": 1,
+          "tol": 1e-10
+        },
+        {
+          "field": "Z",
+          "t": 5,
+          "expected": 0.18193549999999992,
+          "tol": 1e-12
+        },
+        {
+          "field": "W_Z",
+          "t": 5,
+          "expected": 0.03310052616024997,
+          "tol": 1e-10
+        },
+        {
+          "field": "Z",
+          "t": 10,
+          "expected": 0.04444339948499999,
+          "tol": 1e-12
+        },
+        {
+          "field": "W_Z",
+          "t": 10,
+          "expected": 0.0019752157577832977,
+          "tol": 1e-10
+        },
+        {
+          "field": "Z",
+          "t": 50,
+          "expected": 0.01666668435157292,
+          "tol": 1e-12
+        },
+        {
+          "field": "W_Z",
+          "t": 50,
+          "expected": 0.00027777836727496566,
+          "tol": 1e-10
+        }
+      ]
+    }
+  },
+  {
+    "id": "RPP-2",
+    "description": "BCE fast convergence — W(Z) + W* monotone verified",
+    "params": {
+      "Z_0": 3,
+      "mode": "BCE",
+      "alpha": 0.02,
+      "beta": 0.5,
+      "lambda_V": 0.1,
+      "B_V": 1,
+      "steps": 20,
+      "gamma": 0.01
+    },
+    "expect_refuse": false,
+    "checks": {
+      "basin_convergence": {
+        "Z_inf": 0.004,
+        "tol": 0.0001
+      },
+      "w_z_monotone": true,
+      "w_star_monotone": {
+        "horizon": 5
+      },
+      "chain_monotone": true,
+      "spot": [
+        {
+          "field": "Z",
+          "t": 0,
+          "expected": 3,
+          "tol": 1e-15
+        },
+        {
+          "field": "Z",
+          "t": 20,
+          "expected": 0.004002857208251953,
+          "tol": 1e-12
+        }
+      ]
+    }
+  },
+  {
+    "id": "RPP-3",
+    "description": "REFUSE absorbing stop — small-gain violated",
+    "params": {
+      "Z_0": 1,
+      "mode": "BCE",
+      "alpha": 0.5,
+      "beta": 0.3,
+      "lambda_V": 0.8,
+      "B_V": 1,
+      "steps": 10,
+      "gamma": 0
+    },
+    "expect_refuse": true,
+    "refuse_reason": "small_gain_violated",
+    "checks": {}
+  },
+  {
+    "id": "RPP-4",
+    "description": "Chain monotone append-only + replay determinism (HOE, 30 steps)",
+    "params": {
+      "Z_0": 0.8,
+      "mode": "HOE",
+      "alpha": 0,
+      "beta": 0,
+      "lambda_V": 0,
+      "B_V": 1,
+      "steps": 30,
+      "gamma": 0
+    },
+    "expect_refuse": false,
+    "checks": {
+      "chain_monotone": true,
+      "replay_determinism": true,
+      "fiber_ascent": true,
+      "spot": [
+        {
+          "field": "V_count",
+          "t": 30,
+          "expected": 30,
+          "tol": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "RPP-5",
+    "description": "Replay determinism — BCE 40-step trajectory bitwise equal",
+    "params": {
+      "Z_0": 0.75,
+      "mode": "BCE",
+      "alpha": 0.08,
+      "beta": 0.25,
+      "lambda_V": 0.04,
+      "B_V": 1,
+      "steps": 40,
+      "gamma": 0
+    },
+    "expect_refuse": false,
+    "checks": {
+      "basin_convergence": {
+        "Z_inf": 0.0128,
+        "tol": 0.00001
+      },
+      "w_z_monotone": true,
+      "chain_monotone": true,
+      "replay_determinism": true,
+      "spot": [
+        {
+          "field": "Z",
+          "t": 40,
+          "expected": 0.012807413714581158,
+          "tol": 1e-12
+        }
+      ]
+    }
+  },
+  {
+    "id": "RPP-3b",
+    "description": "REFUSE — marginal small-gain violation (alpha*lambda_V = beta)",
+    "params": {
+      "Z_0": 2,
+      "mode": "BCE",
+      "alpha": 0.6,
+      "beta": 0.3,
+      "lambda_V": 0.5,
+      "B_V": 1,
+      "steps": 5,
+      "gamma": 0
+    },
+    "expect_refuse": true,
+    "refuse_reason": "small_gain_violated",
+    "checks": {}
+  }
+]

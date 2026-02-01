@@ -1,0 +1,225 @@
+[
+  {
+    "id": "RFPT-1",
+    "description": "HOE mode — Z trivially fixed, V grows bounded",
+    "params": {
+      "Z_0": 0.5,
+      "mode": "HOE",
+      "alpha": 0,
+      "beta": 0,
+      "lambda_V": 0,
+      "B_V": 1,
+      "steps": 10
+    },
+    "expect_refuse": false,
+    "checks": {
+      "z_constant": true,
+      "convergence": {
+        "Z_inf": 0.5,
+        "tol": 1e-15
+      },
+      "w_v_bounded": true,
+      "self_consistency": {
+        "tol": 1e-15
+      },
+      "determinism": true,
+      "spot": [
+        {
+          "field": "Z",
+          "t": 0,
+          "expected": 0.5,
+          "tol": 1e-15
+        },
+        {
+          "field": "Z",
+          "t": 10,
+          "expected": 0.5,
+          "tol": 1e-15
+        },
+        {
+          "field": "W",
+          "t": 0,
+          "expected": 0.25,
+          "tol": 1e-15
+        },
+        {
+          "field": "W",
+          "t": 10,
+          "expected": 0.25,
+          "tol": 1e-15
+        }
+      ]
+    }
+  },
+  {
+    "id": "RFPT-2",
+    "description": "BCE contraction — Z converges to Z_inf, W(Z) decreasing",
+    "params": {
+      "Z_0": 1,
+      "mode": "BCE",
+      "alpha": 0.1,
+      "beta": 0.3,
+      "lambda_V": 0.05,
+      "B_V": 1,
+      "steps": 50
+    },
+    "expect_refuse": false,
+    "checks": {
+      "convergence": {
+        "Z_inf": 0.01666666666666667,
+        "tol": 0.000001
+      },
+      "w_monotone_decreasing": true,
+      "w_v_bounded": true,
+      "self_consistency": {
+        "tol": 0.000001
+      },
+      "determinism": true,
+      "spot": [
+        {
+          "field": "Z",
+          "t": 0,
+          "expected": 1,
+          "tol": 1e-15
+        },
+        {
+          "field": "Z",
+          "t": 5,
+          "expected": 0.18193549999999992,
+          "tol": 1e-12
+        },
+        {
+          "field": "Z",
+          "t": 10,
+          "expected": 0.04444339948499999,
+          "tol": 1e-12
+        },
+        {
+          "field": "Z",
+          "t": 50,
+          "expected": 0.01666668435157292,
+          "tol": 1e-12
+        },
+        {
+          "field": "W",
+          "t": 50,
+          "expected": 0.00027777836727496566,
+          "tol": 1e-10
+        }
+      ]
+    }
+  },
+  {
+    "id": "RFPT-3",
+    "description": "BCE contraction #2 — faster convergence (beta=0.4)",
+    "params": {
+      "Z_0": 2,
+      "mode": "BCE",
+      "alpha": 0.05,
+      "beta": 0.4,
+      "lambda_V": 0.1,
+      "B_V": 1,
+      "steps": 30
+    },
+    "expect_refuse": false,
+    "checks": {
+      "convergence": {
+        "Z_inf": 0.012500000000000002,
+        "tol": 0.0001
+      },
+      "w_monotone_decreasing": true,
+      "w_v_bounded": true,
+      "self_consistency": {
+        "tol": 0.0001
+      },
+      "spot": [
+        {
+          "field": "Z",
+          "t": 0,
+          "expected": 2,
+          "tol": 1e-15
+        },
+        {
+          "field": "Z",
+          "t": 10,
+          "expected": 0.02451765248,
+          "tol": 1e-12
+        },
+        {
+          "field": "Z",
+          "t": 30,
+          "expected": 0.012500439384415446,
+          "tol": 1e-12
+        }
+      ]
+    }
+  },
+  {
+    "id": "RFPT-4",
+    "description": "BCE near-equilibrium start — quick convergence",
+    "params": {
+      "Z_0": 0.01766666666666667,
+      "mode": "BCE",
+      "alpha": 0.1,
+      "beta": 0.3,
+      "lambda_V": 0.05,
+      "B_V": 1,
+      "steps": 20
+    },
+    "expect_refuse": false,
+    "checks": {
+      "convergence": {
+        "Z_inf": 0.01666666666666667,
+        "tol": 0.000001
+      },
+      "w_monotone_decreasing": true,
+      "self_consistency": {
+        "tol": 1e-6
+      },
+      "spot": [
+        {
+          "field": "Z",
+          "t": 0,
+          "expected": 0.01766666666666667,
+          "tol": 1e-15
+        },
+        {
+          "field": "Z",
+          "t": 20,
+          "expected": 0.016667464589329644,
+          "tol": 1e-12
+        }
+      ]
+    }
+  },
+  {
+    "id": "RFPT-5",
+    "description": "Small-gain violated (alpha*lambda_V >= beta) → REFUSE",
+    "params": {
+      "Z_0": 1,
+      "mode": "BCE",
+      "alpha": 0.5,
+      "beta": 0.3,
+      "lambda_V": 0.8,
+      "B_V": 1,
+      "steps": 10
+    },
+    "expect_refuse": true,
+    "checks": {}
+  },
+  {
+    "id": "RFPT-6",
+    "description": "Small-gain marginal violation (alpha*lambda_V = beta) → REFUSE",
+    "params": {
+      "Z_0": 0.5,
+      "mode": "BCE",
+      "alpha": 0.3,
+      "beta": 0.3,
+      "lambda_V": 1,
+      "B_V": 1,
+      "steps": 5
+    },
+    "expect_refuse": true,
+    "checks": {}
+  }
+]
